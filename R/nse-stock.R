@@ -105,3 +105,24 @@ nse_stock_year_low <- function() {
   }
 
 }
+
+
+#' Stock code
+#'
+#' Fetch stock symbol and name from NSE.
+#'
+#' @export
+#'
+nse_stock_code <- function() {
+
+  url <- "http://www.nseindia.com/content/equities/EQUITY_L.csv"
+
+  is_online <- pingr::is_online()
+
+  if (is_online) {
+    read.csv(url)[, 1:2]
+  } else {
+    stop("Please check your internet connection.", call. = FALSE)
+  }
+
+}
