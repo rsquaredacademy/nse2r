@@ -3,4 +3,5 @@
 export(nse_top_gainers)
 export(nse_top_gainers_fo)
 export(nse_top_losers)
+export(nse_top_losers_fo)
 importFrom(magrittr,"%>%")
