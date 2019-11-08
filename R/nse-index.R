@@ -71,3 +71,19 @@ nse_index_list <- function() {
   }
 
 }
+
+#' Valid index
+#'
+#' Check if index is valid.
+#'
+#' @export
+#'
+nse_index_valid <- function(index_code) {
+
+  valid_index <-
+    nse_index_list() %>%
+    extract2(1)
+
+  toupper(index_code) %in% valid_index
+
+}

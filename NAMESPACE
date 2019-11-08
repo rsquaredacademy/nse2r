@@ -3,6 +3,7 @@
 export(nse_advance_decline)
 export(nse_index_list)
 export(nse_index_quote)
+export(nse_index_valid)
 export(nse_preopen_fo)
 export(nse_preopen_nifty)
 export(nse_preopen_nifty_bank)
