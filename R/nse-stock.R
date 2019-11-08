@@ -69,3 +69,39 @@ nse_stock_year_high <- function() {
   }
 
 }
+
+#' 52 week low
+#'
+#' Stocks that have touched their 52 week lows during the day on NSE.
+#'
+#' @export
+#'
+nse_stock_year_low <- function() {
+
+  url <- "https://www.nseindia.com/products/dynaContent/equities/equities/json/online52NewLow.json"
+
+  is_online <- pingr::is_online()
+
+  if (is_online) {
+    resp <- httr::GET(url)
+  } else {
+    stop("Please check your internet connection.", call. = FALSE)
+  }
+
+  if (httr::http_error(resp)) {
+    stop(
+      sprintf(
+        "Request failed [%s]\n%s",
+        httr::status_code(resp),
+        result$error$message
+      ),
+      call. = FALSE
+    )
+  } else {
+    resp %>%
+      httr::content("text") %>%
+      jsonlite::fromJSON() %>%
+      magrittr::use_series(data)
+  }
+
+}
