@@ -3,6 +3,7 @@
 export(nse_advance_decline)
 export(nse_index_quote)
 export(nse_preopen_nifty)
+export(nse_preopen_nifty_bank)
 export(nse_stock_most_traded)
 export(nse_stock_year_high)
 export(nse_stock_year_low)
