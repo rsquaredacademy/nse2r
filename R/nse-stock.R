@@ -126,3 +126,20 @@ nse_stock_code <- function() {
   }
 
 }
+
+#' Valid stock code
+#'
+#' Check if stock code is valid.
+#'
+#' @export
+#'
+nse_stock_valid <- function(stock_code) {
+
+  valid_stock <-
+    nse_stock_code() %>%
+    extract2(1)
+
+  toupper(stock_code) %in% valid_stock
+
+}
+
