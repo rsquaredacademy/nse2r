@@ -216,3 +216,28 @@ nse_stock_top_losers <- function() {
   }
 
 }
+
+
+#' Stock quote
+#'
+#' Gets the quote for a given stock code.
+#'
+#' @export
+#'
+nse_stock_quote <- function(stock_code) {
+
+  # check stock code
+
+  base_url <- "https://www.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp"
+
+  base_url %>%
+    httr::modify_url(query = "symbol=") %>%
+    paste0(toupper(stock_code)) %>%
+    xml2::read_html() %>%
+    rvest::html_nodes("#responseDiv") %>%
+    rvest::html_text() %>%
+    jsonlite::fromJSON() %>%
+    magrittr::use_series(data) %>%
+    as.list()
+
+}
