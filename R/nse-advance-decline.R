@@ -4,7 +4,7 @@
 #'
 #' @export
 #'
-nse_advance_decline <- function() {
+nse_advances_declines <- function() {
 
   url <- "http://www.nseindia.com/common/json/indicesAdvanceDeclines.json"
 

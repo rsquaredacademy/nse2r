@@ -1,14 +1,32 @@
-#' NSE top gainers
+#' F & O lot size
 #'
-#' Top gainers for the last trading session.
-#'
-#' @importFrom magrittr %>%
+#' Fetch futures and options lot size from NSE.
 #'
 #' @export
 #'
-nse_top_gainers <- function() {
+nse_fo_lotsizes <- function() {
 
-  url <- "http://www.nseindia.com/live_market/dynaContent/live_analysis/gainers/niftyGainers1.json"
+  url <- "https://www.nseindia.com/content/fo/fo_mktlots.csv"
+
+  is_online <- pingr::is_online()
+
+  if (is_online) {
+    read.csv(url)
+  } else {
+    stop("Please check your internet connection.", call. = FALSE)
+  }
+
+}
+
+#' NSE top F & O gainers
+#'
+#' Top futures and options gainers for the last trading session.
+#'
+#' @export
+#'
+nse_fo_top_gainers <- function() {
+
+  url <-  "https://www.nseindia.com/live_market/dynaContent/live_analysis/gainers/fnoGainers1.json"
 
   is_online <- pingr::is_online()
 
@@ -36,15 +54,16 @@ nse_top_gainers <- function() {
 
 }
 
-#' NSE top F & O gainers
+
+#' NSE top F & O losers
 #'
-#' Top futures and options gainers for the last trading session.
+#' Top futures and options losers for the last trading session.
 #'
 #' @export
 #'
-nse_top_gainers_fo <- function() {
+nse_fo_top_losers <- function() {
 
-  url <-  "https://www.nseindia.com/live_market/dynaContent/live_analysis/gainers/fnoGainers1.json"
+  url <- "https://www.nseindia.com/live_market/dynaContent/live_analysis/losers/fnoLosers1.json"
 
   is_online <- pingr::is_online()
 
