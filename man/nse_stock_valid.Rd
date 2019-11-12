@@ -9,3 +9,10 @@ nse_stock_valid(stock_code)
 \description{
 Check if stock code is valid.
 }
+\examples{
+\dontrun{
+nse_stock_valid("infy")
+nse_stock_valid("glo")
+}
+
+}

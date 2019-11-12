@@ -9,3 +9,9 @@ nse_preopen_nifty_bank()
 \description{
 Fetch data of pre open session of Nifty Bank from NSE.
 }
+\examples{
+\dontrun{
+nse_preopen_nifty_bank()
+}
+
+}

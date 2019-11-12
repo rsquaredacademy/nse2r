@@ -9,3 +9,9 @@ nse_stock_code()
 \description{
 Fetch stock symbol and name from NSE.
 }
+\examples{
+\dontrun{
+nse_stock_code()
+}
+
+}

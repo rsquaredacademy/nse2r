@@ -2,12 +2,17 @@
 #'
 #' NSE indices quote
 #'
+#' @examples
+#' \dontrun{
+#' nse_index_quote()
+#' }
+#'
 #' @export
 #'
 nse_index_quote <- function() {
 
   url <- "http://www.nseindia.com/homepage/Indices1.json"
-  
+
   url %>%
     nse_base() %>%
     magrittr::extract(-5)
@@ -17,6 +22,11 @@ nse_index_quote <- function() {
 #' Index list
 #'
 #' NSE indices list.
+#'
+#' @examples
+#' \dontrun{
+#' nse_index_list()
+#' }
 #'
 #' @export
 #'
@@ -33,6 +43,12 @@ nse_index_list <- function() {
 #' Valid index
 #'
 #' Check if index is valid.
+#'
+#' @examples
+#' \dontrun{
+#' nse_index_valid("nifty auto")
+#' nse_index_valid("nifty cps")
+#' }
 #'
 #' @export
 #'

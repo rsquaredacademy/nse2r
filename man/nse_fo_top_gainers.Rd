@@ -9,3 +9,9 @@ nse_fo_top_gainers()
 \description{
 Top futures and options gainers for the last trading session.
 }
+\examples{
+\dontrun{
+nse_fo_top_gainers()
+}
+
+}

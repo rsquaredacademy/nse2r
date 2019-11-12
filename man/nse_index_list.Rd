@@ -9,3 +9,9 @@ nse_index_list()
 \description{
 NSE indices list.
 }
+\examples{
+\dontrun{
+nse_index_list()
+}
+
+}

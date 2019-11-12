@@ -9,3 +9,9 @@ nse_stock_top_gainers()
 \description{
 Top gainers for the last trading session.
 }
+\examples{
+\dontrun{
+nse_stock_top_gainers()
+}
+
+}

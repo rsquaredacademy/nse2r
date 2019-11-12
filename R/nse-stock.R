@@ -2,6 +2,11 @@
 #'
 #' Most actively traded stocks in a month on NSE.
 #'
+#' @examples
+#' \dontrun{
+#' nse_stock_most_traded()
+#' }
+#'
 #' @export
 #'
 nse_stock_most_traded <- function() {
@@ -14,6 +19,11 @@ nse_stock_most_traded <- function() {
 #' 52 week high
 #'
 #' Stocks that have touched their 52 week highs during the day on NSE.
+#'
+#' @examples
+#' \dontrun{
+#' nse_stock_year_high()
+#' }
 #'
 #' @export
 #'
@@ -28,6 +38,11 @@ nse_stock_year_high <- function() {
 #'
 #' Stocks that have touched their 52 week lows during the day on NSE.
 #'
+#' @examples
+#' \dontrun{
+#' nse_stock_year_low()
+#' }
+#'
 #' @export
 #'
 nse_stock_year_low <- function() {
@@ -41,6 +56,11 @@ nse_stock_year_low <- function() {
 #' Stock code
 #'
 #' Fetch stock symbol and name from NSE.
+#'
+#' @examples
+#' \dontrun{
+#' nse_stock_code()
+#' }
 #'
 #' @export
 #'
@@ -62,6 +82,12 @@ nse_stock_code <- function() {
 #'
 #' Check if stock code is valid.
 #'
+#' @examples
+#' \dontrun{
+#' nse_stock_valid("infy")
+#' nse_stock_valid("glo")
+#' }
+#'
 #' @export
 #'
 nse_stock_valid <- function(stock_code) {
@@ -78,6 +104,11 @@ nse_stock_valid <- function(stock_code) {
 #'
 #' Top gainers for the last trading session.
 #'
+#' @examples
+#' \dontrun{
+#' nse_stock_top_gainers()
+#' }
+#'
 #' @export
 #'
 nse_stock_top_gainers <- function() {
@@ -90,6 +121,11 @@ nse_stock_top_gainers <- function() {
 #' NSE top losers
 #'
 #' Top losers for the last trading session.
+#'
+#' @examples
+#' \dontrun{
+#' nse_stock_top_losers()
+#' }
 #'
 #' @export
 #'
@@ -104,6 +140,11 @@ nse_stock_top_losers <- function() {
 #' Stock quote
 #'
 #' Gets the quote for a given stock code.
+#'
+#' @examples
+#' \dontrun{
+#' nse_stock_quote("infy")
+#' }
 #'
 #' @export
 #'
