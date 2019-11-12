@@ -12,6 +12,7 @@ Imports:
     jsonlite,
     magrittr,
     rvest,
+    utils,
     xml2
 Suggests: 
     httptest,

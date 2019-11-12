@@ -44,6 +44,8 @@ nse_index_list <- function() {
 #'
 #' Check if index is valid.
 #'
+#' @param index_code Symbol of the index.
+#'
 #' @examples
 #' \dontrun{
 #' nse_index_valid("nifty auto")

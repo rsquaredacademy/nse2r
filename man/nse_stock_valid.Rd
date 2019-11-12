@@ -6,6 +6,9 @@
 \usage{
 nse_stock_valid(stock_code)
 }
+\arguments{
+\item{stock_code}{Symbol of the stock.}
+}
 \description{
 Check if stock code is valid.
 }

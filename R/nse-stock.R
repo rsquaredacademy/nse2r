@@ -67,13 +67,15 @@ nse_stock_year_low <- function() {
 nse_stock_code <- function() {
 
   url <- "http://www.nseindia.com/content/equities/EQUITY_L.csv"
-  read.csv(url)[, 1:2]
+  utils::read.csv(url)[, 1:2]
 
 }
 
 #' Valid stock code
 #'
 #' Check if stock code is valid.
+#'
+#' @param stock_code Symbol of the stock.
 #'
 #' @examples
 #' \dontrun{
@@ -133,6 +135,8 @@ nse_stock_top_losers <- function() {
 #' Stock quote
 #'
 #' Gets the quote for a given stock code.
+#'
+#' @param stock_code Symbol of the stock.
 #'
 #' @examples
 #' \dontrun{

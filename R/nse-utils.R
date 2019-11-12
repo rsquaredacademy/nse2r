@@ -2,6 +2,8 @@
 #'
 #' Base function to process JSON data.
 #'
+#' @param url URL of data.
+#'
 #' @importFrom magrittr %>%
 #'
 nse_base <- function(url) {

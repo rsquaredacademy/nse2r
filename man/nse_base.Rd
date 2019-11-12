@@ -6,6 +6,9 @@
 \usage{
 nse_base(url)
 }
+\arguments{
+\item{url}{URL of data.}
+}
 \description{
 Base function to process JSON data.
 }

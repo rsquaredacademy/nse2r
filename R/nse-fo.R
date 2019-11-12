@@ -12,7 +12,7 @@
 nse_fo_lotsizes <- function() {
 
   url <- "https://www.nseindia.com/content/fo/fo_mktlots.csv"
-  read.csv(url)
+  utils::read.csv(url)
   
 }
 

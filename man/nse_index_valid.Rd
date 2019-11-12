@@ -6,6 +6,9 @@
 \usage{
 nse_index_valid(index_code)
 }
+\arguments{
+\item{index_code}{Symbol of the index.}
+}
 \description{
 Check if index is valid.
 }
