@@ -67,7 +67,7 @@ nse_stock_valid <- function(stock_code) {
 
   valid_stock <-
     nse_stock_code() %>%
-    extract2(1)
+    magrittr::extract2(1)
 
   toupper(stock_code) %in% valid_stock
 
@@ -108,18 +108,26 @@ nse_stock_top_losers <- function() {
 #'
 nse_stock_quote <- function(stock_code) {
 
-  # check stock code
-
   base_url <- "https://www.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp"
 
-  base_url %>%
-    httr::modify_url(query = "symbol=") %>%
-    paste0(toupper(stock_code)) %>%
-    xml2::read_html() %>%
-    rvest::html_nodes("#responseDiv") %>%
-    rvest::html_text() %>%
-    jsonlite::fromJSON() %>%
-    magrittr::use_series(data) %>%
-    as.list()
+  if (nse_stock_valid(stock_code)) {
+
+    base_url %>%
+      httr::modify_url(query = "symbol=") %>%
+      paste0(toupper(stock_code)) %>%
+      xml2::read_html() %>%
+      rvest::html_nodes("#responseDiv") %>%
+      rvest::html_text() %>%
+      jsonlite::fromJSON() %>%
+      magrittr::use_series(data) %>%
+      as.list()
+
+  } else {
+
+    stop("Please check the stock code. \n       Use nse_stock_code() to fetch stock symbol from NSE \n       and nse_stock_valid() to check if stock code is valid. ", call. = FALSE)
+
+  }
+
+  
 
 }
