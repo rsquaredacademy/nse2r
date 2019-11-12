@@ -25,7 +25,7 @@ nse_base <- function(url) {
     )
   } else {
     resp %>%
-      httr::content("text") %>%
+      httr::content("text", encoding = "UTF-8") %>%
       jsonlite::fromJSON() %>%
       magrittr::use_series(data)
   }
