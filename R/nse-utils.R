@@ -6,13 +6,7 @@
 #'
 nse_base <- function(url) {
 
-  online <- pingr::is_online()
-
-  if (online) {
-    resp <- httr::GET(url)
-  } else {
-    stop("Please check your internet connection.", call. = FALSE)
-  }
+  resp <- httr::GET(url)
 
   if (httr::http_error(resp)) {
     stop(

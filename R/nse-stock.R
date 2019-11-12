@@ -67,14 +67,7 @@ nse_stock_year_low <- function() {
 nse_stock_code <- function() {
 
   url <- "http://www.nseindia.com/content/equities/EQUITY_L.csv"
-
-  online <- pingr::is_online()
-
-  if (online) {
-    read.csv(url)[, 1:2]
-  } else {
-    stop("Please check your internet connection.", call. = FALSE)
-  }
+  read.csv(url)[, 1:2]
 
 }
 

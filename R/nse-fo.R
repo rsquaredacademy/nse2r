@@ -12,15 +12,8 @@
 nse_fo_lotsizes <- function() {
 
   url <- "https://www.nseindia.com/content/fo/fo_mktlots.csv"
-
-  online <- pingr::is_online()
-
-  if (online) {
-    read.csv(url)
-  } else {
-    stop("Please check your internet connection.", call. = FALSE)
-  }
-
+  read.csv(url)
+  
 }
 
 #' NSE top F & O gainers

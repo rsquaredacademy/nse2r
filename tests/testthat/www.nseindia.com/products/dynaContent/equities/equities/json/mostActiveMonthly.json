@@ -1,0 +1,100 @@
+{
+    "data": [
+        {
+            "security": "Yes Bank Limited",
+            "sharetotal": "4.73",
+            "trdQty": "74406",
+            "nooftrades": "13096866",
+            "avgdailyturn": "1779",
+            "turnover": "35577"
+        },
+        {
+            "security": "State Bank Of India",
+            "sharetotal": "3.59",
+            "trdQty": "10008",
+            "nooftrades": "6338506",
+            "avgdailyturn": "1352",
+            "turnover": "27045"
+        },
+        {
+            "security": "Infosys Limited",
+            "sharetotal": "3.54",
+            "trdQty": "3830",
+            "nooftrades": "6962011",
+            "avgdailyturn": "1333",
+            "turnover": "26663"
+        },
+        {
+            "security": "Reliance Industries Limited",
+            "sharetotal": "3.03",
+            "trdQty": "1643",
+            "nooftrades": "4045200",
+            "avgdailyturn": "1140",
+            "turnover": "22804"
+        },
+        {
+            "security": "Indiabulls Hsg Fin Limited",
+            "sharetotal": "2.98",
+            "trdQty": "10506",
+            "nooftrades": "10458041",
+            "avgdailyturn": "1121",
+            "turnover": "22424"
+        },
+        {
+            "security": "ICICI Bank Limited",
+            "sharetotal": "2.64",
+            "trdQty": "4474",
+            "nooftrades": "4052944",
+            "avgdailyturn": "995",
+            "turnover": "19893"
+        },
+        {
+            "security": "Axis Bank Limited",
+            "sharetotal": "2.38",
+            "trdQty": "2595",
+            "nooftrades": "3254378",
+            "avgdailyturn": "897",
+            "turnover": "17947"
+        },
+        {
+            "security": "HDFC Bank Limited",
+            "sharetotal": "2.23",
+            "trdQty": "1372",
+            "nooftrades": "3587458",
+            "avgdailyturn": "841",
+            "turnover": "16823"
+        },
+        {
+            "security": "Indusind Bank Limited",
+            "sharetotal": "2.23",
+            "trdQty": "1312",
+            "nooftrades": "3544497",
+            "avgdailyturn": "840",
+            "turnover": "16807"
+        },
+        {
+            "security": "Tata Motors Limited",
+            "sharetotal": "2.18",
+            "trdQty": "11681",
+            "nooftrades": "4400657",
+            "avgdailyturn": "821",
+            "turnover": "16427"
+        },
+        {
+            "security": "TOTAL of Top Ten securities",
+            "sharetotal": "29.54",
+            "trdQty": "121827",
+            "nooftrades": "59740558",
+            "avgdailyturn": "11120",
+            "turnover": "222410"
+        },
+        {
+            "security": "TOTAL",
+            "sharetotal": "100.00",
+            "trdQty": "408051",
+            "nooftrades": "258720343",
+            "avgdailyturn": "37647",
+            "turnover": "752931"
+        }
+    ]
+}

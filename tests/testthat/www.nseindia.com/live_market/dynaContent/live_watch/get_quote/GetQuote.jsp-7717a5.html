@@ -1,0 +1,1635 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>NSE - National Stock Exchange of India Ltd.</title>
+
+<link href="/common/css/style.css" rel="stylesheet" type="text/css" />
+<!--[if IE 8]>
+<link href="/common/css/ie8.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 7]>
+<link href="/common/css/ie7.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 6]>
+<link href="/common/css/ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script type="text/javascript">
+var page=["livewth_getqut","liveMarket"];
+</script>
+<script type="text/javascript" src="/common/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="/common/js/mainNav.js"></script>
+<script type="text/javascript" src="/common/js/js.js"></script>
+<script type="text/javascript" src="/javaScript/recentQuotes.js"></script>
+<script type="text/javascript" src="/javaScript/cookie_operations.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="/common/images/favicon.ico" />
+
+<script type="text/javascript" src="/javaScript/cm.js"></script>
+<!-- <script type="text/javascript" src="/javaScript/printCm.js"></script> -->
+<!-- <script type="text/javascript" src="/javaScript/companySnapshot.js"></script>  -->
+<script type="text/javascript" src="/javaScript/getQuote.js"></script>
+<!--date util -->
+<script type="text/javascript" src="/live_market/resources/js/date.js"></script>
+
+<link rel="stylesheet" href="/jqueryui/themes/base/jquery.ui.all.css"/>
+<style>
+#historicalData .csv2table-table-td
+{
+	font-size       : 10px     !important;
+	font-family     : Arial,Helvetica,sans-serif		!important;
+	white-space:nowrap;			!important;
+}
+ table.holiday_list {
+    border-left: 1px solid #ACA99F;
+    border-top: 1px solid #ACA99F;
+    font-size: 1.1em;
+    margin-bottom: 11px;
+}
+table.holiday_list tr th {
+    background-color: #F4F0E3;
+    border-bottom: 1px solid #ACA99F;
+    border-right: 1px solid #ACA99F;
+    font-weight: bold;
+    padding: 4px 5px;
+    text-align: center;
+}
+
+table.holiday_list tr td {
+    border-bottom: 1px solid #ACA99F;
+    border-right: 1px solid #ACA99F;
+    padding: 4px 5px;
+    text-align: center;
+}
+</style>
+<script>
+var glb_symbol="";
+//var glb_series="EQ";
+var glb_series="";
+</script>
+<script>
+	$(document).ready(function(){
+		$(".tabContent").hide();
+		$("#tab1Content").show(); //against ftr:4 sonal
+		$("#tab5Content").show();
+		$("#tab9Content").show();
+		$("#tab20Content").show();
+
+		$("#lastPriceYield").hide();
+		$("#previousCloseYield").hide();
+		$("#openYield").hide();
+		$("#dayHighYield").hide();
+		$("#dayLowTextYield").hide();
+		$("#closePriceYield").hide();
+		//SWAP
+		if (window.isDebt)
+		{	
+			$("#tab9Content").hide();
+			$("#tab99Content").show(); 
+			$(".main_content .content ul.stock li").css("height","60");
+			$("#lastPriceYield").hide();// changed to hide to hide YTM
+			$("#previousCloseYield").hide();// changed to hide to hide YTM
+			$("#openYield").hide();// changed to hide to hide YTM
+			$("#dayHighYield").hide();// changed to hide to hide YTM
+			$("#dayLowTextYield").hide();// changed to hide to hide YTM
+			$("#closePriceYield").hide();// changed to hide to hide YTM
+
+		}
+		 $.get("/live_market/dynaContent/live_watch/get_quote/getPEDetails.jsp?symbol="+$("#symbol").text(),function(data){
+			
+		var json=$.parseJSON(data)
+			var peDetails;
+				if(json!=null)
+				{
+					peDetails="<li>Symbol P/E: <span style='font-weight: bold;'>"+json.PE+"</span></li>";
+					peDetails+="<li>Sectoral Index P/E: <span style='font-weight: bold;'>"+json.sectorPE+"</span></li>";
+					peDetails+="<li>Sectoral Index: <span style='font-weight: bold;'>"+json.sector+"</span></li>";
+
+				}
+				$("#pe_details").html(peDetails);
+		 });
+
+		$.get("/homepage/alf_company.json",function(data){
+			var json=eval('('+data+')')
+			var alfDetails;
+				$.each(json,function(symbol,details){
+					if(symbol==$("#symbol").text())
+					{
+						alfDetails="<a href='https://www.nseindia.com/content/equities/NSE_Circular_11062019.pdf' target='_blank'>"+details.remarks+"</a>";
+					}
+				});
+				$("#alf_note").html(alfDetails);
+		 });
+
+
+		}
+	);
+	function openMarketTracker(symbol)
+	{
+	  window.open('/companytracker/cmtracker.jsp?symbol='+symbol+'&cName=cmtracker_nsedef.css', 'win','fullscreen=yes,titlebar=no,scrollbars=no');
+	}
+
+</script>
+</head>
+<body>
+<div id="container">
+	<!--Wrapper Start-->
+	<div id="wrapper">	
+		<!--Header Start-->
+		<!--Header End-->
+		<!--Main Menu Start-->
+		<div id="main_menu"></div>
+		<!--Main Menu End--> 
+	</div>
+	<div class="clear"></div>
+	<!--Wrapper End--> 
+ 
+<script>
+	glb_symbol = 'INFY';
+	glb_series = 'EQ';
+	//alert('glb_symbol'+glb_symbol);
+</script>
+<div id="responseDiv" style="display:none">
+
+
+
+
+
+
+
+
+
+
+
+{"tradedDate":"11NOV2019","data":[{"pricebandupper":"778.95","symbol":"INFY","applicableMargin":"17.35","bcEndDate":"-","totalSellQuantity":"1,690","adhocMargin":"-","companyName":"Infosys Limited","marketType":"N","exDate":"23-OCT-19","bcStartDate":"-","css_status_desc":"Listed","dayHigh":"707.20","basePrice":"708.15","securityVar":"12.35","pricebandlower":"637.35","sellQuantity5":"-","sellQuantity4":"-","sellQuantity3":"-","cm_adj_high_dt":"06-SEP-19","sellQuantity2":"-","dayLow":"698.00","sellQuantity1":"1,690","quantityTraded":"69,51,494","pChange":"-0.71","totalTradedValue":"48,912.80","deliveryToTradedQuantity":"43.88","totalBuyQuantity":"-","averagePrice":"703.63","indexVar":"-","cm_ffm":"2,57,967.80","purpose":"INTERIM DIVIDEND - RS 8 PER SHARE","buyPrice2":"-","secDate":"11-Nov-2019 00:00:00","buyPrice1":"-","high52":"847.00","previousClose":"708.15","ndEndDate":"-","low52":"599.85","buyPrice4":"-","buyPrice3":"-","recordDate":"24-OCT-19","deliveryQuantity":"30,50,177","buyPrice5":"-","priceBand":"No Band","extremeLossMargin":"5.00","cm_adj_low_dt":"26-NOV-18","varMargin":"12.35","sellPrice1":"704.40","sellPrice2":"-","totalTradedVolume":"69,51,494","sellPrice3":"-","sellPrice4":"-","sellPrice5":"-","change":"-5.05","surv_indicator":"-","ndStartDate":"-","buyQuantity4":"-","isExDateFlag":false,"buyQuantity3":"-","buyQuantity2":"-","buyQuantity1":"-","series":"EQ","faceValue":"5.00","buyQuantity5":"-","closePrice":"704.40","open":"698.90","isinCode":"INE009A01021","lastPrice":"703.10"}],"optLink":"\/marketinfo\/sym_map\/symbolMapping.jsp?symbol=INFY&instrument=-&date=-&segmentLink=17&symbolCount=2","otherSeries":["EQ"],"futLink":"\/live_market\/dynaContent\/live_watch\/get_quote\/GetQuoteFO.jsp?underlying=INFY&instrument=FUTSTK&expiry=28NOV2019&type=-&strike=-","lastUpdateTime":"11-NOV-2019 16:00:17"}
+
+
+</div>
+	<!-- Content Big Start -->
+	<div class="content_big">
+		<div class="black_overlay" style="display:none"></div>
+		<div id="wrapper_btm"> 
+			<!-- Main Content Start -->
+			<div class="main_content">
+				<div id="breadcrumb"></div>	
+				<!--LHS Nav Start-->
+				<div class="clear"></div>
+				<div class="lhs_nav" id="subMenu"></div>
+				<div class="content" id="companies">
+					<table>
+					<tr>
+					<td>
+					<h2 style="padding: 0px;">Quote</h2>
+					</td>
+					<td style="width:18px;">&nbsp;</td>
+					<td style="vertical-align:middle; width:400px;">
+					<div class="track" style="width:260px;">
+						<p><span id="LastUpdatedDiv">--</span>
+            			  <input onclick="javascript:getCMOnlineQuoteData('INFY',SERIES_TYPE);" name="" src="/common/images/icon_refresh.gif" type="image" />
+						</p>
+					</div>
+					</td>
+					<td>
+					<!--<div class="rupee_box">All prices in <img src="/common/images/rupee_symbol.gif" alt="" /></div>-->
+					</td>
+					</tr>
+					</table>
+					<div class="hor_line"></div>
+					<div id="messageContract">
+					</div>
+				<!--LHS Nav End-->
+					<div class="bank_info">
+						<div class="left_info">
+						<p class="title"><span id="companyName">-</span></p> <p style="text-align:right;font-size: 1.1em;"><span id="futLink"></span></p>
+							<ul class="series" id="otherSeries">
+									<li class="first">Series:</li>
+			                    	<li><a href="javascript:void(0);" class="sel">EQ</a></li>			                        
+							</ul>
+							<ul>
+								<li>Symbol: <span id="symbol" style="font-weight: bold;">--</span></li>
+								<li>ISIN: <span id="isinCode" style="font-weight: bold;">--</span></li>
+								<!-- Added by Ruchira for WRR 005540-->
+								<li>Status: <span id="statusCode" style="font-weight: bold;">--</span></li>
+								<!-- Added by Abhishek Patil-->
+								<li id="gsm" style="font-weight: bold;"></li>
+								<!--Added for symbol MCX -->
+								<li><span id="noteForMCX" style="font-weight: bold;"></span></li>
+								<span id="series" style="display: none"></span>
+								<!--Start-19Jan2012-Added By Suhas - Market Tracker,Annual Report links for WRR-2057-->
+								<li style="font-weight: bold; float:right;font-size:1.2em;" ><a href="#" onClick="javascript:openMarketTracker('INFY');">Market Tracker</a></li>
+								<!--End-19Jan2012-Added By Suhas - Market Tracker,Annual Report links for WRR-2057-->
+							</ul>
+							<ul id="pe_details"></ul>
+						</div>
+						<!-- Swapnil For Quick Get Quote -->
+						<div id = "new_get_quote" class="about_equities accordian">
+								<h3  style="border: 1px solid #D7D6D7 !important;border-bottom:none; width: 540px !important;  height: 26px;">
+									<span id="companyName"
+									style="
+									border:0px none;
+									cursor: pointer;
+									float: left;
+									font-size:0.99em;
+									font-family: Arial,Helvetica,sans-serif;
+									text-align: justify;">
+									Securities Information
+									</span>
+								</h3>
+								
+								<div class="about_content" style="display:none">
+									<table style="border:1px solid #D7D6D7; height:50px;  font-size:1.1em;">
+										<tr>
+											<td>
+												<table style=" height:40px; width:569px; font-size:1em;">
+														<tr>
+															<th align="left" style="padding:3px 3px 3px 3px;border-bottom:1px solid #D7D6D7;" width="20%">
+															<span style="height:5px;">Series </span>
+															</th>
+															<td align="left" style="padding:3px 3px 3px 3px; border-left:1px solid #D7D6D7;border-bottom:1px solid #D7D6D7;" width="20%">
+															<span id="b1">- </span>
+															</td>
+															<th align="left" style="padding:3px 3px 3px 3px; border-left:1px solid #D7D6D7;border-bottom:1px solid #D7D6D7;" width="20%">
+															<span>Coupon Rate</span>
+															</th>
+															<td align="left" style="padding:3px 3px 3px 3px; border-left:1px solid #D7D6D7;border-bottom:1px solid #D7D6D7;">
+															<span id="d1">-</span>
+															</td>
+														</tr>
+														<tr>
+															<th align="left" style="padding:3px 3px 3px 3px;border-bottom:1px solid #D7D6D7;" width="20%">
+															<span style="height:5px;">ISIN </span>
+															</th>
+															<td align="left" style="padding:3px 3px 3px 3px; border-left:1px solid #D7D6D7;border-bottom:1px solid #D7D6D7;" width="20%">
+															<span id="b2">- </span>
+															</td>
+
+															<th align="left" style="padding:3px 3px 3px 3px; border-left:1px solid #D7D6D7;border-bottom:1px solid #D7D6D7;" width="20%">
+															<span>Issue Description</span>
+															</th>
+
+															<td align="left" style="padding:3px 3px 3px 3px; border-left:1px solid #D7D6D7;border-bottom:1px solid #D7D6D7;">
+															<span id="d2">-</span>
+															</td>
+														</tr>
+														<tr>
+															<th align="left" style="padding:3px 3px 3px 3px;border-bottom:1px solid #D7D6D7;" width="20%">
+															<span style="height:5px;">Issue date </span>
+															</th>
+
+															<td align="left" style="padding:3px 3px 3px 3px; border-left:1px solid #D7D6D7;border-bottom:1px solid #D7D6D7;" width="20%">
+															<span id="b3">-</span>
+															</td>
+
+															<th align="left" style="padding:3px 3px 3px 3px; border-left:1px solid #D7D6D7;border-bottom:1px solid #D7D6D7;" width="20%">
+															<span>Maturity Date</span>
+															</th>
+
+															<td align="left" style="padding:3px 3px 3px 3px; border-left:1px solid #D7D6D7;border-bottom:1px solid #D7D6D7;">
+															<span id="d3">-</span>
+															</td>
+														</tr>
+														<tr>
+															<th align="left" style="padding:3px 3px 3px 3px;border-bottom:1px solid #D7D6D7;" width="20%">
+															<span style="height:5px;">Face value (Rs.) </span>
+															</th>
+
+															<td align="left" align="right" style="padding:3px 3px 3px 3px; border-left:1px solid #D7D6D7;border-bottom:1px solid #D7D6D7;" width="20%">
+															<span id="b4">-</span>
+															</td>
+
+															<th align="left" style="padding:3px 3px 3px 3px; border-left:1px solid #D7D6D7;border-bottom:1px solid #D7D6D7;" width="20%" >
+															<span>Bond Type</span>
+															</th>
+
+															<td align="left" style="padding:3px 3px 3px 3px; border-left:1px solid #D7D6D7;border-bottom:1px solid #D7D6D7;">
+															<span id="d4">-</span>
+															</td>
+														</tr>
+														<tr>
+															<th align="left" style="padding:3px 3px 3px 3px;border-bottom:1px solid #D7D6D7;" width="20%">
+															<span style="height:5px;">Next IP Date </span>
+															</th>
+
+															<td align="left" style="padding:3px 3px 3px 3px; border-left:1px solid #D7D6D7;border-bottom:1px solid #D7D6D7;" width="20%">
+															<span id="b5">-</span>
+															</td>
+
+															<th align="left" style="padding:3px 3px 3px 3px; border-left:1px solid #D7D6D7;border-bottom:1px solid #D7D6D7;" width="20%">
+															<span>Credit Rating</span>
+															</th>
+
+															<td align="left" style="padding:3px 3px 3px 3px; border-left:1px solid #D7D6D7;border-bottom:1px solid #D7D6D7;">
+															<span id="d5">-</span>
+															</td>
+														</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</div>
+						</div>
+
+
+
+						<!-- End Quick Get Quote -->
+
+
+						<div class="right_info"><!--<a href="#" class="logo_link">
+						<img src='/images/logo/INFY_logo.gif'+ alt="CompanyLogo" /></a>--></div>
+					</div>
+					<ul class="stock">
+						<li class="active"><span id="lastPrice">--</span>&nbsp;&nbsp;<span id="CAToday" ></span><br />
+							<span class="up" id="change">--</span>
+							<!-- Changed By Suhas:25/3/11-for FTR:552 changes in price Font replace <i> </i> tag -->
+							<a id="pChange">--</a>
+							<!-- SWAP For Yield -->
+							<div style="font-size:0.8em;font-weight:bold;color:black;" id="lastPriceYield">YTM:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="width:12px"; src="/images/loading.gif"></img></div>
+							</li>
+						<li><span>Pr. Close</span><br />
+							<div id="previousClose">--</div>
+							<!-- SWAP For Yield -->
+							<div style="font-size:0.8em;font-weight:bold;text-align:justify;" id="previousCloseYield"><img style="width:12px"; src="/images/loading.gif"></img></div>
+							</li>
+							
+						<li><span>Open</span><br />
+							<div id="open">--</div>
+							<!-- SWAP For Yield -->
+							<div style="font-size:0.8em;font-weight:bold;text-align:justify;" id="openYield"><img style="width:12px"; src="/images/loading.gif"></img></div>
+							</li>
+						<!-- Start : Mahendra : 10Aug2011 : Adding high low symbol -->
+						<li><span id="dayHighText">High</span><br />
+						<!-- End : Mahendra : 10Aug2011 : Adding high low symbol -->
+							<div id="dayHigh">--</div>
+							<!-- SWAP For Yield -->
+							<div style="font-size:0.8em;font-weight:bold;text-align:justify;" id="dayHighYield"><img style="width:12px"; src="/images/loading.gif"></img></div>
+							</li>
+						<!-- Start : Mahendra : 10Aug2011 : Adding high low symbol -->
+						<li><span id="dayLowText">Low</span><br />
+						<!-- End : Mahendra : 10Aug2011 : Adding high low symbol -->
+							<div id="dayLow">--</div>
+							<!-- SWAP For Yield -->
+							<div style="font-size:0.8em;font-weight:bold;text-align:justify;" id="dayLowTextYield"><img style="width:12px"; src="/images/loading.gif"></img></div>					
+							</li>
+				                 <li class="last"><span>Close*</span><br />
+							<div id="closePrice">--</div>
+							<!-- SWAP For Yield -->
+							<div style="font-size:0.8em;font-weight:bold;text-align:justify;" id="closePriceYield"><img style="width:12px"; src="/images/loading.gif"></img></div>
+							</li>
+					</ul>
+					<div id="tabs_main_content">
+						<ul class="tabs tab">
+							<li class="sel"><a id="tab5" href="javascript:getCMOnlineQuoteData(glb_symbol,glb_series);">Trade Snapshot</a><img id="fundamentalLoading" style="display:none"/></li>
+							<li><a id="tab6" href="javascript:loadCompanySnapshot(glb_symbol);">Company Information</a><img id="companyLoading" style="display:none"/></li>
+							<li><a id="tab7" href="javascript:getPeerData();">Peer Comparison</a><img id="peerLoading" style="display:none"/></li>
+							<li><a id="tab8" href="#" class="last">Historical Data</a><img id="historyLoading" style="display:none"/></li>
+						</ul>
+						<div id="tab5Content" class="tabContent">
+							<div class="details">
+								<div class="leftTableData"  id="fundamentals_tbl">
+									<ul>
+										<li><a></a><span><a href="javascript:getQuotePrint()">Print</a></span></li>
+										<li><a style="color: #000000;">VWAP</a> <span id="vwap"></span></li>
+										<li id="face"><a style="color: #000000;">Face Value</a> <span id="faceValue">--</span></li>
+										<li id ="Unit" ><a style="color: #000000;">Traded Volume (Units)</a> <span id="tradedUnit"></span></li>
+										<li id ="shares" ><a style="color: #000000;">Traded Volume (shares)</a> <span id="tradedVolume"></span></li>
+										<li><a style="color: #000000;">Traded Value (lacs)</a><span id="tradedValue"></span></li>
+										<!--Change Start by Abhijit K for WRR: 2722 on 23 Aug 2012-->
+										
+										<li><a style="color: #000000;">Free Float Market Cap(Crs)</a> <span id="ffmid">--</span></li>
+										
+										<!--Change End by Abhijit K for WRR: 2722 on 23 Aug 2012-->
+										<li><a style="color: #000000;">52 week high</a>
+										<span id="high52">--</span><br><span id="mock_cm_adj_high_dt"></span></li>
+										<li><a style="color: #000000;">52 week low</a>
+										<span id="low52"></span><br><span id="mock_cm_adj_low_dt"></span></li>
+										<!--Start : Code by Mahendra : 04Oct2011 -->
+										
+										<!-- Commented by ruchira for 52w HL on 11/28/2014-->
+									<!-- 	<li><a style="color: #000000;">Adjusted 52 week high&nbsp;</a> 
+										<span id="cm_adj_high"></span><br><span id="cm_adj_high_dt"></span>
+										</li>
+										<li><a style="color: #000000;">Adjusted 52 week low&nbsp;</a>
+										<span id="cm_adj_low"></span><br><span id="cm_adj_low_dt"></span>				
+										</li> -->
+										
+										<!--End : Code by Mahendra : 04Oct2011 -->
+	<!-- 	Start : Deepak : 05Oct2011 : for price band changes -->
+										 <li ><a style="color: #000000;">Lower Price Band</a><span id="lowpriceBand">--</span></li>
+                                        <li ><a style="color: #000000;">Upper Price Band</a><span id="upperpriceBand">--</span></li>
+										<li class="last" ><a style='color: #000000;'>Adjusted Price</a><span id="basePrice">--</span></li>
+								<!-- 	END : Deepak : 05Oct2011 : for price band changes -->
+									</ul>
+
+								</div>
+								<div class="rightTableData">
+									<div id="tabs_table">
+										<ul class="tab">
+											<li><a  id="tab9" href="javascript:void(0)" class="sel">Order <br /> Book</a></li>
+											<li><a  id="tab10" href="javascript:loadIntradayChart();" class="nopadd">Intra-day <br />Chart</a></li>
+											<li><a  id="tab11" href="javascript:loadIntradayIndexChart();" class="nopadd">Stock V/s Index Chart</a></li>
+											<li class="last"><a  id="tab12" href="javascript:loadQuarterlyChart();">Quarterly Charts</a></li>
+										</ul>
+										<div id="tab9Content" class="tabContent">
+											<table border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<th>Buy Qty.</th>
+													<th>Buy Price</th>
+													<th>Sell Price</th>
+													<th>Sell Qty.</th>
+												</tr>
+												<script>
+													for(i=1;i<=5;i++){
+														document.write('<tr '+((i%2!=0)?'class="alt"':'')+'>'+
+													'<td class="'+((i%2!=0)?'white ':'')+'number"><span id="buyQuantity'+i+'"></span></td>'+
+													'<td class="'+((i%2!=0)?'white ':'')+'number"><span id="buyPrice'+i+'"></span></td>'+
+													'<td class="'+((i%2!=0)?'white ':'')+'number"><span id="sellPrice'+i+'"></span></td>'+
+													'<td class="'+((i%2!=0)?'white ':'')+'number"><span id="sellQuantity'+i+'"></span></td>'+
+												'</tr>');
+													}
+												</script>												
+												<tr >
+												  <td class="total number"><span id="totalBuyQuantity"></span></td>
+												  <td colspan="2" class="total " align="center"><b>Total Quantity</b></td>
+												  <td class="total number"><span id="totalSellQuantity"></span></td>
+												</tr>
+										 </table>
+										</div>
+										<div id="tab99Content" class="tabContent">
+											<table border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<th colspan="2">Buy</th>
+													<th colspan="2">Sell</th>
+												</tr>
+												<tr>
+													<th>Qty</th>
+													<!-- <th>YTM</th> to hide YTM-->
+													<th>Price</th>
+													<th>Price</th>
+													<!-- <th>YTM</th> to hide YTM-->
+													<th>Qty</th>
+												</tr>
+												<script>
+													for(i=1;i<=5;i++){
+														document.write('<tr '+((i%2!=0)?'class="alt"':'')+'>'+
+													'<td class="'+((i%2!=0)?'white ':'')+'number"><span id="buyQuantityD'+i+'"></span></td>'+
+													/*'<td class="'+((i%2!=0)?'white ':'')+'number"><span id="buyYieldD'+i+'"><img style="width:12px"; src="/images/loading.gif"></img></span></td>'+*/
+													'<td class="'+((i%2!=0)?'white ':'')+'number"><span id="buyPriceD'+i+'"></span></td>'+
+													'<td class="'+((i%2!=0)?'white ':'')+'number"><span id="sellPriceD'+i+'"></span></td>'+
+													/*'<td class="'+((i%2!=0)?'white ':'')+'number"><span id="sellYieldD'+i+'"><img style="width:12px"; src="/images/loading.gif"></img></span></td>'+*/
+													'<td class="'+((i%2!=0)?'white ':'')+'number"><span id="sellQuantityD'+i+'"></span></td>'+
+												'</tr>');
+													}
+
+
+
+												
+												</script>												
+												<tr >
+												  <td class="total number"><span id="totalBuyQuantityD"></span></td>
+												  <!-- <td class="total number"></td> -->
+												  <td colspan="2" class="total " align="center"><b>Total Quantity</b></td>
+												  <!-- <td class="total number"></td> -->
+												  <td class="total number"><span id="totalSellQuantityD"></span></td>
+												</tr>
+										 </table>
+										</div>
+										<div id="tab10Content" class="tabContent" style="display:none">
+											<p id="intradayChart">
+											</p>											
+											<p class="link">
+										
+											<a id="detailedurl"  target="_new">Detailed Chart</a></p>
+
+							
+										</div>
+										
+										<script>
+
+
+										function loadIntradayChart(){
+
+										var intraChart=' <iframe style="" frameborder=0 vspace=0 hspace=0 marginwidth=0 marginheight=0 scrolling=no id=LyrIntrumentSelector name=LyrIntrumentSelector src="/charts/webtame/webchart.jsp?CDSymbol=INFY&Segment=CM&Series='+SERIES_TYPE+'&CDExpiryMonth=&FOExpiryMonth=&IRFExpiryMonth=&CDDate1=&CDDate2=&PeriodType=2&Periodicity=1&Template=tame_intraday_getQuote_closing_redgreen.jsp" width=100% height=100% ></iframe>';
+
+											$('#intradayChart').html(intraChart);
+											var intraUrl ='/charts/webtame/webchart.jsp?CDSymbol=INFY&Segment=CM&Series='+SERIES_TYPE+'&CDExpiryMonth=&FOExpiryMonth=&IRFExpiryMonth=&CDDate1=&CDDate2=&PeriodType=2&Periodicity=1&Template=tame_intraday_getQuote_closing_redgreen.jsp';
+											$("#detailedurl").attr("href", intraUrl);
+										}
+										</script>
+										<div id="tab11Content" class="tabContent" style="display:none">
+										<p id="intradayIndexChart"></p>
+										<p class="link">
+										<a id="detailedIndexCharturl"  target="_new">Detailed Chart</a></p>
+										</div>
+
+										<script>
+											
+											function loadIntradayIndexChart(){
+
+												var intraIndexChart='<iframe style="" frameborder=0 vspace=0 hspace=0 marginwidth=0 marginheight=0 scrolling=no id=LyrIntrumentSelector name=LyrIntrumentSelector src="/charts/webtame/webchart.jsp?CDSymbol=INFY&Segment=CM&Series='+SERIES_TYPE+'&CDExpiryMonth=&FOExpiryMonth=&IRFExpiryMonth=&CDDate1=&CDDate2=&PeriodType=2&Periodicity=1&Template=tame_Intrday_ChartWithIndex.jsp" width=100% height=100% ></iframe>';
+
+											$('#intradayIndexChart').html(intraIndexChart);
+
+											var indexUrl ='/charts/webtame/webchart.jsp?CDSymbol=INFY&Segment=CM&Series='+SERIES_TYPE+'&CDExpiryMonth=&FOExpiryMonth=&IRFExpiryMonth=&CDDate1=&CDDate2=&PeriodType=2&Periodicity=1&Template=tame_Intrday_ChartWithIndex.jsp';
+											
+											$("#detailedIndexCharturl").attr("href", indexUrl);
+
+										}
+										</script>
+										<div id="tab12Content" class="tabContent" style="display:none">
+										<p id="quarterlyChart"></p>
+
+										<p class="link">
+										<a id="detailedQuarCharturl"  target="_new">Detailed Chart</a></p>
+
+										</div>
+									</div>
+									<script>
+								function loadQuarterlyChart(){
+											var quaChart='<iframe style="" frameborder=0 vspace=0 hspace=0 marginwidth=0 marginheight=0 scrolling=no id=LyrIntrumentSelector name=LyrIntrumentSelector src="/charts/webtame/webchart.jsp?CDSymbol=INFY&Segment=CM&Series='+SERIES_TYPE+'&CDExpiryMonth=&FOExpiryMonth=&IRFExpiryMonth=&CDDate1=&CDDate2=&PeriodType=1&Periodicity=1&Template=tame_Historical_Quarterly.jsp" width=100% height=100% ></iframe>';
+
+											$('#quarterlyChart').html(quaChart);
+
+											var quarterUrl='/charts/webtame/webchart.jsp?CDSymbol=INFY&Segment=CM&Series='+SERIES_TYPE+'&CDExpiryMonth=&FOExpiryMonth=&IRFExpiryMonth=&CDDate1=&CDDate2=&PeriodType=1&Periodicity=1&Template=tame_Historical_Quarterly.jsp';
+
+											$("#detailedQuarCharturl").attr("href", quarterUrl);
+										}
+									</script>
+									<div id="show-hide" class="show_hide">
+										<h5>Security-wise Delivery Position (<span id="SecwiseDT"></span>)</h5>
+										<div class="show_hide_content">
+											<table border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td>Quantity Traded</td>
+													<td class="number"><span id="quantityTraded"></span></td>
+												</tr>
+												<tr>
+													<td>Deliverable Quantity (gross across client level)</td>
+													<td class="number"><span id="deliveryQuantity"></span></td>
+												</tr>
+												<tr>
+													<td>% of Deliverable Quantity to Traded Quantity</td>
+													<td class="number"><span id="deliveryToTradedQuantity"></span> %</td>
+												</tr>					
+											</table>
+										</div>
+										<h5>Value at Risk (VaR in %)</h5>
+										<div class="show_hide_content">
+											<table border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td>Security VaR</td>
+													<td class="number"><span id="securityVar">-</span></td>
+												</tr>
+												<tr>
+													<td>Index VaR</td>
+													<td class="number"><span id="indexVar">-</span></td>
+												</tr>
+												<tr>
+													<td>VAR Margin</td>
+													<td class="number"><span id="varMargin">-</span></td>
+												</tr>
+												<tr>
+													<td>Extreme Loss Rate</td>
+													<td class="number"><span id="extremeLossMargin">-</span></td>
+												</tr>
+												<tr>
+													<td>Adhoc Margin</td>
+													<td class="number"><span id="adhocMargin">-</span></td>
+												</tr>
+												<tr>
+													<td>Applicable Margin Rate</td>
+													<td class="number"><span id="applicableMargin">-</span></td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="note">
+									<p class="title">Note:<br><b><span id='footerNoteForMCX' style="color:#800000;"></b></span></p>
+									<ul>
+									    <!--<li>VWAP is Volume Weighted Average Price.</li>
+										<li>% change is calculated w.r.t. open price on Ex-date or on account of security moving from/to trade for trade segment.</li>
+										<li>52 week high &amp; 52 week low prices are based on the trade date &amp; not adjusted with corporate action.</li>
+										-->
+										<!-- <li>- VWAP is Volume Weighted Average Price. </li>
+										<li>- % change is calculated with respect to adjusted price on ex-date for Dividend, Bonus, Rights & Face Value Split.</li>
+										<li>- 52 week high &amp; 52 week low prices are adjusted for Bonus, Split & Rights Corporate actions.</li> DEVESH-->
+										<!--Change Start by Abhijit K for WRR: 2722 on 23 Aug 2012-->
+										<!-- <li>- Free Float Market Capitalisation (FFM) is updated at the end of business hours.</li>
+										<li>- YTM is Yield to Maturity. </li> DEVESH-->
+										<!--Change End by Abhijit K for WRR: 2722 on 23 Aug 2012-->
+										<!-- <li>- The upper and lower price bands, for scrips on which derivative products are available or scrips included<br/> in indices on which derivative products are available, are on the basis of dynamic price band of 10%.  In the event of a market trend in either direction, the dynamic price bands may be relaxed during the day in <br/> co-ordination with other Exchange.</li> Devesh-->
+										<li><span id='NoteForIV'></span></li>
+										<li><span id='alf_note'></span></li>
+										<li>Close price will be updated after 18.15  hrs on account of joint  press release dated February 09, 2018 (<a href="https://www.nseindia.com/content/press/PR_cc_21022018.pdf" target="_blank">joint  press release</a>)
+										</li>
+										<li> On Ex-Date, the % change is calculated with respect to Adjusted price (adjustment with respect to Corporate Actions such as Dividend, Bonus, Rights & Face Value Split)</li>
+
+										<li>52 week high &amp; 52 week low prices are adjusted for Bonus, Split & Rights Corporate actions.</li>
+										<li>The upper and lower price bands, for scrips on which derivative products are available or scrips included in indices on which derivative products are available, are on the basis of dynamic price band of 10%.  In the event of a market trend in either direction, the dynamic price bands may be relaxed during the day in co-ordination with other Exchange.</li>
+										<li>
+										For securities  that undergo call auction in special pre-open session  - % change is calculated with respect to equilibrium price determined in the session.  (in case of New/IPO Listings; Re-Listing; Corporate Action; Surveillance action.)
+										</li>
+										<li>
+										Sectoral Index and P/E are for reference and does not necessarily imply that the security is a constituent of the Index.
+										</li>
+										<li></li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id="tab6Content" class="tabContent">
+					<!--Start-19Jan2012-Added By Suhas - Market Tracker,Annual Report links for WRR-2057-->
+						<div style ="font-size:1.2em; float:left;width:90px;height:25px;">
+						 <p><a href="#" onClick="javascript:openMarketTracker('INFY');">Market Tracker</a></p></div>|
+						 <div style="font-size:1.2em;float:right;width:440px;height:25px;">
+						 <p><script>document.write('<a href="/corporates/corporateHome.html?id=shldinfo_annual_reports&radio_btn=company&param='+glb_symbol+'" target="new">');</script>Annual Report</a></p> 
+						</div>
+					<!--End -19Jan2012 -Added By Suhas - Market Tracker,Annual Report links for WRR-2057-->
+						<!-- Done Upto Here... -->
+						<div class="details company_snap">
+	<div class="leftTableData" id="fundamentals_tbl">
+		<h3>Corporate Announcements</h3>
+		<div class="comp_snap accordian">
+			<p class="title"><span>Description</span><span class="date">Date</span></p>
+			<h3><span id=ca11>--</span><span class="date" id=ca12>--</span></h3>
+			<div id=ca13>--</div>
+			<h3 class="alt"><span id=ca21>--</span><span class="date" id=ca22>--</span></h3>
+			<div class="alt" id=ca23>--</div>
+			<h3><span id=ca31>--</span><span class="date" id=ca32>--</span></h3>
+			<div id=ca33>--</div>
+			<h3 class="alt"><span id=ca41>--</span><span class="date" id=ca42>--</span></h3>
+			<div class="alt" id=ca43>--</div>
+			<h3><span id=ca51>--</span><span class="date" id=ca52>--</span></h3>
+			<div id=ca53>--</div>
+			<p><script>document.write('<a href="/corporates/corporateHome.html?id=eqCorpAnnouncements&radio_btn=company&param='+escape(glb_symbol)+'" target="_blank">');</script>View all</a></p>
+		</div>
+		<h3>Board Meetings</h3>
+		<div class="comp_snap accordian">
+			<p class="title"><span>Purpose</span><span class="date">BM Date</span></p>
+			<h3><span id=bm11>--</span><span class="date" id=bm12>--</span></h3>
+			<div id=bm13>--</div>
+			<h3 class="alt"><span id=bm21>--</span><span class="date" id=bm22>--</span></h3>
+			<div class="alt" id=bm23>--</div>
+			<h3><span id=bm31>--</span><span class="date" id=bm32>--</span></h3>
+			<div id=bm33>--</div>
+			<h3 class="alt"><span id=bm41>--</span><span class="date" id=bm42>--</span></h3>
+			<div class="alt" id=bm43>--</div>
+			<h3><span id=bm51>--</span><span class="date" id=bm52>--</span></h3>
+			<div id=bm53>--</div>
+			<p><script>document.write('<a href="/corporates/corporateHome.html?id=eqBoardMeetings&radio_btn=company&param='+escape(glb_symbol)+'" target="_blank">');</script>View all</a></p>
+		</div>
+	</div>
+	<div class="rightTableData">
+		<!-- <p class="date">Date of Listing: <span id="listingDate"></span></p> -->
+		<div id="tabs_table">
+			<ul class="tab" style="width:254px">
+				<li><a  id="tab20" href="javascript:void(0);loadFinincialResults(glb_symbol);" class="sel">Financial Result</a></li>
+				<li><a  id="tab21" href="javascript:void(0);loadShareholdingPattern(glb_symbol);">Shareholding Pattern</a></li>
+			</ul>
+			<div id="tab20Content" class="tabContent" style="display:block; width:230px">
+			</div>
+			<div id="tab21Content" class="tabContent" style="display:block; width:230px">
+			</div>
+		</div>
+		<h3>Corporate Actions</h3>
+		<div class="comp_snap">
+			<p class="title"><span>Purpose</span><span class="date">Ex-Date</span></p>
+			<h3><span id=cac11>--</span><span class="date" id=cac12>--</span></h3>
+			<div>--</div>
+			<h3 class="alt"><span id=cac21>--</span><span class="date" id=cac22>--</span></h3>
+			<div class="alt">--</div>
+			<h3><span id=cac31>--</span><span class="date" id=cac32>--</span></h3>
+			<div>--</div>
+			<h3 class="alt"><span id=cac41>--</span><span class="date" id=cac42>--</span></h3>
+			<div class="alt">--</div>
+			<h3><span id=cac51>--</span><span class="date" id=cac52>--</span></h3>
+			<div>--</div>
+			<p><script>document.write('<a href="/corporates/corporateHome.html?id=eqCorpActions&radio_btn=company&param='+escape(glb_symbol)+'" target="_blank">');</script>View all</a></p>
+		</div>
+		</div>
+
+		<div class="comp_cont accordian">
+				<h3><span>Promoter Pledge Details</span></h3>
+				<div>
+					<ul id="pledgeDisclosures">
+					</ul>
+					<p style="font-size:13px;">A - % of shareholding of promoter and promoter group to total shareholding</p></BR>
+					<p style="font-size:13px;">B - % of shares pledged or otherwise encumbered by promoter and promoter group to total shareholding</p></BR>
+					<p style="font-size:13px;">C - % of shares pledged or otherwise encumbered by promoter and promoter group to total shareholding of promoter and promoter group</p></BR>
+				</div>
+		</div>
+
+		<div class="comp_cont accordian">
+				<h3><span>Company Contact Details</span></h3>
+				<div>
+					<ul id="address">
+					</ul>
+				</div>
+			</div>
+		</div>
+						</div>
+						<div id="tab7Content" class="tabContent peer_compare" >						
+							
+<div class="compare_list accordian">
+	<h3><span>Compare other peers</span></h3>
+	<div  class="other_peers" style="display:none">
+		<form name="peerForm" onsubmit="return false;">	
+			<input id="peerSymbol" type="hidden" name="peerSymbol" value="infy">
+	  <span id=peercompaniesDiv>	
+		<!--<ul>
+			<li>
+				<input name="allahabad" type="checkbox" value="" />
+				<p>Allahabad Bank</p></li>
+			<li>
+				<input name="allahabad" type="checkbox" value="" />
+				<p>Andhra Bank</p></li>			
+		</ul> -->
+	</span>
+		</form> 
+	<script>
+		getPeerCompanies('infy');
+	</script>
+		<div class="buttons">
+                             <input name="" type="image" src="/live_market/resources/images/btn_compare.gif" alt="Compare" onclick="getPeerData();"/>
+		<a href="javascript:void(0)"><img src="/live_market/resources/images/btn_close.gif" alt="Close" /></a>
+                             </div>
+                             <div class="clear"></div>
+	</div>
+</div>
+<div class="comapre_comp">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                     <tr>
+                       <th width="24%">Symbol</th>                                               
+					
+							<th width="16%"><span id="symbol0"></span></th>
+					
+							<th width="14%"><span id="symbol1"></span></th>
+					
+							<th width="14%"><span id="symbol2"></span></th>
+					
+							<th width="18%"><span id="symbol3"></span></th>
+					
+							<th width="14%"><span id="symbol4"></span></th>
+					
+                     </tr>
+                   </table>
+           </td>
+		</tr>
+		<tr>
+			<td>
+				<div class="accordian">
+                	<span class="title">Fundamentals</span>
+					<div>
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<!--	<tr>
+								<th width="24%">Company Name</th>
+								
+									<th width="16%"><span id="name0"></span></th>
+								
+									<th width="14%"><span id="name1"></span></th>
+								
+									<th width="14%"><span id="name2"></span></th>
+								
+									<th width="18%"><span id="name3"></span></th>
+								
+									<th width="14%"><span id="name4"></span></th>
+								
+							</tr> -->
+							<tr class="alt">
+								<td width="24%">Face Value</td>
+								
+									<td width="16%" class="number"><span id="faceValue0"></span></td>
+								
+									<td width="14%" class="number"><span id="faceValue1"></span></td>
+								
+									<td width="14%" class="number"><span id="faceValue2"></span></td>
+								
+									<td width="18%" class="number"><span id="faceValue3"></span></td>
+								
+									<td width="14%" class="number"><span id="faceValue4"></span></td>
+								
+							</tr>
+							<tr>
+								<td>LTP</td>															
+								
+									<td class="number"><span id="lastPrice0"></span></td>
+								
+									<td class="number"><span id="lastPrice1"></span></td>
+								
+									<td class="number"><span id="lastPrice2"></span></td>
+								
+									<td class="number"><span id="lastPrice3"></span></td>
+								
+									<td class="number"><span id="lastPrice4"></span></td>
+								
+							</tr>
+							<tr class="alt">
+								<td>% change</td>
+								
+									<td class="number"><span id="pChange0"></span></td>
+								
+									<td class="number"><span id="pChange1"></span></td>
+								
+									<td class="number"><span id="pChange2"></span></td>
+								
+									<td class="number"><span id="pChange3"></span></td>
+								
+									<td class="number"><span id="pChange4"></span></td>
+									
+							</tr>
+							<tr>
+								<td>Traded Value</td>
+								
+									<td class="number"><span id="tradedValue0"></span></td>
+								
+									<td class="number"><span id="tradedValue1"></span></td>
+								
+									<td class="number"><span id="tradedValue2"></span></td>
+								
+									<td class="number"><span id="tradedValue3"></span></td>
+								
+									<td class="number"><span id="tradedValue4"></span></td>
+								
+							</tr>
+							<tr class="alt">
+								<td>Traded Volume</td>
+								
+									<td class="number"><span id="tradedVolume0"></span></td>
+								
+									<td class="number"><span id="tradedVolume1"></span></td>
+								
+									<td class="number"><span id="tradedVolume2"></span></td>
+								
+									<td class="number"><span id="tradedVolume3"></span></td>
+								
+									<td class="number"><span id="tradedVolume4"></span></td>
+								
+							</tr>
+                             <!-- commented cause data is not available <tr>
+								<td>Market Capitalization </td>
+								
+									<td class="number"><span id="marketCapitalization0"></span></td>
+								
+									<td class="number"><span id="marketCapitalization1"></span></td>
+								
+									<td class="number"><span id="marketCapitalization2"></span></td>
+								
+									<td class="number"><span id="marketCapitalization3"></span></td>
+								
+									<td class="number"><span id="marketCapitalization4"></span></td>
+								
+							</tr> -->
+                                                 <tr class="alt">
+								<td>VWAP</td>
+								
+									<td class="number"><span id="vwap0"></span></td>
+								
+									<td class="number"><span id="vwap1"></span></td>
+								
+									<td class="number"><span id="vwap2"></span></td>
+								
+									<td class="number"><span id="vwap3"></span></td>
+								
+									<td class="number"><span id="vwap4"></span></td>
+								
+							</tr>
+                           <!-- commented cause data is not available <tr>
+								<td>BeTa</td>
+								
+									<td class="number"><span id="beta0"></span></td>
+								
+									<td class="number"><span id="beta1"></span></td>
+								
+									<td class="number"><span id="beta2"></span></td>
+								
+									<td class="number"><span id="beta3"></span></td>
+								
+									<td class="number"><span id="beta4"></span></td>
+								
+						</tr> -->
+						</table>
+					</div>
+				</div>
+			</td>
+		</tr>
+        <tr>
+			<td>
+				<div class="accordian">
+					<h3><span>Ratio Analysis</span></h3>
+					<div style="display:none">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<!--<tr>
+								<td width="24%">Face Value</td>
+								
+									<td width="16%" class="number"><span id="faceValue0"></span></td>
+								
+									<td width="14%" class="number"><span id="faceValue1"></span></td>
+								
+									<td width="14%" class="number"><span id="faceValue2"></span></td>
+								
+									<td width="18%" class="number"><span id="faceValue3"></span></td>
+								
+									<td width="14%" class="number"><span id="faceValue4"></span></td>
+								
+							</tr>  -->
+					<!-- commented cause data is not available <tr class="alt">
+								<td>Book Value</td>
+								
+									<td class="number"><span id="bookValue0"></span></td>
+								
+									<td class="number"><span id="bookValue1"></span></td>
+								
+									<td class="number"><span id="bookValue2"></span></td>
+								
+									<td class="number"><span id="bookValue3"></span></td>
+								
+									<td class="number"><span id="bookValue4"></span></td>
+								
+							</tr>
+							<tr>
+								<td>EPS</td>
+								
+									<td class="number"><span id="eps0"></span></td>
+								
+									<td class="number"><span id="eps1"></span></td>
+								
+									<td class="number"><span id="eps2"></span></td>
+								
+									<td class="number"><span id="eps3"></span></td>
+								
+									<td class="number"><span id="eps4"></span></td>
+								
+							</tr>
+                            <tr class="alt">
+								<td>Payout Ratio</td>
+								
+									<td class="number"><span id="payoutRatio0"></span></td>
+								
+									<td class="number"><span id="payoutRatio1"></span></td>
+								
+									<td class="number"><span id="payoutRatio2"></span></td>
+								
+									<td class="number"><span id="payoutRatio3"></span></td>
+								
+									<td class="number"><span id="payoutRatio4"></span></td>
+								
+							</tr>
+                            <tr>
+								<td>Dividend Cover</td>
+								
+									<td class="number"><span id="dividentCover0"></span></td>
+								
+									<td class="number"><span id="dividentCover1"></span></td>
+								
+									<td class="number"><span id="dividentCover2"></span></td>
+								
+									<td class="number"><span id="dividentCover3"></span></td>
+								
+									<td class="number"><span id="dividentCover4"></span></td>
+								
+							</tr>
+                            <tr class="alt">
+								<td>P/E Ratio</td>
+								
+									<td class="number"><span id="peRatio0"></span></td>
+								
+									<td class="number"><span id="peRatio1"></span></td>
+								
+									<td class="number"><span id="peRatio2"></span></td>
+								
+									<td class="number"><span id="peRatio3"></span></td>
+								
+									<td class="number"><span id="peRatio4"></span></td>
+								
+							</tr> -->
+                            <tr>
+								<td>Ex Date</td>
+								
+									<td width="16%"><span id="exDate0"></span></td>
+								
+									<td width="14%"><span id="exDate1"></span></td>
+								
+									<td width="14%"><span id="exDate2"></span></td>
+								
+									<td width="18%"><span id="exDate3"></span></td>
+								
+									<td width="14%"><span id="exDate4"></span></td>
+								
+							</tr>
+							<tr>
+								<td>Corporate Action</td>
+								
+									<td width="16%"><span id="corporateAction0"></span></td>
+								
+									<td width="14%"><span id="corporateAction1"></span></td>
+								
+									<td width="14%"><span id="corporateAction2"></span></td>
+								
+									<td width="18%"><span id="corporateAction3"></span></td>
+								
+									<td width="14%"><span id="corporateAction4"></span></td>
+								
+							</tr>
+						</table>
+					</div>
+				   <div class="clear"></div>
+					<h3><span>Risk Profile</span></h3>
+					<div style="display:none">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td width="24%">Qty. Traded</td>
+								
+									<td width="16%" class="number"><span id="quantityTraded0"></span></td>
+								
+									<td width="14%" class="number"><span id="quantityTraded1"></span></td>
+								
+									<td width="14%" class="number"><span id="quantityTraded2"></span></td>
+								
+									<td width="18%" class="number"><span id="quantityTraded3"></span></td>
+								
+									<td width="14%" class="number"><span id="quantityTraded4"></span></td>
+								
+							</tr>
+							<tr class="alt">
+								<td>Deliverable Qty.</td>
+								
+									<td class="number"><span id="deliveryQuantity0"></span></td>
+								
+									<td class="number"><span id="deliveryQuantity1"></span></td>
+								
+									<td class="number"><span id="deliveryQuantity2"></span></td>
+								
+									<td class="number"><span id="deliveryQuantity3"></span></td>
+								
+									<td class="number"><span id="deliveryQuantity4"></span></td>
+								
+							</tr>
+							<tr>
+								<td>%Delivery Qty. to Traded Qty </td>
+								
+									<td class="number"><span id="deliveryToTradedQuantity0"></span></td>
+								
+									<td class="number"><span id="deliveryToTradedQuantity1"></span></td>
+								
+									<td class="number"><span id="deliveryToTradedQuantity2"></span></td>
+								
+									<td class="number"><span id="deliveryToTradedQuantity3"></span></td>
+								
+									<td class="number"><span id="deliveryToTradedQuantity4"></span></td>
+								
+							</tr>
+                            <tr class="alt">
+								<td>Security VaR</td>
+								
+									<td class="number"><span id="securityVar0"></span></td>
+								
+									<td class="number"><span id="securityVar1"></span></td>
+								
+									<td class="number"><span id="securityVar2"></span></td>
+								
+									<td class="number"><span id="securityVar3"></span></td>
+								
+									<td class="number"><span id="securityVar4"></span></td>
+															
+							</tr>
+                            <tr>
+								<td>VaR Margin</td>
+								
+									<td class="number"><span id="varMargin0"></span></td>
+								
+									<td class="number"><span id="varMargin1"></span></td>
+								
+									<td class="number"><span id="varMargin2"></span></td>
+								
+									<td class="number"><span id="varMargin3"></span></td>
+								
+									<td class="number"><span id="varMargin4"></span></td>
+								
+							</tr>
+                            <tr class="alt">
+								<td>Applicable Margin Rate</td>
+								
+									<td class="number"><span id="applicableMargin0"></span></td>
+								
+									<td class="number"><span id="applicableMargin1"></span></td>
+								
+									<td class="number"><span id="applicableMargin2"></span></td>
+								
+									<td class="number"><span id="applicableMargin3"></span></td>
+								
+									<td class="number"><span id="applicableMargin4"></span></td>
+								
+							</tr>
+                            <tr>
+								<td>Extreme Loss Rate</td>
+								
+									<td class="number"><span id="extremeLossMargin0"></span></td>
+								
+									<td class="number"><span id="extremeLossMargin1"></span></td>
+								
+									<td class="number"><span id="extremeLossMargin2"></span></td>
+								
+									<td class="number"><span id="extremeLossMargin3"></span></td>
+								
+									<td class="number"><span id="extremeLossMargin4"></span></td>
+								
+							</tr>
+						</table>
+					</div>
+				</div></td>
+		</tr>
+	</table>
+</div>
+						</div>
+						<div id="tab8Content" class="tabContent">
+							
+<head>
+<style>
+	.tabular-data-historic table tr th {
+		text-align:center;
+}
+</style>
+<script>
+/*	function makeReadonly()
+	{
+		if(document.forms['historicalForm']['radPeriod'][0].checked ){
+		//alert("here");
+			document.forms['historicalForm']['fromDate'].disabled=true;
+			document.forms['historicalForm']['toDate'].disabled=true;
+			document.forms['historicalForm']['period'].disabled=false;
+		}
+		else{
+			document.forms['historicalForm']['fromDate'].disabled=false;
+			document.forms['historicalForm']['toDate'].disabled=false;
+			document.forms['historicalForm']['period'].disabled=true;
+		}		
+	}
+*/
+
+	function validateData(){
+	//	if(document.forms['historicalForm']['radPeriod'][0].checked ){
+			var period = $('#period').val();
+			if(period=='unselected'){
+				alert('Select Period');
+				$('#period').focus();
+				return false;
+			}
+	/*	}
+		else{
+			var start = $("#fromDate").val();
+			var end = $("#toDate").val();
+			if(start==''){
+				alert('Select From Date');
+				$('#fromDate').focus();
+				return false;
+			}
+			else if(end==''){
+				alert('Select To Date');
+				$('#toDate').focus();
+				return false;
+			}
+			var dFormat = "dd-MMM-yyyy";
+			var startDate = null;
+			try{startDate=new Date(getDateFromFormat(start,dFormat));}catch(e){
+				alert('Select Proper From Date');
+				$('#fromDate').focus();
+				return false;
+			};
+			var endDate = null;
+			try{endDate=new Date(getDateFromFormat(end,dFormat));}catch(e){
+				alert('Select Proper End Date');
+				$('#toDate').focus();
+				return false;
+			};
+			var diff=endDate.getTime()-startDate.getTime();
+			if(diff<0){
+				alert(" Start Date should come before end Date"); 
+				return false;
+			}			
+		}*/
+		return true;
+
+	}
+</script>							
+<script>
+function downloadCSV()
+{
+	document.historicalForm.hiddDwnld.value = true;
+	var symbl = escape('INFY');
+	var series= $('#otherSeries .sel').html();
+	//var series = escape('EQ');
+	var dwnld = $("#hiddDwnld").val();
+	var frmDat = $("#fromDate").val();
+	var toDat = $("#toDate").val(); 
+	var perid = $("#period").val();
+	window.open("/live_market/dynaContent/live_watch/get_quote/getHistoricalData.jsp?symbol="+symbl+"&series="+series+"&fromDate="+frmDat+"&toDate="+toDat+"&datePeriod="+perid+"&hiddDwnld="+dwnld+"");
+	//alert("download csv" + "/live_market/dynaContent/live_watch/get_quote/getHistoricalData.jsp?symbol="+symbl+"&series="+series+"&fromDate="+frmDat+"&toDate="+toDat+"&datePeriod="+perid+"&hiddDwnld="+dwnld+"" );
+}
+
+var histScripts=false;
+function loadHistoryData(){
+
+	if(!histScripts)
+		$.get("/jqueryui/ui/minified/jquery.ui.core.min.js",function(html){
+			$(document).append('<script>'+html+'</scr'+'ipt>');
+			$.get("/jqueryui/ui/minified/jquery.ui.widget.min.js",function(w){
+				$(document).append('<script>'+w+'</scr'+'ipt>');
+					$.get("/jqueryui/ui/minified/jquery.ui.datepicker.min.js",function(d){
+						$(document).append('<script>'+d+'</scr'+'ipt>');
+						loadHistoryDataS();
+						histScripts=true;
+/*						$(function() {
+								$( "#fromDate" ).datepicker({
+									dateFormat: 'dd-M-yy',
+									changeMonth: true,
+									changeYear: true,
+									maxDate: new Date()
+								});
+								$( "#toDate" ).datepicker({
+									dateFormat: 'dd-M-yy',
+									changeMonth: true,
+									changeYear: true//,
+									//maxDate: new Date()
+								});
+							});*/
+					});
+			});
+	});
+	else
+		loadHistoryDataS();
+}
+function loadHistoryDataS()
+{
+				//alert('0');
+	var timePeriod = '2weeks';
+//	if($('#period').val()!='unselected' && document.forms['historicalForm']['radPeriod'][0].checked){
+		if($('#period').val()!='unselected'){
+		timePeriod=$('#period').val();
+	}
+//	else if($('#period').val()=='unselected' && document.forms['historicalForm']['radPeriod'][0].checked){
+	else if($('#period').val()=='unselected'){
+		timePeriod='2weeks';
+	}
+	else{
+		timePeriod='';
+	}
+	
+	$.ajax({
+		url: '/live_market/dynaContent/live_watch/get_quote/getHistoricalData.jsp'
+					+ '?symbol='+escape('INFY')	
+					+ '&series=' + $('#otherSeries .sel').html()
+					//+ '&series='+escape('EQ')
+					+ '&fromDate=' + $('#fromDate').val() 
+					+ '&toDate=' + $('#toDate').val() 
+					+ '&datePeriod=' +timePeriod ,
+		success : function(data, textStatus, XMLHttpRequest) {
+			var series = $('#otherSeries .sel').html();
+			$("#tryseries").html(series);
+			$('#historicalData').html(data);
+			$('tr:even').addClass("alt");
+			var dur='';
+//			if(document.forms['historicalForm']['radPeriod'][0].checked ){				
+				if($('#period').val()!='unselected')
+				dur= " for the last "+ $('#period').val();//changed By suhas
+		/*	}
+			else
+				dur= " From "+ $('#fromDate').val() +" To "+  $('#toDate').val();//Changed by suhas:23/2/11 for FTR change in Message. */
+			$('#historyDuration').html(dur);
+			try{
+				highlightData();
+			
+				}catch(e){}
+
+		}
+	});
+}
+
+function highlightData(){
+	var trIndex=0;
+	var tdIndex=0;
+	var highP=0.0;
+	var lowP=0.0;
+	var htrIndex=0;
+	var ltrIndex=0;
+	var htdIndex=0;
+	var ltdIndex=0;
+	$("#historicalData table tr").each(function(tri){
+			/* changes made by sweta for getquotes*/		
+		$(this).find("th").each(function(thi){
+			if(thi==1)
+			{
+				$(this).text("Symbol");
+				$(this).attr("title","Symbol");
+			}
+			if(thi==2)
+			{
+				$(this).text("Series");
+				$(this).attr("title","Series");							
+			}
+			if(thi==0)
+			{
+				$(this).text("Date");
+				$(this).attr("title","Date");
+			}
+			if(thi==3)
+			{
+				$(this).text("Open");
+				$(this).attr("title","Open Price");
+			}
+			if(thi==4)
+			{
+				$(this).text("High");
+				$(this).attr("title","High Price");
+			}
+			if(thi==5)
+			{
+				$(this).text("Low");
+				$(this).attr("title","Low Price");
+			}
+			if(thi==6)
+			{
+				$(this).text("LTP");
+				$(this).attr("title","Last Traded Price");
+			}
+			if(thi==7)
+			{
+				$(this).text("Close");
+				$(this).attr("title","Close Price");
+			}
+			if(thi==8)
+			{
+				$(this).text("Volume");
+				$(this).attr("title","Total Traded Quantity");
+			}
+			if(thi==9)
+			{
+				//$(this).text("Turnover (in Lakhs)");
+				//$(this).attr("title","Turnover (in Lakhs)");
+				var form1="Turnover";
+				var form2="(in Lakhs)";
+				var format=form1+"<br>"+form2;
+				$(this).html(format);
+				$(this).attr("title","Turnover (in Lakhs)");
+			}
+			
+		});
+		$(this).find("td").each(function(tdi){
+				if(tdi==2)
+				{	
+					$(this).css("text-align","left");
+				}
+				
+				if(tdi==1)
+				{	
+					$(this).css("text-align","left");
+				}
+				if(tdi==0)
+				{	
+					$(this).attr("class","date");
+					//$(this).attr("nowrap","");
+					var format = $(this).text();
+						//alert("date" + format);
+						format = "<nobr>"+format+"</nobr>";
+					$(this).html(format);
+				}
+				
+				//if(tdi==2){	
+					if(tdi==4){
+					var td=$(this).text();
+					td = td.replace(',','');
+					var tdN = parseFloat(td);									
+					if(highP < tdN){
+						highP=tdN;
+						htrIndex=tri;
+						htdIndex=tdi;
+					}
+				}
+				//else if(tdi==3){
+					else if(tdi==5){
+					var td=$(this).text();
+					td = td.replace(',','');
+					var tdN = parseFloat(td);					
+					if(lowP==0){
+						lowP=highP;
+						ltrIndex=tri;
+						ltdIndex=tdi;
+					}
+					if(lowP > tdN){
+						lowP=tdN;
+						ltrIndex=tri;
+						ltdIndex=tdi;	
+					}				
+				}			
+			}
+		
+		);
+		
+		}
+	);
+	
+	//alert(highP+"==="+lowP);
+	//for highlighting
+	var htr=$("#historicalData table tr").get(htrIndex);
+//	var htd = htr.getElementsByTagName("td")[2];	//2
+	var htd = htr.getElementsByTagName("td")[4];
+	$(htd).removeClass("high-sel");
+	$(htd).removeClass("low-sel");
+	$(htd).addClass("low-sel"); //Sonal date:23/03/2011
+
+	var ltr=$("#historicalData table tr").get(ltrIndex);
+//	var ltd = ltr.getElementsByTagName("td")[3];			//3
+	var ltd = ltr.getElementsByTagName("td")[5];
+	$(ltd).removeClass("high-sel");
+	$(ltd).removeClass("low-sel");
+	$(ltd).addClass("high-sel");	//Sonal date:23/03/2011
+}
+</script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+	$('#get').click(function(e) {
+		if(validateData())
+			loadHistoryData();
+		return false;
+	});
+/*	$('#rdPeriod').click(function(e) {
+	});
+	$('#rdDateToDate').click(function(e) {
+		$('#period').val("unselected");
+	});*/
+	//start added by SE 26 03 2014 to define fromdate and to date and include datepicker.js and 
+		$.get("/jqueryui/ui/minified/jquery.ui.core.min.js",function(html){
+			$(document).append('<script>'+html+'</scr'+'ipt>');
+			$.get("/jqueryui/ui/minified/jquery.ui.widget.min.js",function(w){
+				$(document).append('<script>'+w+'</scr'+'ipt>');
+					$.get("/jqueryui/ui/minified/jquery.ui.datepicker.min.js",function(d){
+						$(document).append('<script>'+d+'</scr'+'ipt>');
+					
+/*						$(function() {
+								$( "#fromDate" ).datepicker({
+									dateFormat: 'dd-M-yy',
+									changeMonth: true,
+									changeYear: true,
+									maxDate: new Date()
+								});
+								$( "#toDate" ).datepicker({
+									dateFormat: 'dd-M-yy',
+									changeMonth: true,
+									changeYear: true//,
+									//maxDate: new Date()
+								});
+							});*/
+					});
+			});
+	});
+	makeReadonly();
+	//end SE 26 03 2014
+});
+
+</script>
+</head>
+<div class="historic-bar">
+<!--Changed By Suhas:23/03/11 for FTR Message changed in Upperlower case -->
+<!-- <span class="historic-price-text">Historical Price Data for INFY-EQ<span id="historyDuration">10 days</span></span> <span class="download-data-link"><a href="javascript:downloadCSV();" title="Download this data">Download this data</a></span> </div> -->
+<span class="historic-price-text">Historical Price Data for INFY <span id="tryseries"></span><span id="historyDuration"></span></span> <span class="download-data-link"><a href="javascript:downloadCSV();" title="Download this data">Download this data</a></span> </div>
+
+							 <div class="high-low-indicator"> <span class="high-icon">High</span> <span class="low-icon">Low</span> </div> 							
+							
+							<form name="historicalForm" onsubmit="return false;">
+							<div class="view-data">
+								<div class="caption-text">View historical price data:</div>
+								<div class="viewdata-content">
+<!--					<input type="radio" id="rdPeriod" name="radPeriod" value="groupPeriod" checked onclick="javascript:makeReadonly();" />-->
+									<label>For past:</label>
+					<select name="period" id="period">
+						<option value="unselected" >Select</option>
+						<option value="1day" selected>1 Day</option>
+						<option value="week" >7 Days</option>
+						<option value="2weeks" >2 weeks</option>
+						<option value="1month" >1 month</option>
+						<option value="3months">3 months</option>
+
+
+					</select>
+					  <div style="width: 226px;float: right; padding-top: 7px;font-size: 1.1em;">
+						<b> More than 3 months Data? 
+							
+							<a href="/products/content/equities/equities/eq_security.htm"> <font color="red"> Click Here  </font> </a>
+							 
+						</b>
+					</div>  
+									<!--<p class="or-text">OR</p>
+					<input type="radio" id="rdDateToDate" name="radPeriod" value="groupPeriod"  onclick="makeReadonly();"/>
+									<label>Select a time period:</label>
+									<span>
+					<input type="text" class="textboxdata" id="fromDate" name="fromDate" width="15" style="width:70px;"/>
+									<img src="/common/images/calendar-icon.gif" class="calendarbtn" onclick="document.getElementById('fromDate').focus()"/></span><span class="to-text">To</span><span>
+					<input type="text" class="textboxdata" id="toDate" name="toDate" style=" width:70px;"/>
+									<img src="/common/images/calendar-icon.gif" class="calendarbtn" onclick="document.getElementById('toDate').focus()"/></span>-->
+									<p>
+										<input id="get" type="image" src="/common/images/get-data-button.gif" class="getdata-button"/>
+									</p>
+								</div>
+							</div>
+					<input type="hidden" id="hiddDwnld" value="" />
+					<div class="tabular-data-historic" id="historicalData">
+							</div>
+					</form>
+
+						</div>
+					</div>
+				</div>
+				<!--RHS Nav Start-->
+    <div class="rhs_nav">
+      <h4>Recently Viewed Quotes</h4>
+           <ul id="recentQuotes">
+                <li><a href="#">1</a></li>
+      </ul>
+                   <!-- Start-Added following links By Suhas for WRR -2117 on 24-Jan-2012    -->
+                   <h4>Company Reports</h4>
+					<ul>
+						<li><a href="/corporates/content/eq_research_reports_listed.htm">NSE - IPFT Sponsored Company Reports</a>
+						</li>
+						<li><a href="/education/content/reports/eq_research_reports.htm">Crisil Reports - Sponsored by NSE IPFT</a>
+						</li>
+					</ul>
+                    <!-- End -Added following links By Suhas for WRR -2117 on 24-Jan-2012  -->                 
+                                        <h4>Related Links</h4>
+                                        <ul>
+                                                <li>Get Bhavcopy, Market Activity Report and other EOD reports</li>
+                                                <li><a href="/products/content/all_daily_reports.htm">View Current Market Reports (Equities)</a></li>
+                                                <!-- <li>Search our extensive archives for trading history and past reports.</li>
+                                                <li><a href="/products/content/equities/equities/eq_security.htm">View Historical Data (Equities)</a></li> -->
+                                        </ul>
+
+										 <h4> Historical Data </h4>
+                                        <ul>
+                                                 
+                                                 
+                                                <li>
+												<a href="/products/content/equities/equities/eq_security.htm">
+												View Historical Data (Equities)</a>
+												</li>  
+
+												<li>
+												<a href="/products/dynaContent/equities/equities/histHighLowSearch.htm
+">
+												Monthly,Yearly,52-week H/L</a>
+												</li> 
+
+												<li>
+												<a href="/products/content/equities/equities/archieve_eq.htm
+">
+												Daily/Monthly reports </a>
+												</li> 
+                                        </ul>
+                                        <div class="did_you_know">
+                                                <p class="title">Did You Know</p>
+                                        <p id="didYouKnowMsg">The higher the Percent of Deliverable Quantity to Traded Quantity the better - it indicates that most buyers are expecting the price of the share to go up.</p>
+                                               <!--  <p><a href="#">More Investment Concepts</a></p> -->
+                                                <script>
+                                                                //setInterval("getDidYouKnow()",20000);
+                                                               // getDidYouKnow();
+                                                </script>
+                                        </div>
+                                </div>
+
+				<!--RHS Nav End-->
+				<div class="clear"></div>
+			</div>
+			<!-- Main Content End --> 
+			<!--Footer Start-->
+			<div id="footer">
+			</div>
+			<!--Footer End-->
+			<div class="clear"></div>
+		</div>
+		<!--Wrapper Bottom End--> 
+	</div>
+	<!--Content Big End--> 
+</div>
+<div class="footer_nav_main">
+	<div id="footer_nav">
+	</div>
+</div>
+<script>
+	var quoteResponse = document.getElementById('responseDiv').innerHTML;
+	var moreThan52high;
+	var lessThan52less;
+	populateDivs(quoteResponse);
+	//Start : Mahendra : 10Aug2011 : Adding high low symbol
+	if(moreThan52high != "false")
+	{$('#dayHighText').html('<img src="/common/images/new_high.gif" title="The security has touched a new 52 week high"> High');}
+	if(lessThan52less != "false")
+	{$('#dayLowText').html('Low <img src="/common/images/new_low.gif" title="The security has dropped to a new 52 week low">');}
+	
+	//End : Mahendra : 10Aug2011 : Adding high low symbol
+</script>
+</body>
+</html>
