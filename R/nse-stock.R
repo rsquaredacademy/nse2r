@@ -8,6 +8,7 @@ nse_stock_most_traded <- function() {
 
   url <- "https://www.nseindia.com/products/dynaContent/equities/equities/json/mostActiveMonthly.json"
   nse_base(url)
+
 }
 
 #' 52 week high
@@ -47,9 +48,9 @@ nse_stock_code <- function() {
 
   url <- "http://www.nseindia.com/content/equities/EQUITY_L.csv"
 
-  is_online <- pingr::is_online()
+  online <- pingr::is_online()
 
-  if (is_online) {
+  if (online) {
     read.csv(url)[, 1:2]
   } else {
     stop("Please check your internet connection.", call. = FALSE)
@@ -127,7 +128,5 @@ nse_stock_quote <- function(stock_code) {
     stop("Please check the stock code. \n       Use nse_stock_code() to fetch stock symbol from NSE \n       and nse_stock_valid() to check if stock code is valid. ", call. = FALSE)
 
   }
-
-  
 
 }
