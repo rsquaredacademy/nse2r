@@ -1,10 +1,10 @@
 Package: nsetools
 Type: Package
-Title: Tools for Collecting Real Time Data from National Stock Exchange (India)
+Title: Tools for Collecting Real Time Data from 'National Stock Exchange (India)'
 Version: 0.0.9
 Authors@R: person("Aravind", "Hebbali", email = "hebbali.aravind@gmail.com", role = c("aut", "cre"))
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: Access data related to stocks, indices, futures & options from the 
+    'National Stock Exchange (India)'. This package is community maintained and is not officially supported by 'NSE'. The accuracy of data is only as correct as provided on <https://www.nseindia.com>.
 Depends: 
     R(>= 3.3)
 Imports: 
