@@ -7,7 +7,7 @@
 nse_index_list()
 }
 \description{
-NSE indices list.
+List NSE indices.
 }
 \examples{
 \dontrun{

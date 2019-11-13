@@ -1,6 +1,6 @@
 #' Index quote
 #'
-#' NSE indices quote
+#' NSE indices quote.
 #'
 #' @examples
 #' \dontrun{
@@ -21,7 +21,7 @@ nse_index_quote <- function() {
 
 #' Index list
 #'
-#' NSE indices list.
+#' List NSE indices.
 #'
 #' @examples
 #' \dontrun{

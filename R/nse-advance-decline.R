@@ -1,6 +1,6 @@
 #' Advance declines
 #'
-#' NSE indices advance & decline.
+#' NSE indices advances & declines.
 #'
 #' @export
 #'

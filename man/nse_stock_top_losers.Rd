@@ -7,7 +7,7 @@
 nse_stock_top_losers()
 }
 \description{
-Top losers for the last trading session.
+Fetch top losers for the last trading session.
 }
 \examples{
 \dontrun{

@@ -10,7 +10,7 @@ nse_stock_quote(stock_code)
 \item{stock_code}{Symbol of the stock.}
 }
 \description{
-Gets the quote for a given stock code.
+Fetch the quote for a given stock code.
 }
 \examples{
 \dontrun{

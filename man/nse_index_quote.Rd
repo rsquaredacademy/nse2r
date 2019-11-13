@@ -7,7 +7,7 @@
 nse_index_quote()
 }
 \description{
-NSE indices quote
+NSE indices quote.
 }
 \examples{
 \dontrun{

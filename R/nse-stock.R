@@ -1,6 +1,6 @@
 #' Most actively traded stocks
 #'
-#' Most actively traded stocks in a month on NSE.
+#' Fetch most actively traded stocks in a month on NSE.
 #'
 #' @examples
 #' \dontrun{
@@ -18,7 +18,7 @@ nse_stock_most_traded <- function() {
 
 #' 52 week high
 #'
-#' Stocks that have touched their 52 week highs during the day on NSE.
+#' Fetch stocks that have touched their 52 week highs during the day on NSE.
 #'
 #' @examples
 #' \dontrun{
@@ -36,7 +36,7 @@ nse_stock_year_high <- function() {
 
 #' 52 week low
 #'
-#' Stocks that have touched their 52 week lows during the day on NSE.
+#' Fetch stocks that have touched their 52 week lows during the day on NSE.
 #'
 #' @examples
 #' \dontrun{
@@ -97,7 +97,7 @@ nse_stock_valid <- function(stock_code) {
 
 #' NSE top gainers
 #'
-#' Top gainers for the last trading session.
+#' Fetch top gainers for the last trading session.
 #'
 #' @examples
 #' \dontrun{
@@ -115,7 +115,7 @@ nse_stock_top_gainers <- function() {
 
 #' NSE top losers
 #'
-#' Top losers for the last trading session.
+#' Fetch top losers for the last trading session.
 #'
 #' @examples
 #' \dontrun{
@@ -134,7 +134,7 @@ nse_stock_top_losers <- function() {
 
 #' Stock quote
 #'
-#' Gets the quote for a given stock code.
+#' Fetch the quote for a given stock code.
 #'
 #' @param stock_code Symbol of the stock.
 #'

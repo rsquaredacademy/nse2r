@@ -7,7 +7,7 @@
 nse_stock_year_low()
 }
 \description{
-Stocks that have touched their 52 week lows during the day on NSE.
+Fetch stocks that have touched their 52 week lows during the day on NSE.
 }
 \examples{
 \dontrun{

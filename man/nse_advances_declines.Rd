@@ -7,5 +7,5 @@
 nse_advances_declines()
 }
 \description{
-NSE indices advance & decline.
+NSE indices advances & declines.
 }
