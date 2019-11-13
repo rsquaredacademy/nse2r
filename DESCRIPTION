@@ -12,6 +12,7 @@ Imports:
     jsonlite,
     magrittr,
     rvest,
+    tibble,
     utils,
     xml2
 Suggests: 

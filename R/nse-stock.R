@@ -67,7 +67,11 @@ nse_stock_year_low <- function() {
 nse_stock_code <- function() {
 
   url <- "http://www.nseindia.com/content/equities/EQUITY_L.csv"
-  utils::read.csv(url)[, 1:2]
+
+  url %>%
+    utils::read.csv() %>%
+    magrittr::extract(, 1:2) %>% 
+    tibble::as_tibble()
 
 }
 

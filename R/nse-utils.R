@@ -23,7 +23,8 @@ nse_base <- function(url) {
     resp %>%
       httr::content("text", encoding = "UTF-8") %>%
       jsonlite::fromJSON() %>%
-      magrittr::use_series(data)
+      magrittr::use_series(data) %>%
+      tibble::as_tibble()
   }
 
 }
