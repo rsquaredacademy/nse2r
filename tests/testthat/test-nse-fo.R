@@ -12,9 +12,9 @@ httptest::with_mock_api({
     iquotes <- nse_fo_top_gainers()
     expect_equal(
       names(iquotes),
-      c("symbol", "series", "openPrice", "highPrice", "lowPrice", "ltp",
-        "previousPrice", "netPrice", "tradedQuantity", "turnoverInLakhs",
-        "lastCorpAnnouncementDate", "lastCorpAnnouncement" ))
+      c("symbol", "series", "lastCorpAnnouncementDate", "lastCorpAnnouncement",
+        "openPrice", "highPrice", "lowPrice", "ltp", "previousPrice", 
+        "netPrice", "tradedQuantity", "turnoverInLakhs"))
   })
 })
 
@@ -24,8 +24,8 @@ httptest::with_mock_api({
     iquotes <- nse_fo_top_losers()
     expect_equal(
       names(iquotes),
-      c("symbol", "series", "openPrice", "highPrice", "lowPrice", "ltp",
-        "previousPrice", "netPrice", "tradedQuantity", "turnoverInLakhs",
-        "lastCorpAnnouncementDate", "lastCorpAnnouncement" ))
+      c("symbol", "series", "lastCorpAnnouncementDate", "lastCorpAnnouncement",
+        "openPrice", "highPrice", "lowPrice", "ltp", "previousPrice", 
+        "netPrice", "tradedQuantity", "turnoverInLakhs"))
   })
 })

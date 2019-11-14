@@ -17,7 +17,7 @@ httptest::with_mock_api({
     iquotes <- nse_stock_year_high()
     expect_equal(
       names(iquotes),
-      c("symbol", "symbolDesc", "value", "year", "ltp", "value_old", "dt",
+      c("symbol", "symbolDesc", "dt", "value", "year", "ltp", "value_old", 
         "prev", "change", "pChange"))
   })
 })
@@ -28,7 +28,7 @@ httptest::with_mock_api({
     iquotes <- nse_stock_year_low()
     expect_equal(
       names(iquotes),
-      c("symbol", "symbolDesc", "value", "year", "ltp", "value_old", "dt",
+      c("symbol", "symbolDesc",  "dt", "value", "year", "ltp", "value_old",
         "prev", "change", "pChange"))
   })
 })
@@ -39,9 +39,9 @@ httptest::with_mock_api({
     iquotes <- nse_stock_top_gainers()
     expect_equal(
       names(iquotes),
-      c("symbol", "series", "openPrice", "highPrice", "lowPrice", "ltp",
-        "previousPrice", "netPrice", "tradedQuantity", "turnoverInLakhs",
-        "lastCorpAnnouncementDate", "lastCorpAnnouncement"))
+      c("symbol", "series", "lastCorpAnnouncementDate", "lastCorpAnnouncement",
+        "openPrice", "highPrice", "lowPrice", "ltp", "previousPrice", 
+        "netPrice", "tradedQuantity", "turnoverInLakhs"))
   })
 })
 
@@ -51,9 +51,9 @@ httptest::with_mock_api({
     iquotes <- nse_stock_top_losers()
     expect_equal(
       names(iquotes),
-      c("symbol", "series", "openPrice", "highPrice", "lowPrice", "ltp",
-        "previousPrice", "netPrice", "tradedQuantity", "turnoverInLakhs",
-        "lastCorpAnnouncementDate", "lastCorpAnnouncement"))
+      c("symbol", "series", "lastCorpAnnouncementDate", "lastCorpAnnouncement",
+        "openPrice", "highPrice", "lowPrice", "ltp", "previousPrice", 
+        "netPrice", "tradedQuantity", "turnoverInLakhs"))
   })
 })
 
