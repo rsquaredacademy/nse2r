@@ -20,6 +20,8 @@ nse_preopen_nifty <- function() {
     nse_format(cols_skip = 1:4, cols_modify = 5:17)
 
   result$xDt <- as.Date(result$xDt, format = "%d-%b-%Y")
+  result$caAct[result$caAct == "-"] <- NA
+  result$caAct <- trimws(result$caAct)
   return(result)
 
 }
@@ -46,6 +48,8 @@ nse_preopen_nifty_bank <- function() {
     nse_format(cols_skip = 1:4, cols_modify = 5:17)
 
   result$xDt <- as.Date(result$xDt, format = "%d-%b-%Y")
+  result$caAct[result$caAct == "-"] <- NA
+  result$caAct <- trimws(result$caAct)
   return(result)
 
 }
@@ -71,7 +75,10 @@ nse_preopen_fo <- function() {
     nse_format_num(cols_skip = 1:4, cols_modify = 5:17) %>%
     nse_format(cols_skip = 1:4, cols_modify = 5:17)
 
-  result$xDt <- as.Date(result$xDt, format = "%d-%b-%Y")
+  result$xDt   <- as.Date(result$xDt, format = "%d-%b-%Y")
+  result$caAct[result$caAct == "-"] <- NA
+  result$caAct <- trimws(result$caAct)
+  
   return(result)
 
 }
