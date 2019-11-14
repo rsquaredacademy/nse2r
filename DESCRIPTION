@@ -11,7 +11,9 @@ Imports:
     httr,
     jsonlite,
     magrittr,
+    purrr,
     rvest,
+    stringr,
     tibble,
     utils,
     xml2

@@ -7,6 +7,9 @@
 nse_advances_declines <- function() {
 
   url <- "http://www.nseindia.com/common/json/indicesAdvanceDeclines.json"
-  nse_base(url)
+
+  url %>%
+    nse_base() %>%
+    nse_format(cols_skip = 1, cols_modify = 2:4)
 
 }

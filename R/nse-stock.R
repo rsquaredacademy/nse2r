@@ -12,7 +12,11 @@
 nse_stock_most_traded <- function() {
 
   url <- "https://www.nseindia.com/products/dynaContent/equities/equities/json/mostActiveMonthly.json"
-  nse_base(url)
+  
+  url %>%
+    nse_base() %>%
+    nse_format_num(cols_skip = 1, cols_modify = 2:6) %>%
+    nse_format(cols_skip = 1, cols_modify = 2:6)
 
 }
 
@@ -30,7 +34,18 @@ nse_stock_most_traded <- function() {
 nse_stock_year_high <- function() {
 
   url <- "https://www.nseindia.com/products/dynaContent/equities/equities/json/online52NewHigh.json"
-  nse_base(url)
+  
+  cols_to_skip   <- c(1, 2, 7)
+  cols_to_modify <- c(3:6, 8:10)
+
+  result <-
+    url %>%
+    nse_base() %>%
+    nse_format_num(cols_skip = cols_to_skip, cols_modify = cols_to_modify) %>%
+    nse_format(cols_skip = 1:3, cols_modify = 4:10)
+
+  result$dt <- as.Date(result$dt, format = "%d-%b-%Y")
+  return(result)
 
 }
 
@@ -48,7 +63,18 @@ nse_stock_year_high <- function() {
 nse_stock_year_low <- function() {
 
   url <- "https://www.nseindia.com/products/dynaContent/equities/equities/json/online52NewLow.json"
-  nse_base(url)
+  
+  cols_to_skip   <- c(1, 2, 7)
+  cols_to_modify <- c(3:6, 8:10)
+
+  result <-
+    url %>%
+    nse_base() %>%
+    nse_format_num(cols_skip = cols_to_skip, cols_modify = cols_to_modify) %>%
+    nse_format(cols_skip = 1:3, cols_modify = 4:10)
+
+  result$dt <- as.Date(result$dt, format = "%d-%b-%Y")
+  return(result)
 
 }
 
@@ -71,7 +97,8 @@ nse_stock_code <- function() {
   url %>%
     utils::read.csv() %>%
     magrittr::extract(, 1:2) %>% 
-    tibble::as_tibble()
+    tibble::as_tibble() %>%
+    purrr::map_dfc(as.character)
 
 }
 
@@ -113,7 +140,18 @@ nse_stock_valid <- function(stock_code) {
 nse_stock_top_gainers <- function() {
 
   url <- "http://www.nseindia.com/live_market/dynaContent/live_analysis/gainers/niftyGainers1.json"
-  nse_base(url)
+  
+  cols_to_skip   <- c(1, 2, 11, 12)
+  cols_to_modify <- 3:10
+
+  result <-
+    url %>%
+    nse_base() %>%
+    nse_format_num(cols_skip = cols_to_skip, cols_modify = cols_to_modify) %>%
+    nse_format(cols_skip = 1:4, cols_modify = 5:12)
+
+  result$lastCorpAnnouncementDate <- as.Date(result$lastCorpAnnouncementDate, format = "%d-%b-%Y")
+  return(result)
 
 }
 
@@ -131,7 +169,18 @@ nse_stock_top_gainers <- function() {
 nse_stock_top_losers <- function() {
 
   url <- "http://www.nseindia.com/live_market/dynaContent/live_analysis/losers/niftyLosers1.json"
-  nse_base(url)
+  
+  cols_to_skip   <- c(1, 2, 11, 12)
+  cols_to_modify <- 3:10
+
+  result <-
+    url %>%
+    nse_base() %>%
+    nse_format_num(cols_skip = cols_to_skip, cols_modify = cols_to_modify) %>%
+    nse_format(cols_skip = 1:4, cols_modify = 5:12)
+
+  result$lastCorpAnnouncementDate <- as.Date(result$lastCorpAnnouncementDate, format = "%d-%b-%Y")
+  return(result)
 
 }
 

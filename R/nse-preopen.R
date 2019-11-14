@@ -12,7 +12,15 @@
 nse_preopen_nifty <- function() {
 
   url <- "https://www.nseindia.com/live_market/dynaContent/live_analysis/pre_open/nifty.json"
-  nse_base(url)
+  
+  result <-
+  	url %>%
+    nse_base() %>%
+    nse_format_num(cols_skip = 1:4, cols_modify = 5:17) %>%
+    nse_format(cols_skip = 1:4, cols_modify = 5:17)
+
+  result$xDt <- as.Date(result$xDt, format = "%d-%b-%Y")
+  return(result)
 
 }
 
@@ -30,7 +38,15 @@ nse_preopen_nifty <- function() {
 nse_preopen_nifty_bank <- function() {
 
   url <- "https://www.nseindia.com/live_market/dynaContent/live_analysis/pre_open/niftybank.json"
-  nse_base(url)
+  
+  result <-
+  	url %>%
+    nse_base() %>%
+    nse_format_num(cols_skip = 1:4, cols_modify = 5:17) %>%
+    nse_format(cols_skip = 1:4, cols_modify = 5:17)
+
+  result$xDt <- as.Date(result$xDt, format = "%d-%b-%Y")
+  return(result)
 
 }
 
@@ -48,6 +64,14 @@ nse_preopen_nifty_bank <- function() {
 nse_preopen_fo <- function() {
 
   url <- "https://www.nseindia.com/live_market/dynaContent/live_analysis/pre_open/fo.json"
-  nse_base(url)
+  
+  result <-
+  	url %>%
+    nse_base() %>%
+    nse_format_num(cols_skip = 1:4, cols_modify = 5:17) %>%
+    nse_format(cols_skip = 1:4, cols_modify = 5:17)
+
+  result$xDt <- as.Date(result$xDt, format = "%d-%b-%Y")
+  return(result)
 
 }

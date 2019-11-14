@@ -15,8 +15,10 @@ nse_index_quote <- function() {
 
   url %>%
     nse_base() %>%
-    magrittr::extract(-5)
-
+    magrittr::extract(-5) %>%
+    nse_format_num(cols_skip = 1, cols_modify = 2:4) %>%
+    nse_format(cols_skip = 1, cols_modify = 2:4)
+    
 }
 
 #' Index list
