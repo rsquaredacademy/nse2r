@@ -6,6 +6,8 @@
 #'
 #' @importFrom magrittr %>%
 #'
+#' @noRd
+#'
 nse_base <- function(url) {
 
   resp <- httr::GET(url)
@@ -26,5 +28,41 @@ nse_base <- function(url) {
       magrittr::use_series(data) %>%
       tibble::as_tibble()
   }
+
+}
+
+#' Format columns
+#'
+#' Modify data types of columns.
+#'
+#' @param data An object of class \code{data.frame}.
+#' @param cols_skip Columns to be skipped.
+#' @param cols_modify Columns to be modified.
+#'
+#' @noRd
+#'
+nse_format <- function(data, cols_skip, cols_modify) {
+
+  skipped  <- data[, cols_skip]
+  modified <- purrr::map_dfc(data[,cols_modify], as.numeric)
+  tibble::as_tibble(cbind(skipped, modified))
+
+}
+
+#' Remove comma from data
+#'
+#' Remove comma from data to facilitate conversion to number.
+#'
+#' @param data An object of class \code{data.frame}.
+#' @param cols_skip Columns to be skipped.
+#' @param cols_modify Columns to be modified.
+#'
+#' @noRd
+#'
+nse_format_num <- function(data, cols_skip, cols_modify) {
+
+  skipped  <- data[, cols_skip]
+  modified <- purrr::map_dfc(data[,cols_modify], stringr::str_remove_all, ",")
+  tibble::as_tibble(cbind(skipped, modified)) 
 
 }
