@@ -1,0 +1,123 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# nsetools
+
+> Tools for fetching data from the National Stock Exchange, India.
+
+<!-- badges: start -->
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/nsetools)](https://cran.r-project.org/package=nsetools)
+[![cran
+checks](https://cranchecks.info/badges/summary/nsetools)](https://cran.r-project.org/web/checks/check_results_nsetools.html)
+[![Travis-CI Build
+Status](https://travis-ci.org/rsquaredacademy/nsetools.svg?branch=master)](https://travis-ci.org/rsquaredacademy/nsetools)
+[![AppVeyor Build
+Status](https://ci.appveyor.com/api/projects/status/github/rsquaredacademy/nsetools?branch=master&svg=true)](https://ci.appveyor.com/project/rsquaredacademy/nsetools)
+[![Coverage
+Status](https://img.shields.io/codecov/c/github/rsquaredacademy/nsetools/master.svg)](https://codecov.io/github/rsquaredacademy/nsetools?branch=master)
+[![](https://cranlogs.r-pkg.org/badges/grand-total/nsetools)](https://cran.r-project.org/package=nsetools)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+<!-- badges: end -->
+
+## Overview
+
+nsetools fetches data from the National Stock Exchange, India. It is inspired by and a port of the Python package [nsetools](https://github.com/vsjha18/nsetools). With nsetools, you can fetch the following data related to:
+
+- stocks
+    - quote for a given stock
+    - symbol & name
+    - check validity
+    - most actively traded stocks in a month
+    - 52 week high/low
+    - top gainers/losers for the last trading session
+- index
+    - list indices
+    - check validity
+    - fetch indices quote
+- futures & options
+    - lot size
+    - top gainers/losers for the last trading session
+- pre open data
+    - nifty
+    - nifty bank
+    - nifty futures & options
+- indices advances & declines
+
+
+## Installation
+
+You can install the development version of nsetools from [GitHub](https://github.com/rsquaredacademy/nsetools/) with:
+
+```{r cran-install, eval=FALSE}
+# install.packages("devtools")
+devtools::install_github("rsquaredacademy/nsetools")
+```
+
+## Articles
+
+- [Introduction to nsetools](https://nsetools.rsquaredacademy.com/articles/intro-to-nsetools.html)
+
+## Usage
+
+```{r load_nsetools, echo=FALSE, message=FALSE, warning=FALSE}
+library(nsetools)
+```
+
+
+nsetools uses consistent prefix `nse_` for easy tab completion.
+
+- `nse_index_` for index 
+- `nse_stock_` for stocks
+- `nse_fo_` for futures and options
+- `nse_preopen_` for preopen data
+
+### Index
+
+##### Fetch Indices Quote
+
+```{r index_quote}
+nse_index_quote()
+```
+
+### Stock
+
+##### Top gainers for the last trading session.
+
+```{r stock_top_gainers}
+nse_stock_top_gainers()
+```
+
+##### Stocks that have touched their 52 week highs during the day
+
+```{r stock_year_high}
+nse_stock_year_high()
+```
+
+##### Most actively traded stocks in a month
+
+```{r stock_most_traded}
+nse_stock_most_traded()
+```
+
+### Futures & Options
+
+##### Top futures and options gainers for the last trading session.
+
+```{r fo_top_gainers}
+nse_fo_top_gainers()
+```
+
+Please note that the 'nsetools' project is released with a
+[Contributor Code of Conduct](CODE_OF_CONDUCT.md).
+By contributing to this project, you agree to abide by its terms.
