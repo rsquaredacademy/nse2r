@@ -2,6 +2,9 @@
 #'
 #' NSE indices advances & declines.
 #'
+#' @examples
+#' nse_fo_lotsizes()
+#'
 #' @export
 #'
 nse_advances_declines <- function() {

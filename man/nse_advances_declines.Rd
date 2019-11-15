@@ -9,3 +9,7 @@ nse_advances_declines()
 \description{
 NSE indices advances & declines.
 }
+\examples{
+nse_fo_lotsizes()
+
+}

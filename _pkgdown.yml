@@ -1,0 +1,79 @@
+url: https://nsetools.rsquaredacademy.com
+
+authors:
+  Aravind Hebbali:
+    href: https://www.aravindhebbali.com
+  Lokesh Atreja:
+    href: https://in.linkedin.com/in/lokesh-kumar-frm-87019334
+  Lionel Pinto:
+    href: https://in.linkedin.com/in/lioneljohnpinto
+
+templates:
+  params:
+    bootswatch: cosmo
+    docsearch:
+      api_key:
+      index_name: nsetools
+
+navbar:
+  title: "nsetools"
+  type: inverse
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Guides"
+      menu:
+        - text: "Introduction to nsetools"
+          href: articles/introduction-to-nsetools.html
+    - text: "Reference"
+      menu:
+        - text: "Functions"
+          href: reference/index.html
+        - text: "News"
+          href: news/index.html
+  right:
+   - icon: fa-github
+     href: https://github.com/rsquaredacademy/nsetools
+
+home:
+  links:
+  - text: Learn more
+    href: https://www.rsquaredacademy.com
+
+reference:
+- title: Stocks
+
+  contents:
+  - nse_stock_code
+  - nse_stock_most_traded
+  - nse_stock_quote
+  - nse_stock_top_gainers
+  - nse_stock_top_losers
+  - nse_stock_valid
+  - nse_stock_year_high
+  - nse_stock_year_low
+
+- title: Index
+
+  contents:
+  - nse_index_list
+  - nse_index_quote
+  - nse_index_valid
+
+- title: Futures & Options
+
+  contents:
+  - nse_fo_lotsizes
+  - nse_fo_top_gainers
+  - nse_fo_top_losers
+  
+- title: Pre Open Data
+
+  contents:
+  - nse_preopen_fo
+  - nse_preopen_nifty
+  - nse_preopen_nifty_bank
+  
+- title: Advances & Declines
+  contents:
+  - nse_advances_declines

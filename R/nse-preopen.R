@@ -3,9 +3,7 @@
 #' Fetch data of pre open session of Nifty from NSE.
 #'
 #' @examples
-#' \dontrun{
 #' nse_preopen_nifty()
-#' }
 #'
 #' @export
 #'
@@ -31,9 +29,7 @@ nse_preopen_nifty <- function() {
 #' Fetch data of pre open session of Nifty Bank from NSE.
 #'
 #' @examples
-#' \dontrun{
 #' nse_preopen_nifty_bank()
-#' }
 #'
 #' @export
 #'
@@ -59,9 +55,7 @@ nse_preopen_nifty_bank <- function() {
 #' Fetch data of pre open session of futures and options from NSE.
 #'
 #' @examples
-#' \dontrun{
 #' nse_preopen_fo()
-#' }
 #'
 #' @export
 #'

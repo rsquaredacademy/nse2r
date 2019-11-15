@@ -10,8 +10,6 @@ nse_stock_top_gainers()
 Fetch top gainers for the last trading session.
 }
 \examples{
-\dontrun{
 nse_stock_top_gainers()
-}
 
 }

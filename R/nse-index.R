@@ -3,9 +3,7 @@
 #' NSE indices quote.
 #'
 #' @examples
-#' \dontrun{
 #' nse_index_quote()
-#' }
 #'
 #' @export
 #'
@@ -26,9 +24,7 @@ nse_index_quote <- function() {
 #' List NSE indices.
 #'
 #' @examples
-#' \dontrun{
 #' nse_index_list()
-#' }
 #'
 #' @export
 #'
@@ -49,10 +45,8 @@ nse_index_list <- function() {
 #' @param index_code Symbol of the index.
 #'
 #' @examples
-#' \dontrun{
 #' nse_index_valid("nifty auto")
 #' nse_index_valid("nifty cps")
-#' }
 #'
 #' @export
 #'

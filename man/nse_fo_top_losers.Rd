@@ -10,8 +10,6 @@ nse_fo_top_losers()
 Top futures and options losers for the last trading session.
 }
 \examples{
-\dontrun{
 nse_fo_top_losers()
-}
 
 }

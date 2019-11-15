@@ -10,8 +10,6 @@ nse_fo_lotsizes()
 Fetch futures and options lot size from NSE.
 }
 \examples{
-\dontrun{
 nse_fo_lotsizes()
-}
 
 }
