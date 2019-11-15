@@ -18,7 +18,7 @@ Status](https://ci.appveyor.com/api/projects/status/github/rsquaredacademy/nseto
 Status](https://img.shields.io/codecov/c/github/rsquaredacademy/nsetools/master.svg)](https://codecov.io/github/rsquaredacademy/nsetools?branch=master)
 [![](https://cranlogs.r-pkg.org/badges/grand-total/nsetools)](https://cran.r-project.org/package=nsetools)
 [![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+experimental](https://img.shields.io/badge%20lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
 ## Overview
@@ -90,16 +90,16 @@ nse_index_quote()
 #> # A tibble: 55 x 4
 #>    name              lastPrice change pChange
 #>    <chr>                 <dbl>  <dbl>   <dbl>
-#>  1 NIFTY 50 Pre Open   11904.   32.1    0.27 
-#>  2 NIFTY 50            11929    56.9    0.48 
-#>  3 NIFTY NEXT 50       28255.   79.4    0.28 
-#>  4 NIFTY100 LIQ 15      3693.   23.4    0.64 
-#>  5 NIFTY BANK          31026.  276.     0.9  
-#>  6 INDIA VIX              15.1  -0.52  -3.3  
-#>  7 NIFTY 100           12056.   54.5    0.45 
-#>  8 NIFTY 500            9689.   38.9    0.4  
-#>  9 NIFTY MIDCAP 100    16812.   60.4    0.36 
-#> 10 NIFTY MIDCAP 50      4598.   26.2    0.570
+#>  1 NIFTY 50 Pre Open   11904.   32.1     0.27
+#>  2 NIFTY 50            11934.   62.4     0.53
+#>  3 NIFTY NEXT 50       28264.   88.4     0.31
+#>  4 NIFTY100 LIQ 15      3690.   20.4     0.56
+#>  5 NIFTY BANK          31060.  310.      1.01
+#>  6 INDIA VIX              15.1  -0.54   -3.48
+#>  7 NIFTY 100           12061.   59.8     0.5 
+#>  8 NIFTY 500            9694.   43.2     0.45
+#>  9 NIFTY MIDCAP 100    16816.   64.3     0.38
+#> 10 NIFTY MIDCAP 50      4598.   25.2     0.55
 #> # ... with 45 more rows
 ```
 
@@ -115,13 +115,13 @@ nse_stock_top_gainers()
 #>  1 BHART~ EQ     2019-04-23       Rights 19:67 @ ~      358.      396.
 #>  2 INFRA~ EQ     2019-08-22       Interim Dividen~      204.      226.
 #>  3 SBIN   EQ     2018-06-15       Annual General ~      312       323 
-#>  4 SUNPH~ EQ     2019-08-20       Annual General ~      413.      419.
+#>  4 GRASIM EQ     2019-08-08       Annual General ~      735       768 
 #>  5 TATAM~ EQ     2016-07-18       Dividend - Re 0~      169       173.
-#>  6 GRASIM EQ     2019-08-08       Annual General ~      735       768 
-#>  7 CIPLA  EQ     2019-07-31       Annual General ~      448       464.
-#>  8 ULTRA~ EQ     2019-07-10       Annual General ~     4044.     4078 
-#>  9 M&M    EQ     2019-07-18       Annual General ~      584.      589.
-#> 10 GAIL   EQ     2019-08-08       Dividend - Rs 0~      123.      124.
+#>  6 CIPLA  EQ     2019-07-31       Annual General ~      448       464.
+#>  7 ULTRA~ EQ     2019-07-10       Annual General ~     4044.     4078 
+#>  8 M&M    EQ     2019-07-18       Annual General ~      584.      589.
+#>  9 GAIL   EQ     2019-08-08       Dividend - Rs 0~      123.      124.
+#> 10 SUNPH~ EQ     2019-08-20       Annual General ~      413.      419.
 #> # ... with 6 more variables: lowPrice <dbl>, ltp <dbl>,
 #> #   previousPrice <dbl>, netPrice <dbl>, tradedQuantity <dbl>,
 #> #   turnoverInLakhs <dbl>
@@ -134,16 +134,16 @@ nse_stock_year_high()
 #> # A tibble: 21 x 10
 #>    symbol symbolDesc dt           value    year    ltp value_old   prev
 #>    <chr>  <chr>      <date>       <dbl>   <dbl>  <dbl>     <dbl>  <dbl>
-#>  1 AGROP~ Agro Phos~ 2019-11-14  123.    123.    123.     123.    122. 
+#>  1 AGROP~ Agro Phos~ 2019-11-14  123.    123.    122.     123.    122. 
 #>  2 ANKIT~ Ankit Met~ 2019-08-06    0.65    0.65    0.6      0.65    0.6
-#>  3 BAJAJ~ Bajaj Fin~ 2019-11-14 9139    9139    9118.    9091    9062. 
-#>  4 BANSW~ Banswara ~ 2018-11-16  102.    102.     91       99.3    89.1
-#>  5 BHARA~ Bharat Ra~ 2019-11-08 7020    7020    6715     6775.   6599. 
-#>  6 CREDI~ CREDITACC~ 2019-11-14  774.    774.    770.     752     732. 
-#>  7 DIXON  Dixon Tec~ 2019-11-14 3375    3375    3311.    3360.   3263. 
-#>  8 FORTIS Fortis He~ 2019-11-11  161     161     145.     160.    156. 
-#>  9 GMMPF~ GMM Pfaud~ 2019-11-14 1728.   1728.   1705.    1675.   1642. 
-#> 10 HDFCB~ HDFC Bank~ 2019-09-23 1284.   1284.   1279.    1283.   1274. 
+#>  3 BAJAJ~ Bajaj Fin~ 2019-11-14 9139    9139    9124     9091    9062. 
+#>  4 BANSW~ Banswara ~ 2018-11-16  102.    102.     91.5     99.3    89.1
+#>  5 BHARA~ Bharat Ra~ 2019-11-08 7020    7020    6700.    6775.   6599. 
+#>  6 CREDI~ CREDITACC~ 2019-11-14  777     777     763.     752     732. 
+#>  7 DIXON  Dixon Tec~ 2019-11-14 3375    3375    3320.    3360.   3263. 
+#>  8 FORTIS Fortis He~ 2019-11-11  161     161     146.     160.    156. 
+#>  9 GMMPF~ GMM Pfaud~ 2019-11-14 1728.   1728.   1714.    1675.   1642. 
+#> 10 HDFCB~ HDFC Bank~ 2019-09-23 1284.   1284.   1282.    1283.   1274. 
 #> # ... with 11 more rows, and 2 more variables: change <dbl>, pChange <dbl>
 ```
 
@@ -177,16 +177,16 @@ nse_fo_top_gainers()
 #> # A tibble: 10 x 12
 #>    symbol series lastCorpAnnounc~ lastCorpAnnounc~ openPrice highPrice
 #>    <chr>  <chr>  <date>           <chr>                <dbl>     <dbl>
-#>  1 BHART~ EQ     2019-04-23       Rights 19:67 @ ~     358.     396.  
-#>  2 INFRA~ EQ     2019-08-22       Interim Dividen~     204.     226.  
-#>  3 BANKI~ EQ     2019-06-20       Annual General ~      66.6     71.2 
-#>  4 GLENM~ EQ     2019-09-19       Annual General ~     298.     304.  
-#>  5 SBIN   EQ     2018-06-15       Annual General ~     312      323   
+#>  1 GLENM~ EQ     2019-09-19       Annual General ~     298.     306   
+#>  2 BHART~ EQ     2019-04-23       Rights 19:67 @ ~     358.     396.  
+#>  3 INFRA~ EQ     2019-08-22       Interim Dividen~     204.     226.  
+#>  4 SBIN   EQ     2018-06-15       Annual General ~     312      323   
+#>  5 BANKI~ EQ     2019-06-20       Annual General ~      66.6     71.2 
 #>  6 IDEA   EQ     2019-08-16       Annual General ~       2.7      3.25
-#>  7 CANBK  EQ     2019-07-17       Annual General ~     204.     214.  
-#>  8 PAGEI~ EQ     2019-11-21       Interim Dividend   24000.   24694.  
-#>  9 CHOLA~ EQ     2019-07-22       Annual General ~     311.     323.  
-#> 10 BALKR~ EQ     2019-11-21       Interim Dividend     815.     862   
+#>  7 DIVIS~ EQ     2019-08-14       Annual General ~    1645     1749.  
+#>  8 BALKR~ EQ     2019-11-21       Interim Dividend     815.     862   
+#>  9 CANBK  EQ     2019-07-17       Annual General ~     204.     214.  
+#> 10 CHOLA~ EQ     2019-07-22       Annual General ~     311.     323.  
 #> # ... with 6 more variables: lowPrice <dbl>, ltp <dbl>,
 #> #   previousPrice <dbl>, netPrice <dbl>, tradedQuantity <dbl>,
 #> #   turnoverInLakhs <dbl>
