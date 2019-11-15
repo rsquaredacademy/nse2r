@@ -1,6 +1,6 @@
 Package: nsetools
 Type: Package
-Title: Tools for Collecting Real Time Data from 'National Stock Exchange (India)'
+Title: Tools for Collecting Data from 'National Stock Exchange (India)'
 Version: 0.0.9
 Authors@R: c(person("Aravind", "Hebbali", role = c("aut", "cre"), 
              email = "hebbali.aravind@gmail.com"),

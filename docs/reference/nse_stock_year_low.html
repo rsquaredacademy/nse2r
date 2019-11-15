@@ -139,20 +139,20 @@
         
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>nse_stock_year_low</span>()</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 60 x 10</span><span>
-#&gt;    symbol symbolDesc dt          value   year   ltp value_old  prev change
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> AGRIT~ Agri-Tech~ 2019-08-23  41.5   41.5   43.8     41.6   44.5  -</span><span style='color: #BB0000;'>0.7</span><span> 
-#&gt; </span><span style='color: #555555;'> 2</span><span> APCOT~ Apcotex I~ 2019-11-14 160.   160.   160.     160.   162.   -</span><span style='color: #BB0000;'>2.25</span><span>
-#&gt; </span><span style='color: #555555;'> 3</span><span> ARVIN~ Arvind Fa~ 2019-11-13 365.   365.   370.     380    386.  -</span><span style='color: #BB0000;'>16.2</span><span> 
-#&gt; </span><span style='color: #555555;'> 4</span><span> BGREN~ BGR Energ~ 2019-11-14  29.3   29.3   29.7     30.6   30.7  -</span><span style='color: #BB0000;'>1</span><span>   
-#&gt; </span><span style='color: #555555;'> 5</span><span> BKMIN~ Bkm Indus~ 2019-11-14   0.65   0.65   0.7      0.7    0.7   0   
-#&gt; </span><span style='color: #555555;'> 6</span><span> BLS    BLS Inter~ 2019-11-13  58     58     58.6     60.5   64.4  -</span><span style='color: #BB0000;'>5.75</span><span>
-#&gt; </span><span style='color: #555555;'> 7</span><span> BRNL   Bharat Ro~ 2019-11-13  60     60     61       60     60.7   0.3 
-#&gt; </span><span style='color: #555555;'> 8</span><span> COMPI~ Compuage ~ 2019-11-11   8      8      9.8      8.15   8.6   1.2 
-#&gt; </span><span style='color: #555555;'> 9</span><span> DEN    Den Netwo~ 2019-11-14  39.0   39.0   39       41.0   41    -</span><span style='color: #BB0000;'>2</span><span>   
-#&gt; </span><span style='color: #555555;'>10</span><span> DGCON~ Digiconte~ 2019-11-14   3.8    3.8    3.8      4      4    -</span><span style='color: #BB0000;'>0.2</span><span> 
-#&gt; </span><span style='color: #555555;'># ... with 50 more rows, and 1 more variable: pChange </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
+    <pre class="examples"><div class='input'><span class='fu'>nse_stock_year_low</span>()</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 63 x 10</span><span>
+#&gt;    symbol symbolDesc dt          value   year    ltp value_old  prev change
+#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
+#&gt; </span><span style='color: #555555;'> 1</span><span> AGRIT~ Agri-Tech~ 2019-08-23  41.5   41.5   43.5      41.6   44.5  -</span><span style='color: #BB0000;'>1</span><span>   
+#&gt; </span><span style='color: #555555;'> 2</span><span> APCOT~ Apcotex I~ 2019-11-14 160.   160.   161.      160.   162.   -</span><span style='color: #BB0000;'>1.4</span><span> 
+#&gt; </span><span style='color: #555555;'> 3</span><span> ARVIN~ Arvind Fa~ 2019-11-13 365.   365.   369.      380    386.  -</span><span style='color: #BB0000;'>16.6</span><span> 
+#&gt; </span><span style='color: #555555;'> 4</span><span> BGREN~ BGR Energ~ 2019-11-14  29.3   29.3   29.8      30.6   30.7  -</span><span style='color: #BB0000;'>0.95</span><span>
+#&gt; </span><span style='color: #555555;'> 5</span><span> BKMIN~ Bkm Indus~ 2019-11-14   0.65   0.65   0.65      0.7    0.7  -</span><span style='color: #BB0000;'>0.05</span><span>
+#&gt; </span><span style='color: #555555;'> 6</span><span> BLS    BLS Inter~ 2019-11-13  58.0   58.0   58        60.5   64.4  -</span><span style='color: #BB0000;'>6.4</span><span> 
+#&gt; </span><span style='color: #555555;'> 7</span><span> BRNL   Bharat Ro~ 2019-11-13  60     60     60.8      60     60.7   0.1 
+#&gt; </span><span style='color: #555555;'> 8</span><span> COMPI~ Compuage ~ 2019-11-11   8      8      9.75      8.15   8.6   1.15
+#&gt; </span><span style='color: #555555;'> 9</span><span> DEN    Den Netwo~ 2019-11-14  39.0   39.0   39.0      41.0   41    -</span><span style='color: #BB0000;'>2.05</span><span>
+#&gt; </span><span style='color: #555555;'>10</span><span> DGCON~ Digiconte~ 2019-11-14   3.8    3.8    3.8       4      4    -</span><span style='color: #BB0000;'>0.2</span><span> 
+#&gt; </span><span style='color: #555555;'># ... with 53 more rows, and 1 more variable: pChange </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
 </div></span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
