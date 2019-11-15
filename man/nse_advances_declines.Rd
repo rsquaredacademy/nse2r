@@ -10,6 +10,8 @@ nse_advances_declines()
 NSE indices advances & declines.
 }
 \examples{
+\dontrun{
 nse_fo_lotsizes()
+}
 
 }

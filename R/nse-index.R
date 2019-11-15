@@ -3,7 +3,9 @@
 #' NSE indices quote.
 #'
 #' @examples
+#' \dontrun{
 #' nse_index_quote()
+#' }
 #'
 #' @export
 #'
@@ -16,7 +18,7 @@ nse_index_quote <- function() {
     magrittr::extract(-5) %>%
     nse_format_num(cols_skip = 1, cols_modify = 2:4) %>%
     nse_format(cols_skip = 1, cols_modify = 2:4)
-    
+
 }
 
 #' Index list
@@ -24,7 +26,9 @@ nse_index_quote <- function() {
 #' List NSE indices.
 #'
 #' @examples
+#' \dontrun{
 #' nse_index_list()
+#' }
 #'
 #' @export
 #'
@@ -45,8 +49,10 @@ nse_index_list <- function() {
 #' @param index_code Symbol of the index.
 #'
 #' @examples
+#' \dontrun{
 #' nse_index_valid("nifty auto")
 #' nse_index_valid("nifty cps")
+#' }
 #'
 #' @export
 #'

@@ -3,14 +3,16 @@
 #' Fetch most actively traded stocks in a month on NSE.
 #'
 #' @examples
+#' \dontrun{
 #' nse_stock_most_traded()
+#' }
 #'
 #' @export
 #'
 nse_stock_most_traded <- function() {
 
   url <- "https://www.nseindia.com/products/dynaContent/equities/equities/json/mostActiveMonthly.json"
-  
+
   url %>%
     nse_base() %>%
     nse_format_num(cols_skip = 1, cols_modify = 2:6) %>%
@@ -23,14 +25,16 @@ nse_stock_most_traded <- function() {
 #' Fetch stocks that have touched their 52 week highs during the day on NSE.
 #'
 #' @examples
+#' \dontrun{
 #' nse_stock_year_high()
+#' }
 #'
 #' @export
 #'
 nse_stock_year_high <- function() {
 
   url <- "https://www.nseindia.com/products/dynaContent/equities/equities/json/online52NewHigh.json"
-  
+
   cols_to_skip   <- c(1, 2, 7)
   cols_to_modify <- c(3:6, 8:10)
 
@@ -50,14 +54,16 @@ nse_stock_year_high <- function() {
 #' Fetch stocks that have touched their 52 week lows during the day on NSE.
 #'
 #' @examples
+#' \dontrun{
 #' nse_stock_year_low()
+#' }
 #'
 #' @export
 #'
 nse_stock_year_low <- function() {
 
   url <- "https://www.nseindia.com/products/dynaContent/equities/equities/json/online52NewLow.json"
-  
+
   cols_to_skip   <- c(1, 2, 7)
   cols_to_modify <- c(3:6, 8:10)
 
@@ -78,7 +84,9 @@ nse_stock_year_low <- function() {
 #' Fetch stock symbol and name from NSE.
 #'
 #' @examples
+#' \dontrun{
 #' nse_stock_code()
+#' }
 #'
 #' @export
 #'
@@ -88,7 +96,7 @@ nse_stock_code <- function() {
 
   url %>%
     utils::read.csv() %>%
-    magrittr::extract(, 1:2) %>% 
+    magrittr::extract(., 1:2) %>%
     tibble::as_tibble() %>%
     purrr::map_dfc(as.character)
 
@@ -101,8 +109,10 @@ nse_stock_code <- function() {
 #' @param stock_code Symbol of the stock.
 #'
 #' @examples
+#' \dontrun{
 #' nse_stock_valid("infy")
 #' nse_stock_valid("glo")
+#' }
 #'
 #' @export
 #'
@@ -121,14 +131,16 @@ nse_stock_valid <- function(stock_code) {
 #' Fetch top gainers for the last trading session.
 #'
 #' @examples
+#' \dontrun{
 #' nse_stock_top_gainers()
+#' }
 #'
 #' @export
 #'
 nse_stock_top_gainers <- function() {
 
   url <- "http://www.nseindia.com/live_market/dynaContent/live_analysis/gainers/niftyGainers1.json"
-  
+
   cols_to_skip   <- c(1, 2, 11, 12)
   cols_to_modify <- 3:10
 
@@ -148,14 +160,16 @@ nse_stock_top_gainers <- function() {
 #' Fetch top losers for the last trading session.
 #'
 #' @examples
+#' \dontrun{
 #' nse_stock_top_losers()
+#' }
 #'
 #' @export
 #'
 nse_stock_top_losers <- function() {
 
   url <- "http://www.nseindia.com/live_market/dynaContent/live_analysis/losers/niftyLosers1.json"
-  
+
   cols_to_skip   <- c(1, 2, 11, 12)
   cols_to_modify <- 3:10
 
@@ -178,7 +192,9 @@ nse_stock_top_losers <- function() {
 #' @param stock_code Symbol of the stock.
 #'
 #' @examples
+#' \dontrun{
 #' nse_stock_quote("infy")
+#' }
 #'
 #' @export
 #'

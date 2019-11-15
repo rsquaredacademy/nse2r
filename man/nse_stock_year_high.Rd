@@ -10,6 +10,8 @@ nse_stock_year_high()
 Fetch stocks that have touched their 52 week highs during the day on NSE.
 }
 \examples{
+\dontrun{
 nse_stock_year_high()
+}
 
 }

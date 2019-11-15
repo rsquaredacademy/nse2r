@@ -10,6 +10,8 @@ nse_stock_code()
 Fetch stock symbol and name from NSE.
 }
 \examples{
+\dontrun{
 nse_stock_code()
+}
 
 }

@@ -13,6 +13,8 @@ nse_stock_quote(stock_code)
 Fetch the quote for a given stock code.
 }
 \examples{
+\dontrun{
 nse_stock_quote("infy")
+}
 
 }

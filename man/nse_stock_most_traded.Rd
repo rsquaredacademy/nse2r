@@ -10,6 +10,8 @@ nse_stock_most_traded()
 Fetch most actively traded stocks in a month on NSE.
 }
 \examples{
+\dontrun{
 nse_stock_most_traded()
+}
 
 }

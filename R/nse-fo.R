@@ -3,7 +3,9 @@
 #' Fetch futures and options lot size from NSE.
 #'
 #' @examples
+#' \dontrun{
 #' nse_fo_lotsizes()
+#' }
 #'
 #' @export
 #'
@@ -49,7 +51,9 @@ nse_fo_lotsizes <- function() {
 #' Top futures and options gainers for the last trading session.
 #'
 #' @examples
+#' \dontrun{
 #' nse_fo_top_gainers()
+#' }
 #'
 #' @export
 #'
@@ -77,7 +81,9 @@ nse_fo_top_gainers <- function() {
 #' Top futures and options losers for the last trading session.
 #'
 #' @examples
+#' \dontrun{
 #' nse_fo_top_losers()
+#' }
 #'
 #' @export
 #'

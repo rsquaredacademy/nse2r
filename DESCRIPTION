@@ -23,6 +23,7 @@ Imports:
     utils,
     xml2
 Suggests: 
+	dplyr,
     httptest,
     testthat (>= 2.1.0),
     knitr,

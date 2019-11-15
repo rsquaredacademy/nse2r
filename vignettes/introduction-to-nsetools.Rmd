@@ -16,6 +16,11 @@ knitr::opts_chunk$set(
 )
 ```
 
+```{r load_httptest, include=FALSE}
+library(httptest)
+start_vignette("nse")
+```
+
 [NSE](https://www.nseindia.com/) (National Stock Exchange) is the leading stock exchange of India, located in the city of Mumbai. While users can manually download data from NSE through a browser, importing this data into R is then cumbersome. The nsetools R package implements the retrieval of data from NSE and aims to reduce the pre-processing steps needed in analyzing such data.
 
 nsetools is inspired by and a port of the Python package [nsetools](https://nsetools.readthedocs.io/en/latest/). The authors and contributors for this R package are not affiliated with NSE and NSE does not offer support for this R package.
@@ -58,22 +63,10 @@ library(nsetools)
 
 ## Stocks
 
-Let us fetch the stock symbols and names from NSE.
-
-```{r stock_1}
-nse_stock_code()
-```
-
 Fetch most actively traded stocks in a month on NSE.
 
 ```{r stock_2}
 nse_stock_most_traded()
-```
-
-Fetch the quote for a particular stock.
-
-```{r stock_3}
-nse_stock_quote("infy")
 ```
 
 Fetch top gainers for the last trading session.
@@ -99,14 +92,6 @@ Fetch stocks that have touched their 52 week lows during the day on NSE.
 ```{r stock_7}
 nse_stock_year_low()
 ```
-
-Check if stock code is valid.
-
-```{r stock_8}
-nse_stock_valid("inf")
-nse_stock_valid("infy")
-```
-
 ## Index
 
 List NSE indices.
@@ -129,12 +114,6 @@ nse_index_valid("nifty 50")
 ```
 
 ## Futures & Options
-
-Fetch futures and options lot size from NSE.
-
-```{r fo_1}
-nse_fo_lotsizes()
-```
 
 Top futures and options gainers for the last trading session.
 
@@ -176,7 +155,9 @@ NSE indices advances & declines.
 nse_advances_declines()
 ```
 
-
+```{r end_vignette, include=FALSE}
+end_vignette()
+```
 
 
 

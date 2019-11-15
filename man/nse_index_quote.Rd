@@ -10,6 +10,8 @@ nse_index_quote()
 NSE indices quote.
 }
 \examples{
+\dontrun{
 nse_index_quote()
+}
 
 }

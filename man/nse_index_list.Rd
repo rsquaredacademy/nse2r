@@ -10,6 +10,8 @@ nse_index_list()
 List NSE indices.
 }
 \examples{
+\dontrun{
 nse_index_list()
+}
 
 }

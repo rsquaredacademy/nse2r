@@ -10,6 +10,8 @@ nse_preopen_fo()
 Fetch data of pre open session of futures and options from NSE.
 }
 \examples{
+\dontrun{
 nse_preopen_fo()
+}
 
 }

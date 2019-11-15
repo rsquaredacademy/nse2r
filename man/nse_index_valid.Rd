@@ -13,7 +13,9 @@ nse_index_valid(index_code)
 Check if index is valid.
 }
 \examples{
+\dontrun{
 nse_index_valid("nifty auto")
 nse_index_valid("nifty cps")
+}
 
 }

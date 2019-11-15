@@ -3,7 +3,9 @@
 #' NSE indices advances & declines.
 #'
 #' @examples
+#' \dontrun{
 #' nse_fo_lotsizes()
+#' }
 #'
 #' @export
 #'
