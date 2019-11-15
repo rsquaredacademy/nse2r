@@ -32,7 +32,11 @@ Status](https://img.shields.io/codecov/c/github/rsquaredacademy/nsetools/master.
 
 ## Overview
 
-nsetools fetches data from the National Stock Exchange, India. It is inspired by and a port of the Python package [nsetools](https://github.com/vsjha18/nsetools). With nsetools, you can fetch the following data related to:
+[NSE](https://www.nseindia.com/) (National Stock Exchange) is the leading stock exchange of India, located in the city of Mumbai. While users can manually download data from NSE through a browser, importing this data into R is then cumbersome. The nsetools R package implements the retrieval of data from NSE and aims to reduce the pre-processing steps needed in analyzing such data.
+
+nsetools is inspired by and a port of the Python package [nsetools](https://nsetools.readthedocs.io/en/latest/). The authors and contributors for this R package are not affiliated with NSE and NSE does not offer support for this R package.
+
+With nsetools, you can fetch the following data related to:
 
 - stocks
     - quote for a given stock
@@ -54,7 +58,6 @@ nsetools fetches data from the National Stock Exchange, India. It is inspired by
     - nifty futures & options
 - indices advances & declines
 
-
 ## Installation
 
 You can install the development version of nsetools from [GitHub](https://github.com/rsquaredacademy/nsetools/) with:
@@ -66,14 +69,13 @@ devtools::install_github("rsquaredacademy/nsetools")
 
 ## Articles
 
-- [Introduction to nsetools](https://nsetools.rsquaredacademy.com/articles/intro-to-nsetools.html)
+- [Introduction to nsetools](https://nsetools.rsquaredacademy.com/articles/introduction-to-nsetools.html)
 
 ## Usage
 
 ```{r load_nsetools, echo=FALSE, message=FALSE, warning=FALSE}
 library(nsetools)
 ```
-
 
 nsetools uses consistent prefix `nse_` for easy tab completion.
 
