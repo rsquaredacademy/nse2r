@@ -18,16 +18,13 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/nsetools)](https://cran.r-project.org/package=nsetools)
-[![cran
-checks](https://cranchecks.info/badges/summary/nsetools)](https://cran.r-project.org/web/checks/check_results_nsetools.html)
 [![Travis-CI Build
 Status](https://travis-ci.org/rsquaredacademy/nsetools.svg?branch=master)](https://travis-ci.org/rsquaredacademy/nsetools)
 [![AppVeyor Build
 Status](https://ci.appveyor.com/api/projects/status/github/rsquaredacademy/nsetools?branch=master&svg=true)](https://ci.appveyor.com/project/rsquaredacademy/nsetools)
 [![Coverage
 Status](https://img.shields.io/codecov/c/github/rsquaredacademy/nsetools/master.svg)](https://codecov.io/github/rsquaredacademy/nsetools?branch=master)
-[![](https://cranlogs.r-pkg.org/badges/grand-total/nsetools)](https://cran.r-project.org/package=nsetools)
-[![Lifecycle: experimental](https://img.shields.io/badge lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
 ## Overview
