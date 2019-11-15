@@ -1,0 +1,399 @@
+{
+    "preClose": 908,
+    "code": 1,
+    "data": [
+        {
+            "name": "NIFTY 50 Pre Open",
+            "lastPrice": "11,879.20",
+            "change": "-28.95",
+            "pChange": "-0.24",
+            "imgFileName": "NIFTY_50_Pre_Open_open.png"
+        },
+        {
+            "name": "NIFTY 50",
+            "lastPrice": "11,913.45",
+            "change": "5.30",
+            "pChange": "0.04",
+            "imgFileName": "NIFTY_50_open.png"
+        },
+        {
+            "name": "NIFTY NEXT 50",
+            "lastPrice": "28,451.15",
+            "change": "63.90",
+            "pChange": "0.23",
+            "imgFileName": "NIFTY_NEXT_50_open.png"
+        },
+        {
+            "name": "NIFTY100 LIQ 15",
+            "lastPrice": "3,758.75",
+            "change": "18.95",
+            "pChange": "0.51",
+            "imgFileName": "NIFTY100_LIQ_15_open.png"
+        },
+        {
+            "name": "NIFTY BANK",
+            "lastPrice": "31,115.55",
+            "change": "366.15",
+            "pChange": "1.19",
+            "imgFileName": "NIFTY_BANK_open.png"
+        },
+        {
+            "name": "INDIA VIX",
+            "lastPrice": "16.2500",
+            "change": "0.40",
+            "pChange": "2.49",
+            "imgFileName": "INDIA_VIX_open.png"
+        },
+        {
+            "name": "NIFTY 100",
+            "lastPrice": "12,053.30",
+            "change": "8.45",
+            "pChange": "0.07",
+            "imgFileName": "NIFTY_100_open.png"
+        },
+        {
+            "name": "NIFTY 500",
+            "lastPrice": "9,695.85",
+            "change": "12.55",
+            "pChange": "0.13",
+            "imgFileName": "NIFTY_500_open.png"
+        },
+        {
+            "name": "NIFTY MIDCAP 100",
+            "lastPrice": "16,812.10",
+            "change": "98.75",
+            "pChange": "0.59",
+            "imgFileName": "NIFTY_MIDCAP_100_open.png"
+        },
+        {
+            "name": "NIFTY MIDCAP 50",
+            "lastPrice": "4,625.55",
+            "change": "29.90",
+            "pChange": "0.65",
+            "imgFileName": "NIFTY_MIDCAP_50_open.png"
+        },
+        {
+            "name": "NIFTY INFRA",
+            "lastPrice": "3,254.20",
+            "change": "-0.40",
+            "pChange": "-0.01",
+            "imgFileName": "NIFTY_INFRA_open.png"
+        },
+        {
+            "name": "NIFTY REALTY",
+            "lastPrice": "283.40",
+            "change": "2.35",
+            "pChange": "0.84",
+            "imgFileName": "NIFTY_REALTY_open.png"
+        },
+        {
+            "name": "NIFTY ENERGY",
+            "lastPrice": "15,934.65",
+            "change": "23.65",
+            "pChange": "0.15",
+            "imgFileName": "NIFTY_ENERGY_open.png"
+        },
+        {
+            "name": "NIFTY FMCG",
+            "lastPrice": "31,802.55",
+            "change": "-144.95",
+            "pChange": "-0.45",
+            "imgFileName": "NIFTY_FMCG_open.png"
+        },
+        {
+            "name": "NIFTY MNC",
+            "lastPrice": "13,873.95",
+            "change": "-47.20",
+            "pChange": "-0.34",
+            "imgFileName": "NIFTY_MNC_open.png"
+        },
+        {
+            "name": "NIFTY PHARMA",
+            "lastPrice": "7,784.90",
+            "change": "-2.50",
+            "pChange": "-0.03",
+            "imgFileName": "NIFTY_PHARMA_open.png"
+        },
+        {
+            "name": "NIFTY PSE",
+            "lastPrice": "3,340.35",
+            "change": "38.50",
+            "pChange": "1.17",
+            "imgFileName": "NIFTY_PSE_open.png"
+        },
+        {
+            "name": "NIFTY PSU BANK",
+            "lastPrice": "2,461.05",
+            "change": "24.00",
+            "pChange": "0.98",
+            "imgFileName": "NIFTY_PSU_BANK_open.png"
+        },
+        {
+            "name": "NIFTY SERV SECTOR",
+            "lastPrice": "16,824.30",
+            "change": "87.10",
+            "pChange": "0.52",
+            "imgFileName": "NIFTY_SERV_SECTOR_open.png"
+        },
+        {
+            "name": "NIFTY IT",
+            "lastPrice": "15,308.55",
+            "change": "-74.75",
+            "pChange": "-0.49",
+            "imgFileName": "NIFTY_IT_open.png"
+        },
+        {
+            "name": "NIFTY SMLCAP 100",
+            "lastPrice": "5,742.50",
+            "change": "-0.60",
+            "pChange": "-0.01",
+            "imgFileName": "NIFTY_SMLCAP_100_open.png"
+        },
+        {
+            "name": "NIFTY 200",
+            "lastPrice": "6,145.90",
+            "change": "7.65",
+            "pChange": "0.12",
+            "imgFileName": "NIFTY_200_open.png"
+        },
+        {
+            "name": "NIFTY AUTO",
+            "lastPrice": "8,159.00",
+            "change": "-10.65",
+            "pChange": "-0.13",
+            "imgFileName": "NIFTY_AUTO_open.png"
+        },
+        {
+            "name": "NIFTY MEDIA",
+            "lastPrice": "1,878.90",
+            "change": "53.05",
+            "pChange": "2.91",
+            "imgFileName": "NIFTY_MEDIA_open.png"
+        },
+        {
+            "name": "NIFTY METAL",
+            "lastPrice": "2,610.10",
+            "change": "-2.85",
+            "pChange": "-0.11",
+            "imgFileName": "NIFTY_METAL_open.png"
+        },
+        {
+            "name": "NIFTY DIV OPPS 50",
+            "lastPrice": "2,591.15",
+            "change": "-0.20",
+            "pChange": "-0.01",
+            "imgFileName": "NIFTY_DIV_OPPS_50_open.png"
+        },
+        {
+            "name": "NIFTY COMMODITIES",
+            "lastPrice": "3,394.40",
+            "change": "-2.15",
+            "pChange": "-0.06",
+            "imgFileName": "NIFTY_COMMODITIES_open.png"
+        },
+        {
+            "name": "NIFTY CONSUMPTION",
+            "lastPrice": "5,039.20",
+            "change": "-29.35",
+            "pChange": "-0.58",
+            "imgFileName": "NIFTY_CONSUMPTION_open.png"
+        },
+        {
+            "name": "NIFTY CPSE",
+            "lastPrice": "2,002.35",
+            "change": "12.35",
+            "pChange": "0.62",
+            "imgFileName": "NIFTY_CPSE_open.png"
+        },
+        {
+            "name": "NIFTY FIN SERVICE",
+            "lastPrice": "13,969.10",
+            "change": "100.45",
+            "pChange": "0.72",
+            "imgFileName": "NIFTY_FIN_SERVICE_open.png"
+        },
+        {
+            "name": "NIFTY GROWSECT 15",
+            "lastPrice": "6,388.80",
+            "change": "21.05",
+            "pChange": "0.33",
+            "imgFileName": "NIFTY_GROWSECT_15_open.png"
+        },
+        {
+            "name": "NIFTY50 VALUE 20",
+            "lastPrice": "5,444.50",
+            "change": "-16.55",
+            "pChange": "-0.30",
+            "imgFileName": "NIFTY50_VALUE_20_open.png"
+        },
+        {
+            "name": "NIFTY50 TR 2X LEV",
+            "lastPrice": "6,636.75",
+            "change": "3.10",
+            "pChange": "0.05",
+            "imgFileName": "NIFTY50_TR_2X_LEV_open.png"
+        },
+        {
+            "name": "NIFTY50 PR 2X LEV",
+            "lastPrice": "5,105.90",
+            "change": "2.35",
+            "pChange": "0.05",
+            "imgFileName": "NIFTY50_PR_2X_LEV_open.png"
+        },
+        {
+            "name": "NIFTY50 TR 1X INV",
+            "lastPrice": "342.60",
+            "change": "0.00",
+            "pChange": "0.00",
+            "imgFileName": "NIFTY50_TR_1X_INV_open.png"
+        },
+        {
+            "name": "NIFTY50 PR 1X INV",
+            "lastPrice": "390.55",
+            "change": "0.00",
+            "pChange": "0.00",
+            "imgFileName": "NIFTY50_PR_1X_INV_open.png"
+        },
+        {
+            "name": "NIFTY ALPHA 50",
+            "lastPrice": "12,810.40",
+            "change": "18.65",
+            "pChange": "0.15",
+            "imgFileName": "NIFTY_ALPHA_50_open.png"
+        },
+        {
+            "name": "NIFTY50 EQL WGT",
+            "lastPrice": "12,356.45",
+            "change": "29.75",
+            "pChange": "0.24",
+            "imgFileName": "NIFTY50_EQL_WGT_open.png"
+        },
+        {
+            "name": "NIFTY100 EQL WGT",
+            "lastPrice": "13,319.50",
+            "change": "50.60",
+            "pChange": "0.38",
+            "imgFileName": "NIFTY100_EQL_WGT_open.png"
+        },
+        {
+            "name": "NIFTY100 LOWVOL30",
+            "lastPrice": "9,001.90",
+            "change": "-38.40",
+            "pChange": "-0.42",
+            "imgFileName": "NIFTY100_LOWVOL30_open.png"
+        },
+        {
+            "name": "NIFTY MID LIQ 15",
+            "lastPrice": "3,909.20",
+            "change": "28.40",
+            "pChange": "0.73",
+            "imgFileName": "NIFTY_MID_LIQ_15_open.png"
+        },
+        {
+            "name": "NIFTY PVT BANK",
+            "lastPrice": "17,220.00",
+            "change": "223.75",
+            "pChange": "1.32",
+            "imgFileName": "NIFTY_PVT_BANK_open.png"
+        },
+        {
+            "name": "NIFTY100 QUALTY30",
+            "lastPrice": "2,749.15",
+            "change": "-11.35",
+            "pChange": "-0.41",
+            "imgFileName": "NIFTY100_QUALTY30_open.png"
+        },
+        {
+            "name": "NIFTY GS 8 13YR",
+            "lastPrice": "2,004.33",
+            "change": "-1.49",
+            "pChange": "-0.07",
+            "imgFileName": "NIFTY_GS_8_13YR_open.png"
+        },
+        {
+            "name": "NIFTY GS 10YR",
+            "lastPrice": "1,849.68",
+            "change": "-0.73",
+            "pChange": "-0.04",
+            "imgFileName": "NIFTY_GS_10YR_open.png"
+        },
+        {
+            "name": "NIFTY GS 10YR CLN",
+            "lastPrice": "942.89",
+            "change": "-0.55",
+            "pChange": "-0.06",
+            "imgFileName": "NIFTY_GS_10YR_CLN_open.png"
+        },
+        {
+            "name": "NIFTY GS 4 8YR",
+            "lastPrice": "2,132.68",
+            "change": "-0.85",
+            "pChange": "-0.04",
+            "imgFileName": "NIFTY_GS_4_8YR_open.png"
+        },
+        {
+            "name": "NIFTY GS 11 15YR",
+            "lastPrice": "2,121.64",
+            "change": "-2.64",
+            "pChange": "-0.12",
+            "imgFileName": "NIFTY_GS_11_15YR_open.png"
+        },
+        {
+            "name": "NIFTY GS 15YRPLUS",
+            "lastPrice": "2,290.59",
+            "change": "0.70",
+            "pChange": "0.03",
+            "imgFileName": "NIFTY_GS_15YRPLUS_open.png"
+        },
+        {
+            "name": "NIFTY GS COMPSITE",
+            "lastPrice": "2,040.27",
+            "change": "-1.33",
+            "pChange": "-0.07",
+            "imgFileName": "NIFTY_GS_COMPSITE_open.png"
+        },
+        {
+            "name": "NIFTY MIDCAP 150",
+            "lastPrice": "6,186.45",
+            "change": "32.95",
+            "pChange": "0.54",
+            "imgFileName": "NIFTY_MIDCAP_150_open.png"
+        },
+        {
+            "name": "NIFTY SMLCAP 50",
+            "lastPrice": "2,778.65",
+            "change": "-2.00",
+            "pChange": "-0.07",
+            "imgFileName": "NIFTY_SMLCAP_50_open.png"
+        },
+        {
+            "name": "NIFTY SMLCAP 250",
+            "lastPrice": "4,778.35",
+            "change": "4.10",
+            "pChange": "0.09",
+            "imgFileName": "NIFTY_SMLCAP_250_open.png"
+        },
+        {
+            "name": "NIFTY MIDSML 400",
+            "lastPrice": "5,682.50",
+            "change": "22.25",
+            "pChange": "0.39",
+            "imgFileName": "NIFTY_MIDSML_400_open.png"
+        },
+        {
+            "name": "NIFTY200 QUALTY30",
+            "lastPrice": "9,967.75",
+            "change": "-43.00",
+            "pChange": "-0.43",
+            "imgFileName": "NIFTY200_QUALTY30_open.png"
+        }
+    ],
+    "mktOpen": 915,
+    "corrClose": 1600,
+    "preOpen": 900,
+    "corrOpen": 1540,
+    "haltedStatus": "Next Trading Date : Nov 12 , 2019",
+    "time": "Nov 11, 2019",
+    "mktClose": 1530,
+    "status": "Normal Market has Closed.   Nov 11, 2019"
+}

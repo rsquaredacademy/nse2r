@@ -1,0 +1,191 @@
+---
+title: "introduction-to-nsetools"
+author: "Aravind Hebbali and Lokesh Atreja"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{introduction-to-nsetools}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+[NSE](https://www.nseindia.com/) (National Stock Exchange) is the leading stock exchange of India, located in the city of Mumbai. While users can manually download data from NSE through a browser, importing this data into R is then cumbersome. The nsetools R package implements the retrieval of data from NSE and aims to reduce the pre-processing steps needed in analyzing such data.
+
+nsetools is inspired by and a port of the Python package [nsetools](https://nsetools.readthedocs.io/en/latest/). The authors and contributors for this R package are not affiliated with NSE and NSE does not offer support for this R package.
+
+With nsetools, you can fetch the following data related to:
+
+- stocks
+    - quote for a given stock
+    - symbol & name
+    - check validity
+    - most actively traded stocks in a month
+    - 52 week high/low
+    - top gainers/losers for the last trading session
+- index
+    - list indices
+    - check validity
+    - fetch indices quote
+- futures & options
+    - lot size
+    - top gainers/losers for the last trading session
+- pre open data
+    - nifty
+    - nifty bank
+    - nifty futures & options
+- indices advances & declines
+
+
+## Usage
+
+nsetools uses consistent prefix `nse_` for easy tab completion.
+
+- `nse_index_` for index 
+- `nse_stock_` for stocks
+- `nse_fo_` for futures and options
+- `nse_preopen_` for preopen data
+
+```{r load_nse}
+library(nsetools)
+```
+
+## Stocks
+
+Let us fetch the stock symbols and names from NSE.
+
+```{r stock_1}
+nse_stock_code()
+```
+
+Fetch most actively traded stocks in a month on NSE.
+
+```{r stock_2}
+nse_stock_most_traded()
+```
+
+Fetch the quote for a particular stock.
+
+```{r stock_3}
+nse_stock_quote("infy")
+```
+
+Fetch top gainers for the last trading session.
+
+```{r stock_4}
+nse_stock_top_gainers()
+```
+
+Fetch top losers for the last trading session.
+
+```{r stock_5}
+nse_stock_top_losers()
+```
+
+Fetch stocks that have touched their 52 week highs during the day on NSE.
+
+```{r stock_6}
+nse_stock_year_high()
+```
+
+Fetch stocks that have touched their 52 week lows during the day on NSE.
+
+```{r stock_7}
+nse_stock_year_low()
+```
+
+Check if stock code is valid.
+
+```{r stock_8}
+nse_stock_valid("inf")
+nse_stock_valid("infy")
+```
+
+## Index
+
+List NSE indices.
+
+```{r index_1}
+nse_index_list()
+```
+
+NSE indices quote.
+
+```{r index_2}
+nse_index_quote()
+```
+
+Check if index is valid.
+
+```{r index_3}
+nse_index_valid("nify 50")
+nse_index_valid("nifty 50")
+```
+
+## Futures & Options
+
+Fetch futures and options lot size from NSE.
+
+```{r fo_1}
+nse_fo_lotsizes()
+```
+
+Top futures and options gainers for the last trading session.
+
+```{r fo_2}
+nse_fo_top_gainers()
+```
+
+Top futures and options losers for the last trading session.
+
+```{r fo_3}
+nse_fo_top_losers()
+```
+
+## Preopen Data
+
+Fetch data of pre open session of futures and options from NSE.
+
+```{r po_1}
+nse_preopen_fo()
+```
+
+Fetch data of pre open session of Nifty from NSE.
+
+```{r po_2}
+nse_preopen_nifty()
+```
+
+Fetch data of pre open session of Nifty Bank from NSE.
+
+```{r po_3}
+nse_preopen_nifty_bank()
+```
+
+## Advances & Declines
+
+NSE indices advances & declines.
+
+```{r ad}
+nse_advances_declines()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
