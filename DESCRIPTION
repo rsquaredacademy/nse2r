@@ -1,6 +1,6 @@
 Package: nsetools
 Type: Package
-Title: Tools for Collecting Data from 'National Stock Exchange (India)'
+Title: Fetch Data from 'National Stock Exchange (India)'
 Version: 0.0.9
 Authors@R: c(person("Aravind", "Hebbali", role = c("aut", "cre"), 
              email = "hebbali.aravind@gmail.com"),
@@ -8,8 +8,11 @@ Authors@R: c(person("Aravind", "Hebbali", role = c("aut", "cre"),
              email = "latreja@gmail.com"),
              person("Lionel", "Pinto", role = c("ctb"),
              email = "lionel.nie@gmail.com"))
-Description: Access data related to stocks, indices, futures & options from the 
+Description: Fetch data related to stocks, index, futures & options from the 
     'National Stock Exchange (India)'. This package is community maintained and is not officially supported by 'NSE'. The accuracy of data is only as correct as provided on <https://www.nseindia.com>.
+License: MIT + file LICENSE
+URL: https://github.com/rsquaredacademy/nsetools, https://nsetools.rsquaredacademy.com/ 
+BugReports: https://github.com/rsquaredacademy/nsetools/issues    
 Depends: 
     R(>= 3.3)
 Imports: 
@@ -29,7 +32,6 @@ Suggests:
     knitr,
     rmarkdown,
     covr
-License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1

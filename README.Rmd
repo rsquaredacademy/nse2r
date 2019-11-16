@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 ```
 # nsetools
 
-> Tools for fetching data from the National Stock Exchange, India.
+> Fetch data from the National Stock Exchange, India.
 
 <!-- badges: start -->
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/nsetools)](https://cran.r-project.org/package=nsetools)
