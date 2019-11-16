@@ -41,6 +41,10 @@ home:
     href: https://www.rsquaredacademy.com
 
 reference:
+- title: Shiny App
+  contents:
+  - nse_app
+
 - title: Stocks
 
   contents:
@@ -66,14 +70,14 @@ reference:
   - nse_fo_lotsizes
   - nse_fo_top_gainers
   - nse_fo_top_losers
-  
+
 - title: Pre Open Data
 
   contents:
   - nse_preopen_fo
   - nse_preopen_nifty
   - nse_preopen_nifty_bank
-  
+
 - title: Advances & Declines
   contents:
   - nse_advances_declines
