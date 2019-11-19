@@ -12,5 +12,5 @@ nse_app  <- function() {
   check_suggests('shinycssloaders')
   check_suggests('shinythemes')
 
-  shiny::runApp(appDir = system.file("application", package = "nsetools"))
+  shiny::runApp(appDir = system.file("application", package = "nse2r"))
 }

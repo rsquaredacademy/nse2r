@@ -1,4 +1,4 @@
-url: https://nsetools.rsquaredacademy.com
+url: https://nse2r.rsquaredacademy.com
 
 authors:
   Aravind Hebbali:
@@ -13,18 +13,18 @@ templates:
     bootswatch: cosmo
     docsearch:
       api_key:
-      index_name: nsetools
+      index_name: nse2r
 
 navbar:
-  title: "nsetools"
+  title: "nse2r"
   type: inverse
   left:
     - text: "Home"
       href: index.html
     - text: "Guides"
       menu:
-        - text: "Introduction to nsetools"
-          href: articles/introduction-to-nsetools.html
+        - text: "Introduction to nse2r"
+          href: articles/introduction-to-nse2r.html
     - text: "Reference"
       menu:
         - text: "Functions"
@@ -33,7 +33,7 @@ navbar:
           href: news/index.html
   right:
    - icon: fa-github
-     href: https://github.com/rsquaredacademy/nsetools
+     href: https://github.com/rsquaredacademy/nse2r
 
 home:
   links:

@@ -12,28 +12,28 @@ knitr::opts_chunk$set(
   out.width = "100%"
 )
 ```
-# nsetools
+# nse2r
 
 > Fetch data from the National Stock Exchange, India.
 
 <!-- badges: start -->
-[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/nsetools)](https://cran.r-project.org/package=nsetools)
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/nse2r)](https://cran.r-project.org/package=nse2r)
 [![Travis-CI Build
-Status](https://travis-ci.org/rsquaredacademy/nsetools.svg?branch=master)](https://travis-ci.org/rsquaredacademy/nsetools)
+Status](https://travis-ci.org/rsquaredacademy/nse2r.svg?branch=master)](https://travis-ci.org/rsquaredacademy/nse2r)
 [![AppVeyor Build
-Status](https://ci.appveyor.com/api/projects/status/github/rsquaredacademy/nsetools?branch=master&svg=true)](https://ci.appveyor.com/project/rsquaredacademy/nsetools)
+Status](https://ci.appveyor.com/api/projects/status/github/rsquaredacademy/nse2r?branch=master&svg=true)](https://ci.appveyor.com/project/rsquaredacademy/nse2r)
 [![Coverage
-Status](https://img.shields.io/codecov/c/github/rsquaredacademy/nsetools/master.svg)](https://codecov.io/github/rsquaredacademy/nsetools?branch=master)
+Status](https://img.shields.io/codecov/c/github/rsquaredacademy/nse2r/master.svg)](https://codecov.io/github/rsquaredacademy/nse2r?branch=master)
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
 ## Overview
 
-[NSE](https://www.nseindia.com/) (National Stock Exchange) is the leading stock exchange of India, located in the city of Mumbai. While users can manually download data from NSE through a browser, importing this data into R is then cumbersome. The nsetools R package implements the retrieval of data from NSE and aims to reduce the pre-processing steps needed in analyzing such data.
+[NSE](https://www.nseindia.com/) (National Stock Exchange) is the leading stock exchange of India, located in the city of Mumbai. While users can manually download data from NSE through a browser, importing this data into R is then cumbersome. The nse2r R package implements the retrieval of data from NSE and aims to reduce the pre-processing steps needed in analyzing such data.
 
-nsetools is inspired by and a port of the Python package [nsetools](https://nsetools.readthedocs.io/en/latest/). The authors and contributors for this R package are not affiliated with NSE and NSE does not offer support for this R package.
+nse2r is inspired by and a port of the Python package [nsetools](https://nsetools.readthedocs.io/en/latest/). The authors and contributors for this R package are not affiliated with NSE and NSE does not offer support for this R package.
 
-With nsetools, you can fetch the following data related to:
+With nse2r, you can fetch the following data related to:
 
 - stocks
     - quote for a given stock
@@ -57,24 +57,24 @@ With nsetools, you can fetch the following data related to:
 
 ## Installation
 
-You can install the development version of nsetools from [GitHub](https://github.com/rsquaredacademy/nsetools/) with:
+You can install the development version of nse2r from [GitHub](https://github.com/rsquaredacademy/nse2r/) with:
 
 ```{r cran-install, eval=FALSE}
 # install.packages("devtools")
-devtools::install_github("rsquaredacademy/nsetools")
+devtools::install_github("rsquaredacademy/nse2r")
 ```
 
 ## Articles
 
-- [Introduction to nsetools](https://nsetools.rsquaredacademy.com/articles/introduction-to-nsetools.html)
+- [Introduction to nse2r](https://nse2r.rsquaredacademy.com/articles/introduction-to-nse2r.html)
 
 ## Usage
 
-```{r load_nsetools, echo=FALSE, message=FALSE, warning=FALSE}
-library(nsetools)
+```{r load_nse2r, echo=FALSE, message=FALSE, warning=FALSE}
+library(nse2r)
 ```
 
-nsetools uses consistent prefix `nse_` for easy tab completion.
+nse2r uses consistent prefix `nse_` for easy tab completion.
 
 - `nse_index_` for index 
 - `nse_stock_` for stocks
@@ -117,6 +117,6 @@ nse_stock_most_traded()
 nse_fo_top_gainers()
 ```
 
-Please note that the 'nsetools' project is released with a
+Please note that the 'nse2r' project is released with a
 [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
 By contributing to this project, you agree to abide by its terms.

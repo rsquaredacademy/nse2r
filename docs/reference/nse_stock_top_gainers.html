@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>NSE top gainers — nse_stock_top_gainers • nsetools</title>
+<title>NSE top gainers — nse_stock_top_gainers • nse2r</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -65,7 +65,7 @@
         <span class="icon-bar"></span>
       </button>
       <span class="navbar-brand">
-        <a class="navbar-link" href="../index.html">nsetools</a>
+        <a class="navbar-link" href="../index.html">nse2r</a>
         <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.9</span>
       </span>
     </div>
@@ -83,7 +83,7 @@
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="../articles/introduction-to-nsetools.html">Introduction to nsetools</a>
+      <a href="../articles/introduction-to-nse2r.html">Introduction to nse2r</a>
     </li>
   </ul>
 </li>
@@ -106,7 +106,7 @@
       
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/rsquaredacademy/nsetools">
+  <a href="https://github.com/rsquaredacademy/nse2r">
     <span class="fa fa-github"></span>
      
   </a>
@@ -125,7 +125,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>NSE top gainers</h1>
-    
+    <small class="dont-index">Source: <a href='https://github.com/rsquaredacademy/nse2r/blob/master/R/nse-stock.R'><code>R/nse-stock.R</code></a></small>
     <div class="hidden name"><code>nse_stock_top_gainers.Rd</code></div>
     </div>
 
@@ -139,22 +139,9 @@
         
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>nse_stock_top_gainers</span>()</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 10 x 12</span><span>
-#&gt;    symbol series lastCorpAnnounc~ lastCorpAnnounc~ openPrice highPrice lowPrice
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>           </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>                </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> BHART~ EQ     2019-04-23       Rights 19:67 @ ~      358.      396.     357.
-#&gt; </span><span style='color: #555555;'> 2</span><span> INFRA~ EQ     2019-08-22       Interim Dividen~      204.      226.     203.
-#&gt; </span><span style='color: #555555;'> 3</span><span> SBIN   EQ     2018-06-15       Annual General ~      312       323      310.
-#&gt; </span><span style='color: #555555;'> 4</span><span> CIPLA  EQ     2019-07-31       Annual General ~      448       464.     435.
-#&gt; </span><span style='color: #555555;'> 5</span><span> GRASIM EQ     2019-08-08       Annual General ~      735       768      725.
-#&gt; </span><span style='color: #555555;'> 6</span><span> GAIL   EQ     2019-08-08       Dividend - Rs 0~      123.      124.     122 
-#&gt; </span><span style='color: #555555;'> 7</span><span> TATAM~ EQ     2016-07-18       Dividend - Re 0~      169       173.     168.
-#&gt; </span><span style='color: #555555;'> 8</span><span> ULTRA~ EQ     2019-07-10       Annual General ~     </span><span style='text-decoration: underline;'>4</span><span>044.     </span><span style='text-decoration: underline;'>4</span><span>078     </span><span style='text-decoration: underline;'>4</span><span>015 
-#&gt; </span><span style='color: #555555;'> 9</span><span> M&amp;M    EQ     2019-07-18       Annual General ~      584.      589.     581.
-#&gt; </span><span style='color: #555555;'>10</span><span> SUNPH~ EQ     2019-08-20       Annual General ~      413.      419.     410.
-#&gt; </span><span style='color: #555555;'># ... with 5 more variables: ltp </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, previousPrice </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, netPrice </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   tradedQuantity </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, turnoverInLakhs </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
-</div></span></pre>
+    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
+<span class='fu'>nse_stock_top_gainers</span>()
+}</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

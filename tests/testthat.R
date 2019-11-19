@@ -1,5 +1,5 @@
 library(testthat)
 library(httptest)
-library(nsetools)
+library(nse2r)
 
-test_check("nsetools")
+test_check("nse2r")

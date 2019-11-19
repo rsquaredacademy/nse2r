@@ -1,10 +1,10 @@
 ---
-title: "introduction-to-nsetools"
+title: "introduction-to-nse2r"
 author: "Aravind Hebbali and Lokesh Atreja"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{introduction-to-nsetools}
+  %\VignetteIndexEntry{introduction-to-nse2r}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -21,11 +21,11 @@ library(httptest)
 start_vignette("nse")
 ```
 
-[NSE](https://www.nseindia.com/) (National Stock Exchange) is the leading stock exchange of India, located in the city of Mumbai. While users can manually download data from NSE through a browser, importing this data into R is then cumbersome. The nsetools R package implements the retrieval of data from NSE and aims to reduce the pre-processing steps needed in analyzing such data.
+[NSE](https://www.nseindia.com/) (National Stock Exchange) is the leading stock exchange of India, located in the city of Mumbai. While users can manually download data from NSE through a browser, importing this data into R is then cumbersome. The nse2r R package implements the retrieval of data from NSE and aims to reduce the pre-processing steps needed in analyzing such data.
 
-nsetools is inspired by and a port of the Python package [nsetools](https://nsetools.readthedocs.io/en/latest/). The authors and contributors for this R package are not affiliated with NSE and NSE does not offer support for this R package.
+nse2r is inspired by and a port of the Python package [nsetools](https://nsetools.readthedocs.io/en/latest/). The authors and contributors for this R package are not affiliated with NSE and NSE does not offer support for this R package.
 
-With nsetools, you can fetch the following data related to:
+With nse2r, you can fetch the following data related to:
 
 - stocks
     - quote for a given stock
@@ -50,7 +50,7 @@ With nsetools, you can fetch the following data related to:
 
 ## Usage
 
-nsetools uses consistent prefix `nse_` for easy tab completion.
+nse2r uses consistent prefix `nse_` for easy tab completion.
 
 - `nse_index_` for index 
 - `nse_stock_` for stocks
@@ -58,7 +58,7 @@ nsetools uses consistent prefix `nse_` for easy tab completion.
 - `nse_preopen_` for preopen data
 
 ```{r load_nse}
-library(nsetools)
+library(nse2r)
 ```
 
 ## Stocks

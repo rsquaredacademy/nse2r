@@ -5,7 +5,7 @@ library(magrittr)
 
 shinyUI(
 
-    navbarPage(HTML("nsetools"), id = 'mainpage',
+    navbarPage(HTML("nse2r"), id = 'mainpage',
 
     source('ui/ui_analyze.R', local = TRUE)[[1]],
     source('ui/ui_exit_button.R', local = TRUE)[[1]]

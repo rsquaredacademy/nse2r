@@ -2,8 +2,8 @@ pandoc: 2.7.2
 pkgdown: 1.4.0
 pkgdown_sha: ~
 articles:
-  introduction-to-nsetools: introduction-to-nsetools.html
+  introduction-to-nse2r: introduction-to-nse2r.html
 urls:
-  reference: https://nsetools.rsquaredacademy.com/reference
-  article: https://nsetools.rsquaredacademy.com/articles
+  reference: https://nse2r.rsquaredacademy.com/reference
+  article: https://nse2r.rsquaredacademy.com/articles
 

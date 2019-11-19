@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>F &amp; O lot size — nse_fo_lotsizes • nsetools</title>
+<title>F &amp; O lot size — nse_fo_lotsizes • nse2r</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -65,7 +65,7 @@
         <span class="icon-bar"></span>
       </button>
       <span class="navbar-brand">
-        <a class="navbar-link" href="../index.html">nsetools</a>
+        <a class="navbar-link" href="../index.html">nse2r</a>
         <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.9</span>
       </span>
     </div>
@@ -83,7 +83,7 @@
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="../articles/introduction-to-nsetools.html">Introduction to nsetools</a>
+      <a href="../articles/introduction-to-nse2r.html">Introduction to nse2r</a>
     </li>
   </ul>
 </li>
@@ -106,7 +106,7 @@
       
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/rsquaredacademy/nsetools">
+  <a href="https://github.com/rsquaredacademy/nse2r">
     <span class="fa fa-github"></span>
      
   </a>
@@ -125,7 +125,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>F &amp; O lot size</h1>
-    
+    <small class="dont-index">Source: <a href='https://github.com/rsquaredacademy/nse2r/blob/master/R/nse-fo.R'><code>R/nse-fo.R</code></a></small>
     <div class="hidden name"><code>nse_fo_lotsizes.Rd</code></div>
     </div>
 
@@ -139,31 +139,9 @@
         
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>nse_fo_lotsizes</span>()</div><div class='output co'>#&gt; $indices
-#&gt; <span style='color: #555555;'># A tibble: 3 x 4</span><span>
-#&gt;   UNDERLYING SYMBOL NOV.19 DEC.19
-#&gt;   </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span> 
-#&gt; </span><span style='color: #555555;'>1</span><span> NIFTY BANK 19     19     20    
-#&gt; </span><span style='color: #555555;'>2</span><span> NIFTY 50   102    57     58    
-#&gt; </span><span style='color: #555555;'>3</span><span> NIFTY IT   103    48     49    
-#&gt; 
-#&gt; $stocks
-#&gt; </span><span style='color: #555555;'># A tibble: 148 x 4</span><span>
-#&gt;    UNDERLYING                SYMBOL NOV.19 DEC.19
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>                     </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span> 
-#&gt; </span><span style='color: #555555;'> 1</span><span> ACC LIMITED               1      43     44    
-#&gt; </span><span style='color: #555555;'> 2</span><span> ADANI ENTERPRISES LIMITED 2      44     45    
-#&gt; </span><span style='color: #555555;'> 3</span><span> ADANI POWER LTD           4      3      4     
-#&gt; </span><span style='color: #555555;'> 4</span><span> AMARA RAJA BATTERIES LTD. 5      55     56    
-#&gt; </span><span style='color: #555555;'> 5</span><span> APOLLO HOSPITALS ENTER. L 7      49     50    
-#&gt; </span><span style='color: #555555;'> 6</span><span> APOLLO TYRES LTD          8      34     35    
-#&gt; </span><span style='color: #555555;'> 7</span><span> AUROBINDO PHARMA LTD      11     2      3     
-#&gt; </span><span style='color: #555555;'> 8</span><span> ADANI PORT &amp; SEZ LTD      3      27     28    
-#&gt; </span><span style='color: #555555;'> 9</span><span> BAJAJ AUTO LIMITED        13     26     27    
-#&gt; </span><span style='color: #555555;'>10</span><span> BAJAJ FINSERV LTD.        14     8      9     
-#&gt; </span><span style='color: #555555;'># ... with 138 more rows</span><span>
-#&gt; </div><div class='input'>
-</div></span></pre>
+    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
+<span class='fu'>nse_fo_lotsizes</span>()
+}</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

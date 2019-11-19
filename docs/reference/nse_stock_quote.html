@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Stock quote — nse_stock_quote • nsetools</title>
+<title>Stock quote — nse_stock_quote • nse2r</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -65,7 +65,7 @@
         <span class="icon-bar"></span>
       </button>
       <span class="navbar-brand">
-        <a class="navbar-link" href="../index.html">nsetools</a>
+        <a class="navbar-link" href="../index.html">nse2r</a>
         <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.9</span>
       </span>
     </div>
@@ -83,7 +83,7 @@
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="../articles/introduction-to-nsetools.html">Introduction to nsetools</a>
+      <a href="../articles/introduction-to-nse2r.html">Introduction to nse2r</a>
     </li>
   </ul>
 </li>
@@ -106,7 +106,7 @@
       
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/rsquaredacademy/nsetools">
+  <a href="https://github.com/rsquaredacademy/nse2r">
     <span class="fa fa-github"></span>
      
   </a>
@@ -125,7 +125,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Stock quote</h1>
-    
+    <small class="dont-index">Source: <a href='https://github.com/rsquaredacademy/nse2r/blob/master/R/nse-stock.R'><code>R/nse-stock.R</code></a></small>
     <div class="hidden name"><code>nse_stock_quote.Rd</code></div>
     </div>
 
@@ -148,211 +148,9 @@
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>nse_stock_quote</span>(<span class='st'>"infy"</span>)</div><div class='output co'>#&gt; $pricebandupper
-#&gt; [1] "775.80"
-#&gt; 
-#&gt; $symbol
-#&gt; [1] "INFY"
-#&gt; 
-#&gt; $applicableMargin
-#&gt; [1] "16.84"
-#&gt; 
-#&gt; $bcEndDate
-#&gt; [1] "-"
-#&gt; 
-#&gt; $totalSellQuantity
-#&gt; [1] "14,24,787"
-#&gt; 
-#&gt; $adhocMargin
-#&gt; [1] "-"
-#&gt; 
-#&gt; $companyName
-#&gt; [1] "Infosys Limited"
-#&gt; 
-#&gt; $marketType
-#&gt; [1] "N"
-#&gt; 
-#&gt; $exDate
-#&gt; [1] "23-OCT-19"
-#&gt; 
-#&gt; $bcStartDate
-#&gt; [1] "-"
-#&gt; 
-#&gt; $css_status_desc
-#&gt; [1] "Listed"
-#&gt; 
-#&gt; $dayHigh
-#&gt; [1] "712.95"
-#&gt; 
-#&gt; $basePrice
-#&gt; [1] "705.30"
-#&gt; 
-#&gt; $securityVar
-#&gt; [1] "11.84"
-#&gt; 
-#&gt; $pricebandlower
-#&gt; [1] "634.80"
-#&gt; 
-#&gt; $sellQuantity5
-#&gt; [1] "1,165"
-#&gt; 
-#&gt; $sellQuantity4
-#&gt; [1] "505"
-#&gt; 
-#&gt; $sellQuantity3
-#&gt; [1] "433"
-#&gt; 
-#&gt; $cm_adj_high_dt
-#&gt; [1] "06-SEP-19"
-#&gt; 
-#&gt; $sellQuantity2
-#&gt; [1] "427"
-#&gt; 
-#&gt; $dayLow
-#&gt; [1] "702.30"
-#&gt; 
-#&gt; $sellQuantity1
-#&gt; [1] "4,327"
-#&gt; 
-#&gt; $quantityTraded
-#&gt; [1] "30,39,775"
-#&gt; 
-#&gt; $pChange
-#&gt; [1] "0.24"
-#&gt; 
-#&gt; $totalTradedValue
-#&gt; [1] "22,503.66"
-#&gt; 
-#&gt; $deliveryToTradedQuantity
-#&gt; [1] "53.14"
-#&gt; 
-#&gt; $totalBuyQuantity
-#&gt; [1] "5,68,523"
-#&gt; 
-#&gt; $averagePrice
-#&gt; [1] "706.39"
-#&gt; 
-#&gt; $indexVar
-#&gt; [1] "-"
-#&gt; 
-#&gt; $cm_ffm
-#&gt; [1] "2,58,297.40"
-#&gt; 
-#&gt; $purpose
-#&gt; [1] "INTERIM DIVIDEND - RS 8 PER SHARE"
-#&gt; 
-#&gt; $buyPrice2
-#&gt; [1] "706.85"
-#&gt; 
-#&gt; $secDate
-#&gt; [1] "15-Nov-2019 13:00:00"
-#&gt; 
-#&gt; $buyPrice1
-#&gt; [1] "706.90"
-#&gt; 
-#&gt; $high52
-#&gt; [1] "847.00"
-#&gt; 
-#&gt; $previousClose
-#&gt; [1] "705.30"
-#&gt; 
-#&gt; $ndEndDate
-#&gt; [1] "-"
-#&gt; 
-#&gt; $low52
-#&gt; [1] "599.85"
-#&gt; 
-#&gt; $buyPrice4
-#&gt; [1] "706.75"
-#&gt; 
-#&gt; $buyPrice3
-#&gt; [1] "706.80"
-#&gt; 
-#&gt; $recordDate
-#&gt; [1] "24-OCT-19"
-#&gt; 
-#&gt; $deliveryQuantity
-#&gt; [1] "16,15,257"
-#&gt; 
-#&gt; $buyPrice5
-#&gt; [1] "706.70"
-#&gt; 
-#&gt; $priceBand
-#&gt; [1] "No Band"
-#&gt; 
-#&gt; $extremeLossMargin
-#&gt; [1] "5.00"
-#&gt; 
-#&gt; $cm_adj_low_dt
-#&gt; [1] "26-NOV-18"
-#&gt; 
-#&gt; $varMargin
-#&gt; [1] "11.84"
-#&gt; 
-#&gt; $sellPrice1
-#&gt; [1] "707.00"
-#&gt; 
-#&gt; $sellPrice2
-#&gt; [1] "707.05"
-#&gt; 
-#&gt; $totalTradedVolume
-#&gt; [1] "31,85,727"
-#&gt; 
-#&gt; $sellPrice3
-#&gt; [1] "707.10"
-#&gt; 
-#&gt; $sellPrice4
-#&gt; [1] "707.15"
-#&gt; 
-#&gt; $sellPrice5
-#&gt; [1] "707.20"
-#&gt; 
-#&gt; $change
-#&gt; [1] "1.70"
-#&gt; 
-#&gt; $surv_indicator
-#&gt; [1] "-"
-#&gt; 
-#&gt; $ndStartDate
-#&gt; [1] "-"
-#&gt; 
-#&gt; $buyQuantity4
-#&gt; [1] "829"
-#&gt; 
-#&gt; $isExDateFlag
-#&gt; [1] FALSE
-#&gt; 
-#&gt; $buyQuantity3
-#&gt; [1] "34"
-#&gt; 
-#&gt; $buyQuantity2
-#&gt; [1] "114"
-#&gt; 
-#&gt; $buyQuantity1
-#&gt; [1] "414"
-#&gt; 
-#&gt; $series
-#&gt; [1] "EQ"
-#&gt; 
-#&gt; $faceValue
-#&gt; [1] "5.00"
-#&gt; 
-#&gt; $buyQuantity5
-#&gt; [1] "2,906"
-#&gt; 
-#&gt; $closePrice
-#&gt; [1] "0.00"
-#&gt; 
-#&gt; $open
-#&gt; [1] "709.05"
-#&gt; 
-#&gt; $isinCode
-#&gt; [1] "INE009A01021"
-#&gt; 
-#&gt; $lastPrice
-#&gt; [1] "707.00"
-#&gt; </div><div class='input'>
-</div></pre>
+    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
+<span class='fu'>nse_stock_quote</span>(<span class='st'>"infy"</span>)
+}</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

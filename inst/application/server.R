@@ -1,4 +1,4 @@
-library(nsetools)
+library(nse2r)
 library(magrittr)
 
 shinyServer(function(input, output, session) {

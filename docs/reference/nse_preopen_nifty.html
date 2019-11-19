@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Pre open nifty — nse_preopen_nifty • nsetools</title>
+<title>Pre open nifty — nse_preopen_nifty • nse2r</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -65,7 +65,7 @@
         <span class="icon-bar"></span>
       </button>
       <span class="navbar-brand">
-        <a class="navbar-link" href="../index.html">nsetools</a>
+        <a class="navbar-link" href="../index.html">nse2r</a>
         <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.9</span>
       </span>
     </div>
@@ -83,7 +83,7 @@
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="../articles/introduction-to-nsetools.html">Introduction to nsetools</a>
+      <a href="../articles/introduction-to-nse2r.html">Introduction to nse2r</a>
     </li>
   </ul>
 </li>
@@ -106,7 +106,7 @@
       
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/rsquaredacademy/nsetools">
+  <a href="https://github.com/rsquaredacademy/nse2r">
     <span class="fa fa-github"></span>
      
   </a>
@@ -125,7 +125,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Pre open nifty</h1>
-    
+    <small class="dont-index">Source: <a href='https://github.com/rsquaredacademy/nse2r/blob/master/R/nse-preopen.R'><code>R/nse-preopen.R</code></a></small>
     <div class="hidden name"><code>nse_preopen_nifty.Rd</code></div>
     </div>
 
@@ -139,22 +139,9 @@
         
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>nse_preopen_nifty</span>()</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 50 x 17</span><span>
-#&gt;    symbol series xDt        caAct    iep    chn perChn   pCls trdQnty  iVal
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>   </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> INFRA~ EQ     2019-08-22 INTE~   204.  -</span><span style='color: #BB0000;'>4.7</span><span>   -</span><span style='color: #BB0000;'>2.25</span><span>   209.   </span><span style='text-decoration: underline;'>30</span><span>841  62.9
-#&gt; </span><span style='color: #555555;'> 2</span><span> BHART~ EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>      358.  -</span><span style='color: #BB0000;'>4.65</span><span>  -</span><span style='color: #BB0000;'>1.28</span><span>   362.  </span><span style='text-decoration: underline;'>169</span><span>271 606. 
-#&gt; </span><span style='color: #555555;'> 3</span><span> SBIN   EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>      312    6      1.96   306   </span><span style='text-decoration: underline;'>179</span><span>165 559. 
-#&gt; </span><span style='color: #555555;'> 4</span><span> EICHE~ EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>    </span><span style='text-decoration: underline;'>21</span><span>850  292.     1.35 </span><span style='text-decoration: underline;'>21</span><span>558.     382  83.5
-#&gt; </span><span style='color: #555555;'> 5</span><span> VEDL   EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>      146.   1.8    1.25   144    </span><span style='text-decoration: underline;'>44</span><span>546  65.0
-#&gt; </span><span style='color: #555555;'> 6</span><span> TATAM~ EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>      169    1.95   1.17   167.   </span><span style='text-decoration: underline;'>97</span><span>312 164. 
-#&gt; </span><span style='color: #555555;'> 7</span><span> ULTRA~ EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>     </span><span style='text-decoration: underline;'>4</span><span>044.  40.4    1.01  </span><span style='text-decoration: underline;'>4</span><span>003.    </span><span style='text-decoration: underline;'>1</span><span>648  66.6
-#&gt; </span><span style='color: #555555;'> 8</span><span> CIPLA  EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>      448   -</span><span style='color: #BB0000;'>3.4</span><span>   -</span><span style='color: #BB0000;'>0.75</span><span>   451.   </span><span style='text-decoration: underline;'>11</span><span>457  51.3
-#&gt; </span><span style='color: #555555;'> 9</span><span> HINDU~ EQ     2019-10-23 INTE~  </span><span style='text-decoration: underline;'>2</span><span>062.  -</span><span style='color: #BB0000;'>6.8</span><span>   -</span><span style='color: #BB0000;'>0.33</span><span>  </span><span style='text-decoration: underline;'>2</span><span>069.    </span><span style='text-decoration: underline;'>1</span><span>713  35.3
-#&gt; </span><span style='color: #555555;'>10</span><span> HDFC   EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>     </span><span style='text-decoration: underline;'>2</span><span>220.  -</span><span style='color: #BB0000;'>6.7</span><span>   -</span><span style='color: #BB0000;'>0.3</span><span>   </span><span style='text-decoration: underline;'>2</span><span>227.    </span><span style='text-decoration: underline;'>5</span><span>664 126. 
-#&gt; </span><span style='color: #555555;'># ... with 40 more rows, and 7 more variables: mktCap </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, yHigh </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   yLow </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, sumVal </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, sumQnty </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, finQnty </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, sumfinQnty </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
-</div></span></pre>
+    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
+<span class='fu'>nse_preopen_nifty</span>()
+}</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

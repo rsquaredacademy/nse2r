@@ -1,9 +1,9 @@
-#' \code{nsetools} package
+#' \code{nse2r} package
 #'
 #' Tools for Collecting Real Time Data from National Stock Exchange (India)
 #'
 #' @docType package
-#' @name nsetools
+#' @name nse2r
 NULL
 
 ## quiets concerns of R CMD check re: the .'s that appear in pipelines
