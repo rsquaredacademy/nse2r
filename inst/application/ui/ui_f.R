@@ -12,23 +12,27 @@ tabPanel('Futures & Options', value = 'tab_f',
       )
     ),
     hr(),
+    br(),
     fluidRow(
       column(12,
         tabsetPanel(type = 'tabs',
           tabPanel('Lot Sizes',
             column(12,
+              br(),
               dataTableOutput('fo_lotsizes') %>% 
                 shinycssloaders::withSpinner()
             )
           ),
           tabPanel('Top Gainers',
             column(12,
+              br(),
               dataTableOutput('fo_top_gainers') %>% 
                 shinycssloaders::withSpinner()
             )
           ),
           tabPanel('Top Losers',
             column(12,
+              br(),
               dataTableOutput('fo_top_losers') %>% 
                 shinycssloaders::withSpinner()
             )

@@ -12,23 +12,27 @@ tabPanel('Pre Open Data', value = 'tab_norm',
       )
     ),
     hr(),
+    br(),
     fluidRow(
       column(12,
         tabsetPanel(type = 'tabs',
           tabPanel('Futures & Options',
             column(12,
+              br(),
               dataTableOutput('preopen_fo') %>% 
                 shinycssloaders::withSpinner()
             )
           ),
           tabPanel('Nifty',
             column(12,
+              br(),
               dataTableOutput('preopen_nifty') %>% 
                 shinycssloaders::withSpinner()
             )
           ),
           tabPanel('Nifty Bank',
             column(12,
+              br(),
               dataTableOutput('preopen_nifty_bank') %>% 
                 shinycssloaders::withSpinner()
             )

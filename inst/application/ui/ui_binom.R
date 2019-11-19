@@ -6,7 +6,7 @@ tabPanel('Stock', value = 'tab_binom',
         fluidRow(
           column(8, align = 'left',
             h4('Stocks'),
-            p('Get stock symbol and name, quote, top gainers & losers, 52 week high & low and
+            p('Get stock symbol and name, top gainers & losers, 52 week high & low and
               most traded stocks.')
           ),
           column(4, align = 'right',
@@ -15,45 +15,46 @@ tabPanel('Stock', value = 'tab_binom',
           )
         ),
         hr(),
+        br(),
         tabsetPanel(type = 'tabs',
           tabPanel('Symbol & Code',
             column(12,
+              br(),
               dataTableOutput('stock_code') %>% 
-                shinycssloaders::withSpinner()
-            )
-          ),
-          tabPanel('Quote',
-            column(12,
-              dataTableOutput('stock_quote') %>% 
                 shinycssloaders::withSpinner()
             )
           ),
           tabPanel('Most Traded',
             column(12,
+              br(),
               dataTableOutput('stock_most_traded') %>% 
                 shinycssloaders::withSpinner()
             )
           ),
           tabPanel('Top Gainers',
             column(12,
+              br(),
               dataTableOutput('stock_top_gainers') %>% 
                 shinycssloaders::withSpinner()
             )
           ),
           tabPanel('Top Losers',
             column(12,
+              br(),
               dataTableOutput('stock_top_losers') %>% 
                 shinycssloaders::withSpinner()
             )
           ),
           tabPanel('52 Week High',
             column(12,
+              br(),
               dataTableOutput('stock_year_high') %>% 
                 shinycssloaders::withSpinner()
             )
           ),
           tabPanel('52 Week Low',
             column(12,
+              br(),
               dataTableOutput('stock_year_low') %>% 
                 shinycssloaders::withSpinner()
             )

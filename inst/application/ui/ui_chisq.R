@@ -13,17 +13,20 @@ tabPanel('Indices', value = 'tab_chisq',
       )
     ),
     hr(),
+    br(),
     fluidRow(
       column(12,
         tabsetPanel(type = 'tabs',
           tabPanel('List',
             column(12,
+              br(),
               dataTableOutput('index_list') %>% 
                 shinycssloaders::withSpinner()
             )
           ),
           tabPanel('Quote',
             column(12,
+              br(),
               dataTableOutput('index_quote') %>% 
                 shinycssloaders::withSpinner()
             )

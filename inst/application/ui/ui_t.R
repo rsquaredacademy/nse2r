@@ -12,11 +12,13 @@ tabPanel('Advances & Declines', value = 'tab_t',
       )
     ),
     hr(),
+    br(),
     fluidRow(
       column(12,
         tabsetPanel(type = 'tabs',
           tabPanel('Advances & Declines',
             column(12,
+              br(),
               dataTableOutput(outputId = 'advances_declines') %>% 
                 shinycssloaders::withSpinner()
             )
