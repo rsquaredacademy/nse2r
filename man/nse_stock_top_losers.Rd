@@ -6,6 +6,22 @@
 \usage{
 nse_stock_top_losers()
 }
+\value{
+A tibble with the following columns:
+
+\item{symbol}{NSE ticker.}
+\item{series}{Equity (EQ).}
+\item{last_corp_announcement_date}{Last corporate announcement date.}
+\item{last_corp_announcement}{Last corporate announcement.}
+\item{open_price}{Open price.}
+\item{high_price}{High price.}
+\item{low_price}{Low price.}
+\item{last_traded_price}{Last traded price.}
+\item{prev_close_price}{Previous close price.}
+\item{percent_change}{Percentage change in price.}
+\item{traded_quantity}{Total traded quantity.}
+\item{turnover}{Turnover in lakhs.}
+}
 \description{
 Fetch top losers for the last trading session.
 }

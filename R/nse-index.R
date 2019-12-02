@@ -7,6 +7,13 @@
 #' nse_index_quote()
 #' }
 #'
+#' @return A tibble with the following columns:
+#'
+#' \item{index_name}{Name of the NSE indices.}
+#' \item{last_traded_price}{Last traded price.}
+#' \item{change}{Change in price.}
+#' \item{percent_change}{Percentage change in price.}
+#'
 #' @export
 #'
 nse_index_quote <- function() {
@@ -17,7 +24,11 @@ nse_index_quote <- function() {
     nse_base() %>%
     magrittr::extract(-5) %>%
     nse_format_num(cols_skip = 1, cols_modify = 2:4) %>%
-    nse_format(cols_skip = 1, cols_modify = 2:4)
+    nse_format(cols_skip = 1, cols_modify = 2:4) %>%
+    magrittr::set_names("index_name",
+                        "last_traded_price",
+                        "change",
+                        "percent_change")
 
 }
 
@@ -30,6 +41,10 @@ nse_index_quote <- function() {
 #' nse_index_list()
 #' }
 #'
+#' @return A tibble with the following column:
+#'
+#' \item{index_name}{Name of the index.}
+#'
 #' @export
 #'
 nse_index_list <- function() {
@@ -38,7 +53,8 @@ nse_index_list <- function() {
 
   url %>%
     nse_base() %>%
-    magrittr::extract(1)
+    magrittr::extract(1) %>%
+    magrittr::set_names("index_name")
 
 }
 

@@ -6,6 +6,12 @@
 \usage{
 nse_stock_code()
 }
+\value{
+A tibble with the following columns:
+
+\item{symbol}{NSE ticker.}
+\item{company}{Name of the firm.}
+}
 \description{
 Fetch stock symbol and name from NSE.
 }

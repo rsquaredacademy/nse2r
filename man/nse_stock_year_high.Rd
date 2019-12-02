@@ -6,6 +6,20 @@
 \usage{
 nse_stock_year_high()
 }
+\value{
+A tibble with the following column names:
+
+\item{symbol}{NSE ticker.}
+\item{symbol_desc}{Name of the firm.}
+\item{date}{Previous high date.}
+\item{new_high}{New 52 week high price.}
+\item{year}{Year.}
+\item{last_traded_price}{Last traded price.}
+\item{prev_high}{Previous high price.}
+\item{prev_close}{Previous close price.}
+\item{change}{Change in price.}
+\item{percent_change}{Percentage change in price.}
+}
 \description{
 Fetch stocks that have touched their 52 week highs during the day on NSE.
 }

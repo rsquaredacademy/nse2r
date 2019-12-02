@@ -6,6 +6,16 @@
 \usage{
 nse_stock_most_traded()
 }
+\value{
+A tibble with the following columns:
+
+\item{security}{Name of the firm.}
+\item{share turnover}{Share in total turnover (percentage).}
+\item{traded_quantity}{Total traded quantity (in lakhs)}
+\item{no_of_trades}{Number of trades.}
+\item{avg_daily_turnover}{Average daily turnover (in crores).}
+\item{turnover}{Turnover (in crores.)}
+}
 \description{
 Fetch most actively traded stocks in a month on NSE.
 }

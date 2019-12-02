@@ -6,6 +6,11 @@
 \usage{
 nse_index_list()
 }
+\value{
+A tibble with the following column:
+
+\item{index_name}{Name of the index.}
+}
 \description{
 List NSE indices.
 }

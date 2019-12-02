@@ -6,6 +6,14 @@
 \usage{
 nse_index_quote()
 }
+\value{
+A tibble with the following columns:
+
+\item{index_name}{Name of the NSE indices.}
+\item{last_traded_price}{Last traded price.}
+\item{change}{Change in price.}
+\item{percent_change}{Percentage change in price.}
+}
 \description{
 NSE indices quote.
 }

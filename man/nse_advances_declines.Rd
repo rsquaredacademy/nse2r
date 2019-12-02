@@ -6,12 +6,20 @@
 \usage{
 nse_advances_declines()
 }
+\value{
+A tibble with the following columns:
+
+\code{index_name}{Name of the index.}
+\code{advances}{Number of stocks increased (in green).}
+\code{declines}{Number of stocks decreased (in red).}
+\code{unchanged}{Number of stocks unchanged.}
+}
 \description{
 NSE indices advances & declines.
 }
 \examples{
 \dontrun{
-nse_fo_lotsizes()
+nse_advances_declines()
 }
 
 }

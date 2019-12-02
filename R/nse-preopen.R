@@ -16,13 +16,28 @@ nse_preopen_nifty <- function() {
   result <-
   	url %>%
     nse_base() %>%
-    nse_format_num(cols_skip = 1:4, cols_modify = 5:17) %>%
-    nse_format(cols_skip = 1:4, cols_modify = 5:17)
+    magrittr::extract(., 1:13) %>%
+    nse_format_num(cols_skip = 1:4, cols_modify = 5:13) %>%
+    nse_format(cols_skip = 1:4, cols_modify = 5:13)
 
   result$xDt <- as.Date(result$xDt, format = "%d-%b-%Y")
   result$caAct[result$caAct == "-"] <- NA
   result$caAct <- trimws(result$caAct)
-  return(result)
+
+  result %>%
+    magrittr::set_names("symbol",
+                        "series",
+                        "corp_action_date",
+                        "corp_action",
+                        "price",
+                        "change",
+                        "percent_change",
+                        "prev_close",
+                        "quantity",
+                        "value",
+                        "mkt_cap",
+                        "year_high",
+                        "year_low")
 
 }
 
@@ -44,13 +59,28 @@ nse_preopen_nifty_bank <- function() {
   result <-
   	url %>%
     nse_base() %>%
-    nse_format_num(cols_skip = 1:4, cols_modify = 5:17) %>%
-    nse_format(cols_skip = 1:4, cols_modify = 5:17)
+    magrittr::extract(., 1:13) %>%
+    nse_format_num(cols_skip = 1:4, cols_modify = 5:13) %>%
+    nse_format(cols_skip = 1:4, cols_modify = 5:13)
 
   result$xDt <- as.Date(result$xDt, format = "%d-%b-%Y")
   result$caAct[result$caAct == "-"] <- NA
   result$caAct <- trimws(result$caAct)
-  return(result)
+
+  result %>%
+    magrittr::set_names("symbol",
+                        "series",
+                        "corp_action_date",
+                        "corp_action",
+                        "price",
+                        "change",
+                        "percent_change",
+                        "prev_close",
+                        "quantity",
+                        "value",
+                        "mkt_cap",
+                        "year_high",
+                        "year_low")
 
 }
 

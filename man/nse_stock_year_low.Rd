@@ -6,6 +6,20 @@
 \usage{
 nse_stock_year_low()
 }
+\value{
+A tibble with the following column names:
+
+\item{symbol}{NSE ticker.}
+\item{symbol_desc}{Name of the firm.}
+\item{date}{Previous low date.}
+\item{new_low}{New 52 week low price.}
+\item{year}{Year.}
+\item{last_traded_price}{Last traded price.}
+\item{prev_low}{Previous low price.}
+\item{prev_close}{Previous close price.}
+\item{change}{Change in price.}
+\item{percent_change}{Percentage change in price.}
+}
 \description{
 Fetch stocks that have touched their 52 week lows during the day on NSE.
 }
