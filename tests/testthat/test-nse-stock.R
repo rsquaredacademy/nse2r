@@ -6,8 +6,8 @@ httptest::with_mock_api({
     iquotes <- nse_stock_most_traded()
     expect_equal(
       names(iquotes),
-      c("security", "sharetotal", "trdQty", "nooftrades", "avgdailyturn",
-        "turnover"))
+      c("security", "share_turnover", "traded_quantity",
+        "no_of_trades", "avg_daily_turnonver", "turnover"))
   })
 })
 
@@ -17,8 +17,9 @@ httptest::with_mock_api({
     iquotes <- nse_stock_year_high()
     expect_equal(
       names(iquotes),
-      c("symbol", "symbolDesc", "dt", "value", "year", "ltp", "value_old", 
-        "prev", "change", "pChange"))
+      c("symbol", "symbol_desc", "date", "new_high", "year",
+        "last_traded_price", "prev_high", "prev_close",
+        "change", "percent_change"))
   })
 })
 
@@ -28,8 +29,9 @@ httptest::with_mock_api({
     iquotes <- nse_stock_year_low()
     expect_equal(
       names(iquotes),
-      c("symbol", "symbolDesc",  "dt", "value", "year", "ltp", "value_old",
-        "prev", "change", "pChange"))
+      c("symbol", "symbol_desc", "date", "new_high", "year",
+        "last_traded_price", "prev_high", "prev_close",
+        "change", "percent_change"))
   })
 })
 
@@ -39,9 +41,11 @@ httptest::with_mock_api({
     iquotes <- nse_stock_top_gainers()
     expect_equal(
       names(iquotes),
-      c("symbol", "series", "lastCorpAnnouncementDate", "lastCorpAnnouncement",
-        "openPrice", "highPrice", "lowPrice", "ltp", "previousPrice", 
-        "netPrice", "tradedQuantity", "turnoverInLakhs"))
+      c("symbol", "series", "last_corp_announcement_date",
+        "last_corp_announcement", "open_price", "high_price",
+        "low_price", "last_traded_price",
+        "previous_close_price", "percent_change",
+        "traded_quantity", "turnover_in_lakhs"))
   })
 })
 
@@ -51,9 +55,11 @@ httptest::with_mock_api({
     iquotes <- nse_stock_top_losers()
     expect_equal(
       names(iquotes),
-      c("symbol", "series", "lastCorpAnnouncementDate", "lastCorpAnnouncement",
-        "openPrice", "highPrice", "lowPrice", "ltp", "previousPrice", 
-        "netPrice", "tradedQuantity", "turnoverInLakhs"))
+      c("symbol", "series", "last_corp_announcement_date",
+        "last_corp_announcement", "open_price", "high_price",
+        "low_price", "last_traded_price",
+        "previous_close_price", "percent_change",
+        "traded_quantity", "turnover_in_lakhs"))
   })
 })
 
