@@ -2,10 +2,10 @@ Package: nse2r
 Type: Package
 Title: Fetch Data from 'National Stock Exchange (India)'
 Version: 0.0.9
-Authors@R: c(person("Aravind", "Hebbali", role = c("aut", "cre"), 
-             email = "hebbali.aravind@gmail.com"),
-             person("Lokesh", "Atreja", role = c("aut"),
+Authors@R: c(person("Lokesh", "Kumar", role = c("aut"),
              email = "latreja@gmail.com"),
+             person("Aravind", "Hebbali", role = c("aut", "cre"), 
+             email = "hebbali.aravind@gmail.com"),
              person("Lionel", "Pinto", role = c("ctb"),
              email = "lionel.nie@gmail.com"))
 Description: Fetch data related to stocks, index, futures & options from the 
