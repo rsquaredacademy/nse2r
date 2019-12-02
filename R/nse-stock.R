@@ -3,7 +3,7 @@
 #' Fetch most actively traded stocks in a month on NSE.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' nse_stock_most_traded()
 #' }
 #'
@@ -26,8 +26,8 @@ nse_stock_most_traded <- function() {
     nse_base() %>%
     nse_format_num(cols_skip = 1, cols_modify = 2:6) %>%
     nse_format(cols_skip = 1, cols_modify = 2:6) %>%
-    magrittr::set_names("security", "share_turnover", "traded_quantity",
-                        "no_of_trades", "avg_daily_turnonver", "turnover")
+    magrittr::set_names(., c("security", "share_turnover", "traded_quantity",
+                        "no_of_trades", "avg_daily_turnonver", "turnover"))
 
 }
 
@@ -36,7 +36,7 @@ nse_stock_most_traded <- function() {
 #' Fetch stocks that have touched their 52 week highs during the day on NSE.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' nse_stock_year_high()
 #' }
 #'
@@ -71,16 +71,9 @@ nse_stock_year_high <- function() {
   result$dt <- as.Date(result$dt, format = "%d-%b-%Y")
 
   result %>%
-    magrittr::set_names("symbol",
-                        "symbol_desc",
-                        "date",
-                        "new_high",
-                        "year",
-                        "last_traded_price",
-                        "prev_high",
-                        "prev_close",
-                        "change",
-                        "percent_change")
+    magrittr::set_names(., c("symbol", "symbol_desc", "date", "new_high", "year",
+                        "last_traded_price", "prev_high", "prev_close",
+                        "change", "percent_change"))
 
 }
 
@@ -89,7 +82,7 @@ nse_stock_year_high <- function() {
 #' Fetch stocks that have touched their 52 week lows during the day on NSE.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' nse_stock_year_low()
 #' }
 #'
@@ -124,16 +117,9 @@ nse_stock_year_low <- function() {
   result$dt <- as.Date(result$dt, format = "%d-%b-%Y")
 
   result %>%
-    magrittr::set_names("symbol",
-                        "symbol_desc",
-                        "date",
-                        "new_low",
-                        "year",
-                        "last_traded_price",
-                        "prev_low",
-                        "prev_close",
-                        "change",
-                        "percent_change")
+    magrittr::set_names(., c("symbol", "symbol_desc", "date", "new_high", "year",
+                          "last_traded_price", "prev_high", "prev_close",
+                          "change", "percent_change"))
 
 }
 
@@ -143,7 +129,7 @@ nse_stock_year_low <- function() {
 #' Fetch stock symbol and name from NSE.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' nse_stock_code()
 #' }
 #'
@@ -174,7 +160,7 @@ nse_stock_code <- function() {
 #' @param stock_code Symbol of the stock.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' nse_stock_valid("infy")
 #' nse_stock_valid("glo")
 #' }
@@ -196,7 +182,7 @@ nse_stock_valid <- function(stock_code) {
 #' Fetch top gainers for the last trading session.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' nse_stock_top_gainers()
 #' }
 #'
@@ -233,18 +219,11 @@ nse_stock_top_gainers <- function() {
   result$lastCorpAnnouncementDate <- as.Date(result$lastCorpAnnouncementDate,
                                              format = "%d-%b-%Y")
   result %>%
-    magrittr::set_names("symbol",
-                        "series",
-                        "last_corp_announcement_date",
-                        "last_corp_announcement",
-                        "open_price",
-                        "high_price",
-                        "low_price",
-                        "last_traded_price",
-                        "previous_close_price",
-                        "percent_change",
-                        "traded_quantity",
-                        "turnover_in_lakhs")
+    magrittr::set_names(., c("symbol", "series", "last_corp_announcement_date",
+                        "last_corp_announcement", "open_price", "high_price",
+                        "low_price", "last_traded_price",
+                        "previous_close_price", "percent_change",
+                        "traded_quantity", "turnover_in_lakhs"))
 
 }
 
@@ -253,7 +232,7 @@ nse_stock_top_gainers <- function() {
 #' Fetch top losers for the last trading session.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' nse_stock_top_losers()
 #' }
 #'
@@ -290,18 +269,11 @@ nse_stock_top_losers <- function() {
   result$lastCorpAnnouncementDate <- as.Date(result$lastCorpAnnouncementDate, format = "%d-%b-%Y")
 
   result %>%
-    magrittr::set_names("symbol",
-                        "series",
-                        "last_corp_announcement_date",
-                        "last_corp_announcement",
-                        "open_price",
-                        "high_price",
-                        "low_price",
-                        "last_traded_price",
-                        "previous_close_price",
-                        "percent_change",
-                        "traded_quantity",
-                        "turnover_in_lakhs")
+    magrittr::set_names(., c("symbol", "series", "last_corp_announcement_date",
+                        "last_corp_announcement", "open_price", "high_price",
+                        "low_price", "last_traded_price",
+                        "previous_close_price", "percent_change",
+                        "traded_quantity", "turnover_in_lakhs"))
 
 }
 
@@ -313,7 +285,7 @@ nse_stock_top_losers <- function() {
 #' @param stock_code Symbol of the stock.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' nse_stock_quote("infy")
 #' }
 #'

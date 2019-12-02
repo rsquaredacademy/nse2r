@@ -15,7 +15,7 @@ A tibble with the following column:
 List NSE indices.
 }
 \examples{
-\dontrun{
+\donttest{
 nse_index_list()
 }
 

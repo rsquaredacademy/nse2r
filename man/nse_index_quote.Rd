@@ -18,7 +18,7 @@ A tibble with the following columns:
 NSE indices quote.
 }
 \examples{
-\dontrun{
+\donttest{
 nse_index_quote()
 }
 

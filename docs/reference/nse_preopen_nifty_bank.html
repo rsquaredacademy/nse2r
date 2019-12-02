@@ -139,9 +139,26 @@
         
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
-<span class='fu'>nse_preopen_nifty_bank</span>()
-}</div></pre>
+    <pre class="examples"><div class='input'><span class='co'># \donttest{</span>
+<span class='fu'>nse_preopen_nifty_bank</span>()</div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 12 x 13</span><span>
+#&gt;    symbol series corp_action_date corp_action  price change percent_change
+#&gt;    </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #949494;font-style: italic;'>&lt;date&gt;</span><span>           </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>        </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span>          </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span>
+#&gt; </span><span style='color: #BCBCBC;'> 1</span><span> INDUS~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>          </span><span style='text-decoration: underline;'>1</span><span>592    22.9            1.46
+#&gt; </span><span style='color: #BCBCBC;'> 2</span><span> YESBA~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>            69     0.7            1.02
+#&gt; </span><span style='color: #BCBCBC;'> 3</span><span> RBLBA~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>           373.   -</span><span style='color: #BB0000;'>1.2</span><span>           -</span><span style='color: #BB0000;'>0.32</span><span>
+#&gt; </span><span style='color: #BCBCBC;'> 4</span><span> HDFCB~ EQ     2019-09-19       FACE VALUE~ </span><span style='text-decoration: underline;'>1</span><span>274.   -</span><span style='color: #BB0000;'>1</span><span>             -</span><span style='color: #BB0000;'>0.08</span><span>
+#&gt; </span><span style='color: #BCBCBC;'> 5</span><span> KOTAK~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>          </span><span style='text-decoration: underline;'>1</span><span>614.   -</span><span style='color: #BB0000;'>0.7</span><span>           -</span><span style='color: #BB0000;'>0.04</span><span>
+#&gt; </span><span style='color: #BCBCBC;'> 6</span><span> SBIN   EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>           344.    2.05           0.6 
+#&gt; </span><span style='color: #BCBCBC;'> 7</span><span> IDFCF~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>            47     0.15           0.32
+#&gt; </span><span style='color: #BCBCBC;'> 8</span><span> ICICI~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>           513.    0.85           0.17
+#&gt; </span><span style='color: #BCBCBC;'> 9</span><span> BANKB~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>           105     0.1            0.1 
+#&gt; </span><span style='color: #BCBCBC;'>10</span><span> PNB    EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>            65.6   0.05           0.08
+#&gt; </span><span style='color: #BCBCBC;'>11</span><span> AXISB~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>           739.    0.2            0.03
+#&gt; </span><span style='color: #BCBCBC;'>12</span><span> FEDER~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>            88.9   0              0   
+#&gt; </span><span style='color: #949494;'># ... with 6 more variables: prev_close </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #949494;'>, quantity </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #949494;'>, value </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #949494;'>,
+#&gt; #   mkt_cap </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #949494;'>, year_high </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #949494;'>, year_low </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'># }
+
+</div></span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -156,7 +173,7 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by <a href='https://www.aravindhebbali.com'>Aravind Hebbali</a>, <a href='https://in.linkedin.com/in/lokesh-kumar-frm-87019334'>Lokesh Atreja</a>.</p>
+  <p>Developed by <a href='https://in.linkedin.com/in/lokesh-kumar-frm-87019334'>Lokesh Kumar</a>, <a href='https://www.aravindhebbali.com'>Aravind Hebbali</a>.</p>
 </div>
 
 <div class="pkgdown">

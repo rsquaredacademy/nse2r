@@ -24,7 +24,7 @@ A tibble with the following column names:
 Fetch stocks that have touched their 52 week lows during the day on NSE.
 }
 \examples{
-\dontrun{
+\donttest{
 nse_stock_year_low()
 }
 

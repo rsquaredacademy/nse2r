@@ -26,7 +26,7 @@ A tibble with the following columns:
 Fetch top losers for the last trading session.
 }
 \examples{
-\dontrun{
+\donttest{
 nse_stock_top_losers()
 }
 

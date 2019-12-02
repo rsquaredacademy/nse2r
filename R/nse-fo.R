@@ -3,7 +3,7 @@
 #' Top futures and options gainers for the last trading session.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' nse_fo_top_gainers()
 #' }
 #'
@@ -61,7 +61,7 @@ nse_fo_top_gainers <- function() {
 #' Top futures and options losers for the last trading session.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' nse_fo_top_losers()
 #' }
 #'
@@ -98,17 +98,10 @@ nse_fo_top_losers <- function() {
   result$lastCorpAnnouncementDate <- as.Date(result$lastCorpAnnouncementDate, format = "%d-%b-%Y")
 
   result %>%
-    magrittr::set_names("symbol",
-                        "series",
-                        "last_corp_announcement_date",
-                        "last_corp_announcement",
-                        "open_price",
-                        "high_price",
-                        "low_price",
-                        "last_traded_price",
-                        "previous_close_price",
-                        "percent_change",
-                        "traded_quantity",
-                        "turnover_in_lakhs")
+    magrittr::set_names(., c("symbol", "series", "last_corp_announcement_date",
+                        "last_corp_announcement", "open_price", "high_price",
+                        "low_price", "last_traded_price",
+                        "previous_close_price", "percent_change",
+                        "traded_quantity", "turnover_in_lakhs"))
 
 }

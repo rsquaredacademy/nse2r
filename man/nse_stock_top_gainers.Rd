@@ -26,7 +26,7 @@ A tibble with the following columns:
 Fetch top gainers for the last trading session.
 }
 \examples{
-\dontrun{
+\donttest{
 nse_stock_top_gainers()
 }
 

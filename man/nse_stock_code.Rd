@@ -16,7 +16,7 @@ A tibble with the following columns:
 Fetch stock symbol and name from NSE.
 }
 \examples{
-\dontrun{
+\donttest{
 nse_stock_code()
 }
 

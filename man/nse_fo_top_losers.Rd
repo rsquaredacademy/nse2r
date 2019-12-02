@@ -26,7 +26,7 @@ A tibble with the following columns:
 Top futures and options losers for the last trading session.
 }
 \examples{
-\dontrun{
+\donttest{
 nse_fo_top_losers()
 }
 

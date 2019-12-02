@@ -3,7 +3,7 @@
 #' NSE indices quote.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' nse_index_quote()
 #' }
 #'
@@ -25,10 +25,8 @@ nse_index_quote <- function() {
     magrittr::extract(-5) %>%
     nse_format_num(cols_skip = 1, cols_modify = 2:4) %>%
     nse_format(cols_skip = 1, cols_modify = 2:4) %>%
-    magrittr::set_names("index_name",
-                        "last_traded_price",
-                        "change",
-                        "percent_change")
+    magrittr::set_names(., c("index_name", "last_traded_price", "change",
+                        "percent_change"))
 
 }
 
@@ -37,7 +35,7 @@ nse_index_quote <- function() {
 #' List NSE indices.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' nse_index_list()
 #' }
 #'
@@ -54,7 +52,7 @@ nse_index_list <- function() {
   url %>%
     nse_base() %>%
     magrittr::extract(1) %>%
-    magrittr::set_names("index_name")
+    magrittr::set_names(., c("index_name"))
 
 }
 
@@ -65,7 +63,7 @@ nse_index_list <- function() {
 #' @param index_code Symbol of the index.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' nse_index_valid("nifty auto")
 #' nse_index_valid("nifty cps")
 #' }

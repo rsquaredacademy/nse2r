@@ -3,7 +3,7 @@
 #' Fetch data of pre open session of Nifty from NSE.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' nse_preopen_nifty()
 #' }
 #'
@@ -25,19 +25,10 @@ nse_preopen_nifty <- function() {
   result$caAct <- trimws(result$caAct)
 
   result %>%
-    magrittr::set_names("symbol",
-                        "series",
-                        "corp_action_date",
-                        "corp_action",
-                        "price",
-                        "change",
-                        "percent_change",
-                        "prev_close",
-                        "quantity",
-                        "value",
-                        "mkt_cap",
-                        "year_high",
-                        "year_low")
+    magrittr::set_names(., c("symbol", "series", "corp_action_date",
+                             "corp_action", "price", "change", "percent_change",
+                             "prev_close", "quantity", "value", "mkt_cap",
+                             "year_high", "year_low"))
 
 }
 
@@ -46,7 +37,7 @@ nse_preopen_nifty <- function() {
 #' Fetch data of pre open session of Nifty Bank from NSE.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' nse_preopen_nifty_bank()
 #' }
 #'
@@ -68,19 +59,10 @@ nse_preopen_nifty_bank <- function() {
   result$caAct <- trimws(result$caAct)
 
   result %>%
-    magrittr::set_names("symbol",
-                        "series",
-                        "corp_action_date",
-                        "corp_action",
-                        "price",
-                        "change",
-                        "percent_change",
-                        "prev_close",
-                        "quantity",
-                        "value",
-                        "mkt_cap",
-                        "year_high",
-                        "year_low")
+    magrittr::set_names(., c("symbol", "series", "corp_action_date",
+                        "corp_action", "price", "change", "percent_change",
+                        "prev_close", "quantity", "value", "mkt_cap",
+                        "year_high", "year_low"))
 
 }
 

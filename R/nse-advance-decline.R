@@ -3,7 +3,7 @@
 #' NSE indices advances & declines.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' nse_advances_declines()
 #' }
 #'
@@ -23,9 +23,6 @@ nse_advances_declines <- function() {
   url %>%
     nse_base() %>%
     nse_format(cols_skip = 1, cols_modify = 2:4) %>%
-    magrittr::set_names("index_name",
-                        "advances",
-                        "declines",
-                        "unchanged")
+    magrittr::set_names(., c("index_name", "advances", "declines", "unchanged"))
 
 }

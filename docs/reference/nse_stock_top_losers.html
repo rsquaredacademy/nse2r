@@ -156,9 +156,25 @@
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
-<span class='fu'>nse_stock_top_losers</span>()
-}</div></pre>
+    <pre class="examples"><div class='input'><span class='co'># \donttest{</span>
+<span class='fu'>nse_stock_top_losers</span>()</div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 10 x 12</span><span>
+#&gt;    symbol series last_corp_annou~ last_corp_annou~ open_price high_price
+#&gt;    </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #949494;font-style: italic;'>&lt;date&gt;</span><span>           </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>                 </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span>      </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span>
+#&gt; </span><span style='color: #BCBCBC;'> 1</span><span> YESBA~ EQ     2019-06-03       Annual General ~        69        69.3
+#&gt; </span><span style='color: #BCBCBC;'> 2</span><span> EICHE~ EQ     2019-07-24       Annual General ~     </span><span style='text-decoration: underline;'>22</span><span>715     </span><span style='text-decoration: underline;'>22</span><span>750  
+#&gt; </span><span style='color: #BCBCBC;'> 3</span><span> INFRA~ EQ     2019-08-22       Interim Dividen~       284.      296. 
+#&gt; </span><span style='color: #BCBCBC;'> 4</span><span> BAJFI~ EQ     2019-07-11       Annual General ~      </span><span style='text-decoration: underline;'>4</span><span>075      </span><span style='text-decoration: underline;'>4</span><span>077. 
+#&gt; </span><span style='color: #BCBCBC;'> 5</span><span> ONGC   EQ     2019-08-22       Annual General ~       131.      131. 
+#&gt; </span><span style='color: #BCBCBC;'> 6</span><span> BPCL   EQ     2019-08-21       Dividend - Rs 8~       508.      510. 
+#&gt; </span><span style='color: #BCBCBC;'> 7</span><span> SUNPH~ EQ     2019-08-20       Annual General ~       449       450. 
+#&gt; </span><span style='color: #BCBCBC;'> 8</span><span> TECHM  EQ     2019-07-25       Annual General ~       758.      760. 
+#&gt; </span><span style='color: #BCBCBC;'> 9</span><span> IOC    EQ     2019-08-21       Annual General ~       132.      132. 
+#&gt; </span><span style='color: #BCBCBC;'>10</span><span> TATAS~ EQ     2019-07-04       Annual General ~       425.      427. 
+#&gt; </span><span style='color: #949494;'># ... with 6 more variables: low_price </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #949494;'>, last_traded_price </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #949494;'>,
+#&gt; #   previous_close_price </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #949494;'>, percent_change </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #949494;'>, traded_quantity </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #949494;'>,
+#&gt; #   turnover_in_lakhs </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'># }
+
+</div></span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -175,7 +191,7 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by <a href='https://www.aravindhebbali.com'>Aravind Hebbali</a>, <a href='https://in.linkedin.com/in/lokesh-kumar-frm-87019334'>Lokesh Atreja</a>.</p>
+  <p>Developed by <a href='https://in.linkedin.com/in/lokesh-kumar-frm-87019334'>Lokesh Kumar</a>, <a href='https://www.aravindhebbali.com'>Aravind Hebbali</a>.</p>
 </div>
 
 <div class="pkgdown">
