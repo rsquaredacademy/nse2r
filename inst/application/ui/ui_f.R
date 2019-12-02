@@ -4,7 +4,7 @@ tabPanel('Futures & Options', value = 'tab_f',
     fluidRow(
       column(7, align = 'left',
         h4('Futures & Options'),
-        p('Futures & options lotsizes, top gainers and losers.')
+        p('Futures & options top gainers and losers.')
       ),
       column(5, align = 'right',
         actionButton(inputId='fdistlink1', label="Help", icon = icon("question-circle"),
@@ -16,13 +16,6 @@ tabPanel('Futures & Options', value = 'tab_f',
     fluidRow(
       column(12,
         tabsetPanel(type = 'tabs',
-          tabPanel('Lot Sizes',
-            column(12,
-              br(),
-              dataTableOutput('fo_lotsizes') %>% 
-                shinycssloaders::withSpinner()
-            )
-          ),
           tabPanel('Top Gainers',
             column(12,
               br(),
