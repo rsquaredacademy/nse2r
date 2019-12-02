@@ -77,18 +77,6 @@
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Guides
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="../articles/introduction-to-nse2r.html">Introduction to nse2r</a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     Reference
      
     <span class="caret"></span>
@@ -157,9 +145,24 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># \donttest{</span>
-<span class='fu'>nse_fo_top_gainers</span>()</div><div class='output co'>#&gt; <span class='error'>Error in magrittr::set_names(., "symbol", "series", "last_corp_announcement_date",     "last_corp_announcement", "open_price", "high_price", "low_price",     "last_traded_price", "previous_close_price", "pchange", "traded_quantity",     "turnover_in_lakhs"): 13 arguments passed to 'names&lt;-' which requires 2</span></div><div class='input'># }
+<span class='fu'>nse_fo_top_gainers</span>()</div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 10 x 12</span><span>
+#&gt;    symbol series last_corp_annou~ last_corp_annou~ open_price high_price
+#&gt;    </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #949494;font-style: italic;'>&lt;date&gt;</span><span>           </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>                 </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span>      </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span>
+#&gt; </span><span style='color: #BCBCBC;'> 1</span><span> IDEA   EQ     2019-08-16       Annual General ~        7.5        8.8
+#&gt; </span><span style='color: #BCBCBC;'> 2</span><span> BHART~ EQ     2019-04-23       Rights 19:67 @ ~      471.       486. 
+#&gt; </span><span style='color: #BCBCBC;'> 3</span><span> IBULH~ EQ     2019-11-18       Interim Dividen~      292.       309  
+#&gt; </span><span style='color: #BCBCBC;'> 4</span><span> ESCOR~ EQ     2019-07-11       Dividend Rs - 2~      641.       666. 
+#&gt; </span><span style='color: #BCBCBC;'> 5</span><span> NMDC   EQ     2019-08-22       Annual General ~      102.       106. 
+#&gt; </span><span style='color: #BCBCBC;'> 6</span><span> DISHTV EQ     2018-11-05       Interim Dividen~       12.2       13.8
+#&gt; </span><span style='color: #BCBCBC;'> 7</span><span> MOTHE~ EQ     2019-08-08       Annual General ~      128.       134. 
+#&gt; </span><span style='color: #BCBCBC;'> 8</span><span> PETRO~ EQ     2019-11-07       Interim Dividen~      274.       280. 
+#&gt; </span><span style='color: #BCBCBC;'> 9</span><span> AMBUJ~ EQ     2019-02-27       Dividend - Rs 1~      206.       211  
+#&gt; </span><span style='color: #BCBCBC;'>10</span><span> JSWST~ EQ     2019-07-08       Annual General ~      268.       269. 
+#&gt; </span><span style='color: #949494;'># ... with 6 more variables: low_price </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #949494;'>, last_traded_price </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #949494;'>,
+#&gt; #   previous_close_price </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #949494;'>, percent_change </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #949494;'>, traded_quantity </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #949494;'>,
+#&gt; #   turnover_in_lakhs </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'># }
 
-</div></pre>
+</div></span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

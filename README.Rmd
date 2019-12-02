@@ -47,12 +47,10 @@ With nse2r, you can fetch the following data related to:
     - check validity
     - fetch indices quote
 - futures & options
-    - lot size
     - top gainers/losers for the last trading session
 - pre open data
     - nifty
     - nifty bank
-    - nifty futures & options
 - indices advances & declines
 
 ## Installation
@@ -63,10 +61,6 @@ You can install the development version of nse2r from [GitHub](https://github.co
 # install.packages("devtools")
 devtools::install_github("rsquaredacademy/nse2r")
 ```
-
-## Articles
-
-- [Introduction to nse2r](https://nse2r.rsquaredacademy.com/articles/introduction-to-nse2r.html)
 
 ## Usage
 

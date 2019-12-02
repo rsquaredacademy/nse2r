@@ -21,10 +21,6 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "Guides"
-      menu:
-        - text: "Introduction to nse2r"
-          href: articles/introduction-to-nse2r.html
     - text: "Reference"
       menu:
         - text: "Functions"

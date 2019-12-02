@@ -40,18 +40,11 @@ nse_fo_top_gainers <- function() {
   result$lastCorpAnnouncementDate <- as.Date(result$lastCorpAnnouncementDate, format = "%d-%b-%Y")
 
   result %>%
-    magrittr::set_names("symbol",
-                        "series",
-                        "last_corp_announcement_date",
-                        "last_corp_announcement",
-                        "open_price",
-                        "high_price",
-                        "low_price",
-                        "last_traded_price",
-                        "previous_close_price",
-                        "pchange",
-                        "traded_quantity",
-                        "turnover_in_lakhs")
+    magrittr::set_names(., c("symbol", "series", "last_corp_announcement_date",
+                             "last_corp_announcement", "open_price", "high_price",
+                             "low_price", "last_traded_price",
+                             "previous_close_price", "percent_change",
+                             "traded_quantity", "turnover_in_lakhs"))
 
 }
 

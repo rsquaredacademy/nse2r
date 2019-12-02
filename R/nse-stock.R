@@ -149,7 +149,7 @@ nse_stock_code <- function() {
     magrittr::extract(., 1:2) %>%
     tibble::as_tibble() %>%
     purrr::map_dfc(as.character) %>%
-    magrittr::set_names("symbol", "company")
+    magrittr::set_names(., c("symbol", "company"))
 
 }
 

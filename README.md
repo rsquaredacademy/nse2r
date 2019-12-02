@@ -46,12 +46,10 @@ With nse2r, you can fetch the following data related to:
       - check validity
       - fetch indices quote
   - futures & options
-      - lot size
       - top gainers/losers for the last trading session
   - pre open data
       - nifty
       - nifty bank
-      - nifty futures & options
   - indices advances & declines
 
 ## Installation
@@ -63,11 +61,6 @@ You can install the development version of nse2r from
 # install.packages("devtools")
 devtools::install_github("rsquaredacademy/nse2r")
 ```
-
-## Articles
-
-  - [Introduction to
-    nse2r](https://nse2r.rsquaredacademy.com/articles/introduction-to-nse2r.html)
 
 ## Usage
 
@@ -85,18 +78,18 @@ nse2r uses consistent prefix `nse_` for easy tab completion.
 ``` r
 nse_index_quote()
 #> # A tibble: 55 x 4
-#>    name              lastPrice change pChange
-#>    <chr>                 <dbl>  <dbl>   <dbl>
-#>  1 NIFTY 50 Pre Open   11919.   35.0    0.290
-#>  2 NIFTY 50            11933.   48.4    0.41 
-#>  3 NIFTY NEXT 50       28104.  -50.5   -0.18 
-#>  4 NIFTY100 LIQ 15      3722.   22.8    0.62 
-#>  5 NIFTY BANK          31236.  244.     0.79 
-#>  6 INDIA VIX              15.5  -0.27  -1.71 
-#>  7 NIFTY 100           12050.   39.2    0.33 
-#>  8 NIFTY 500            9698.   29.8    0.31 
-#>  9 NIFTY MIDCAP 100    16937.    5.65   0.03 
-#> 10 NIFTY MIDCAP 50      4644.    5.05   0.11 
+#>    index_name        last_traded_price  change percent_change
+#>    <chr>                         <dbl>   <dbl>          <dbl>
+#>  1 NIFTY 50 Pre Open           12137.    81              0.67
+#>  2 NIFTY 50                    12048.    -7.85          -0.07
+#>  3 NIFTY NEXT 50               28539.    -7             -0.02
+#>  4 NIFTY100 LIQ 15              3790.   -38.9           -1.02
+#>  5 NIFTY BANK                  31871.   -74.6           -0.23
+#>  6 INDIA VIX                      14.2    0.3            2.19
+#>  7 NIFTY 100                   12175.    -7.45          -0.06
+#>  8 NIFTY 500                    9798    -15.6           -0.16
+#>  9 NIFTY MIDCAP 100            17103.  -119.            -0.69
+#> 10 NIFTY MIDCAP 50              4689.   -33.4           -0.71
 #> # ... with 45 more rows
 ```
 
@@ -107,51 +100,42 @@ nse_index_quote()
 ``` r
 nse_stock_top_gainers()
 #> # A tibble: 10 x 12
-#>    symbol series lastCorpAnnounc~ lastCorpAnnounc~ openPrice highPrice
-#>    <chr>  <chr>  <date>           <chr>                <dbl>     <dbl>
-#>  1 INFRA~ EQ     2019-08-22       Interim Dividen~      228.      243.
-#>  2 BHART~ EQ     2019-04-23       Rights 19:67 @ ~      427.      435 
-#>  3 CIPLA  EQ     2019-07-31       Annual General ~      461.      478.
-#>  4 AXISB~ EQ     2019-07-04       Annual General ~      725       744.
-#>  5 RELIA~ EQ     2019-08-02       Annual General ~     1467      1497.
-#>  6 INDUS~ EQ     2019-08-08       Annual General ~     1382      1409 
-#>  7 TECHM  EQ     2019-07-25       Annual General ~      754       766 
-#>  8 GRASIM EQ     2019-08-08       Annual General ~      775       794.
-#>  9 INFY   EQ     2019-10-23       Interim Dividen~      710.      712.
-#> 10 SUNPH~ EQ     2019-08-20       Annual General ~      425       429.
-#> # ... with 6 more variables: lowPrice <dbl>, ltp <dbl>,
-#> #   previousPrice <dbl>, netPrice <dbl>, tradedQuantity <dbl>,
-#> #   turnoverInLakhs <dbl>
+#>    symbol series last_corp_annou~ last_corp_annou~ open_price high_price
+#>    <chr>  <chr>  <date>           <chr>                 <dbl>      <dbl>
+#>  1 BHART~ EQ     2019-04-23       Rights 19:67 @ ~       471.       486.
+#>  2 JSWST~ EQ     2019-07-08       Annual General ~       268.       269.
+#>  3 RELIA~ EQ     2019-08-02       Annual General ~      1600       1614.
+#>  4 GRASIM EQ     2019-08-08       Annual General ~       810        822 
+#>  5 ASIAN~ EQ     2019-10-30       Interim Dividen~      1706.      1742.
+#>  6 KOTAK~ EQ     2019-07-12       Annual General ~      1614.      1636.
+#>  7 AXISB~ EQ     2019-07-04       Annual General ~       739.       746 
+#>  8 NESTL~ EQ     2019-12-10       Interim Dividend     14454.     14631.
+#>  9 M&M    EQ     2019-07-18       Annual General ~       525        538.
+#> 10 ULTRA~ EQ     2019-07-10       Annual General ~      4270       4320 
+#> # ... with 6 more variables: low_price <dbl>, last_traded_price <dbl>,
+#> #   previous_close_price <dbl>, percent_change <dbl>,
+#> #   traded_quantity <dbl>, turnover_in_lakhs <dbl>
 ```
 
 ##### Stocks that have touched their 52 week highs during the day
 
 ``` r
 nse_stock_year_high()
-#> # A tibble: 20 x 10
-#>    symbol symbolDesc dt          value   year    ltp value_old    prev
-#>    <chr>  <chr>      <date>      <dbl>  <dbl>  <dbl>     <dbl>   <dbl>
-#>  1 ABSLB~ Aditya Bi~ 2019-11-04  330    330    328       330    330.  
-#>  2 ACCEL~ Accelya S~ 2019-11-18 1245.  1245.  1190      1129   1073.  
-#>  3 AGROP~ Agro Phos~ 2019-11-18  125.   125.   125.      124.   124.  
-#>  4 ALKEM  Alkem Lab~ 2019-11-18 2150   2150   2122.     2110   2100.  
-#>  5 ANKIT~ Ankit Met~ 2019-11-18    0.7    0.7    0.7       0.7    0.65
-#>  6 BAJAJ~ Bajaj Fin~ 2019-11-15 9189   9189   9177.     9140   9104.  
-#>  7 BHART~ Bharti Ai~ 2019-11-18  435    435    430.      421.   409.  
-#>  8 CREDI~ CREDITACC~ 2019-11-18  828.   828.   823.      799    793   
-#>  9 DYNPRO Dynemic P~ 2019-11-18  155    155    152.      150.   148.  
-#> 10 ESSEL~ Essel Pro~ 2019-11-14  149.   149.   145.      142    137.  
-#> 11 IPCAL~ IPCA Labo~ 2019-11-18 1188.  1188.  1150      1176.  1160.  
-#> 12 LALPA~ Dr. Lal P~ 2019-10-29 1673.  1673.  1665.     1665   1600   
-#> 13 NPBET  Tata Nift~ 2019-11-08  175.   175.   175       175.   173.  
-#> 14 POLYC~ Polycab I~ 2019-11-18  949.   949.   926.      944.   933.  
-#> 15 RELIA~ Reliance ~ 2019-10-31 1497.  1497.  1495.     1490.  1459.  
-#> 16 RITES  RITES Lim~ 2019-07-05  318.   318.   316.      315.   301.  
-#> 17 SHRED~ Shree Dig~ 2019-11-18   27.0   27.0   25.9      26.4   26.4 
-#> 18 SIRCA  Sirca Pai~ 2019-11-15  249.   249.   244.      247.   242.  
-#> 19 VIKAS~ Vikas Pro~ 2019-08-19    4.5    4.5    4.5       4.5    4.45
-#> 20 VISES~ Visesh In~ 2019-11-18    0.1    0.1    0.1       0.1    0.05
-#> # ... with 2 more variables: change <dbl>, pChange <dbl>
+#> # A tibble: 25 x 10
+#>    symbol symbol_desc date       new_high   year last_traded_pri~ prev_high
+#>    <chr>  <chr>       <date>        <dbl>  <dbl>            <dbl>     <dbl>
+#>  1 ADANI~ Adani Tran~ 2019-11-29   341.   3.41e2           332.       318. 
+#>  2 AGROP~ Agro Phos ~ 2019-11-29   134.   1.34e2           134.       133. 
+#>  3 AHLWE~ Asian Hote~ 2019-09-26   402.   4.02e2           378        395  
+#>  4 AMBER  Amber Ente~ 2019-10-31  1070.   1.07e3          1042       1060  
+#>  5 ANKIT~ Ankit Meta~ 2019-11-29     1.15 1.15e0             1.05       1.1
+#>  6 ASTRA~ AstraZenec~ 2019-10-31  2834    2.83e3          2830       2809  
+#>  7 BHART~ Bharti Air~ 2019-11-25   486.   4.86e2           461.       456. 
+#>  8 BIOFI~ Biofil Che~ 2019-11-29     8.9  8.90e0             8.9        8.5
+#>  9 CHEMB~ Chembond C~ 2019-11-29   241.   2.41e2           228.       240. 
+#> 10 CUB    City Union~ 2019-11-29   235.   2.35e2           230.       227  
+#> # ... with 15 more rows, and 3 more variables: prev_close <dbl>,
+#> #   change <dbl>, percent_change <dbl>
 ```
 
 ##### Most actively traded stocks in a month
@@ -159,20 +143,21 @@ nse_stock_year_high()
 ``` r
 nse_stock_most_traded()
 #> # A tibble: 12 x 6
-#>    security              sharetotal trdQty nooftrades avgdailyturn turnover
-#>    <chr>                      <dbl>  <dbl>      <dbl>        <dbl>    <dbl>
-#>  1 Yes Bank Limited            4.73  74406   13096866         1779    35577
-#>  2 State Bank Of India         3.59  10008    6338506         1352    27045
-#>  3 Infosys Limited             3.54   3830    6962011         1333    26663
-#>  4 Reliance Industries ~       3.03   1643    4045200         1140    22804
-#>  5 Indiabulls Hsg Fin L~       2.98  10506   10458041         1121    22424
-#>  6 ICICI Bank Limited          2.64   4474    4052944          995    19893
-#>  7 Axis Bank Limited           2.38   2595    3254378          897    17947
-#>  8 HDFC Bank Limited           2.23   1372    3587458          841    16823
-#>  9 Indusind Bank Limited       2.23   1312    3544497          840    16807
-#> 10 Tata Motors Limited         2.18  11681    4400657          821    16427
-#> 11 TOTAL of Top Ten sec~      29.5  121827   59740558        11120   222410
-#> 12 TOTAL                     100    408051  258720343        37647   752931
+#>    security share_turnover traded_quantity no_of_trades avg_daily_turno~
+#>    <chr>             <dbl>           <dbl>        <dbl>            <dbl>
+#>  1 ICICI B~           4.65            7758      4878739            1939.
+#>  2 Yes Ban~           4.29           52626     11184742            1787.
+#>  3 Indiabu~           4              12930     10805671            1667.
+#>  4 Relianc~           3.02            1670      3665877            1259.
+#>  5 Zee Ent~           3               7991      5228767            1250.
+#>  6 State B~           2.9             7471      4682688            1211.
+#>  7 Bharti ~           2.22            4447      3632503             924.
+#>  8 HDFC Li~           2.04             762      2883349             853.
+#>  9 Infosys~           1.88            2223      3267771             783.
+#> 10 Tata St~           1.83            3759      3038374             764.
+#> 11 TOTAL o~          29.8           101637     53268481           12438.
+#> 12 TOTAL            100             483353    259778999           41713.
+#> # ... with 1 more variable: turnover <dbl>
 ```
 
 ### Futures & Options
@@ -182,21 +167,21 @@ nse_stock_most_traded()
 ``` r
 nse_fo_top_gainers()
 #> # A tibble: 10 x 12
-#>    symbol series lastCorpAnnounc~ lastCorpAnnounc~ openPrice highPrice
-#>    <chr>  <chr>  <date>           <chr>                <dbl>     <dbl>
-#>  1 IDEA   EQ     2019-08-16       Annual General ~      4.85       5.8
-#>  2 JUSTD~ EQ     2018-10-11       Buyback             531        564. 
-#>  3 INFRA~ EQ     2019-08-22       Interim Dividen~    228.       243. 
-#>  4 BHART~ EQ     2019-04-23       Rights 19:67 @ ~    427.       435  
-#>  5 CASTR~ EQ     2019-08-08       Interim Dividen~    145.       152. 
-#>  6 UNION~ EQ     2019-06-20       Annual General ~     55.0       57.2
-#>  7 CIPLA  EQ     2019-07-31       Annual General ~    461.       478. 
-#>  8 BANKI~ EQ     2019-06-20       Annual General ~     71.5       73.7
-#>  9 TATAE~ EQ     2019-07-08       Annual General ~    792.       831. 
-#> 10 L&TFH  EQ     2019-07-19       Annual General ~     97.9      102. 
-#> # ... with 6 more variables: lowPrice <dbl>, ltp <dbl>,
-#> #   previousPrice <dbl>, netPrice <dbl>, tradedQuantity <dbl>,
-#> #   turnoverInLakhs <dbl>
+#>    symbol series last_corp_annou~ last_corp_annou~ open_price high_price
+#>    <chr>  <chr>  <date>           <chr>                 <dbl>      <dbl>
+#>  1 IDEA   EQ     2019-08-16       Annual General ~        7.5        8.8
+#>  2 BHART~ EQ     2019-04-23       Rights 19:67 @ ~      471.       486. 
+#>  3 IBULH~ EQ     2019-11-18       Interim Dividen~      292.       309  
+#>  4 ESCOR~ EQ     2019-07-11       Dividend Rs - 2~      641.       666. 
+#>  5 NMDC   EQ     2019-08-22       Annual General ~      102.       106. 
+#>  6 DISHTV EQ     2018-11-05       Interim Dividen~       12.2       13.8
+#>  7 MOTHE~ EQ     2019-08-08       Annual General ~      128.       134. 
+#>  8 PETRO~ EQ     2019-11-07       Interim Dividen~      274.       280. 
+#>  9 AMBUJ~ EQ     2019-02-27       Dividend - Rs 1~      206.       211  
+#> 10 JSWST~ EQ     2019-07-08       Annual General ~      268.       269. 
+#> # ... with 6 more variables: low_price <dbl>, last_traded_price <dbl>,
+#> #   previous_close_price <dbl>, percent_change <dbl>,
+#> #   traded_quantity <dbl>, turnover_in_lakhs <dbl>
 ```
 
 Please note that the ‘nse2r’ project is released with a [Contributor
