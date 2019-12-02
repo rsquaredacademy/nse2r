@@ -54,31 +54,3 @@ nse_preopen_nifty_bank <- function() {
 
 }
 
-#' Pre open F & O
-#'
-#' Fetch data of pre open session of futures and options from NSE.
-#'
-#' @examples
-#' \dontrun{
-#' nse_preopen_fo()
-#' }
-#'
-#' @export
-#'
-nse_preopen_fo <- function() {
-
-  url <- "https://www.nseindia.com/live_market/dynaContent/live_analysis/pre_open/fo.json"
-
-  result <-
-  	url %>%
-    nse_base() %>%
-    nse_format_num(cols_skip = 1:4, cols_modify = 5:17) %>%
-    nse_format(cols_skip = 1:4, cols_modify = 5:17)
-
-  result$xDt   <- as.Date(result$xDt, format = "%d-%b-%Y")
-  result$caAct[result$caAct == "-"] <- NA
-  result$caAct <- trimws(result$caAct)
-
-  return(result)
-
-}

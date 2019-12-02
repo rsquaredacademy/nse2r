@@ -1,11 +1,5 @@
 context("futures and options")
 
-test_that("output from nse_fo_lotsizes is as expected", {
-  testthat::skip_on_cran()
-  iquotes <- read.csv("www.nseindia.com/content/fo/fo_mktlots.csv")
-  expect_equal(ncol(iquotes), 16)
-})
-
 httptest::with_mock_api({
   test_that("output from nse_fo_top_gainers is as expected", {
     testthat::skip_on_cran()
@@ -13,7 +7,7 @@ httptest::with_mock_api({
     expect_equal(
       names(iquotes),
       c("symbol", "series", "lastCorpAnnouncementDate", "lastCorpAnnouncement",
-        "openPrice", "highPrice", "lowPrice", "ltp", "previousPrice", 
+        "openPrice", "highPrice", "lowPrice", "ltp", "previousPrice",
         "netPrice", "tradedQuantity", "turnoverInLakhs"))
   })
 })
@@ -25,7 +19,7 @@ httptest::with_mock_api({
     expect_equal(
       names(iquotes),
       c("symbol", "series", "lastCorpAnnouncementDate", "lastCorpAnnouncement",
-        "openPrice", "highPrice", "lowPrice", "ltp", "previousPrice", 
+        "openPrice", "highPrice", "lowPrice", "ltp", "previousPrice",
         "netPrice", "tradedQuantity", "turnoverInLakhs"))
   })
 })

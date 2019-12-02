@@ -67,14 +67,12 @@ reference:
 - title: Futures & Options
 
   contents:
-  - nse_fo_lotsizes
   - nse_fo_top_gainers
   - nse_fo_top_losers
 
 - title: Pre Open Data
 
   contents:
-  - nse_preopen_fo
   - nse_preopen_nifty
   - nse_preopen_nifty_bank
 
