@@ -1,68 +1,50 @@
-#' Pre open nifty
+#' Pre open Nifty data
 #'
-#' Fetch data of pre open session of Nifty from NSE.
+#' Fetch data of pre open session of Nifty & Nifty Bank.
 #'
 #' @examples
 #' \donttest{
 #' nse_preopen_nifty()
+#' nse_preopen_nifty_bank()
 #' }
 #'
+#' @return A tibble with the following columns:
+#'
+#' \code{symbol}{NSE ticker.}
+#' \code{series}{Equity (EQ)}
+#' \code{corp_action_date}{Corporate action date.}
+#' \code{corp_action}{Corporate Action}
+#' \code{price}{Price}
+#' \code{change}{Change in price}
+#' \code{percent_change}{Percentage change in price.}
+#' \code{prev_close}{Previous close.}
+#' \code{quantity}{Quantity}
+#' \code{value}{Value (in lakhs),}
+#' \code{mkt_cap}{Free float market capitalization (in crores).}
+#' \code{year_high}{Normal market 52 week high.}
+#' \code{year_low}{Normal market 52 week low.}
+#'
+#' @name preopen_nifty
+#'
+NULL
+
+#' @rdname preopen_nifty
 #' @export
 #'
 nse_preopen_nifty <- function() {
 
   url <- "https://www.nseindia.com/live_market/dynaContent/live_analysis/pre_open/nifty.json"
-
-  result <-
-  	url %>%
-    nse_base() %>%
-    magrittr::extract(., 1:13) %>%
-    nse_format_num(cols_skip = 1:4, cols_modify = 5:13) %>%
-    nse_format(cols_skip = 1:4, cols_modify = 5:13)
-
-  result$xDt <- as.Date(result$xDt, format = "%d-%b-%Y")
-  result$caAct[result$caAct == "-"] <- NA
-  result$caAct <- trimws(result$caAct)
-
-  result %>%
-    magrittr::set_names(., c("symbol", "series", "corp_action_date",
-                             "corp_action", "price", "change", "percent_change",
-                             "prev_close", "quantity", "value", "mkt_cap",
-                             "year_high", "year_low"))
+  nse_preopen_base(url)
 
 }
 
-#' Pre open nifty bank
-#'
-#' Fetch data of pre open session of Nifty Bank from NSE.
-#'
-#' @examples
-#' \donttest{
-#' nse_preopen_nifty_bank()
-#' }
-#'
+#' @rdname preopen_nifty
 #' @export
 #'
 nse_preopen_nifty_bank <- function() {
 
   url <- "https://www.nseindia.com/live_market/dynaContent/live_analysis/pre_open/niftybank.json"
-
-  result <-
-  	url %>%
-    nse_base() %>%
-    magrittr::extract(., 1:13) %>%
-    nse_format_num(cols_skip = 1:4, cols_modify = 5:13) %>%
-    nse_format(cols_skip = 1:4, cols_modify = 5:13)
-
-  result$xDt <- as.Date(result$xDt, format = "%d-%b-%Y")
-  result$caAct[result$caAct == "-"] <- NA
-  result$caAct <- trimws(result$caAct)
-
-  result %>%
-    magrittr::set_names(., c("symbol", "series", "corp_action_date",
-                        "corp_action", "price", "change", "percent_change",
-                        "prev_close", "quantity", "value", "mkt_cap",
-                        "year_high", "year_low"))
+  nse_preopen_base(url)
 
 }
 

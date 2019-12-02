@@ -31,13 +31,14 @@ nse_stock_most_traded <- function() {
 
 }
 
-#' 52 week high
+#' 52 week high & low
 #'
-#' Fetch stocks that have touched their 52 week highs during the day on NSE.
+#' Fetch stocks that have touched their 52 week highs and lows during the day on NSE.
 #'
 #' @examples
 #' \donttest{
 #' nse_stock_year_high()
+#' nse_stock_year_low()
 #' }
 #'
 #' @return A tibble with the following column names:
@@ -53,72 +54,36 @@ nse_stock_most_traded <- function() {
 #' \item{change}{Change in price.}
 #' \item{percent_change}{Percentage change in price.}
 #'
+#' @name nse_stock_high_low
+#'
+NULL
+
+#' @rdname nse_stock_high_low
 #' @export
 #'
 nse_stock_year_high <- function() {
 
   url <- "https://www.nseindia.com/products/dynaContent/equities/equities/json/online52NewHigh.json"
 
-  cols_to_skip   <- c(1, 2, 7)
-  cols_to_modify <- c(3:6, 8:10)
-
-  result <-
-    url %>%
-    nse_base() %>%
-    nse_format_num(cols_skip = cols_to_skip, cols_modify = cols_to_modify) %>%
-    nse_format(cols_skip = 1:3, cols_modify = 4:10)
-
-  result$dt <- as.Date(result$dt, format = "%d-%b-%Y")
-
-  result %>%
+  url %>%
+  nse_stock_year_base() %>%
     magrittr::set_names(., c("symbol", "symbol_desc", "date", "new_high", "year",
                         "last_traded_price", "prev_high", "prev_close",
                         "change", "percent_change"))
 
 }
 
-#' 52 week low
-#'
-#' Fetch stocks that have touched their 52 week lows during the day on NSE.
-#'
-#' @examples
-#' \donttest{
-#' nse_stock_year_low()
-#' }
-#'
-#' @return A tibble with the following column names:
-#'
-#' \item{symbol}{NSE ticker.}
-#' \item{symbol_desc}{Name of the firm.}
-#' \item{date}{Previous low date.}
-#' \item{new_low}{New 52 week low price.}
-#' \item{year}{Year.}
-#' \item{last_traded_price}{Last traded price.}
-#' \item{prev_low}{Previous low price.}
-#' \item{prev_close}{Previous close price.}
-#' \item{change}{Change in price.}
-#' \item{percent_change}{Percentage change in price.}
-#'
+#' @rdname nse_stock_high_low
 #' @export
 #'
 nse_stock_year_low <- function() {
 
   url <- "https://www.nseindia.com/products/dynaContent/equities/equities/json/online52NewLow.json"
 
-  cols_to_skip   <- c(1, 2, 7)
-  cols_to_modify <- c(3:6, 8:10)
-
-  result <-
-    url %>%
-    nse_base() %>%
-    nse_format_num(cols_skip = cols_to_skip, cols_modify = cols_to_modify) %>%
-    nse_format(cols_skip = 1:3, cols_modify = 4:10)
-
-  result$dt <- as.Date(result$dt, format = "%d-%b-%Y")
-
-  result %>%
-    magrittr::set_names(., c("symbol", "symbol_desc", "date", "new_high", "year",
-                          "last_traded_price", "prev_high", "prev_close",
+  url %>%
+    nse_stock_year_base() %>%
+    magrittr::set_names(., c("symbol", "symbol_desc", "date", "new_low", "year",
+                          "last_traded_price", "prev_low", "prev_close",
                           "change", "percent_change"))
 
 }
@@ -177,62 +142,13 @@ nse_stock_valid <- function(stock_code) {
 
 }
 
-#' NSE top gainers
+#' NSE top gainers & losers
 #'
-#' Fetch top gainers for the last trading session.
+#' Fetch top gainers and losers for the last trading session.
 #'
 #' @examples
 #' \donttest{
 #' nse_stock_top_gainers()
-#' }
-#'
-#' @return A tibble with the following columns:
-#'
-#' \item{symbol}{NSE ticker.}
-#' \item{series}{Equity (EQ).}
-#' \item{last_corp_announcement_date}{Last corporate announcement date.}
-#' \item{last_corp_announcement}{Last corporate announcement.}
-#' \item{open_price}{Open price.}
-#' \item{high_price}{High price.}
-#' \item{low_price}{Low price.}
-#' \item{last_traded_price}{Last traded price.}
-#' \item{prev_close_price}{Previous close price.}
-#' \item{percent_change}{Percentage change in price.}
-#' \item{traded_quantity}{Total traded quantity.}
-#' \item{turnover}{Turnover in lakhs.}
-#'
-#' @export
-#'
-nse_stock_top_gainers <- function() {
-
-  url <- "http://www.nseindia.com/live_market/dynaContent/live_analysis/gainers/niftyGainers1.json"
-
-  cols_to_skip   <- c(1, 2, 11, 12)
-  cols_to_modify <- 3:10
-
-  result <-
-    url %>%
-    nse_base() %>%
-    nse_format_num(cols_skip = cols_to_skip, cols_modify = cols_to_modify) %>%
-    nse_format(cols_skip = 1:4, cols_modify = 5:12)
-
-  result$lastCorpAnnouncementDate <- as.Date(result$lastCorpAnnouncementDate,
-                                             format = "%d-%b-%Y")
-  result %>%
-    magrittr::set_names(., c("symbol", "series", "last_corp_announcement_date",
-                        "last_corp_announcement", "open_price", "high_price",
-                        "low_price", "last_traded_price",
-                        "previous_close_price", "percent_change",
-                        "traded_quantity", "turnover_in_lakhs"))
-
-}
-
-#' NSE top losers
-#'
-#' Fetch top losers for the last trading session.
-#'
-#' @examples
-#' \donttest{
 #' nse_stock_top_losers()
 #' }
 #'
@@ -251,29 +167,27 @@ nse_stock_top_gainers <- function() {
 #' \item{traded_quantity}{Total traded quantity.}
 #' \item{turnover}{Turnover in lakhs.}
 #'
+#' @name nse_stock_top_base
+#'
+NULL
+
+#' @rdname nse_stock_top_base
+#' @export
+#'
+nse_stock_top_gainers <- function() {
+
+  url <- "http://www.nseindia.com/live_market/dynaContent/live_analysis/gainers/niftyGainers1.json"
+  nse_fo_base(url)
+
+}
+
+#' @rdname nse_stock_top_base
 #' @export
 #'
 nse_stock_top_losers <- function() {
 
   url <- "http://www.nseindia.com/live_market/dynaContent/live_analysis/losers/niftyLosers1.json"
-
-  cols_to_skip   <- c(1, 2, 11, 12)
-  cols_to_modify <- 3:10
-
-  result <-
-    url %>%
-    nse_base() %>%
-    nse_format_num(cols_skip = cols_to_skip, cols_modify = cols_to_modify) %>%
-    nse_format(cols_skip = 1:4, cols_modify = 5:12)
-
-  result$lastCorpAnnouncementDate <- as.Date(result$lastCorpAnnouncementDate, format = "%d-%b-%Y")
-
-  result %>%
-    magrittr::set_names(., c("symbol", "series", "last_corp_announcement_date",
-                        "last_corp_announcement", "open_price", "high_price",
-                        "low_price", "last_traded_price",
-                        "previous_close_price", "percent_change",
-                        "traded_quantity", "turnover_in_lakhs"))
+  nse_fo_base(url)
 
 }
 
@@ -314,3 +228,6 @@ nse_stock_quote <- function(stock_code) {
   }
 
 }
+
+
+

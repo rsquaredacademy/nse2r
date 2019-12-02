@@ -31,6 +31,67 @@ nse_base <- function(url) {
 
 }
 
+nse_stock_year_base <- function(url) {
+
+  cols_to_skip   <- c(1, 2, 7)
+  cols_to_modify <- c(3:6, 8:10)
+
+  result <-
+    url %>%
+    nse_base() %>%
+    nse_format_num(cols_skip = cols_to_skip, cols_modify = cols_to_modify) %>%
+    nse_format(cols_skip = 1:3, cols_modify = 4:10)
+
+  result$dt <- as.Date(result$dt, format = "%d-%b-%Y")
+
+  return(result)
+
+}
+
+nse_fo_base <- function(url) {
+
+  cols_to_skip   <- c(1, 2, 11, 12)
+  cols_to_modify <- 3:10
+
+  result <-
+    url %>%
+    nse_base() %>%
+    nse_format_num(cols_skip = cols_to_skip, cols_modify = cols_to_modify) %>%
+    nse_format(cols_skip = 1:4, cols_modify = 5:12)
+
+  result$lastCorpAnnouncementDate <- as.Date(result$lastCorpAnnouncementDate,
+                                             format = "%d-%b-%Y")
+
+  result %>%
+    magrittr::set_names(., c("symbol", "series", "last_corp_announcement_date",
+                             "last_corp_announcement", "open_price", "high_price",
+                             "low_price", "last_traded_price",
+                             "prev_close_price", "percent_change",
+                             "traded_quantity", "turnover_in_lakhs"))
+
+}
+
+nse_preopen_base <- function(url) {
+
+  result <-
+    url %>%
+    nse_base() %>%
+    magrittr::extract(., 1:13) %>%
+    nse_format_num(cols_skip = 1:4, cols_modify = 5:13) %>%
+    nse_format(cols_skip = 1:4, cols_modify = 5:13)
+
+  result$xDt <- as.Date(result$xDt, format = "%d-%b-%Y")
+  result$caAct[result$caAct == "-"] <- NA
+  result$caAct <- trimws(result$caAct)
+
+  result %>%
+    magrittr::set_names(., c("symbol", "series", "corp_action_date",
+                             "corp_action", "price", "change", "percent_change",
+                             "prev_close", "quantity", "value", "mkt_cap",
+                             "year_high", "year_low"))
+
+}
+
 #' Format columns
 #'
 #' Modify data types of columns.
