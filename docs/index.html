@@ -43,18 +43,6 @@
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Guides
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-<li>
-      <a href="articles/introduction-to-nse2r.html">Introduction to nse2r</a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     Reference
      
     <span class="caret"></span>
@@ -122,7 +110,6 @@
 </li>
 <li>futures &amp; options
 <ul>
-<li>lot size</li>
 <li>top gainers/losers for the last trading session</li>
 </ul>
 </li>
@@ -130,7 +117,6 @@
 <ul>
 <li>nifty</li>
 <li>nifty bank</li>
-<li>nifty futures &amp; options</li>
 </ul>
 </li>
 <li>indices advances &amp; declines</li>
@@ -142,13 +128,6 @@
 <p>You can install the development version of nse2r from <a href="https://github.com/rsquaredacademy/nse2r/">GitHub</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># install.packages("devtools")</span></a>
 <a class="sourceLine" id="cb1-2" title="2">devtools<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/devtools/man/remote-reexports.html">install_github</a></span>(<span class="st">"rsquaredacademy/nse2r"</span>)</a></code></pre></div>
-</div>
-<div id="articles" class="section level2">
-<h2 class="hasAnchor">
-<a href="#articles" class="anchor"></a>Articles</h2>
-<ul>
-<li><a href="https://nse2r.rsquaredacademy.com/articles/introduction-to-nse2r.html">Introduction to nse2r</a></li>
-</ul>
 </div>
 <div id="usage" class="section level2">
 <h2 class="hasAnchor">
@@ -172,18 +151,18 @@
 <a href="#fetch-indices-quote" class="anchor"></a>Fetch Indices Quote</h5>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw"><a href="reference/nse_index_quote.html">nse_index_quote</a></span>()</a>
 <a class="sourceLine" id="cb2-2" title="2"><span class="co">#&gt; # A tibble: 55 x 4</span></a>
-<a class="sourceLine" id="cb2-3" title="3"><span class="co">#&gt;    name              lastPrice change pChange</span></a>
-<a class="sourceLine" id="cb2-4" title="4"><span class="co">#&gt;    &lt;chr&gt;                 &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb2-5" title="5"><span class="co">#&gt;  1 NIFTY 50 Pre Open   11919.   35.0    0.290</span></a>
-<a class="sourceLine" id="cb2-6" title="6"><span class="co">#&gt;  2 NIFTY 50            11933.   48.4    0.41 </span></a>
-<a class="sourceLine" id="cb2-7" title="7"><span class="co">#&gt;  3 NIFTY NEXT 50       28104.  -50.5   -0.18 </span></a>
-<a class="sourceLine" id="cb2-8" title="8"><span class="co">#&gt;  4 NIFTY100 LIQ 15      3722.   22.8    0.62 </span></a>
-<a class="sourceLine" id="cb2-9" title="9"><span class="co">#&gt;  5 NIFTY BANK          31236.  244.     0.79 </span></a>
-<a class="sourceLine" id="cb2-10" title="10"><span class="co">#&gt;  6 INDIA VIX              15.5  -0.27  -1.71 </span></a>
-<a class="sourceLine" id="cb2-11" title="11"><span class="co">#&gt;  7 NIFTY 100           12050.   39.2    0.33 </span></a>
-<a class="sourceLine" id="cb2-12" title="12"><span class="co">#&gt;  8 NIFTY 500            9698.   29.8    0.31 </span></a>
-<a class="sourceLine" id="cb2-13" title="13"><span class="co">#&gt;  9 NIFTY MIDCAP 100    16937.    5.65   0.03 </span></a>
-<a class="sourceLine" id="cb2-14" title="14"><span class="co">#&gt; 10 NIFTY MIDCAP 50      4644.    5.05   0.11 </span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="co">#&gt;    index_name        last_traded_price  change percent_change</span></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="co">#&gt;    &lt;chr&gt;                         &lt;dbl&gt;   &lt;dbl&gt;          &lt;dbl&gt;</span></a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="co">#&gt;  1 NIFTY 50 Pre Open           12137.    81              0.67</span></a>
+<a class="sourceLine" id="cb2-6" title="6"><span class="co">#&gt;  2 NIFTY 50                    12048.    -7.85          -0.07</span></a>
+<a class="sourceLine" id="cb2-7" title="7"><span class="co">#&gt;  3 NIFTY NEXT 50               28539.    -7             -0.02</span></a>
+<a class="sourceLine" id="cb2-8" title="8"><span class="co">#&gt;  4 NIFTY100 LIQ 15              3790.   -38.9           -1.02</span></a>
+<a class="sourceLine" id="cb2-9" title="9"><span class="co">#&gt;  5 NIFTY BANK                  31871.   -74.6           -0.23</span></a>
+<a class="sourceLine" id="cb2-10" title="10"><span class="co">#&gt;  6 INDIA VIX                      14.2    0.3            2.19</span></a>
+<a class="sourceLine" id="cb2-11" title="11"><span class="co">#&gt;  7 NIFTY 100                   12175.    -7.45          -0.06</span></a>
+<a class="sourceLine" id="cb2-12" title="12"><span class="co">#&gt;  8 NIFTY 500                    9798    -15.6           -0.16</span></a>
+<a class="sourceLine" id="cb2-13" title="13"><span class="co">#&gt;  9 NIFTY MIDCAP 100            17103.  -119.            -0.69</span></a>
+<a class="sourceLine" id="cb2-14" title="14"><span class="co">#&gt; 10 NIFTY MIDCAP 50              4689.   -33.4           -0.71</span></a>
 <a class="sourceLine" id="cb2-15" title="15"><span class="co">#&gt; # ... with 45 more rows</span></a></code></pre></div>
 </div>
 </div>
@@ -193,72 +172,64 @@
 <div id="top-gainers-for-the-last-trading-session" class="section level5">
 <h5 class="hasAnchor">
 <a href="#top-gainers-for-the-last-trading-session" class="anchor"></a>Top gainers for the last trading session.</h5>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw"><a href="reference/nse_stock_top_gainers.html">nse_stock_top_gainers</a></span>()</a>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw"><a href="reference/nse_stock_top_base.html">nse_stock_top_gainers</a></span>()</a>
 <a class="sourceLine" id="cb3-2" title="2"><span class="co">#&gt; # A tibble: 10 x 12</span></a>
-<a class="sourceLine" id="cb3-3" title="3"><span class="co">#&gt;    symbol series lastCorpAnnounc~ lastCorpAnnounc~ openPrice highPrice</span></a>
-<a class="sourceLine" id="cb3-4" title="4"><span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt;  &lt;date&gt;           &lt;chr&gt;                &lt;dbl&gt;     &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb3-5" title="5"><span class="co">#&gt;  1 INFRA~ EQ     2019-08-22       Interim Dividen~      228.      243.</span></a>
-<a class="sourceLine" id="cb3-6" title="6"><span class="co">#&gt;  2 BHART~ EQ     2019-04-23       Rights 19:67 @ ~      427.      435 </span></a>
-<a class="sourceLine" id="cb3-7" title="7"><span class="co">#&gt;  3 CIPLA  EQ     2019-07-31       Annual General ~      461.      478.</span></a>
-<a class="sourceLine" id="cb3-8" title="8"><span class="co">#&gt;  4 AXISB~ EQ     2019-07-04       Annual General ~      725       744.</span></a>
-<a class="sourceLine" id="cb3-9" title="9"><span class="co">#&gt;  5 RELIA~ EQ     2019-08-02       Annual General ~     1467      1497.</span></a>
-<a class="sourceLine" id="cb3-10" title="10"><span class="co">#&gt;  6 INDUS~ EQ     2019-08-08       Annual General ~     1382      1409 </span></a>
-<a class="sourceLine" id="cb3-11" title="11"><span class="co">#&gt;  7 TECHM  EQ     2019-07-25       Annual General ~      754       766 </span></a>
-<a class="sourceLine" id="cb3-12" title="12"><span class="co">#&gt;  8 GRASIM EQ     2019-08-08       Annual General ~      775       794.</span></a>
-<a class="sourceLine" id="cb3-13" title="13"><span class="co">#&gt;  9 INFY   EQ     2019-10-23       Interim Dividen~      710.      712.</span></a>
-<a class="sourceLine" id="cb3-14" title="14"><span class="co">#&gt; 10 SUNPH~ EQ     2019-08-20       Annual General ~      425       429.</span></a>
-<a class="sourceLine" id="cb3-15" title="15"><span class="co">#&gt; # ... with 6 more variables: lowPrice &lt;dbl&gt;, ltp &lt;dbl&gt;,</span></a>
-<a class="sourceLine" id="cb3-16" title="16"><span class="co">#&gt; #   previousPrice &lt;dbl&gt;, netPrice &lt;dbl&gt;, tradedQuantity &lt;dbl&gt;,</span></a>
-<a class="sourceLine" id="cb3-17" title="17"><span class="co">#&gt; #   turnoverInLakhs &lt;dbl&gt;</span></a></code></pre></div>
+<a class="sourceLine" id="cb3-3" title="3"><span class="co">#&gt;    symbol series last_corp_annou~ last_corp_annou~ open_price high_price</span></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt;  &lt;date&gt;           &lt;chr&gt;                 &lt;dbl&gt;      &lt;dbl&gt;</span></a>
+<a class="sourceLine" id="cb3-5" title="5"><span class="co">#&gt;  1 BHART~ EQ     2019-04-23       Rights 19:67 @ ~       471.       486.</span></a>
+<a class="sourceLine" id="cb3-6" title="6"><span class="co">#&gt;  2 JSWST~ EQ     2019-07-08       Annual General ~       268.       269.</span></a>
+<a class="sourceLine" id="cb3-7" title="7"><span class="co">#&gt;  3 RELIA~ EQ     2019-08-02       Annual General ~      1600       1614.</span></a>
+<a class="sourceLine" id="cb3-8" title="8"><span class="co">#&gt;  4 GRASIM EQ     2019-08-08       Annual General ~       810        822 </span></a>
+<a class="sourceLine" id="cb3-9" title="9"><span class="co">#&gt;  5 ASIAN~ EQ     2019-10-30       Interim Dividen~      1706.      1742.</span></a>
+<a class="sourceLine" id="cb3-10" title="10"><span class="co">#&gt;  6 KOTAK~ EQ     2019-07-12       Annual General ~      1614.      1636.</span></a>
+<a class="sourceLine" id="cb3-11" title="11"><span class="co">#&gt;  7 AXISB~ EQ     2019-07-04       Annual General ~       739.       746 </span></a>
+<a class="sourceLine" id="cb3-12" title="12"><span class="co">#&gt;  8 NESTL~ EQ     2019-12-10       Interim Dividend     14454.     14631.</span></a>
+<a class="sourceLine" id="cb3-13" title="13"><span class="co">#&gt;  9 M&amp;M    EQ     2019-07-18       Annual General ~       525        538.</span></a>
+<a class="sourceLine" id="cb3-14" title="14"><span class="co">#&gt; 10 ULTRA~ EQ     2019-07-10       Annual General ~      4270       4320 </span></a>
+<a class="sourceLine" id="cb3-15" title="15"><span class="co">#&gt; # ... with 6 more variables: low_price &lt;dbl&gt;, last_traded_price &lt;dbl&gt;,</span></a>
+<a class="sourceLine" id="cb3-16" title="16"><span class="co">#&gt; #   previous_close_price &lt;dbl&gt;, percent_change &lt;dbl&gt;,</span></a>
+<a class="sourceLine" id="cb3-17" title="17"><span class="co">#&gt; #   traded_quantity &lt;dbl&gt;, turnover_in_lakhs &lt;dbl&gt;</span></a></code></pre></div>
 </div>
 <div id="stocks-that-have-touched-their-52-week-highs-during-the-day" class="section level5">
 <h5 class="hasAnchor">
 <a href="#stocks-that-have-touched-their-52-week-highs-during-the-day" class="anchor"></a>Stocks that have touched their 52 week highs during the day</h5>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1"><span class="kw"><a href="reference/nse_stock_year_high.html">nse_stock_year_high</a></span>()</a>
-<a class="sourceLine" id="cb4-2" title="2"><span class="co">#&gt; # A tibble: 20 x 10</span></a>
-<a class="sourceLine" id="cb4-3" title="3"><span class="co">#&gt;    symbol symbolDesc dt          value   year    ltp value_old    prev</span></a>
-<a class="sourceLine" id="cb4-4" title="4"><span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt;      &lt;date&gt;      &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb4-5" title="5"><span class="co">#&gt;  1 ABSLB~ Aditya Bi~ 2019-11-04  330    330    328       330    330.  </span></a>
-<a class="sourceLine" id="cb4-6" title="6"><span class="co">#&gt;  2 ACCEL~ Accelya S~ 2019-11-18 1245.  1245.  1190      1129   1073.  </span></a>
-<a class="sourceLine" id="cb4-7" title="7"><span class="co">#&gt;  3 AGROP~ Agro Phos~ 2019-11-18  125.   125.   125.      124.   124.  </span></a>
-<a class="sourceLine" id="cb4-8" title="8"><span class="co">#&gt;  4 ALKEM  Alkem Lab~ 2019-11-18 2150   2150   2122.     2110   2100.  </span></a>
-<a class="sourceLine" id="cb4-9" title="9"><span class="co">#&gt;  5 ANKIT~ Ankit Met~ 2019-11-18    0.7    0.7    0.7       0.7    0.65</span></a>
-<a class="sourceLine" id="cb4-10" title="10"><span class="co">#&gt;  6 BAJAJ~ Bajaj Fin~ 2019-11-15 9189   9189   9177.     9140   9104.  </span></a>
-<a class="sourceLine" id="cb4-11" title="11"><span class="co">#&gt;  7 BHART~ Bharti Ai~ 2019-11-18  435    435    430.      421.   409.  </span></a>
-<a class="sourceLine" id="cb4-12" title="12"><span class="co">#&gt;  8 CREDI~ CREDITACC~ 2019-11-18  828.   828.   823.      799    793   </span></a>
-<a class="sourceLine" id="cb4-13" title="13"><span class="co">#&gt;  9 DYNPRO Dynemic P~ 2019-11-18  155    155    152.      150.   148.  </span></a>
-<a class="sourceLine" id="cb4-14" title="14"><span class="co">#&gt; 10 ESSEL~ Essel Pro~ 2019-11-14  149.   149.   145.      142    137.  </span></a>
-<a class="sourceLine" id="cb4-15" title="15"><span class="co">#&gt; 11 IPCAL~ IPCA Labo~ 2019-11-18 1188.  1188.  1150      1176.  1160.  </span></a>
-<a class="sourceLine" id="cb4-16" title="16"><span class="co">#&gt; 12 LALPA~ Dr. Lal P~ 2019-10-29 1673.  1673.  1665.     1665   1600   </span></a>
-<a class="sourceLine" id="cb4-17" title="17"><span class="co">#&gt; 13 NPBET  Tata Nift~ 2019-11-08  175.   175.   175       175.   173.  </span></a>
-<a class="sourceLine" id="cb4-18" title="18"><span class="co">#&gt; 14 POLYC~ Polycab I~ 2019-11-18  949.   949.   926.      944.   933.  </span></a>
-<a class="sourceLine" id="cb4-19" title="19"><span class="co">#&gt; 15 RELIA~ Reliance ~ 2019-10-31 1497.  1497.  1495.     1490.  1459.  </span></a>
-<a class="sourceLine" id="cb4-20" title="20"><span class="co">#&gt; 16 RITES  RITES Lim~ 2019-07-05  318.   318.   316.      315.   301.  </span></a>
-<a class="sourceLine" id="cb4-21" title="21"><span class="co">#&gt; 17 SHRED~ Shree Dig~ 2019-11-18   27.0   27.0   25.9      26.4   26.4 </span></a>
-<a class="sourceLine" id="cb4-22" title="22"><span class="co">#&gt; 18 SIRCA  Sirca Pai~ 2019-11-15  249.   249.   244.      247.   242.  </span></a>
-<a class="sourceLine" id="cb4-23" title="23"><span class="co">#&gt; 19 VIKAS~ Vikas Pro~ 2019-08-19    4.5    4.5    4.5       4.5    4.45</span></a>
-<a class="sourceLine" id="cb4-24" title="24"><span class="co">#&gt; 20 VISES~ Visesh In~ 2019-11-18    0.1    0.1    0.1       0.1    0.05</span></a>
-<a class="sourceLine" id="cb4-25" title="25"><span class="co">#&gt; # ... with 2 more variables: change &lt;dbl&gt;, pChange &lt;dbl&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1"><span class="kw"><a href="reference/nse_stock_high_low.html">nse_stock_year_high</a></span>()</a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="co">#&gt; # A tibble: 25 x 10</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="co">#&gt;    symbol symbol_desc date       new_high   year last_traded_pri~ prev_high</span></a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt;       &lt;date&gt;        &lt;dbl&gt;  &lt;dbl&gt;            &lt;dbl&gt;     &lt;dbl&gt;</span></a>
+<a class="sourceLine" id="cb4-5" title="5"><span class="co">#&gt;  1 ADANI~ Adani Tran~ 2019-11-29   341.   3.41e2           332.       318. </span></a>
+<a class="sourceLine" id="cb4-6" title="6"><span class="co">#&gt;  2 AGROP~ Agro Phos ~ 2019-11-29   134.   1.34e2           134.       133. </span></a>
+<a class="sourceLine" id="cb4-7" title="7"><span class="co">#&gt;  3 AHLWE~ Asian Hote~ 2019-09-26   402.   4.02e2           378        395  </span></a>
+<a class="sourceLine" id="cb4-8" title="8"><span class="co">#&gt;  4 AMBER  Amber Ente~ 2019-10-31  1070.   1.07e3          1042       1060  </span></a>
+<a class="sourceLine" id="cb4-9" title="9"><span class="co">#&gt;  5 ANKIT~ Ankit Meta~ 2019-11-29     1.15 1.15e0             1.05       1.1</span></a>
+<a class="sourceLine" id="cb4-10" title="10"><span class="co">#&gt;  6 ASTRA~ AstraZenec~ 2019-10-31  2834    2.83e3          2830       2809  </span></a>
+<a class="sourceLine" id="cb4-11" title="11"><span class="co">#&gt;  7 BHART~ Bharti Air~ 2019-11-25   486.   4.86e2           461.       456. </span></a>
+<a class="sourceLine" id="cb4-12" title="12"><span class="co">#&gt;  8 BIOFI~ Biofil Che~ 2019-11-29     8.9  8.90e0             8.9        8.5</span></a>
+<a class="sourceLine" id="cb4-13" title="13"><span class="co">#&gt;  9 CHEMB~ Chembond C~ 2019-11-29   241.   2.41e2           228.       240. </span></a>
+<a class="sourceLine" id="cb4-14" title="14"><span class="co">#&gt; 10 CUB    City Union~ 2019-11-29   235.   2.35e2           230.       227  </span></a>
+<a class="sourceLine" id="cb4-15" title="15"><span class="co">#&gt; # ... with 15 more rows, and 3 more variables: prev_close &lt;dbl&gt;,</span></a>
+<a class="sourceLine" id="cb4-16" title="16"><span class="co">#&gt; #   change &lt;dbl&gt;, percent_change &lt;dbl&gt;</span></a></code></pre></div>
 </div>
 <div id="most-actively-traded-stocks-in-a-month" class="section level5">
 <h5 class="hasAnchor">
 <a href="#most-actively-traded-stocks-in-a-month" class="anchor"></a>Most actively traded stocks in a month</h5>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1"><span class="kw"><a href="reference/nse_stock_most_traded.html">nse_stock_most_traded</a></span>()</a>
 <a class="sourceLine" id="cb5-2" title="2"><span class="co">#&gt; # A tibble: 12 x 6</span></a>
-<a class="sourceLine" id="cb5-3" title="3"><span class="co">#&gt;    security              sharetotal trdQty nooftrades avgdailyturn turnover</span></a>
-<a class="sourceLine" id="cb5-4" title="4"><span class="co">#&gt;    &lt;chr&gt;                      &lt;dbl&gt;  &lt;dbl&gt;      &lt;dbl&gt;        &lt;dbl&gt;    &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb5-5" title="5"><span class="co">#&gt;  1 Yes Bank Limited            4.73  74406   13096866         1779    35577</span></a>
-<a class="sourceLine" id="cb5-6" title="6"><span class="co">#&gt;  2 State Bank Of India         3.59  10008    6338506         1352    27045</span></a>
-<a class="sourceLine" id="cb5-7" title="7"><span class="co">#&gt;  3 Infosys Limited             3.54   3830    6962011         1333    26663</span></a>
-<a class="sourceLine" id="cb5-8" title="8"><span class="co">#&gt;  4 Reliance Industries ~       3.03   1643    4045200         1140    22804</span></a>
-<a class="sourceLine" id="cb5-9" title="9"><span class="co">#&gt;  5 Indiabulls Hsg Fin L~       2.98  10506   10458041         1121    22424</span></a>
-<a class="sourceLine" id="cb5-10" title="10"><span class="co">#&gt;  6 ICICI Bank Limited          2.64   4474    4052944          995    19893</span></a>
-<a class="sourceLine" id="cb5-11" title="11"><span class="co">#&gt;  7 Axis Bank Limited           2.38   2595    3254378          897    17947</span></a>
-<a class="sourceLine" id="cb5-12" title="12"><span class="co">#&gt;  8 HDFC Bank Limited           2.23   1372    3587458          841    16823</span></a>
-<a class="sourceLine" id="cb5-13" title="13"><span class="co">#&gt;  9 Indusind Bank Limited       2.23   1312    3544497          840    16807</span></a>
-<a class="sourceLine" id="cb5-14" title="14"><span class="co">#&gt; 10 Tata Motors Limited         2.18  11681    4400657          821    16427</span></a>
-<a class="sourceLine" id="cb5-15" title="15"><span class="co">#&gt; 11 TOTAL of Top Ten sec~      29.5  121827   59740558        11120   222410</span></a>
-<a class="sourceLine" id="cb5-16" title="16"><span class="co">#&gt; 12 TOTAL                     100    408051  258720343        37647   752931</span></a></code></pre></div>
+<a class="sourceLine" id="cb5-3" title="3"><span class="co">#&gt;    security share_turnover traded_quantity no_of_trades avg_daily_turno~</span></a>
+<a class="sourceLine" id="cb5-4" title="4"><span class="co">#&gt;    &lt;chr&gt;             &lt;dbl&gt;           &lt;dbl&gt;        &lt;dbl&gt;            &lt;dbl&gt;</span></a>
+<a class="sourceLine" id="cb5-5" title="5"><span class="co">#&gt;  1 ICICI B~           4.65            7758      4878739            1939.</span></a>
+<a class="sourceLine" id="cb5-6" title="6"><span class="co">#&gt;  2 Yes Ban~           4.29           52626     11184742            1787.</span></a>
+<a class="sourceLine" id="cb5-7" title="7"><span class="co">#&gt;  3 Indiabu~           4              12930     10805671            1667.</span></a>
+<a class="sourceLine" id="cb5-8" title="8"><span class="co">#&gt;  4 Relianc~           3.02            1670      3665877            1259.</span></a>
+<a class="sourceLine" id="cb5-9" title="9"><span class="co">#&gt;  5 Zee Ent~           3               7991      5228767            1250.</span></a>
+<a class="sourceLine" id="cb5-10" title="10"><span class="co">#&gt;  6 State B~           2.9             7471      4682688            1211.</span></a>
+<a class="sourceLine" id="cb5-11" title="11"><span class="co">#&gt;  7 Bharti ~           2.22            4447      3632503             924.</span></a>
+<a class="sourceLine" id="cb5-12" title="12"><span class="co">#&gt;  8 HDFC Li~           2.04             762      2883349             853.</span></a>
+<a class="sourceLine" id="cb5-13" title="13"><span class="co">#&gt;  9 Infosys~           1.88            2223      3267771             783.</span></a>
+<a class="sourceLine" id="cb5-14" title="14"><span class="co">#&gt; 10 Tata St~           1.83            3759      3038374             764.</span></a>
+<a class="sourceLine" id="cb5-15" title="15"><span class="co">#&gt; 11 TOTAL o~          29.8           101637     53268481           12438.</span></a>
+<a class="sourceLine" id="cb5-16" title="16"><span class="co">#&gt; 12 TOTAL            100             483353    259778999           41713.</span></a>
+<a class="sourceLine" id="cb5-17" title="17"><span class="co">#&gt; # ... with 1 more variable: turnover &lt;dbl&gt;</span></a></code></pre></div>
 </div>
 </div>
 <div id="futures--options" class="section level3">
@@ -267,23 +238,23 @@
 <div id="top-futures-and-options-gainers-for-the-last-trading-session" class="section level5">
 <h5 class="hasAnchor">
 <a href="#top-futures-and-options-gainers-for-the-last-trading-session" class="anchor"></a>Top futures and options gainers for the last trading session.</h5>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1"><span class="kw"><a href="reference/nse_fo_top_gainers.html">nse_fo_top_gainers</a></span>()</a>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1"><span class="kw"><a href="reference/nse_fo.html">nse_fo_top_gainers</a></span>()</a>
 <a class="sourceLine" id="cb6-2" title="2"><span class="co">#&gt; # A tibble: 10 x 12</span></a>
-<a class="sourceLine" id="cb6-3" title="3"><span class="co">#&gt;    symbol series lastCorpAnnounc~ lastCorpAnnounc~ openPrice highPrice</span></a>
-<a class="sourceLine" id="cb6-4" title="4"><span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt;  &lt;date&gt;           &lt;chr&gt;                &lt;dbl&gt;     &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb6-5" title="5"><span class="co">#&gt;  1 IDEA   EQ     2019-08-16       Annual General ~      4.85       5.8</span></a>
-<a class="sourceLine" id="cb6-6" title="6"><span class="co">#&gt;  2 JUSTD~ EQ     2018-10-11       Buyback             531        564. </span></a>
-<a class="sourceLine" id="cb6-7" title="7"><span class="co">#&gt;  3 INFRA~ EQ     2019-08-22       Interim Dividen~    228.       243. </span></a>
-<a class="sourceLine" id="cb6-8" title="8"><span class="co">#&gt;  4 BHART~ EQ     2019-04-23       Rights 19:67 @ ~    427.       435  </span></a>
-<a class="sourceLine" id="cb6-9" title="9"><span class="co">#&gt;  5 CASTR~ EQ     2019-08-08       Interim Dividen~    145.       152. </span></a>
-<a class="sourceLine" id="cb6-10" title="10"><span class="co">#&gt;  6 UNION~ EQ     2019-06-20       Annual General ~     55.0       57.2</span></a>
-<a class="sourceLine" id="cb6-11" title="11"><span class="co">#&gt;  7 CIPLA  EQ     2019-07-31       Annual General ~    461.       478. </span></a>
-<a class="sourceLine" id="cb6-12" title="12"><span class="co">#&gt;  8 BANKI~ EQ     2019-06-20       Annual General ~     71.5       73.7</span></a>
-<a class="sourceLine" id="cb6-13" title="13"><span class="co">#&gt;  9 TATAE~ EQ     2019-07-08       Annual General ~    792.       831. </span></a>
-<a class="sourceLine" id="cb6-14" title="14"><span class="co">#&gt; 10 L&amp;TFH  EQ     2019-07-19       Annual General ~     97.9      102. </span></a>
-<a class="sourceLine" id="cb6-15" title="15"><span class="co">#&gt; # ... with 6 more variables: lowPrice &lt;dbl&gt;, ltp &lt;dbl&gt;,</span></a>
-<a class="sourceLine" id="cb6-16" title="16"><span class="co">#&gt; #   previousPrice &lt;dbl&gt;, netPrice &lt;dbl&gt;, tradedQuantity &lt;dbl&gt;,</span></a>
-<a class="sourceLine" id="cb6-17" title="17"><span class="co">#&gt; #   turnoverInLakhs &lt;dbl&gt;</span></a></code></pre></div>
+<a class="sourceLine" id="cb6-3" title="3"><span class="co">#&gt;    symbol series last_corp_annou~ last_corp_annou~ open_price high_price</span></a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt;  &lt;date&gt;           &lt;chr&gt;                 &lt;dbl&gt;      &lt;dbl&gt;</span></a>
+<a class="sourceLine" id="cb6-5" title="5"><span class="co">#&gt;  1 IDEA   EQ     2019-08-16       Annual General ~        7.5        8.8</span></a>
+<a class="sourceLine" id="cb6-6" title="6"><span class="co">#&gt;  2 BHART~ EQ     2019-04-23       Rights 19:67 @ ~      471.       486. </span></a>
+<a class="sourceLine" id="cb6-7" title="7"><span class="co">#&gt;  3 IBULH~ EQ     2019-11-18       Interim Dividen~      292.       309  </span></a>
+<a class="sourceLine" id="cb6-8" title="8"><span class="co">#&gt;  4 ESCOR~ EQ     2019-07-11       Dividend Rs - 2~      641.       666. </span></a>
+<a class="sourceLine" id="cb6-9" title="9"><span class="co">#&gt;  5 NMDC   EQ     2019-08-22       Annual General ~      102.       106. </span></a>
+<a class="sourceLine" id="cb6-10" title="10"><span class="co">#&gt;  6 DISHTV EQ     2018-11-05       Interim Dividen~       12.2       13.8</span></a>
+<a class="sourceLine" id="cb6-11" title="11"><span class="co">#&gt;  7 MOTHE~ EQ     2019-08-08       Annual General ~      128.       134. </span></a>
+<a class="sourceLine" id="cb6-12" title="12"><span class="co">#&gt;  8 PETRO~ EQ     2019-11-07       Interim Dividen~      274.       280. </span></a>
+<a class="sourceLine" id="cb6-13" title="13"><span class="co">#&gt;  9 AMBUJ~ EQ     2019-02-27       Dividend - Rs 1~      206.       211  </span></a>
+<a class="sourceLine" id="cb6-14" title="14"><span class="co">#&gt; 10 JSWST~ EQ     2019-07-08       Annual General ~      268.       269. </span></a>
+<a class="sourceLine" id="cb6-15" title="15"><span class="co">#&gt; # ... with 6 more variables: low_price &lt;dbl&gt;, last_traded_price &lt;dbl&gt;,</span></a>
+<a class="sourceLine" id="cb6-16" title="16"><span class="co">#&gt; #   previous_close_price &lt;dbl&gt;, percent_change &lt;dbl&gt;,</span></a>
+<a class="sourceLine" id="cb6-17" title="17"><span class="co">#&gt; #   traded_quantity &lt;dbl&gt;, turnover_in_lakhs &lt;dbl&gt;</span></a></code></pre></div>
 <p>Please note that the ‘nse2r’ project is released with a <a href="CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
 </div>
 </div>

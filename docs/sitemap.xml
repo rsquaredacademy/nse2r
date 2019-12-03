@@ -13,13 +13,7 @@
     <loc>https://nse2r.rsquaredacademy.com/reference/nse_app.html</loc>
   </url>
   <url>
-    <loc>https://nse2r.rsquaredacademy.com/reference/nse_fo_lotsizes.html</loc>
-  </url>
-  <url>
-    <loc>https://nse2r.rsquaredacademy.com/reference/nse_fo_top_gainers.html</loc>
-  </url>
-  <url>
-    <loc>https://nse2r.rsquaredacademy.com/reference/nse_fo_top_losers.html</loc>
+    <loc>https://nse2r.rsquaredacademy.com/reference/nse_fo.html</loc>
   </url>
   <url>
     <loc>https://nse2r.rsquaredacademy.com/reference/nse_index_list.html</loc>
@@ -31,16 +25,10 @@
     <loc>https://nse2r.rsquaredacademy.com/reference/nse_index_valid.html</loc>
   </url>
   <url>
-    <loc>https://nse2r.rsquaredacademy.com/reference/nse_preopen_fo.html</loc>
-  </url>
-  <url>
-    <loc>https://nse2r.rsquaredacademy.com/reference/nse_preopen_nifty.html</loc>
-  </url>
-  <url>
-    <loc>https://nse2r.rsquaredacademy.com/reference/nse_preopen_nifty_bank.html</loc>
-  </url>
-  <url>
     <loc>https://nse2r.rsquaredacademy.com/reference/nse_stock_code.html</loc>
+  </url>
+  <url>
+    <loc>https://nse2r.rsquaredacademy.com/reference/nse_stock_high_low.html</loc>
   </url>
   <url>
     <loc>https://nse2r.rsquaredacademy.com/reference/nse_stock_most_traded.html</loc>
@@ -49,21 +37,12 @@
     <loc>https://nse2r.rsquaredacademy.com/reference/nse_stock_quote.html</loc>
   </url>
   <url>
-    <loc>https://nse2r.rsquaredacademy.com/reference/nse_stock_top_gainers.html</loc>
-  </url>
-  <url>
-    <loc>https://nse2r.rsquaredacademy.com/reference/nse_stock_top_losers.html</loc>
+    <loc>https://nse2r.rsquaredacademy.com/reference/nse_stock_top_base.html</loc>
   </url>
   <url>
     <loc>https://nse2r.rsquaredacademy.com/reference/nse_stock_valid.html</loc>
   </url>
   <url>
-    <loc>https://nse2r.rsquaredacademy.com/reference/nse_stock_year_high.html</loc>
-  </url>
-  <url>
-    <loc>https://nse2r.rsquaredacademy.com/reference/nse_stock_year_low.html</loc>
-  </url>
-  <url>
-    <loc>https://nse2r.rsquaredacademy.com/articles/introduction-to-nse2r.html</loc>
+    <loc>https://nse2r.rsquaredacademy.com/reference/preopen_nifty.html</loc>
   </url>
 </urlset>
