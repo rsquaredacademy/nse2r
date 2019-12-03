@@ -47,9 +47,11 @@ nse_stock_most_traded <- function() {
 #' \item{symbol_desc}{Name of the firm.}
 #' \item{date}{Previous high date.}
 #' \item{new_high}{New 52 week high price.}
+#' \item{new_low}{New 52 week low price.}
 #' \item{year}{Year.}
 #' \item{last_traded_price}{Last traded price.}
 #' \item{prev_high}{Previous high price.}
+#' \item{prev_low}{Previous low price.}
 #' \item{prev_close}{Previous close price.}
 #' \item{change}{Change in price.}
 #' \item{percent_change}{Percentage change in price.}
