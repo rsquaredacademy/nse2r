@@ -9,7 +9,7 @@ tabPanel('Indices', value = 'tab_chisq',
       ),
       column(4, align = 'right',
         actionButton(inputId='chidistlink1', label="Help", icon = icon("question-circle"),
-          onclick ="window.open('https://nsetools.rsquaredacademy.com/reference/index.html#section-index', '_blank')")
+          onclick ="window.open('https://nse2r.rsquaredacademy.com/reference/index.html#section-index', '_blank')")
       )
     ),
     hr(),

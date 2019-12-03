@@ -1,3 +1,3 @@
 output$advances_declines <- renderDataTable({
-	nsetools::nse_advances_declines()
+	nse2r::nse_advances_declines()
 })

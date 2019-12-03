@@ -11,7 +11,7 @@ tabPanel('Stock', value = 'tab_binom',
           ),
           column(4, align = 'right',
             actionButton(inputId='binomdist1', label="Help", icon = icon("question-circle"),
-              onclick ="window.open('https://nsetools.rsquaredacademy.com/reference/index.html#section-stocks', '_blank')")
+              onclick ="window.open('https://nse2r.rsquaredacademy.com/reference/index.html#section-stocks', '_blank')")
           )
         ),
         hr(),

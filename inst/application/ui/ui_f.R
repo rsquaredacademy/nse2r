@@ -8,7 +8,7 @@ tabPanel('Futures & Options', value = 'tab_f',
       ),
       column(5, align = 'right',
         actionButton(inputId='fdistlink1', label="Help", icon = icon("question-circle"),
-          onclick ="window.open('https://nsetools.rsquaredacademy.com/reference/index.html#section-index', '_blank')")
+          onclick ="window.open('https://nse2r.rsquaredacademy.com/reference/index.html#section-index', '_blank')")
       )
     ),
     hr(),

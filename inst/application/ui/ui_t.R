@@ -8,7 +8,7 @@ tabPanel('Advances & Declines', value = 'tab_t',
       ),
       column(6, align = 'right',
         actionButton(inputId='tdistlink1', label="Help", icon = icon("question-circle"),
-          onclick ="window.open('https://nsetools.rsquaredacademy.com/reference/index.html#section-advances-declines', '_blank')")
+          onclick ="window.open('https://nse2r.rsquaredacademy.com/reference/index.html#section-advances-declines', '_blank')")
       )
     ),
     hr(),

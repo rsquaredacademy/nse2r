@@ -8,7 +8,7 @@ tabPanel('Pre Open Data', value = 'tab_norm',
       ),
       column(4, align = 'right',
         actionButton(inputId='ndistlink1', label="Help", icon = icon("question-circle"),
-          onclick ="window.open('https://nsetools.rsquaredacademy.com/reference/index.html#section-pre-open-data', '_blank')")
+          onclick ="window.open('https://nse2r.rsquaredacademy.com/reference/index.html#section-pre-open-data', '_blank')")
       )
     ),
     hr(),
