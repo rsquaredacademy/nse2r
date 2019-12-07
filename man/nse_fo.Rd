@@ -4,7 +4,7 @@
 \alias{nse_fo}
 \alias{nse_fo_top_gainers}
 \alias{nse_fo_top_losers}
-\title{NSE top F & O gainers and losers}
+\title{Top F&O gainers and losers}
 \usage{
 nse_fo_top_gainers()
 

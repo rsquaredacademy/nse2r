@@ -1,4 +1,4 @@
-#' Pre open Nifty data
+#' Pre Open market data
 #'
 #' Fetch data of pre open session of Nifty & Nifty Bank.
 #'
@@ -10,19 +10,19 @@
 #'
 #' @return A tibble with the following columns:
 #'
-#' \code{symbol}{NSE ticker.}
-#' \code{series}{Equity (EQ)}
-#' \code{corp_action_date}{Corporate action date.}
-#' \code{corp_action}{Corporate Action}
-#' \code{price}{Price}
-#' \code{change}{Change in price}
-#' \code{percent_change}{Percentage change in price.}
-#' \code{prev_close}{Previous close.}
-#' \code{quantity}{Quantity}
-#' \code{value}{Value (in lakhs),}
-#' \code{mkt_cap}{Free float market capitalization (in crores).}
-#' \code{year_high}{Normal market 52 week high.}
-#' \code{year_low}{Normal market 52 week low.}
+#' \item{symbol}{NSE ticker.}
+#' \item{series}{Equity (EQ)}
+#' \item{corp_action_date}{Corporate action date.}
+#' \item{corp_action}{Corporate Action}
+#' \item{price}{Price}
+#' \item{change}{Change in price}
+#' \item{percent_change}{Percentage change in price.}
+#' \item{prev_close}{Previous close.}
+#' \item{quantity}{Quantity}
+#' \item{value}{Value (in lakhs),}
+#' \item{mkt_cap}{Free float market capitalization (in crores).}
+#' \item{year_high}{Normal market 52 week high.}
+#' \item{year_low}{Normal market 52 week low.}
 #'
 #' @name preopen_nifty
 #'

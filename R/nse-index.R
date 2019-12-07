@@ -1,6 +1,6 @@
 #' Index quote
 #'
-#' NSE indices quote.
+#' Fetch the quote for a given index.
 #'
 #' @examples
 #' \donttest{
@@ -56,9 +56,9 @@ nse_index_list <- function() {
 
 }
 
-#' Valid index
+#' Validate index symbol.
 #'
-#' Check if index is valid.
+#' Check if index symbol is valid.
 #'
 #' @param index_code Symbol of the index.
 #'

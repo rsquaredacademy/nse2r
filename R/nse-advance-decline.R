@@ -1,4 +1,4 @@
-#' Advance declines
+#' Advances & Declines
 #'
 #' NSE indices advances & declines.
 #'
@@ -9,10 +9,10 @@
 #'
 #' @return A tibble with the following columns:
 #'
-#' \code{index_name}{Name of the index.}
-#' \code{advances}{Number of stocks increased (in green).}
-#' \code{declines}{Number of stocks decreased (in red).}
-#' \code{unchanged}{Number of stocks unchanged.}
+#' \item{index_name}{Name of the index.}
+#' \item{advances}{Number of stocks increased (in green).}
+#' \item{declines}{Number of stocks decreased (in red).}
+#' \item{unchanged}{Number of stocks unchanged.}
 #'
 #' @export
 #'

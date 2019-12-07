@@ -1,4 +1,4 @@
-#' NSE top F & O gainers and losers
+#' Top F&O gainers and losers
 #'
 #' Top futures and options gainers and losers for the last trading session.
 #'

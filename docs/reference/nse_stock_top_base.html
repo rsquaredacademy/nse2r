@@ -147,34 +147,33 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># \donttest{</span>
-<span class='fu'>nse_stock_top_gainers</span>()</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 10 x 12</span><span>
-#&gt;    symbol series last_corp_annou~ last_corp_annou~ open_price high_price
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>           </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>                 </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> BAJAJ~ EQ     2019-07-11       Annual General ~      </span><span style='text-decoration: underline;'>3</span><span>167       </span><span style='text-decoration: underline;'>3</span><span>270 
-#&gt; </span><span style='color: #555555;'> 2</span><span> BAJAJ~ EQ     2019-07-11       Annual General ~      </span><span style='text-decoration: underline;'>8</span><span>975       </span><span style='text-decoration: underline;'>9</span><span>127.
-#&gt; </span><span style='color: #555555;'> 3</span><span> TCS    EQ     2019-10-17       Interim Dividen~      </span><span style='text-decoration: underline;'>2</span><span>028.      </span><span style='text-decoration: underline;'>2</span><span>062 
-#&gt; </span><span style='color: #555555;'> 4</span><span> KOTAK~ EQ     2019-07-12       Annual General ~      </span><span style='text-decoration: underline;'>1</span><span>634.      </span><span style='text-decoration: underline;'>1</span><span>650 
-#&gt; </span><span style='color: #555555;'> 5</span><span> INFY   EQ     2019-10-23       Interim Dividen~       693.       700.
-#&gt; </span><span style='color: #555555;'> 6</span><span> HDFC   EQ     2019-07-19       Annual General ~      </span><span style='text-decoration: underline;'>2</span><span>311.      </span><span style='text-decoration: underline;'>2</span><span>325 
-#&gt; </span><span style='color: #555555;'> 7</span><span> HEROM~ EQ     2019-07-16       Annual General ~      </span><span style='text-decoration: underline;'>2</span><span>402       </span><span style='text-decoration: underline;'>2</span><span>435.
-#&gt; </span><span style='color: #555555;'> 8</span><span> BHART~ EQ     2019-04-23       Rights 19:67 @ ~       463.       465.
-#&gt; </span><span style='color: #555555;'> 9</span><span> BAJFI~ EQ     2019-07-11       Annual General ~      </span><span style='text-decoration: underline;'>3</span><span>940.      </span><span style='text-decoration: underline;'>3</span><span>995 
-#&gt; </span><span style='color: #555555;'>10</span><span> CIPLA  EQ     2019-07-31       Annual General ~       465        466.
+<span class='fu'>nse_stock_top_gainers</span>()</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 9 x 12</span><span>
+#&gt;   symbol series last_corp_annou~ last_corp_annou~ open_price high_price
+#&gt;   </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>           </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>                 </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
+#&gt; </span><span style='color: #555555;'>1</span><span> INFRA~ EQ     2019-08-22       Interim Dividen~       248.       262 
+#&gt; </span><span style='color: #555555;'>2</span><span> KOTAK~ EQ     2019-07-12       Annual General ~      </span><span style='text-decoration: underline;'>1</span><span>650       </span><span style='text-decoration: underline;'>1</span><span>680 
+#&gt; </span><span style='color: #555555;'>3</span><span> JSWST~ EQ     2019-07-08       Annual General ~       253.       257.
+#&gt; </span><span style='color: #555555;'>4</span><span> TATAS~ EQ     2019-07-04       Annual General ~       401.       408.
+#&gt; </span><span style='color: #555555;'>5</span><span> DRRED~ EQ     2019-07-15       Annual General ~      </span><span style='text-decoration: underline;'>2</span><span>888.      </span><span style='text-decoration: underline;'>2</span><span>949 
+#&gt; </span><span style='color: #555555;'>6</span><span> RELIA~ EQ     2019-08-02       Annual General ~      </span><span style='text-decoration: underline;'>1</span><span>553       </span><span style='text-decoration: underline;'>1</span><span>568 
+#&gt; </span><span style='color: #555555;'>7</span><span> ASIAN~ EQ     2019-10-30       Interim Dividen~      </span><span style='text-decoration: underline;'>1</span><span>723.      </span><span style='text-decoration: underline;'>1</span><span>748.
+#&gt; </span><span style='color: #555555;'>8</span><span> TCS    EQ     2019-10-17       Interim Dividen~      </span><span style='text-decoration: underline;'>2</span><span>124       </span><span style='text-decoration: underline;'>2</span><span>128 
+#&gt; </span><span style='color: #555555;'>9</span><span> ULTRA~ EQ     2019-07-10       Annual General ~      </span><span style='text-decoration: underline;'>4</span><span>180       </span><span style='text-decoration: underline;'>4</span><span>196.
 #&gt; </span><span style='color: #555555;'># ... with 6 more variables: low_price </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, last_traded_price </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
 #&gt; #   prev_close_price </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, percent_change </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, traded_quantity </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
 #&gt; #   turnover_in_lakhs </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'><span class='fu'>nse_stock_top_losers</span>()</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 10 x 12</span><span>
 #&gt;    symbol series last_corp_annou~ last_corp_annou~ open_price high_price
 #&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>           </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>                 </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> YESBA~ EQ     2019-06-03       Annual General ~       64.1       65.2
-#&gt; </span><span style='color: #555555;'> 2</span><span> INFRA~ EQ     2019-08-22       Interim Dividen~      270.       270. 
-#&gt; </span><span style='color: #555555;'> 3</span><span> TATAS~ EQ     2019-07-04       Annual General ~      418        419. 
-#&gt; </span><span style='color: #555555;'> 4</span><span> ADANI~ EQ     2019-07-26       Annual General ~      380        380  
-#&gt; </span><span style='color: #555555;'> 5</span><span> ZEEL   EQ     2019-07-15       Annual General ~      297        299  
-#&gt; </span><span style='color: #555555;'> 6</span><span> JSWST~ EQ     2019-07-08       Annual General ~      267.       268. 
-#&gt; </span><span style='color: #555555;'> 7</span><span> GRASIM EQ     2019-08-08       Annual General ~      805        805  
-#&gt; </span><span style='color: #555555;'> 8</span><span> VEDL   EQ     2019-07-04       Annual General ~      144.       144. 
-#&gt; </span><span style='color: #555555;'> 9</span><span> GAIL   EQ     2019-08-08       Dividend - Rs 0~      126.       127. 
-#&gt; </span><span style='color: #555555;'>10</span><span> INDUS~ EQ     2019-08-08       Annual General ~     </span><span style='text-decoration: underline;'>1</span><span>579.      </span><span style='text-decoration: underline;'>1</span><span>580  
+#&gt; </span><span style='color: #555555;'> 1</span><span> YESBA~ EQ     2019-06-03       Annual General ~       60.1       60.8
+#&gt; </span><span style='color: #555555;'> 2</span><span> SBIN   EQ     2018-06-15       Annual General ~      337.       338. 
+#&gt; </span><span style='color: #555555;'> 3</span><span> ZEEL   EQ     2019-07-15       Annual General ~      298        302. 
+#&gt; </span><span style='color: #555555;'> 4</span><span> INDUS~ EQ     2019-08-08       Annual General ~     </span><span style='text-decoration: underline;'>1</span><span>517       </span><span style='text-decoration: underline;'>1</span><span>519. 
+#&gt; </span><span style='color: #555555;'> 5</span><span> GAIL   EQ     2019-08-08       Dividend - Rs 0~      121.       122. 
+#&gt; </span><span style='color: #555555;'> 6</span><span> TATAM~ EQ     2016-07-18       Dividend - Re 0~      167        168  
+#&gt; </span><span style='color: #555555;'> 7</span><span> HDFC   EQ     2019-07-19       Annual General ~     </span><span style='text-decoration: underline;'>2</span><span>326.      </span><span style='text-decoration: underline;'>2</span><span>335  
+#&gt; </span><span style='color: #555555;'> 8</span><span> M&amp;M    EQ     2019-07-18       Annual General ~      528.       528. 
+#&gt; </span><span style='color: #555555;'> 9</span><span> COALI~ EQ     2019-08-09       Annual General ~      196.       197  
+#&gt; </span><span style='color: #555555;'>10</span><span> EICHE~ EQ     2019-07-24       Annual General ~    </span><span style='text-decoration: underline;'>21</span><span>500      </span><span style='text-decoration: underline;'>21</span><span>635. 
 #&gt; </span><span style='color: #555555;'># ... with 6 more variables: low_price </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, last_traded_price </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
 #&gt; #   prev_close_price </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, percent_change </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, traded_quantity </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
 #&gt; #   turnover_in_lakhs </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'># }

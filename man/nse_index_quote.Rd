@@ -15,7 +15,7 @@ A tibble with the following columns:
 \item{percent_change}{Percentage change in price.}
 }
 \description{
-NSE indices quote.
+Fetch the quote for a given index.
 }
 \examples{
 \donttest{

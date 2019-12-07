@@ -2,7 +2,7 @@
 % Please edit documentation in R/nse-index.R
 \name{nse_index_valid}
 \alias{nse_index_valid}
-\title{Valid index}
+\title{Validate index symbol.}
 \usage{
 nse_index_valid(index_code)
 }
@@ -10,7 +10,7 @@ nse_index_valid(index_code)
 \item{index_code}{Symbol of the index.}
 }
 \description{
-Check if index is valid.
+Check if index symbol is valid.
 }
 \examples{
 \donttest{

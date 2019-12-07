@@ -2,7 +2,7 @@
 % Please edit documentation in R/nse-stock.R
 \name{nse_stock_valid}
 \alias{nse_stock_valid}
-\title{Valid stock code}
+\title{Validate stock symbol}
 \usage{
 nse_stock_valid(stock_code)
 }
@@ -10,7 +10,7 @@ nse_stock_valid(stock_code)
 \item{stock_code}{Symbol of the stock.}
 }
 \description{
-Check if stock code is valid.
+Check if stock symbol/ticker is valid.
 }
 \examples{
 \donttest{

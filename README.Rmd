@@ -29,7 +29,7 @@ Status](https://img.shields.io/codecov/c/github/rsquaredacademy/nse2r/master.svg
 
 ## Overview
 
-[NSE](https://www.nseindia.com/) (National Stock Exchange) is the leading stock exchange of India, located in the city of Mumbai. While users can manually download data from NSE through a browser, importing this data into R is then cumbersome. The nse2r R package implements the retrieval of data from NSE and aims to reduce the pre-processing steps needed in analyzing such data.
+[NSE](https://www.nseindia.com/) (National Stock Exchange) is the leading stock exchange of India, located in the city of Mumbai. While users can manually download data from NSE through a browser and then importing this data into R becomes cumbersome. The nse2r R package implements the retrieval of data from NSE and aims to reduce the pre-processing steps needed in analyzing such data.
 
 nse2r is inspired by and a port of the Python package [nsetools](https://nsetools.readthedocs.io/en/latest/). The authors and contributors for this R package are not affiliated with NSE and NSE does not offer support for this R package.
 
@@ -37,18 +37,18 @@ With nse2r, you can fetch the following data related to:
 
 - stocks
     - quote for a given stock
-    - symbol & name
-    - check validity
+    - stock description
+    - validate stock symbol/ticker
     - most actively traded stocks in a month
     - 52 week high/low
     - top gainers/losers for the last trading session
 - index
-    - list indices
-    - check validity
-    - fetch indices quote
+    - list of NSE indices
+    - validate index symbol/ticker
+    - quote for a given index
 - futures & options
     - top gainers/losers for the last trading session
-- pre open data
+- pre open market data
     - nifty
     - nifty bank
 - indices advances & declines
@@ -109,6 +109,20 @@ nse_stock_most_traded()
 
 ```{r fo_top_gainers}
 nse_fo_top_gainers()
+```
+
+### Pre Open Market Data
+
+##### Fetch data of pre open session of Nifty Bank.
+
+```{r popen_nb}
+nse_preopen_nifty_bank()
+```
+
+### Advances & Declines
+
+```{r advances_declines}
+nse_advances_declines()
 ```
 
 Please note that the 'nse2r' project is released with a

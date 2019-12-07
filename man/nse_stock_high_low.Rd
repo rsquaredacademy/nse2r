@@ -27,7 +27,7 @@ A tibble with the following column names:
 \item{percent_change}{Percentage change in price.}
 }
 \description{
-Fetch stocks that have touched their 52 week highs and lows during the day on NSE.
+Fetch stocks that have touched their 52 week high and low.
 }
 \examples{
 \donttest{

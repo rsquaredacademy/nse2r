@@ -10,7 +10,7 @@
 #' @return A tibble with the following columns:
 #'
 #' \item{security}{Name of the firm.}
-#' \item{share turnover}{Share in total turnover (percentage).}
+#' \item{share_turnover}{Share in total turnover (percentage).}
 #' \item{traded_quantity}{Total traded quantity (in lakhs)}
 #' \item{no_of_trades}{Number of trades.}
 #' \item{avg_daily_turnover}{Average daily turnover (in crores).}
@@ -33,7 +33,7 @@ nse_stock_most_traded <- function() {
 
 #' 52 week high & low
 #'
-#' Fetch stocks that have touched their 52 week highs and lows during the day on NSE.
+#' Fetch stocks that have touched their 52 week high and low.
 #'
 #' @examples
 #' \donttest{
@@ -120,9 +120,9 @@ nse_stock_code <- function() {
 
 }
 
-#' Valid stock code
+#' Validate stock symbol
 #'
-#' Check if stock code is valid.
+#' Check if stock symbol/ticker is valid.
 #'
 #' @param stock_code Symbol of the stock.
 #'
