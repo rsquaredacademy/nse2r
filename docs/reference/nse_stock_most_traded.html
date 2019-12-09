@@ -123,8 +123,18 @@
     
     </div>
 
-    <pre class="usage"><span class='fu'>nse_stock_most_traded</span>()</pre>
-        
+    <pre class="usage"><span class='fu'>nse_stock_most_traded</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>clean_names</th>
+      <td><p>Logical; if <code>TRUE</code>, makes the column names
+descriptive and uses snake_case.</p></td>
+    </tr>
+    </table>
+    
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A tibble with the following columns:</p>
@@ -154,13 +164,30 @@
 #&gt; </span><span style='color: #555555;'>10</span><span> Tata St~           1.83            </span><span style='text-decoration: underline;'>3</span><span>759      3</span><span style='text-decoration: underline;'>038</span><span>374             764.
 #&gt; </span><span style='color: #555555;'>11</span><span> TOTAL o~          29.8           </span><span style='text-decoration: underline;'>101</span><span>637     53</span><span style='text-decoration: underline;'>268</span><span>481           </span><span style='text-decoration: underline;'>12</span><span>438.
 #&gt; </span><span style='color: #555555;'>12</span><span> TOTAL            100             </span><span style='text-decoration: underline;'>483</span><span>353    259</span><span style='text-decoration: underline;'>778</span><span>999           </span><span style='text-decoration: underline;'>41</span><span>713.
-#&gt; </span><span style='color: #555555;'># ... with 1 more variable: turnover </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'># }
+#&gt; </span><span style='color: #555555;'># ... with 1 more variable: turnover </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
+<span class='co'># retain original column names as returned by NSE</span>
+<span class='fu'>nse_stock_most_traded</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 12 x 6</span><span>
+#&gt;    security                   sharetotal trdQty nooftrades avgdailyturn turnover
+#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>                           </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>        </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
+#&gt; </span><span style='color: #555555;'> 1</span><span> ICICI Bank Limited               4.65   </span><span style='text-decoration: underline;'>7</span><span>758    4</span><span style='text-decoration: underline;'>878</span><span>739        </span><span style='text-decoration: underline;'>1</span><span>939.   </span><span style='text-decoration: underline;'>38</span><span>780.
+#&gt; </span><span style='color: #555555;'> 2</span><span> Yes Bank Limited                 4.29  </span><span style='text-decoration: underline;'>52</span><span>626   11</span><span style='text-decoration: underline;'>184</span><span>742        </span><span style='text-decoration: underline;'>1</span><span>787.   </span><span style='text-decoration: underline;'>35</span><span>748.
+#&gt; </span><span style='color: #555555;'> 3</span><span> Indiabulls Hsg Finance Li~       4     </span><span style='text-decoration: underline;'>12</span><span>930   10</span><span style='text-decoration: underline;'>805</span><span>671        </span><span style='text-decoration: underline;'>1</span><span>667.   </span><span style='text-decoration: underline;'>33</span><span>339.
+#&gt; </span><span style='color: #555555;'> 4</span><span> Reliance Industries Limit~       3.02   </span><span style='text-decoration: underline;'>1</span><span>670    3</span><span style='text-decoration: underline;'>665</span><span>877        </span><span style='text-decoration: underline;'>1</span><span>259.   </span><span style='text-decoration: underline;'>25</span><span>186.
+#&gt; </span><span style='color: #555555;'> 5</span><span> Zee Entertainment Ent Lim~       3      </span><span style='text-decoration: underline;'>7</span><span>991    5</span><span style='text-decoration: underline;'>228</span><span>767        </span><span style='text-decoration: underline;'>1</span><span>250.   </span><span style='text-decoration: underline;'>25</span><span>005.
+#&gt; </span><span style='color: #555555;'> 6</span><span> State Bank Of India              2.9    </span><span style='text-decoration: underline;'>7</span><span>471    4</span><span style='text-decoration: underline;'>682</span><span>688        </span><span style='text-decoration: underline;'>1</span><span>211.   </span><span style='text-decoration: underline;'>24</span><span>215.
+#&gt; </span><span style='color: #555555;'> 7</span><span> Bharti Airtel Limited            2.22   </span><span style='text-decoration: underline;'>4</span><span>447    3</span><span style='text-decoration: underline;'>632</span><span>503         924.   </span><span style='text-decoration: underline;'>18</span><span>489.
+#&gt; </span><span style='color: #555555;'> 8</span><span> HDFC Limited                     2.04    762    2</span><span style='text-decoration: underline;'>883</span><span>349         853.   </span><span style='text-decoration: underline;'>17</span><span>058.
+#&gt; </span><span style='color: #555555;'> 9</span><span> Infosys Limited                  1.88   </span><span style='text-decoration: underline;'>2</span><span>223    3</span><span style='text-decoration: underline;'>267</span><span>771         783.   </span><span style='text-decoration: underline;'>15</span><span>658.
+#&gt; </span><span style='color: #555555;'>10</span><span> Tata Steel Limited               1.83   </span><span style='text-decoration: underline;'>3</span><span>759    3</span><span style='text-decoration: underline;'>038</span><span>374         764.   </span><span style='text-decoration: underline;'>15</span><span>288.
+#&gt; </span><span style='color: #555555;'>11</span><span> TOTAL of Top Ten securiti~      29.8  </span><span style='text-decoration: underline;'>101</span><span>637   53</span><span style='text-decoration: underline;'>268</span><span>481       </span><span style='text-decoration: underline;'>12</span><span>438.  </span><span style='text-decoration: underline;'>248</span><span>767.
+#&gt; </span><span style='color: #555555;'>12</span><span> TOTAL                          100    </span><span style='text-decoration: underline;'>483</span><span>353  259</span><span style='text-decoration: underline;'>778</span><span>999       </span><span style='text-decoration: underline;'>41</span><span>713.  </span><span style='text-decoration: underline;'>834</span><span>252.</div><div class='input'># }
 
 </div></span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
+      <li><a href="#arguments">Arguments</a></li>
       
       <li><a href="#value">Value</a></li>
       

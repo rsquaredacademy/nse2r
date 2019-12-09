@@ -2,9 +2,15 @@
 #'
 #' Fetch most actively traded stocks in a month on NSE.
 #'
+#' @param clean_names Logical; if \code{TRUE}, makes the column names
+#' descriptive and uses snake_case.
+#'
 #' @examples
 #' \donttest{
 #' nse_stock_most_traded()
+#'
+#' # retain original column names as returned by NSE
+#' nse_stock_most_traded(clean_names = FALSE)
 #' }
 #'
 #' @return A tibble with the following columns:
@@ -18,16 +24,23 @@
 #'
 #' @export
 #'
-nse_stock_most_traded <- function() {
+nse_stock_most_traded <- function(clean_names = TRUE) {
 
   url <- "https://www.nseindia.com/products/dynaContent/equities/equities/json/mostActiveMonthly.json"
 
-  url %>%
+  result <-
+    url %>%
     nse_base() %>%
     nse_format_num(cols_skip = 1, cols_modify = 2:6) %>%
-    nse_format(cols_skip = 1, cols_modify = 2:6) %>%
-    magrittr::set_names(., c("security", "share_turnover", "traded_quantity",
-                        "no_of_trades", "avg_daily_turnonver", "turnover"))
+    nse_format(cols_skip = 1, cols_modify = 2:6)
+
+  if (clean_names) {
+    result %<>%
+      magrittr::set_names(., c("security", "share_turnover", "traded_quantity",
+                          "no_of_trades", "avg_daily_turnonver", "turnover"))
+  }
+
+  return(result)
 
 }
 
@@ -35,10 +48,22 @@ nse_stock_most_traded <- function() {
 #'
 #' Fetch stocks that have touched their 52 week high and low.
 #'
+#' @param clean_names Logical; if \code{TRUE}, makes the column names
+#' descriptive and uses snake_case.
+#'
 #' @examples
 #' \donttest{
+#' # 52 week high
 #' nse_stock_year_high()
+#'
+#' # retain original column names as returned by NSE
+#' nse_stock_year_high(clean_names = FALSE)
+#'
+#' # 52 week low
 #' nse_stock_year_low()
+#'
+#' # retain original column names as returned by NSE
+#' nse_stock_year_low(clean_names = FALSE)
 #' }
 #'
 #' @return A tibble with the following column names:
@@ -63,30 +88,44 @@ NULL
 #' @rdname nse_stock_high_low
 #' @export
 #'
-nse_stock_year_high <- function() {
+nse_stock_year_high <- function(clean_names = TRUE) {
 
   url <- "https://www.nseindia.com/products/dynaContent/equities/equities/json/online52NewHigh.json"
 
-  url %>%
-  nse_stock_year_base() %>%
-    magrittr::set_names(., c("symbol", "symbol_desc", "date", "new_high", "year",
-                        "last_traded_price", "prev_high", "prev_close",
-                        "change", "percent_change"))
+  result <-
+    url %>%
+    nse_stock_year_base()
+
+  if (clean_names) {
+    result %<>%
+      magrittr::set_names(., c("symbol", "symbol_desc", "date", "new_high", "year",
+                          "last_traded_price", "prev_high", "prev_close",
+                          "change", "percent_change"))
+  }
+
+  return(result)
 
 }
 
 #' @rdname nse_stock_high_low
 #' @export
 #'
-nse_stock_year_low <- function() {
+nse_stock_year_low <- function(clean_names = TRUE) {
 
   url <- "https://www.nseindia.com/products/dynaContent/equities/equities/json/online52NewLow.json"
 
-  url %>%
-    nse_stock_year_base() %>%
-    magrittr::set_names(., c("symbol", "symbol_desc", "date", "new_low", "year",
-                          "last_traded_price", "prev_low", "prev_close",
-                          "change", "percent_change"))
+  result <-
+    url %>%
+    nse_stock_year_base()
+
+  if (clean_names) {
+    result %<>%
+      magrittr::set_names(., c("symbol", "symbol_desc", "date", "new_low", "year",
+                               "last_traded_price", "prev_low", "prev_close",
+                               "change", "percent_change"))
+  }
+
+  return(result)
 
 }
 
@@ -95,9 +134,15 @@ nse_stock_year_low <- function() {
 #'
 #' Fetch stock symbol and name from NSE.
 #'
+#' @param clean_names Logical; if \code{TRUE}, makes the column names
+#' descriptive and uses snake_case.
+#'
 #' @examples
 #' \donttest{
 #' nse_stock_code()
+#'
+#' # retain original column names as returned by NSE
+#' nse_stock_code(clean_names = FALSE)
 #' }
 #'
 #' @return A tibble with the following columns:
@@ -107,16 +152,23 @@ nse_stock_year_low <- function() {
 #'
 #' @export
 #'
-nse_stock_code <- function() {
+nse_stock_code <- function(clean_names = TRUE) {
 
   url <- "http://www.nseindia.com/content/equities/EQUITY_L.csv"
 
-  url %>%
+  result <-
+    url %>%
     utils::read.csv() %>%
     magrittr::extract(., 1:2) %>%
     tibble::as_tibble() %>%
-    purrr::map_dfc(as.character) %>%
-    magrittr::set_names(., c("symbol", "company"))
+    purrr::map_dfc(as.character)
+
+  if (clean_names) {
+    result %<>%
+      magrittr::set_names(., c("symbol", "company"))
+  }
+
+  return(result)
 
 }
 
@@ -148,10 +200,22 @@ nse_stock_valid <- function(stock_code) {
 #'
 #' Fetch top gainers and losers for the last trading session.
 #'
+#' @param clean_names Logical; if \code{TRUE}, makes the column names
+#' descriptive and uses snake_case.
+#'
 #' @examples
 #' \donttest{
+#' # top gainers
 #' nse_stock_top_gainers()
+#'
+#' # retain original column names as returned by NSE
+#' nse_stock_top_gainers(clean_names = FALSE)
+#'
+#' # top losers
 #' nse_stock_top_losers()
+#'
+#' # retain original column names as returned by NSE
+#' nse_stock_top_losers(clean_names = FALSE)
 #' }
 #'
 #' @return A tibble with the following columns:
@@ -176,20 +240,20 @@ NULL
 #' @rdname nse_stock_top_base
 #' @export
 #'
-nse_stock_top_gainers <- function() {
+nse_stock_top_gainers <- function(clean_names = TRUE) {
 
   url <- "http://www.nseindia.com/live_market/dynaContent/live_analysis/gainers/niftyGainers1.json"
-  nse_fo_base(url)
+  nse_fo_base(url, clean_names)
 
 }
 
 #' @rdname nse_stock_top_base
 #' @export
 #'
-nse_stock_top_losers <- function() {
+nse_stock_top_losers <- function(clean_names = TRUE) {
 
   url <- "http://www.nseindia.com/live_market/dynaContent/live_analysis/losers/niftyLosers1.json"
-  nse_fo_base(url)
+  nse_fo_base(url, clean_names)
 
 }
 

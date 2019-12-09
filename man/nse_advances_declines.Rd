@@ -4,7 +4,11 @@
 \alias{nse_advances_declines}
 \title{Advances & Declines}
 \usage{
-nse_advances_declines()
+nse_advances_declines(clean_names = TRUE)
+}
+\arguments{
+\item{clean_names}{Logical; if \code{TRUE}, makes the column names
+descriptive and uses snake_case.}
 }
 \value{
 A tibble with the following columns:
@@ -20,6 +24,9 @@ NSE indices advances & declines.
 \examples{
 \donttest{
 nse_advances_declines()
+
+# retain original column names as returned by NSE
+nse_advances_declines(clean_names = FALSE)
 }
 
 }

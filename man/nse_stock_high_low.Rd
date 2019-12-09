@@ -6,9 +6,13 @@
 \alias{nse_stock_year_low}
 \title{52 week high & low}
 \usage{
-nse_stock_year_high()
+nse_stock_year_high(clean_names = TRUE)
 
-nse_stock_year_low()
+nse_stock_year_low(clean_names = TRUE)
+}
+\arguments{
+\item{clean_names}{Logical; if \code{TRUE}, makes the column names
+descriptive and uses snake_case.}
 }
 \value{
 A tibble with the following column names:
@@ -31,8 +35,17 @@ Fetch stocks that have touched their 52 week high and low.
 }
 \examples{
 \donttest{
+# 52 week high
 nse_stock_year_high()
+
+# retain original column names as returned by NSE
+nse_stock_year_high(clean_names = FALSE)
+
+# 52 week low
 nse_stock_year_low()
+
+# retain original column names as returned by NSE
+nse_stock_year_low(clean_names = FALSE)
 }
 
 }

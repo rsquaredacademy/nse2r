@@ -4,7 +4,11 @@
 \alias{nse_stock_most_traded}
 \title{Most actively traded stocks}
 \usage{
-nse_stock_most_traded()
+nse_stock_most_traded(clean_names = TRUE)
+}
+\arguments{
+\item{clean_names}{Logical; if \code{TRUE}, makes the column names
+descriptive and uses snake_case.}
 }
 \value{
 A tibble with the following columns:
@@ -22,6 +26,9 @@ Fetch most actively traded stocks in a month on NSE.
 \examples{
 \donttest{
 nse_stock_most_traded()
+
+# retain original column names as returned by NSE
+nse_stock_most_traded(clean_names = FALSE)
 }
 
 }

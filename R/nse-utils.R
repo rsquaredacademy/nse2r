@@ -4,7 +4,7 @@
 #'
 #' @param url URL of data.
 #'
-#' @importFrom magrittr %>%
+#' @importFrom magrittr %>% %<>%
 #'
 #' @noRd
 #'
@@ -48,7 +48,7 @@ nse_stock_year_base <- function(url) {
 
 }
 
-nse_fo_base <- function(url) {
+nse_fo_base <- function(url, clean_names) {
 
   cols_to_skip   <- c(1, 2, 11, 12)
   cols_to_modify <- 3:10
@@ -61,34 +61,42 @@ nse_fo_base <- function(url) {
 
   result$lastCorpAnnouncementDate <- as.Date(result$lastCorpAnnouncementDate,
                                              format = "%d-%b-%Y")
+  if (clean_names) {
+    result %<>%
+      magrittr::set_names(., c("symbol", "series", "last_corp_announcement_date",
+                               "last_corp_announcement", "open_price", "high_price",
+                               "low_price", "last_traded_price",
+                               "prev_close_price", "percent_change",
+                               "traded_quantity", "turnover_in_lakhs"))
+  }
 
-  result %>%
-    magrittr::set_names(., c("symbol", "series", "last_corp_announcement_date",
-                             "last_corp_announcement", "open_price", "high_price",
-                             "low_price", "last_traded_price",
-                             "prev_close_price", "percent_change",
-                             "traded_quantity", "turnover_in_lakhs"))
+  return(result)
 
 }
 
-nse_preopen_base <- function(url) {
+nse_preopen_base <- function(url, clean_names) {
 
   result <-
     url %>%
     nse_base() %>%
-    magrittr::extract(., 1:13) %>%
-    nse_format_num(cols_skip = 1:4, cols_modify = 5:13) %>%
-    nse_format(cols_skip = 1:4, cols_modify = 5:13)
+    nse_format_num(cols_skip = 1:4, cols_modify = 5:17) %>%
+    nse_format(cols_skip = 1:4, cols_modify = 5:17)
 
   result$xDt <- as.Date(result$xDt, format = "%d-%b-%Y")
   result$caAct[result$caAct == "-"] <- NA
   result$caAct <- trimws(result$caAct)
 
-  result %>%
-    magrittr::set_names(., c("symbol", "series", "corp_action_date",
-                             "corp_action", "price", "change", "percent_change",
-                             "prev_close", "quantity", "value", "mkt_cap",
-                             "year_high", "year_low"))
+  if (clean_names) {
+    result %<>%
+      magrittr::set_names(., c("symbol", "series", "corp_action_date",
+                               "corp_action", "price", "change",
+                               "percent_change", "prev_close", "quantity",
+                               "value", "mkt_cap", "year_high", "year_low",
+                               "sum_val", "sum_quantity", "fin_quantity",
+                               "sum_fin_quantity"))
+  }
+
+  return(result)
 
 }
 

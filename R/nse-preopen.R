@@ -2,10 +2,22 @@
 #'
 #' Fetch data of pre open session of Nifty & Nifty Bank.
 #'
+#' @param clean_names Logical; if \code{TRUE}, makes the column names
+#' descriptive and uses snake_case.
+#'
 #' @examples
 #' \donttest{
+#' # nifty
 #' nse_preopen_nifty()
+#'
+#' # retain original column names as returned by NSE
+#' nse_preopen_nifty(clean_names = FALSE)
+#'
+#' # nifty bank
 #' nse_preopen_nifty_bank()
+#'
+#' # retain original column names as returned by NSE
+#' nse_preopen_nifty_bank(clean_names = FALSE)
 #' }
 #'
 #' @return A tibble with the following columns:
@@ -31,20 +43,20 @@ NULL
 #' @rdname preopen_nifty
 #' @export
 #'
-nse_preopen_nifty <- function() {
+nse_preopen_nifty <- function(clean_names = TRUE) {
 
   url <- "https://www.nseindia.com/live_market/dynaContent/live_analysis/pre_open/nifty.json"
-  nse_preopen_base(url)
+  nse_preopen_base(url, clean_names)
 
 }
 
 #' @rdname preopen_nifty
 #' @export
 #'
-nse_preopen_nifty_bank <- function() {
+nse_preopen_nifty_bank <- function(clean_names = TRUE) {
 
   url <- "https://www.nseindia.com/live_market/dynaContent/live_analysis/pre_open/niftybank.json"
-  nse_preopen_base(url)
+  nse_preopen_base(url, clean_names)
 
 }
 

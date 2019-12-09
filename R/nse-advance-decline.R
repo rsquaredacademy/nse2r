@@ -2,9 +2,15 @@
 #'
 #' NSE indices advances & declines.
 #'
+#' @param clean_names Logical; if \code{TRUE}, makes the column names
+#' descriptive and uses snake_case.
+#'
 #' @examples
 #' \donttest{
 #' nse_advances_declines()
+#'
+#' # retain original column names as returned by NSE
+#' nse_advances_declines(clean_names = FALSE)
 #' }
 #'
 #' @return A tibble with the following columns:
@@ -16,13 +22,20 @@
 #'
 #' @export
 #'
-nse_advances_declines <- function() {
+nse_advances_declines <- function(clean_names = TRUE) {
 
   url <- "http://www.nseindia.com/common/json/indicesAdvanceDeclines.json"
 
-  url %>%
+  data <-
+    url %>%
     nse_base() %>%
-    nse_format(cols_skip = 1, cols_modify = 2:4) %>%
-    magrittr::set_names(., c("index_name", "advances", "declines", "unchanged"))
+    nse_format(cols_skip = 1, cols_modify = 2:4)
+
+  if (clean_names) {
+    data %<>%
+      magrittr::set_names(., c("index_name", "advances", "declines", "unchanged"))
+  }
+
+  data
 
 }

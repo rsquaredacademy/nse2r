@@ -6,9 +6,13 @@
 \alias{nse_fo_top_losers}
 \title{Top F&O gainers and losers}
 \usage{
-nse_fo_top_gainers()
+nse_fo_top_gainers(clean_names = TRUE)
 
-nse_fo_top_losers()
+nse_fo_top_losers(clean_names = TRUE)
+}
+\arguments{
+\item{clean_names}{Logical; if \code{TRUE}, makes the column names
+descriptive and uses snake_case.}
 }
 \value{
 A tibble with the following columns:
@@ -31,8 +35,17 @@ Top futures and options gainers and losers for the last trading session.
 }
 \examples{
 \donttest{
+# top gainers
 nse_fo_top_gainers()
+
+# retain original column names as returned by NSE
+nse_fo_top_gainers(clean_names = FALSE)
+
+# top losers
 nse_fo_top_losers()
+
+# retain original column names as returned by NSE
+nse_fo_top_losers(clean_names = FALSE)
 }
 
 }

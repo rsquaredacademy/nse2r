@@ -6,9 +6,13 @@
 \alias{nse_stock_top_losers}
 \title{NSE top gainers & losers}
 \usage{
-nse_stock_top_gainers()
+nse_stock_top_gainers(clean_names = TRUE)
 
-nse_stock_top_losers()
+nse_stock_top_losers(clean_names = TRUE)
+}
+\arguments{
+\item{clean_names}{Logical; if \code{TRUE}, makes the column names
+descriptive and uses snake_case.}
 }
 \value{
 A tibble with the following columns:
@@ -31,8 +35,17 @@ Fetch top gainers and losers for the last trading session.
 }
 \examples{
 \donttest{
+# top gainers
 nse_stock_top_gainers()
+
+# retain original column names as returned by NSE
+nse_stock_top_gainers(clean_names = FALSE)
+
+# top losers
 nse_stock_top_losers()
+
+# retain original column names as returned by NSE
+nse_stock_top_losers(clean_names = FALSE)
 }
 
 }

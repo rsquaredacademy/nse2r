@@ -6,9 +6,13 @@
 \alias{nse_preopen_nifty_bank}
 \title{Pre Open market data}
 \usage{
-nse_preopen_nifty()
+nse_preopen_nifty(clean_names = TRUE)
 
-nse_preopen_nifty_bank()
+nse_preopen_nifty_bank(clean_names = TRUE)
+}
+\arguments{
+\item{clean_names}{Logical; if \code{TRUE}, makes the column names
+descriptive and uses snake_case.}
 }
 \value{
 A tibble with the following columns:
@@ -32,8 +36,17 @@ Fetch data of pre open session of Nifty & Nifty Bank.
 }
 \examples{
 \donttest{
+# nifty
 nse_preopen_nifty()
+
+# retain original column names as returned by NSE
+nse_preopen_nifty(clean_names = FALSE)
+
+# nifty bank
 nse_preopen_nifty_bank()
+
+# retain original column names as returned by NSE
+nse_preopen_nifty_bank(clean_names = FALSE)
 }
 
 }

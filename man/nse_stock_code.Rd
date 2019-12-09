@@ -4,7 +4,11 @@
 \alias{nse_stock_code}
 \title{Stock code}
 \usage{
-nse_stock_code()
+nse_stock_code(clean_names = TRUE)
+}
+\arguments{
+\item{clean_names}{Logical; if \code{TRUE}, makes the column names
+descriptive and uses snake_case.}
 }
 \value{
 A tibble with the following columns:
@@ -18,6 +22,9 @@ Fetch stock symbol and name from NSE.
 \examples{
 \donttest{
 nse_stock_code()
+
+# retain original column names as returned by NSE
+nse_stock_code(clean_names = FALSE)
 }
 
 }

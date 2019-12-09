@@ -4,7 +4,11 @@
 \alias{nse_index_quote}
 \title{Index quote}
 \usage{
-nse_index_quote()
+nse_index_quote(clean_names = TRUE)
+}
+\arguments{
+\item{clean_names}{Logical; if \code{TRUE}, makes the column names
+descriptive and uses snake_case.}
 }
 \value{
 A tibble with the following columns:
@@ -20,6 +24,9 @@ Fetch the quote for a given index.
 \examples{
 \donttest{
 nse_index_quote()
+
+# retain original column names as returned by NSE
+nse_index_quote(clean_names = FALSE)
 }
 
 }

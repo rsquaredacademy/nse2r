@@ -123,10 +123,20 @@
     
     </div>
 
-    <pre class="usage"><span class='fu'>nse_stock_year_high</span>()
+    <pre class="usage"><span class='fu'>nse_stock_year_high</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
 
-<span class='fu'>nse_stock_year_low</span>()</pre>
-        
+<span class='fu'>nse_stock_year_low</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>clean_names</th>
+      <td><p>Logical; if <code>TRUE</code>, makes the column names
+descriptive and uses snake_case.</p></td>
+    </tr>
+    </table>
+    
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A tibble with the following column names:</p>
@@ -147,47 +157,87 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># \donttest{</span>
+<span class='co'># 52 week high</span>
 <span class='fu'>nse_stock_year_high</span>()</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 16 x 10</span><span>
-#&gt;    symbol symbol_desc date       new_high   year last_traded_pri~ prev_high
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>       </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>        </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>            </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> AGROP~ Agro Phos ~ 2019-12-05   139.   139.             139.      138.  
-#&gt; </span><span style='color: #555555;'> 2</span><span> AKASH  Akash Infr~ 2019-10-30    68.2   68.2             65.0      66.5 
-#&gt; </span><span style='color: #555555;'> 3</span><span> BIOFI~ Biofil Che~ 2019-12-05    10.7   10.7             10.7      10.2 
-#&gt; </span><span style='color: #555555;'> 4</span><span> CREAT~ Creative P~ 2019-12-04    89.4   89.4             82.2      85.8 
-#&gt; </span><span style='color: #555555;'> 5</span><span> CUB    City Union~ 2019-12-02   237    237              234.      235.  
-#&gt; </span><span style='color: #555555;'> 6</span><span> CURAT~ Cura Techn~ 2019-12-05     1.85   1.85             1.85      1.85
-#&gt; </span><span style='color: #555555;'> 7</span><span> GUJGA~ Gujarat Ga~ 2019-12-05   228.   228.             228.      228.  
-#&gt; </span><span style='color: #555555;'> 8</span><span> IIFLS~ IIFL Secur~ 2019-10-30    32.4   32.4             32.4      31.7 
-#&gt; </span><span style='color: #555555;'> 9</span><span> ISEC   ICICI Secu~ 2019-12-04   360.   360.             357.      356   
-#&gt; </span><span style='color: #555555;'>10</span><span> MASFIN MAS Financ~ 2019-12-05   798    798              776.      785   
-#&gt; </span><span style='color: #555555;'>11</span><span> MFSL   Max Financ~ 2019-12-05   535    535              518.      533.  
-#&gt; </span><span style='color: #555555;'>12</span><span> NH     Narayana H~ 2019-11-13   319.   319.             303       317.  
-#&gt; </span><span style='color: #555555;'>13</span><span> SANGI~ Sanginita ~ 2019-12-03   156.   156.             145.      154.  
-#&gt; </span><span style='color: #555555;'>14</span><span> UVSL   Uttam Valu~ 2019-12-05     0.15   0.15             0.15      0.15
-#&gt; </span><span style='color: #555555;'>15</span><span> VIKAS~ Vikas Prop~ 2019-12-05     5.3    5.3              5.3       5.2 
-#&gt; </span><span style='color: #555555;'>16</span><span> VISES~ Visesh Inf~ 2019-12-05     0.1    0.1              0.1       0.1 
+#&gt;    symbol symbol_desc date       new_high    year last_traded_pri~ prev_high
+#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>       </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>        </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>   </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>            </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
+#&gt; </span><span style='color: #555555;'> 1</span><span> ADANI~ Adani Tran~ 2019-12-02   345.    345.             332.      341.  
+#&gt; </span><span style='color: #555555;'> 2</span><span> AGROP~ Agro Phos ~ 2019-12-06   140.    140.             140.      139.  
+#&gt; </span><span style='color: #555555;'> 3</span><span> BFUTI~ BF Utiliti~ 2019-11-05   336.    336.             336.      324.  
+#&gt; </span><span style='color: #555555;'> 4</span><span> BIOFI~ Biofil Che~ 2019-12-06    11.2    11.2             11.2      10.7 
+#&gt; </span><span style='color: #555555;'> 5</span><span> COROM~ Coromandel~ 2019-03-29   528     528              511.      517   
+#&gt; </span><span style='color: #555555;'> 6</span><span> CREAT~ Creative P~ 2019-12-06    94      94               86.9      89.4 
+#&gt; </span><span style='color: #555555;'> 7</span><span> CURAT~ Cura Techn~ 2019-12-06     1.85    1.85             1.85      1.85
+#&gt; </span><span style='color: #555555;'> 8</span><span> GUJGA~ Gujarat Ga~ 2019-12-06   232.    232.             230.      228.  
+#&gt; </span><span style='color: #555555;'> 9</span><span> IIFLS~ IIFL Secur~ 2019-12-06    34.0    34.0             34.0      32.4 
+#&gt; </span><span style='color: #555555;'>10</span><span> ISEC   ICICI Secu~ 2019-12-06   365.    365.             358.      360.  
+#&gt; </span><span style='color: #555555;'>11</span><span> KIRLF~ Kirloskar ~ 2019-11-13    67.6    67.6             61.0      66.0 
+#&gt; </span><span style='color: #555555;'>12</span><span> SRF    SRF Limited 2019-11-20  </span><span style='text-decoration: underline;'>3</span><span>286.   </span><span style='text-decoration: underline;'>3</span><span>286.            </span><span style='text-decoration: underline;'>3</span><span>261.     </span><span style='text-decoration: underline;'>3</span><span>273.  
+#&gt; </span><span style='color: #555555;'>13</span><span> UVSL   Uttam Valu~ 2019-12-06     0.15    0.15             0.15      0.15
+#&gt; </span><span style='color: #555555;'>14</span><span> VIKAS~ Vikas Prop~ 2019-12-06     5.4     5.4              5.4       5.3 
+#&gt; </span><span style='color: #555555;'>15</span><span> VISES~ Visesh Inf~ 2019-12-06     0.1     0.1              0.05      0.1 
+#&gt; </span><span style='color: #555555;'>16</span><span> XCHAN~ Xchanging ~ 2019-11-04    60.2    60.2             58.4      58.6 
 #&gt; </span><span style='color: #555555;'># ... with 3 more variables: prev_close </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, change </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   percent_change </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'><span class='fu'>nse_stock_year_low</span>()</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 79 x 10</span><span>
-#&gt;    symbol symbol_desc date       new_low  year last_traded_pri~ prev_low
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>       </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>       </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>            </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> A2ZIN~ A2Z Infra ~ 2019-10-24     8.2   8.2              8.3      8.2
-#&gt; </span><span style='color: #555555;'> 2</span><span> AIRAN  Airan Limi~ 2019-12-05     9.6   9.6              9.8     10.2
-#&gt; </span><span style='color: #555555;'> 3</span><span> ALBK   Allahabad ~ 2019-12-04    22.2  22.2             22.4     22.3
-#&gt; </span><span style='color: #555555;'> 4</span><span> APARI~ Apar Indus~ 2019-12-05   428   428              432.     435  
-#&gt; </span><span style='color: #555555;'> 5</span><span> APOLL~ Apollo Pip~ 2019-12-04   333.  333.             340      335  
-#&gt; </span><span style='color: #555555;'> 6</span><span> BBL    Bharat Bij~ 2019-12-03   779.  779.             781.     804. 
-#&gt; </span><span style='color: #555555;'> 7</span><span> BHAGE~ Bhageria I~ 2019-12-04    93.5  93.5             94       94.2
-#&gt; </span><span style='color: #555555;'> 8</span><span> BODAL~ Bodal Chem~ 2019-12-05    61.0  61.0             61.8     61.7
-#&gt; </span><span style='color: #555555;'> 9</span><span> BROOKS Brooks Lab~ 2019-12-05    25.9  25.9             26       27  
-#&gt; </span><span style='color: #555555;'>10</span><span> CESCV~ CESC Ventu~ 2019-12-05   275   275              288      286. 
-#&gt; </span><span style='color: #555555;'># ... with 69 more rows, and 3 more variables: prev_close </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, change </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   percent_change </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'># }
+#&gt; #   percent_change </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
+<span class='co'># retain original column names as returned by NSE</span>
+<span class='fu'>nse_stock_year_high</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 16 x 10</span><span>
+#&gt;    symbol symbolDesc dt           value    year     ltp value_old    prev change
+#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>       </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>   </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>   </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>   </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
+#&gt; </span><span style='color: #555555;'> 1</span><span> ADANI~ Adani Tra~ 2019-12-02  345.    345.    332.      341.    319.    13.6 
+#&gt; </span><span style='color: #555555;'> 2</span><span> AGROP~ Agro Phos~ 2019-12-06  140.    140.    140.      139.    139.     1.55
+#&gt; </span><span style='color: #555555;'> 3</span><span> BFUTI~ BF Utilit~ 2019-11-05  336.    336.    336.      324.    305.    30.5 
+#&gt; </span><span style='color: #555555;'> 4</span><span> BIOFI~ Biofil Ch~ 2019-12-06   11.2    11.2    11.2      10.7    10.7    0.5 
+#&gt; </span><span style='color: #555555;'> 5</span><span> COROM~ Coromande~ 2019-03-29  528     528     511.      517     496.    14.4 
+#&gt; </span><span style='color: #555555;'> 6</span><span> CREAT~ Creative ~ 2019-12-06   94      94      86.9      89.4    83.6    3.3 
+#&gt; </span><span style='color: #555555;'> 7</span><span> CURAT~ Cura Tech~ 2019-12-06    1.85    1.85    1.85      1.85    1.85   0   
+#&gt; </span><span style='color: #555555;'> 8</span><span> GUJGA~ Gujarat G~ 2019-12-06  232.    232.    230.      228.    227.     3.05
+#&gt; </span><span style='color: #555555;'> 9</span><span> IIFLS~ IIFL Secu~ 2019-12-06   34.0    34.0    34.0      32.4    32.4    1.6 
+#&gt; </span><span style='color: #555555;'>10</span><span> ISEC   ICICI Sec~ 2019-12-06  365.    365.    358.      360.    356.     2.3 
+#&gt; </span><span style='color: #555555;'>11</span><span> KIRLF~ Kirloskar~ 2019-11-13   67.6    67.6    61.0      66.0    61.2   -</span><span style='color: #BB0000;'>0.1</span><span> 
+#&gt; </span><span style='color: #555555;'>12</span><span> SRF    SRF Limit~ 2019-11-20 </span><span style='text-decoration: underline;'>3</span><span>286.   </span><span style='text-decoration: underline;'>3</span><span>286.   </span><span style='text-decoration: underline;'>3</span><span>261.     </span><span style='text-decoration: underline;'>3</span><span>273.   </span><span style='text-decoration: underline;'>3</span><span>230.    30.6 
+#&gt; </span><span style='color: #555555;'>13</span><span> UVSL   Uttam Val~ 2019-12-06    0.15    0.15    0.15      0.15    0.1    0.05
+#&gt; </span><span style='color: #555555;'>14</span><span> VIKAS~ Vikas Pro~ 2019-12-06    5.4     5.4     5.4       5.3     5.3    0.1 
+#&gt; </span><span style='color: #555555;'>15</span><span> VISES~ Visesh In~ 2019-12-06    0.1     0.1     0.05      0.1     0.1   -</span><span style='color: #BB0000;'>0.05</span><span>
+#&gt; </span><span style='color: #555555;'>16</span><span> XCHAN~ Xchanging~ 2019-11-04   60.2    60.2    58.4      58.6    55.8    2.55
+#&gt; </span><span style='color: #555555;'># ... with 1 more variable: pChange </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
+<span class='co'># 52 week low</span>
+<span class='fu'>nse_stock_year_low</span>()</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 76 x 10</span><span>
+#&gt;    symbol symbol_desc date       new_low   year last_traded_pri~ prev_low
+#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>       </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>       </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>            </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
+#&gt; </span><span style='color: #555555;'> 1</span><span> A2ZIN~ A2Z Infra ~ 2019-12-06    7.95   7.95             8.05     8.2 
+#&gt; </span><span style='color: #555555;'> 2</span><span> AIFL   Ashapura I~ 2019-12-02    1.5    1.5              1.5      1.55
+#&gt; </span><span style='color: #555555;'> 3</span><span> AIONJ~ Monnet Isp~ 2019-10-11    9.05   9.05             9.65     9.25
+#&gt; </span><span style='color: #555555;'> 4</span><span> AIRAN  Airan Limi~ 2019-12-06    8.8    8.8              9.95     9.6 
+#&gt; </span><span style='color: #555555;'> 5</span><span> ALBK   Allahabad ~ 2019-12-06   21.6   21.6             21.7     22.2 
+#&gt; </span><span style='color: #555555;'> 6</span><span> APARI~ Apar Indus~ 2019-12-06  420.   420.             424      428   
+#&gt; </span><span style='color: #555555;'> 7</span><span> ARIHA~ Arihant Su~ 2019-12-03   22.8   22.8             22.8     22.8 
+#&gt; </span><span style='color: #555555;'> 8</span><span> ARVIND Arvind Lim~ 2019-12-05   37.2   37.2             37.4     37.4 
+#&gt; </span><span style='color: #555555;'> 9</span><span> ASHIA~ Ashiana Ho~ 2019-12-02   86     86               87.0     87.6 
+#&gt; </span><span style='color: #555555;'>10</span><span> BHAGE~ Bhageria I~ 2019-12-06   89.6   89.6             92.4     93.5 
+#&gt; </span><span style='color: #555555;'># ... with 66 more rows, and 3 more variables: prev_close </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, change </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
+#&gt; #   percent_change </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
+<span class='co'># retain original column names as returned by NSE</span>
+<span class='fu'>nse_stock_year_low</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 76 x 10</span><span>
+#&gt;    symbol symbolDesc dt          value   year    ltp value_old   prev change
+#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
+#&gt; </span><span style='color: #555555;'> 1</span><span> A2ZIN~ A2Z Infra~ 2019-12-06   7.95   7.95   8.05      8.2    8.3   -</span><span style='color: #BB0000;'>0.25</span><span>
+#&gt; </span><span style='color: #555555;'> 2</span><span> AIFL   Ashapura ~ 2019-12-02   1.5    1.5    1.5       1.55   1.55  -</span><span style='color: #BB0000;'>0.05</span><span>
+#&gt; </span><span style='color: #555555;'> 3</span><span> AIONJ~ Monnet Is~ 2019-10-11   9.05   9.05   9.65      9.25   9.9   -</span><span style='color: #BB0000;'>0.25</span><span>
+#&gt; </span><span style='color: #555555;'> 4</span><span> AIRAN  Airan Lim~ 2019-12-06   8.8    8.8    9.95      9.6    9.7    0.25
+#&gt; </span><span style='color: #555555;'> 5</span><span> ALBK   Allahabad~ 2019-12-06  21.6   21.6   21.7      22.2   22.3   -</span><span style='color: #BB0000;'>0.6</span><span> 
+#&gt; </span><span style='color: #555555;'> 6</span><span> APARI~ Apar Indu~ 2019-12-06 420.   420.   424       428    431.    -</span><span style='color: #BB0000;'>7.1</span><span> 
+#&gt; </span><span style='color: #555555;'> 7</span><span> ARIHA~ Arihant S~ 2019-12-03  22.8   22.8   22.8      22.8   24     -</span><span style='color: #BB0000;'>1.2</span><span> 
+#&gt; </span><span style='color: #555555;'> 8</span><span> ARVIND Arvind Li~ 2019-12-05  37.2   37.2   37.4      37.4   38.2   -</span><span style='color: #BB0000;'>0.9</span><span> 
+#&gt; </span><span style='color: #555555;'> 9</span><span> ASHIA~ Ashiana H~ 2019-12-02  86     86     87.0      87.6   88.6   -</span><span style='color: #BB0000;'>1.5</span><span> 
+#&gt; </span><span style='color: #555555;'>10</span><span> BHAGE~ Bhageria ~ 2019-12-06  89.6   89.6   92.4      93.5   94     -</span><span style='color: #BB0000;'>1.6</span><span> 
+#&gt; </span><span style='color: #555555;'># ... with 66 more rows, and 1 more variable: pChange </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'># }
 
 </div></span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
+      <li><a href="#arguments">Arguments</a></li>
       
       <li><a href="#value">Value</a></li>
       

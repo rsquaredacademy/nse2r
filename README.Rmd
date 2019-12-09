@@ -75,12 +75,26 @@ nse2r uses consistent prefix `nse_` for easy tab completion.
 - `nse_fo_` for futures and options
 - `nse_preopen_` for preopen data
 
+## Preprocessing
+
+nse2r does basic data preprocessing which are listed below:
+
+- modify column data types from `character` to `numeric` and `Date` 
+- modify column names
+    - make them more descriptive 
+    - to `snake_case` from `camelCase` 
+
+Users can retain the names and format as returned by NSE using the `clean_names` argument and setting it to `FALSE`.
+
 ### Index
 
 ##### Fetch Indices Quote
 
 ```{r index_quote}
 nse_index_quote()
+
+# retain original column names as returned by NSE
+nse_index_quote(clean_names = FALSE)
 ```
 
 ### Stock
@@ -89,18 +103,27 @@ nse_index_quote()
 
 ```{r stock_top_gainers}
 nse_stock_top_gainers()
+
+# retain original column names as returned by NSE
+nse_stock_top_gainers(clean_names = FALSE)
 ```
 
 ##### Stocks that have touched their 52 week highs during the day
 
 ```{r stock_year_high}
 nse_stock_year_high()
+
+# retain original column names as returned by NSE
+nse_stock_year_high(clean_names = FALSE)
 ```
 
 ##### Most actively traded stocks in a month
 
 ```{r stock_most_traded}
 nse_stock_most_traded()
+
+# retain original column names as returned by NSE
+nse_stock_most_traded(clean_names = FALSE)
 ```
 
 ### Futures & Options
@@ -109,6 +132,9 @@ nse_stock_most_traded()
 
 ```{r fo_top_gainers}
 nse_fo_top_gainers()
+
+# retain original column names as returned by NSE
+nse_fo_top_gainers(clean_names = FALSE)
 ```
 
 ### Pre Open Market Data
@@ -117,12 +143,18 @@ nse_fo_top_gainers()
 
 ```{r popen_nb}
 nse_preopen_nifty_bank()
+
+# retain original column names as returned by NSE
+nse_preopen_nifty(clean_names = FALSE)
 ```
 
 ### Advances & Declines
 
 ```{r advances_declines}
 nse_advances_declines()
+
+# retain original column names as returned by NSE
+nse_advances_declines(clean_names = FALSE)
 ```
 
 Please note that the 'nse2r' project is released with a

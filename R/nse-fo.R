@@ -2,10 +2,22 @@
 #'
 #' Top futures and options gainers and losers for the last trading session.
 #'
+#' @param clean_names Logical; if \code{TRUE}, makes the column names
+#' descriptive and uses snake_case.
+#'
 #' @examples
 #' \donttest{
+#' # top gainers
 #' nse_fo_top_gainers()
+#'
+#' # retain original column names as returned by NSE
+#' nse_fo_top_gainers(clean_names = FALSE)
+#'
+#' # top losers
 #' nse_fo_top_losers()
+#'
+#' # retain original column names as returned by NSE
+#' nse_fo_top_losers(clean_names = FALSE)
 #' }
 #'
 #' @return A tibble with the following columns:
@@ -30,10 +42,10 @@ NULL
 #' @rdname nse_fo
 #' @export
 #'
-nse_fo_top_gainers <- function() {
+nse_fo_top_gainers <- function(clean_names = TRUE) {
 
   url <-  "https://www.nseindia.com/live_market/dynaContent/live_analysis/gainers/fnoGainers1.json"
-  nse_fo_base(url)
+  nse_fo_base(url, clean_names)
 
 }
 
@@ -41,10 +53,10 @@ nse_fo_top_gainers <- function() {
 #' @rdname nse_fo
 #' @export
 #'
-nse_fo_top_losers <- function() {
+nse_fo_top_losers <- function(clean_names = TRUE) {
 
   url <- "https://www.nseindia.com/live_market/dynaContent/live_analysis/losers/fnoLosers1.json"
-  nse_fo_base(url)
+  nse_fo_base(url, clean_names)
 
 }
 

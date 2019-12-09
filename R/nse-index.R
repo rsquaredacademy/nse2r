@@ -2,9 +2,15 @@
 #'
 #' Fetch the quote for a given index.
 #'
+#' @param clean_names Logical; if \code{TRUE}, makes the column names
+#' descriptive and uses snake_case.
+#'
 #' @examples
 #' \donttest{
 #' nse_index_quote()
+#'
+#' # retain original column names as returned by NSE
+#' nse_index_quote(clean_names = FALSE)
 #' }
 #'
 #' @return A tibble with the following columns:
@@ -16,17 +22,24 @@
 #'
 #' @export
 #'
-nse_index_quote <- function() {
+nse_index_quote <- function(clean_names = TRUE) {
 
   url <- "http://www.nseindia.com/homepage/Indices1.json"
 
-  url %>%
+  result <-
+    url %>%
     nse_base() %>%
     magrittr::extract(-5) %>%
     nse_format_num(cols_skip = 1, cols_modify = 2:4) %>%
-    nse_format(cols_skip = 1, cols_modify = 2:4) %>%
-    magrittr::set_names(., c("index_name", "last_traded_price", "change",
-                        "percent_change"))
+    nse_format(cols_skip = 1, cols_modify = 2:4)
+
+  if (clean_names) {
+    result %<>%
+      magrittr::set_names(., c("index_name", "last_traded_price", "change",
+                               "percent_change"))
+  }
+
+  return(result)
 
 }
 
@@ -34,9 +47,15 @@ nse_index_quote <- function() {
 #'
 #' List NSE indices.
 #'
+#' @param clean_names Logical; if \code{TRUE}, makes the column names
+#' descriptive and uses snake_case.
+#'
 #' @examples
 #' \donttest{
 #' nse_index_list()
+#'
+#' # retain original column names as returned by NSE
+#' nse_index_list(clean_names = FALSE)
 #' }
 #'
 #' @return A tibble with the following column:
@@ -45,14 +64,21 @@ nse_index_quote <- function() {
 #'
 #' @export
 #'
-nse_index_list <- function() {
+nse_index_list <- function(clean_names = TRUE) {
 
   url <- "http://www.nseindia.com/homepage/Indices1.json"
 
-  url %>%
+  result <-
+    url %>%
     nse_base() %>%
-    magrittr::extract(1) %>%
-    magrittr::set_names(., c("index_name"))
+    magrittr::extract(1)
+
+  if (clean_names) {
+    result %<>%
+      magrittr::set_names(., c("index_name"))
+  }
+
+  return(result)
 
 }
 

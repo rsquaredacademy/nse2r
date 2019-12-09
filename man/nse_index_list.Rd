@@ -4,7 +4,11 @@
 \alias{nse_index_list}
 \title{Index list}
 \usage{
-nse_index_list()
+nse_index_list(clean_names = TRUE)
+}
+\arguments{
+\item{clean_names}{Logical; if \code{TRUE}, makes the column names
+descriptive and uses snake_case.}
 }
 \value{
 A tibble with the following column:
@@ -17,6 +21,9 @@ List NSE indices.
 \examples{
 \donttest{
 nse_index_list()
+
+# retain original column names as returned by NSE
+nse_index_list(clean_names = FALSE)
 }
 
 }
