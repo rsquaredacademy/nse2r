@@ -28,19 +28,17 @@ nse_stock_most_traded <- function(clean_names = TRUE) {
 
   url <- "https://www.nseindia.com/products/dynaContent/equities/equities/json/mostActiveMonthly.json"
 
-  result <-
-    url %>%
+  url %>%
     nse_base() %>%
-    nse_format_num(cols_skip = 1, cols_modify = 2:6) %>%
-    nse_format(cols_skip = 1, cols_modify = 2:6)
+    nse_format_num(1, 2:6) %>%
+    nse_format(1, 2:6) -> result
 
   if (clean_names) {
-    result %<>%
-      magrittr::set_names(., c("security", "share_turnover", "traded_quantity",
-                          "no_of_trades", "avg_daily_turnonver", "turnover"))
+    names(result) <- c("security", "share_turnover", "traded_quantity",
+                       "no_of_trades", "avg_daily_turnonver", "turnover")
   }
 
-  return(result)
+  result
 
 }
 
@@ -90,20 +88,16 @@ NULL
 #'
 nse_stock_year_high <- function(clean_names = TRUE) {
 
-  url <- "https://www.nseindia.com/products/dynaContent/equities/equities/json/online52NewHigh.json"
-
-  result <-
-    url %>%
-    nse_stock_year_base()
+  url   <- "https://www.nseindia.com/products/dynaContent/equities/equities/json/online52NewHigh.json"
+  result <- nse_stock_year_base(url)
 
   if (clean_names) {
-    result %<>%
-      magrittr::set_names(., c("symbol", "symbol_desc", "date", "new_high", "year",
-                          "last_traded_price", "prev_high", "prev_close",
-                          "change", "percent_change"))
+    names(result) <- c("symbol", "symbol_desc", "date", "new_high", "year",
+                       "last_traded_price", "prev_high", "prev_close", "change",
+                       "percent_change")
   }
 
-  return(result)
+  result
 
 }
 
@@ -112,20 +106,16 @@ nse_stock_year_high <- function(clean_names = TRUE) {
 #'
 nse_stock_year_low <- function(clean_names = TRUE) {
 
-  url <- "https://www.nseindia.com/products/dynaContent/equities/equities/json/online52NewLow.json"
-
-  result <-
-    url %>%
-    nse_stock_year_base()
+  url    <- "https://www.nseindia.com/products/dynaContent/equities/equities/json/online52NewLow.json"
+  result <- nse_stock_year_base(url)
 
   if (clean_names) {
-    result %<>%
-      magrittr::set_names(., c("symbol", "symbol_desc", "date", "new_low", "year",
-                               "last_traded_price", "prev_low", "prev_close",
-                               "change", "percent_change"))
+    names(result) <- c("symbol", "symbol_desc", "date", "new_low", "year",
+                "last_traded_price", "prev_low", "prev_close", "change",
+                "percent_change")
   }
 
-  return(result)
+  result
 
 }
 
@@ -156,19 +146,17 @@ nse_stock_code <- function(clean_names = TRUE) {
 
   url <- "http://www.nseindia.com/content/equities/EQUITY_L.csv"
 
-  result <-
-    url %>%
+  url %>%
     utils::read.csv() %>%
     magrittr::extract(., 1:2) %>%
     tibble::as_tibble() %>%
-    purrr::map_dfc(as.character)
+    purrr::map_dfc(as.character) -> result
 
   if (clean_names) {
-    result %<>%
-      magrittr::set_names(., c("symbol", "company"))
+    names(result) <- c("symbol", "company")
   }
 
-  return(result)
+  result
 
 }
 
@@ -188,10 +176,7 @@ nse_stock_code <- function(clean_names = TRUE) {
 #'
 nse_stock_valid <- function(stock_code) {
 
-  valid_stock <-
-    nse_stock_code() %>%
-    magrittr::extract2(1)
-
+  valid_stock <- nse_stock_code()[[1]]
   toupper(stock_code) %in% valid_stock
 
 }

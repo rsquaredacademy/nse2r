@@ -26,20 +26,18 @@ nse_index_quote <- function(clean_names = TRUE) {
 
   url <- "http://www.nseindia.com/homepage/Indices1.json"
 
-  result <-
-    url %>%
+  url %>%
     nse_base() %>%
     magrittr::extract(-5) %>%
-    nse_format_num(cols_skip = 1, cols_modify = 2:4) %>%
-    nse_format(cols_skip = 1, cols_modify = 2:4)
+    nse_format_num(1, 2:4) %>%
+    nse_format(1, 2:4) -> result
 
   if (clean_names) {
-    result %<>%
-      magrittr::set_names(., c("index_name", "last_traded_price", "change",
-                               "percent_change"))
+    names(result) <-  c("index_name", "last_traded_price", "change",
+                               "percent_change")
   }
 
-  return(result)
+  result
 
 }
 
@@ -66,19 +64,14 @@ nse_index_quote <- function(clean_names = TRUE) {
 #'
 nse_index_list <- function(clean_names = TRUE) {
 
-  url <- "http://www.nseindia.com/homepage/Indices1.json"
-
-  result <-
-    url %>%
-    nse_base() %>%
-    magrittr::extract(1)
+  url    <- "http://www.nseindia.com/homepage/Indices1.json"
+  result <- nse_base(url)[1]
 
   if (clean_names) {
-    result %<>%
-      magrittr::set_names(., c("index_name"))
+    names(result) <-  c("index_name")
   }
 
-  return(result)
+  result
 
 }
 
@@ -98,10 +91,7 @@ nse_index_list <- function(clean_names = TRUE) {
 #'
 nse_index_valid <- function(index_code) {
 
-  valid_index <-
-    nse_index_list() %>%
-    magrittr::extract2(1)
-
+  valid_index <- nse_index_list()[[1]]
   toupper(index_code) %in% valid_index
 
 }
