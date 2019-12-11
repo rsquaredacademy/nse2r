@@ -9,7 +9,9 @@ Authors@R: c(person("Lokesh", "Kumar", role = c("aut"),
              person("Lionel", "Pinto", role = c("ctb"),
              email = "lionel.nie@gmail.com"))
 Description: Fetch data related to stocks, index, futures & options from the 
-    'National Stock Exchange (India)'. This package is community maintained and is not officially supported by 'NSE'. The accuracy of data is only as correct as provided on <https://www.nseindia.com>.
+    'NSE (National Stock Exchange, India)'. This package is community maintained 
+    and is not officially supported by 'NSE'. The accuracy of data is only as 
+    correct as provided on <https://www.nseindia.com>.
 License: MIT + file LICENSE
 URL: https://github.com/rsquaredacademy/nse2r, https://nse2r.rsquaredacademy.com/ 
 BugReports: https://github.com/rsquaredacademy/nse2r/issues    
