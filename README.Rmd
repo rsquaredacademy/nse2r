@@ -31,7 +31,7 @@ Status](https://img.shields.io/codecov/c/github/rsquaredacademy/nse2r/master.svg
 
 ## Overview
 
-[NSE](https://www.nseindia.com/) (National Stock Exchange) is the leading stock exchange of India, located in the city of Mumbai. While users can manually download data from NSE through a browser and then importing this data into R becomes cumbersome. The nse2r R package implements the retrieval of data from NSE and aims to reduce the pre-processing steps needed in analyzing such data.
+[NSE](https://www.nseindia.com/) (National Stock Exchange) is the leading stock exchange of India, located in the city of Mumbai. While users can manually download data from NSE through a browser, importing this data into R becomes cumbersome. The nse2r R package implements the retrieval of data from NSE and aims to reduce the pre-processing steps needed in analyzing such data.
 
 nse2r is inspired by and a port of the Python package [nsetools](https://nsetools.readthedocs.io/en/latest/). The authors and contributors for this R package are not affiliated with NSE and NSE does not offer support for this R package.
 

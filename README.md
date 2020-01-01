@@ -25,10 +25,10 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 
 [NSE](https://www.nseindia.com/) (National Stock Exchange) is the
 leading stock exchange of India, located in the city of Mumbai. While
-users can manually download data from NSE through a browser and then
-importing this data into R becomes cumbersome. The nse2r R package
-implements the retrieval of data from NSE and aims to reduce the
-pre-processing steps needed in analyzing such data.
+users can manually download data from NSE through a browser, importing
+this data into R becomes cumbersome. The nse2r R package implements the
+retrieval of data from NSE and aims to reduce the pre-processing steps
+needed in analyzing such data.
 
 nse2r is inspired by and a port of the Python package
 [nsetools](https://nsetools.readthedocs.io/en/latest/). The authors and
@@ -96,15 +96,15 @@ nse_index_quote()
 #>    index_name        last_traded_price change percent_change
 #>    <chr>                         <dbl>  <dbl>          <dbl>
 #>  1 NIFTY 50 Pre Open           12202.   33.7            0.28
-#>  2 NIFTY 50                    12180.   11.8            0.1 
-#>  3 NIFTY NEXT 50               28306.   -1.2            0   
-#>  4 NIFTY100 LIQ 15              3836.   -8.65          -0.23
-#>  5 NIFTY BANK                  32123.  -38.7           -0.12
-#>  6 INDIA VIX                      11.7   0.02           0.17
-#>  7 NIFTY 100                   12278.   10.0            0.08
-#>  8 NIFTY 500                    9888.   15              0.15
-#>  9 NIFTY MIDCAP 100            17151.   48.6            0.28
-#> 10 NIFTY MIDCAP 50              4710.    8.75           0.19
+#>  2 NIFTY 50                    12178.    9.4            0.08
+#>  3 NIFTY NEXT 50               28292.  -16.0           -0.06
+#>  4 NIFTY100 LIQ 15              3832.  -11.7           -0.3 
+#>  5 NIFTY BANK                  32091.  -70.4           -0.22
+#>  6 INDIA VIX                      11.7   0             -0.02
+#>  7 NIFTY 100                   12275.    7.15           0.06
+#>  8 NIFTY 500                    9886.   13.2            0.13
+#>  9 NIFTY MIDCAP 100            17147.   44.3            0.26
+#> 10 NIFTY MIDCAP 50              4711.    9.7            0.21
 #> # ... with 45 more rows
 
 # retain original column names as returned by NSE
@@ -113,15 +113,15 @@ nse_index_quote(clean_names = FALSE)
 #>    name              lastPrice change pChange
 #>    <chr>                 <dbl>  <dbl>   <dbl>
 #>  1 NIFTY 50 Pre Open   12202.   33.7     0.28
-#>  2 NIFTY 50            12180.   11.8     0.1 
-#>  3 NIFTY NEXT 50       28306.   -1.2     0   
-#>  4 NIFTY100 LIQ 15      3836.   -8.65   -0.23
-#>  5 NIFTY BANK          32123.  -38.7    -0.12
-#>  6 INDIA VIX              11.7   0.02    0.17
-#>  7 NIFTY 100           12278.   10.0     0.08
-#>  8 NIFTY 500            9888.   15       0.15
-#>  9 NIFTY MIDCAP 100    17151.   48.6     0.28
-#> 10 NIFTY MIDCAP 50      4710.    8.75    0.19
+#>  2 NIFTY 50            12178.    9.4     0.08
+#>  3 NIFTY NEXT 50       28292.  -16.0    -0.06
+#>  4 NIFTY100 LIQ 15      3832.  -11.7    -0.3 
+#>  5 NIFTY BANK          32091.  -70.4    -0.22
+#>  6 INDIA VIX              11.7   0      -0.02
+#>  7 NIFTY 100           12275.    7.15    0.06
+#>  8 NIFTY 500            9886.   13.2     0.13
+#>  9 NIFTY MIDCAP 100    17147.   44.3     0.26
+#> 10 NIFTY MIDCAP 50      4711.    9.7     0.21
 #> # ... with 45 more rows
 ```
 
@@ -134,16 +134,16 @@ nse_stock_top_gainers()
 #> # A tibble: 10 x 12
 #>    symbol series last_corp_annou~ last_corp_annou~ open_price high_price
 #>    <chr>  <chr>  <date>           <chr>                 <dbl>      <dbl>
-#>  1 ADANI~ EQ     2019-07-26       Annual General ~       368        378.
-#>  2 POWER~ EQ     2019-08-19       Annual General ~       191.       193.
+#>  1 ADANI~ EQ     2019-07-26       Annual General ~       368        379.
+#>  2 POWER~ EQ     2019-08-19       Annual General ~       191.       194 
 #>  3 NTPC   EQ     2019-08-13       Dividend - Rs 2~       119.       121.
-#>  4 WIPRO  EQ     2019-06-20       Buyback                246.       249.
-#>  5 VEDL   EQ     2019-07-04       Annual General ~       153.       154.
-#>  6 INFRA~ EQ     2019-12-19       Interim Dividen~       254        258.
-#>  7 M&M    EQ     2019-07-18       Annual General ~       533.       537.
+#>  4 VEDL   EQ     2019-07-04       Annual General ~       153.       155.
+#>  5 M&M    EQ     2019-07-18       Annual General ~       533.       538.
+#>  6 WIPRO  EQ     2019-06-20       Buyback                246.       249.
+#>  7 ASIAN~ EQ     2019-10-30       Interim Dividen~      1790.      1803.
 #>  8 LT     EQ     2019-07-24       Annual General ~      1308.      1319.
-#>  9 HINDU~ EQ     2019-10-23       Interim Dividen~      1930       1939.
-#> 10 ASIAN~ EQ     2019-10-30       Interim Dividen~      1790.      1799 
+#>  9 INFRA~ EQ     2019-12-19       Interim Dividen~       254        258.
+#> 10 HDFC   EQ     2019-07-19       Annual General ~      2418       2434.
 #> # ... with 6 more variables: low_price <dbl>, last_traded_price <dbl>,
 #> #   prev_close_price <dbl>, percent_change <dbl>, traded_quantity <dbl>,
 #> #   turnover_in_lakhs <dbl>
@@ -153,16 +153,16 @@ nse_stock_top_gainers(clean_names = FALSE)
 #> # A tibble: 10 x 12
 #>    symbol series lastCorpAnnounc~ lastCorpAnnounc~ openPrice highPrice
 #>    <chr>  <chr>  <date>           <chr>                <dbl>     <dbl>
-#>  1 ADANI~ EQ     2019-07-26       Annual General ~      368       378.
-#>  2 POWER~ EQ     2019-08-19       Annual General ~      191.      193.
+#>  1 ADANI~ EQ     2019-07-26       Annual General ~      368       379.
+#>  2 POWER~ EQ     2019-08-19       Annual General ~      191.      194 
 #>  3 NTPC   EQ     2019-08-13       Dividend - Rs 2~      119.      121.
-#>  4 WIPRO  EQ     2019-06-20       Buyback               246.      249.
-#>  5 VEDL   EQ     2019-07-04       Annual General ~      153.      154.
-#>  6 INFRA~ EQ     2019-12-19       Interim Dividen~      254       258.
-#>  7 M&M    EQ     2019-07-18       Annual General ~      533.      537.
+#>  4 VEDL   EQ     2019-07-04       Annual General ~      153.      155.
+#>  5 M&M    EQ     2019-07-18       Annual General ~      533.      538.
+#>  6 WIPRO  EQ     2019-06-20       Buyback               246.      249.
+#>  7 ASIAN~ EQ     2019-10-30       Interim Dividen~     1790.     1803.
 #>  8 LT     EQ     2019-07-24       Annual General ~     1308.     1319.
-#>  9 HINDU~ EQ     2019-10-23       Interim Dividen~     1930      1939.
-#> 10 ASIAN~ EQ     2019-10-30       Interim Dividen~     1790.     1799 
+#>  9 INFRA~ EQ     2019-12-19       Interim Dividen~      254       258.
+#> 10 HDFC   EQ     2019-07-19       Annual General ~     2418      2434.
 #> # ... with 6 more variables: lowPrice <dbl>, ltp <dbl>,
 #> #   previousPrice <dbl>, netPrice <dbl>, tradedQuantity <dbl>,
 #> #   turnoverInLakhs <dbl>
@@ -172,38 +172,38 @@ nse_stock_top_gainers(clean_names = FALSE)
 
 ``` r
 nse_stock_year_high()
-#> # A tibble: 33 x 10
+#> # A tibble: 35 x 10
 #>    symbol symbol_desc date       new_high   year last_traded_pri~ prev_high
 #>    <chr>  <chr>       <date>        <dbl>  <dbl>            <dbl>     <dbl>
 #>  1 ADANI~ Adani Gree~ 2019-12-31    175.   175.             174.      166. 
-#>  2 AKASH  Akash Infr~ 2019-12-23     71.5   71.5             66        70.2
-#>  3 ALEMB~ Alembic Li~ 2019-12-31     63.6   63.6             62        60.9
-#>  4 ALKYL~ Alkyl Amin~ 2019-11-27   1135.  1135.            1108.     1107. 
-#>  5 APEX   Apex Froze~ 2018-12-31    404.   404.             400.      383. 
-#>  6 APLAP~ APL Apollo~ 2019-12-31   1938   1938             1934.     1893. 
-#>  7 ASTER~ Aster DM H~ 2019-01-17    171.   171.             163.      168  
-#>  8 AVANT~ Avanti Fee~ 2019-12-24    612.   612.             609.      599  
-#>  9 BANSW~ Banswara S~ 2019-12-31    112.   112.             112.      106. 
-#> 10 BCP    B.C. Power~ 2019-12-31     16.4   16.4             15.4      16.4
-#> # ... with 23 more rows, and 3 more variables: prev_close <dbl>,
+#>  2 AKASH  Akash Infr~ 2019-12-23     71.5   71.5             63.5      70.2
+#>  3 ALEMB~ Alembic Li~ 2019-12-31     63.6   63.6             61.7      60.9
+#>  4 ALKYL~ Alkyl Amin~ 2019-11-27   1135.  1135.            1114.     1107. 
+#>  5 APEX   Apex Froze~ 2018-12-31    407    407              399.      383. 
+#>  6 APLAP~ APL Apollo~ 2019-12-31   1939   1939             1931.     1893. 
+#>  7 ASTER~ Aster DM H~ 2019-01-17    171.   171.             164.      168  
+#>  8 AVANT~ Avanti Fee~ 2019-12-24    612.   612.             607.      599  
+#>  9 BALRA~ Balrampur ~ 2019-12-30    188.   188.             187.      187  
+#> 10 BANSW~ Banswara S~ 2019-12-31    112.   112.             112.      106. 
+#> # ... with 25 more rows, and 3 more variables: prev_close <dbl>,
 #> #   change <dbl>, percent_change <dbl>
 
 # retain original column names as returned by NSE
 nse_stock_year_high(clean_names = FALSE)
-#> # A tibble: 33 x 10
+#> # A tibble: 35 x 10
 #>    symbol symbolDesc dt          value   year    ltp value_old   prev
 #>    <chr>  <chr>      <date>      <dbl>  <dbl>  <dbl>     <dbl>  <dbl>
 #>  1 ADANI~ Adani Gre~ 2019-12-31  175.   175.   174.      166.   166. 
-#>  2 AKASH  Akash Inf~ 2019-12-23   71.5   71.5   66        70.2   65  
-#>  3 ALEMB~ Alembic L~ 2019-12-31   63.6   63.6   62        60.9   59.6
-#>  4 ALKYL~ Alkyl Ami~ 2019-11-27 1135.  1135.  1108.     1107.  1085  
-#>  5 APEX   Apex Froz~ 2018-12-31  404.   404.   400.      383.   345. 
-#>  6 APLAP~ APL Apoll~ 2019-12-31 1938   1938   1934.     1893.  1878. 
-#>  7 ASTER~ Aster DM ~ 2019-01-17  171.   171.   163.      168    161. 
-#>  8 AVANT~ Avanti Fe~ 2019-12-24  612.   612.   609.      599    584  
-#>  9 BANSW~ Banswara ~ 2019-12-31  112.   112.   112.      106.   106. 
-#> 10 BCP    B.C. Powe~ 2019-12-31   16.4   16.4   15.4      16.4   15.8
-#> # ... with 23 more rows, and 2 more variables: change <dbl>, pChange <dbl>
+#>  2 AKASH  Akash Inf~ 2019-12-23   71.5   71.5   63.5      70.2   65  
+#>  3 ALEMB~ Alembic L~ 2019-12-31   63.6   63.6   61.7      60.9   59.6
+#>  4 ALKYL~ Alkyl Ami~ 2019-11-27 1135.  1135.  1114.     1107.  1085  
+#>  5 APEX   Apex Froz~ 2018-12-31  407    407    399.      383.   345. 
+#>  6 APLAP~ APL Apoll~ 2019-12-31 1939   1939   1931.     1893.  1878. 
+#>  7 ASTER~ Aster DM ~ 2019-01-17  171.   171.   164.      168    161. 
+#>  8 AVANT~ Avanti Fe~ 2019-12-24  612.   612.   607.      599    584  
+#>  9 BALRA~ Balrampur~ 2019-12-30  188.   188.   187.      187    183. 
+#> 10 BANSW~ Banswara ~ 2019-12-31  112.   112.   112.      106.   106. 
+#> # ... with 25 more rows, and 2 more variables: change <dbl>, pChange <dbl>
 ```
 
 ##### Most actively traded stocks in a month
@@ -255,16 +255,16 @@ nse_fo_top_gainers()
 #> # A tibble: 10 x 12
 #>    symbol series last_corp_annou~ last_corp_annou~ open_price high_price
 #>    <chr>  <chr>  <date>           <chr>                 <dbl>      <dbl>
-#>  1 ADANI~ EQ     2019-07-26       Annual General ~      368        378. 
-#>  2 ADANI~ EQ     2019-07-30       Annual General ~       61.8       63.1
-#>  3 M&MFIN EQ     2019-07-15       Annual General ~      324.       329. 
-#>  4 MFSL   EQ     2019-09-16       Annual General ~      537        546. 
-#>  5 POWER~ EQ     2019-08-19       Annual General ~      191.       193. 
+#>  1 ADANI~ EQ     2019-07-26       Annual General ~      368        379. 
+#>  2 M&MFIN EQ     2019-07-15       Annual General ~      324.       331. 
+#>  3 ADANI~ EQ     2019-07-30       Annual General ~       61.8       63.8
+#>  4 POWER~ EQ     2019-08-19       Annual General ~      191.       194  
+#>  5 NTPC   EQ     2019-08-13       Dividend - Rs 2~      119.       121. 
 #>  6 MINDT~ EQ     2019-10-24       Interim Dividen~      801        814  
-#>  7 PAGEI~ EQ     2019-11-21       Interim Dividen~    23350      23799  
-#>  8 NTPC   EQ     2019-08-13       Dividend - Rs 2~      119.       121. 
-#>  9 PIDIL~ EQ     2019-07-29       Annual General ~     1388.      1412  
-#> 10 RBLBA~ EQ     2019-07-01       Annual General ~      346        350  
+#>  7 TATAP~ EQ     2019-06-04       Annual General ~       56.8       57.6
+#>  8 PIDIL~ EQ     2019-07-29       Annual General ~     1388.      1412  
+#>  9 IDFCF~ EQ     2018-07-23       Dividend Re 0.7~       45.4       45.8
+#> 10 MFSL   EQ     2019-09-16       Annual General ~      537        546. 
 #> # ... with 6 more variables: low_price <dbl>, last_traded_price <dbl>,
 #> #   prev_close_price <dbl>, percent_change <dbl>, traded_quantity <dbl>,
 #> #   turnover_in_lakhs <dbl>
@@ -274,16 +274,16 @@ nse_fo_top_gainers(clean_names = FALSE)
 #> # A tibble: 10 x 12
 #>    symbol series lastCorpAnnounc~ lastCorpAnnounc~ openPrice highPrice
 #>    <chr>  <chr>  <date>           <chr>                <dbl>     <dbl>
-#>  1 ADANI~ EQ     2019-07-26       Annual General ~     368       378. 
-#>  2 ADANI~ EQ     2019-07-30       Annual General ~      61.8      63.1
-#>  3 M&MFIN EQ     2019-07-15       Annual General ~     324.      329. 
-#>  4 MFSL   EQ     2019-09-16       Annual General ~     537       546. 
-#>  5 POWER~ EQ     2019-08-19       Annual General ~     191.      193. 
+#>  1 ADANI~ EQ     2019-07-26       Annual General ~     368       379. 
+#>  2 M&MFIN EQ     2019-07-15       Annual General ~     324.      331. 
+#>  3 ADANI~ EQ     2019-07-30       Annual General ~      61.8      63.8
+#>  4 POWER~ EQ     2019-08-19       Annual General ~     191.      194  
+#>  5 NTPC   EQ     2019-08-13       Dividend - Rs 2~     119.      121. 
 #>  6 MINDT~ EQ     2019-10-24       Interim Dividen~     801       814  
-#>  7 PAGEI~ EQ     2019-11-21       Interim Dividen~   23350     23799  
-#>  8 NTPC   EQ     2019-08-13       Dividend - Rs 2~     119.      121. 
-#>  9 PIDIL~ EQ     2019-07-29       Annual General ~    1388.     1412  
-#> 10 RBLBA~ EQ     2019-07-01       Annual General ~     346       350  
+#>  7 TATAP~ EQ     2019-06-04       Annual General ~      56.8      57.6
+#>  8 PIDIL~ EQ     2019-07-29       Annual General ~    1388.     1412  
+#>  9 IDFCF~ EQ     2018-07-23       Dividend Re 0.7~      45.4      45.8
+#> 10 MFSL   EQ     2019-09-16       Annual General ~     537       546. 
 #> # ... with 6 more variables: lowPrice <dbl>, ltp <dbl>,
 #> #   previousPrice <dbl>, netPrice <dbl>, tradedQuantity <dbl>,
 #> #   turnoverInLakhs <dbl>
@@ -342,16 +342,16 @@ nse_advances_declines()
 #> # A tibble: 57 x 4
 #>    index_name      advances declines unchanged
 #>    <chr>              <dbl>    <dbl>     <dbl>
-#>  1 NIFTY 50              24       26         0
-#>  2 NIFTY NEXT 50         31       17         2
+#>  1 NIFTY 50              23       25         2
+#>  2 NIFTY NEXT 50         26       23         1
 #>  3 NIFTY IT               7        3         0
-#>  4 NIFTY BANK             6        5         1
-#>  5 NIFTY MIDCAP 50       21       26         3
-#>  6 NIFTY INFRA           15       15         0
-#>  7 NIFTY REALTY           5        5         0
-#>  8 NIFTY ENERGY           6        4         0
-#>  9 NIFTY FMCG            12        3         0
-#> 10 NIFTY MNC             16       12         2
+#>  4 NIFTY BANK             5        6         1
+#>  5 NIFTY MIDCAP 50       25       24         1
+#>  6 NIFTY INFRA           14       15         1
+#>  7 NIFTY REALTY           4        5         1
+#>  8 NIFTY ENERGY           7        3         0
+#>  9 NIFTY FMCG            11        3         1
+#> 10 NIFTY MNC             16       13         1
 #> # ... with 47 more rows
 
 # retain original column names as returned by NSE
@@ -359,16 +359,16 @@ nse_advances_declines(clean_names = FALSE)
 #> # A tibble: 57 x 4
 #>    indice          advances declines unchanged
 #>    <chr>              <dbl>    <dbl>     <dbl>
-#>  1 NIFTY 50              24       26         0
-#>  2 NIFTY NEXT 50         31       17         2
+#>  1 NIFTY 50              23       25         2
+#>  2 NIFTY NEXT 50         26       23         1
 #>  3 NIFTY IT               7        3         0
-#>  4 NIFTY BANK             6        5         1
-#>  5 NIFTY MIDCAP 50       21       26         3
-#>  6 NIFTY INFRA           15       15         0
-#>  7 NIFTY REALTY           5        5         0
-#>  8 NIFTY ENERGY           6        4         0
-#>  9 NIFTY FMCG            12        3         0
-#> 10 NIFTY MNC             16       12         2
+#>  4 NIFTY BANK             5        6         1
+#>  5 NIFTY MIDCAP 50       25       24         1
+#>  6 NIFTY INFRA           14       15         1
+#>  7 NIFTY REALTY           4        5         1
+#>  8 NIFTY ENERGY           7        3         0
+#>  9 NIFTY FMCG            11        3         1
+#> 10 NIFTY MNC             16       13         1
 #> # ... with 47 more rows
 ```
 
