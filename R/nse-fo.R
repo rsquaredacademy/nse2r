@@ -44,7 +44,7 @@ NULL
 #'
 nse_fo_top_gainers <- function(clean_names = TRUE) {
 
-  url <-  "https://www.nseindia.com/live_market/dynaContent/live_analysis/gainers/fnoGainers1.json"
+  url <-  "https://www1.nseindia.com/live_market/dynaContent/live_analysis/gainers/fnoGainers1.json"
   nse_fo_base(url, clean_names)
 
 }
@@ -55,7 +55,7 @@ nse_fo_top_gainers <- function(clean_names = TRUE) {
 #'
 nse_fo_top_losers <- function(clean_names = TRUE) {
 
-  url <- "https://www.nseindia.com/live_market/dynaContent/live_analysis/losers/fnoLosers1.json"
+  url <- "https://www1.nseindia.com/live_market/dynaContent/live_analysis/losers/fnoLosers1.json"
   nse_fo_base(url, clean_names)
 
 }

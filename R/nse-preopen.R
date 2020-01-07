@@ -45,7 +45,7 @@ NULL
 #'
 nse_preopen_nifty <- function(clean_names = TRUE) {
 
-  url <- "https://www.nseindia.com/live_market/dynaContent/live_analysis/pre_open/nifty.json"
+  url <- "https://www1.nseindia.com/live_market/dynaContent/live_analysis/pre_open/nifty.json"
   nse_preopen_base(url, clean_names)
 
 }
@@ -55,7 +55,7 @@ nse_preopen_nifty <- function(clean_names = TRUE) {
 #'
 nse_preopen_nifty_bank <- function(clean_names = TRUE) {
 
-  url <- "https://www.nseindia.com/live_market/dynaContent/live_analysis/pre_open/niftybank.json"
+  url <- "https://www1.nseindia.com/live_market/dynaContent/live_analysis/pre_open/niftybank.json"
   nse_preopen_base(url, clean_names)
 
 }

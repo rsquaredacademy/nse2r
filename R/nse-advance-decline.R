@@ -24,7 +24,7 @@
 #'
 nse_advances_declines <- function(clean_names = TRUE) {
 
-  url  <- "http://www.nseindia.com/common/json/indicesAdvanceDeclines.json"
+  url  <- "https://www1.nseindia.com/common/json/indicesAdvanceDeclines.json"
   data <- nse_format(nse_base(url), 1, 2:4)
 
   if (clean_names) {

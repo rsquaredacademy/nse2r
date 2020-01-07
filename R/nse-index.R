@@ -24,7 +24,7 @@
 #'
 nse_index_quote <- function(clean_names = TRUE) {
 
-  url <- "http://www.nseindia.com/homepage/Indices1.json"
+  url <- "https://www1.nseindia.com/homepage/Indices1.json"
 
   url %>%
     nse_base() %>%
@@ -64,7 +64,7 @@ nse_index_quote <- function(clean_names = TRUE) {
 #'
 nse_index_list <- function(clean_names = TRUE) {
 
-  url    <- "http://www.nseindia.com/homepage/Indices1.json"
+  url    <- "https://www1.nseindia.com/homepage/Indices1.json"
   result <- nse_base(url)[1]
 
   if (clean_names) {

@@ -26,7 +26,7 @@
 #'
 nse_stock_most_traded <- function(clean_names = TRUE) {
 
-  url <- "https://www.nseindia.com/products/dynaContent/equities/equities/json/mostActiveMonthly.json"
+  url <- "https://www1.nseindia.com/products/dynaContent/equities/equities/json/mostActiveMonthly.json"
 
   url %>%
     nse_base() %>%
@@ -88,7 +88,7 @@ NULL
 #'
 nse_stock_year_high <- function(clean_names = TRUE) {
 
-  url   <- "https://www.nseindia.com/products/dynaContent/equities/equities/json/online52NewHigh.json"
+  url   <- "https://www1.nseindia.com/products/dynaContent/equities/equities/json/online52NewHigh.json"
   result <- nse_stock_year_base(url)
 
   if (clean_names) {
@@ -106,7 +106,7 @@ nse_stock_year_high <- function(clean_names = TRUE) {
 #'
 nse_stock_year_low <- function(clean_names = TRUE) {
 
-  url    <- "https://www.nseindia.com/products/dynaContent/equities/equities/json/online52NewLow.json"
+  url    <- "https://www1.nseindia.com/products/dynaContent/equities/equities/json/online52NewLow.json"
   result <- nse_stock_year_base(url)
 
   if (clean_names) {
@@ -144,7 +144,7 @@ nse_stock_year_low <- function(clean_names = TRUE) {
 #'
 nse_stock_code <- function(clean_names = TRUE) {
 
-  url <- "http://www.nseindia.com/content/equities/EQUITY_L.csv"
+  url <- "https://www.nseindia.com/content/equities/EQUITY_L.csv"
 
   url %>%
     utils::read.csv() %>%
@@ -227,7 +227,7 @@ NULL
 #'
 nse_stock_top_gainers <- function(clean_names = TRUE) {
 
-  url <- "http://www.nseindia.com/live_market/dynaContent/live_analysis/gainers/niftyGainers1.json"
+  url <- "https://www1.nseindia.com/live_market/dynaContent/live_analysis/gainers/niftyGainers1.json"
   nse_fo_base(url, clean_names)
 
 }
@@ -237,7 +237,7 @@ nse_stock_top_gainers <- function(clean_names = TRUE) {
 #'
 nse_stock_top_losers <- function(clean_names = TRUE) {
 
-  url <- "http://www.nseindia.com/live_market/dynaContent/live_analysis/losers/niftyLosers1.json"
+  url <- "https://www1.nseindia.com/live_market/dynaContent/live_analysis/losers/niftyLosers1.json"
   nse_fo_base(url, clean_names)
 
 }
