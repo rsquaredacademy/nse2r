@@ -66,7 +66,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">nse2r</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1</span>
       </span>
     </div>
 
@@ -150,31 +150,31 @@ descriptive and uses snake_case.</p></td>
 <span class='fu'>nse_advances_declines</span>()</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 59 x 4</span><span>
 #&gt;    index_name      advances declines unchanged
 #&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>              </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> NIFTY 50              39       11         0
-#&gt; </span><span style='color: #555555;'> 2</span><span> NIFTY NEXT 50         32       18         0
-#&gt; </span><span style='color: #555555;'> 3</span><span> NIFTY IT              10        0         0
-#&gt; </span><span style='color: #555555;'> 4</span><span> NIFTY BANK            11        1         0
-#&gt; </span><span style='color: #555555;'> 5</span><span> NIFTY MIDCAP 50       36       14         0
-#&gt; </span><span style='color: #555555;'> 6</span><span> NIFTY INFRA           21        9         0
-#&gt; </span><span style='color: #555555;'> 7</span><span> NIFTY REALTY           4        6         0
-#&gt; </span><span style='color: #555555;'> 8</span><span> NIFTY ENERGY           7        3         0
-#&gt; </span><span style='color: #555555;'> 9</span><span> NIFTY FMCG            13        2         0
-#&gt; </span><span style='color: #555555;'>10</span><span> NIFTY MNC             20       10         0
+#&gt; </span><span style='color: #555555;'> 1</span><span> NIFTY 50              33       17         0
+#&gt; </span><span style='color: #555555;'> 2</span><span> NIFTY NEXT 50         34       15         1
+#&gt; </span><span style='color: #555555;'> 3</span><span> NIFTY IT               8        2         0
+#&gt; </span><span style='color: #555555;'> 4</span><span> NIFTY BANK             7        4         1
+#&gt; </span><span style='color: #555555;'> 5</span><span> NIFTY MIDCAP 50       36       12         2
+#&gt; </span><span style='color: #555555;'> 6</span><span> NIFTY INFRA           18       12         0
+#&gt; </span><span style='color: #555555;'> 7</span><span> NIFTY REALTY           9        1         0
+#&gt; </span><span style='color: #555555;'> 8</span><span> NIFTY ENERGY           3        7         0
+#&gt; </span><span style='color: #555555;'> 9</span><span> NIFTY FMCG            10        5         0
+#&gt; </span><span style='color: #555555;'>10</span><span> NIFTY MNC             19       11         0
 #&gt; </span><span style='color: #555555;'># ... with 49 more rows</span><span></div><div class='input'>
 <span class='co'># retain original column names as returned by NSE</span>
 <span class='fu'>nse_advances_declines</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 59 x 4</span><span>
 #&gt;    indice          advances declines unchanged
 #&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>              </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> NIFTY 50              39       11         0
-#&gt; </span><span style='color: #555555;'> 2</span><span> NIFTY NEXT 50         32       18         0
-#&gt; </span><span style='color: #555555;'> 3</span><span> NIFTY IT              10        0         0
-#&gt; </span><span style='color: #555555;'> 4</span><span> NIFTY BANK            11        1         0
-#&gt; </span><span style='color: #555555;'> 5</span><span> NIFTY MIDCAP 50       36       14         0
-#&gt; </span><span style='color: #555555;'> 6</span><span> NIFTY INFRA           21        9         0
-#&gt; </span><span style='color: #555555;'> 7</span><span> NIFTY REALTY           4        6         0
-#&gt; </span><span style='color: #555555;'> 8</span><span> NIFTY ENERGY           7        3         0
-#&gt; </span><span style='color: #555555;'> 9</span><span> NIFTY FMCG            13        2         0
-#&gt; </span><span style='color: #555555;'>10</span><span> NIFTY MNC             20       10         0
+#&gt; </span><span style='color: #555555;'> 1</span><span> NIFTY 50              33       17         0
+#&gt; </span><span style='color: #555555;'> 2</span><span> NIFTY NEXT 50         34       15         1
+#&gt; </span><span style='color: #555555;'> 3</span><span> NIFTY IT               8        2         0
+#&gt; </span><span style='color: #555555;'> 4</span><span> NIFTY BANK             7        4         1
+#&gt; </span><span style='color: #555555;'> 5</span><span> NIFTY MIDCAP 50       36       12         2
+#&gt; </span><span style='color: #555555;'> 6</span><span> NIFTY INFRA           18       12         0
+#&gt; </span><span style='color: #555555;'> 7</span><span> NIFTY REALTY           9        1         0
+#&gt; </span><span style='color: #555555;'> 8</span><span> NIFTY ENERGY           3        7         0
+#&gt; </span><span style='color: #555555;'> 9</span><span> NIFTY FMCG            10        5         0
+#&gt; </span><span style='color: #555555;'>10</span><span> NIFTY MNC             19       11         0
 #&gt; </span><span style='color: #555555;'># ... with 49 more rows</span><span></div><div class='input'># }
 
 </div></span></pre>
