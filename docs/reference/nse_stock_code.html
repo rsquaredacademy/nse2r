@@ -66,7 +66,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">nse2r</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1.9000</span>
       </span>
     </div>
 
@@ -145,7 +145,7 @@ descriptive and uses snake_case.</p></td>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># \donttest{</span>
-<span class='fu'>nse_stock_code</span>()</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 1,635 x 2</span><span>
+<span class='fu'>nse_stock_code</span>()</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 1,634 x 2</span><span>
 #&gt;    symbol     company                                 
 #&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>                                   
 #&gt; </span><span style='color: #555555;'> 1</span><span> 20MICRONS  20 Microns Limited                      
@@ -158,9 +158,9 @@ descriptive and uses snake_case.</p></td>
 #&gt; </span><span style='color: #555555;'> 8</span><span> A2ZINFRA   A2Z Infra Engineering Limited           
 #&gt; </span><span style='color: #555555;'> 9</span><span> AARTIDRUGS Aarti Drugs Limited                     
 #&gt; </span><span style='color: #555555;'>10</span><span> AARTIIND   Aarti Industries Limited                
-#&gt; </span><span style='color: #555555;'># ... with 1,625 more rows</span><span></div><div class='input'>
+#&gt; </span><span style='color: #555555;'># ... with 1,624 more rows</span><span></div><div class='input'>
 <span class='co'># retain original column names as returned by NSE</span>
-<span class='fu'>nse_stock_code</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 1,635 x 2</span><span>
+<span class='fu'>nse_stock_code</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 1,634 x 2</span><span>
 #&gt;    SYMBOL     NAME.OF.COMPANY                         
 #&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>                                   
 #&gt; </span><span style='color: #555555;'> 1</span><span> 20MICRONS  20 Microns Limited                      
@@ -173,7 +173,7 @@ descriptive and uses snake_case.</p></td>
 #&gt; </span><span style='color: #555555;'> 8</span><span> A2ZINFRA   A2Z Infra Engineering Limited           
 #&gt; </span><span style='color: #555555;'> 9</span><span> AARTIDRUGS Aarti Drugs Limited                     
 #&gt; </span><span style='color: #555555;'>10</span><span> AARTIIND   Aarti Industries Limited                
-#&gt; </span><span style='color: #555555;'># ... with 1,625 more rows</span><span></div><div class='input'># }
+#&gt; </span><span style='color: #555555;'># ... with 1,624 more rows</span><span></div><div class='input'># }
 
 </div></span></pre>
   </div>

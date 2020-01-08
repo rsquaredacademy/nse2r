@@ -1,7 +1,7 @@
 Package: nse2r
 Type: Package
 Title: Fetch Data from 'National Stock Exchange (India)'
-Version: 0.1.1
+Version: 0.1.1.9000
 Authors@R: c(person("Lokesh", "Kumar", role = c("aut"),
              email = "latreja@gmail.com"),
              person("Aravind", "Hebbali", role = c("aut", "cre"), 
