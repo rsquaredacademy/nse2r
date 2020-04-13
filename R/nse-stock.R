@@ -144,7 +144,7 @@ nse_stock_year_low <- function(clean_names = TRUE) {
 #'
 nse_stock_code <- function(clean_names = TRUE) {
 
-  url <- "https://www.nseindia.com/content/equities/EQUITY_L.csv"
+  url <- "https://www1.nseindia.com/content/equities/EQUITY_L.csv"
 
   url %>%
     utils::read.csv() %>%
