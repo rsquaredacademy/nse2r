@@ -8,6 +8,7 @@
 #'
 nse_app  <- function() {
 
+  check_suggests('shiny')
   check_suggests('shinyBS')
   check_suggests('shinycssloaders')
   check_suggests('shinythemes')

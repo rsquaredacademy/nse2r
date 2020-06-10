@@ -263,7 +263,7 @@ nse_stock_quote <- function(stock_code) {
   if (nse_stock_valid(stock_code)) {
 
     base_url %>%
-      httr::modify_url(query = "symbol=") %>%
+      paste0("?symbol=") %>%
       paste0(toupper(stock_code)) %>%
       xml2::read_html() %>%
       rvest::html_nodes("#responseDiv") %>%

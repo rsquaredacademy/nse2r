@@ -18,12 +18,10 @@ BugReports: https://github.com/rsquaredacademy/nse2r/issues
 Depends: 
     R(>= 3.3)
 Imports: 
-    httr,
     jsonlite,
     magrittr,
     purrr,
     rvest,
-    shiny,
     stringr,
     tibble,
     utils,
@@ -33,6 +31,7 @@ Suggests:
 	dplyr,
 	DT,
     httptest,
+    shiny,
     shinyBS,
     shinycssloaders,
     shinythemes,
