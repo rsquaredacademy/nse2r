@@ -6,7 +6,7 @@
 #' descriptive and uses snake_case.
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' nse_advances_declines()
 #'
 #' # retain original column names as returned by NSE

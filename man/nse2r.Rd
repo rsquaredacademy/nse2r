@@ -3,7 +3,6 @@
 \docType{package}
 \name{nse2r}
 \alias{nse2r}
-\alias{nse2r-package}
 \title{\code{nse2r} package}
 \description{
 Tools for Collecting Real Time Data from National Stock Exchange (India)

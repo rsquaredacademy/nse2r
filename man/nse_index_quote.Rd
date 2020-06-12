@@ -22,7 +22,7 @@ A tibble with the following columns:
 Fetch the quote for a given index.
 }
 \examples{
-\donttest{
+\dontrun{
 nse_index_quote()
 
 # retain original column names as returned by NSE
