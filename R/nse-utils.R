@@ -13,7 +13,7 @@ nse_base <- function(url) {
   url %>%
     jsonlite::fromJSON() %>%
     magrittr::use_series(data) %>%
-    tibble::as_tibble()
+    as.data.frame()
 
 }
 
@@ -95,7 +95,7 @@ nse_format <- function(data, cols_skip, cols_modify) {
 
   skipped  <- data[, cols_skip]
   modified <- purrr::map_dfc(data[,cols_modify], as.numeric)
-  tibble::as_tibble(cbind(skipped, modified))
+  as.data.frame(cbind(skipped, modified))
 
 }
 
@@ -113,7 +113,7 @@ nse_format_num <- function(data, cols_skip, cols_modify) {
 
   skipped  <- data[, cols_skip]
   modified <- purrr::map_dfc(data[,cols_modify], stringr::str_remove_all, ",")
-  tibble::as_tibble(cbind(skipped, modified))
+  as.data.frame(cbind(skipped, modified))
 
 }
 

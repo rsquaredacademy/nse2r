@@ -23,13 +23,12 @@ Imports:
     purrr,
     rvest,
     stringr,
-    tibble,
     utils,
     xml2
 Suggests: 
     covr,
-	dplyr,
-	DT,
+    dplyr,
+    DT,
     httptest,
     shiny,
     shinyBS,

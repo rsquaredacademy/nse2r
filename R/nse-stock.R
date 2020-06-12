@@ -149,7 +149,7 @@ nse_stock_code <- function(clean_names = TRUE) {
   url %>%
     utils::read.csv() %>%
     magrittr::extract(., 1:2) %>%
-    tibble::as_tibble() %>%
+    as.data.frame() %>%
     purrr::map_dfc(as.character) -> result
 
   if (clean_names) {
