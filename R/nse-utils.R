@@ -95,7 +95,6 @@ nse_format <- function(data, cols_skip, cols_modify) {
 
     skipped  <- data[, cols_skip]
     modified <- as.data.frame(lapply(data[, cols_modify], as.numeric))
-    # modified <- purrr::map_dfc(data[,cols_modify], as.numeric)
     as.data.frame(cbind(skipped, modified))
 
 }
@@ -114,7 +113,6 @@ nse_format_num <- function(data, cols_skip, cols_modify) {
 
     skipped  <- data[, cols_skip]
     modified <- as.data.frame(lapply(data[, cols_modify], function(x) gsub(",", "", x)))
-    # modified <- purrr::map_dfc(data[,cols_modify], stringr::str_remove_all, ",")
     as.data.frame(cbind(skipped, modified))
 
 }
