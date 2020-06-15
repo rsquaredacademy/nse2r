@@ -20,9 +20,7 @@ Depends:
 Imports: 
     jsonlite,
     magrittr,
-    purrr,
     rvest,
-    stringr,
     utils,
     xml2
 Suggests: 
