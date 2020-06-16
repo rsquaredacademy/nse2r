@@ -6,7 +6,7 @@
 #' descriptive and uses snake_case.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' # top gainers
 #' nse_fo_top_gainers()
 #'

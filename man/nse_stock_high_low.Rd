@@ -34,7 +34,7 @@ A tibble with the following column names:
 Fetch stocks that have touched their 52 week high and low.
 }
 \examples{
-\dontrun{
+\donttest{
 # 52 week high
 nse_stock_year_high()
 

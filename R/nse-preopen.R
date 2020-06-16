@@ -6,7 +6,7 @@
 #' descriptive and uses snake_case.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' # nifty
 #' nse_preopen_nifty()
 #'

@@ -6,7 +6,7 @@
 #' descriptive and uses snake_case.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' nse_index_quote()
 #'
 #' # retain original column names as returned by NSE
@@ -49,7 +49,7 @@ nse_index_quote <- function(clean_names = TRUE) {
 #' descriptive and uses snake_case.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' nse_index_list()
 #'
 #' # retain original column names as returned by NSE
@@ -82,7 +82,7 @@ nse_index_list <- function(clean_names = TRUE) {
 #' @param index_code Symbol of the index.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' nse_index_valid("nifty auto")
 #' nse_index_valid("nifty cps")
 #' }

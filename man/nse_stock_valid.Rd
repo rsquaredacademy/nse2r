@@ -13,7 +13,7 @@ nse_stock_valid(stock_code)
 Check if stock symbol/ticker is valid.
 }
 \examples{
-\dontrun{
+\donttest{
 nse_stock_valid("infy")
 nse_stock_valid("glo")
 }

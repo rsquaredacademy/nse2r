@@ -24,7 +24,7 @@ A tibble with the following columns:
 Fetch most actively traded stocks in a month on NSE.
 }
 \examples{
-\dontrun{
+\donttest{
 nse_stock_most_traded()
 
 # retain original column names as returned by NSE

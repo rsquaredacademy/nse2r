@@ -22,7 +22,7 @@ A tibble with the following columns:
 NSE indices advances & declines.
 }
 \examples{
-\dontrun{
+\donttest{
 nse_advances_declines()
 
 # retain original column names as returned by NSE

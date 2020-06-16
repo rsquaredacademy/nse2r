@@ -35,7 +35,7 @@ A tibble with the following columns:
 Fetch data of pre open session of Nifty & Nifty Bank.
 }
 \examples{
-\dontrun{
+\donttest{
 # nifty
 nse_preopen_nifty()
 
