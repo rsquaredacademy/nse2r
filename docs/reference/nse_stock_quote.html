@@ -8,23 +8,29 @@
 
 <title>Stock quote — nse_stock_quote • nse2r</title>
 
+
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -32,10 +38,10 @@
 
 
 
-<meta property="og:title" content="Stock quote — nse_stock_quote" />
 
+<meta property="og:title" content="Stock quote — nse_stock_quote" />
 <meta property="og:description" content="Fetch the quote for a given stock code." />
-<meta name="twitter:card" content="summary" />
+
 
 
 
@@ -52,7 +58,7 @@
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -66,7 +72,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">nse2r</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2.9000</span>
       </span>
     </div>
 
@@ -91,7 +97,6 @@
   </ul>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/rsquaredacademy/nse2r">
@@ -118,13 +123,11 @@
     </div>
 
     <div class="ref-description">
-    
     <p>Fetch the quote for a given stock code.</p>
-    
     </div>
 
     <pre class="usage"><span class='fu'>nse_stock_quote</span>(<span class='no'>stock_code</span>)</pre>
-    
+
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
@@ -133,24 +136,221 @@
       <td><p>Symbol of the stock.</p></td>
     </tr>
     </table>
-    
+
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># \donttest{</span>
-<span class='fu'>nse_stock_quote</span>(<span class='st'>"infy"</span>)</div><div class='output co'>#&gt; <span class='error'>Error: parse error: premature EOF</span>
-#&gt; <span class='error'>                                             </span>
-#&gt; <span class='error'>                     (right here) ------^</span></div><div class='input'># }
+<span class='fu'>nse_stock_quote</span>(<span class='st'>"infy"</span>)</div><div class='output co'>#&gt; $pricebandupper
+#&gt; [1] "774.00"
+#&gt; 
+#&gt; $symbol
+#&gt; [1] "INFY"
+#&gt; 
+#&gt; $applicableMargin
+#&gt; [1] "19.65"
+#&gt; 
+#&gt; $bcEndDate
+#&gt; [1] "-"
+#&gt; 
+#&gt; $totalSellQuantity
+#&gt; [1] "-"
+#&gt; 
+#&gt; $adhocMargin
+#&gt; [1] "-"
+#&gt; 
+#&gt; $companyName
+#&gt; [1] "Infosys Limited"
+#&gt; 
+#&gt; $marketType
+#&gt; [1] "N"
+#&gt; 
+#&gt; $exDate
+#&gt; [1] "29-MAY-20"
+#&gt; 
+#&gt; $bcStartDate
+#&gt; [1] "-"
+#&gt; 
+#&gt; $css_status_desc
+#&gt; [1] "Listed"
+#&gt; 
+#&gt; $dayHigh
+#&gt; [1] "716.60"
+#&gt; 
+#&gt; $basePrice
+#&gt; [1] "703.65"
+#&gt; 
+#&gt; $securityVar
+#&gt; [1] "16.15"
+#&gt; 
+#&gt; $pricebandlower
+#&gt; [1] "633.30"
+#&gt; 
+#&gt; $sellQuantity5
+#&gt; [1] "-"
+#&gt; 
+#&gt; $sellQuantity4
+#&gt; [1] "-"
+#&gt; 
+#&gt; $sellQuantity3
+#&gt; [1] "-"
+#&gt; 
+#&gt; $cm_adj_high_dt
+#&gt; [1] "06-SEP-19"
+#&gt; 
+#&gt; $sellQuantity2
+#&gt; [1] "-"
+#&gt; 
+#&gt; $dayLow
+#&gt; [1] "706.00"
+#&gt; 
+#&gt; $sellQuantity1
+#&gt; [1] "-"
+#&gt; 
+#&gt; $quantityTraded
+#&gt; [1] "66,70,206"
+#&gt; 
+#&gt; $pChange
+#&gt; [1] "1.39"
+#&gt; 
+#&gt; $totalTradedValue
+#&gt; [1] "47,480.53"
+#&gt; 
+#&gt; $deliveryToTradedQuantity
+#&gt; [1] "42.23"
+#&gt; 
+#&gt; $totalBuyQuantity
+#&gt; [1] "795"
+#&gt; 
+#&gt; $averagePrice
+#&gt; [1] "711.83"
+#&gt; 
+#&gt; $indexVar
+#&gt; [1] "-"
+#&gt; 
+#&gt; $cm_ffm
+#&gt; [1] "2,62,190.19"
+#&gt; 
+#&gt; $purpose
+#&gt; [1] "DIVIDEND - RS 9.50 PER SHARE"
+#&gt; 
+#&gt; $buyPrice2
+#&gt; [1] "-"
+#&gt; 
+#&gt; $secDate
+#&gt; [1] "18-Jun-2020 00:00:00"
+#&gt; 
+#&gt; $buyPrice1
+#&gt; [1] "713.90"
+#&gt; 
+#&gt; $high52
+#&gt; [1] "847.00"
+#&gt; 
+#&gt; $previousClose
+#&gt; [1] "703.65"
+#&gt; 
+#&gt; $ndEndDate
+#&gt; [1] "-"
+#&gt; 
+#&gt; $low52
+#&gt; [1] "509.25"
+#&gt; 
+#&gt; $buyPrice4
+#&gt; [1] "-"
+#&gt; 
+#&gt; $buyPrice3
+#&gt; [1] "-"
+#&gt; 
+#&gt; $recordDate
+#&gt; [1] "01-JUN-20"
+#&gt; 
+#&gt; $deliveryQuantity
+#&gt; [1] "28,16,843"
+#&gt; 
+#&gt; $buyPrice5
+#&gt; [1] "-"
+#&gt; 
+#&gt; $priceBand
+#&gt; [1] "No Band"
+#&gt; 
+#&gt; $extremeLossMargin
+#&gt; [1] "3.50"
+#&gt; 
+#&gt; $cm_adj_low_dt
+#&gt; [1] "19-MAR-20"
+#&gt; 
+#&gt; $varMargin
+#&gt; [1] "16.15"
+#&gt; 
+#&gt; $sellPrice1
+#&gt; [1] "-"
+#&gt; 
+#&gt; $sellPrice2
+#&gt; [1] "-"
+#&gt; 
+#&gt; $totalTradedVolume
+#&gt; [1] "66,70,206"
+#&gt; 
+#&gt; $sellPrice3
+#&gt; [1] "-"
+#&gt; 
+#&gt; $sellPrice4
+#&gt; [1] "-"
+#&gt; 
+#&gt; $sellPrice5
+#&gt; [1] "-"
+#&gt; 
+#&gt; $change
+#&gt; [1] "9.75"
+#&gt; 
+#&gt; $surv_indicator
+#&gt; [1] "-"
+#&gt; 
+#&gt; $ndStartDate
+#&gt; [1] "-"
+#&gt; 
+#&gt; $buyQuantity4
+#&gt; [1] "-"
+#&gt; 
+#&gt; $isExDateFlag
+#&gt; [1] FALSE
+#&gt; 
+#&gt; $buyQuantity3
+#&gt; [1] "-"
+#&gt; 
+#&gt; $buyQuantity2
+#&gt; [1] "-"
+#&gt; 
+#&gt; $buyQuantity1
+#&gt; [1] "795"
+#&gt; 
+#&gt; $series
+#&gt; [1] "EQ"
+#&gt; 
+#&gt; $faceValue
+#&gt; [1] "5.00"
+#&gt; 
+#&gt; $buyQuantity5
+#&gt; [1] "-"
+#&gt; 
+#&gt; $closePrice
+#&gt; [1] "713.90"
+#&gt; 
+#&gt; $open
+#&gt; [1] "708.20"
+#&gt; 
+#&gt; $isinCode
+#&gt; [1] "INE009A01021"
+#&gt; 
+#&gt; $lastPrice
+#&gt; [1] "713.40"
+#&gt; </div><div class='input'># }
 
 </div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      <li><a href="#arguments">Arguments</a></li>
-            
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
@@ -161,7 +361,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

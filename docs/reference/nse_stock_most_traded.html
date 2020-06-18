@@ -8,23 +8,29 @@
 
 <title>Most actively traded stocks — nse_stock_most_traded • nse2r</title>
 
+
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -32,10 +38,10 @@
 
 
 
-<meta property="og:title" content="Most actively traded stocks — nse_stock_most_traded" />
 
+<meta property="og:title" content="Most actively traded stocks — nse_stock_most_traded" />
 <meta property="og:description" content="Fetch most actively traded stocks in a month on NSE." />
-<meta name="twitter:card" content="summary" />
+
 
 
 
@@ -52,7 +58,7 @@
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -66,7 +72,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">nse2r</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2.9000</span>
       </span>
     </div>
 
@@ -91,7 +97,6 @@
   </ul>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/rsquaredacademy/nse2r">
@@ -118,13 +123,11 @@
     </div>
 
     <div class="ref-description">
-    
     <p>Fetch most actively traded stocks in a month on NSE.</p>
-    
     </div>
 
     <pre class="usage"><span class='fu'>nse_stock_most_traded</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
-    
+
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
@@ -134,7 +137,7 @@
 descriptive and uses snake_case.</p></td>
     </tr>
     </table>
-    
+
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A tibble with the following columns:</p>
@@ -145,55 +148,69 @@ descriptive and uses snake_case.</p></td>
 <dt>avg_daily_turnover</dt><dd><p>Average daily turnover (in crores).</p></dd>
 <dt>turnover</dt><dd><p>Turnover (in crores.)</p></dd>
 
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># \donttest{</span>
-<span class='fu'>nse_stock_most_traded</span>()</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 12 x 6</span><span>
-#&gt;    security share_turnover traded_quantity no_of_trades avg_daily_turno~
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>             </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>           </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>        </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>            </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> Yes Ban~           4.38           </span><span style='text-decoration: underline;'>57</span><span>140     11</span><span style='text-decoration: underline;'>058</span><span>530            </span><span style='text-decoration: underline;'>1</span><span>423.
-#&gt; </span><span style='color: #555555;'> 2</span><span> Relianc~           3.93            </span><span style='text-decoration: underline;'>1</span><span>715      3</span><span style='text-decoration: underline;'>803</span><span>882            </span><span style='text-decoration: underline;'>1</span><span>276.
-#&gt; </span><span style='color: #555555;'> 3</span><span> Indiabu~           3.91            </span><span style='text-decoration: underline;'>9</span><span>077      8</span><span style='text-decoration: underline;'>060</span><span>572            </span><span style='text-decoration: underline;'>1</span><span>271.
-#&gt; </span><span style='color: #555555;'> 4</span><span> State B~           3.43            </span><span style='text-decoration: underline;'>7</span><span>114      4</span><span style='text-decoration: underline;'>624</span><span>946            </span><span style='text-decoration: underline;'>1</span><span>114.
-#&gt; </span><span style='color: #555555;'> 5</span><span> Tata Co~           2.69             866      2</span><span style='text-decoration: underline;'>891</span><span>204             875.
-#&gt; </span><span style='color: #555555;'> 6</span><span> ICICI B~           2.51            </span><span style='text-decoration: underline;'>3</span><span>204      2</span><span style='text-decoration: underline;'>969</span><span>145             814.
-#&gt; </span><span style='color: #555555;'> 7</span><span> HDFC Li~           2.33             670      2</span><span style='text-decoration: underline;'>510</span><span>572             756.
-#&gt; </span><span style='color: #555555;'> 8</span><span> Tata St~           2.26            </span><span style='text-decoration: underline;'>3</span><span>541      3</span><span style='text-decoration: underline;'>008</span><span>166             733.
-#&gt; </span><span style='color: #555555;'> 9</span><span> HDFC Ba~           2.18            </span><span style='text-decoration: underline;'>1</span><span>170      2</span><span style='text-decoration: underline;'>969</span><span>084             707.
-#&gt; </span><span style='color: #555555;'>10</span><span> Tata Mo~           2.07            </span><span style='text-decoration: underline;'>8</span><span>128      3</span><span style='text-decoration: underline;'>536</span><span>571             671.
-#&gt; </span><span style='color: #555555;'>11</span><span> TOTAL o~          29.7            </span><span style='text-decoration: underline;'>92</span><span>625     45</span><span style='text-decoration: underline;'>432</span><span>672            </span><span style='text-decoration: underline;'>9</span><span>640.
-#&gt; </span><span style='color: #555555;'>12</span><span> TOTAL            100             </span><span style='text-decoration: underline;'>391</span><span>115    223</span><span style='text-decoration: underline;'>723</span><span>721           </span><span style='text-decoration: underline;'>32</span><span>475.
-#&gt; </span><span style='color: #555555;'># ... with 1 more variable: turnover </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
+<span class='fu'>nse_stock_most_traded</span>()</div><div class='output co'>#&gt;                       security share_turnover traded_quantity no_of_trades
+#&gt; 1      Reliance Industries Ltd           6.82            4620      9245543
+#&gt; 2       Hindustan Unilever Ltd           6.25            3185      5752204
+#&gt; 3            Bajaj Finance Ltd           4.14            2057      8232909
+#&gt; 4                HDFC Bank Ltd           3.43            3832      7054716
+#&gt; 5               ICICI Bank Ltd           3.36           10513      9288909
+#&gt; 6                AXIS Bank Ltd           3.15            8265      8308649
+#&gt; 7            Bharti Airtel Ltd           3.00            5347      5774781
+#&gt; 8                     HDFC Ltd           2.46            1518      4924321
+#&gt; 9      Maruti Suzuki India Ltd           2.14             426      3320762
+#&gt; 10         State Bank Of India           2.03           12470      7371875
+#&gt; 11 TOTAL of Top Ten securities          36.78           52234     69274669
+#&gt; 12                       TOTAL         100.00          493359    341796702
+#&gt;    avg_daily_turnonver   turnover
+#&gt; 1              3591.40   68236.63
+#&gt; 2              3292.50   62557.46
+#&gt; 3              2179.74   41415.04
+#&gt; 4              1808.33   34358.27
+#&gt; 5              1767.89   33589.97
+#&gt; 6              1658.21   31506.01
+#&gt; 7              1577.88   29979.79
+#&gt; 8              1293.73   24580.89
+#&gt; 9              1125.83   21390.76
+#&gt; 10             1069.64   20323.16
+#&gt; 11            19365.16  367937.97
+#&gt; 12            52655.61 1000456.50</div><div class='input'>
 <span class='co'># retain original column names as returned by NSE</span>
-<span class='fu'>nse_stock_most_traded</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 12 x 6</span><span>
-#&gt;    security                   sharetotal trdQty nooftrades avgdailyturn turnover
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>                           </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>        </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> Yes Bank Limited                 4.38  </span><span style='text-decoration: underline;'>57</span><span>140   11</span><span style='text-decoration: underline;'>058</span><span>530        </span><span style='text-decoration: underline;'>1</span><span>423.   </span><span style='text-decoration: underline;'>29</span><span>880.
-#&gt; </span><span style='color: #555555;'> 2</span><span> Reliance Industries Limit~       3.93   </span><span style='text-decoration: underline;'>1</span><span>715    3</span><span style='text-decoration: underline;'>803</span><span>882        </span><span style='text-decoration: underline;'>1</span><span>276.   </span><span style='text-decoration: underline;'>26</span><span>799.
-#&gt; </span><span style='color: #555555;'> 3</span><span> Indiabulls Hsg Fin Limited       3.91   </span><span style='text-decoration: underline;'>9</span><span>077    8</span><span style='text-decoration: underline;'>060</span><span>572        </span><span style='text-decoration: underline;'>1</span><span>271.   </span><span style='text-decoration: underline;'>26</span><span>683.
-#&gt; </span><span style='color: #555555;'> 4</span><span> State Bank of India              3.43   </span><span style='text-decoration: underline;'>7</span><span>114    4</span><span style='text-decoration: underline;'>624</span><span>946        </span><span style='text-decoration: underline;'>1</span><span>114.   </span><span style='text-decoration: underline;'>23</span><span>391.
-#&gt; </span><span style='color: #555555;'> 5</span><span> Tata Consultancy Services~       2.69    866    2</span><span style='text-decoration: underline;'>891</span><span>204         875.   </span><span style='text-decoration: underline;'>18</span><span>367.
-#&gt; </span><span style='color: #555555;'> 6</span><span> ICICI Bank Limited               2.51   </span><span style='text-decoration: underline;'>3</span><span>204    2</span><span style='text-decoration: underline;'>969</span><span>145         814.   </span><span style='text-decoration: underline;'>17</span><span>098.
-#&gt; </span><span style='color: #555555;'> 7</span><span> HDFC Limited                     2.33    670    2</span><span style='text-decoration: underline;'>510</span><span>572         756.   </span><span style='text-decoration: underline;'>15</span><span>868.
-#&gt; </span><span style='color: #555555;'> 8</span><span> Tata Steel Limited               2.26   </span><span style='text-decoration: underline;'>3</span><span>541    3</span><span style='text-decoration: underline;'>008</span><span>166         733.   </span><span style='text-decoration: underline;'>15</span><span>396.
-#&gt; </span><span style='color: #555555;'> 9</span><span> HDFC Bank Limited                2.18   </span><span style='text-decoration: underline;'>1</span><span>170    2</span><span style='text-decoration: underline;'>969</span><span>084         707.   </span><span style='text-decoration: underline;'>14</span><span>848.
-#&gt; </span><span style='color: #555555;'>10</span><span> Tata Motors Limited              2.07   </span><span style='text-decoration: underline;'>8</span><span>128    3</span><span style='text-decoration: underline;'>536</span><span>571         671.   </span><span style='text-decoration: underline;'>14</span><span>100.
-#&gt; </span><span style='color: #555555;'>11</span><span> TOTAL of Top Ten securiti~      29.7   </span><span style='text-decoration: underline;'>92</span><span>625   45</span><span style='text-decoration: underline;'>432</span><span>672        </span><span style='text-decoration: underline;'>9</span><span>640.  </span><span style='text-decoration: underline;'>202</span><span>431.
-#&gt; </span><span style='color: #555555;'>12</span><span> TOTAL                          100    </span><span style='text-decoration: underline;'>391</span><span>115  223</span><span style='text-decoration: underline;'>723</span><span>721       </span><span style='text-decoration: underline;'>32</span><span>475.  </span><span style='text-decoration: underline;'>681</span><span>983.</div><div class='input'># }
+<span class='fu'>nse_stock_most_traded</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt;                        skipped sharetotal trdQty nooftrades avgdailyturn
+#&gt; 1      Reliance Industries Ltd       6.82   4620    9245543      3591.40
+#&gt; 2       Hindustan Unilever Ltd       6.25   3185    5752204      3292.50
+#&gt; 3            Bajaj Finance Ltd       4.14   2057    8232909      2179.74
+#&gt; 4                HDFC Bank Ltd       3.43   3832    7054716      1808.33
+#&gt; 5               ICICI Bank Ltd       3.36  10513    9288909      1767.89
+#&gt; 6                AXIS Bank Ltd       3.15   8265    8308649      1658.21
+#&gt; 7            Bharti Airtel Ltd       3.00   5347    5774781      1577.88
+#&gt; 8                     HDFC Ltd       2.46   1518    4924321      1293.73
+#&gt; 9      Maruti Suzuki India Ltd       2.14    426    3320762      1125.83
+#&gt; 10         State Bank Of India       2.03  12470    7371875      1069.64
+#&gt; 11 TOTAL of Top Ten securities      36.78  52234   69274669     19365.16
+#&gt; 12                       TOTAL     100.00 493359  341796702     52655.61
+#&gt;      turnover
+#&gt; 1    68236.63
+#&gt; 2    62557.46
+#&gt; 3    41415.04
+#&gt; 4    34358.27
+#&gt; 5    33589.97
+#&gt; 6    31506.01
+#&gt; 7    29979.79
+#&gt; 8    24580.89
+#&gt; 9    21390.76
+#&gt; 10   20323.16
+#&gt; 11  367937.97
+#&gt; 12 1000456.50</div><div class='input'># }
 
-</div></span></pre>
+</div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      <li><a href="#arguments">Arguments</a></li>
-      
-      <li><a href="#value">Value</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
@@ -204,7 +221,7 @@ descriptive and uses snake_case.</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

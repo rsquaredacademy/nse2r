@@ -8,23 +8,29 @@
 
 <title>Index quote — nse_index_quote • nse2r</title>
 
+
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -32,10 +38,10 @@
 
 
 
-<meta property="og:title" content="Index quote — nse_index_quote" />
 
+<meta property="og:title" content="Index quote — nse_index_quote" />
 <meta property="og:description" content="Fetch the quote for a given index." />
-<meta name="twitter:card" content="summary" />
+
 
 
 
@@ -52,7 +58,7 @@
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -66,7 +72,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">nse2r</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2.9000</span>
       </span>
     </div>
 
@@ -91,7 +97,6 @@
   </ul>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/rsquaredacademy/nse2r">
@@ -118,13 +123,11 @@
     </div>
 
     <div class="ref-description">
-    
     <p>Fetch the quote for a given index.</p>
-    
     </div>
 
     <pre class="usage"><span class='fu'>nse_index_quote</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
-    
+
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
@@ -134,7 +137,7 @@
 descriptive and uses snake_case.</p></td>
     </tr>
     </table>
-    
+
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A tibble with the following columns:</p>
@@ -143,52 +146,129 @@ descriptive and uses snake_case.</p></td>
 <dt>change</dt><dd><p>Change in price.</p></dd>
 <dt>percent_change</dt><dd><p>Percentage change in price.</p></dd>
 
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># \donttest{</span>
-<span class='fu'>nse_index_quote</span>()</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 55 x 4</span><span>
-#&gt;    index_name        last_traded_price  change percent_change
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>                         </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>   </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>          </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> NIFTY 50 Pre Open           </span><span style='text-decoration: underline;'>11</span><span>939.  -</span><span style='color: #BB0000;'>114.</span><span>            -</span><span style='color: #BB0000;'>0.94</span><span>
-#&gt; </span><span style='color: #555555;'> 2</span><span> NIFTY 50                    </span><span style='text-decoration: underline;'>11</span><span>973.   -</span><span style='color: #BB0000;'>80.2</span><span>           -</span><span style='color: #BB0000;'>0.67</span><span>
-#&gt; </span><span style='color: #555555;'> 3</span><span> NIFTY NEXT 50               </span><span style='text-decoration: underline;'>27</span><span>965.  -</span><span style='color: #BB0000;'>136</span><span>             -</span><span style='color: #BB0000;'>0.48</span><span>
-#&gt; </span><span style='color: #555555;'> 4</span><span> NIFTY100 LIQ 15              </span><span style='text-decoration: underline;'>3</span><span>704.   -</span><span style='color: #BB0000;'>38.4</span><span>           -</span><span style='color: #BB0000;'>1.03</span><span>
-#&gt; </span><span style='color: #555555;'> 5</span><span> NIFTY BANK                  </span><span style='text-decoration: underline;'>31</span><span>128.  -</span><span style='color: #BB0000;'>272.</span><span>            -</span><span style='color: #BB0000;'>0.86</span><span>
-#&gt; </span><span style='color: #555555;'> 6</span><span> INDIA VIX                      16.1    1.45           9.9 
-#&gt; </span><span style='color: #555555;'> 7</span><span> NIFTY 100                   </span><span style='text-decoration: underline;'>12</span><span>077.   -</span><span style='color: #BB0000;'>78.1</span><span>           -</span><span style='color: #BB0000;'>0.64</span><span>
-#&gt; </span><span style='color: #555555;'> 8</span><span> NIFTY 500                    </span><span style='text-decoration: underline;'>9</span><span>745.   -</span><span style='color: #BB0000;'>60.1</span><span>           -</span><span style='color: #BB0000;'>0.61</span><span>
-#&gt; </span><span style='color: #555555;'> 9</span><span> NIFTY MIDCAP 100            </span><span style='text-decoration: underline;'>16</span><span>942.   -</span><span style='color: #BB0000;'>79.2</span><span>           -</span><span style='color: #BB0000;'>0.47</span><span>
-#&gt; </span><span style='color: #555555;'>10</span><span> NIFTY MIDCAP 50              </span><span style='text-decoration: underline;'>4</span><span>642.   -</span><span style='color: #BB0000;'>32.2</span><span>           -</span><span style='color: #BB0000;'>0.69</span><span>
-#&gt; </span><span style='color: #555555;'># ... with 45 more rows</span><span></div><div class='input'>
+<span class='fu'>nse_index_quote</span>()</div><div class='output co'>#&gt;           index_name last_traded_price change percent_change
+#&gt; 1  NIFTY 50 Pre Open          9863.250 -17.90          -0.18
+#&gt; 2           NIFTY 50         10091.650 210.50           2.13
+#&gt; 3      NIFTY NEXT 50         24953.650  69.85           0.28
+#&gt; 4    NIFTY100 LIQ 15          2536.350  42.25           1.69
+#&gt; 5         NIFTY BANK         20956.300 754.55           3.74
+#&gt; 6          INDIA VIX            31.455  -1.90          -5.70
+#&gt; 7          NIFTY 100         10258.150 188.40           1.87
+#&gt; 8          NIFTY 500          8283.650 143.20           1.76
+#&gt; 9   NIFTY MIDCAP 100         14427.550 180.75           1.27
+#&gt; 10   NIFTY MIDCAP 50          4035.600  51.05           1.28
+#&gt; 11       NIFTY INFRA          2957.600  38.35           1.31
+#&gt; 12      NIFTY REALTY           200.150   1.80           0.91
+#&gt; 13      NIFTY ENERGY         14023.450 280.50           2.04
+#&gt; 14        NIFTY FMCG         28648.700 216.95           0.76
+#&gt; 15         NIFTY MNC         12761.600  46.00           0.36
+#&gt; 16      NIFTY PHARMA          9975.300  -1.90          -0.02
+#&gt; 17         NIFTY PSE          2456.050  55.75           2.32
+#&gt; 18    NIFTY PSU BANK          1387.500  34.50           2.55
+#&gt; 19 NIFTY SERV SECTOR         13430.400 342.75           2.62
+#&gt; 20          NIFTY IT         14551.250  72.80           0.50
+#&gt; 21  NIFTY SMLCAP 100          4493.200  66.25           1.50
+#&gt; 22         NIFTY 200          5235.450  92.90           1.81
+#&gt; 23        NIFTY AUTO          6535.900  32.40           0.50
+#&gt; 24       NIFTY MEDIA          1360.650  23.20           1.73
+#&gt; 25       NIFTY METAL          1998.650  58.20           3.00
+#&gt; 26 NIFTY DIV OPPS 50          2178.650  30.40           1.42
+#&gt; 27 NIFTY COMMODITIES          2833.900  45.60           1.64
+#&gt; 28 NIFTY CONSUMPTION          4628.250  22.40           0.49
+#&gt; 29        NIFTY CPSE          1425.900  31.65           2.27
+#&gt; 30 NIFTY FIN SERVICE         10372.000 364.90           3.65
+#&gt; 31 NIFTY GROWSECT 15          5058.600 125.20           2.54
+#&gt; 32  NIFTY50 VALUE 20          4860.150  53.40           1.11
+#&gt; 33 NIFTY50 TR 2X LEV          4279.300 174.55           4.25
+#&gt; 34 NIFTY50 PR 2X LEV          3260.900 133.05           4.25
+#&gt; 35 NIFTY50 TR 1X INV           379.200  -8.20          -2.12
+#&gt; 36 NIFTY50 PR 1X INV           434.100  -9.40          -2.12
+#&gt; 37    NIFTY ALPHA 50         13321.650 245.50           1.88
+#&gt; 38   NIFTY50 EQL WGT         10447.400 165.75           1.61
+#&gt; 39  NIFTY100 EQL WGT         11519.200 109.00           0.96
+#&gt; 40 NIFTY100 LOWVOL30          8103.450  80.10           1.00
+#&gt; 41  NIFTY MID LIQ 15          3331.450  -7.05          -0.21
+#&gt; 42    NIFTY PVT BANK         11513.750 399.20           3.59
+#&gt; 43 NIFTY100 QUALTY30          2367.450  20.20           0.86
+#&gt; 44   NIFTY GS 8 13YR          2180.800   5.52           0.25
+#&gt; 45     NIFTY GS 10YR          1990.360   2.30           0.12
+#&gt; 46 NIFTY GS 10YR CLN           977.400   0.98           0.10
+#&gt; 47    NIFTY GS 4 8YR          2315.760   4.86           0.21
+#&gt; 48  NIFTY GS 11 15YR          2350.150   6.88           0.29
+#&gt; 49 NIFTY GS 15YRPLUS          2567.040   0.86           0.03
+#&gt; 50 NIFTY GS COMPSITE          2221.260   5.14           0.23
+#&gt; 51  NIFTY MIDCAP 150          5483.800  65.75           1.21
+#&gt; 52   NIFTY SMLCAP 50          2108.250  32.05           1.54
+#&gt; 53  NIFTY SMLCAP 250          3959.900  55.10           1.41
+#&gt; 54  NIFTY MIDSML 400          4935.150  61.95           1.27
+#&gt; 55 NIFTY200 QUALTY30          8949.450  31.25           0.35</div><div class='input'>
 <span class='co'># retain original column names as returned by NSE</span>
-<span class='fu'>nse_index_quote</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 55 x 4</span><span>
-#&gt;    name              lastPrice  change pChange
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>                 </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>   </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>   </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> NIFTY 50 Pre Open   </span><span style='text-decoration: underline;'>11</span><span>939.  -</span><span style='color: #BB0000;'>114.</span><span>     -</span><span style='color: #BB0000;'>0.94</span><span>
-#&gt; </span><span style='color: #555555;'> 2</span><span> NIFTY 50            </span><span style='text-decoration: underline;'>11</span><span>973.   -</span><span style='color: #BB0000;'>80.2</span><span>    -</span><span style='color: #BB0000;'>0.67</span><span>
-#&gt; </span><span style='color: #555555;'> 3</span><span> NIFTY NEXT 50       </span><span style='text-decoration: underline;'>27</span><span>965.  -</span><span style='color: #BB0000;'>136</span><span>      -</span><span style='color: #BB0000;'>0.48</span><span>
-#&gt; </span><span style='color: #555555;'> 4</span><span> NIFTY100 LIQ 15      </span><span style='text-decoration: underline;'>3</span><span>704.   -</span><span style='color: #BB0000;'>38.4</span><span>    -</span><span style='color: #BB0000;'>1.03</span><span>
-#&gt; </span><span style='color: #555555;'> 5</span><span> NIFTY BANK          </span><span style='text-decoration: underline;'>31</span><span>128.  -</span><span style='color: #BB0000;'>272.</span><span>     -</span><span style='color: #BB0000;'>0.86</span><span>
-#&gt; </span><span style='color: #555555;'> 6</span><span> INDIA VIX              16.1    1.45    9.9 
-#&gt; </span><span style='color: #555555;'> 7</span><span> NIFTY 100           </span><span style='text-decoration: underline;'>12</span><span>077.   -</span><span style='color: #BB0000;'>78.1</span><span>    -</span><span style='color: #BB0000;'>0.64</span><span>
-#&gt; </span><span style='color: #555555;'> 8</span><span> NIFTY 500            </span><span style='text-decoration: underline;'>9</span><span>745.   -</span><span style='color: #BB0000;'>60.1</span><span>    -</span><span style='color: #BB0000;'>0.61</span><span>
-#&gt; </span><span style='color: #555555;'> 9</span><span> NIFTY MIDCAP 100    </span><span style='text-decoration: underline;'>16</span><span>942.   -</span><span style='color: #BB0000;'>79.2</span><span>    -</span><span style='color: #BB0000;'>0.47</span><span>
-#&gt; </span><span style='color: #555555;'>10</span><span> NIFTY MIDCAP 50      </span><span style='text-decoration: underline;'>4</span><span>642.   -</span><span style='color: #BB0000;'>32.2</span><span>    -</span><span style='color: #BB0000;'>0.69</span><span>
-#&gt; </span><span style='color: #555555;'># ... with 45 more rows</span><span></div><div class='input'># }
+<span class='fu'>nse_index_quote</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt;              skipped lastPrice change pChange
+#&gt; 1  NIFTY 50 Pre Open  9863.250 -17.90   -0.18
+#&gt; 2           NIFTY 50 10091.650 210.50    2.13
+#&gt; 3      NIFTY NEXT 50 24953.650  69.85    0.28
+#&gt; 4    NIFTY100 LIQ 15  2536.350  42.25    1.69
+#&gt; 5         NIFTY BANK 20956.300 754.55    3.74
+#&gt; 6          INDIA VIX    31.455  -1.90   -5.70
+#&gt; 7          NIFTY 100 10258.150 188.40    1.87
+#&gt; 8          NIFTY 500  8283.650 143.20    1.76
+#&gt; 9   NIFTY MIDCAP 100 14427.550 180.75    1.27
+#&gt; 10   NIFTY MIDCAP 50  4035.600  51.05    1.28
+#&gt; 11       NIFTY INFRA  2957.600  38.35    1.31
+#&gt; 12      NIFTY REALTY   200.150   1.80    0.91
+#&gt; 13      NIFTY ENERGY 14023.450 280.50    2.04
+#&gt; 14        NIFTY FMCG 28648.700 216.95    0.76
+#&gt; 15         NIFTY MNC 12761.600  46.00    0.36
+#&gt; 16      NIFTY PHARMA  9975.300  -1.90   -0.02
+#&gt; 17         NIFTY PSE  2456.050  55.75    2.32
+#&gt; 18    NIFTY PSU BANK  1387.500  34.50    2.55
+#&gt; 19 NIFTY SERV SECTOR 13430.400 342.75    2.62
+#&gt; 20          NIFTY IT 14551.250  72.80    0.50
+#&gt; 21  NIFTY SMLCAP 100  4493.200  66.25    1.50
+#&gt; 22         NIFTY 200  5235.450  92.90    1.81
+#&gt; 23        NIFTY AUTO  6535.900  32.40    0.50
+#&gt; 24       NIFTY MEDIA  1360.650  23.20    1.73
+#&gt; 25       NIFTY METAL  1998.650  58.20    3.00
+#&gt; 26 NIFTY DIV OPPS 50  2178.650  30.40    1.42
+#&gt; 27 NIFTY COMMODITIES  2833.900  45.60    1.64
+#&gt; 28 NIFTY CONSUMPTION  4628.250  22.40    0.49
+#&gt; 29        NIFTY CPSE  1425.900  31.65    2.27
+#&gt; 30 NIFTY FIN SERVICE 10372.000 364.90    3.65
+#&gt; 31 NIFTY GROWSECT 15  5058.600 125.20    2.54
+#&gt; 32  NIFTY50 VALUE 20  4860.150  53.40    1.11
+#&gt; 33 NIFTY50 TR 2X LEV  4279.300 174.55    4.25
+#&gt; 34 NIFTY50 PR 2X LEV  3260.900 133.05    4.25
+#&gt; 35 NIFTY50 TR 1X INV   379.200  -8.20   -2.12
+#&gt; 36 NIFTY50 PR 1X INV   434.100  -9.40   -2.12
+#&gt; 37    NIFTY ALPHA 50 13321.650 245.50    1.88
+#&gt; 38   NIFTY50 EQL WGT 10447.400 165.75    1.61
+#&gt; 39  NIFTY100 EQL WGT 11519.200 109.00    0.96
+#&gt; 40 NIFTY100 LOWVOL30  8103.450  80.10    1.00
+#&gt; 41  NIFTY MID LIQ 15  3331.450  -7.05   -0.21
+#&gt; 42    NIFTY PVT BANK 11513.750 399.20    3.59
+#&gt; 43 NIFTY100 QUALTY30  2367.450  20.20    0.86
+#&gt; 44   NIFTY GS 8 13YR  2180.800   5.52    0.25
+#&gt; 45     NIFTY GS 10YR  1990.360   2.30    0.12
+#&gt; 46 NIFTY GS 10YR CLN   977.400   0.98    0.10
+#&gt; 47    NIFTY GS 4 8YR  2315.760   4.86    0.21
+#&gt; 48  NIFTY GS 11 15YR  2350.150   6.88    0.29
+#&gt; 49 NIFTY GS 15YRPLUS  2567.040   0.86    0.03
+#&gt; 50 NIFTY GS COMPSITE  2221.260   5.14    0.23
+#&gt; 51  NIFTY MIDCAP 150  5483.800  65.75    1.21
+#&gt; 52   NIFTY SMLCAP 50  2108.250  32.05    1.54
+#&gt; 53  NIFTY SMLCAP 250  3959.900  55.10    1.41
+#&gt; 54  NIFTY MIDSML 400  4935.150  61.95    1.27
+#&gt; 55 NIFTY200 QUALTY30  8949.450  31.25    0.35</div><div class='input'># }
 
-</div></span></pre>
+</div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      <li><a href="#arguments">Arguments</a></li>
-      
-      <li><a href="#value">Value</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
@@ -199,7 +279,7 @@ descriptive and uses snake_case.</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

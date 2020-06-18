@@ -8,23 +8,29 @@
 
 <title>Pre Open market data — preopen_nifty • nse2r</title>
 
+
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -32,10 +38,10 @@
 
 
 
-<meta property="og:title" content="Pre Open market data — preopen_nifty" />
 
+<meta property="og:title" content="Pre Open market data — preopen_nifty" />
 <meta property="og:description" content="Fetch data of pre open session of Nifty &amp;amp; Nifty Bank." />
-<meta name="twitter:card" content="summary" />
+
 
 
 
@@ -52,7 +58,7 @@
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -66,7 +72,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">nse2r</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2.9000</span>
       </span>
     </div>
 
@@ -91,7 +97,6 @@
   </ul>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/rsquaredacademy/nse2r">
@@ -118,15 +123,13 @@
     </div>
 
     <div class="ref-description">
-    
     <p>Fetch data of pre open session of Nifty &amp; Nifty Bank.</p>
-    
     </div>
 
     <pre class="usage"><span class='fu'>nse_preopen_nifty</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
 
 <span class='fu'>nse_preopen_nifty_bank</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
-    
+
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
@@ -136,7 +139,7 @@
 descriptive and uses snake_case.</p></td>
     </tr>
     </table>
-    
+
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A tibble with the following columns:</p>
@@ -154,94 +157,506 @@ descriptive and uses snake_case.</p></td>
 <dt>year_high</dt><dd><p>Normal market 52 week high.</p></dd>
 <dt>year_low</dt><dd><p>Normal market 52 week low.</p></dd>
 
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># \donttest{</span>
 <span class='co'># nifty</span>
-<span class='fu'>nse_preopen_nifty</span>()</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 50 x 17</span><span>
-#&gt;    symbol series corp_action_date corp_action price change percent_change
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>           </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>       </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>          </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> TATAM~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>           180.  -</span><span style='color: #BB0000;'>4.5</span><span>           -</span><span style='color: #BB0000;'>2.44</span><span>
-#&gt; </span><span style='color: #555555;'> 2</span><span> BPCL   EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>           450  -</span><span style='color: #BB0000;'>11</span><span>             -</span><span style='color: #BB0000;'>2.39</span><span>
-#&gt; </span><span style='color: #555555;'> 3</span><span> SBIN   EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>           312.  -</span><span style='color: #BB0000;'>6.3</span><span>           -</span><span style='color: #BB0000;'>1.98</span><span>
-#&gt; </span><span style='color: #555555;'> 4</span><span> VEDL   EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>           153.  -</span><span style='color: #BB0000;'>2.75</span><span>          -</span><span style='color: #BB0000;'>1.76</span><span>
-#&gt; </span><span style='color: #555555;'> 5</span><span> ASIAN~ EQ     2019-10-30       INTERIM DI~ </span><span style='text-decoration: underline;'>1</span><span>696  -</span><span style='color: #BB0000;'>28.4</span><span>           -</span><span style='color: #BB0000;'>1.65</span><span>
-#&gt; </span><span style='color: #555555;'> 6</span><span> UPL    EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>           586.  -</span><span style='color: #BB0000;'>9.3</span><span>           -</span><span style='color: #BB0000;'>1.56</span><span>
-#&gt; </span><span style='color: #555555;'> 7</span><span> ADANI~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>           379   -</span><span style='color: #BB0000;'>5.8</span><span>           -</span><span style='color: #BB0000;'>1.51</span><span>
-#&gt; </span><span style='color: #555555;'> 8</span><span> JSWST~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>           261.  -</span><span style='color: #BB0000;'>3.85</span><span>          -</span><span style='color: #BB0000;'>1.45</span><span>
-#&gt; </span><span style='color: #555555;'> 9</span><span> AXISB~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>           715. -</span><span style='color: #BB0000;'>10.5</span><span>           -</span><span style='color: #BB0000;'>1.45</span><span>
-#&gt; </span><span style='color: #555555;'>10</span><span> BAJFI~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>          </span><span style='text-decoration: underline;'>3</span><span>950  -</span><span style='color: #BB0000;'>57.6</span><span>           -</span><span style='color: #BB0000;'>1.44</span><span>
-#&gt; </span><span style='color: #555555;'># ... with 40 more rows, and 10 more variables: prev_close </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   quantity </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, value </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, mkt_cap </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, year_high </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   year_low </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, sum_val </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, sum_quantity </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, fin_quantity </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   sum_fin_quantity </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
+<span class='fu'>nse_preopen_nifty</span>()</div><div class='output co'>#&gt;        symbol series corp_action_date
+#&gt; 1    JSWSTEEL     EQ             &lt;NA&gt;
+#&gt; 2        ONGC     EQ       2020-03-23
+#&gt; 3    INFRATEL     EQ       2020-05-05
+#&gt; 4          LT     EQ       2020-03-24
+#&gt; 5    AXISBANK     EQ             &lt;NA&gt;
+#&gt; 6  BAJFINANCE     EQ             &lt;NA&gt;
+#&gt; 7     HCLTECH     EQ             &lt;NA&gt;
+#&gt; 8   ICICIBANK     EQ             &lt;NA&gt;
+#&gt; 9      MARUTI     EQ             &lt;NA&gt;
+#&gt; 10   RELIANCE     EQ       2020-05-13
+#&gt; 11      TITAN     EQ             &lt;NA&gt;
+#&gt; 12      WIPRO     EQ             &lt;NA&gt;
+#&gt; 13 TATAMOTORS     EQ             &lt;NA&gt;
+#&gt; 14 HINDUNILVR     EQ             &lt;NA&gt;
+#&gt; 15  COALINDIA     EQ             &lt;NA&gt;
+#&gt; 16 INDUSINDBK     EQ             &lt;NA&gt;
+#&gt; 17       SBIN     EQ             &lt;NA&gt;
+#&gt; 18  KOTAKBANK     EQ             &lt;NA&gt;
+#&gt; 19 ADANIPORTS     EQ       2020-06-17
+#&gt; 20       HDFC     EQ             &lt;NA&gt;
+#&gt; 21 ULTRACEMCO     EQ             &lt;NA&gt;
+#&gt; 22     GRASIM     EQ             &lt;NA&gt;
+#&gt; 23        TCS     EQ       2020-06-03
+#&gt; 24        M&amp;M     EQ             &lt;NA&gt;
+#&gt; 25       BPCL     EQ       2020-03-23
+#&gt; 26 HEROMOTOCO     EQ             &lt;NA&gt;
+#&gt; 27      TECHM     EQ             &lt;NA&gt;
+#&gt; 28        IOC     EQ       2020-03-23
+#&gt; 29  EICHERMOT     EQ             &lt;NA&gt;
+#&gt; 30       ZEEL     EQ             &lt;NA&gt;
+#&gt; 31  POWERGRID     EQ             &lt;NA&gt;
+#&gt; 32       VEDL     EQ             &lt;NA&gt;
+#&gt; 33       INFY     EQ       2020-05-29
+#&gt; 34    DRREDDY     EQ             &lt;NA&gt;
+#&gt; 35        UPL     EQ             &lt;NA&gt;
+#&gt; 36  BRITANNIA     EQ             &lt;NA&gt;
+#&gt; 37   SHREECEM     EQ             &lt;NA&gt;
+#&gt; 38       NTPC     EQ       2020-03-26
+#&gt; 39   HINDALCO     EQ             &lt;NA&gt;
+#&gt; 40       GAIL     EQ             &lt;NA&gt;
+#&gt; 41      CIPLA     EQ             &lt;NA&gt;
+#&gt; 42 BHARTIARTL     EQ             &lt;NA&gt;
+#&gt; 43  NESTLEIND     EQ       2020-06-11
+#&gt; 44   HDFCBANK     EQ             &lt;NA&gt;
+#&gt; 45  TATASTEEL     EQ             &lt;NA&gt;
+#&gt; 46 BAJAJFINSV     EQ             &lt;NA&gt;
+#&gt; 47        ITC     EQ             &lt;NA&gt;
+#&gt; 48  SUNPHARMA     EQ             &lt;NA&gt;
+#&gt; 49 ASIANPAINT     EQ             &lt;NA&gt;
+#&gt; 50 BAJAJ-AUTO     EQ             &lt;NA&gt;
+#&gt;                                          corp_action    price change
+#&gt; 1                                               &lt;NA&gt;   189.00  -2.85
+#&gt; 2                  INTERIM DIVIDEND - RS 5 PER SHARE    83.00  -1.20
+#&gt; 3               INTERIM DIVIDEND - RS 4.10 PER SHARE   208.95   2.70
+#&gt; 4                 INTERIM DIVIDEND - RS 10 PER SHARE   876.00  -8.80
+#&gt; 5                                               &lt;NA&gt;   386.00  -3.60
+#&gt; 6                                               &lt;NA&gt;  2375.00 -21.00
+#&gt; 7                                               &lt;NA&gt;   571.20  -4.65
+#&gt; 8                                               &lt;NA&gt;   340.00  -1.95
+#&gt; 9                                               &lt;NA&gt;  5695.00 -31.20
+#&gt; 10                     RIGHTS 1:15 @ PREMIUM RS 1247  1607.00  -8.35
+#&gt; 11                                              &lt;NA&gt;   958.10  -4.90
+#&gt; 12                                              &lt;NA&gt;   216.80  -1.00
+#&gt; 13                                              &lt;NA&gt;    95.00  -0.40
+#&gt; 14                                              &lt;NA&gt;  2070.25  -8.00
+#&gt; 15                                              &lt;NA&gt;   129.00  -0.45
+#&gt; 16                                              &lt;NA&gt;   489.50  -1.65
+#&gt; 17                                              &lt;NA&gt;   172.40  -0.55
+#&gt; 18                                              &lt;NA&gt;  1240.00  -3.80
+#&gt; 19                            ANNUAL GENERAL MEETING   340.35  -0.95
+#&gt; 20                                              &lt;NA&gt;  1790.00  -4.65
+#&gt; 21                                              &lt;NA&gt;  3799.70  -9.50
+#&gt; 22                                              &lt;NA&gt;   583.00  -0.85
+#&gt; 23                         DIVIDEND - RS 6 PER SHARE  2045.00  -2.80
+#&gt; 24                                              &lt;NA&gt;   496.90  -0.70
+#&gt; 25             INTERIM DIVIDEND - RS 16.50 PER SHARE   364.10  -0.50
+#&gt; 26                                              &lt;NA&gt;  2360.25  -3.05
+#&gt; 27                                              &lt;NA&gt;   535.05  -0.50
+#&gt; 28              INTERIM DIVIDEND - RS 4.25 PER SHARE    84.30  -0.05
+#&gt; 29                                              &lt;NA&gt; 16788.50  -8.35
+#&gt; 30                                              &lt;NA&gt;   166.50   1.50
+#&gt; 31                                              &lt;NA&gt;   160.70   1.20
+#&gt; 32                                              &lt;NA&gt;   102.80   0.70
+#&gt; 33                      DIVIDEND - RS 9.50 PER SHARE   708.20   4.55
+#&gt; 34                                              &lt;NA&gt;  4010.00  24.80
+#&gt; 35                                              &lt;NA&gt;   422.85   2.05
+#&gt; 36                                              &lt;NA&gt;  3415.00  13.55
+#&gt; 37                                              &lt;NA&gt; 21718.00  82.60
+#&gt; 38              INTERIM DIVIDEND - RS 0.50 PER HSARE    91.80   0.30
+#&gt; 39                                              &lt;NA&gt;   148.45   0.45
+#&gt; 40                                              &lt;NA&gt;    96.50   0.25
+#&gt; 41                                              &lt;NA&gt;   641.65   1.30
+#&gt; 42                                              &lt;NA&gt;   564.25   0.80
+#&gt; 43 ANNUAL GENERAL MEETING/DIVIDEND - RS 61 PER SHARE 16218.50  20.35
+#&gt; 44                                              &lt;NA&gt;   980.00   0.75
+#&gt; 45                                              &lt;NA&gt;   308.20   0.00
+#&gt; 46                                              &lt;NA&gt;  5036.95   0.00
+#&gt; 47                                              &lt;NA&gt;   181.20   0.00
+#&gt; 48                                              &lt;NA&gt;   485.65   0.00
+#&gt; 49                                              &lt;NA&gt;  1595.40   0.00
+#&gt; 50                                              &lt;NA&gt;  2689.45   0.00
+#&gt;    percent_change prev_close quantity  value   mkt_cap year_high year_low
+#&gt; 1           -1.49     191.85    10577  19.99  19477.24    296.75   132.50
+#&gt; 2           -1.43      84.20    32140  26.68  30718.53    173.45    50.00
+#&gt; 3            1.31     206.25    28951  60.49  17548.16    296.50   120.05
+#&gt; 4           -0.99     884.80    16578 145.22 109298.80   1591.65   661.00
+#&gt; 5           -0.92     389.60    38462 148.46  87921.92    819.00   286.00
+#&gt; 6           -0.88    2396.00     6468 153.62  63432.47   4923.40  1783.00
+#&gt; 7           -0.81     575.85     2417  13.81  62506.56    623.50   375.25
+#&gt; 8           -0.57     341.95    36447 123.92 221323.07    552.20   268.30
+#&gt; 9           -0.54    5726.20     1902 108.32  76109.92   7758.70  4001.10
+#&gt; 10          -0.52    1615.35    28200 453.17 522246.83   1648.55   866.98
+#&gt; 11          -0.51     963.00     1245  11.93  40182.09   1389.95   720.90
+#&gt; 12          -0.46     217.80     5193  11.26  32353.00    300.50   159.40
+#&gt; 13          -0.42      95.40   111472 105.90  17091.91    201.70    63.50
+#&gt; 14          -0.38    2078.25     4694  97.18 148468.30   2614.30  1659.05
+#&gt; 15          -0.35     129.45    39277  50.67  27124.02    265.35   119.20
+#&gt; 16          -0.34     491.15    24913 121.95  29634.63   1596.55   235.55
+#&gt; 17          -0.32     172.95    77741 134.03  66371.00    373.80   149.45
+#&gt; 18          -0.31    1243.80     6537  81.06 166510.81   1740.00  1001.00
+#&gt; 19          -0.28     341.30     2285   7.78  26350.60    428.85   203.00
+#&gt; 20          -0.26    1794.65     8593 153.81 310288.49   2499.90  1473.45
+#&gt; 21          -0.25    3809.20      215   8.17  43976.98   4754.10  2910.00
+#&gt; 22          -0.15     583.85     1561   9.10  23043.35    949.50   385.05
+#&gt; 23          -0.14    2047.80     1647  33.68 215155.74   2296.20  1506.05
+#&gt; 24          -0.14     497.60     4533  22.52  47633.17    675.30   245.40
+#&gt; 25          -0.14     364.60     3226  11.75  29263.65    549.00   252.00
+#&gt; 26          -0.13    2363.30     1617  38.17  30682.86   3022.90  1475.00
+#&gt; 27          -0.09     535.55     2960  15.84  33101.32    845.90   471.40
+#&gt; 28          -0.06      84.35    18850  15.89  21440.28    158.00    71.15
+#&gt; 29          -0.05   16796.85      360  60.44  23390.17  23450.00 12450.10
+#&gt; 30           0.91     165.00    28857  48.05  15055.57    405.20   114.00
+#&gt; 31           0.75     159.50    13314  21.40  40887.49    216.25   122.15
+#&gt; 32           0.69     102.10    14546  14.95  18596.76    180.00    60.20
+#&gt; 33           0.65     703.65    22552 159.71 257721.77    847.00   509.25
+#&gt; 34           0.62    3985.20     1530  61.35  48340.12   4190.00  2351.20
+#&gt; 35           0.49     420.80    14166  59.90  23148.74    709.05   240.15
+#&gt; 36           0.40    3401.45     1461  49.89  40079.10   3708.00  2100.00
+#&gt; 37           0.38   21635.40      113  24.54  28882.99  25355.00 15410.00
+#&gt; 38           0.33      91.50    14327  13.15  44362.25    145.85    73.20
+#&gt; 39           0.30     148.00    21655  32.15  21607.12    221.20    84.90
+#&gt; 40           0.26      96.25    12682  12.24  17798.15    157.38    65.00
+#&gt; 41           0.20     640.35     1873  12.02  32525.19    669.75   355.30
+#&gt; 42           0.14     563.45    29784 168.06 126031.29    612.00   321.15
+#&gt; 43           0.13   16198.15      145  23.52  57784.98  18369.95 11265.00
+#&gt; 44           0.08     979.25    44801 439.05 424081.52   1305.50   738.75
+#&gt; 45           0.00     308.20    17080  52.64  23261.33    516.45   250.85
+#&gt; 46           0.00    5036.95     1113  56.06  30459.53   9950.00  3985.30
+#&gt; 47           0.00     181.20    41650  75.47 158142.01    282.90   134.60
+#&gt; 48           0.00     485.65     4026  19.55  52435.67    512.70   312.00
+#&gt; 49           0.00    1595.40     1744  27.82  71924.30   1916.70  1291.25
+#&gt; 50           0.00    2689.45      594  15.98  35020.72   3315.15  1788.65
+#&gt;    sum_val sum_quantity fin_quantity sum_fin_quantity
+#&gt; 1  3632.29       413159        10577           807074
+#&gt; 2  3632.29       413159        32140           807074
+#&gt; 3  3632.29       413159        28951           807074
+#&gt; 4  3632.29       413159        16578           807074
+#&gt; 5  3632.29       413159        38462           807074
+#&gt; 6  3632.29       413159         6468           807074
+#&gt; 7  3632.29       413159         2417           807074
+#&gt; 8  3632.29       413159        36447           807074
+#&gt; 9  3632.29       413159         1902           807074
+#&gt; 10 3632.29       413159        28200           807074
+#&gt; 11 3632.29       413159         1245           807074
+#&gt; 12 3632.29       413159         5193           807074
+#&gt; 13 3632.29       413159       111472           807074
+#&gt; 14 3632.29       413159         4694           807074
+#&gt; 15 3632.29       413159        39277           807074
+#&gt; 16 3632.29       413159        24913           807074
+#&gt; 17 3632.29       413159        77741           807074
+#&gt; 18 3632.29       413159         6537           807074
+#&gt; 19 3632.29       413159         2285           807074
+#&gt; 20 3632.29       413159         8593           807074
+#&gt; 21 3632.29       413159          215           807074
+#&gt; 22 3632.29       413159         1561           807074
+#&gt; 23 3632.29       413159         1647           807074
+#&gt; 24 3632.29       413159         4533           807074
+#&gt; 25 3632.29       413159         3226           807074
+#&gt; 26 3632.29       413159         1617           807074
+#&gt; 27 3632.29       413159         2960           807074
+#&gt; 28 3632.29       413159        18850           807074
+#&gt; 29 3632.29       413159          360           807074
+#&gt; 30 3632.29       413159        28857           807074
+#&gt; 31 3632.29       413159        13314           807074
+#&gt; 32 3632.29       413159        14546           807074
+#&gt; 33 3632.29       413159        22552           807074
+#&gt; 34 3632.29       413159         1530           807074
+#&gt; 35 3632.29       413159        14166           807074
+#&gt; 36 3632.29       413159         1461           807074
+#&gt; 37 3632.29       413159          113           807074
+#&gt; 38 3632.29       413159        14327           807074
+#&gt; 39 3632.29       413159        21655           807074
+#&gt; 40 3632.29       413159        12682           807074
+#&gt; 41 3632.29       413159         1873           807074
+#&gt; 42 3632.29       413159        29784           807074
+#&gt; 43 3632.29       413159          145           807074
+#&gt; 44 3632.29       413159        44801           807074
+#&gt; 45 3632.29       413159        17080           807074
+#&gt; 46 3632.29       413159         1113           807074
+#&gt; 47 3632.29       413159        41650           807074
+#&gt; 48 3632.29       413159         4026           807074
+#&gt; 49 3632.29       413159         1744           807074
+#&gt; 50 3632.29       413159          594           807074</div><div class='input'>
 <span class='co'># retain original column names as returned by NSE</span>
-<span class='fu'>nse_preopen_nifty</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 50 x 17</span><span>
-#&gt;    symbol series xDt        caAct   iep    chn perChn  pCls trdQnty  iVal mktCap
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>   </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> TATAM~ EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>     180.  -</span><span style='color: #BB0000;'>4.5</span><span>   -</span><span style='color: #BB0000;'>2.44</span><span>  185.   </span><span style='text-decoration: underline;'>71</span><span>141 128.  3.31</span><span style='color: #555555;'>e</span><span>4
-#&gt; </span><span style='color: #555555;'> 2</span><span> BPCL   EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>     450  -</span><span style='color: #BB0000;'>11</span><span>     -</span><span style='color: #BB0000;'>2.39</span><span>  461    </span><span style='text-decoration: underline;'>41</span><span>761 188.  3.70</span><span style='color: #555555;'>e</span><span>4
-#&gt; </span><span style='color: #555555;'> 3</span><span> SBIN   EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>     312.  -</span><span style='color: #BB0000;'>6.3</span><span>   -</span><span style='color: #BB0000;'>1.98</span><span>  318.  </span><span style='text-decoration: underline;'>191</span><span>444 598.  1.22</span><span style='color: #555555;'>e</span><span>5
-#&gt; </span><span style='color: #555555;'> 4</span><span> VEDL   EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>     153.  -</span><span style='color: #BB0000;'>2.75</span><span>  -</span><span style='color: #BB0000;'>1.76</span><span>  156    </span><span style='text-decoration: underline;'>67</span><span>628 104.  2.84</span><span style='color: #555555;'>e</span><span>4
-#&gt; </span><span style='color: #555555;'> 5</span><span> ASIAN~ EQ     2019-10-30 INTE~ </span><span style='text-decoration: underline;'>1</span><span>696  -</span><span style='color: #BB0000;'>28.4</span><span>   -</span><span style='color: #BB0000;'>1.65</span><span> </span><span style='text-decoration: underline;'>1</span><span>724.    </span><span style='text-decoration: underline;'>9</span><span>393 159.  7.77</span><span style='color: #555555;'>e</span><span>4
-#&gt; </span><span style='color: #555555;'> 6</span><span> UPL    EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>     586.  -</span><span style='color: #BB0000;'>9.3</span><span>   -</span><span style='color: #BB0000;'>1.56</span><span>  595.    </span><span style='text-decoration: underline;'>4</span><span>609  27   3.27</span><span style='color: #555555;'>e</span><span>4
-#&gt; </span><span style='color: #555555;'> 7</span><span> ADANI~ EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>     379   -</span><span style='color: #BB0000;'>5.8</span><span>   -</span><span style='color: #BB0000;'>1.51</span><span>  385.   </span><span style='text-decoration: underline;'>10</span><span>580  40.1 2.97</span><span style='color: #555555;'>e</span><span>4
-#&gt; </span><span style='color: #555555;'> 8</span><span> JSWST~ EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>     261.  -</span><span style='color: #BB0000;'>3.85</span><span>  -</span><span style='color: #BB0000;'>1.45</span><span>  265.   </span><span style='text-decoration: underline;'>15</span><span>277  39.9 2.69</span><span style='color: #555555;'>e</span><span>4
-#&gt; </span><span style='color: #555555;'> 9</span><span> AXISB~ EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>     715. -</span><span style='color: #BB0000;'>10.5</span><span>   -</span><span style='color: #BB0000;'>1.45</span><span>  726.   </span><span style='text-decoration: underline;'>21</span><span>060 151.  1.62</span><span style='color: #555555;'>e</span><span>5
-#&gt; </span><span style='color: #555555;'>10</span><span> BAJFI~ EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>    </span><span style='text-decoration: underline;'>3</span><span>950  -</span><span style='color: #BB0000;'>57.6</span><span>   -</span><span style='color: #BB0000;'>1.44</span><span> </span><span style='text-decoration: underline;'>4</span><span>008.    </span><span style='text-decoration: underline;'>5</span><span>710 226.  1.04</span><span style='color: #555555;'>e</span><span>5
-#&gt; </span><span style='color: #555555;'># ... with 40 more rows, and 6 more variables: yHigh </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, yLow </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   sumVal </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, sumQnty </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, finQnty </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, sumfinQnty </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
+<span class='fu'>nse_preopen_nifty</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt;        symbol series        xDt
+#&gt; 1    JSWSTEEL     EQ       &lt;NA&gt;
+#&gt; 2        ONGC     EQ 2020-03-23
+#&gt; 3    INFRATEL     EQ 2020-05-05
+#&gt; 4          LT     EQ 2020-03-24
+#&gt; 5    AXISBANK     EQ       &lt;NA&gt;
+#&gt; 6  BAJFINANCE     EQ       &lt;NA&gt;
+#&gt; 7     HCLTECH     EQ       &lt;NA&gt;
+#&gt; 8   ICICIBANK     EQ       &lt;NA&gt;
+#&gt; 9      MARUTI     EQ       &lt;NA&gt;
+#&gt; 10   RELIANCE     EQ 2020-05-13
+#&gt; 11      TITAN     EQ       &lt;NA&gt;
+#&gt; 12      WIPRO     EQ       &lt;NA&gt;
+#&gt; 13 TATAMOTORS     EQ       &lt;NA&gt;
+#&gt; 14 HINDUNILVR     EQ       &lt;NA&gt;
+#&gt; 15  COALINDIA     EQ       &lt;NA&gt;
+#&gt; 16 INDUSINDBK     EQ       &lt;NA&gt;
+#&gt; 17       SBIN     EQ       &lt;NA&gt;
+#&gt; 18  KOTAKBANK     EQ       &lt;NA&gt;
+#&gt; 19 ADANIPORTS     EQ 2020-06-17
+#&gt; 20       HDFC     EQ       &lt;NA&gt;
+#&gt; 21 ULTRACEMCO     EQ       &lt;NA&gt;
+#&gt; 22     GRASIM     EQ       &lt;NA&gt;
+#&gt; 23        TCS     EQ 2020-06-03
+#&gt; 24        M&amp;M     EQ       &lt;NA&gt;
+#&gt; 25       BPCL     EQ 2020-03-23
+#&gt; 26 HEROMOTOCO     EQ       &lt;NA&gt;
+#&gt; 27      TECHM     EQ       &lt;NA&gt;
+#&gt; 28        IOC     EQ 2020-03-23
+#&gt; 29  EICHERMOT     EQ       &lt;NA&gt;
+#&gt; 30       ZEEL     EQ       &lt;NA&gt;
+#&gt; 31  POWERGRID     EQ       &lt;NA&gt;
+#&gt; 32       VEDL     EQ       &lt;NA&gt;
+#&gt; 33       INFY     EQ 2020-05-29
+#&gt; 34    DRREDDY     EQ       &lt;NA&gt;
+#&gt; 35        UPL     EQ       &lt;NA&gt;
+#&gt; 36  BRITANNIA     EQ       &lt;NA&gt;
+#&gt; 37   SHREECEM     EQ       &lt;NA&gt;
+#&gt; 38       NTPC     EQ 2020-03-26
+#&gt; 39   HINDALCO     EQ       &lt;NA&gt;
+#&gt; 40       GAIL     EQ       &lt;NA&gt;
+#&gt; 41      CIPLA     EQ       &lt;NA&gt;
+#&gt; 42 BHARTIARTL     EQ       &lt;NA&gt;
+#&gt; 43  NESTLEIND     EQ 2020-06-11
+#&gt; 44   HDFCBANK     EQ       &lt;NA&gt;
+#&gt; 45  TATASTEEL     EQ       &lt;NA&gt;
+#&gt; 46 BAJAJFINSV     EQ       &lt;NA&gt;
+#&gt; 47        ITC     EQ       &lt;NA&gt;
+#&gt; 48  SUNPHARMA     EQ       &lt;NA&gt;
+#&gt; 49 ASIANPAINT     EQ       &lt;NA&gt;
+#&gt; 50 BAJAJ-AUTO     EQ       &lt;NA&gt;
+#&gt;                                                caAct      iep    chn perChn
+#&gt; 1                                               &lt;NA&gt;   189.00  -2.85  -1.49
+#&gt; 2                  INTERIM DIVIDEND - RS 5 PER SHARE    83.00  -1.20  -1.43
+#&gt; 3               INTERIM DIVIDEND - RS 4.10 PER SHARE   208.95   2.70   1.31
+#&gt; 4                 INTERIM DIVIDEND - RS 10 PER SHARE   876.00  -8.80  -0.99
+#&gt; 5                                               &lt;NA&gt;   386.00  -3.60  -0.92
+#&gt; 6                                               &lt;NA&gt;  2375.00 -21.00  -0.88
+#&gt; 7                                               &lt;NA&gt;   571.20  -4.65  -0.81
+#&gt; 8                                               &lt;NA&gt;   340.00  -1.95  -0.57
+#&gt; 9                                               &lt;NA&gt;  5695.00 -31.20  -0.54
+#&gt; 10                     RIGHTS 1:15 @ PREMIUM RS 1247  1607.00  -8.35  -0.52
+#&gt; 11                                              &lt;NA&gt;   958.10  -4.90  -0.51
+#&gt; 12                                              &lt;NA&gt;   216.80  -1.00  -0.46
+#&gt; 13                                              &lt;NA&gt;    95.00  -0.40  -0.42
+#&gt; 14                                              &lt;NA&gt;  2070.25  -8.00  -0.38
+#&gt; 15                                              &lt;NA&gt;   129.00  -0.45  -0.35
+#&gt; 16                                              &lt;NA&gt;   489.50  -1.65  -0.34
+#&gt; 17                                              &lt;NA&gt;   172.40  -0.55  -0.32
+#&gt; 18                                              &lt;NA&gt;  1240.00  -3.80  -0.31
+#&gt; 19                            ANNUAL GENERAL MEETING   340.35  -0.95  -0.28
+#&gt; 20                                              &lt;NA&gt;  1790.00  -4.65  -0.26
+#&gt; 21                                              &lt;NA&gt;  3799.70  -9.50  -0.25
+#&gt; 22                                              &lt;NA&gt;   583.00  -0.85  -0.15
+#&gt; 23                         DIVIDEND - RS 6 PER SHARE  2045.00  -2.80  -0.14
+#&gt; 24                                              &lt;NA&gt;   496.90  -0.70  -0.14
+#&gt; 25             INTERIM DIVIDEND - RS 16.50 PER SHARE   364.10  -0.50  -0.14
+#&gt; 26                                              &lt;NA&gt;  2360.25  -3.05  -0.13
+#&gt; 27                                              &lt;NA&gt;   535.05  -0.50  -0.09
+#&gt; 28              INTERIM DIVIDEND - RS 4.25 PER SHARE    84.30  -0.05  -0.06
+#&gt; 29                                              &lt;NA&gt; 16788.50  -8.35  -0.05
+#&gt; 30                                              &lt;NA&gt;   166.50   1.50   0.91
+#&gt; 31                                              &lt;NA&gt;   160.70   1.20   0.75
+#&gt; 32                                              &lt;NA&gt;   102.80   0.70   0.69
+#&gt; 33                      DIVIDEND - RS 9.50 PER SHARE   708.20   4.55   0.65
+#&gt; 34                                              &lt;NA&gt;  4010.00  24.80   0.62
+#&gt; 35                                              &lt;NA&gt;   422.85   2.05   0.49
+#&gt; 36                                              &lt;NA&gt;  3415.00  13.55   0.40
+#&gt; 37                                              &lt;NA&gt; 21718.00  82.60   0.38
+#&gt; 38              INTERIM DIVIDEND - RS 0.50 PER HSARE    91.80   0.30   0.33
+#&gt; 39                                              &lt;NA&gt;   148.45   0.45   0.30
+#&gt; 40                                              &lt;NA&gt;    96.50   0.25   0.26
+#&gt; 41                                              &lt;NA&gt;   641.65   1.30   0.20
+#&gt; 42                                              &lt;NA&gt;   564.25   0.80   0.14
+#&gt; 43 ANNUAL GENERAL MEETING/DIVIDEND - RS 61 PER SHARE 16218.50  20.35   0.13
+#&gt; 44                                              &lt;NA&gt;   980.00   0.75   0.08
+#&gt; 45                                              &lt;NA&gt;   308.20   0.00   0.00
+#&gt; 46                                              &lt;NA&gt;  5036.95   0.00   0.00
+#&gt; 47                                              &lt;NA&gt;   181.20   0.00   0.00
+#&gt; 48                                              &lt;NA&gt;   485.65   0.00   0.00
+#&gt; 49                                              &lt;NA&gt;  1595.40   0.00   0.00
+#&gt; 50                                              &lt;NA&gt;  2689.45   0.00   0.00
+#&gt;        pCls trdQnty   iVal    mktCap    yHigh     yLow  sumVal sumQnty finQnty
+#&gt; 1    191.85   10577  19.99  19477.24   296.75   132.50 3632.29  413159   10577
+#&gt; 2     84.20   32140  26.68  30718.53   173.45    50.00 3632.29  413159   32140
+#&gt; 3    206.25   28951  60.49  17548.16   296.50   120.05 3632.29  413159   28951
+#&gt; 4    884.80   16578 145.22 109298.80  1591.65   661.00 3632.29  413159   16578
+#&gt; 5    389.60   38462 148.46  87921.92   819.00   286.00 3632.29  413159   38462
+#&gt; 6   2396.00    6468 153.62  63432.47  4923.40  1783.00 3632.29  413159    6468
+#&gt; 7    575.85    2417  13.81  62506.56   623.50   375.25 3632.29  413159    2417
+#&gt; 8    341.95   36447 123.92 221323.07   552.20   268.30 3632.29  413159   36447
+#&gt; 9   5726.20    1902 108.32  76109.92  7758.70  4001.10 3632.29  413159    1902
+#&gt; 10  1615.35   28200 453.17 522246.83  1648.55   866.98 3632.29  413159   28200
+#&gt; 11   963.00    1245  11.93  40182.09  1389.95   720.90 3632.29  413159    1245
+#&gt; 12   217.80    5193  11.26  32353.00   300.50   159.40 3632.29  413159    5193
+#&gt; 13    95.40  111472 105.90  17091.91   201.70    63.50 3632.29  413159  111472
+#&gt; 14  2078.25    4694  97.18 148468.30  2614.30  1659.05 3632.29  413159    4694
+#&gt; 15   129.45   39277  50.67  27124.02   265.35   119.20 3632.29  413159   39277
+#&gt; 16   491.15   24913 121.95  29634.63  1596.55   235.55 3632.29  413159   24913
+#&gt; 17   172.95   77741 134.03  66371.00   373.80   149.45 3632.29  413159   77741
+#&gt; 18  1243.80    6537  81.06 166510.81  1740.00  1001.00 3632.29  413159    6537
+#&gt; 19   341.30    2285   7.78  26350.60   428.85   203.00 3632.29  413159    2285
+#&gt; 20  1794.65    8593 153.81 310288.49  2499.90  1473.45 3632.29  413159    8593
+#&gt; 21  3809.20     215   8.17  43976.98  4754.10  2910.00 3632.29  413159     215
+#&gt; 22   583.85    1561   9.10  23043.35   949.50   385.05 3632.29  413159    1561
+#&gt; 23  2047.80    1647  33.68 215155.74  2296.20  1506.05 3632.29  413159    1647
+#&gt; 24   497.60    4533  22.52  47633.17   675.30   245.40 3632.29  413159    4533
+#&gt; 25   364.60    3226  11.75  29263.65   549.00   252.00 3632.29  413159    3226
+#&gt; 26  2363.30    1617  38.17  30682.86  3022.90  1475.00 3632.29  413159    1617
+#&gt; 27   535.55    2960  15.84  33101.32   845.90   471.40 3632.29  413159    2960
+#&gt; 28    84.35   18850  15.89  21440.28   158.00    71.15 3632.29  413159   18850
+#&gt; 29 16796.85     360  60.44  23390.17 23450.00 12450.10 3632.29  413159     360
+#&gt; 30   165.00   28857  48.05  15055.57   405.20   114.00 3632.29  413159   28857
+#&gt; 31   159.50   13314  21.40  40887.49   216.25   122.15 3632.29  413159   13314
+#&gt; 32   102.10   14546  14.95  18596.76   180.00    60.20 3632.29  413159   14546
+#&gt; 33   703.65   22552 159.71 257721.77   847.00   509.25 3632.29  413159   22552
+#&gt; 34  3985.20    1530  61.35  48340.12  4190.00  2351.20 3632.29  413159    1530
+#&gt; 35   420.80   14166  59.90  23148.74   709.05   240.15 3632.29  413159   14166
+#&gt; 36  3401.45    1461  49.89  40079.10  3708.00  2100.00 3632.29  413159    1461
+#&gt; 37 21635.40     113  24.54  28882.99 25355.00 15410.00 3632.29  413159     113
+#&gt; 38    91.50   14327  13.15  44362.25   145.85    73.20 3632.29  413159   14327
+#&gt; 39   148.00   21655  32.15  21607.12   221.20    84.90 3632.29  413159   21655
+#&gt; 40    96.25   12682  12.24  17798.15   157.38    65.00 3632.29  413159   12682
+#&gt; 41   640.35    1873  12.02  32525.19   669.75   355.30 3632.29  413159    1873
+#&gt; 42   563.45   29784 168.06 126031.29   612.00   321.15 3632.29  413159   29784
+#&gt; 43 16198.15     145  23.52  57784.98 18369.95 11265.00 3632.29  413159     145
+#&gt; 44   979.25   44801 439.05 424081.52  1305.50   738.75 3632.29  413159   44801
+#&gt; 45   308.20   17080  52.64  23261.33   516.45   250.85 3632.29  413159   17080
+#&gt; 46  5036.95    1113  56.06  30459.53  9950.00  3985.30 3632.29  413159    1113
+#&gt; 47   181.20   41650  75.47 158142.01   282.90   134.60 3632.29  413159   41650
+#&gt; 48   485.65    4026  19.55  52435.67   512.70   312.00 3632.29  413159    4026
+#&gt; 49  1595.40    1744  27.82  71924.30  1916.70  1291.25 3632.29  413159    1744
+#&gt; 50  2689.45     594  15.98  35020.72  3315.15  1788.65 3632.29  413159     594
+#&gt;    sumfinQnty
+#&gt; 1      807074
+#&gt; 2      807074
+#&gt; 3      807074
+#&gt; 4      807074
+#&gt; 5      807074
+#&gt; 6      807074
+#&gt; 7      807074
+#&gt; 8      807074
+#&gt; 9      807074
+#&gt; 10     807074
+#&gt; 11     807074
+#&gt; 12     807074
+#&gt; 13     807074
+#&gt; 14     807074
+#&gt; 15     807074
+#&gt; 16     807074
+#&gt; 17     807074
+#&gt; 18     807074
+#&gt; 19     807074
+#&gt; 20     807074
+#&gt; 21     807074
+#&gt; 22     807074
+#&gt; 23     807074
+#&gt; 24     807074
+#&gt; 25     807074
+#&gt; 26     807074
+#&gt; 27     807074
+#&gt; 28     807074
+#&gt; 29     807074
+#&gt; 30     807074
+#&gt; 31     807074
+#&gt; 32     807074
+#&gt; 33     807074
+#&gt; 34     807074
+#&gt; 35     807074
+#&gt; 36     807074
+#&gt; 37     807074
+#&gt; 38     807074
+#&gt; 39     807074
+#&gt; 40     807074
+#&gt; 41     807074
+#&gt; 42     807074
+#&gt; 43     807074
+#&gt; 44     807074
+#&gt; 45     807074
+#&gt; 46     807074
+#&gt; 47     807074
+#&gt; 48     807074
+#&gt; 49     807074
+#&gt; 50     807074</div><div class='input'>
 <span class='co'># nifty bank</span>
-<span class='fu'>nse_preopen_nifty_bank</span>()</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 12 x 17</span><span>
-#&gt;    symbol series corp_action_date corp_action  price change percent_change
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>           </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>        </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>          </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> RBLBA~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>           335    -</span><span style='color: #BB0000;'>9</span><span>             -</span><span style='color: #BB0000;'>2.62</span><span>
-#&gt; </span><span style='color: #555555;'> 2</span><span> BANKB~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>            94    -</span><span style='color: #BB0000;'>2.15</span><span>          -</span><span style='color: #BB0000;'>2.24</span><span>
-#&gt; </span><span style='color: #555555;'> 3</span><span> SBIN   EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>           312.   -</span><span style='color: #BB0000;'>6.3</span><span>           -</span><span style='color: #BB0000;'>1.98</span><span>
-#&gt; </span><span style='color: #555555;'> 4</span><span> AXISB~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>           715.  -</span><span style='color: #BB0000;'>10.5</span><span>           -</span><span style='color: #BB0000;'>1.45</span><span>
-#&gt; </span><span style='color: #555555;'> 5</span><span> INDUS~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>          </span><span style='text-decoration: underline;'>1</span><span>441   -</span><span style='color: #BB0000;'>20.6</span><span>           -</span><span style='color: #BB0000;'>1.41</span><span>
-#&gt; </span><span style='color: #555555;'> 6</span><span> PNB    EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>            61    -</span><span style='color: #BB0000;'>0.85</span><span>          -</span><span style='color: #BB0000;'>1.37</span><span>
-#&gt; </span><span style='color: #555555;'> 7</span><span> ICICI~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>           516    -</span><span style='color: #BB0000;'>6.9</span><span>           -</span><span style='color: #BB0000;'>1.32</span><span>
-#&gt; </span><span style='color: #555555;'> 8</span><span> IDFCF~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>            43    -</span><span style='color: #BB0000;'>0.5</span><span>           -</span><span style='color: #BB0000;'>1.15</span><span>
-#&gt; </span><span style='color: #555555;'> 9</span><span> FEDER~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>            86.4  -</span><span style='color: #BB0000;'>0.95</span><span>          -</span><span style='color: #BB0000;'>1.09</span><span>
-#&gt; </span><span style='color: #555555;'>10</span><span> HDFCB~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>          </span><span style='text-decoration: underline;'>1</span><span>247.  -</span><span style='color: #BB0000;'>13.6</span><span>           -</span><span style='color: #BB0000;'>1.08</span><span>
-#&gt; </span><span style='color: #555555;'>11</span><span> YESBA~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>            46.2   1.2            2.66
-#&gt; </span><span style='color: #555555;'>12</span><span> KOTAK~ EQ     </span><span style='color: #BB0000;'>NA</span><span>               </span><span style='color: #BB0000;'>NA</span><span>          </span><span style='text-decoration: underline;'>1</span><span>655.  -</span><span style='color: #BB0000;'>16.2</span><span>           -</span><span style='color: #BB0000;'>0.97</span><span>
-#&gt; </span><span style='color: #555555;'># ... with 10 more variables: prev_close </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, quantity </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, value </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   mkt_cap </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, year_high </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, year_low </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, sum_val </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   sum_quantity </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, fin_quantity </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, sum_fin_quantity </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
+<span class='fu'>nse_preopen_nifty_bank</span>()</div><div class='output co'>#&gt;        symbol series corp_action_date                          corp_action
+#&gt; 1  FEDERALBNK     EQ             &lt;NA&gt;                                 &lt;NA&gt;
+#&gt; 2    AXISBANK     EQ             &lt;NA&gt;                                 &lt;NA&gt;
+#&gt; 3     RBLBANK     EQ       2020-03-23 INTERIM DIVIDEND - RS 1.50 PER SHARE
+#&gt; 4   ICICIBANK     EQ             &lt;NA&gt;                                 &lt;NA&gt;
+#&gt; 5  INDUSINDBK     EQ             &lt;NA&gt;                                 &lt;NA&gt;
+#&gt; 6        SBIN     EQ             &lt;NA&gt;                                 &lt;NA&gt;
+#&gt; 7   KOTAKBANK     EQ             &lt;NA&gt;                                 &lt;NA&gt;
+#&gt; 8  BANKBARODA     EQ             &lt;NA&gt;                                 &lt;NA&gt;
+#&gt; 9         PNB     EQ             &lt;NA&gt;                                 &lt;NA&gt;
+#&gt; 10 BANDHANBNK     EQ             &lt;NA&gt;                                 &lt;NA&gt;
+#&gt; 11 IDFCFIRSTB     EQ             &lt;NA&gt;                                 &lt;NA&gt;
+#&gt; 12   HDFCBANK     EQ             &lt;NA&gt;                                 &lt;NA&gt;
+#&gt;      price change percent_change prev_close quantity  value   mkt_cap year_high
+#&gt; 1    46.25  -0.45          -0.96      46.70    34005  15.73   9310.19    110.40
+#&gt; 2   386.00  -3.60          -0.92     389.60    38462 148.46  87921.92    819.00
+#&gt; 3   161.00  -1.35          -0.83     162.35    25355  40.82   7677.08    663.00
+#&gt; 4   340.00  -1.95          -0.57     341.95    36447 123.92 221323.07    552.20
+#&gt; 5   489.50  -1.65          -0.34     491.15    24913 121.95  29634.63   1596.55
+#&gt; 6   172.40  -0.55          -0.32     172.95    77741 134.03  66371.00    373.80
+#&gt; 7  1240.00  -3.80          -0.31    1243.80     6537  81.06 166510.81   1740.00
+#&gt; 8    44.80  -0.10          -0.22      44.90    17855   8.00   5394.05    132.85
+#&gt; 9    33.10  -0.05          -0.15      33.15    28628   9.48   3796.96     83.40
+#&gt; 10  263.00  -0.20          -0.08     263.20     9118  23.98  11019.05    650.00
+#&gt; 11   25.55   0.10           0.39      25.45    73524  18.79   5263.72     47.95
+#&gt; 12  980.00   0.75           0.08     979.25    44801 439.05 424081.52   1305.50
+#&gt;    year_low sum_val sum_quantity fin_quantity sum_fin_quantity
+#&gt; 1     35.70 1165.26       205313        34005           417386
+#&gt; 2    286.00 1165.26       205313        38462           417386
+#&gt; 3    101.55 1165.26       205313        25355           417386
+#&gt; 4    268.30 1165.26       205313        36447           417386
+#&gt; 5    235.55 1165.26       205313        24913           417386
+#&gt; 6    149.45 1165.26       205313        77741           417386
+#&gt; 7   1001.00 1165.26       205313         6537           417386
+#&gt; 8     36.00 1165.26       205313        17855           417386
+#&gt; 9     26.30 1165.26       205313        28628           417386
+#&gt; 10   152.20 1165.26       205313         9118           417386
+#&gt; 11    17.65 1165.26       205313        73524           417386
+#&gt; 12   738.75 1165.26       205313        44801           417386</div><div class='input'>
 <span class='co'># retain original column names as returned by NSE</span>
-<span class='fu'>nse_preopen_nifty_bank</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 12 x 17</span><span>
-#&gt;    symbol series xDt        caAct    iep    chn perChn   pCls trdQnty   iVal
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>   </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> RBLBA~ EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>     335    -</span><span style='color: #BB0000;'>9</span><span>     -</span><span style='color: #BB0000;'>2.62</span><span>  344     </span><span style='text-decoration: underline;'>10</span><span>557  35.4 
-#&gt; </span><span style='color: #555555;'> 2</span><span> BANKB~ EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>      94    -</span><span style='color: #BB0000;'>2.15</span><span>  -</span><span style='color: #BB0000;'>2.24</span><span>   96.2   </span><span style='text-decoration: underline;'>89</span><span>008  83.7 
-#&gt; </span><span style='color: #555555;'> 3</span><span> SBIN   EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>     312.   -</span><span style='color: #BB0000;'>6.3</span><span>   -</span><span style='color: #BB0000;'>1.98</span><span>  318.   </span><span style='text-decoration: underline;'>191</span><span>444 598.  
-#&gt; </span><span style='color: #555555;'> 4</span><span> AXISB~ EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>     715.  -</span><span style='color: #BB0000;'>10.5</span><span>   -</span><span style='color: #BB0000;'>1.45</span><span>  726.    </span><span style='text-decoration: underline;'>21</span><span>060 151.  
-#&gt; </span><span style='color: #555555;'> 5</span><span> INDUS~ EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>    </span><span style='text-decoration: underline;'>1</span><span>441   -</span><span style='color: #BB0000;'>20.6</span><span>   -</span><span style='color: #BB0000;'>1.41</span><span> </span><span style='text-decoration: underline;'>1</span><span>462.     </span><span style='text-decoration: underline;'>7</span><span>533 109.  
-#&gt; </span><span style='color: #555555;'> 6</span><span> PNB    EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>      61    -</span><span style='color: #BB0000;'>0.85</span><span>  -</span><span style='color: #BB0000;'>1.37</span><span>   61.8   </span><span style='text-decoration: underline;'>59</span><span>892  36.5 
-#&gt; </span><span style='color: #555555;'> 7</span><span> ICICI~ EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>     516    -</span><span style='color: #BB0000;'>6.9</span><span>   -</span><span style='color: #BB0000;'>1.32</span><span>  523.    </span><span style='text-decoration: underline;'>72</span><span>395 374.  
-#&gt; </span><span style='color: #555555;'> 8</span><span> IDFCF~ EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>      43    -</span><span style='color: #BB0000;'>0.5</span><span>   -</span><span style='color: #BB0000;'>1.15</span><span>   43.5   </span><span style='text-decoration: underline;'>57</span><span>043  24.5 
-#&gt; </span><span style='color: #555555;'> 9</span><span> FEDER~ EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>      86.4  -</span><span style='color: #BB0000;'>0.95</span><span>  -</span><span style='color: #BB0000;'>1.09</span><span>   87.4    </span><span style='text-decoration: underline;'>9</span><span>282   8.02
-#&gt; </span><span style='color: #555555;'>10</span><span> HDFCB~ EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>    </span><span style='text-decoration: underline;'>1</span><span>247.  -</span><span style='color: #BB0000;'>13.6</span><span>   -</span><span style='color: #BB0000;'>1.08</span><span> </span><span style='text-decoration: underline;'>1</span><span>261.    </span><span style='text-decoration: underline;'>27</span><span>486 343.  
-#&gt; </span><span style='color: #555555;'>11</span><span> YESBA~ EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>      46.2   1.2    2.66   45.0  </span><span style='text-decoration: underline;'>753</span><span>830 349.  
-#&gt; </span><span style='color: #555555;'>12</span><span> KOTAK~ EQ     </span><span style='color: #BB0000;'>NA</span><span>         </span><span style='color: #BB0000;'>NA</span><span>    </span><span style='text-decoration: underline;'>1</span><span>655.  -</span><span style='color: #BB0000;'>16.2</span><span>   -</span><span style='color: #BB0000;'>0.97</span><span> </span><span style='text-decoration: underline;'>1</span><span>671.     </span><span style='text-decoration: underline;'>4</span><span>373  72.4 
-#&gt; </span><span style='color: #555555;'># ... with 7 more variables: mktCap </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, yHigh </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, yLow </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   sumVal </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, sumQnty </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, finQnty </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, sumfinQnty </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'># }
+<span class='fu'>nse_preopen_nifty_bank</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt;        symbol series        xDt                                caAct     iep
+#&gt; 1  FEDERALBNK     EQ       &lt;NA&gt;                                 &lt;NA&gt;   46.25
+#&gt; 2    AXISBANK     EQ       &lt;NA&gt;                                 &lt;NA&gt;  386.00
+#&gt; 3     RBLBANK     EQ 2020-03-23 INTERIM DIVIDEND - RS 1.50 PER SHARE  161.00
+#&gt; 4   ICICIBANK     EQ       &lt;NA&gt;                                 &lt;NA&gt;  340.00
+#&gt; 5  INDUSINDBK     EQ       &lt;NA&gt;                                 &lt;NA&gt;  489.50
+#&gt; 6        SBIN     EQ       &lt;NA&gt;                                 &lt;NA&gt;  172.40
+#&gt; 7   KOTAKBANK     EQ       &lt;NA&gt;                                 &lt;NA&gt; 1240.00
+#&gt; 8  BANKBARODA     EQ       &lt;NA&gt;                                 &lt;NA&gt;   44.80
+#&gt; 9         PNB     EQ       &lt;NA&gt;                                 &lt;NA&gt;   33.10
+#&gt; 10 BANDHANBNK     EQ       &lt;NA&gt;                                 &lt;NA&gt;  263.00
+#&gt; 11 IDFCFIRSTB     EQ       &lt;NA&gt;                                 &lt;NA&gt;   25.55
+#&gt; 12   HDFCBANK     EQ       &lt;NA&gt;                                 &lt;NA&gt;  980.00
+#&gt;      chn perChn    pCls trdQnty   iVal    mktCap   yHigh    yLow  sumVal
+#&gt; 1  -0.45  -0.96   46.70   34005  15.73   9310.19  110.40   35.70 1165.26
+#&gt; 2  -3.60  -0.92  389.60   38462 148.46  87921.92  819.00  286.00 1165.26
+#&gt; 3  -1.35  -0.83  162.35   25355  40.82   7677.08  663.00  101.55 1165.26
+#&gt; 4  -1.95  -0.57  341.95   36447 123.92 221323.07  552.20  268.30 1165.26
+#&gt; 5  -1.65  -0.34  491.15   24913 121.95  29634.63 1596.55  235.55 1165.26
+#&gt; 6  -0.55  -0.32  172.95   77741 134.03  66371.00  373.80  149.45 1165.26
+#&gt; 7  -3.80  -0.31 1243.80    6537  81.06 166510.81 1740.00 1001.00 1165.26
+#&gt; 8  -0.10  -0.22   44.90   17855   8.00   5394.05  132.85   36.00 1165.26
+#&gt; 9  -0.05  -0.15   33.15   28628   9.48   3796.96   83.40   26.30 1165.26
+#&gt; 10 -0.20  -0.08  263.20    9118  23.98  11019.05  650.00  152.20 1165.26
+#&gt; 11  0.10   0.39   25.45   73524  18.79   5263.72   47.95   17.65 1165.26
+#&gt; 12  0.75   0.08  979.25   44801 439.05 424081.52 1305.50  738.75 1165.26
+#&gt;    sumQnty finQnty sumfinQnty
+#&gt; 1   205313   34005     417386
+#&gt; 2   205313   38462     417386
+#&gt; 3   205313   25355     417386
+#&gt; 4   205313   36447     417386
+#&gt; 5   205313   24913     417386
+#&gt; 6   205313   77741     417386
+#&gt; 7   205313    6537     417386
+#&gt; 8   205313   17855     417386
+#&gt; 9   205313   28628     417386
+#&gt; 10  205313    9118     417386
+#&gt; 11  205313   73524     417386
+#&gt; 12  205313   44801     417386</div><div class='input'># }
 
-</div></span></pre>
+</div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      <li><a href="#arguments">Arguments</a></li>
-      
-      <li><a href="#value">Value</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
@@ -252,7 +667,7 @@ descriptive and uses snake_case.</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

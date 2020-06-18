@@ -6,22 +6,22 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fetch Data from National Stock Exchange (India) • nse2r</title>
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
+<script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="pkgdown.js"></script><meta property="og:title" content="Fetch Data from National Stock Exchange (India)">
 <meta property="og:description" content="Fetch data related to stocks, index, futures &amp; options from the 
     NSE (National Stock Exchange, India). This package is community maintained 
     and is not officially supported by NSE. The accuracy of data is only as 
     correct as provided on &lt;https://www.nseindia.com&gt;.">
-<meta name="twitter:card" content="summary">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body>
+<body data-spy="scroll" data-target="#toc">
     <div class="container template-home">
       <header><div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container">
@@ -34,7 +34,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">nse2r</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2.9000</span>
       </span>
     </div>
 
@@ -85,7 +85,7 @@
 <p>Fetch data from the National Stock Exchange, India.</p>
 </blockquote>
 <!-- badges: start -->
-
+<p><a href="https://cran.r-project.org/package=nse2r"><img src="https://www.r-pkg.org/badges/version/nse2r" alt="CRAN_Status_Badge"></a> <a href="https://cran.r-project.org/web/checks/check_results_nse2r.html"><img src="https://cranchecks.info/badges/summary/nse2r" alt="cran checks"></a> <a href="https://travis-ci.org/rsquaredacademy/nse2r"><img src="https://travis-ci.org/rsquaredacademy/nse2r.svg?branch=master" alt="Travis-CI Build Status"></a> <a href="https://codecov.io/github/rsquaredacademy/nse2r?branch=master"><img src="https://img.shields.io/codecov/c/github/rsquaredacademy/nse2r/master.svg" alt="Coverage Status"></a> <a href="https://cran.r-project.org/package=nse2r"><img src="https://cranlogs.r-pkg.org/badges/grand-total/nse2r"></a> <a href="https://www.tidyverse.org/lifecycle/#maturing"><img src="https://img.shields.io/badge/lifecycle-maturing-blue.svg" alt="Lifecycle: maturing"></a> <a href="https://CRAN.R-project.org/package=nse2r"><img src="https://tinyverse.netlify.com/badge/nse2r" alt="status"></a> <!-- badges: end --></p>
 <div id="overview" class="section level2">
 <h2 class="hasAnchor">
 <a href="#overview" class="anchor"></a>Overview</h2>
@@ -128,8 +128,8 @@
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
 <p>You can install the development version of nse2r from <a href="https://github.com/rsquaredacademy/nse2r/">GitHub</a> with:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># install.packages("devtools")</span></a>
-<a class="sourceLine" id="cb1-2" title="2">devtools<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/devtools/man/remote-reexports.html">install_github</a></span>(<span class="st">"rsquaredacademy/nse2r"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="r"><span class="co"># install.packages("devtools")</span>
+<span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span>(<span class="st">"rsquaredacademy/nse2r"</span>)</pre></div>
 </div>
 <div id="usage" class="section level2">
 <h2 class="hasAnchor">
@@ -168,299 +168,1242 @@
 <div id="fetch-indices-quote" class="section level5">
 <h5 class="hasAnchor">
 <a href="#fetch-indices-quote" class="anchor"></a>Fetch Indices Quote</h5>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw"><a href="reference/nse_index_quote.html">nse_index_quote</a></span>()</a>
-<a class="sourceLine" id="cb2-2" title="2"><span class="co">#&gt; # A tibble: 55 x 4</span></a>
-<a class="sourceLine" id="cb2-3" title="3"><span class="co">#&gt;    index_name        last_traded_price change percent_change</span></a>
-<a class="sourceLine" id="cb2-4" title="4"><span class="co">#&gt;    &lt;chr&gt;                         &lt;dbl&gt;  &lt;dbl&gt;          &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb2-5" title="5"><span class="co">#&gt;  1 NIFTY 50 Pre Open           12202.   33.7            0.28</span></a>
-<a class="sourceLine" id="cb2-6" title="6"><span class="co">#&gt;  2 NIFTY 50                    12178.    9.4            0.08</span></a>
-<a class="sourceLine" id="cb2-7" title="7"><span class="co">#&gt;  3 NIFTY NEXT 50               28292.  -16.0           -0.06</span></a>
-<a class="sourceLine" id="cb2-8" title="8"><span class="co">#&gt;  4 NIFTY100 LIQ 15              3832.  -11.7           -0.3 </span></a>
-<a class="sourceLine" id="cb2-9" title="9"><span class="co">#&gt;  5 NIFTY BANK                  32091.  -70.4           -0.22</span></a>
-<a class="sourceLine" id="cb2-10" title="10"><span class="co">#&gt;  6 INDIA VIX                      11.7   0             -0.02</span></a>
-<a class="sourceLine" id="cb2-11" title="11"><span class="co">#&gt;  7 NIFTY 100                   12275.    7.15           0.06</span></a>
-<a class="sourceLine" id="cb2-12" title="12"><span class="co">#&gt;  8 NIFTY 500                    9886.   13.2            0.13</span></a>
-<a class="sourceLine" id="cb2-13" title="13"><span class="co">#&gt;  9 NIFTY MIDCAP 100            17147.   44.3            0.26</span></a>
-<a class="sourceLine" id="cb2-14" title="14"><span class="co">#&gt; 10 NIFTY MIDCAP 50              4711.    9.7            0.21</span></a>
-<a class="sourceLine" id="cb2-15" title="15"><span class="co">#&gt; # ... with 45 more rows</span></a>
-<a class="sourceLine" id="cb2-16" title="16"></a>
-<a class="sourceLine" id="cb2-17" title="17"><span class="co"># retain original column names as returned by NSE</span></a>
-<a class="sourceLine" id="cb2-18" title="18"><span class="kw"><a href="reference/nse_index_quote.html">nse_index_quote</a></span>(<span class="dt">clean_names =</span> <span class="ot">FALSE</span>)</a>
-<a class="sourceLine" id="cb2-19" title="19"><span class="co">#&gt; # A tibble: 55 x 4</span></a>
-<a class="sourceLine" id="cb2-20" title="20"><span class="co">#&gt;    name              lastPrice change pChange</span></a>
-<a class="sourceLine" id="cb2-21" title="21"><span class="co">#&gt;    &lt;chr&gt;                 &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb2-22" title="22"><span class="co">#&gt;  1 NIFTY 50 Pre Open   12202.   33.7     0.28</span></a>
-<a class="sourceLine" id="cb2-23" title="23"><span class="co">#&gt;  2 NIFTY 50            12178.    9.4     0.08</span></a>
-<a class="sourceLine" id="cb2-24" title="24"><span class="co">#&gt;  3 NIFTY NEXT 50       28292.  -16.0    -0.06</span></a>
-<a class="sourceLine" id="cb2-25" title="25"><span class="co">#&gt;  4 NIFTY100 LIQ 15      3832.  -11.7    -0.3 </span></a>
-<a class="sourceLine" id="cb2-26" title="26"><span class="co">#&gt;  5 NIFTY BANK          32091.  -70.4    -0.22</span></a>
-<a class="sourceLine" id="cb2-27" title="27"><span class="co">#&gt;  6 INDIA VIX              11.7   0      -0.02</span></a>
-<a class="sourceLine" id="cb2-28" title="28"><span class="co">#&gt;  7 NIFTY 100           12275.    7.15    0.06</span></a>
-<a class="sourceLine" id="cb2-29" title="29"><span class="co">#&gt;  8 NIFTY 500            9886.   13.2     0.13</span></a>
-<a class="sourceLine" id="cb2-30" title="30"><span class="co">#&gt;  9 NIFTY MIDCAP 100    17147.   44.3     0.26</span></a>
-<a class="sourceLine" id="cb2-31" title="31"><span class="co">#&gt; 10 NIFTY MIDCAP 50      4711.    9.7     0.21</span></a>
-<a class="sourceLine" id="cb2-32" title="32"><span class="co">#&gt; # ... with 45 more rows</span></a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="r"><span class="fu"><a href="reference/nse_index_quote.html">nse_index_quote</a></span>()
+<span class="co">#&gt;           index_name last_traded_price change percent_change</span>
+<span class="co">#&gt; 1  NIFTY 50 Pre Open          9863.250 -17.90          -0.18</span>
+<span class="co">#&gt; 2           NIFTY 50         10091.650 210.50           2.13</span>
+<span class="co">#&gt; 3      NIFTY NEXT 50         24953.650  69.85           0.28</span>
+<span class="co">#&gt; 4    NIFTY100 LIQ 15          2536.350  42.25           1.69</span>
+<span class="co">#&gt; 5         NIFTY BANK         20956.300 754.55           3.74</span>
+<span class="co">#&gt; 6          INDIA VIX            31.455  -1.90          -5.70</span>
+<span class="co">#&gt; 7          NIFTY 100         10258.150 188.40           1.87</span>
+<span class="co">#&gt; 8          NIFTY 500          8283.650 143.20           1.76</span>
+<span class="co">#&gt; 9   NIFTY MIDCAP 100         14427.550 180.75           1.27</span>
+<span class="co">#&gt; 10   NIFTY MIDCAP 50          4035.600  51.05           1.28</span>
+<span class="co">#&gt; 11       NIFTY INFRA          2957.600  38.35           1.31</span>
+<span class="co">#&gt; 12      NIFTY REALTY           200.150   1.80           0.91</span>
+<span class="co">#&gt; 13      NIFTY ENERGY         14023.450 280.50           2.04</span>
+<span class="co">#&gt; 14        NIFTY FMCG         28648.700 216.95           0.76</span>
+<span class="co">#&gt; 15         NIFTY MNC         12761.600  46.00           0.36</span>
+<span class="co">#&gt; 16      NIFTY PHARMA          9975.300  -1.90          -0.02</span>
+<span class="co">#&gt; 17         NIFTY PSE          2456.050  55.75           2.32</span>
+<span class="co">#&gt; 18    NIFTY PSU BANK          1387.500  34.50           2.55</span>
+<span class="co">#&gt; 19 NIFTY SERV SECTOR         13430.400 342.75           2.62</span>
+<span class="co">#&gt; 20          NIFTY IT         14551.250  72.80           0.50</span>
+<span class="co">#&gt; 21  NIFTY SMLCAP 100          4493.200  66.25           1.50</span>
+<span class="co">#&gt; 22         NIFTY 200          5235.450  92.90           1.81</span>
+<span class="co">#&gt; 23        NIFTY AUTO          6535.900  32.40           0.50</span>
+<span class="co">#&gt; 24       NIFTY MEDIA          1360.650  23.20           1.73</span>
+<span class="co">#&gt; 25       NIFTY METAL          1998.650  58.20           3.00</span>
+<span class="co">#&gt; 26 NIFTY DIV OPPS 50          2178.650  30.40           1.42</span>
+<span class="co">#&gt; 27 NIFTY COMMODITIES          2833.900  45.60           1.64</span>
+<span class="co">#&gt; 28 NIFTY CONSUMPTION          4628.250  22.40           0.49</span>
+<span class="co">#&gt; 29        NIFTY CPSE          1425.900  31.65           2.27</span>
+<span class="co">#&gt; 30 NIFTY FIN SERVICE         10372.000 364.90           3.65</span>
+<span class="co">#&gt; 31 NIFTY GROWSECT 15          5058.600 125.20           2.54</span>
+<span class="co">#&gt; 32  NIFTY50 VALUE 20          4860.150  53.40           1.11</span>
+<span class="co">#&gt; 33 NIFTY50 TR 2X LEV          4279.300 174.55           4.25</span>
+<span class="co">#&gt; 34 NIFTY50 PR 2X LEV          3260.900 133.05           4.25</span>
+<span class="co">#&gt; 35 NIFTY50 TR 1X INV           379.200  -8.20          -2.12</span>
+<span class="co">#&gt; 36 NIFTY50 PR 1X INV           434.100  -9.40          -2.12</span>
+<span class="co">#&gt; 37    NIFTY ALPHA 50         13321.650 245.50           1.88</span>
+<span class="co">#&gt; 38   NIFTY50 EQL WGT         10447.400 165.75           1.61</span>
+<span class="co">#&gt; 39  NIFTY100 EQL WGT         11519.200 109.00           0.96</span>
+<span class="co">#&gt; 40 NIFTY100 LOWVOL30          8103.450  80.10           1.00</span>
+<span class="co">#&gt; 41  NIFTY MID LIQ 15          3331.450  -7.05          -0.21</span>
+<span class="co">#&gt; 42    NIFTY PVT BANK         11513.750 399.20           3.59</span>
+<span class="co">#&gt; 43 NIFTY100 QUALTY30          2367.450  20.20           0.86</span>
+<span class="co">#&gt; 44   NIFTY GS 8 13YR          2180.800   5.52           0.25</span>
+<span class="co">#&gt; 45     NIFTY GS 10YR          1990.360   2.30           0.12</span>
+<span class="co">#&gt; 46 NIFTY GS 10YR CLN           977.400   0.98           0.10</span>
+<span class="co">#&gt; 47    NIFTY GS 4 8YR          2315.760   4.86           0.21</span>
+<span class="co">#&gt; 48  NIFTY GS 11 15YR          2350.150   6.88           0.29</span>
+<span class="co">#&gt; 49 NIFTY GS 15YRPLUS          2567.040   0.86           0.03</span>
+<span class="co">#&gt; 50 NIFTY GS COMPSITE          2221.260   5.14           0.23</span>
+<span class="co">#&gt; 51  NIFTY MIDCAP 150          5483.800  65.75           1.21</span>
+<span class="co">#&gt; 52   NIFTY SMLCAP 50          2108.250  32.05           1.54</span>
+<span class="co">#&gt; 53  NIFTY SMLCAP 250          3959.900  55.10           1.41</span>
+<span class="co">#&gt; 54  NIFTY MIDSML 400          4935.150  61.95           1.27</span>
+<span class="co">#&gt; 55 NIFTY200 QUALTY30          8949.450  31.25           0.35</span>
+
+<span class="co"># retain original column names as returned by NSE</span>
+<span class="fu"><a href="reference/nse_index_quote.html">nse_index_quote</a></span>(<span class="kw">clean_names</span> <span class="kw">=</span> <span class="fl">FALSE</span>)
+<span class="co">#&gt;              skipped lastPrice change pChange</span>
+<span class="co">#&gt; 1  NIFTY 50 Pre Open  9863.250 -17.90   -0.18</span>
+<span class="co">#&gt; 2           NIFTY 50 10091.650 210.50    2.13</span>
+<span class="co">#&gt; 3      NIFTY NEXT 50 24953.650  69.85    0.28</span>
+<span class="co">#&gt; 4    NIFTY100 LIQ 15  2536.350  42.25    1.69</span>
+<span class="co">#&gt; 5         NIFTY BANK 20956.300 754.55    3.74</span>
+<span class="co">#&gt; 6          INDIA VIX    31.455  -1.90   -5.70</span>
+<span class="co">#&gt; 7          NIFTY 100 10258.150 188.40    1.87</span>
+<span class="co">#&gt; 8          NIFTY 500  8283.650 143.20    1.76</span>
+<span class="co">#&gt; 9   NIFTY MIDCAP 100 14427.550 180.75    1.27</span>
+<span class="co">#&gt; 10   NIFTY MIDCAP 50  4035.600  51.05    1.28</span>
+<span class="co">#&gt; 11       NIFTY INFRA  2957.600  38.35    1.31</span>
+<span class="co">#&gt; 12      NIFTY REALTY   200.150   1.80    0.91</span>
+<span class="co">#&gt; 13      NIFTY ENERGY 14023.450 280.50    2.04</span>
+<span class="co">#&gt; 14        NIFTY FMCG 28648.700 216.95    0.76</span>
+<span class="co">#&gt; 15         NIFTY MNC 12761.600  46.00    0.36</span>
+<span class="co">#&gt; 16      NIFTY PHARMA  9975.300  -1.90   -0.02</span>
+<span class="co">#&gt; 17         NIFTY PSE  2456.050  55.75    2.32</span>
+<span class="co">#&gt; 18    NIFTY PSU BANK  1387.500  34.50    2.55</span>
+<span class="co">#&gt; 19 NIFTY SERV SECTOR 13430.400 342.75    2.62</span>
+<span class="co">#&gt; 20          NIFTY IT 14551.250  72.80    0.50</span>
+<span class="co">#&gt; 21  NIFTY SMLCAP 100  4493.200  66.25    1.50</span>
+<span class="co">#&gt; 22         NIFTY 200  5235.450  92.90    1.81</span>
+<span class="co">#&gt; 23        NIFTY AUTO  6535.900  32.40    0.50</span>
+<span class="co">#&gt; 24       NIFTY MEDIA  1360.650  23.20    1.73</span>
+<span class="co">#&gt; 25       NIFTY METAL  1998.650  58.20    3.00</span>
+<span class="co">#&gt; 26 NIFTY DIV OPPS 50  2178.650  30.40    1.42</span>
+<span class="co">#&gt; 27 NIFTY COMMODITIES  2833.900  45.60    1.64</span>
+<span class="co">#&gt; 28 NIFTY CONSUMPTION  4628.250  22.40    0.49</span>
+<span class="co">#&gt; 29        NIFTY CPSE  1425.900  31.65    2.27</span>
+<span class="co">#&gt; 30 NIFTY FIN SERVICE 10372.000 364.90    3.65</span>
+<span class="co">#&gt; 31 NIFTY GROWSECT 15  5058.600 125.20    2.54</span>
+<span class="co">#&gt; 32  NIFTY50 VALUE 20  4860.150  53.40    1.11</span>
+<span class="co">#&gt; 33 NIFTY50 TR 2X LEV  4279.300 174.55    4.25</span>
+<span class="co">#&gt; 34 NIFTY50 PR 2X LEV  3260.900 133.05    4.25</span>
+<span class="co">#&gt; 35 NIFTY50 TR 1X INV   379.200  -8.20   -2.12</span>
+<span class="co">#&gt; 36 NIFTY50 PR 1X INV   434.100  -9.40   -2.12</span>
+<span class="co">#&gt; 37    NIFTY ALPHA 50 13321.650 245.50    1.88</span>
+<span class="co">#&gt; 38   NIFTY50 EQL WGT 10447.400 165.75    1.61</span>
+<span class="co">#&gt; 39  NIFTY100 EQL WGT 11519.200 109.00    0.96</span>
+<span class="co">#&gt; 40 NIFTY100 LOWVOL30  8103.450  80.10    1.00</span>
+<span class="co">#&gt; 41  NIFTY MID LIQ 15  3331.450  -7.05   -0.21</span>
+<span class="co">#&gt; 42    NIFTY PVT BANK 11513.750 399.20    3.59</span>
+<span class="co">#&gt; 43 NIFTY100 QUALTY30  2367.450  20.20    0.86</span>
+<span class="co">#&gt; 44   NIFTY GS 8 13YR  2180.800   5.52    0.25</span>
+<span class="co">#&gt; 45     NIFTY GS 10YR  1990.360   2.30    0.12</span>
+<span class="co">#&gt; 46 NIFTY GS 10YR CLN   977.400   0.98    0.10</span>
+<span class="co">#&gt; 47    NIFTY GS 4 8YR  2315.760   4.86    0.21</span>
+<span class="co">#&gt; 48  NIFTY GS 11 15YR  2350.150   6.88    0.29</span>
+<span class="co">#&gt; 49 NIFTY GS 15YRPLUS  2567.040   0.86    0.03</span>
+<span class="co">#&gt; 50 NIFTY GS COMPSITE  2221.260   5.14    0.23</span>
+<span class="co">#&gt; 51  NIFTY MIDCAP 150  5483.800  65.75    1.21</span>
+<span class="co">#&gt; 52   NIFTY SMLCAP 50  2108.250  32.05    1.54</span>
+<span class="co">#&gt; 53  NIFTY SMLCAP 250  3959.900  55.10    1.41</span>
+<span class="co">#&gt; 54  NIFTY MIDSML 400  4935.150  61.95    1.27</span>
+<span class="co">#&gt; 55 NIFTY200 QUALTY30  8949.450  31.25    0.35</span></pre></div>
 </div>
 </div>
 <div id="stock" class="section level3">
 <h3 class="hasAnchor">
 <a href="#stock" class="anchor"></a>Stock</h3>
-<div id="top-gainers-for-the-last-trading-session" class="section level5">
+<div id="top-gainers-for-the-last-trading-session-" class="section level5">
 <h5 class="hasAnchor">
-<a href="#top-gainers-for-the-last-trading-session" class="anchor"></a>Top gainers for the last trading session.</h5>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw"><a href="reference/nse_stock_top_base.html">nse_stock_top_gainers</a></span>()</a>
-<a class="sourceLine" id="cb3-2" title="2"><span class="co">#&gt; # A tibble: 10 x 12</span></a>
-<a class="sourceLine" id="cb3-3" title="3"><span class="co">#&gt;    symbol series last_corp_annou~ last_corp_annou~ open_price high_price</span></a>
-<a class="sourceLine" id="cb3-4" title="4"><span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt;  &lt;date&gt;           &lt;chr&gt;                 &lt;dbl&gt;      &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb3-5" title="5"><span class="co">#&gt;  1 ADANI~ EQ     2019-07-26       Annual General ~       368        379.</span></a>
-<a class="sourceLine" id="cb3-6" title="6"><span class="co">#&gt;  2 POWER~ EQ     2019-08-19       Annual General ~       191.       194 </span></a>
-<a class="sourceLine" id="cb3-7" title="7"><span class="co">#&gt;  3 NTPC   EQ     2019-08-13       Dividend - Rs 2~       119.       121.</span></a>
-<a class="sourceLine" id="cb3-8" title="8"><span class="co">#&gt;  4 VEDL   EQ     2019-07-04       Annual General ~       153.       155.</span></a>
-<a class="sourceLine" id="cb3-9" title="9"><span class="co">#&gt;  5 M&amp;M    EQ     2019-07-18       Annual General ~       533.       538.</span></a>
-<a class="sourceLine" id="cb3-10" title="10"><span class="co">#&gt;  6 WIPRO  EQ     2019-06-20       Buyback                246.       249.</span></a>
-<a class="sourceLine" id="cb3-11" title="11"><span class="co">#&gt;  7 ASIAN~ EQ     2019-10-30       Interim Dividen~      1790.      1803.</span></a>
-<a class="sourceLine" id="cb3-12" title="12"><span class="co">#&gt;  8 LT     EQ     2019-07-24       Annual General ~      1308.      1319.</span></a>
-<a class="sourceLine" id="cb3-13" title="13"><span class="co">#&gt;  9 INFRA~ EQ     2019-12-19       Interim Dividen~       254        258.</span></a>
-<a class="sourceLine" id="cb3-14" title="14"><span class="co">#&gt; 10 HDFC   EQ     2019-07-19       Annual General ~      2418       2434.</span></a>
-<a class="sourceLine" id="cb3-15" title="15"><span class="co">#&gt; # ... with 6 more variables: low_price &lt;dbl&gt;, last_traded_price &lt;dbl&gt;,</span></a>
-<a class="sourceLine" id="cb3-16" title="16"><span class="co">#&gt; #   prev_close_price &lt;dbl&gt;, percent_change &lt;dbl&gt;, traded_quantity &lt;dbl&gt;,</span></a>
-<a class="sourceLine" id="cb3-17" title="17"><span class="co">#&gt; #   turnover_in_lakhs &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb3-18" title="18"></a>
-<a class="sourceLine" id="cb3-19" title="19"><span class="co"># retain original column names as returned by NSE</span></a>
-<a class="sourceLine" id="cb3-20" title="20"><span class="kw"><a href="reference/nse_stock_top_base.html">nse_stock_top_gainers</a></span>(<span class="dt">clean_names =</span> <span class="ot">FALSE</span>)</a>
-<a class="sourceLine" id="cb3-21" title="21"><span class="co">#&gt; # A tibble: 10 x 12</span></a>
-<a class="sourceLine" id="cb3-22" title="22"><span class="co">#&gt;    symbol series lastCorpAnnounc~ lastCorpAnnounc~ openPrice highPrice</span></a>
-<a class="sourceLine" id="cb3-23" title="23"><span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt;  &lt;date&gt;           &lt;chr&gt;                &lt;dbl&gt;     &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb3-24" title="24"><span class="co">#&gt;  1 ADANI~ EQ     2019-07-26       Annual General ~      368       379.</span></a>
-<a class="sourceLine" id="cb3-25" title="25"><span class="co">#&gt;  2 POWER~ EQ     2019-08-19       Annual General ~      191.      194 </span></a>
-<a class="sourceLine" id="cb3-26" title="26"><span class="co">#&gt;  3 NTPC   EQ     2019-08-13       Dividend - Rs 2~      119.      121.</span></a>
-<a class="sourceLine" id="cb3-27" title="27"><span class="co">#&gt;  4 VEDL   EQ     2019-07-04       Annual General ~      153.      155.</span></a>
-<a class="sourceLine" id="cb3-28" title="28"><span class="co">#&gt;  5 M&amp;M    EQ     2019-07-18       Annual General ~      533.      538.</span></a>
-<a class="sourceLine" id="cb3-29" title="29"><span class="co">#&gt;  6 WIPRO  EQ     2019-06-20       Buyback               246.      249.</span></a>
-<a class="sourceLine" id="cb3-30" title="30"><span class="co">#&gt;  7 ASIAN~ EQ     2019-10-30       Interim Dividen~     1790.     1803.</span></a>
-<a class="sourceLine" id="cb3-31" title="31"><span class="co">#&gt;  8 LT     EQ     2019-07-24       Annual General ~     1308.     1319.</span></a>
-<a class="sourceLine" id="cb3-32" title="32"><span class="co">#&gt;  9 INFRA~ EQ     2019-12-19       Interim Dividen~      254       258.</span></a>
-<a class="sourceLine" id="cb3-33" title="33"><span class="co">#&gt; 10 HDFC   EQ     2019-07-19       Annual General ~     2418      2434.</span></a>
-<a class="sourceLine" id="cb3-34" title="34"><span class="co">#&gt; # ... with 6 more variables: lowPrice &lt;dbl&gt;, ltp &lt;dbl&gt;,</span></a>
-<a class="sourceLine" id="cb3-35" title="35"><span class="co">#&gt; #   previousPrice &lt;dbl&gt;, netPrice &lt;dbl&gt;, tradedQuantity &lt;dbl&gt;,</span></a>
-<a class="sourceLine" id="cb3-36" title="36"><span class="co">#&gt; #   turnoverInLakhs &lt;dbl&gt;</span></a></code></pre></div>
+<a href="#top-gainers-for-the-last-trading-session-" class="anchor"></a>Top gainers for the last trading session.</h5>
+<div class="sourceCode" id="cb3"><pre class="r"><span class="fu"><a href="reference/nse_stock_top_base.html">nse_stock_top_gainers</a></span>()
+<span class="co">#&gt;        symbol series last_corp_announcement_date</span>
+<span class="co">#&gt; 1  BAJAJFINSV     EQ                  2020-03-03</span>
+<span class="co">#&gt; 2   COALINDIA     EQ                  2020-03-19</span>
+<span class="co">#&gt; 3  BAJFINANCE     EQ                  2020-03-03</span>
+<span class="co">#&gt; 4        ZEEL     EQ                  2019-07-15</span>
+<span class="co">#&gt; 5        VEDL     EQ                  2020-03-05</span>
+<span class="co">#&gt; 6   KOTAKBANK     EQ                  2019-07-12</span>
+<span class="co">#&gt; 7        SBIN     EQ                  2018-06-15</span>
+<span class="co">#&gt; 8    HDFCBANK     EQ                  2019-09-19</span>
+<span class="co">#&gt; 9   POWERGRID     EQ                  2020-03-16</span>
+<span class="co">#&gt; 10   AXISBANK     EQ                  2019-07-04</span>
+<span class="co">#&gt;                                                     last_corp_announcement</span>
+<span class="co">#&gt; 1                                        Interim Dividend - Rs 5 Per Share</span>
+<span class="co">#&gt; 2                                       Interim Dividend - Rs 12 Per Share</span>
+<span class="co">#&gt; 3                                       Interim Dividend - Rs 10 Per Share</span>
+<span class="co">#&gt; 4                     Annual General Meeting/ Dividend - Rs 3.50 Per Share</span>
+<span class="co">#&gt; 5                                      Interim Dividend - Rs 3.9 Per Share</span>
+<span class="co">#&gt; 6                        Annual General Meeting/Dividend Rs 0.80 Per Share</span>
+<span class="co">#&gt; 7           Annual General Meeting/ Change In Registrar And Transfer Agent</span>
+<span class="co">#&gt; 8  Face Value Split (Sub-Division) - From Rs 2 Per Share To Rs 1 Per Share</span>
+<span class="co">#&gt; 9                                     Interim Dividend - Rs 5.96 Per Share</span>
+<span class="co">#&gt; 10                       Annual General Meeting/ Dividend - Re 1 Per Share</span>
+<span class="co">#&gt;    open_price high_price low_price last_traded_price prev_close_price</span>
+<span class="co">#&gt; 1     5036.95    5499.00   5021.55           5450.75          5036.95</span>
+<span class="co">#&gt; 2      129.00     139.70    128.15            137.65           129.45</span>
+<span class="co">#&gt; 3     2375.00    2541.70   2373.00           2527.20          2396.00</span>
+<span class="co">#&gt; 4      166.50     175.45    165.50            173.95           165.00</span>
+<span class="co">#&gt; 5      102.80     107.80    102.00            106.90           102.10</span>
+<span class="co">#&gt; 6     1240.00    1309.90   1228.35           1299.95          1243.80</span>
+<span class="co">#&gt; 7      172.40     180.65    171.10            180.00           172.95</span>
+<span class="co">#&gt; 8      980.00    1024.90    972.00           1017.60           979.25</span>
+<span class="co">#&gt; 9      160.70     166.30    159.50            165.70           159.50</span>
+<span class="co">#&gt; 10     386.00     408.05    384.00            404.75           389.60</span>
+<span class="co">#&gt;    percent_change traded_quantity turnover_in_lakhs</span>
+<span class="co">#&gt; 1            8.22         1806208          95403.73</span>
+<span class="co">#&gt; 2            6.33        34587382          47031.92</span>
+<span class="co">#&gt; 3            5.48        12738830         315647.83</span>
+<span class="co">#&gt; 4            5.42        37917230          65103.88</span>
+<span class="co">#&gt; 5            4.70        27586795          29197.86</span>
+<span class="co">#&gt; 6            4.51         6672822          84453.24</span>
+<span class="co">#&gt; 7            4.08        58262367         102757.34</span>
+<span class="co">#&gt; 8            3.92        20435469         204078.81</span>
+<span class="co">#&gt; 9            3.89        11093113          18153.88</span>
+<span class="co">#&gt; 10           3.89        43774453         173556.95</span>
+
+<span class="co"># retain original column names as returned by NSE</span>
+<span class="fu"><a href="reference/nse_stock_top_base.html">nse_stock_top_gainers</a></span>(<span class="kw">clean_names</span> <span class="kw">=</span> <span class="fl">FALSE</span>)
+<span class="co">#&gt;        symbol series lastCorpAnnouncementDate</span>
+<span class="co">#&gt; 1  BAJAJFINSV     EQ               2020-03-03</span>
+<span class="co">#&gt; 2   COALINDIA     EQ               2020-03-19</span>
+<span class="co">#&gt; 3  BAJFINANCE     EQ               2020-03-03</span>
+<span class="co">#&gt; 4        ZEEL     EQ               2019-07-15</span>
+<span class="co">#&gt; 5        VEDL     EQ               2020-03-05</span>
+<span class="co">#&gt; 6   KOTAKBANK     EQ               2019-07-12</span>
+<span class="co">#&gt; 7        SBIN     EQ               2018-06-15</span>
+<span class="co">#&gt; 8    HDFCBANK     EQ               2019-09-19</span>
+<span class="co">#&gt; 9   POWERGRID     EQ               2020-03-16</span>
+<span class="co">#&gt; 10   AXISBANK     EQ               2019-07-04</span>
+<span class="co">#&gt;                                                       lastCorpAnnouncement</span>
+<span class="co">#&gt; 1                                        Interim Dividend - Rs 5 Per Share</span>
+<span class="co">#&gt; 2                                       Interim Dividend - Rs 12 Per Share</span>
+<span class="co">#&gt; 3                                       Interim Dividend - Rs 10 Per Share</span>
+<span class="co">#&gt; 4                     Annual General Meeting/ Dividend - Rs 3.50 Per Share</span>
+<span class="co">#&gt; 5                                      Interim Dividend - Rs 3.9 Per Share</span>
+<span class="co">#&gt; 6                        Annual General Meeting/Dividend Rs 0.80 Per Share</span>
+<span class="co">#&gt; 7           Annual General Meeting/ Change In Registrar And Transfer Agent</span>
+<span class="co">#&gt; 8  Face Value Split (Sub-Division) - From Rs 2 Per Share To Rs 1 Per Share</span>
+<span class="co">#&gt; 9                                     Interim Dividend - Rs 5.96 Per Share</span>
+<span class="co">#&gt; 10                       Annual General Meeting/ Dividend - Re 1 Per Share</span>
+<span class="co">#&gt;    openPrice highPrice lowPrice     ltp previousPrice netPrice tradedQuantity</span>
+<span class="co">#&gt; 1    5036.95   5499.00  5021.55 5450.75       5036.95     8.22        1806208</span>
+<span class="co">#&gt; 2     129.00    139.70   128.15  137.65        129.45     6.33       34587382</span>
+<span class="co">#&gt; 3    2375.00   2541.70  2373.00 2527.20       2396.00     5.48       12738830</span>
+<span class="co">#&gt; 4     166.50    175.45   165.50  173.95        165.00     5.42       37917230</span>
+<span class="co">#&gt; 5     102.80    107.80   102.00  106.90        102.10     4.70       27586795</span>
+<span class="co">#&gt; 6    1240.00   1309.90  1228.35 1299.95       1243.80     4.51        6672822</span>
+<span class="co">#&gt; 7     172.40    180.65   171.10  180.00        172.95     4.08       58262367</span>
+<span class="co">#&gt; 8     980.00   1024.90   972.00 1017.60        979.25     3.92       20435469</span>
+<span class="co">#&gt; 9     160.70    166.30   159.50  165.70        159.50     3.89       11093113</span>
+<span class="co">#&gt; 10    386.00    408.05   384.00  404.75        389.60     3.89       43774453</span>
+<span class="co">#&gt;    turnoverInLakhs</span>
+<span class="co">#&gt; 1         95403.73</span>
+<span class="co">#&gt; 2         47031.92</span>
+<span class="co">#&gt; 3        315647.83</span>
+<span class="co">#&gt; 4         65103.88</span>
+<span class="co">#&gt; 5         29197.86</span>
+<span class="co">#&gt; 6         84453.24</span>
+<span class="co">#&gt; 7        102757.34</span>
+<span class="co">#&gt; 8        204078.81</span>
+<span class="co">#&gt; 9         18153.88</span>
+<span class="co">#&gt; 10       173556.95</span></pre></div>
 </div>
 <div id="stocks-that-have-touched-their-52-week-highs-during-the-day" class="section level5">
 <h5 class="hasAnchor">
 <a href="#stocks-that-have-touched-their-52-week-highs-during-the-day" class="anchor"></a>Stocks that have touched their 52 week highs during the day</h5>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1"><span class="kw"><a href="reference/nse_stock_high_low.html">nse_stock_year_high</a></span>()</a>
-<a class="sourceLine" id="cb4-2" title="2"><span class="co">#&gt; # A tibble: 35 x 10</span></a>
-<a class="sourceLine" id="cb4-3" title="3"><span class="co">#&gt;    symbol symbol_desc date       new_high   year last_traded_pri~ prev_high</span></a>
-<a class="sourceLine" id="cb4-4" title="4"><span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt;       &lt;date&gt;        &lt;dbl&gt;  &lt;dbl&gt;            &lt;dbl&gt;     &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb4-5" title="5"><span class="co">#&gt;  1 ADANI~ Adani Gree~ 2019-12-31    175.   175.             174.      166. </span></a>
-<a class="sourceLine" id="cb4-6" title="6"><span class="co">#&gt;  2 AKASH  Akash Infr~ 2019-12-23     71.5   71.5             63.5      70.2</span></a>
-<a class="sourceLine" id="cb4-7" title="7"><span class="co">#&gt;  3 ALEMB~ Alembic Li~ 2019-12-31     63.6   63.6             61.7      60.9</span></a>
-<a class="sourceLine" id="cb4-8" title="8"><span class="co">#&gt;  4 ALKYL~ Alkyl Amin~ 2019-11-27   1135.  1135.            1114.     1107. </span></a>
-<a class="sourceLine" id="cb4-9" title="9"><span class="co">#&gt;  5 APEX   Apex Froze~ 2018-12-31    407    407              399.      383. </span></a>
-<a class="sourceLine" id="cb4-10" title="10"><span class="co">#&gt;  6 APLAP~ APL Apollo~ 2019-12-31   1939   1939             1931.     1893. </span></a>
-<a class="sourceLine" id="cb4-11" title="11"><span class="co">#&gt;  7 ASTER~ Aster DM H~ 2019-01-17    171.   171.             164.      168  </span></a>
-<a class="sourceLine" id="cb4-12" title="12"><span class="co">#&gt;  8 AVANT~ Avanti Fee~ 2019-12-24    612.   612.             607.      599  </span></a>
-<a class="sourceLine" id="cb4-13" title="13"><span class="co">#&gt;  9 BALRA~ Balrampur ~ 2019-12-30    188.   188.             187.      187  </span></a>
-<a class="sourceLine" id="cb4-14" title="14"><span class="co">#&gt; 10 BANSW~ Banswara S~ 2019-12-31    112.   112.             112.      106. </span></a>
-<a class="sourceLine" id="cb4-15" title="15"><span class="co">#&gt; # ... with 25 more rows, and 3 more variables: prev_close &lt;dbl&gt;,</span></a>
-<a class="sourceLine" id="cb4-16" title="16"><span class="co">#&gt; #   change &lt;dbl&gt;, percent_change &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb4-17" title="17"></a>
-<a class="sourceLine" id="cb4-18" title="18"><span class="co"># retain original column names as returned by NSE</span></a>
-<a class="sourceLine" id="cb4-19" title="19"><span class="kw"><a href="reference/nse_stock_high_low.html">nse_stock_year_high</a></span>(<span class="dt">clean_names =</span> <span class="ot">FALSE</span>)</a>
-<a class="sourceLine" id="cb4-20" title="20"><span class="co">#&gt; # A tibble: 35 x 10</span></a>
-<a class="sourceLine" id="cb4-21" title="21"><span class="co">#&gt;    symbol symbolDesc dt          value   year    ltp value_old   prev</span></a>
-<a class="sourceLine" id="cb4-22" title="22"><span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt;      &lt;date&gt;      &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;  &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb4-23" title="23"><span class="co">#&gt;  1 ADANI~ Adani Gre~ 2019-12-31  175.   175.   174.      166.   166. </span></a>
-<a class="sourceLine" id="cb4-24" title="24"><span class="co">#&gt;  2 AKASH  Akash Inf~ 2019-12-23   71.5   71.5   63.5      70.2   65  </span></a>
-<a class="sourceLine" id="cb4-25" title="25"><span class="co">#&gt;  3 ALEMB~ Alembic L~ 2019-12-31   63.6   63.6   61.7      60.9   59.6</span></a>
-<a class="sourceLine" id="cb4-26" title="26"><span class="co">#&gt;  4 ALKYL~ Alkyl Ami~ 2019-11-27 1135.  1135.  1114.     1107.  1085  </span></a>
-<a class="sourceLine" id="cb4-27" title="27"><span class="co">#&gt;  5 APEX   Apex Froz~ 2018-12-31  407    407    399.      383.   345. </span></a>
-<a class="sourceLine" id="cb4-28" title="28"><span class="co">#&gt;  6 APLAP~ APL Apoll~ 2019-12-31 1939   1939   1931.     1893.  1878. </span></a>
-<a class="sourceLine" id="cb4-29" title="29"><span class="co">#&gt;  7 ASTER~ Aster DM ~ 2019-01-17  171.   171.   164.      168    161. </span></a>
-<a class="sourceLine" id="cb4-30" title="30"><span class="co">#&gt;  8 AVANT~ Avanti Fe~ 2019-12-24  612.   612.   607.      599    584  </span></a>
-<a class="sourceLine" id="cb4-31" title="31"><span class="co">#&gt;  9 BALRA~ Balrampur~ 2019-12-30  188.   188.   187.      187    183. </span></a>
-<a class="sourceLine" id="cb4-32" title="32"><span class="co">#&gt; 10 BANSW~ Banswara ~ 2019-12-31  112.   112.   112.      106.   106. </span></a>
-<a class="sourceLine" id="cb4-33" title="33"><span class="co">#&gt; # ... with 25 more rows, and 2 more variables: change &lt;dbl&gt;, pChange &lt;dbl&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="r"><span class="fu"><a href="reference/nse_stock_high_low.html">nse_stock_year_high</a></span>()
+<span class="co">#&gt;        symbol</span>
+<span class="co">#&gt; 1  ADANIGREEN</span>
+<span class="co">#&gt; 2    ALOKINDS</span>
+<span class="co">#&gt; 3  ANDHRACEMT</span>
+<span class="co">#&gt; 4       ASTEC</span>
+<span class="co">#&gt; 5  BALAJITELE</span>
+<span class="co">#&gt; 6      BIOCON</span>
+<span class="co">#&gt; 7   BIRLATYRE</span>
+<span class="co">#&gt; 8     CENTEXT</span>
+<span class="co">#&gt; 9  CORALFINAC</span>
+<span class="co">#&gt; 10 COROMANDEL</span>
+<span class="co">#&gt; 11     DAAWAT</span>
+<span class="co">#&gt; 12    DHANUKA</span>
+<span class="co">#&gt; 13      DIXON</span>
+<span class="co">#&gt; 14   DNAMEDIA</span>
+<span class="co">#&gt; 15    ESCORTS</span>
+<span class="co">#&gt; 16 GAMMNINFRA</span>
+<span class="co">#&gt; 17     GOENKA</span>
+<span class="co">#&gt; 18 GSCLCEMENT</span>
+<span class="co">#&gt; 19   GTLINFRA</span>
+<span class="co">#&gt; 20   GUFICBIO</span>
+<span class="co">#&gt; 21 HARRMALAYA</span>
+<span class="co">#&gt; 22 HOTELRUGBY</span>
+<span class="co">#&gt; 23  INDOSOLAR</span>
+<span class="co">#&gt; 24    ISMTLTD</span>
+<span class="co">#&gt; 25        ITI</span>
+<span class="co">#&gt; 26 JAGSNPHARM</span>
+<span class="co">#&gt; 27 JAIHINDPRO</span>
+<span class="co">#&gt; 28     JIKIND</span>
+<span class="co">#&gt; 29 JMTAUTOLTD</span>
+<span class="co">#&gt; 30      KARDA</span>
+<span class="co">#&gt; 31     KOPRAN</span>
+<span class="co">#&gt; 32       KSCL</span>
+<span class="co">#&gt; 33  KSERASERA</span>
+<span class="co">#&gt; 34   LOTUSEYE</span>
+<span class="co">#&gt; 35       LSIL</span>
+<span class="co">#&gt; 36 MANAKALUCO</span>
+<span class="co">#&gt; 37   MARKSANS</span>
+<span class="co">#&gt; 38    METKORE</span>
+<span class="co">#&gt; 39        MIC</span>
+<span class="co">#&gt; 40     MITTAL</span>
+<span class="co">#&gt; 41 MOREPENLAB</span>
+<span class="co">#&gt; 42 MUTHOOTFIN</span>
+<span class="co">#&gt; 43       N100</span>
+<span class="co">#&gt; 44    NECLIFE</span>
+<span class="co">#&gt; 45  NETWORK18</span>
+<span class="co">#&gt; 46      OMAXE</span>
+<span class="co">#&gt; 47 OPTOCIRCUI</span>
+<span class="co">#&gt; 48 PRAKASHSTL</span>
+<span class="co">#&gt; 49  PUNJLLOYD</span>
+<span class="co">#&gt; 50   RAJRAYON</span>
+<span class="co">#&gt; 51   RELIANCE</span>
+<span class="co">#&gt; 52 ROHITFERRO</span>
+<span class="co">#&gt; 53      RUCHI</span>
+<span class="co">#&gt; 54  RUCHINFRA</span>
+<span class="co">#&gt; 55  SAGARDEEP</span>
+<span class="co">#&gt; 56    SCAPDVR</span>
+<span class="co">#&gt; 57 SHREDIGCEM</span>
+<span class="co">#&gt; 58  SUVENPHAR</span>
+<span class="co">#&gt; 59  SWARAJENG</span>
+<span class="co">#&gt; 60     SYNCOM</span>
+<span class="co">#&gt; 61   TATACOMM</span>
+<span class="co">#&gt; 62      UNITY</span>
+<span class="co">#&gt; 63 VAIBHAVGBL</span>
+<span class="co">#&gt; 64 VARDMNPOLY</span>
+<span class="co">#&gt; 65    VIJIFIN</span>
+<span class="co">#&gt;                                                               symbol_desc</span>
+<span class="co">#&gt; 1                                              Adani Green Energy Limited</span>
+<span class="co">#&gt; 2                                                 Alok Industries Limited</span>
+<span class="co">#&gt; 3                                                  Andhra Cements Limited</span>
+<span class="co">#&gt; 4                                              Astec LifeSciences Limited</span>
+<span class="co">#&gt; 5                                                Balaji Telefilms Limited</span>
+<span class="co">#&gt; 6                                                          Biocon Limited</span>
+<span class="co">#&gt; 7                                                     Birla Tyres Limited</span>
+<span class="co">#&gt; 8                                              Century Extrusions Limited</span>
+<span class="co">#&gt; 9                                   Coral India Finance &amp; Housing Limited</span>
+<span class="co">#&gt; 10                                       Coromandel International Limited</span>
+<span class="co">#&gt; 11                                                       LT Foods Limited</span>
+<span class="co">#&gt; 12                                               Dhanuka Agritech Limited</span>
+<span class="co">#&gt; 13                                     Dixon Technologies (India) Limited</span>
+<span class="co">#&gt; 14                                     Diligent Media Corporation Limited</span>
+<span class="co">#&gt; 15                                                        Escorts Limited</span>
+<span class="co">#&gt; 16                                 Gammon Infrastructure Projects Limited</span>
+<span class="co">#&gt; 17                                      Goenka Diamond and Jewels Limited</span>
+<span class="co">#&gt; 18                                          Gujarat Sidhee Cement Limited</span>
+<span class="co">#&gt; 19                                             GTL Infrastructure Limited</span>
+<span class="co">#&gt; 20                                              Gufic Biosciences Limited</span>
+<span class="co">#&gt; 21                                           Harrisons  Malayalam Limited</span>
+<span class="co">#&gt; 22                                                    Hotel Rugby Limited</span>
+<span class="co">#&gt; 23                                                      Indosolar Limited</span>
+<span class="co">#&gt; 24                                                           ISMT Limited</span>
+<span class="co">#&gt; 25                                                            ITI Limited</span>
+<span class="co">#&gt; 26                                      Jagsonpal Pharmaceuticals Limited</span>
+<span class="co">#&gt; 27                                               Jaihind Projects Limited</span>
+<span class="co">#&gt; 28                                                 JIK Industries Limited</span>
+<span class="co">#&gt; 29                                                       JMT Auto Limited</span>
+<span class="co">#&gt; 30                                            Karda Constructions Limited</span>
+<span class="co">#&gt; 31                                                         Kopran Limited</span>
+<span class="co">#&gt; 32                                            Kaveri Seed Company Limited</span>
+<span class="co">#&gt; 33                                                            KSS Limited</span>
+<span class="co">#&gt; 34                               Lotus Eye Hospital and Institute Limited</span>
+<span class="co">#&gt; 35                                       Lloyds Steels Industries Limited</span>
+<span class="co">#&gt; 36                                     Manaksia Aluminium Company Limited</span>
+<span class="co">#&gt; 37                                                Marksans Pharma Limited</span>
+<span class="co">#&gt; 38                                    Metkore Alloys &amp; Industries Limited</span>
+<span class="co">#&gt; 39                                                MIC Electronics Limited</span>
+<span class="co">#&gt; 40                                              Mittal Life Style Limited</span>
+<span class="co">#&gt; 41                                           Morepen Laboratories Limited</span>
+<span class="co">#&gt; 42                                                Muthoot Finance Limited</span>
+<span class="co">#&gt; 43 Motilal Oswal Mutual Fund-Motilal Oswal MOSt Shares NASDAQ 100 ETF -GO</span>
+<span class="co">#&gt; 44                                            Nectar Lifesciences Limited</span>
+<span class="co">#&gt; 45                                  Network18 Media &amp; Investments Limited</span>
+<span class="co">#&gt; 46                                                          Omaxe Limited</span>
+<span class="co">#&gt; 47                                          Opto Circuits (India) Limited</span>
+<span class="co">#&gt; 48                                               Prakash Steelage Limited</span>
+<span class="co">#&gt; 49                                                     Punj Lloyd Limited</span>
+<span class="co">#&gt; 50                                           Raj Rayon Industries Limited</span>
+<span class="co">#&gt; 51                                            Reliance Industries Limited</span>
+<span class="co">#&gt; 52                                               Rohit Ferro-Tech Limited</span>
+<span class="co">#&gt; 53                                          Ruchi Soya Industries Limited</span>
+<span class="co">#&gt; 54                                           Ruchi Infrastructure Limited</span>
+<span class="co">#&gt; 55                                               Sagardeep Alloys Limited</span>
+<span class="co">#&gt; 56                                               Stampede Capital Limited</span>
+<span class="co">#&gt; 57                                           Shree Digvijay Cement Co.Ltd</span>
+<span class="co">#&gt; 58                                          Suven Pharmaceuticals Limited</span>
+<span class="co">#&gt; 59                                                 Swaraj Engines Limited</span>
+<span class="co">#&gt; 60                                              Syncom Healthcare Limited</span>
+<span class="co">#&gt; 61                                            Tata Communications Limited</span>
+<span class="co">#&gt; 62                                            Unity Infraprojects Limited</span>
+<span class="co">#&gt; 63                                                 Vaibhav Global Limited</span>
+<span class="co">#&gt; 64                                               Vardhman Polytex Limited</span>
+<span class="co">#&gt; 65                                                   Viji Finance Limited</span>
+<span class="co">#&gt;          date new_high    year last_traded_price prev_high prev_close change</span>
+<span class="co">#&gt; 1  2020-06-17   400.65  400.65            400.65    381.60     381.60  19.05</span>
+<span class="co">#&gt; 2  2020-06-17    34.45   34.45             34.45     32.85      32.85   1.60</span>
+<span class="co">#&gt; 3  2020-06-17     7.00    7.00              7.00      6.70       6.70   0.30</span>
+<span class="co">#&gt; 4  2020-05-29   773.95  773.95            765.00    768.00     693.30  71.70</span>
+<span class="co">#&gt; 5  2020-06-17    81.00   81.00             76.50     78.25      78.10  -1.60</span>
+<span class="co">#&gt; 6  2020-06-05   404.60  404.60            393.20    400.50     396.10  -2.90</span>
+<span class="co">#&gt; 7  2020-06-17    31.30   31.30             31.30     29.85      29.85   1.45</span>
+<span class="co">#&gt; 8  2020-06-17     4.80    4.80              4.80      4.40       4.40   0.40</span>
+<span class="co">#&gt; 9  2020-06-10    16.50   16.50             16.50     15.80      13.75   2.75</span>
+<span class="co">#&gt; 10 2020-06-17   747.00  747.00            738.00    726.45     721.60  16.40</span>
+<span class="co">#&gt; 11 2020-06-17    44.90   44.90             44.00     40.80      40.10   3.90</span>
+<span class="co">#&gt; 12 2020-06-17   799.00  799.00            779.00    793.85     771.65   7.35</span>
+<span class="co">#&gt; 13 2020-06-03  5600.00 5600.00           5580.00   5575.00    5338.35 241.65</span>
+<span class="co">#&gt; 14 2020-06-17     0.80    0.80              0.80      0.75       0.75   0.05</span>
+<span class="co">#&gt; 15 2020-06-17  1014.90 1014.90            983.45   1009.25     999.85 -16.40</span>
+<span class="co">#&gt; 16 2020-06-17     0.65    0.65              0.65      0.65       0.60   0.05</span>
+<span class="co">#&gt; 17 2020-06-17     1.20    1.20              1.20      1.15       1.15   0.05</span>
+<span class="co">#&gt; 18 2020-06-17    33.80   33.80             30.40     32.15      32.15  -1.75</span>
+<span class="co">#&gt; 19 2020-06-17     0.85    0.85              0.85      0.80       0.80   0.05</span>
+<span class="co">#&gt; 20 2019-10-09    84.70   84.70             75.25     81.00      79.20  -3.95</span>
+<span class="co">#&gt; 21 2019-06-28    81.60   81.60             76.30     75.70      71.30   5.00</span>
+<span class="co">#&gt; 22 2020-06-17     1.40    1.40              1.40      1.35       1.35   0.05</span>
+<span class="co">#&gt; 23 2020-06-17     1.35    1.35              1.35      1.30       1.30   0.05</span>
+<span class="co">#&gt; 24 2020-06-17     7.05    7.05              6.45      6.75       6.75  -0.30</span>
+<span class="co">#&gt; 25 2020-01-07   108.65  108.65            108.65    107.40      90.55  18.10</span>
+<span class="co">#&gt; 26 2020-06-17    34.65   34.65             34.60     31.50      31.50   3.10</span>
+<span class="co">#&gt; 27 2020-04-07     0.80    0.80              0.80      0.80       0.75   0.05</span>
+<span class="co">#&gt; 28 2020-06-17     0.70    0.70              0.70      0.65       0.65   0.05</span>
+<span class="co">#&gt; 29 2020-06-17     4.40    4.40              4.40      4.20       4.20   0.20</span>
+<span class="co">#&gt; 30 2020-06-15   243.75  243.75            243.75    237.50     232.15  11.60</span>
+<span class="co">#&gt; 31 2020-01-22    40.80   40.80             39.95     38.75      37.15   2.80</span>
+<span class="co">#&gt; 32 2020-06-17   634.00  634.00            624.00    629.80     601.80  22.20</span>
+<span class="co">#&gt; 33 2020-06-17     0.35    0.35              0.35      0.30       0.30   0.05</span>
+<span class="co">#&gt; 34 2020-06-17    33.85   33.85             32.80     33.50      31.90   0.90</span>
+<span class="co">#&gt; 35 2020-06-10     1.00    1.00              1.00      1.00       0.95   0.05</span>
+<span class="co">#&gt; 36 2020-06-17    11.20   11.20             10.80     10.85      10.70   0.10</span>
+<span class="co">#&gt; 37 2020-06-17    37.15   37.15             34.00     35.40      35.40  -1.40</span>
+<span class="co">#&gt; 38 2020-06-17     0.70    0.70              0.70      0.65       0.65   0.05</span>
+<span class="co">#&gt; 39 2019-08-20     1.05    1.05              1.00      1.05       1.00   0.00</span>
+<span class="co">#&gt; 40 2020-06-17   154.75  154.75            154.65    153.50     153.10   1.55</span>
+<span class="co">#&gt; 41 2020-06-17    34.95   34.95             31.20     31.90      31.90  -0.70</span>
+<span class="co">#&gt; 42 2020-06-17  1199.55 1199.55           1160.30   1011.85     999.65 160.65</span>
+<span class="co">#&gt; 43 2020-05-12   770.00  770.00            748.35    766.10     743.33   5.02</span>
+<span class="co">#&gt; 44 2020-06-17    27.35   27.35             27.35     22.85      22.80   4.55</span>
+<span class="co">#&gt; 45 2020-06-17    41.90   41.90             41.30     40.05      40.05   1.25</span>
+<span class="co">#&gt; 46 2020-06-17   208.40  208.40            208.10    207.20     206.55   1.55</span>
+<span class="co">#&gt; 47 2020-06-17    11.65   11.65             11.65     11.10      11.10   0.55</span>
+<span class="co">#&gt; 48 2020-06-17     1.55    1.55              1.55      1.50       1.50   0.05</span>
+<span class="co">#&gt; 49 2020-06-17     1.70    1.70              1.70      1.65       1.65   0.05</span>
+<span class="co">#&gt; 50 2020-06-17     0.40    0.40              0.40      0.35       0.35   0.05</span>
+<span class="co">#&gt; 51 2020-06-16  1665.00 1665.00           1662.90   1648.55    1615.35  47.55</span>
+<span class="co">#&gt; 52 2020-06-17     1.15    1.15              1.15      1.10       1.10   0.05</span>
+<span class="co">#&gt; 53 2020-06-17  1134.10 1134.10           1134.10   1080.10    1080.10  54.00</span>
+<span class="co">#&gt; 54 2020-06-17    16.05   16.05             16.05     15.30      15.30   0.75</span>
+<span class="co">#&gt; 55 2020-06-17    99.10   99.10             98.80     97.00      96.85   1.95</span>
+<span class="co">#&gt; 56 2020-06-17     0.75    0.75              0.75      0.70       0.70   0.05</span>
+<span class="co">#&gt; 57 2020-06-17    51.90   51.90             47.25     49.00      48.40  -1.15</span>
+<span class="co">#&gt; 58 2020-03-11   367.50  367.50            345.00    353.90     333.65  11.35</span>
+<span class="co">#&gt; 59 2019-06-21  1445.00 1445.00           1429.00   1429.50    1305.00 124.00</span>
+<span class="co">#&gt; 60 2020-06-17     2.20    2.20              2.20      2.10       2.10   0.10</span>
+<span class="co">#&gt; 61 2020-06-17   610.00  610.00            593.00    610.00     596.40  -3.40</span>
+<span class="co">#&gt; 62 2020-06-17     0.65    0.65              0.65      0.60       0.60   0.05</span>
+<span class="co">#&gt; 63 2020-06-15  1270.00 1270.00           1269.00   1249.70    1187.65  81.35</span>
+<span class="co">#&gt; 64 2020-06-17     5.25    5.25              5.25      5.00       5.00   0.25</span>
+<span class="co">#&gt; 65 2020-06-17     0.65    0.65              0.65      0.60       0.60   0.05</span>
+<span class="co">#&gt;    percent_change</span>
+<span class="co">#&gt; 1            4.99</span>
+<span class="co">#&gt; 2            4.87</span>
+<span class="co">#&gt; 3            4.48</span>
+<span class="co">#&gt; 4           10.34</span>
+<span class="co">#&gt; 5           -2.05</span>
+<span class="co">#&gt; 6           -0.73</span>
+<span class="co">#&gt; 7            4.86</span>
+<span class="co">#&gt; 8            9.09</span>
+<span class="co">#&gt; 9           20.00</span>
+<span class="co">#&gt; 10           2.27</span>
+<span class="co">#&gt; 11           9.73</span>
+<span class="co">#&gt; 12           0.95</span>
+<span class="co">#&gt; 13           4.53</span>
+<span class="co">#&gt; 14           6.67</span>
+<span class="co">#&gt; 15          -1.64</span>
+<span class="co">#&gt; 16           8.33</span>
+<span class="co">#&gt; 17           4.35</span>
+<span class="co">#&gt; 18          -5.44</span>
+<span class="co">#&gt; 19           6.25</span>
+<span class="co">#&gt; 20          -4.99</span>
+<span class="co">#&gt; 21           7.01</span>
+<span class="co">#&gt; 22           3.70</span>
+<span class="co">#&gt; 23           3.85</span>
+<span class="co">#&gt; 24          -4.44</span>
+<span class="co">#&gt; 25          19.99</span>
+<span class="co">#&gt; 26           9.84</span>
+<span class="co">#&gt; 27           6.67</span>
+<span class="co">#&gt; 28           7.69</span>
+<span class="co">#&gt; 29           4.76</span>
+<span class="co">#&gt; 30           5.00</span>
+<span class="co">#&gt; 31           7.54</span>
+<span class="co">#&gt; 32           3.69</span>
+<span class="co">#&gt; 33          16.67</span>
+<span class="co">#&gt; 34           2.82</span>
+<span class="co">#&gt; 35           5.26</span>
+<span class="co">#&gt; 36           0.93</span>
+<span class="co">#&gt; 37          -3.95</span>
+<span class="co">#&gt; 38           7.69</span>
+<span class="co">#&gt; 39           0.00</span>
+<span class="co">#&gt; 40           1.01</span>
+<span class="co">#&gt; 41          -2.19</span>
+<span class="co">#&gt; 42          16.07</span>
+<span class="co">#&gt; 43           0.68</span>
+<span class="co">#&gt; 44          19.96</span>
+<span class="co">#&gt; 45           3.12</span>
+<span class="co">#&gt; 46           0.75</span>
+<span class="co">#&gt; 47           4.95</span>
+<span class="co">#&gt; 48           3.33</span>
+<span class="co">#&gt; 49           3.03</span>
+<span class="co">#&gt; 50          14.29</span>
+<span class="co">#&gt; 51           2.94</span>
+<span class="co">#&gt; 52           4.55</span>
+<span class="co">#&gt; 53           5.00</span>
+<span class="co">#&gt; 54           4.90</span>
+<span class="co">#&gt; 55           2.01</span>
+<span class="co">#&gt; 56           7.14</span>
+<span class="co">#&gt; 57          -2.38</span>
+<span class="co">#&gt; 58           3.40</span>
+<span class="co">#&gt; 59           9.50</span>
+<span class="co">#&gt; 60           4.76</span>
+<span class="co">#&gt; 61          -0.57</span>
+<span class="co">#&gt; 62           8.33</span>
+<span class="co">#&gt; 63           6.85</span>
+<span class="co">#&gt; 64           5.00</span>
+<span class="co">#&gt; 65           8.33</span>
+
+<span class="co"># retain original column names as returned by NSE</span>
+<span class="fu"><a href="reference/nse_stock_high_low.html">nse_stock_year_high</a></span>(<span class="kw">clean_names</span> <span class="kw">=</span> <span class="fl">FALSE</span>)
+<span class="co">#&gt;        symbol</span>
+<span class="co">#&gt; 1  ADANIGREEN</span>
+<span class="co">#&gt; 2    ALOKINDS</span>
+<span class="co">#&gt; 3  ANDHRACEMT</span>
+<span class="co">#&gt; 4       ASTEC</span>
+<span class="co">#&gt; 5  BALAJITELE</span>
+<span class="co">#&gt; 6      BIOCON</span>
+<span class="co">#&gt; 7   BIRLATYRE</span>
+<span class="co">#&gt; 8     CENTEXT</span>
+<span class="co">#&gt; 9  CORALFINAC</span>
+<span class="co">#&gt; 10 COROMANDEL</span>
+<span class="co">#&gt; 11     DAAWAT</span>
+<span class="co">#&gt; 12    DHANUKA</span>
+<span class="co">#&gt; 13      DIXON</span>
+<span class="co">#&gt; 14   DNAMEDIA</span>
+<span class="co">#&gt; 15    ESCORTS</span>
+<span class="co">#&gt; 16 GAMMNINFRA</span>
+<span class="co">#&gt; 17     GOENKA</span>
+<span class="co">#&gt; 18 GSCLCEMENT</span>
+<span class="co">#&gt; 19   GTLINFRA</span>
+<span class="co">#&gt; 20   GUFICBIO</span>
+<span class="co">#&gt; 21 HARRMALAYA</span>
+<span class="co">#&gt; 22 HOTELRUGBY</span>
+<span class="co">#&gt; 23  INDOSOLAR</span>
+<span class="co">#&gt; 24    ISMTLTD</span>
+<span class="co">#&gt; 25        ITI</span>
+<span class="co">#&gt; 26 JAGSNPHARM</span>
+<span class="co">#&gt; 27 JAIHINDPRO</span>
+<span class="co">#&gt; 28     JIKIND</span>
+<span class="co">#&gt; 29 JMTAUTOLTD</span>
+<span class="co">#&gt; 30      KARDA</span>
+<span class="co">#&gt; 31     KOPRAN</span>
+<span class="co">#&gt; 32       KSCL</span>
+<span class="co">#&gt; 33  KSERASERA</span>
+<span class="co">#&gt; 34   LOTUSEYE</span>
+<span class="co">#&gt; 35       LSIL</span>
+<span class="co">#&gt; 36 MANAKALUCO</span>
+<span class="co">#&gt; 37   MARKSANS</span>
+<span class="co">#&gt; 38    METKORE</span>
+<span class="co">#&gt; 39        MIC</span>
+<span class="co">#&gt; 40     MITTAL</span>
+<span class="co">#&gt; 41 MOREPENLAB</span>
+<span class="co">#&gt; 42 MUTHOOTFIN</span>
+<span class="co">#&gt; 43       N100</span>
+<span class="co">#&gt; 44    NECLIFE</span>
+<span class="co">#&gt; 45  NETWORK18</span>
+<span class="co">#&gt; 46      OMAXE</span>
+<span class="co">#&gt; 47 OPTOCIRCUI</span>
+<span class="co">#&gt; 48 PRAKASHSTL</span>
+<span class="co">#&gt; 49  PUNJLLOYD</span>
+<span class="co">#&gt; 50   RAJRAYON</span>
+<span class="co">#&gt; 51   RELIANCE</span>
+<span class="co">#&gt; 52 ROHITFERRO</span>
+<span class="co">#&gt; 53      RUCHI</span>
+<span class="co">#&gt; 54  RUCHINFRA</span>
+<span class="co">#&gt; 55  SAGARDEEP</span>
+<span class="co">#&gt; 56    SCAPDVR</span>
+<span class="co">#&gt; 57 SHREDIGCEM</span>
+<span class="co">#&gt; 58  SUVENPHAR</span>
+<span class="co">#&gt; 59  SWARAJENG</span>
+<span class="co">#&gt; 60     SYNCOM</span>
+<span class="co">#&gt; 61   TATACOMM</span>
+<span class="co">#&gt; 62      UNITY</span>
+<span class="co">#&gt; 63 VAIBHAVGBL</span>
+<span class="co">#&gt; 64 VARDMNPOLY</span>
+<span class="co">#&gt; 65    VIJIFIN</span>
+<span class="co">#&gt;                                                                symbolDesc</span>
+<span class="co">#&gt; 1                                              Adani Green Energy Limited</span>
+<span class="co">#&gt; 2                                                 Alok Industries Limited</span>
+<span class="co">#&gt; 3                                                  Andhra Cements Limited</span>
+<span class="co">#&gt; 4                                              Astec LifeSciences Limited</span>
+<span class="co">#&gt; 5                                                Balaji Telefilms Limited</span>
+<span class="co">#&gt; 6                                                          Biocon Limited</span>
+<span class="co">#&gt; 7                                                     Birla Tyres Limited</span>
+<span class="co">#&gt; 8                                              Century Extrusions Limited</span>
+<span class="co">#&gt; 9                                   Coral India Finance &amp; Housing Limited</span>
+<span class="co">#&gt; 10                                       Coromandel International Limited</span>
+<span class="co">#&gt; 11                                                       LT Foods Limited</span>
+<span class="co">#&gt; 12                                               Dhanuka Agritech Limited</span>
+<span class="co">#&gt; 13                                     Dixon Technologies (India) Limited</span>
+<span class="co">#&gt; 14                                     Diligent Media Corporation Limited</span>
+<span class="co">#&gt; 15                                                        Escorts Limited</span>
+<span class="co">#&gt; 16                                 Gammon Infrastructure Projects Limited</span>
+<span class="co">#&gt; 17                                      Goenka Diamond and Jewels Limited</span>
+<span class="co">#&gt; 18                                          Gujarat Sidhee Cement Limited</span>
+<span class="co">#&gt; 19                                             GTL Infrastructure Limited</span>
+<span class="co">#&gt; 20                                              Gufic Biosciences Limited</span>
+<span class="co">#&gt; 21                                           Harrisons  Malayalam Limited</span>
+<span class="co">#&gt; 22                                                    Hotel Rugby Limited</span>
+<span class="co">#&gt; 23                                                      Indosolar Limited</span>
+<span class="co">#&gt; 24                                                           ISMT Limited</span>
+<span class="co">#&gt; 25                                                            ITI Limited</span>
+<span class="co">#&gt; 26                                      Jagsonpal Pharmaceuticals Limited</span>
+<span class="co">#&gt; 27                                               Jaihind Projects Limited</span>
+<span class="co">#&gt; 28                                                 JIK Industries Limited</span>
+<span class="co">#&gt; 29                                                       JMT Auto Limited</span>
+<span class="co">#&gt; 30                                            Karda Constructions Limited</span>
+<span class="co">#&gt; 31                                                         Kopran Limited</span>
+<span class="co">#&gt; 32                                            Kaveri Seed Company Limited</span>
+<span class="co">#&gt; 33                                                            KSS Limited</span>
+<span class="co">#&gt; 34                               Lotus Eye Hospital and Institute Limited</span>
+<span class="co">#&gt; 35                                       Lloyds Steels Industries Limited</span>
+<span class="co">#&gt; 36                                     Manaksia Aluminium Company Limited</span>
+<span class="co">#&gt; 37                                                Marksans Pharma Limited</span>
+<span class="co">#&gt; 38                                    Metkore Alloys &amp; Industries Limited</span>
+<span class="co">#&gt; 39                                                MIC Electronics Limited</span>
+<span class="co">#&gt; 40                                              Mittal Life Style Limited</span>
+<span class="co">#&gt; 41                                           Morepen Laboratories Limited</span>
+<span class="co">#&gt; 42                                                Muthoot Finance Limited</span>
+<span class="co">#&gt; 43 Motilal Oswal Mutual Fund-Motilal Oswal MOSt Shares NASDAQ 100 ETF -GO</span>
+<span class="co">#&gt; 44                                            Nectar Lifesciences Limited</span>
+<span class="co">#&gt; 45                                  Network18 Media &amp; Investments Limited</span>
+<span class="co">#&gt; 46                                                          Omaxe Limited</span>
+<span class="co">#&gt; 47                                          Opto Circuits (India) Limited</span>
+<span class="co">#&gt; 48                                               Prakash Steelage Limited</span>
+<span class="co">#&gt; 49                                                     Punj Lloyd Limited</span>
+<span class="co">#&gt; 50                                           Raj Rayon Industries Limited</span>
+<span class="co">#&gt; 51                                            Reliance Industries Limited</span>
+<span class="co">#&gt; 52                                               Rohit Ferro-Tech Limited</span>
+<span class="co">#&gt; 53                                          Ruchi Soya Industries Limited</span>
+<span class="co">#&gt; 54                                           Ruchi Infrastructure Limited</span>
+<span class="co">#&gt; 55                                               Sagardeep Alloys Limited</span>
+<span class="co">#&gt; 56                                               Stampede Capital Limited</span>
+<span class="co">#&gt; 57                                           Shree Digvijay Cement Co.Ltd</span>
+<span class="co">#&gt; 58                                          Suven Pharmaceuticals Limited</span>
+<span class="co">#&gt; 59                                                 Swaraj Engines Limited</span>
+<span class="co">#&gt; 60                                              Syncom Healthcare Limited</span>
+<span class="co">#&gt; 61                                            Tata Communications Limited</span>
+<span class="co">#&gt; 62                                            Unity Infraprojects Limited</span>
+<span class="co">#&gt; 63                                                 Vaibhav Global Limited</span>
+<span class="co">#&gt; 64                                               Vardhman Polytex Limited</span>
+<span class="co">#&gt; 65                                                   Viji Finance Limited</span>
+<span class="co">#&gt;            dt   value    year     ltp value_old    prev change pChange</span>
+<span class="co">#&gt; 1  2020-06-17  400.65  400.65  400.65    381.60  381.60  19.05    4.99</span>
+<span class="co">#&gt; 2  2020-06-17   34.45   34.45   34.45     32.85   32.85   1.60    4.87</span>
+<span class="co">#&gt; 3  2020-06-17    7.00    7.00    7.00      6.70    6.70   0.30    4.48</span>
+<span class="co">#&gt; 4  2020-05-29  773.95  773.95  765.00    768.00  693.30  71.70   10.34</span>
+<span class="co">#&gt; 5  2020-06-17   81.00   81.00   76.50     78.25   78.10  -1.60   -2.05</span>
+<span class="co">#&gt; 6  2020-06-05  404.60  404.60  393.20    400.50  396.10  -2.90   -0.73</span>
+<span class="co">#&gt; 7  2020-06-17   31.30   31.30   31.30     29.85   29.85   1.45    4.86</span>
+<span class="co">#&gt; 8  2020-06-17    4.80    4.80    4.80      4.40    4.40   0.40    9.09</span>
+<span class="co">#&gt; 9  2020-06-10   16.50   16.50   16.50     15.80   13.75   2.75   20.00</span>
+<span class="co">#&gt; 10 2020-06-17  747.00  747.00  738.00    726.45  721.60  16.40    2.27</span>
+<span class="co">#&gt; 11 2020-06-17   44.90   44.90   44.00     40.80   40.10   3.90    9.73</span>
+<span class="co">#&gt; 12 2020-06-17  799.00  799.00  779.00    793.85  771.65   7.35    0.95</span>
+<span class="co">#&gt; 13 2020-06-03 5600.00 5600.00 5580.00   5575.00 5338.35 241.65    4.53</span>
+<span class="co">#&gt; 14 2020-06-17    0.80    0.80    0.80      0.75    0.75   0.05    6.67</span>
+<span class="co">#&gt; 15 2020-06-17 1014.90 1014.90  983.45   1009.25  999.85 -16.40   -1.64</span>
+<span class="co">#&gt; 16 2020-06-17    0.65    0.65    0.65      0.65    0.60   0.05    8.33</span>
+<span class="co">#&gt; 17 2020-06-17    1.20    1.20    1.20      1.15    1.15   0.05    4.35</span>
+<span class="co">#&gt; 18 2020-06-17   33.80   33.80   30.40     32.15   32.15  -1.75   -5.44</span>
+<span class="co">#&gt; 19 2020-06-17    0.85    0.85    0.85      0.80    0.80   0.05    6.25</span>
+<span class="co">#&gt; 20 2019-10-09   84.70   84.70   75.25     81.00   79.20  -3.95   -4.99</span>
+<span class="co">#&gt; 21 2019-06-28   81.60   81.60   76.30     75.70   71.30   5.00    7.01</span>
+<span class="co">#&gt; 22 2020-06-17    1.40    1.40    1.40      1.35    1.35   0.05    3.70</span>
+<span class="co">#&gt; 23 2020-06-17    1.35    1.35    1.35      1.30    1.30   0.05    3.85</span>
+<span class="co">#&gt; 24 2020-06-17    7.05    7.05    6.45      6.75    6.75  -0.30   -4.44</span>
+<span class="co">#&gt; 25 2020-01-07  108.65  108.65  108.65    107.40   90.55  18.10   19.99</span>
+<span class="co">#&gt; 26 2020-06-17   34.65   34.65   34.60     31.50   31.50   3.10    9.84</span>
+<span class="co">#&gt; 27 2020-04-07    0.80    0.80    0.80      0.80    0.75   0.05    6.67</span>
+<span class="co">#&gt; 28 2020-06-17    0.70    0.70    0.70      0.65    0.65   0.05    7.69</span>
+<span class="co">#&gt; 29 2020-06-17    4.40    4.40    4.40      4.20    4.20   0.20    4.76</span>
+<span class="co">#&gt; 30 2020-06-15  243.75  243.75  243.75    237.50  232.15  11.60    5.00</span>
+<span class="co">#&gt; 31 2020-01-22   40.80   40.80   39.95     38.75   37.15   2.80    7.54</span>
+<span class="co">#&gt; 32 2020-06-17  634.00  634.00  624.00    629.80  601.80  22.20    3.69</span>
+<span class="co">#&gt; 33 2020-06-17    0.35    0.35    0.35      0.30    0.30   0.05   16.67</span>
+<span class="co">#&gt; 34 2020-06-17   33.85   33.85   32.80     33.50   31.90   0.90    2.82</span>
+<span class="co">#&gt; 35 2020-06-10    1.00    1.00    1.00      1.00    0.95   0.05    5.26</span>
+<span class="co">#&gt; 36 2020-06-17   11.20   11.20   10.80     10.85   10.70   0.10    0.93</span>
+<span class="co">#&gt; 37 2020-06-17   37.15   37.15   34.00     35.40   35.40  -1.40   -3.95</span>
+<span class="co">#&gt; 38 2020-06-17    0.70    0.70    0.70      0.65    0.65   0.05    7.69</span>
+<span class="co">#&gt; 39 2019-08-20    1.05    1.05    1.00      1.05    1.00   0.00    0.00</span>
+<span class="co">#&gt; 40 2020-06-17  154.75  154.75  154.65    153.50  153.10   1.55    1.01</span>
+<span class="co">#&gt; 41 2020-06-17   34.95   34.95   31.20     31.90   31.90  -0.70   -2.19</span>
+<span class="co">#&gt; 42 2020-06-17 1199.55 1199.55 1160.30   1011.85  999.65 160.65   16.07</span>
+<span class="co">#&gt; 43 2020-05-12  770.00  770.00  748.35    766.10  743.33   5.02    0.68</span>
+<span class="co">#&gt; 44 2020-06-17   27.35   27.35   27.35     22.85   22.80   4.55   19.96</span>
+<span class="co">#&gt; 45 2020-06-17   41.90   41.90   41.30     40.05   40.05   1.25    3.12</span>
+<span class="co">#&gt; 46 2020-06-17  208.40  208.40  208.10    207.20  206.55   1.55    0.75</span>
+<span class="co">#&gt; 47 2020-06-17   11.65   11.65   11.65     11.10   11.10   0.55    4.95</span>
+<span class="co">#&gt; 48 2020-06-17    1.55    1.55    1.55      1.50    1.50   0.05    3.33</span>
+<span class="co">#&gt; 49 2020-06-17    1.70    1.70    1.70      1.65    1.65   0.05    3.03</span>
+<span class="co">#&gt; 50 2020-06-17    0.40    0.40    0.40      0.35    0.35   0.05   14.29</span>
+<span class="co">#&gt; 51 2020-06-16 1665.00 1665.00 1662.90   1648.55 1615.35  47.55    2.94</span>
+<span class="co">#&gt; 52 2020-06-17    1.15    1.15    1.15      1.10    1.10   0.05    4.55</span>
+<span class="co">#&gt; 53 2020-06-17 1134.10 1134.10 1134.10   1080.10 1080.10  54.00    5.00</span>
+<span class="co">#&gt; 54 2020-06-17   16.05   16.05   16.05     15.30   15.30   0.75    4.90</span>
+<span class="co">#&gt; 55 2020-06-17   99.10   99.10   98.80     97.00   96.85   1.95    2.01</span>
+<span class="co">#&gt; 56 2020-06-17    0.75    0.75    0.75      0.70    0.70   0.05    7.14</span>
+<span class="co">#&gt; 57 2020-06-17   51.90   51.90   47.25     49.00   48.40  -1.15   -2.38</span>
+<span class="co">#&gt; 58 2020-03-11  367.50  367.50  345.00    353.90  333.65  11.35    3.40</span>
+<span class="co">#&gt; 59 2019-06-21 1445.00 1445.00 1429.00   1429.50 1305.00 124.00    9.50</span>
+<span class="co">#&gt; 60 2020-06-17    2.20    2.20    2.20      2.10    2.10   0.10    4.76</span>
+<span class="co">#&gt; 61 2020-06-17  610.00  610.00  593.00    610.00  596.40  -3.40   -0.57</span>
+<span class="co">#&gt; 62 2020-06-17    0.65    0.65    0.65      0.60    0.60   0.05    8.33</span>
+<span class="co">#&gt; 63 2020-06-15 1270.00 1270.00 1269.00   1249.70 1187.65  81.35    6.85</span>
+<span class="co">#&gt; 64 2020-06-17    5.25    5.25    5.25      5.00    5.00   0.25    5.00</span>
+<span class="co">#&gt; 65 2020-06-17    0.65    0.65    0.65      0.60    0.60   0.05    8.33</span></pre></div>
 </div>
 <div id="most-actively-traded-stocks-in-a-month" class="section level5">
 <h5 class="hasAnchor">
 <a href="#most-actively-traded-stocks-in-a-month" class="anchor"></a>Most actively traded stocks in a month</h5>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1"><span class="kw"><a href="reference/nse_stock_most_traded.html">nse_stock_most_traded</a></span>()</a>
-<a class="sourceLine" id="cb5-2" title="2"><span class="co">#&gt; # A tibble: 12 x 6</span></a>
-<a class="sourceLine" id="cb5-3" title="3"><span class="co">#&gt;    security share_turnover traded_quantity no_of_trades avg_daily_turno~</span></a>
-<a class="sourceLine" id="cb5-4" title="4"><span class="co">#&gt;    &lt;chr&gt;             &lt;dbl&gt;           &lt;dbl&gt;        &lt;dbl&gt;            &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb5-5" title="5"><span class="co">#&gt;  1 Yes Ban~           4.38           57140     11058530            1423.</span></a>
-<a class="sourceLine" id="cb5-6" title="6"><span class="co">#&gt;  2 Relianc~           3.93            1715      3803882            1276.</span></a>
-<a class="sourceLine" id="cb5-7" title="7"><span class="co">#&gt;  3 Indiabu~           3.91            9077      8060572            1271.</span></a>
-<a class="sourceLine" id="cb5-8" title="8"><span class="co">#&gt;  4 State B~           3.43            7114      4624946            1114.</span></a>
-<a class="sourceLine" id="cb5-9" title="9"><span class="co">#&gt;  5 Tata Co~           2.69             866      2891204             875.</span></a>
-<a class="sourceLine" id="cb5-10" title="10"><span class="co">#&gt;  6 ICICI B~           2.51            3204      2969145             814.</span></a>
-<a class="sourceLine" id="cb5-11" title="11"><span class="co">#&gt;  7 HDFC Li~           2.33             670      2510572             756.</span></a>
-<a class="sourceLine" id="cb5-12" title="12"><span class="co">#&gt;  8 Tata St~           2.26            3541      3008166             733.</span></a>
-<a class="sourceLine" id="cb5-13" title="13"><span class="co">#&gt;  9 HDFC Ba~           2.18            1170      2969084             707.</span></a>
-<a class="sourceLine" id="cb5-14" title="14"><span class="co">#&gt; 10 Tata Mo~           2.07            8128      3536571             671.</span></a>
-<a class="sourceLine" id="cb5-15" title="15"><span class="co">#&gt; 11 TOTAL o~          29.7            92625     45432672            9640.</span></a>
-<a class="sourceLine" id="cb5-16" title="16"><span class="co">#&gt; 12 TOTAL            100             391115    223723721           32475.</span></a>
-<a class="sourceLine" id="cb5-17" title="17"><span class="co">#&gt; # ... with 1 more variable: turnover &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb5-18" title="18"></a>
-<a class="sourceLine" id="cb5-19" title="19"><span class="co"># retain original column names as returned by NSE</span></a>
-<a class="sourceLine" id="cb5-20" title="20"><span class="kw"><a href="reference/nse_stock_most_traded.html">nse_stock_most_traded</a></span>(<span class="dt">clean_names =</span> <span class="ot">FALSE</span>)</a>
-<a class="sourceLine" id="cb5-21" title="21"><span class="co">#&gt; # A tibble: 12 x 6</span></a>
-<a class="sourceLine" id="cb5-22" title="22"><span class="co">#&gt;    security              sharetotal trdQty nooftrades avgdailyturn turnover</span></a>
-<a class="sourceLine" id="cb5-23" title="23"><span class="co">#&gt;    &lt;chr&gt;                      &lt;dbl&gt;  &lt;dbl&gt;      &lt;dbl&gt;        &lt;dbl&gt;    &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb5-24" title="24"><span class="co">#&gt;  1 Yes Bank Limited            4.38  57140   11058530        1423.   29880.</span></a>
-<a class="sourceLine" id="cb5-25" title="25"><span class="co">#&gt;  2 Reliance Industries ~       3.93   1715    3803882        1276.   26799.</span></a>
-<a class="sourceLine" id="cb5-26" title="26"><span class="co">#&gt;  3 Indiabulls Hsg Fin L~       3.91   9077    8060572        1271.   26683.</span></a>
-<a class="sourceLine" id="cb5-27" title="27"><span class="co">#&gt;  4 State Bank of India         3.43   7114    4624946        1114.   23391.</span></a>
-<a class="sourceLine" id="cb5-28" title="28"><span class="co">#&gt;  5 Tata Consultancy Ser~       2.69    866    2891204         875.   18367.</span></a>
-<a class="sourceLine" id="cb5-29" title="29"><span class="co">#&gt;  6 ICICI Bank Limited          2.51   3204    2969145         814.   17098.</span></a>
-<a class="sourceLine" id="cb5-30" title="30"><span class="co">#&gt;  7 HDFC Limited                2.33    670    2510572         756.   15868.</span></a>
-<a class="sourceLine" id="cb5-31" title="31"><span class="co">#&gt;  8 Tata Steel Limited          2.26   3541    3008166         733.   15396.</span></a>
-<a class="sourceLine" id="cb5-32" title="32"><span class="co">#&gt;  9 HDFC Bank Limited           2.18   1170    2969084         707.   14848.</span></a>
-<a class="sourceLine" id="cb5-33" title="33"><span class="co">#&gt; 10 Tata Motors Limited         2.07   8128    3536571         671.   14100.</span></a>
-<a class="sourceLine" id="cb5-34" title="34"><span class="co">#&gt; 11 TOTAL of Top Ten sec~      29.7   92625   45432672        9640.  202431.</span></a>
-<a class="sourceLine" id="cb5-35" title="35"><span class="co">#&gt; 12 TOTAL                     100    391115  223723721       32475.  681983.</span></a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="r"><span class="fu"><a href="reference/nse_stock_most_traded.html">nse_stock_most_traded</a></span>()
+<span class="co">#&gt;                       security share_turnover traded_quantity no_of_trades</span>
+<span class="co">#&gt; 1      Reliance Industries Ltd           6.82            4620      9245543</span>
+<span class="co">#&gt; 2       Hindustan Unilever Ltd           6.25            3185      5752204</span>
+<span class="co">#&gt; 3            Bajaj Finance Ltd           4.14            2057      8232909</span>
+<span class="co">#&gt; 4                HDFC Bank Ltd           3.43            3832      7054716</span>
+<span class="co">#&gt; 5               ICICI Bank Ltd           3.36           10513      9288909</span>
+<span class="co">#&gt; 6                AXIS Bank Ltd           3.15            8265      8308649</span>
+<span class="co">#&gt; 7            Bharti Airtel Ltd           3.00            5347      5774781</span>
+<span class="co">#&gt; 8                     HDFC Ltd           2.46            1518      4924321</span>
+<span class="co">#&gt; 9      Maruti Suzuki India Ltd           2.14             426      3320762</span>
+<span class="co">#&gt; 10         State Bank Of India           2.03           12470      7371875</span>
+<span class="co">#&gt; 11 TOTAL of Top Ten securities          36.78           52234     69274669</span>
+<span class="co">#&gt; 12                       TOTAL         100.00          493359    341796702</span>
+<span class="co">#&gt;    avg_daily_turnonver   turnover</span>
+<span class="co">#&gt; 1              3591.40   68236.63</span>
+<span class="co">#&gt; 2              3292.50   62557.46</span>
+<span class="co">#&gt; 3              2179.74   41415.04</span>
+<span class="co">#&gt; 4              1808.33   34358.27</span>
+<span class="co">#&gt; 5              1767.89   33589.97</span>
+<span class="co">#&gt; 6              1658.21   31506.01</span>
+<span class="co">#&gt; 7              1577.88   29979.79</span>
+<span class="co">#&gt; 8              1293.73   24580.89</span>
+<span class="co">#&gt; 9              1125.83   21390.76</span>
+<span class="co">#&gt; 10             1069.64   20323.16</span>
+<span class="co">#&gt; 11            19365.16  367937.97</span>
+<span class="co">#&gt; 12            52655.61 1000456.50</span>
+
+<span class="co"># retain original column names as returned by NSE</span>
+<span class="fu"><a href="reference/nse_stock_most_traded.html">nse_stock_most_traded</a></span>(<span class="kw">clean_names</span> <span class="kw">=</span> <span class="fl">FALSE</span>)
+<span class="co">#&gt;                        skipped sharetotal trdQty nooftrades avgdailyturn</span>
+<span class="co">#&gt; 1      Reliance Industries Ltd       6.82   4620    9245543      3591.40</span>
+<span class="co">#&gt; 2       Hindustan Unilever Ltd       6.25   3185    5752204      3292.50</span>
+<span class="co">#&gt; 3            Bajaj Finance Ltd       4.14   2057    8232909      2179.74</span>
+<span class="co">#&gt; 4                HDFC Bank Ltd       3.43   3832    7054716      1808.33</span>
+<span class="co">#&gt; 5               ICICI Bank Ltd       3.36  10513    9288909      1767.89</span>
+<span class="co">#&gt; 6                AXIS Bank Ltd       3.15   8265    8308649      1658.21</span>
+<span class="co">#&gt; 7            Bharti Airtel Ltd       3.00   5347    5774781      1577.88</span>
+<span class="co">#&gt; 8                     HDFC Ltd       2.46   1518    4924321      1293.73</span>
+<span class="co">#&gt; 9      Maruti Suzuki India Ltd       2.14    426    3320762      1125.83</span>
+<span class="co">#&gt; 10         State Bank Of India       2.03  12470    7371875      1069.64</span>
+<span class="co">#&gt; 11 TOTAL of Top Ten securities      36.78  52234   69274669     19365.16</span>
+<span class="co">#&gt; 12                       TOTAL     100.00 493359  341796702     52655.61</span>
+<span class="co">#&gt;      turnover</span>
+<span class="co">#&gt; 1    68236.63</span>
+<span class="co">#&gt; 2    62557.46</span>
+<span class="co">#&gt; 3    41415.04</span>
+<span class="co">#&gt; 4    34358.27</span>
+<span class="co">#&gt; 5    33589.97</span>
+<span class="co">#&gt; 6    31506.01</span>
+<span class="co">#&gt; 7    29979.79</span>
+<span class="co">#&gt; 8    24580.89</span>
+<span class="co">#&gt; 9    21390.76</span>
+<span class="co">#&gt; 10   20323.16</span>
+<span class="co">#&gt; 11  367937.97</span>
+<span class="co">#&gt; 12 1000456.50</span></pre></div>
 </div>
 </div>
-<div id="futures--options" class="section level3">
+<div id="futures-options" class="section level3">
 <h3 class="hasAnchor">
-<a href="#futures--options" class="anchor"></a>Futures &amp; Options</h3>
-<div id="top-futures-and-options-gainers-for-the-last-trading-session" class="section level5">
+<a href="#futures-options" class="anchor"></a>Futures &amp; Options</h3>
+<div id="top-futures-and-options-gainers-for-the-last-trading-session-" class="section level5">
 <h5 class="hasAnchor">
-<a href="#top-futures-and-options-gainers-for-the-last-trading-session" class="anchor"></a>Top futures and options gainers for the last trading session.</h5>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1"><span class="kw"><a href="reference/nse_fo.html">nse_fo_top_gainers</a></span>()</a>
-<a class="sourceLine" id="cb6-2" title="2"><span class="co">#&gt; # A tibble: 10 x 12</span></a>
-<a class="sourceLine" id="cb6-3" title="3"><span class="co">#&gt;    symbol series last_corp_annou~ last_corp_annou~ open_price high_price</span></a>
-<a class="sourceLine" id="cb6-4" title="4"><span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt;  &lt;date&gt;           &lt;chr&gt;                 &lt;dbl&gt;      &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb6-5" title="5"><span class="co">#&gt;  1 ADANI~ EQ     2019-07-26       Annual General ~      368        379. </span></a>
-<a class="sourceLine" id="cb6-6" title="6"><span class="co">#&gt;  2 M&amp;MFIN EQ     2019-07-15       Annual General ~      324.       331. </span></a>
-<a class="sourceLine" id="cb6-7" title="7"><span class="co">#&gt;  3 ADANI~ EQ     2019-07-30       Annual General ~       61.8       63.8</span></a>
-<a class="sourceLine" id="cb6-8" title="8"><span class="co">#&gt;  4 POWER~ EQ     2019-08-19       Annual General ~      191.       194  </span></a>
-<a class="sourceLine" id="cb6-9" title="9"><span class="co">#&gt;  5 NTPC   EQ     2019-08-13       Dividend - Rs 2~      119.       121. </span></a>
-<a class="sourceLine" id="cb6-10" title="10"><span class="co">#&gt;  6 MINDT~ EQ     2019-10-24       Interim Dividen~      801        814  </span></a>
-<a class="sourceLine" id="cb6-11" title="11"><span class="co">#&gt;  7 TATAP~ EQ     2019-06-04       Annual General ~       56.8       57.6</span></a>
-<a class="sourceLine" id="cb6-12" title="12"><span class="co">#&gt;  8 PIDIL~ EQ     2019-07-29       Annual General ~     1388.      1412  </span></a>
-<a class="sourceLine" id="cb6-13" title="13"><span class="co">#&gt;  9 IDFCF~ EQ     2018-07-23       Dividend Re 0.7~       45.4       45.8</span></a>
-<a class="sourceLine" id="cb6-14" title="14"><span class="co">#&gt; 10 MFSL   EQ     2019-09-16       Annual General ~      537        546. </span></a>
-<a class="sourceLine" id="cb6-15" title="15"><span class="co">#&gt; # ... with 6 more variables: low_price &lt;dbl&gt;, last_traded_price &lt;dbl&gt;,</span></a>
-<a class="sourceLine" id="cb6-16" title="16"><span class="co">#&gt; #   prev_close_price &lt;dbl&gt;, percent_change &lt;dbl&gt;, traded_quantity &lt;dbl&gt;,</span></a>
-<a class="sourceLine" id="cb6-17" title="17"><span class="co">#&gt; #   turnover_in_lakhs &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb6-18" title="18"></a>
-<a class="sourceLine" id="cb6-19" title="19"><span class="co"># retain original column names as returned by NSE</span></a>
-<a class="sourceLine" id="cb6-20" title="20"><span class="kw"><a href="reference/nse_fo.html">nse_fo_top_gainers</a></span>(<span class="dt">clean_names =</span> <span class="ot">FALSE</span>)</a>
-<a class="sourceLine" id="cb6-21" title="21"><span class="co">#&gt; # A tibble: 10 x 12</span></a>
-<a class="sourceLine" id="cb6-22" title="22"><span class="co">#&gt;    symbol series lastCorpAnnounc~ lastCorpAnnounc~ openPrice highPrice</span></a>
-<a class="sourceLine" id="cb6-23" title="23"><span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt;  &lt;date&gt;           &lt;chr&gt;                &lt;dbl&gt;     &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb6-24" title="24"><span class="co">#&gt;  1 ADANI~ EQ     2019-07-26       Annual General ~     368       379. </span></a>
-<a class="sourceLine" id="cb6-25" title="25"><span class="co">#&gt;  2 M&amp;MFIN EQ     2019-07-15       Annual General ~     324.      331. </span></a>
-<a class="sourceLine" id="cb6-26" title="26"><span class="co">#&gt;  3 ADANI~ EQ     2019-07-30       Annual General ~      61.8      63.8</span></a>
-<a class="sourceLine" id="cb6-27" title="27"><span class="co">#&gt;  4 POWER~ EQ     2019-08-19       Annual General ~     191.      194  </span></a>
-<a class="sourceLine" id="cb6-28" title="28"><span class="co">#&gt;  5 NTPC   EQ     2019-08-13       Dividend - Rs 2~     119.      121. </span></a>
-<a class="sourceLine" id="cb6-29" title="29"><span class="co">#&gt;  6 MINDT~ EQ     2019-10-24       Interim Dividen~     801       814  </span></a>
-<a class="sourceLine" id="cb6-30" title="30"><span class="co">#&gt;  7 TATAP~ EQ     2019-06-04       Annual General ~      56.8      57.6</span></a>
-<a class="sourceLine" id="cb6-31" title="31"><span class="co">#&gt;  8 PIDIL~ EQ     2019-07-29       Annual General ~    1388.     1412  </span></a>
-<a class="sourceLine" id="cb6-32" title="32"><span class="co">#&gt;  9 IDFCF~ EQ     2018-07-23       Dividend Re 0.7~      45.4      45.8</span></a>
-<a class="sourceLine" id="cb6-33" title="33"><span class="co">#&gt; 10 MFSL   EQ     2019-09-16       Annual General ~     537       546. </span></a>
-<a class="sourceLine" id="cb6-34" title="34"><span class="co">#&gt; # ... with 6 more variables: lowPrice &lt;dbl&gt;, ltp &lt;dbl&gt;,</span></a>
-<a class="sourceLine" id="cb6-35" title="35"><span class="co">#&gt; #   previousPrice &lt;dbl&gt;, netPrice &lt;dbl&gt;, tradedQuantity &lt;dbl&gt;,</span></a>
-<a class="sourceLine" id="cb6-36" title="36"><span class="co">#&gt; #   turnoverInLakhs &lt;dbl&gt;</span></a></code></pre></div>
+<a href="#top-futures-and-options-gainers-for-the-last-trading-session-" class="anchor"></a>Top futures and options gainers for the last trading session.</h5>
+<div class="sourceCode" id="cb6"><pre class="r"><span class="fu"><a href="reference/nse_fo.html">nse_fo_top_gainers</a></span>()
+<span class="co">#&gt;        symbol series last_corp_announcement_date</span>
+<span class="co">#&gt; 1        BHEL     EQ                  2019-09-11</span>
+<span class="co">#&gt; 2  MUTHOOTFIN     EQ                  2020-03-23</span>
+<span class="co">#&gt; 3  BAJAJFINSV     EQ                  2020-03-03</span>
+<span class="co">#&gt; 4         BEL     EQ                  2020-02-11</span>
+<span class="co">#&gt; 5   COALINDIA     EQ                  2020-03-19</span>
+<span class="co">#&gt; 6    CHOLAFIN     EQ                  2020-03-04</span>
+<span class="co">#&gt; 7  BAJFINANCE     EQ                  2020-03-03</span>
+<span class="co">#&gt; 8        ZEEL     EQ                  2019-07-15</span>
+<span class="co">#&gt; 9         NCC     EQ                  2019-08-08</span>
+<span class="co">#&gt; 10       VEDL     EQ                  2020-03-05</span>
+<span class="co">#&gt;                                  last_corp_announcement open_price high_price</span>
+<span class="co">#&gt; 1   Annual General Meeting/Dividend - Rs 1.20 Per Share      28.65      32.15</span>
+<span class="co">#&gt; 2                    Interim Dividend - Rs 15 Per Share    1036.90    1199.55</span>
+<span class="co">#&gt; 3                     Interim Dividend - Rs 5 Per Share    5036.95    5499.00</span>
+<span class="co">#&gt; 4                  Interim Dividend - Rs 1.40 Per Share      71.95      77.25</span>
+<span class="co">#&gt; 5                    Interim Dividend - Rs 12 Per Share     129.00     139.70</span>
+<span class="co">#&gt; 6                    Interim Dividend-Re 0.70 Per Share     168.20     178.80</span>
+<span class="co">#&gt; 7                    Interim Dividend - Rs 10 Per Share    2375.00    2541.70</span>
+<span class="co">#&gt; 8  Annual General Meeting/ Dividend - Rs 3.50 Per Share     166.50     175.45</span>
+<span class="co">#&gt; 9                          Dividend - Rs 1.50 Per Share      27.80      29.70</span>
+<span class="co">#&gt; 10                  Interim Dividend - Rs 3.9 Per Share     102.80     107.80</span>
+<span class="co">#&gt;    low_price last_traded_price prev_close_price percent_change traded_quantity</span>
+<span class="co">#&gt; 1      28.50             32.00            27.45          16.58       250949789</span>
+<span class="co">#&gt; 2    1036.90           1160.30           999.65          16.07        18024858</span>
+<span class="co">#&gt; 3    5021.55           5450.75          5036.95           8.22         1806208</span>
+<span class="co">#&gt; 4      71.65             76.95            71.65           7.40        33392838</span>
+<span class="co">#&gt; 5     128.15            137.65           129.45           6.33        34587382</span>
+<span class="co">#&gt; 6     168.20            177.95           168.20           5.80        26257427</span>
+<span class="co">#&gt; 7    2373.00           2527.20          2396.00           5.48        12738830</span>
+<span class="co">#&gt; 8     165.50            173.95           165.00           5.42        37917230</span>
+<span class="co">#&gt; 9      27.55             29.30            27.85           5.21        26610887</span>
+<span class="co">#&gt; 10    102.00            106.90           102.10           4.70        27586795</span>
+<span class="co">#&gt;    turnover_in_lakhs</span>
+<span class="co">#&gt; 1           77443.10</span>
+<span class="co">#&gt; 2          203545.71</span>
+<span class="co">#&gt; 3           95403.73</span>
+<span class="co">#&gt; 4           25204.91</span>
+<span class="co">#&gt; 5           47031.92</span>
+<span class="co">#&gt; 6           45821.84</span>
+<span class="co">#&gt; 7          315647.83</span>
+<span class="co">#&gt; 8           65103.88</span>
+<span class="co">#&gt; 9            7743.77</span>
+<span class="co">#&gt; 10          29197.86</span>
+
+<span class="co"># retain original column names as returned by NSE</span>
+<span class="fu"><a href="reference/nse_fo.html">nse_fo_top_gainers</a></span>(<span class="kw">clean_names</span> <span class="kw">=</span> <span class="fl">FALSE</span>)
+<span class="co">#&gt;        symbol series lastCorpAnnouncementDate</span>
+<span class="co">#&gt; 1        BHEL     EQ               2019-09-11</span>
+<span class="co">#&gt; 2  MUTHOOTFIN     EQ               2020-03-23</span>
+<span class="co">#&gt; 3  BAJAJFINSV     EQ               2020-03-03</span>
+<span class="co">#&gt; 4         BEL     EQ               2020-02-11</span>
+<span class="co">#&gt; 5   COALINDIA     EQ               2020-03-19</span>
+<span class="co">#&gt; 6    CHOLAFIN     EQ               2020-03-04</span>
+<span class="co">#&gt; 7  BAJFINANCE     EQ               2020-03-03</span>
+<span class="co">#&gt; 8        ZEEL     EQ               2019-07-15</span>
+<span class="co">#&gt; 9         NCC     EQ               2019-08-08</span>
+<span class="co">#&gt; 10       VEDL     EQ               2020-03-05</span>
+<span class="co">#&gt;                                    lastCorpAnnouncement openPrice highPrice</span>
+<span class="co">#&gt; 1   Annual General Meeting/Dividend - Rs 1.20 Per Share     28.65     32.15</span>
+<span class="co">#&gt; 2                    Interim Dividend - Rs 15 Per Share   1036.90   1199.55</span>
+<span class="co">#&gt; 3                     Interim Dividend - Rs 5 Per Share   5036.95   5499.00</span>
+<span class="co">#&gt; 4                  Interim Dividend - Rs 1.40 Per Share     71.95     77.25</span>
+<span class="co">#&gt; 5                    Interim Dividend - Rs 12 Per Share    129.00    139.70</span>
+<span class="co">#&gt; 6                    Interim Dividend-Re 0.70 Per Share    168.20    178.80</span>
+<span class="co">#&gt; 7                    Interim Dividend - Rs 10 Per Share   2375.00   2541.70</span>
+<span class="co">#&gt; 8  Annual General Meeting/ Dividend - Rs 3.50 Per Share    166.50    175.45</span>
+<span class="co">#&gt; 9                          Dividend - Rs 1.50 Per Share     27.80     29.70</span>
+<span class="co">#&gt; 10                  Interim Dividend - Rs 3.9 Per Share    102.80    107.80</span>
+<span class="co">#&gt;    lowPrice     ltp previousPrice netPrice tradedQuantity turnoverInLakhs</span>
+<span class="co">#&gt; 1     28.50   32.00         27.45    16.58      250949789        77443.10</span>
+<span class="co">#&gt; 2   1036.90 1160.30        999.65    16.07       18024858       203545.71</span>
+<span class="co">#&gt; 3   5021.55 5450.75       5036.95     8.22        1806208        95403.73</span>
+<span class="co">#&gt; 4     71.65   76.95         71.65     7.40       33392838        25204.91</span>
+<span class="co">#&gt; 5    128.15  137.65        129.45     6.33       34587382        47031.92</span>
+<span class="co">#&gt; 6    168.20  177.95        168.20     5.80       26257427        45821.84</span>
+<span class="co">#&gt; 7   2373.00 2527.20       2396.00     5.48       12738830       315647.83</span>
+<span class="co">#&gt; 8    165.50  173.95        165.00     5.42       37917230        65103.88</span>
+<span class="co">#&gt; 9     27.55   29.30         27.85     5.21       26610887         7743.77</span>
+<span class="co">#&gt; 10   102.00  106.90        102.10     4.70       27586795        29197.86</span></pre></div>
 </div>
 </div>
 <div id="pre-open-market-data" class="section level3">
 <h3 class="hasAnchor">
 <a href="#pre-open-market-data" class="anchor"></a>Pre Open Market Data</h3>
-<div id="fetch-data-of-pre-open-session-of-nifty-bank" class="section level5">
+<div id="fetch-data-of-pre-open-session-of-nifty-bank-" class="section level5">
 <h5 class="hasAnchor">
-<a href="#fetch-data-of-pre-open-session-of-nifty-bank" class="anchor"></a>Fetch data of pre open session of Nifty Bank.</h5>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" title="1"><span class="kw"><a href="reference/preopen_nifty.html">nse_preopen_nifty_bank</a></span>()</a>
-<a class="sourceLine" id="cb7-2" title="2"><span class="co">#&gt; # A tibble: 12 x 17</span></a>
-<a class="sourceLine" id="cb7-3" title="3"><span class="co">#&gt;    symbol series corp_action_date corp_action  price change percent_change</span></a>
-<a class="sourceLine" id="cb7-4" title="4"><span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt;  &lt;date&gt;           &lt;chr&gt;        &lt;dbl&gt;  &lt;dbl&gt;          &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb7-5" title="5"><span class="co">#&gt;  1 IDFCF~ EQ     NA               &lt;NA&gt;          45.4   0.2            0.44</span></a>
-<a class="sourceLine" id="cb7-6" title="6"><span class="co">#&gt;  2 BANKB~ EQ     NA               &lt;NA&gt;         102.    0.35           0.34</span></a>
-<a class="sourceLine" id="cb7-7" title="7"><span class="co">#&gt;  3 FEDER~ EQ     NA               &lt;NA&gt;          88.2   0.3            0.34</span></a>
-<a class="sourceLine" id="cb7-8" title="8"><span class="co">#&gt;  4 RBLBA~ EQ     NA               &lt;NA&gt;         346     1.15           0.33</span></a>
-<a class="sourceLine" id="cb7-9" title="9"><span class="co">#&gt;  5 HDFCB~ EQ     NA               &lt;NA&gt;        1276.    4              0.31</span></a>
-<a class="sourceLine" id="cb7-10" title="10"><span class="co">#&gt;  6 KOTAK~ EQ     NA               &lt;NA&gt;        1689     4.65           0.28</span></a>
-<a class="sourceLine" id="cb7-11" title="11"><span class="co">#&gt;  7 SBIN   EQ     NA               &lt;NA&gt;         335.    0.95           0.28</span></a>
-<a class="sourceLine" id="cb7-12" title="12"><span class="co">#&gt;  8 PNB    EQ     NA               &lt;NA&gt;          64.5   0.15           0.23</span></a>
-<a class="sourceLine" id="cb7-13" title="13"><span class="co">#&gt;  9 ICICI~ EQ     NA               &lt;NA&gt;         540.    1              0.19</span></a>
-<a class="sourceLine" id="cb7-14" title="14"><span class="co">#&gt; 10 INDUS~ EQ     NA               &lt;NA&gt;        1512     2              0.13</span></a>
-<a class="sourceLine" id="cb7-15" title="15"><span class="co">#&gt; 11 AXISB~ EQ     NA               &lt;NA&gt;         755.    0.8            0.11</span></a>
-<a class="sourceLine" id="cb7-16" title="16"><span class="co">#&gt; 12 YESBA~ EQ     NA               &lt;NA&gt;          47.0   0              0   </span></a>
-<a class="sourceLine" id="cb7-17" title="17"><span class="co">#&gt; # ... with 10 more variables: prev_close &lt;dbl&gt;, quantity &lt;dbl&gt;,</span></a>
-<a class="sourceLine" id="cb7-18" title="18"><span class="co">#&gt; #   value &lt;dbl&gt;, mkt_cap &lt;dbl&gt;, year_high &lt;dbl&gt;, year_low &lt;dbl&gt;,</span></a>
-<a class="sourceLine" id="cb7-19" title="19"><span class="co">#&gt; #   sum_val &lt;dbl&gt;, sum_quantity &lt;dbl&gt;, fin_quantity &lt;dbl&gt;,</span></a>
-<a class="sourceLine" id="cb7-20" title="20"><span class="co">#&gt; #   sum_fin_quantity &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb7-21" title="21"></a>
-<a class="sourceLine" id="cb7-22" title="22"><span class="co"># retain original column names as returned by NSE</span></a>
-<a class="sourceLine" id="cb7-23" title="23"><span class="kw"><a href="reference/preopen_nifty.html">nse_preopen_nifty</a></span>(<span class="dt">clean_names =</span> <span class="ot">FALSE</span>)</a>
-<a class="sourceLine" id="cb7-24" title="24"><span class="co">#&gt; # A tibble: 50 x 17</span></a>
-<a class="sourceLine" id="cb7-25" title="25"><span class="co">#&gt;    symbol series xDt        caAct   iep   chn perChn  pCls trdQnty  iVal</span></a>
-<a class="sourceLine" id="cb7-26" title="26"><span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt;  &lt;date&gt;     &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb7-27" title="27"><span class="co">#&gt;  1 BAJAJ~ EQ     NA         &lt;NA&gt;  3183  -2     -0.06 3185      840 26.7 </span></a>
-<a class="sourceLine" id="cb7-28" title="28"><span class="co">#&gt;  2 ONGC   EQ     NA         &lt;NA&gt;   129. -0.05  -0.04  129.    5623  7.24</span></a>
-<a class="sourceLine" id="cb7-29" title="29"><span class="co">#&gt;  3 LT     EQ     NA         &lt;NA&gt;  1308. 10.2    0.79 1298.    5444 71.2 </span></a>
-<a class="sourceLine" id="cb7-30" title="30"><span class="co">#&gt;  4 ZEEL   EQ     NA         &lt;NA&gt;   294   1.8    0.62  292.   17926 52.7 </span></a>
-<a class="sourceLine" id="cb7-31" title="31"><span class="co">#&gt;  5 CIPLA  EQ     NA         &lt;NA&gt;   481   2.8    0.59  478.    2629 12.6 </span></a>
-<a class="sourceLine" id="cb7-32" title="32"><span class="co">#&gt;  6 INFRA~ EQ     2019-12-19 INTE~  254   1.5    0.59  252.    8799 22.4 </span></a>
-<a class="sourceLine" id="cb7-33" title="33"><span class="co">#&gt;  7 BRITA~ EQ     NA         &lt;NA&gt;  3045. 16.9    0.56 3028.     126  3.84</span></a>
-<a class="sourceLine" id="cb7-34" title="34"><span class="co">#&gt;  8 TITAN  EQ     NA         &lt;NA&gt;  1194.  6.5    0.55 1188.    1196 14.3 </span></a>
-<a class="sourceLine" id="cb7-35" title="35"><span class="co">#&gt;  9 ADANI~ EQ     NA         &lt;NA&gt;   368   2      0.55  366    13113 48.3 </span></a>
-<a class="sourceLine" id="cb7-36" title="36"><span class="co">#&gt; 10 INFY   EQ     2019-10-23 INTE~  735   3.85   0.53  731.    5174 38.0 </span></a>
-<a class="sourceLine" id="cb7-37" title="37"><span class="co">#&gt; # ... with 40 more rows, and 7 more variables: mktCap &lt;dbl&gt;, yHigh &lt;dbl&gt;,</span></a>
-<a class="sourceLine" id="cb7-38" title="38"><span class="co">#&gt; #   yLow &lt;dbl&gt;, sumVal &lt;dbl&gt;, sumQnty &lt;dbl&gt;, finQnty &lt;dbl&gt;,</span></a>
-<a class="sourceLine" id="cb7-39" title="39"><span class="co">#&gt; #   sumfinQnty &lt;dbl&gt;</span></a></code></pre></div>
+<a href="#fetch-data-of-pre-open-session-of-nifty-bank-" class="anchor"></a>Fetch data of pre open session of Nifty Bank.</h5>
+<div class="sourceCode" id="cb7"><pre class="r"><span class="fu"><a href="reference/preopen_nifty.html">nse_preopen_nifty_bank</a></span>()
+<span class="co">#&gt;        symbol series corp_action_date                          corp_action</span>
+<span class="co">#&gt; 1  FEDERALBNK     EQ             &lt;NA&gt;                                 &lt;NA&gt;</span>
+<span class="co">#&gt; 2    AXISBANK     EQ             &lt;NA&gt;                                 &lt;NA&gt;</span>
+<span class="co">#&gt; 3     RBLBANK     EQ       2020-03-23 INTERIM DIVIDEND - RS 1.50 PER SHARE</span>
+<span class="co">#&gt; 4   ICICIBANK     EQ             &lt;NA&gt;                                 &lt;NA&gt;</span>
+<span class="co">#&gt; 5  INDUSINDBK     EQ             &lt;NA&gt;                                 &lt;NA&gt;</span>
+<span class="co">#&gt; 6        SBIN     EQ             &lt;NA&gt;                                 &lt;NA&gt;</span>
+<span class="co">#&gt; 7   KOTAKBANK     EQ             &lt;NA&gt;                                 &lt;NA&gt;</span>
+<span class="co">#&gt; 8  BANKBARODA     EQ             &lt;NA&gt;                                 &lt;NA&gt;</span>
+<span class="co">#&gt; 9         PNB     EQ             &lt;NA&gt;                                 &lt;NA&gt;</span>
+<span class="co">#&gt; 10 BANDHANBNK     EQ             &lt;NA&gt;                                 &lt;NA&gt;</span>
+<span class="co">#&gt; 11 IDFCFIRSTB     EQ             &lt;NA&gt;                                 &lt;NA&gt;</span>
+<span class="co">#&gt; 12   HDFCBANK     EQ             &lt;NA&gt;                                 &lt;NA&gt;</span>
+<span class="co">#&gt;      price change percent_change prev_close quantity  value   mkt_cap year_high</span>
+<span class="co">#&gt; 1    46.25  -0.45          -0.96      46.70    34005  15.73   9310.19    110.40</span>
+<span class="co">#&gt; 2   386.00  -3.60          -0.92     389.60    38462 148.46  87921.92    819.00</span>
+<span class="co">#&gt; 3   161.00  -1.35          -0.83     162.35    25355  40.82   7677.08    663.00</span>
+<span class="co">#&gt; 4   340.00  -1.95          -0.57     341.95    36447 123.92 221323.07    552.20</span>
+<span class="co">#&gt; 5   489.50  -1.65          -0.34     491.15    24913 121.95  29634.63   1596.55</span>
+<span class="co">#&gt; 6   172.40  -0.55          -0.32     172.95    77741 134.03  66371.00    373.80</span>
+<span class="co">#&gt; 7  1240.00  -3.80          -0.31    1243.80     6537  81.06 166510.81   1740.00</span>
+<span class="co">#&gt; 8    44.80  -0.10          -0.22      44.90    17855   8.00   5394.05    132.85</span>
+<span class="co">#&gt; 9    33.10  -0.05          -0.15      33.15    28628   9.48   3796.96     83.40</span>
+<span class="co">#&gt; 10  263.00  -0.20          -0.08     263.20     9118  23.98  11019.05    650.00</span>
+<span class="co">#&gt; 11   25.55   0.10           0.39      25.45    73524  18.79   5263.72     47.95</span>
+<span class="co">#&gt; 12  980.00   0.75           0.08     979.25    44801 439.05 424081.52   1305.50</span>
+<span class="co">#&gt;    year_low sum_val sum_quantity fin_quantity sum_fin_quantity</span>
+<span class="co">#&gt; 1     35.70 1165.26       205313        34005           417386</span>
+<span class="co">#&gt; 2    286.00 1165.26       205313        38462           417386</span>
+<span class="co">#&gt; 3    101.55 1165.26       205313        25355           417386</span>
+<span class="co">#&gt; 4    268.30 1165.26       205313        36447           417386</span>
+<span class="co">#&gt; 5    235.55 1165.26       205313        24913           417386</span>
+<span class="co">#&gt; 6    149.45 1165.26       205313        77741           417386</span>
+<span class="co">#&gt; 7   1001.00 1165.26       205313         6537           417386</span>
+<span class="co">#&gt; 8     36.00 1165.26       205313        17855           417386</span>
+<span class="co">#&gt; 9     26.30 1165.26       205313        28628           417386</span>
+<span class="co">#&gt; 10   152.20 1165.26       205313         9118           417386</span>
+<span class="co">#&gt; 11    17.65 1165.26       205313        73524           417386</span>
+<span class="co">#&gt; 12   738.75 1165.26       205313        44801           417386</span>
+
+<span class="co"># retain original column names as returned by NSE</span>
+<span class="fu"><a href="reference/preopen_nifty.html">nse_preopen_nifty</a></span>(<span class="kw">clean_names</span> <span class="kw">=</span> <span class="fl">FALSE</span>)
+<span class="co">#&gt;        symbol series        xDt</span>
+<span class="co">#&gt; 1    JSWSTEEL     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 2        ONGC     EQ 2020-03-23</span>
+<span class="co">#&gt; 3    INFRATEL     EQ 2020-05-05</span>
+<span class="co">#&gt; 4          LT     EQ 2020-03-24</span>
+<span class="co">#&gt; 5    AXISBANK     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 6  BAJFINANCE     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 7     HCLTECH     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 8   ICICIBANK     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 9      MARUTI     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 10   RELIANCE     EQ 2020-05-13</span>
+<span class="co">#&gt; 11      TITAN     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 12      WIPRO     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 13 TATAMOTORS     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 14 HINDUNILVR     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 15  COALINDIA     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 16 INDUSINDBK     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 17       SBIN     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 18  KOTAKBANK     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 19 ADANIPORTS     EQ 2020-06-17</span>
+<span class="co">#&gt; 20       HDFC     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 21 ULTRACEMCO     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 22     GRASIM     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 23        TCS     EQ 2020-06-03</span>
+<span class="co">#&gt; 24        M&amp;M     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 25       BPCL     EQ 2020-03-23</span>
+<span class="co">#&gt; 26 HEROMOTOCO     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 27      TECHM     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 28        IOC     EQ 2020-03-23</span>
+<span class="co">#&gt; 29  EICHERMOT     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 30       ZEEL     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 31  POWERGRID     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 32       VEDL     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 33       INFY     EQ 2020-05-29</span>
+<span class="co">#&gt; 34    DRREDDY     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 35        UPL     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 36  BRITANNIA     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 37   SHREECEM     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 38       NTPC     EQ 2020-03-26</span>
+<span class="co">#&gt; 39   HINDALCO     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 40       GAIL     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 41      CIPLA     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 42 BHARTIARTL     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 43  NESTLEIND     EQ 2020-06-11</span>
+<span class="co">#&gt; 44   HDFCBANK     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 45  TATASTEEL     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 46 BAJAJFINSV     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 47        ITC     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 48  SUNPHARMA     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 49 ASIANPAINT     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt; 50 BAJAJ-AUTO     EQ       &lt;NA&gt;</span>
+<span class="co">#&gt;                                                caAct      iep    chn perChn</span>
+<span class="co">#&gt; 1                                               &lt;NA&gt;   189.00  -2.85  -1.49</span>
+<span class="co">#&gt; 2                  INTERIM DIVIDEND - RS 5 PER SHARE    83.00  -1.20  -1.43</span>
+<span class="co">#&gt; 3               INTERIM DIVIDEND - RS 4.10 PER SHARE   208.95   2.70   1.31</span>
+<span class="co">#&gt; 4                 INTERIM DIVIDEND - RS 10 PER SHARE   876.00  -8.80  -0.99</span>
+<span class="co">#&gt; 5                                               &lt;NA&gt;   386.00  -3.60  -0.92</span>
+<span class="co">#&gt; 6                                               &lt;NA&gt;  2375.00 -21.00  -0.88</span>
+<span class="co">#&gt; 7                                               &lt;NA&gt;   571.20  -4.65  -0.81</span>
+<span class="co">#&gt; 8                                               &lt;NA&gt;   340.00  -1.95  -0.57</span>
+<span class="co">#&gt; 9                                               &lt;NA&gt;  5695.00 -31.20  -0.54</span>
+<span class="co">#&gt; 10                     RIGHTS 1:15 @ PREMIUM RS 1247  1607.00  -8.35  -0.52</span>
+<span class="co">#&gt; 11                                              &lt;NA&gt;   958.10  -4.90  -0.51</span>
+<span class="co">#&gt; 12                                              &lt;NA&gt;   216.80  -1.00  -0.46</span>
+<span class="co">#&gt; 13                                              &lt;NA&gt;    95.00  -0.40  -0.42</span>
+<span class="co">#&gt; 14                                              &lt;NA&gt;  2070.25  -8.00  -0.38</span>
+<span class="co">#&gt; 15                                              &lt;NA&gt;   129.00  -0.45  -0.35</span>
+<span class="co">#&gt; 16                                              &lt;NA&gt;   489.50  -1.65  -0.34</span>
+<span class="co">#&gt; 17                                              &lt;NA&gt;   172.40  -0.55  -0.32</span>
+<span class="co">#&gt; 18                                              &lt;NA&gt;  1240.00  -3.80  -0.31</span>
+<span class="co">#&gt; 19                            ANNUAL GENERAL MEETING   340.35  -0.95  -0.28</span>
+<span class="co">#&gt; 20                                              &lt;NA&gt;  1790.00  -4.65  -0.26</span>
+<span class="co">#&gt; 21                                              &lt;NA&gt;  3799.70  -9.50  -0.25</span>
+<span class="co">#&gt; 22                                              &lt;NA&gt;   583.00  -0.85  -0.15</span>
+<span class="co">#&gt; 23                         DIVIDEND - RS 6 PER SHARE  2045.00  -2.80  -0.14</span>
+<span class="co">#&gt; 24                                              &lt;NA&gt;   496.90  -0.70  -0.14</span>
+<span class="co">#&gt; 25             INTERIM DIVIDEND - RS 16.50 PER SHARE   364.10  -0.50  -0.14</span>
+<span class="co">#&gt; 26                                              &lt;NA&gt;  2360.25  -3.05  -0.13</span>
+<span class="co">#&gt; 27                                              &lt;NA&gt;   535.05  -0.50  -0.09</span>
+<span class="co">#&gt; 28              INTERIM DIVIDEND - RS 4.25 PER SHARE    84.30  -0.05  -0.06</span>
+<span class="co">#&gt; 29                                              &lt;NA&gt; 16788.50  -8.35  -0.05</span>
+<span class="co">#&gt; 30                                              &lt;NA&gt;   166.50   1.50   0.91</span>
+<span class="co">#&gt; 31                                              &lt;NA&gt;   160.70   1.20   0.75</span>
+<span class="co">#&gt; 32                                              &lt;NA&gt;   102.80   0.70   0.69</span>
+<span class="co">#&gt; 33                      DIVIDEND - RS 9.50 PER SHARE   708.20   4.55   0.65</span>
+<span class="co">#&gt; 34                                              &lt;NA&gt;  4010.00  24.80   0.62</span>
+<span class="co">#&gt; 35                                              &lt;NA&gt;   422.85   2.05   0.49</span>
+<span class="co">#&gt; 36                                              &lt;NA&gt;  3415.00  13.55   0.40</span>
+<span class="co">#&gt; 37                                              &lt;NA&gt; 21718.00  82.60   0.38</span>
+<span class="co">#&gt; 38              INTERIM DIVIDEND - RS 0.50 PER HSARE    91.80   0.30   0.33</span>
+<span class="co">#&gt; 39                                              &lt;NA&gt;   148.45   0.45   0.30</span>
+<span class="co">#&gt; 40                                              &lt;NA&gt;    96.50   0.25   0.26</span>
+<span class="co">#&gt; 41                                              &lt;NA&gt;   641.65   1.30   0.20</span>
+<span class="co">#&gt; 42                                              &lt;NA&gt;   564.25   0.80   0.14</span>
+<span class="co">#&gt; 43 ANNUAL GENERAL MEETING/DIVIDEND - RS 61 PER SHARE 16218.50  20.35   0.13</span>
+<span class="co">#&gt; 44                                              &lt;NA&gt;   980.00   0.75   0.08</span>
+<span class="co">#&gt; 45                                              &lt;NA&gt;   308.20   0.00   0.00</span>
+<span class="co">#&gt; 46                                              &lt;NA&gt;  5036.95   0.00   0.00</span>
+<span class="co">#&gt; 47                                              &lt;NA&gt;   181.20   0.00   0.00</span>
+<span class="co">#&gt; 48                                              &lt;NA&gt;   485.65   0.00   0.00</span>
+<span class="co">#&gt; 49                                              &lt;NA&gt;  1595.40   0.00   0.00</span>
+<span class="co">#&gt; 50                                              &lt;NA&gt;  2689.45   0.00   0.00</span>
+<span class="co">#&gt;        pCls trdQnty   iVal    mktCap    yHigh     yLow  sumVal sumQnty finQnty</span>
+<span class="co">#&gt; 1    191.85   10577  19.99  19477.24   296.75   132.50 3632.29  413159   10577</span>
+<span class="co">#&gt; 2     84.20   32140  26.68  30718.53   173.45    50.00 3632.29  413159   32140</span>
+<span class="co">#&gt; 3    206.25   28951  60.49  17548.16   296.50   120.05 3632.29  413159   28951</span>
+<span class="co">#&gt; 4    884.80   16578 145.22 109298.80  1591.65   661.00 3632.29  413159   16578</span>
+<span class="co">#&gt; 5    389.60   38462 148.46  87921.92   819.00   286.00 3632.29  413159   38462</span>
+<span class="co">#&gt; 6   2396.00    6468 153.62  63432.47  4923.40  1783.00 3632.29  413159    6468</span>
+<span class="co">#&gt; 7    575.85    2417  13.81  62506.56   623.50   375.25 3632.29  413159    2417</span>
+<span class="co">#&gt; 8    341.95   36447 123.92 221323.07   552.20   268.30 3632.29  413159   36447</span>
+<span class="co">#&gt; 9   5726.20    1902 108.32  76109.92  7758.70  4001.10 3632.29  413159    1902</span>
+<span class="co">#&gt; 10  1615.35   28200 453.17 522246.83  1648.55   866.98 3632.29  413159   28200</span>
+<span class="co">#&gt; 11   963.00    1245  11.93  40182.09  1389.95   720.90 3632.29  413159    1245</span>
+<span class="co">#&gt; 12   217.80    5193  11.26  32353.00   300.50   159.40 3632.29  413159    5193</span>
+<span class="co">#&gt; 13    95.40  111472 105.90  17091.91   201.70    63.50 3632.29  413159  111472</span>
+<span class="co">#&gt; 14  2078.25    4694  97.18 148468.30  2614.30  1659.05 3632.29  413159    4694</span>
+<span class="co">#&gt; 15   129.45   39277  50.67  27124.02   265.35   119.20 3632.29  413159   39277</span>
+<span class="co">#&gt; 16   491.15   24913 121.95  29634.63  1596.55   235.55 3632.29  413159   24913</span>
+<span class="co">#&gt; 17   172.95   77741 134.03  66371.00   373.80   149.45 3632.29  413159   77741</span>
+<span class="co">#&gt; 18  1243.80    6537  81.06 166510.81  1740.00  1001.00 3632.29  413159    6537</span>
+<span class="co">#&gt; 19   341.30    2285   7.78  26350.60   428.85   203.00 3632.29  413159    2285</span>
+<span class="co">#&gt; 20  1794.65    8593 153.81 310288.49  2499.90  1473.45 3632.29  413159    8593</span>
+<span class="co">#&gt; 21  3809.20     215   8.17  43976.98  4754.10  2910.00 3632.29  413159     215</span>
+<span class="co">#&gt; 22   583.85    1561   9.10  23043.35   949.50   385.05 3632.29  413159    1561</span>
+<span class="co">#&gt; 23  2047.80    1647  33.68 215155.74  2296.20  1506.05 3632.29  413159    1647</span>
+<span class="co">#&gt; 24   497.60    4533  22.52  47633.17   675.30   245.40 3632.29  413159    4533</span>
+<span class="co">#&gt; 25   364.60    3226  11.75  29263.65   549.00   252.00 3632.29  413159    3226</span>
+<span class="co">#&gt; 26  2363.30    1617  38.17  30682.86  3022.90  1475.00 3632.29  413159    1617</span>
+<span class="co">#&gt; 27   535.55    2960  15.84  33101.32   845.90   471.40 3632.29  413159    2960</span>
+<span class="co">#&gt; 28    84.35   18850  15.89  21440.28   158.00    71.15 3632.29  413159   18850</span>
+<span class="co">#&gt; 29 16796.85     360  60.44  23390.17 23450.00 12450.10 3632.29  413159     360</span>
+<span class="co">#&gt; 30   165.00   28857  48.05  15055.57   405.20   114.00 3632.29  413159   28857</span>
+<span class="co">#&gt; 31   159.50   13314  21.40  40887.49   216.25   122.15 3632.29  413159   13314</span>
+<span class="co">#&gt; 32   102.10   14546  14.95  18596.76   180.00    60.20 3632.29  413159   14546</span>
+<span class="co">#&gt; 33   703.65   22552 159.71 257721.77   847.00   509.25 3632.29  413159   22552</span>
+<span class="co">#&gt; 34  3985.20    1530  61.35  48340.12  4190.00  2351.20 3632.29  413159    1530</span>
+<span class="co">#&gt; 35   420.80   14166  59.90  23148.74   709.05   240.15 3632.29  413159   14166</span>
+<span class="co">#&gt; 36  3401.45    1461  49.89  40079.10  3708.00  2100.00 3632.29  413159    1461</span>
+<span class="co">#&gt; 37 21635.40     113  24.54  28882.99 25355.00 15410.00 3632.29  413159     113</span>
+<span class="co">#&gt; 38    91.50   14327  13.15  44362.25   145.85    73.20 3632.29  413159   14327</span>
+<span class="co">#&gt; 39   148.00   21655  32.15  21607.12   221.20    84.90 3632.29  413159   21655</span>
+<span class="co">#&gt; 40    96.25   12682  12.24  17798.15   157.38    65.00 3632.29  413159   12682</span>
+<span class="co">#&gt; 41   640.35    1873  12.02  32525.19   669.75   355.30 3632.29  413159    1873</span>
+<span class="co">#&gt; 42   563.45   29784 168.06 126031.29   612.00   321.15 3632.29  413159   29784</span>
+<span class="co">#&gt; 43 16198.15     145  23.52  57784.98 18369.95 11265.00 3632.29  413159     145</span>
+<span class="co">#&gt; 44   979.25   44801 439.05 424081.52  1305.50   738.75 3632.29  413159   44801</span>
+<span class="co">#&gt; 45   308.20   17080  52.64  23261.33   516.45   250.85 3632.29  413159   17080</span>
+<span class="co">#&gt; 46  5036.95    1113  56.06  30459.53  9950.00  3985.30 3632.29  413159    1113</span>
+<span class="co">#&gt; 47   181.20   41650  75.47 158142.01   282.90   134.60 3632.29  413159   41650</span>
+<span class="co">#&gt; 48   485.65    4026  19.55  52435.67   512.70   312.00 3632.29  413159    4026</span>
+<span class="co">#&gt; 49  1595.40    1744  27.82  71924.30  1916.70  1291.25 3632.29  413159    1744</span>
+<span class="co">#&gt; 50  2689.45     594  15.98  35020.72  3315.15  1788.65 3632.29  413159     594</span>
+<span class="co">#&gt;    sumfinQnty</span>
+<span class="co">#&gt; 1      807074</span>
+<span class="co">#&gt; 2      807074</span>
+<span class="co">#&gt; 3      807074</span>
+<span class="co">#&gt; 4      807074</span>
+<span class="co">#&gt; 5      807074</span>
+<span class="co">#&gt; 6      807074</span>
+<span class="co">#&gt; 7      807074</span>
+<span class="co">#&gt; 8      807074</span>
+<span class="co">#&gt; 9      807074</span>
+<span class="co">#&gt; 10     807074</span>
+<span class="co">#&gt; 11     807074</span>
+<span class="co">#&gt; 12     807074</span>
+<span class="co">#&gt; 13     807074</span>
+<span class="co">#&gt; 14     807074</span>
+<span class="co">#&gt; 15     807074</span>
+<span class="co">#&gt; 16     807074</span>
+<span class="co">#&gt; 17     807074</span>
+<span class="co">#&gt; 18     807074</span>
+<span class="co">#&gt; 19     807074</span>
+<span class="co">#&gt; 20     807074</span>
+<span class="co">#&gt; 21     807074</span>
+<span class="co">#&gt; 22     807074</span>
+<span class="co">#&gt; 23     807074</span>
+<span class="co">#&gt; 24     807074</span>
+<span class="co">#&gt; 25     807074</span>
+<span class="co">#&gt; 26     807074</span>
+<span class="co">#&gt; 27     807074</span>
+<span class="co">#&gt; 28     807074</span>
+<span class="co">#&gt; 29     807074</span>
+<span class="co">#&gt; 30     807074</span>
+<span class="co">#&gt; 31     807074</span>
+<span class="co">#&gt; 32     807074</span>
+<span class="co">#&gt; 33     807074</span>
+<span class="co">#&gt; 34     807074</span>
+<span class="co">#&gt; 35     807074</span>
+<span class="co">#&gt; 36     807074</span>
+<span class="co">#&gt; 37     807074</span>
+<span class="co">#&gt; 38     807074</span>
+<span class="co">#&gt; 39     807074</span>
+<span class="co">#&gt; 40     807074</span>
+<span class="co">#&gt; 41     807074</span>
+<span class="co">#&gt; 42     807074</span>
+<span class="co">#&gt; 43     807074</span>
+<span class="co">#&gt; 44     807074</span>
+<span class="co">#&gt; 45     807074</span>
+<span class="co">#&gt; 46     807074</span>
+<span class="co">#&gt; 47     807074</span>
+<span class="co">#&gt; 48     807074</span>
+<span class="co">#&gt; 49     807074</span>
+<span class="co">#&gt; 50     807074</span></pre></div>
 </div>
 </div>
-<div id="advances--declines" class="section level3">
+<div id="advances-declines" class="section level3">
 <h3 class="hasAnchor">
-<a href="#advances--declines" class="anchor"></a>Advances &amp; Declines</h3>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" title="1"><span class="kw"><a href="reference/nse_advances_declines.html">nse_advances_declines</a></span>()</a>
-<a class="sourceLine" id="cb8-2" title="2"><span class="co">#&gt; # A tibble: 57 x 4</span></a>
-<a class="sourceLine" id="cb8-3" title="3"><span class="co">#&gt;    index_name      advances declines unchanged</span></a>
-<a class="sourceLine" id="cb8-4" title="4"><span class="co">#&gt;    &lt;chr&gt;              &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb8-5" title="5"><span class="co">#&gt;  1 NIFTY 50              23       25         2</span></a>
-<a class="sourceLine" id="cb8-6" title="6"><span class="co">#&gt;  2 NIFTY NEXT 50         26       23         1</span></a>
-<a class="sourceLine" id="cb8-7" title="7"><span class="co">#&gt;  3 NIFTY IT               7        3         0</span></a>
-<a class="sourceLine" id="cb8-8" title="8"><span class="co">#&gt;  4 NIFTY BANK             5        6         1</span></a>
-<a class="sourceLine" id="cb8-9" title="9"><span class="co">#&gt;  5 NIFTY MIDCAP 50       25       24         1</span></a>
-<a class="sourceLine" id="cb8-10" title="10"><span class="co">#&gt;  6 NIFTY INFRA           14       15         1</span></a>
-<a class="sourceLine" id="cb8-11" title="11"><span class="co">#&gt;  7 NIFTY REALTY           4        5         1</span></a>
-<a class="sourceLine" id="cb8-12" title="12"><span class="co">#&gt;  8 NIFTY ENERGY           7        3         0</span></a>
-<a class="sourceLine" id="cb8-13" title="13"><span class="co">#&gt;  9 NIFTY FMCG            11        3         1</span></a>
-<a class="sourceLine" id="cb8-14" title="14"><span class="co">#&gt; 10 NIFTY MNC             16       13         1</span></a>
-<a class="sourceLine" id="cb8-15" title="15"><span class="co">#&gt; # ... with 47 more rows</span></a>
-<a class="sourceLine" id="cb8-16" title="16"></a>
-<a class="sourceLine" id="cb8-17" title="17"><span class="co"># retain original column names as returned by NSE</span></a>
-<a class="sourceLine" id="cb8-18" title="18"><span class="kw"><a href="reference/nse_advances_declines.html">nse_advances_declines</a></span>(<span class="dt">clean_names =</span> <span class="ot">FALSE</span>)</a>
-<a class="sourceLine" id="cb8-19" title="19"><span class="co">#&gt; # A tibble: 57 x 4</span></a>
-<a class="sourceLine" id="cb8-20" title="20"><span class="co">#&gt;    indice          advances declines unchanged</span></a>
-<a class="sourceLine" id="cb8-21" title="21"><span class="co">#&gt;    &lt;chr&gt;              &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb8-22" title="22"><span class="co">#&gt;  1 NIFTY 50              23       25         2</span></a>
-<a class="sourceLine" id="cb8-23" title="23"><span class="co">#&gt;  2 NIFTY NEXT 50         26       23         1</span></a>
-<a class="sourceLine" id="cb8-24" title="24"><span class="co">#&gt;  3 NIFTY IT               7        3         0</span></a>
-<a class="sourceLine" id="cb8-25" title="25"><span class="co">#&gt;  4 NIFTY BANK             5        6         1</span></a>
-<a class="sourceLine" id="cb8-26" title="26"><span class="co">#&gt;  5 NIFTY MIDCAP 50       25       24         1</span></a>
-<a class="sourceLine" id="cb8-27" title="27"><span class="co">#&gt;  6 NIFTY INFRA           14       15         1</span></a>
-<a class="sourceLine" id="cb8-28" title="28"><span class="co">#&gt;  7 NIFTY REALTY           4        5         1</span></a>
-<a class="sourceLine" id="cb8-29" title="29"><span class="co">#&gt;  8 NIFTY ENERGY           7        3         0</span></a>
-<a class="sourceLine" id="cb8-30" title="30"><span class="co">#&gt;  9 NIFTY FMCG            11        3         1</span></a>
-<a class="sourceLine" id="cb8-31" title="31"><span class="co">#&gt; 10 NIFTY MNC             16       13         1</span></a>
-<a class="sourceLine" id="cb8-32" title="32"><span class="co">#&gt; # ... with 47 more rows</span></a></code></pre></div>
-<p>Please note that the ‘nse2r’ project is released with a <a href="CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
+<a href="#advances-declines" class="anchor"></a>Advances &amp; Declines</h3>
+<div class="sourceCode" id="cb8"><pre class="r"><span class="fu"><a href="reference/nse_advances_declines.html">nse_advances_declines</a></span>()
+<span class="co">#&gt;                                     index_name advances declines unchanged</span>
+<span class="co">#&gt; 1                                     NIFTY 50       40       10         0</span>
+<span class="co">#&gt; 2                                NIFTY NEXT 50       33       16         1</span>
+<span class="co">#&gt; 3                                     NIFTY IT        8        2         0</span>
+<span class="co">#&gt; 4                                   NIFTY BANK       12        0         0</span>
+<span class="co">#&gt; 5                              NIFTY MIDCAP 50       37       13         0</span>
+<span class="co">#&gt; 6                                  NIFTY INFRA       22        8         0</span>
+<span class="co">#&gt; 7                                 NIFTY REALTY        8        2         0</span>
+<span class="co">#&gt; 8                                 NIFTY ENERGY        9        1         0</span>
+<span class="co">#&gt; 9                                   NIFTY FMCG       12        3         0</span>
+<span class="co">#&gt; 10                                   NIFTY MNC       18       12         0</span>
+<span class="co">#&gt; 11                                NIFTY PHARMA        5        5         0</span>
+<span class="co">#&gt; 12                                   NIFTY PSE       17        2         1</span>
+<span class="co">#&gt; 13                              NIFTY PSU BANK       12        1         0</span>
+<span class="co">#&gt; 14                           NIFTY SERV SECTOR       26        4         0</span>
+<span class="co">#&gt; 15                           NIFTY COMMODITIES       24        5         1</span>
+<span class="co">#&gt; 16                           NIFTY CONSUMPTION       16       14         0</span>
+<span class="co">#&gt; 17                           NIFTY FIN SERVICE       18        2         0</span>
+<span class="co">#&gt; 18                                  NIFTY AUTO       10        5         0</span>
+<span class="co">#&gt; 19                           NIFTY DIV OPPS 50       35       14         1</span>
+<span class="co">#&gt; 20                                 NIFTY MEDIA       10        4         0</span>
+<span class="co">#&gt; 21                                 NIFTY METAL       11        4         0</span>
+<span class="co">#&gt; 22                             NIFTY100 LIQ 15       11        4         0</span>
+<span class="co">#&gt; 23                                  NIFTY CPSE        9        2         1</span>
+<span class="co">#&gt; 24                           NIFTY GROWSECT 15       12        3         0</span>
+<span class="co">#&gt; 25                            NIFTY50 VALUE 20       15        5         0</span>
+<span class="co">#&gt; 26                           NIFTY100 QUALTY30       19       11         0</span>
+<span class="co">#&gt; 27                              NIFTY PVT BANK       10        0         0</span>
+<span class="co">#&gt; 28                            NIFTY MID LIQ 15       11        4         0</span>
+<span class="co">#&gt; 29                                   NIFTY 100       74       26         1</span>
+<span class="co">#&gt; 30                                   NIFTY 200      149       50         2</span>
+<span class="co">#&gt; 31                                   NIFTY 500      377      119         5</span>
+<span class="co">#&gt; 32                            NIFTY MIDCAP 100       75       24         1</span>
+<span class="co">#&gt; 33                            NIFTY SMLCAP 100       78       20         2</span>
+<span class="co">#&gt; 34                    NIFTY ADITYA BIRLA GROUP        6        1         0</span>
+<span class="co">#&gt; 35                              NIFTY ALPHA 50       36       14         0</span>
+<span class="co">#&gt; 36                          NIFTY HIGH BETA 50       43        7         0</span>
+<span class="co">#&gt; 37                     NIFTY LOW VOLATILITY 50       36       14         0</span>
+<span class="co">#&gt; 38                        NIFTY MAHINDRA GROUP        8        0         0</span>
+<span class="co">#&gt; 39                            NIFTY MIDCAP 150      109       39         2</span>
+<span class="co">#&gt; 40                       NIFTY MIDSMALLCAP 400      303       93         4</span>
+<span class="co">#&gt; 41                            NIFTY SHARIAH 25       13       12         0</span>
+<span class="co">#&gt; 42                          NIFTY SMALLCAP 250      194       54         2</span>
+<span class="co">#&gt; 43                           NIFTY SMALLCAP 50       38       11         1</span>
+<span class="co">#&gt; 44                            NIFTY TATA GROUP       17        5         0</span>
+<span class="co">#&gt; 45                    NIFTY TATA GROUP 25% CAP        7        3         0</span>
+<span class="co">#&gt; 46                            NIFTY100 EQL WGT       74       26         1</span>
+<span class="co">#&gt; 47                           NIFTY100 LOWVOL30       22        8         0</span>
+<span class="co">#&gt; 48                             NIFTY50 SHARIAH       13        6         0</span>
+<span class="co">#&gt; 49                            NIFTY500 SHARIAH      147       68         2</span>
+<span class="co">#&gt; 50                             NIFTY50 EQL WGT       40       10         0</span>
+<span class="co">#&gt; 51               NIFTY ALPHA LOW-VOLATILITY 30       20       10         0</span>
+<span class="co">#&gt; 52             NIFTY QUALITY LOW-VOLATILITY 30       19       11         0</span>
+<span class="co">#&gt; 53       NIFTY ALPHA QUALITY LOW-VOLATILITY 30       19       11         0</span>
+<span class="co">#&gt; 54 NIFTY ALPHA QUALITY VALUE LOW-VOLATILITY 30       18       12         0</span>
+<span class="co">#&gt; 55                            NIFTY SME EMERGE       30       17        72</span>
+<span class="co">#&gt; 56                       NIFTY LARGEMIDCAP 250      183       65         3</span>
+<span class="co">#&gt; 57                           NIFTY500 VALUE 50       42        7         1</span>
+<span class="co">#&gt; 58                            NIFTY MIDCAP 150      109       39         2</span>
+<span class="co">#&gt; 59                          CNX NIFTY Pre Open       16       28         6</span>
+
+<span class="co"># retain original column names as returned by NSE</span>
+<span class="fu"><a href="reference/nse_advances_declines.html">nse_advances_declines</a></span>(<span class="kw">clean_names</span> <span class="kw">=</span> <span class="fl">FALSE</span>)
+<span class="co">#&gt;                                        skipped advances declines unchanged</span>
+<span class="co">#&gt; 1                                     NIFTY 50       40       10         0</span>
+<span class="co">#&gt; 2                                NIFTY NEXT 50       33       16         1</span>
+<span class="co">#&gt; 3                                     NIFTY IT        8        2         0</span>
+<span class="co">#&gt; 4                                   NIFTY BANK       12        0         0</span>
+<span class="co">#&gt; 5                              NIFTY MIDCAP 50       37       13         0</span>
+<span class="co">#&gt; 6                                  NIFTY INFRA       22        8         0</span>
+<span class="co">#&gt; 7                                 NIFTY REALTY        8        2         0</span>
+<span class="co">#&gt; 8                                 NIFTY ENERGY        9        1         0</span>
+<span class="co">#&gt; 9                                   NIFTY FMCG       12        3         0</span>
+<span class="co">#&gt; 10                                   NIFTY MNC       18       12         0</span>
+<span class="co">#&gt; 11                                NIFTY PHARMA        5        5         0</span>
+<span class="co">#&gt; 12                                   NIFTY PSE       17        2         1</span>
+<span class="co">#&gt; 13                              NIFTY PSU BANK       12        1         0</span>
+<span class="co">#&gt; 14                           NIFTY SERV SECTOR       26        4         0</span>
+<span class="co">#&gt; 15                           NIFTY COMMODITIES       24        5         1</span>
+<span class="co">#&gt; 16                           NIFTY CONSUMPTION       16       14         0</span>
+<span class="co">#&gt; 17                           NIFTY FIN SERVICE       18        2         0</span>
+<span class="co">#&gt; 18                                  NIFTY AUTO       10        5         0</span>
+<span class="co">#&gt; 19                           NIFTY DIV OPPS 50       35       14         1</span>
+<span class="co">#&gt; 20                                 NIFTY MEDIA       10        4         0</span>
+<span class="co">#&gt; 21                                 NIFTY METAL       11        4         0</span>
+<span class="co">#&gt; 22                             NIFTY100 LIQ 15       11        4         0</span>
+<span class="co">#&gt; 23                                  NIFTY CPSE        9        2         1</span>
+<span class="co">#&gt; 24                           NIFTY GROWSECT 15       12        3         0</span>
+<span class="co">#&gt; 25                            NIFTY50 VALUE 20       15        5         0</span>
+<span class="co">#&gt; 26                           NIFTY100 QUALTY30       19       11         0</span>
+<span class="co">#&gt; 27                              NIFTY PVT BANK       10        0         0</span>
+<span class="co">#&gt; 28                            NIFTY MID LIQ 15       11        4         0</span>
+<span class="co">#&gt; 29                                   NIFTY 100       74       26         1</span>
+<span class="co">#&gt; 30                                   NIFTY 200      149       50         2</span>
+<span class="co">#&gt; 31                                   NIFTY 500      377      119         5</span>
+<span class="co">#&gt; 32                            NIFTY MIDCAP 100       75       24         1</span>
+<span class="co">#&gt; 33                            NIFTY SMLCAP 100       78       20         2</span>
+<span class="co">#&gt; 34                    NIFTY ADITYA BIRLA GROUP        6        1         0</span>
+<span class="co">#&gt; 35                              NIFTY ALPHA 50       36       14         0</span>
+<span class="co">#&gt; 36                          NIFTY HIGH BETA 50       43        7         0</span>
+<span class="co">#&gt; 37                     NIFTY LOW VOLATILITY 50       36       14         0</span>
+<span class="co">#&gt; 38                        NIFTY MAHINDRA GROUP        8        0         0</span>
+<span class="co">#&gt; 39                            NIFTY MIDCAP 150      109       39         2</span>
+<span class="co">#&gt; 40                       NIFTY MIDSMALLCAP 400      303       93         4</span>
+<span class="co">#&gt; 41                            NIFTY SHARIAH 25       13       12         0</span>
+<span class="co">#&gt; 42                          NIFTY SMALLCAP 250      194       54         2</span>
+<span class="co">#&gt; 43                           NIFTY SMALLCAP 50       38       11         1</span>
+<span class="co">#&gt; 44                            NIFTY TATA GROUP       17        5         0</span>
+<span class="co">#&gt; 45                    NIFTY TATA GROUP 25% CAP        7        3         0</span>
+<span class="co">#&gt; 46                            NIFTY100 EQL WGT       74       26         1</span>
+<span class="co">#&gt; 47                           NIFTY100 LOWVOL30       22        8         0</span>
+<span class="co">#&gt; 48                             NIFTY50 SHARIAH       13        6         0</span>
+<span class="co">#&gt; 49                            NIFTY500 SHARIAH      147       68         2</span>
+<span class="co">#&gt; 50                             NIFTY50 EQL WGT       40       10         0</span>
+<span class="co">#&gt; 51               NIFTY ALPHA LOW-VOLATILITY 30       20       10         0</span>
+<span class="co">#&gt; 52             NIFTY QUALITY LOW-VOLATILITY 30       19       11         0</span>
+<span class="co">#&gt; 53       NIFTY ALPHA QUALITY LOW-VOLATILITY 30       19       11         0</span>
+<span class="co">#&gt; 54 NIFTY ALPHA QUALITY VALUE LOW-VOLATILITY 30       18       12         0</span>
+<span class="co">#&gt; 55                            NIFTY SME EMERGE       30       17        72</span>
+<span class="co">#&gt; 56                       NIFTY LARGEMIDCAP 250      183       65         3</span>
+<span class="co">#&gt; 57                           NIFTY500 VALUE 50       42        7         1</span>
+<span class="co">#&gt; 58                            NIFTY MIDCAP 150      109       39         2</span>
+<span class="co">#&gt; 59                          CNX NIFTY Pre Open       16       28         6</span></pre></div>
 </div>
+</div>
+<div id="code-of-conduct" class="section level2">
+<h2 class="hasAnchor">
+<a href="#code-of-conduct" class="anchor"></a>Code of Conduct</h2>
+<p>Please note that this project is released with a <a href="CONDUCT.html">Contributor Code of Conduct</a>. By participating in this project you agree to abide by its terms.</p>
 </div>
 </div>
   </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
 <h2>Links</h2>
 <ul class="list-unstyled">
 <li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=nse2r">https://​cloud.r-project.org/​package=nse2r</a>
 </li>
-<li>Browse source code at <br><a href="https://github.com/rsquaredacademy/nse2r">https://​github.com/​rsquaredacademy/​nse2r</a>
+<li>Browse source code at <br><a href="https://github.com/rsquaredacademy/nse2r/">https://​github.com/​rsquaredacademy/​nse2r/​</a>
 </li>
 <li>Report a bug at <br><a href="https://github.com/rsquaredacademy/nse2r/issues%20%20%20%20">https://​github.com/​rsquaredacademy/​nse2r/​issues    </a>
 </li>
@@ -492,19 +1435,7 @@
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
-<ul class="list-unstyled">
-<li><a href="https://cran.r-project.org/package=nse2r"><img src="https://www.r-pkg.org/badges/version/nse2r" alt="CRAN_Status_Badge"></a></li>
-<li><a href="https://cran.r-project.org/web/checks/check_results_nse2r.html"><img src="https://cranchecks.info/badges/summary/nse2r" alt="cran checks"></a></li>
-<li><a href="https://travis-ci.org/rsquaredacademy/nse2r"><img src="https://travis-ci.org/rsquaredacademy/nse2r.svg?branch=master" alt="Travis-CI Build Status"></a></li>
-<li><a href="https://ci.appveyor.com/project/rsquaredacademy/nse2r"><img src="https://ci.appveyor.com/api/projects/status/github/rsquaredacademy/nse2r?branch=master&amp;svg=true" alt="AppVeyor Build Status"></a></li>
-<li><a href="https://codecov.io/github/rsquaredacademy/nse2r?branch=master"><img src="https://img.shields.io/codecov/c/github/rsquaredacademy/nse2r/master.svg" alt="Coverage Status"></a></li>
-<li><a href="https://www.tidyverse.org/lifecycle/#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
-<li><a href="https://cran.r-project.org/package=nse2r"><img src="https://cranlogs.r-pkg.org/badges/grand-total/nse2r"></a></li>
-</ul>
-</div>
-</div>
+  </div>
 </div>
 
 
@@ -513,7 +1444,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

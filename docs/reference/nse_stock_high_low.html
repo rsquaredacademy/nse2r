@@ -8,23 +8,29 @@
 
 <title>52 week high &amp; low — nse_stock_high_low • nse2r</title>
 
+
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -32,10 +38,10 @@
 
 
 
-<meta property="og:title" content="52 week high &amp; low — nse_stock_high_low" />
 
+<meta property="og:title" content="52 week high &amp; low — nse_stock_high_low" />
 <meta property="og:description" content="Fetch stocks that have touched their 52 week high and low." />
-<meta name="twitter:card" content="summary" />
+
 
 
 
@@ -52,7 +58,7 @@
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -66,7 +72,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">nse2r</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2.9000</span>
       </span>
     </div>
 
@@ -91,7 +97,6 @@
   </ul>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/rsquaredacademy/nse2r">
@@ -118,15 +123,13 @@
     </div>
 
     <div class="ref-description">
-    
     <p>Fetch stocks that have touched their 52 week high and low.</p>
-    
     </div>
 
     <pre class="usage"><span class='fu'>nse_stock_year_high</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
 
 <span class='fu'>nse_stock_year_low</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
-    
+
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
@@ -136,7 +139,7 @@
 descriptive and uses snake_case.</p></td>
     </tr>
     </table>
-    
+
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A tibble with the following column names:</p>
@@ -153,101 +156,490 @@ descriptive and uses snake_case.</p></td>
 <dt>change</dt><dd><p>Change in price.</p></dd>
 <dt>percent_change</dt><dd><p>Percentage change in price.</p></dd>
 
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># \donttest{</span>
 <span class='co'># 52 week high</span>
-<span class='fu'>nse_stock_year_high</span>()</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 24 x 10</span><span>
-#&gt;    symbol symbol_desc date       new_high   year last_traded_pri~ prev_high
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>       </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>        </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>            </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> ADANI~ Adani Gree~ 2020-01-07   221.   2.21</span><span style='color: #555555;'>e</span><span>2           221.       211. 
-#&gt; </span><span style='color: #555555;'> 2</span><span> ALKYL~ Alkyl Amin~ 2020-01-07  </span><span style='text-decoration: underline;'>1</span><span>250    1.25</span><span style='color: #555555;'>e</span><span>3          </span><span style='text-decoration: underline;'>1</span><span>235       </span><span style='text-decoration: underline;'>1</span><span>250  
-#&gt; </span><span style='color: #555555;'> 3</span><span> AMBER  Amber Ente~ 2020-01-02  </span><span style='text-decoration: underline;'>1</span><span>230    1.23</span><span style='color: #555555;'>e</span><span>3          </span><span style='text-decoration: underline;'>1</span><span>200.      </span><span style='text-decoration: underline;'>1</span><span>177. 
-#&gt; </span><span style='color: #555555;'> 4</span><span> BCP    B.C. Power~ 2020-01-01    16.8  1.68</span><span style='color: #555555;'>e</span><span>1            16.4       16.4
-#&gt; </span><span style='color: #555555;'> 5</span><span> CHEMB~ Chembond C~ 2019-12-02   250.   2.50</span><span style='color: #555555;'>e</span><span>2           221        241. 
-#&gt; </span><span style='color: #555555;'> 6</span><span> GOLDB~ NIPPON IND~ 2020-01-06    36.9  3.69</span><span style='color: #555555;'>e</span><span>1            36.3       36.8
-#&gt; </span><span style='color: #555555;'> 7</span><span> HDFCM~ HDFC Mutua~ 2020-01-06  </span><span style='text-decoration: underline;'>3</span><span>740.   3.74</span><span style='color: #555555;'>e</span><span>3          </span><span style='text-decoration: underline;'>3</span><span>723       </span><span style='text-decoration: underline;'>3</span><span>728. 
-#&gt; </span><span style='color: #555555;'> 8</span><span> HLVLTD HLV LIMITED </span><span style='color: #BB0000;'>NA</span><span>             5.95 5.95</span><span style='color: #555555;'>e</span><span>0             5.85      </span><span style='color: #BB0000;'>NA</span><span>  
-#&gt; </span><span style='color: #555555;'> 9</span><span> IIFLS~ IIFL Secur~ 2020-01-07    54.4  5.44</span><span style='color: #555555;'>e</span><span>1            54.4       51.8
-#&gt; </span><span style='color: #555555;'>10</span><span> JKCEM~ JK Cement ~ 2020-01-07  </span><span style='text-decoration: underline;'>1</span><span>315.   1.31</span><span style='color: #555555;'>e</span><span>3          </span><span style='text-decoration: underline;'>1</span><span>279       </span><span style='text-decoration: underline;'>1</span><span>314. 
-#&gt; </span><span style='color: #555555;'># ... with 14 more rows, and 3 more variables: prev_close </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, change </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   percent_change </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
+<span class='fu'>nse_stock_year_high</span>()</div><div class='output co'>#&gt;        symbol
+#&gt; 1  ADANIGREEN
+#&gt; 2    ALOKINDS
+#&gt; 3  ANDHRACEMT
+#&gt; 4       ASTEC
+#&gt; 5  BALAJITELE
+#&gt; 6      BIOCON
+#&gt; 7   BIRLATYRE
+#&gt; 8     CENTEXT
+#&gt; 9  CORALFINAC
+#&gt; 10 COROMANDEL
+#&gt; 11     DAAWAT
+#&gt; 12    DHANUKA
+#&gt; 13      DIXON
+#&gt; 14   DNAMEDIA
+#&gt; 15    ESCORTS
+#&gt; 16 GAMMNINFRA
+#&gt; 17     GOENKA
+#&gt; 18 GSCLCEMENT
+#&gt; 19   GTLINFRA
+#&gt; 20   GUFICBIO
+#&gt; 21 HARRMALAYA
+#&gt; 22 HOTELRUGBY
+#&gt; 23  INDOSOLAR
+#&gt; 24    ISMTLTD
+#&gt; 25        ITI
+#&gt; 26 JAGSNPHARM
+#&gt; 27 JAIHINDPRO
+#&gt; 28     JIKIND
+#&gt; 29 JMTAUTOLTD
+#&gt; 30      KARDA
+#&gt; 31     KOPRAN
+#&gt; 32       KSCL
+#&gt; 33  KSERASERA
+#&gt; 34   LOTUSEYE
+#&gt; 35       LSIL
+#&gt; 36 MANAKALUCO
+#&gt; 37   MARKSANS
+#&gt; 38    METKORE
+#&gt; 39        MIC
+#&gt; 40     MITTAL
+#&gt; 41 MOREPENLAB
+#&gt; 42 MUTHOOTFIN
+#&gt; 43       N100
+#&gt; 44    NECLIFE
+#&gt; 45  NETWORK18
+#&gt; 46      OMAXE
+#&gt; 47 OPTOCIRCUI
+#&gt; 48 PRAKASHSTL
+#&gt; 49  PUNJLLOYD
+#&gt; 50   RAJRAYON
+#&gt; 51   RELIANCE
+#&gt; 52 ROHITFERRO
+#&gt; 53      RUCHI
+#&gt; 54  RUCHINFRA
+#&gt; 55  SAGARDEEP
+#&gt; 56    SCAPDVR
+#&gt; 57 SHREDIGCEM
+#&gt; 58  SUVENPHAR
+#&gt; 59  SWARAJENG
+#&gt; 60     SYNCOM
+#&gt; 61   TATACOMM
+#&gt; 62      UNITY
+#&gt; 63 VAIBHAVGBL
+#&gt; 64 VARDMNPOLY
+#&gt; 65    VIJIFIN
+#&gt;                                                               symbol_desc
+#&gt; 1                                              Adani Green Energy Limited
+#&gt; 2                                                 Alok Industries Limited
+#&gt; 3                                                  Andhra Cements Limited
+#&gt; 4                                              Astec LifeSciences Limited
+#&gt; 5                                                Balaji Telefilms Limited
+#&gt; 6                                                          Biocon Limited
+#&gt; 7                                                     Birla Tyres Limited
+#&gt; 8                                              Century Extrusions Limited
+#&gt; 9                                   Coral India Finance &amp; Housing Limited
+#&gt; 10                                       Coromandel International Limited
+#&gt; 11                                                       LT Foods Limited
+#&gt; 12                                               Dhanuka Agritech Limited
+#&gt; 13                                     Dixon Technologies (India) Limited
+#&gt; 14                                     Diligent Media Corporation Limited
+#&gt; 15                                                        Escorts Limited
+#&gt; 16                                 Gammon Infrastructure Projects Limited
+#&gt; 17                                      Goenka Diamond and Jewels Limited
+#&gt; 18                                          Gujarat Sidhee Cement Limited
+#&gt; 19                                             GTL Infrastructure Limited
+#&gt; 20                                              Gufic Biosciences Limited
+#&gt; 21                                           Harrisons  Malayalam Limited
+#&gt; 22                                                    Hotel Rugby Limited
+#&gt; 23                                                      Indosolar Limited
+#&gt; 24                                                           ISMT Limited
+#&gt; 25                                                            ITI Limited
+#&gt; 26                                      Jagsonpal Pharmaceuticals Limited
+#&gt; 27                                               Jaihind Projects Limited
+#&gt; 28                                                 JIK Industries Limited
+#&gt; 29                                                       JMT Auto Limited
+#&gt; 30                                            Karda Constructions Limited
+#&gt; 31                                                         Kopran Limited
+#&gt; 32                                            Kaveri Seed Company Limited
+#&gt; 33                                                            KSS Limited
+#&gt; 34                               Lotus Eye Hospital and Institute Limited
+#&gt; 35                                       Lloyds Steels Industries Limited
+#&gt; 36                                     Manaksia Aluminium Company Limited
+#&gt; 37                                                Marksans Pharma Limited
+#&gt; 38                                    Metkore Alloys &amp; Industries Limited
+#&gt; 39                                                MIC Electronics Limited
+#&gt; 40                                              Mittal Life Style Limited
+#&gt; 41                                           Morepen Laboratories Limited
+#&gt; 42                                                Muthoot Finance Limited
+#&gt; 43 Motilal Oswal Mutual Fund-Motilal Oswal MOSt Shares NASDAQ 100 ETF -GO
+#&gt; 44                                            Nectar Lifesciences Limited
+#&gt; 45                                  Network18 Media &amp; Investments Limited
+#&gt; 46                                                          Omaxe Limited
+#&gt; 47                                          Opto Circuits (India) Limited
+#&gt; 48                                               Prakash Steelage Limited
+#&gt; 49                                                     Punj Lloyd Limited
+#&gt; 50                                           Raj Rayon Industries Limited
+#&gt; 51                                            Reliance Industries Limited
+#&gt; 52                                               Rohit Ferro-Tech Limited
+#&gt; 53                                          Ruchi Soya Industries Limited
+#&gt; 54                                           Ruchi Infrastructure Limited
+#&gt; 55                                               Sagardeep Alloys Limited
+#&gt; 56                                               Stampede Capital Limited
+#&gt; 57                                           Shree Digvijay Cement Co.Ltd
+#&gt; 58                                          Suven Pharmaceuticals Limited
+#&gt; 59                                                 Swaraj Engines Limited
+#&gt; 60                                              Syncom Healthcare Limited
+#&gt; 61                                            Tata Communications Limited
+#&gt; 62                                            Unity Infraprojects Limited
+#&gt; 63                                                 Vaibhav Global Limited
+#&gt; 64                                               Vardhman Polytex Limited
+#&gt; 65                                                   Viji Finance Limited
+#&gt;          date new_high    year last_traded_price prev_high prev_close change
+#&gt; 1  2020-06-17   400.65  400.65            400.65    381.60     381.60  19.05
+#&gt; 2  2020-06-17    34.45   34.45             34.45     32.85      32.85   1.60
+#&gt; 3  2020-06-17     7.00    7.00              7.00      6.70       6.70   0.30
+#&gt; 4  2020-05-29   773.95  773.95            765.00    768.00     693.30  71.70
+#&gt; 5  2020-06-17    81.00   81.00             76.50     78.25      78.10  -1.60
+#&gt; 6  2020-06-05   404.60  404.60            393.20    400.50     396.10  -2.90
+#&gt; 7  2020-06-17    31.30   31.30             31.30     29.85      29.85   1.45
+#&gt; 8  2020-06-17     4.80    4.80              4.80      4.40       4.40   0.40
+#&gt; 9  2020-06-10    16.50   16.50             16.50     15.80      13.75   2.75
+#&gt; 10 2020-06-17   747.00  747.00            738.00    726.45     721.60  16.40
+#&gt; 11 2020-06-17    44.90   44.90             44.00     40.80      40.10   3.90
+#&gt; 12 2020-06-17   799.00  799.00            779.00    793.85     771.65   7.35
+#&gt; 13 2020-06-03  5600.00 5600.00           5580.00   5575.00    5338.35 241.65
+#&gt; 14 2020-06-17     0.80    0.80              0.80      0.75       0.75   0.05
+#&gt; 15 2020-06-17  1014.90 1014.90            983.45   1009.25     999.85 -16.40
+#&gt; 16 2020-06-17     0.65    0.65              0.65      0.65       0.60   0.05
+#&gt; 17 2020-06-17     1.20    1.20              1.20      1.15       1.15   0.05
+#&gt; 18 2020-06-17    33.80   33.80             30.40     32.15      32.15  -1.75
+#&gt; 19 2020-06-17     0.85    0.85              0.85      0.80       0.80   0.05
+#&gt; 20 2019-10-09    84.70   84.70             75.25     81.00      79.20  -3.95
+#&gt; 21 2019-06-28    81.60   81.60             76.30     75.70      71.30   5.00
+#&gt; 22 2020-06-17     1.40    1.40              1.40      1.35       1.35   0.05
+#&gt; 23 2020-06-17     1.35    1.35              1.35      1.30       1.30   0.05
+#&gt; 24 2020-06-17     7.05    7.05              6.45      6.75       6.75  -0.30
+#&gt; 25 2020-01-07   108.65  108.65            108.65    107.40      90.55  18.10
+#&gt; 26 2020-06-17    34.65   34.65             34.60     31.50      31.50   3.10
+#&gt; 27 2020-04-07     0.80    0.80              0.80      0.80       0.75   0.05
+#&gt; 28 2020-06-17     0.70    0.70              0.70      0.65       0.65   0.05
+#&gt; 29 2020-06-17     4.40    4.40              4.40      4.20       4.20   0.20
+#&gt; 30 2020-06-15   243.75  243.75            243.75    237.50     232.15  11.60
+#&gt; 31 2020-01-22    40.80   40.80             39.95     38.75      37.15   2.80
+#&gt; 32 2020-06-17   634.00  634.00            624.00    629.80     601.80  22.20
+#&gt; 33 2020-06-17     0.35    0.35              0.35      0.30       0.30   0.05
+#&gt; 34 2020-06-17    33.85   33.85             32.80     33.50      31.90   0.90
+#&gt; 35 2020-06-10     1.00    1.00              1.00      1.00       0.95   0.05
+#&gt; 36 2020-06-17    11.20   11.20             10.80     10.85      10.70   0.10
+#&gt; 37 2020-06-17    37.15   37.15             34.00     35.40      35.40  -1.40
+#&gt; 38 2020-06-17     0.70    0.70              0.70      0.65       0.65   0.05
+#&gt; 39 2019-08-20     1.05    1.05              1.00      1.05       1.00   0.00
+#&gt; 40 2020-06-17   154.75  154.75            154.65    153.50     153.10   1.55
+#&gt; 41 2020-06-17    34.95   34.95             31.20     31.90      31.90  -0.70
+#&gt; 42 2020-06-17  1199.55 1199.55           1160.30   1011.85     999.65 160.65
+#&gt; 43 2020-05-12   770.00  770.00            748.35    766.10     743.33   5.02
+#&gt; 44 2020-06-17    27.35   27.35             27.35     22.85      22.80   4.55
+#&gt; 45 2020-06-17    41.90   41.90             41.30     40.05      40.05   1.25
+#&gt; 46 2020-06-17   208.40  208.40            208.10    207.20     206.55   1.55
+#&gt; 47 2020-06-17    11.65   11.65             11.65     11.10      11.10   0.55
+#&gt; 48 2020-06-17     1.55    1.55              1.55      1.50       1.50   0.05
+#&gt; 49 2020-06-17     1.70    1.70              1.70      1.65       1.65   0.05
+#&gt; 50 2020-06-17     0.40    0.40              0.40      0.35       0.35   0.05
+#&gt; 51 2020-06-16  1665.00 1665.00           1662.90   1648.55    1615.35  47.55
+#&gt; 52 2020-06-17     1.15    1.15              1.15      1.10       1.10   0.05
+#&gt; 53 2020-06-17  1134.10 1134.10           1134.10   1080.10    1080.10  54.00
+#&gt; 54 2020-06-17    16.05   16.05             16.05     15.30      15.30   0.75
+#&gt; 55 2020-06-17    99.10   99.10             98.80     97.00      96.85   1.95
+#&gt; 56 2020-06-17     0.75    0.75              0.75      0.70       0.70   0.05
+#&gt; 57 2020-06-17    51.90   51.90             47.25     49.00      48.40  -1.15
+#&gt; 58 2020-03-11   367.50  367.50            345.00    353.90     333.65  11.35
+#&gt; 59 2019-06-21  1445.00 1445.00           1429.00   1429.50    1305.00 124.00
+#&gt; 60 2020-06-17     2.20    2.20              2.20      2.10       2.10   0.10
+#&gt; 61 2020-06-17   610.00  610.00            593.00    610.00     596.40  -3.40
+#&gt; 62 2020-06-17     0.65    0.65              0.65      0.60       0.60   0.05
+#&gt; 63 2020-06-15  1270.00 1270.00           1269.00   1249.70    1187.65  81.35
+#&gt; 64 2020-06-17     5.25    5.25              5.25      5.00       5.00   0.25
+#&gt; 65 2020-06-17     0.65    0.65              0.65      0.60       0.60   0.05
+#&gt;    percent_change
+#&gt; 1            4.99
+#&gt; 2            4.87
+#&gt; 3            4.48
+#&gt; 4           10.34
+#&gt; 5           -2.05
+#&gt; 6           -0.73
+#&gt; 7            4.86
+#&gt; 8            9.09
+#&gt; 9           20.00
+#&gt; 10           2.27
+#&gt; 11           9.73
+#&gt; 12           0.95
+#&gt; 13           4.53
+#&gt; 14           6.67
+#&gt; 15          -1.64
+#&gt; 16           8.33
+#&gt; 17           4.35
+#&gt; 18          -5.44
+#&gt; 19           6.25
+#&gt; 20          -4.99
+#&gt; 21           7.01
+#&gt; 22           3.70
+#&gt; 23           3.85
+#&gt; 24          -4.44
+#&gt; 25          19.99
+#&gt; 26           9.84
+#&gt; 27           6.67
+#&gt; 28           7.69
+#&gt; 29           4.76
+#&gt; 30           5.00
+#&gt; 31           7.54
+#&gt; 32           3.69
+#&gt; 33          16.67
+#&gt; 34           2.82
+#&gt; 35           5.26
+#&gt; 36           0.93
+#&gt; 37          -3.95
+#&gt; 38           7.69
+#&gt; 39           0.00
+#&gt; 40           1.01
+#&gt; 41          -2.19
+#&gt; 42          16.07
+#&gt; 43           0.68
+#&gt; 44          19.96
+#&gt; 45           3.12
+#&gt; 46           0.75
+#&gt; 47           4.95
+#&gt; 48           3.33
+#&gt; 49           3.03
+#&gt; 50          14.29
+#&gt; 51           2.94
+#&gt; 52           4.55
+#&gt; 53           5.00
+#&gt; 54           4.90
+#&gt; 55           2.01
+#&gt; 56           7.14
+#&gt; 57          -2.38
+#&gt; 58           3.40
+#&gt; 59           9.50
+#&gt; 60           4.76
+#&gt; 61          -0.57
+#&gt; 62           8.33
+#&gt; 63           6.85
+#&gt; 64           5.00
+#&gt; 65           8.33</div><div class='input'>
 <span class='co'># retain original column names as returned by NSE</span>
-<span class='fu'>nse_stock_year_high</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 24 x 10</span><span>
-#&gt;    symbol symbolDesc dt          value   year    ltp value_old   prev change
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> ADANI~ Adani Gre~ 2020-01-07 2.21</span><span style='color: #555555;'>e</span><span>2 2.21</span><span style='color: #555555;'>e</span><span>2 2.21</span><span style='color: #555555;'>e</span><span>2     211.  2.11</span><span style='color: #555555;'>e</span><span>2  10.5 
-#&gt; </span><span style='color: #555555;'> 2</span><span> ALKYL~ Alkyl Ami~ 2020-01-07 1.25</span><span style='color: #555555;'>e</span><span>3 1.25</span><span style='color: #555555;'>e</span><span>3 1.24</span><span style='color: #555555;'>e</span><span>3    </span><span style='text-decoration: underline;'>1</span><span>250   1.24</span><span style='color: #555555;'>e</span><span>3  -</span><span style='color: #BB0000;'>6.65</span><span>
-#&gt; </span><span style='color: #555555;'> 3</span><span> AMBER  Amber Ent~ 2020-01-02 1.23</span><span style='color: #555555;'>e</span><span>3 1.23</span><span style='color: #555555;'>e</span><span>3 1.20</span><span style='color: #555555;'>e</span><span>3    </span><span style='text-decoration: underline;'>1</span><span>177.  1.17</span><span style='color: #555555;'>e</span><span>3  27.9 
-#&gt; </span><span style='color: #555555;'> 4</span><span> BCP    B.C. Powe~ 2020-01-01 1.68</span><span style='color: #555555;'>e</span><span>1 1.68</span><span style='color: #555555;'>e</span><span>1 1.64</span><span style='color: #555555;'>e</span><span>1      16.4 1.60</span><span style='color: #555555;'>e</span><span>1   0.45
-#&gt; </span><span style='color: #555555;'> 5</span><span> CHEMB~ Chembond ~ 2019-12-02 2.50</span><span style='color: #555555;'>e</span><span>2 2.50</span><span style='color: #555555;'>e</span><span>2 2.21</span><span style='color: #555555;'>e</span><span>2     241.  2.13</span><span style='color: #555555;'>e</span><span>2   8.1 
-#&gt; </span><span style='color: #555555;'> 6</span><span> GOLDB~ NIPPON IN~ 2020-01-06 3.69</span><span style='color: #555555;'>e</span><span>1 3.69</span><span style='color: #555555;'>e</span><span>1 3.63</span><span style='color: #555555;'>e</span><span>1      36.8 3.55</span><span style='color: #555555;'>e</span><span>1   0.8 
-#&gt; </span><span style='color: #555555;'> 7</span><span> HDFCM~ HDFC Mutu~ 2020-01-06 3.74</span><span style='color: #555555;'>e</span><span>3 3.74</span><span style='color: #555555;'>e</span><span>3 3.72</span><span style='color: #555555;'>e</span><span>3    </span><span style='text-decoration: underline;'>3</span><span>728.  3.63</span><span style='color: #555555;'>e</span><span>3  91.3 
-#&gt; </span><span style='color: #555555;'> 8</span><span> HLVLTD HLV LIMIT~ </span><span style='color: #BB0000;'>NA</span><span>         5.95</span><span style='color: #555555;'>e</span><span>0 5.95</span><span style='color: #555555;'>e</span><span>0 5.85</span><span style='color: #555555;'>e</span><span>0      </span><span style='color: #BB0000;'>NA</span><span>   5.85</span><span style='color: #555555;'>e</span><span>0   0   
-#&gt; </span><span style='color: #555555;'> 9</span><span> IIFLS~ IIFL Secu~ 2020-01-07 5.44</span><span style='color: #555555;'>e</span><span>1 5.44</span><span style='color: #555555;'>e</span><span>1 5.44</span><span style='color: #555555;'>e</span><span>1      51.8 5.18</span><span style='color: #555555;'>e</span><span>1   2.55
-#&gt; </span><span style='color: #555555;'>10</span><span> JKCEM~ JK Cement~ 2020-01-07 1.31</span><span style='color: #555555;'>e</span><span>3 1.31</span><span style='color: #555555;'>e</span><span>3 1.28</span><span style='color: #555555;'>e</span><span>3    </span><span style='text-decoration: underline;'>1</span><span>314.  1.28</span><span style='color: #555555;'>e</span><span>3  -</span><span style='color: #BB0000;'>4</span><span>   
-#&gt; </span><span style='color: #555555;'># ... with 14 more rows, and 1 more variable: pChange </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
+<span class='fu'>nse_stock_year_high</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt;        symbol
+#&gt; 1  ADANIGREEN
+#&gt; 2    ALOKINDS
+#&gt; 3  ANDHRACEMT
+#&gt; 4       ASTEC
+#&gt; 5  BALAJITELE
+#&gt; 6      BIOCON
+#&gt; 7   BIRLATYRE
+#&gt; 8     CENTEXT
+#&gt; 9  CORALFINAC
+#&gt; 10 COROMANDEL
+#&gt; 11     DAAWAT
+#&gt; 12    DHANUKA
+#&gt; 13      DIXON
+#&gt; 14   DNAMEDIA
+#&gt; 15    ESCORTS
+#&gt; 16 GAMMNINFRA
+#&gt; 17     GOENKA
+#&gt; 18 GSCLCEMENT
+#&gt; 19   GTLINFRA
+#&gt; 20   GUFICBIO
+#&gt; 21 HARRMALAYA
+#&gt; 22 HOTELRUGBY
+#&gt; 23  INDOSOLAR
+#&gt; 24    ISMTLTD
+#&gt; 25        ITI
+#&gt; 26 JAGSNPHARM
+#&gt; 27 JAIHINDPRO
+#&gt; 28     JIKIND
+#&gt; 29 JMTAUTOLTD
+#&gt; 30      KARDA
+#&gt; 31     KOPRAN
+#&gt; 32       KSCL
+#&gt; 33  KSERASERA
+#&gt; 34   LOTUSEYE
+#&gt; 35       LSIL
+#&gt; 36 MANAKALUCO
+#&gt; 37   MARKSANS
+#&gt; 38    METKORE
+#&gt; 39        MIC
+#&gt; 40     MITTAL
+#&gt; 41 MOREPENLAB
+#&gt; 42 MUTHOOTFIN
+#&gt; 43       N100
+#&gt; 44    NECLIFE
+#&gt; 45  NETWORK18
+#&gt; 46      OMAXE
+#&gt; 47 OPTOCIRCUI
+#&gt; 48 PRAKASHSTL
+#&gt; 49  PUNJLLOYD
+#&gt; 50   RAJRAYON
+#&gt; 51   RELIANCE
+#&gt; 52 ROHITFERRO
+#&gt; 53      RUCHI
+#&gt; 54  RUCHINFRA
+#&gt; 55  SAGARDEEP
+#&gt; 56    SCAPDVR
+#&gt; 57 SHREDIGCEM
+#&gt; 58  SUVENPHAR
+#&gt; 59  SWARAJENG
+#&gt; 60     SYNCOM
+#&gt; 61   TATACOMM
+#&gt; 62      UNITY
+#&gt; 63 VAIBHAVGBL
+#&gt; 64 VARDMNPOLY
+#&gt; 65    VIJIFIN
+#&gt;                                                                symbolDesc
+#&gt; 1                                              Adani Green Energy Limited
+#&gt; 2                                                 Alok Industries Limited
+#&gt; 3                                                  Andhra Cements Limited
+#&gt; 4                                              Astec LifeSciences Limited
+#&gt; 5                                                Balaji Telefilms Limited
+#&gt; 6                                                          Biocon Limited
+#&gt; 7                                                     Birla Tyres Limited
+#&gt; 8                                              Century Extrusions Limited
+#&gt; 9                                   Coral India Finance &amp; Housing Limited
+#&gt; 10                                       Coromandel International Limited
+#&gt; 11                                                       LT Foods Limited
+#&gt; 12                                               Dhanuka Agritech Limited
+#&gt; 13                                     Dixon Technologies (India) Limited
+#&gt; 14                                     Diligent Media Corporation Limited
+#&gt; 15                                                        Escorts Limited
+#&gt; 16                                 Gammon Infrastructure Projects Limited
+#&gt; 17                                      Goenka Diamond and Jewels Limited
+#&gt; 18                                          Gujarat Sidhee Cement Limited
+#&gt; 19                                             GTL Infrastructure Limited
+#&gt; 20                                              Gufic Biosciences Limited
+#&gt; 21                                           Harrisons  Malayalam Limited
+#&gt; 22                                                    Hotel Rugby Limited
+#&gt; 23                                                      Indosolar Limited
+#&gt; 24                                                           ISMT Limited
+#&gt; 25                                                            ITI Limited
+#&gt; 26                                      Jagsonpal Pharmaceuticals Limited
+#&gt; 27                                               Jaihind Projects Limited
+#&gt; 28                                                 JIK Industries Limited
+#&gt; 29                                                       JMT Auto Limited
+#&gt; 30                                            Karda Constructions Limited
+#&gt; 31                                                         Kopran Limited
+#&gt; 32                                            Kaveri Seed Company Limited
+#&gt; 33                                                            KSS Limited
+#&gt; 34                               Lotus Eye Hospital and Institute Limited
+#&gt; 35                                       Lloyds Steels Industries Limited
+#&gt; 36                                     Manaksia Aluminium Company Limited
+#&gt; 37                                                Marksans Pharma Limited
+#&gt; 38                                    Metkore Alloys &amp; Industries Limited
+#&gt; 39                                                MIC Electronics Limited
+#&gt; 40                                              Mittal Life Style Limited
+#&gt; 41                                           Morepen Laboratories Limited
+#&gt; 42                                                Muthoot Finance Limited
+#&gt; 43 Motilal Oswal Mutual Fund-Motilal Oswal MOSt Shares NASDAQ 100 ETF -GO
+#&gt; 44                                            Nectar Lifesciences Limited
+#&gt; 45                                  Network18 Media &amp; Investments Limited
+#&gt; 46                                                          Omaxe Limited
+#&gt; 47                                          Opto Circuits (India) Limited
+#&gt; 48                                               Prakash Steelage Limited
+#&gt; 49                                                     Punj Lloyd Limited
+#&gt; 50                                           Raj Rayon Industries Limited
+#&gt; 51                                            Reliance Industries Limited
+#&gt; 52                                               Rohit Ferro-Tech Limited
+#&gt; 53                                          Ruchi Soya Industries Limited
+#&gt; 54                                           Ruchi Infrastructure Limited
+#&gt; 55                                               Sagardeep Alloys Limited
+#&gt; 56                                               Stampede Capital Limited
+#&gt; 57                                           Shree Digvijay Cement Co.Ltd
+#&gt; 58                                          Suven Pharmaceuticals Limited
+#&gt; 59                                                 Swaraj Engines Limited
+#&gt; 60                                              Syncom Healthcare Limited
+#&gt; 61                                            Tata Communications Limited
+#&gt; 62                                            Unity Infraprojects Limited
+#&gt; 63                                                 Vaibhav Global Limited
+#&gt; 64                                               Vardhman Polytex Limited
+#&gt; 65                                                   Viji Finance Limited
+#&gt;            dt   value    year     ltp value_old    prev change pChange
+#&gt; 1  2020-06-17  400.65  400.65  400.65    381.60  381.60  19.05    4.99
+#&gt; 2  2020-06-17   34.45   34.45   34.45     32.85   32.85   1.60    4.87
+#&gt; 3  2020-06-17    7.00    7.00    7.00      6.70    6.70   0.30    4.48
+#&gt; 4  2020-05-29  773.95  773.95  765.00    768.00  693.30  71.70   10.34
+#&gt; 5  2020-06-17   81.00   81.00   76.50     78.25   78.10  -1.60   -2.05
+#&gt; 6  2020-06-05  404.60  404.60  393.20    400.50  396.10  -2.90   -0.73
+#&gt; 7  2020-06-17   31.30   31.30   31.30     29.85   29.85   1.45    4.86
+#&gt; 8  2020-06-17    4.80    4.80    4.80      4.40    4.40   0.40    9.09
+#&gt; 9  2020-06-10   16.50   16.50   16.50     15.80   13.75   2.75   20.00
+#&gt; 10 2020-06-17  747.00  747.00  738.00    726.45  721.60  16.40    2.27
+#&gt; 11 2020-06-17   44.90   44.90   44.00     40.80   40.10   3.90    9.73
+#&gt; 12 2020-06-17  799.00  799.00  779.00    793.85  771.65   7.35    0.95
+#&gt; 13 2020-06-03 5600.00 5600.00 5580.00   5575.00 5338.35 241.65    4.53
+#&gt; 14 2020-06-17    0.80    0.80    0.80      0.75    0.75   0.05    6.67
+#&gt; 15 2020-06-17 1014.90 1014.90  983.45   1009.25  999.85 -16.40   -1.64
+#&gt; 16 2020-06-17    0.65    0.65    0.65      0.65    0.60   0.05    8.33
+#&gt; 17 2020-06-17    1.20    1.20    1.20      1.15    1.15   0.05    4.35
+#&gt; 18 2020-06-17   33.80   33.80   30.40     32.15   32.15  -1.75   -5.44
+#&gt; 19 2020-06-17    0.85    0.85    0.85      0.80    0.80   0.05    6.25
+#&gt; 20 2019-10-09   84.70   84.70   75.25     81.00   79.20  -3.95   -4.99
+#&gt; 21 2019-06-28   81.60   81.60   76.30     75.70   71.30   5.00    7.01
+#&gt; 22 2020-06-17    1.40    1.40    1.40      1.35    1.35   0.05    3.70
+#&gt; 23 2020-06-17    1.35    1.35    1.35      1.30    1.30   0.05    3.85
+#&gt; 24 2020-06-17    7.05    7.05    6.45      6.75    6.75  -0.30   -4.44
+#&gt; 25 2020-01-07  108.65  108.65  108.65    107.40   90.55  18.10   19.99
+#&gt; 26 2020-06-17   34.65   34.65   34.60     31.50   31.50   3.10    9.84
+#&gt; 27 2020-04-07    0.80    0.80    0.80      0.80    0.75   0.05    6.67
+#&gt; 28 2020-06-17    0.70    0.70    0.70      0.65    0.65   0.05    7.69
+#&gt; 29 2020-06-17    4.40    4.40    4.40      4.20    4.20   0.20    4.76
+#&gt; 30 2020-06-15  243.75  243.75  243.75    237.50  232.15  11.60    5.00
+#&gt; 31 2020-01-22   40.80   40.80   39.95     38.75   37.15   2.80    7.54
+#&gt; 32 2020-06-17  634.00  634.00  624.00    629.80  601.80  22.20    3.69
+#&gt; 33 2020-06-17    0.35    0.35    0.35      0.30    0.30   0.05   16.67
+#&gt; 34 2020-06-17   33.85   33.85   32.80     33.50   31.90   0.90    2.82
+#&gt; 35 2020-06-10    1.00    1.00    1.00      1.00    0.95   0.05    5.26
+#&gt; 36 2020-06-17   11.20   11.20   10.80     10.85   10.70   0.10    0.93
+#&gt; 37 2020-06-17   37.15   37.15   34.00     35.40   35.40  -1.40   -3.95
+#&gt; 38 2020-06-17    0.70    0.70    0.70      0.65    0.65   0.05    7.69
+#&gt; 39 2019-08-20    1.05    1.05    1.00      1.05    1.00   0.00    0.00
+#&gt; 40 2020-06-17  154.75  154.75  154.65    153.50  153.10   1.55    1.01
+#&gt; 41 2020-06-17   34.95   34.95   31.20     31.90   31.90  -0.70   -2.19
+#&gt; 42 2020-06-17 1199.55 1199.55 1160.30   1011.85  999.65 160.65   16.07
+#&gt; 43 2020-05-12  770.00  770.00  748.35    766.10  743.33   5.02    0.68
+#&gt; 44 2020-06-17   27.35   27.35   27.35     22.85   22.80   4.55   19.96
+#&gt; 45 2020-06-17   41.90   41.90   41.30     40.05   40.05   1.25    3.12
+#&gt; 46 2020-06-17  208.40  208.40  208.10    207.20  206.55   1.55    0.75
+#&gt; 47 2020-06-17   11.65   11.65   11.65     11.10   11.10   0.55    4.95
+#&gt; 48 2020-06-17    1.55    1.55    1.55      1.50    1.50   0.05    3.33
+#&gt; 49 2020-06-17    1.70    1.70    1.70      1.65    1.65   0.05    3.03
+#&gt; 50 2020-06-17    0.40    0.40    0.40      0.35    0.35   0.05   14.29
+#&gt; 51 2020-06-16 1665.00 1665.00 1662.90   1648.55 1615.35  47.55    2.94
+#&gt; 52 2020-06-17    1.15    1.15    1.15      1.10    1.10   0.05    4.55
+#&gt; 53 2020-06-17 1134.10 1134.10 1134.10   1080.10 1080.10  54.00    5.00
+#&gt; 54 2020-06-17   16.05   16.05   16.05     15.30   15.30   0.75    4.90
+#&gt; 55 2020-06-17   99.10   99.10   98.80     97.00   96.85   1.95    2.01
+#&gt; 56 2020-06-17    0.75    0.75    0.75      0.70    0.70   0.05    7.14
+#&gt; 57 2020-06-17   51.90   51.90   47.25     49.00   48.40  -1.15   -2.38
+#&gt; 58 2020-03-11  367.50  367.50  345.00    353.90  333.65  11.35    3.40
+#&gt; 59 2019-06-21 1445.00 1445.00 1429.00   1429.50 1305.00 124.00    9.50
+#&gt; 60 2020-06-17    2.20    2.20    2.20      2.10    2.10   0.10    4.76
+#&gt; 61 2020-06-17  610.00  610.00  593.00    610.00  596.40  -3.40   -0.57
+#&gt; 62 2020-06-17    0.65    0.65    0.65      0.60    0.60   0.05    8.33
+#&gt; 63 2020-06-15 1270.00 1270.00 1269.00   1249.70 1187.65  81.35    6.85
+#&gt; 64 2020-06-17    5.25    5.25    5.25      5.00    5.00   0.25    5.00
+#&gt; 65 2020-06-17    0.65    0.65    0.65      0.60    0.60   0.05    8.33</div><div class='input'>
 <span class='co'># 52 week low</span>
-<span class='fu'>nse_stock_year_low</span>()</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 18 x 10</span><span>
-#&gt;    symbol symbol_desc date       new_low   year last_traded_pri~ prev_low
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>       </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>       </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>            </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> APARI~ Apar Indus~ 2019-12-30  385    385              393.     385.  
-#&gt; </span><span style='color: #555555;'> 2</span><span> CENTE~ Century En~ 2019-08-22  154    154              176.     161.  
-#&gt; </span><span style='color: #555555;'> 3</span><span> CKFSL  Cox &amp; King~ 2019-11-06    0.35   0.35             0.4      0.35
-#&gt; </span><span style='color: #555555;'> 4</span><span> DQE    DQ Enterta~ 2020-01-07    1.85   1.85             1.85     1.9 
-#&gt; </span><span style='color: #555555;'> 5</span><span> GTLIN~ GTL Infras~ 2020-01-07    0.35   0.35             0.4      0.35
-#&gt; </span><span style='color: #555555;'> 6</span><span> HLVLTD HLV LIMITED </span><span style='color: #BB0000;'>NA</span><span>            5.7    5.7              5.85    </span><span style='color: #BB0000;'>NA</span><span>   
-#&gt; </span><span style='color: #555555;'> 7</span><span> INDIA~ Indian Bank 2020-01-07   97.2   97.2             98       98.1 
-#&gt; </span><span style='color: #555555;'> 8</span><span> ITC    ITC Limited 2019-09-18  233.   233.             234.     234.  
-#&gt; </span><span style='color: #555555;'> 9</span><span> J&amp;KBA~ The Jammu ~ 2020-01-06   28.6   28.6             29       28.8 
-#&gt; </span><span style='color: #555555;'>10</span><span> MVL    MVL Limited 2020-01-07    0.05   0.05             0.05     0.05
-#&gt; </span><span style='color: #555555;'>11</span><span> RAJRA~ Raj Rayon ~ 2020-01-07    0.05   0.05             0.1      0.05
-#&gt; </span><span style='color: #555555;'>12</span><span> REGEN~ Regency Ce~ 2020-01-02    1.4    1.4              1.4      1.45
-#&gt; </span><span style='color: #555555;'>13</span><span> SMPL   Splendid M~ 2020-01-03    0.1    0.1              0.15     0.1 
-#&gt; </span><span style='color: #555555;'>14</span><span> STAMP~ Stampede C~ 2020-01-07    0.35   0.35             0.4      0.35
-#&gt; </span><span style='color: #555555;'>15</span><span> SUJAN~ Sujana Uni~ 2020-01-02    0.1    0.1              0.15     0.1 
-#&gt; </span><span style='color: #555555;'>16</span><span> VIKAS~ Vikas WSP ~ 2020-01-07    8.5    8.5              8.6      8.6 
-#&gt; </span><span style='color: #555555;'>17</span><span> VISES~ Visesh Inf~ 2020-01-07    0.05   0.05             0.05     0.05
-#&gt; </span><span style='color: #555555;'>18</span><span> VISHAL Vishal Fab~ 2020-01-07  247    247              253      247   
-#&gt; </span><span style='color: #555555;'># ... with 3 more variables: prev_close </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, change </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   percent_change </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
+<span class='fu'>nse_stock_year_low</span>()</div><div class='output co'>#&gt;   symbol             symbol_desc       date new_low year last_traded_price
+#&gt; 1    BCP B.C. Power Controls Ltd 2020-06-01     5.5  5.5               5.6
+#&gt;   prev_low prev_close change percent_change
+#&gt; 1      5.5        5.6      0              0</div><div class='input'>
 <span class='co'># retain original column names as returned by NSE</span>
-<span class='fu'>nse_stock_year_low</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 18 x 10</span><span>
-#&gt;    symbol symbolDesc dt          value   year    ltp value_old   prev change
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> APARI~ Apar Indu~ 2019-12-30 385    385    393.      385.   395.    -</span><span style='color: #BB0000;'>1.85</span><span>
-#&gt; </span><span style='color: #555555;'> 2</span><span> CENTE~ Century E~ 2019-08-22 154    154    176.      161.   180.    -</span><span style='color: #BB0000;'>3.95</span><span>
-#&gt; </span><span style='color: #555555;'> 3</span><span> CKFSL  Cox &amp; Kin~ 2019-11-06   0.35   0.35   0.4       0.35   0.4    0   
-#&gt; </span><span style='color: #555555;'> 4</span><span> DQE    DQ Entert~ 2020-01-07   1.85   1.85   1.85      1.9    1.9   -</span><span style='color: #BB0000;'>0.05</span><span>
-#&gt; </span><span style='color: #555555;'> 5</span><span> GTLIN~ GTL Infra~ 2020-01-07   0.35   0.35   0.4       0.35   0.4    0   
-#&gt; </span><span style='color: #555555;'> 6</span><span> HLVLTD HLV LIMIT~ </span><span style='color: #BB0000;'>NA</span><span>           5.7    5.7    5.85     </span><span style='color: #BB0000;'>NA</span><span>      5.85   0   
-#&gt; </span><span style='color: #555555;'> 7</span><span> INDIA~ Indian Ba~ 2020-01-07  97.2   97.2   98        98.1   99.6   -</span><span style='color: #BB0000;'>1.6</span><span> 
-#&gt; </span><span style='color: #555555;'> 8</span><span> ITC    ITC Limit~ 2019-09-18 233.   233.   234.      234.   235.    -</span><span style='color: #BB0000;'>1.2</span><span> 
-#&gt; </span><span style='color: #555555;'> 9</span><span> J&amp;KBA~ The Jammu~ 2020-01-06  28.6   28.6   29        28.8   29.1   -</span><span style='color: #BB0000;'>0.1</span><span> 
-#&gt; </span><span style='color: #555555;'>10</span><span> MVL    MVL Limit~ 2020-01-07   0.05   0.05   0.05      0.05   0.1   -</span><span style='color: #BB0000;'>0.05</span><span>
-#&gt; </span><span style='color: #555555;'>11</span><span> RAJRA~ Raj Rayon~ 2020-01-07   0.05   0.05   0.1       0.05   0.1    0   
-#&gt; </span><span style='color: #555555;'>12</span><span> REGEN~ Regency C~ 2020-01-02   1.4    1.4    1.4       1.45   1.45  -</span><span style='color: #BB0000;'>0.05</span><span>
-#&gt; </span><span style='color: #555555;'>13</span><span> SMPL   Splendid ~ 2020-01-03   0.1    0.1    0.15      0.1    0.15   0   
-#&gt; </span><span style='color: #555555;'>14</span><span> STAMP~ Stampede ~ 2020-01-07   0.35   0.35   0.4       0.35   0.4    0   
-#&gt; </span><span style='color: #555555;'>15</span><span> SUJAN~ Sujana Un~ 2020-01-02   0.1    0.1    0.15      0.1    0.15   0   
-#&gt; </span><span style='color: #555555;'>16</span><span> VIKAS~ Vikas WSP~ 2020-01-07   8.5    8.5    8.6       8.6    8.7   -</span><span style='color: #BB0000;'>0.1</span><span> 
-#&gt; </span><span style='color: #555555;'>17</span><span> VISES~ Visesh In~ 2020-01-07   0.05   0.05   0.05      0.05   0.05   0   
-#&gt; </span><span style='color: #555555;'>18</span><span> VISHAL Vishal Fa~ 2020-01-07 247    247    253       247    247      6   
-#&gt; </span><span style='color: #555555;'># ... with 1 more variable: pChange </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'># }
+<span class='fu'>nse_stock_year_low</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt;   symbol              symbolDesc         dt value year ltp value_old prev
+#&gt; 1    BCP B.C. Power Controls Ltd 2020-06-01   5.5  5.5 5.6       5.5  5.6
+#&gt;   change pChange
+#&gt; 1      0       0</div><div class='input'># }
 
-</div></span></pre>
+</div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      <li><a href="#arguments">Arguments</a></li>
-      
-      <li><a href="#value">Value</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
@@ -258,7 +650,7 @@ descriptive and uses snake_case.</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

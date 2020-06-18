@@ -8,23 +8,29 @@
 
 <title>Top F&amp;O gainers and losers — nse_fo • nse2r</title>
 
+
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -32,10 +38,10 @@
 
 
 
-<meta property="og:title" content="Top F&amp;O gainers and losers — nse_fo" />
 
+<meta property="og:title" content="Top F&amp;O gainers and losers — nse_fo" />
 <meta property="og:description" content="Top futures and options gainers and losers for the last trading session." />
-<meta name="twitter:card" content="summary" />
+
 
 
 
@@ -52,7 +58,7 @@
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -66,7 +72,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">nse2r</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2.9000</span>
       </span>
     </div>
 
@@ -91,7 +97,6 @@
   </ul>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/rsquaredacademy/nse2r">
@@ -118,15 +123,13 @@
     </div>
 
     <div class="ref-description">
-    
     <p>Top futures and options gainers and losers for the last trading session.</p>
-    
     </div>
 
     <pre class="usage"><span class='fu'>nse_fo_top_gainers</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
 
 <span class='fu'>nse_fo_top_losers</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
-    
+
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
@@ -136,7 +139,7 @@
 descriptive and uses snake_case.</p></td>
     </tr>
     </table>
-    
+
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A tibble with the following columns:</p>
@@ -153,89 +156,174 @@ descriptive and uses snake_case.</p></td>
 <dt>traded_quantity</dt><dd><p>Total traded quantity.</p></dd>
 <dt>turnover</dt><dd><p>Turnover in lakhs.</p></dd>
 
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># \donttest{</span>
 <span class='co'># top gainers</span>
-<span class='fu'>nse_fo_top_gainers</span>()</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 10 x 12</span><span>
-#&gt;    symbol series last_corp_annou~ last_corp_annou~ open_price high_price
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>           </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>                 </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> IDEA   EQ     2019-08-16       Annual General ~       5.95       6.55
-#&gt; </span><span style='color: #555555;'> 2</span><span> SHREE~ EQ     2019-07-31       Dividend - Rs 3~   </span><span style='text-decoration: underline;'>21</span><span>849      </span><span style='text-decoration: underline;'>22</span><span>692.  
-#&gt; </span><span style='color: #555555;'> 3</span><span> NIITT~ EQ     2019-11-04       Interim Dividen~    </span><span style='text-decoration: underline;'>1</span><span>653.      </span><span style='text-decoration: underline;'>1</span><span>692.  
-#&gt; </span><span style='color: #555555;'> 4</span><span> AMBUJ~ EQ     2019-02-27       Dividend - Rs 1~     196        205.  
-#&gt; </span><span style='color: #555555;'> 5</span><span> TCS    EQ     2019-10-17       Interim Dividen~    </span><span style='text-decoration: underline;'>2</span><span>205       </span><span style='text-decoration: underline;'>2</span><span>240   
-#&gt; </span><span style='color: #555555;'> 6</span><span> YESBA~ EQ     2019-06-03       Annual General ~      46.2       47.2 
-#&gt; </span><span style='color: #555555;'> 7</span><span> ULTRA~ EQ     2019-07-10       Annual General ~    </span><span style='text-decoration: underline;'>4</span><span>225.      </span><span style='text-decoration: underline;'>4</span><span>310   
-#&gt; </span><span style='color: #555555;'> 8</span><span> MCDOW~ EQ     2019-08-13       Annual General ~     558.       570.  
-#&gt; </span><span style='color: #555555;'> 9</span><span> BHART~ EQ     2019-04-23       Rights 19:67 @ ~     443.       449.  
-#&gt; </span><span style='color: #555555;'>10</span><span> HCLTE~ EQ     2020-01-24       Interim Dividend     583        588.  
-#&gt; </span><span style='color: #555555;'># ... with 6 more variables: low_price </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, last_traded_price </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   prev_close_price </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, percent_change </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, traded_quantity </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   turnover_in_lakhs </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
+<span class='fu'>nse_fo_top_gainers</span>()</div><div class='output co'>#&gt;        symbol series last_corp_announcement_date
+#&gt; 1        BHEL     EQ                  2019-09-11
+#&gt; 2  MUTHOOTFIN     EQ                  2020-03-23
+#&gt; 3  BAJAJFINSV     EQ                  2020-03-03
+#&gt; 4         BEL     EQ                  2020-02-11
+#&gt; 5   COALINDIA     EQ                  2020-03-19
+#&gt; 6    CHOLAFIN     EQ                  2020-03-04
+#&gt; 7  BAJFINANCE     EQ                  2020-03-03
+#&gt; 8        ZEEL     EQ                  2019-07-15
+#&gt; 9         NCC     EQ                  2019-08-08
+#&gt; 10       VEDL     EQ                  2020-03-05
+#&gt;                                  last_corp_announcement open_price high_price
+#&gt; 1   Annual General Meeting/Dividend - Rs 1.20 Per Share      28.65      32.15
+#&gt; 2                    Interim Dividend - Rs 15 Per Share    1036.90    1199.55
+#&gt; 3                     Interim Dividend - Rs 5 Per Share    5036.95    5499.00
+#&gt; 4                  Interim Dividend - Rs 1.40 Per Share      71.95      77.25
+#&gt; 5                    Interim Dividend - Rs 12 Per Share     129.00     139.70
+#&gt; 6                    Interim Dividend-Re 0.70 Per Share     168.20     178.80
+#&gt; 7                    Interim Dividend - Rs 10 Per Share    2375.00    2541.70
+#&gt; 8  Annual General Meeting/ Dividend - Rs 3.50 Per Share     166.50     175.45
+#&gt; 9                          Dividend - Rs 1.50 Per Share      27.80      29.70
+#&gt; 10                  Interim Dividend - Rs 3.9 Per Share     102.80     107.80
+#&gt;    low_price last_traded_price prev_close_price percent_change traded_quantity
+#&gt; 1      28.50             32.00            27.45          16.58       250949789
+#&gt; 2    1036.90           1160.30           999.65          16.07        18024858
+#&gt; 3    5021.55           5450.75          5036.95           8.22         1806208
+#&gt; 4      71.65             76.95            71.65           7.40        33392838
+#&gt; 5     128.15            137.65           129.45           6.33        34587382
+#&gt; 6     168.20            177.95           168.20           5.80        26257427
+#&gt; 7    2373.00           2527.20          2396.00           5.48        12738830
+#&gt; 8     165.50            173.95           165.00           5.42        37917230
+#&gt; 9      27.55             29.30            27.85           5.21        26610887
+#&gt; 10    102.00            106.90           102.10           4.70        27586795
+#&gt;    turnover_in_lakhs
+#&gt; 1           77443.10
+#&gt; 2          203545.71
+#&gt; 3           95403.73
+#&gt; 4           25204.91
+#&gt; 5           47031.92
+#&gt; 6           45821.84
+#&gt; 7          315647.83
+#&gt; 8           65103.88
+#&gt; 9            7743.77
+#&gt; 10          29197.86</div><div class='input'>
 <span class='co'># retain original column names as returned by NSE</span>
-<span class='fu'>nse_fo_top_gainers</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 10 x 12</span><span>
-#&gt;    symbol series lastCorpAnnounc~ lastCorpAnnounc~ openPrice highPrice lowPrice
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>           </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>                </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> IDEA   EQ     2019-08-16       Annual General ~      5.95      6.55      5.7
-#&gt; </span><span style='color: #555555;'> 2</span><span> SHREE~ EQ     2019-07-31       Dividend - Rs 3~  </span><span style='text-decoration: underline;'>21</span><span>849     </span><span style='text-decoration: underline;'>22</span><span>692.    </span><span style='text-decoration: underline;'>21</span><span>710. 
-#&gt; </span><span style='color: #555555;'> 3</span><span> NIITT~ EQ     2019-11-04       Interim Dividen~   </span><span style='text-decoration: underline;'>1</span><span>653.     </span><span style='text-decoration: underline;'>1</span><span>692.     </span><span style='text-decoration: underline;'>1</span><span>645  
-#&gt; </span><span style='color: #555555;'> 4</span><span> AMBUJ~ EQ     2019-02-27       Dividend - Rs 1~    196       205.      196. 
-#&gt; </span><span style='color: #555555;'> 5</span><span> TCS    EQ     2019-10-17       Interim Dividen~   </span><span style='text-decoration: underline;'>2</span><span>205      </span><span style='text-decoration: underline;'>2</span><span>240      </span><span style='text-decoration: underline;'>2</span><span>202. 
-#&gt; </span><span style='color: #555555;'> 6</span><span> YESBA~ EQ     2019-06-03       Annual General ~     46.2      47.2      45.3
-#&gt; </span><span style='color: #555555;'> 7</span><span> ULTRA~ EQ     2019-07-10       Annual General ~   </span><span style='text-decoration: underline;'>4</span><span>225.     </span><span style='text-decoration: underline;'>4</span><span>310      </span><span style='text-decoration: underline;'>4</span><span>184. 
-#&gt; </span><span style='color: #555555;'> 8</span><span> MCDOW~ EQ     2019-08-13       Annual General ~    558.      570.      558. 
-#&gt; </span><span style='color: #555555;'> 9</span><span> BHART~ EQ     2019-04-23       Rights 19:67 @ ~    443.      449.      440. 
-#&gt; </span><span style='color: #555555;'>10</span><span> HCLTE~ EQ     2020-01-24       Interim Dividend    583       588.      578  
-#&gt; </span><span style='color: #555555;'># ... with 5 more variables: ltp </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, previousPrice </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, netPrice </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   tradedQuantity </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, turnoverInLakhs </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
+<span class='fu'>nse_fo_top_gainers</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt;        symbol series lastCorpAnnouncementDate
+#&gt; 1        BHEL     EQ               2019-09-11
+#&gt; 2  MUTHOOTFIN     EQ               2020-03-23
+#&gt; 3  BAJAJFINSV     EQ               2020-03-03
+#&gt; 4         BEL     EQ               2020-02-11
+#&gt; 5   COALINDIA     EQ               2020-03-19
+#&gt; 6    CHOLAFIN     EQ               2020-03-04
+#&gt; 7  BAJFINANCE     EQ               2020-03-03
+#&gt; 8        ZEEL     EQ               2019-07-15
+#&gt; 9         NCC     EQ               2019-08-08
+#&gt; 10       VEDL     EQ               2020-03-05
+#&gt;                                    lastCorpAnnouncement openPrice highPrice
+#&gt; 1   Annual General Meeting/Dividend - Rs 1.20 Per Share     28.65     32.15
+#&gt; 2                    Interim Dividend - Rs 15 Per Share   1036.90   1199.55
+#&gt; 3                     Interim Dividend - Rs 5 Per Share   5036.95   5499.00
+#&gt; 4                  Interim Dividend - Rs 1.40 Per Share     71.95     77.25
+#&gt; 5                    Interim Dividend - Rs 12 Per Share    129.00    139.70
+#&gt; 6                    Interim Dividend-Re 0.70 Per Share    168.20    178.80
+#&gt; 7                    Interim Dividend - Rs 10 Per Share   2375.00   2541.70
+#&gt; 8  Annual General Meeting/ Dividend - Rs 3.50 Per Share    166.50    175.45
+#&gt; 9                          Dividend - Rs 1.50 Per Share     27.80     29.70
+#&gt; 10                  Interim Dividend - Rs 3.9 Per Share    102.80    107.80
+#&gt;    lowPrice     ltp previousPrice netPrice tradedQuantity turnoverInLakhs
+#&gt; 1     28.50   32.00         27.45    16.58      250949789        77443.10
+#&gt; 2   1036.90 1160.30        999.65    16.07       18024858       203545.71
+#&gt; 3   5021.55 5450.75       5036.95     8.22        1806208        95403.73
+#&gt; 4     71.65   76.95         71.65     7.40       33392838        25204.91
+#&gt; 5    128.15  137.65        129.45     6.33       34587382        47031.92
+#&gt; 6    168.20  177.95        168.20     5.80       26257427        45821.84
+#&gt; 7   2373.00 2527.20       2396.00     5.48       12738830       315647.83
+#&gt; 8    165.50  173.95        165.00     5.42       37917230        65103.88
+#&gt; 9     27.55   29.30         27.85     5.21       26610887         7743.77
+#&gt; 10   102.00  106.90        102.10     4.70       27586795        29197.86</div><div class='input'>
 <span class='co'># top losers</span>
-<span class='fu'>nse_fo_top_losers</span>()</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 10 x 12</span><span>
-#&gt;    symbol series last_corp_annou~ last_corp_annou~ open_price high_price
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>           </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>                 </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> EICHE~ EQ     2019-07-24       Annual General ~    </span><span style='text-decoration: underline;'>20</span><span>700      </span><span style='text-decoration: underline;'>20</span><span>700  
-#&gt; </span><span style='color: #555555;'> 2</span><span> NMDC   EQ     2019-08-22       Annual General ~      127.       127. 
-#&gt; </span><span style='color: #555555;'> 3</span><span> JSWST~ EQ     2019-07-08       Annual General ~      261.       264. 
-#&gt; </span><span style='color: #555555;'> 4</span><span> NCC    EQ     2019-08-08       Dividend - Rs 1~       54.6       55.2
-#&gt; </span><span style='color: #555555;'> 5</span><span> CANBK  EQ     2019-07-17       Annual General ~      202.       205. 
-#&gt; </span><span style='color: #555555;'> 6</span><span> PFC    EQ     2019-08-20       Annual General ~      114.       116. 
-#&gt; </span><span style='color: #555555;'> 7</span><span> RECLTD EQ     2019-08-21       Annual General ~      139.       140. 
-#&gt; </span><span style='color: #555555;'> 8</span><span> LT     EQ     2019-07-24       Annual General ~     </span><span style='text-decoration: underline;'>1</span><span>302       </span><span style='text-decoration: underline;'>1</span><span>309. 
-#&gt; </span><span style='color: #555555;'> 9</span><span> ASHOK~ EQ     2019-07-23       Annual General ~       80.3       81.5
-#&gt; </span><span style='color: #555555;'>10</span><span> TATAM~ EQ     2016-07-18       Dividend - Re 0~       74.9       75.8
-#&gt; </span><span style='color: #555555;'># ... with 6 more variables: low_price </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, last_traded_price </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   prev_close_price </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, percent_change </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, traded_quantity </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   turnover_in_lakhs </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
+<span class='fu'>nse_fo_top_losers</span>()</div><div class='output co'>#&gt;        symbol series last_corp_announcement_date
+#&gt; 1         IGL     EQ                  2019-09-12
+#&gt; 2  CUMMINSIND     EQ                  2020-02-07
+#&gt; 3        NMDC     EQ                  2020-02-18
+#&gt; 4   LICHSGFIN     EQ                  2019-08-16
+#&gt; 5  PIDILITIND     EQ                  2020-03-13
+#&gt; 6      NAUKRI     EQ                  2020-02-18
+#&gt; 7    JUSTDIAL     EQ                  2018-10-11
+#&gt; 8     ESCORTS     EQ                  2019-07-11
+#&gt; 9         PEL     EQ                  2020-07-16
+#&gt; 10    HAVELLS     EQ                  2020-03-16
+#&gt;                                  last_corp_announcement open_price high_price
+#&gt; 1   Annual General Meeting/Dividend - Rs 2.40 Per Share     474.40     474.50
+#&gt; 2                     Interim Dividend - Rs 7 Per Share     383.00     383.00
+#&gt; 3                  Interim Dividend - Rs 5.29 Per Share      85.55      85.75
+#&gt; 4  Annual General Meeting/ Dividend - Rs 7.60 Per Share     292.00     292.00
+#&gt; 5                     Interim Dividend - Rs 7 Per Share    1432.15    1444.95
+#&gt; 6                  Interim Dividend - Rs 3.50 Per Share    2788.00    2799.00
+#&gt; 7                                               Buyback     372.00     372.00
+#&gt; 8                          Dividend Rs - 2.50 Per Share     995.00    1014.90
+#&gt; 9     Annual General Meeting/Dividend - Rs 14 Per Share    1035.00    1044.95
+#&gt; 10                    Interim Dividend - Rs 4 Per Share     553.00     553.90
+#&gt;    low_price last_traded_price prev_close_price percent_change traded_quantity
+#&gt; 1     448.00            449.35           474.15          -5.23        10581901
+#&gt; 2     368.35            369.90           385.90          -4.15         2461538
+#&gt; 3      81.60             82.65            85.55          -3.39         9479762
+#&gt; 4     282.30            283.50           292.15          -2.96         5343997
+#&gt; 5    1383.10           1394.00          1432.15          -2.66         1798258
+#&gt; 6    2738.40           2745.10          2798.90          -1.92          263110
+#&gt; 7     364.00            367.00           373.95          -1.86         1690500
+#&gt; 8     978.00            983.45           999.85          -1.64         2663456
+#&gt; 9    1015.05           1037.75          1051.30          -1.29         1461988
+#&gt; 10    542.00            546.65           553.50          -1.24         2210632
+#&gt;    turnover_in_lakhs
+#&gt; 1           48041.83
+#&gt; 2            9194.09
+#&gt; 3            7859.67
+#&gt; 4           15231.46
+#&gt; 5           25147.56
+#&gt; 6            7270.28
+#&gt; 7            6205.99
+#&gt; 8           26529.89
+#&gt; 9           15058.33
+#&gt; 10          12100.78</div><div class='input'>
 <span class='co'># retain original column names as returned by NSE</span>
-<span class='fu'>nse_fo_top_losers</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 10 x 12</span><span>
-#&gt;    symbol series lastCorpAnnounc~ lastCorpAnnounc~ openPrice highPrice lowPrice
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>           </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>                </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> EICHE~ EQ     2019-07-24       Annual General ~   </span><span style='text-decoration: underline;'>20</span><span>700     </span><span style='text-decoration: underline;'>20</span><span>700    </span><span style='text-decoration: underline;'>20</span><span>094. 
-#&gt; </span><span style='color: #555555;'> 2</span><span> NMDC   EQ     2019-08-22       Annual General ~     127.      127.     124. 
-#&gt; </span><span style='color: #555555;'> 3</span><span> JSWST~ EQ     2019-07-08       Annual General ~     261.      264.     257  
-#&gt; </span><span style='color: #555555;'> 4</span><span> NCC    EQ     2019-08-08       Dividend - Rs 1~      54.6      55.2     53.6
-#&gt; </span><span style='color: #555555;'> 5</span><span> CANBK  EQ     2019-07-17       Annual General ~     202.      205.     200. 
-#&gt; </span><span style='color: #555555;'> 6</span><span> PFC    EQ     2019-08-20       Annual General ~     114.      116.     114. 
-#&gt; </span><span style='color: #555555;'> 7</span><span> RECLTD EQ     2019-08-21       Annual General ~     139.      140.     137. 
-#&gt; </span><span style='color: #555555;'> 8</span><span> LT     EQ     2019-07-24       Annual General ~    </span><span style='text-decoration: underline;'>1</span><span>302      </span><span style='text-decoration: underline;'>1</span><span>309.    </span><span style='text-decoration: underline;'>1</span><span>283. 
-#&gt; </span><span style='color: #555555;'> 9</span><span> ASHOK~ EQ     2019-07-23       Annual General ~      80.3      81.5     80  
-#&gt; </span><span style='color: #555555;'>10</span><span> TATAM~ EQ     2016-07-18       Dividend - Re 0~      74.9      75.8     74.0
-#&gt; </span><span style='color: #555555;'># ... with 5 more variables: ltp </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, previousPrice </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, netPrice </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   tradedQuantity </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, turnoverInLakhs </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'># }
+<span class='fu'>nse_fo_top_losers</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt;        symbol series lastCorpAnnouncementDate
+#&gt; 1         IGL     EQ               2019-09-12
+#&gt; 2  CUMMINSIND     EQ               2020-02-07
+#&gt; 3        NMDC     EQ               2020-02-18
+#&gt; 4   LICHSGFIN     EQ               2019-08-16
+#&gt; 5  PIDILITIND     EQ               2020-03-13
+#&gt; 6      NAUKRI     EQ               2020-02-18
+#&gt; 7    JUSTDIAL     EQ               2018-10-11
+#&gt; 8     ESCORTS     EQ               2019-07-11
+#&gt; 9         PEL     EQ               2020-07-16
+#&gt; 10    HAVELLS     EQ               2020-03-16
+#&gt;                                    lastCorpAnnouncement openPrice highPrice
+#&gt; 1   Annual General Meeting/Dividend - Rs 2.40 Per Share    474.40    474.50
+#&gt; 2                     Interim Dividend - Rs 7 Per Share    383.00    383.00
+#&gt; 3                  Interim Dividend - Rs 5.29 Per Share     85.55     85.75
+#&gt; 4  Annual General Meeting/ Dividend - Rs 7.60 Per Share    292.00    292.00
+#&gt; 5                     Interim Dividend - Rs 7 Per Share   1432.15   1444.95
+#&gt; 6                  Interim Dividend - Rs 3.50 Per Share   2788.00   2799.00
+#&gt; 7                                               Buyback    372.00    372.00
+#&gt; 8                          Dividend Rs - 2.50 Per Share    995.00   1014.90
+#&gt; 9     Annual General Meeting/Dividend - Rs 14 Per Share   1035.00   1044.95
+#&gt; 10                    Interim Dividend - Rs 4 Per Share    553.00    553.90
+#&gt;    lowPrice     ltp previousPrice netPrice tradedQuantity turnoverInLakhs
+#&gt; 1    448.00  449.35        474.15    -5.23       10581901        48041.83
+#&gt; 2    368.35  369.90        385.90    -4.15        2461538         9194.09
+#&gt; 3     81.60   82.65         85.55    -3.39        9479762         7859.67
+#&gt; 4    282.30  283.50        292.15    -2.96        5343997        15231.46
+#&gt; 5   1383.10 1394.00       1432.15    -2.66        1798258        25147.56
+#&gt; 6   2738.40 2745.10       2798.90    -1.92         263110         7270.28
+#&gt; 7    364.00  367.00        373.95    -1.86        1690500         6205.99
+#&gt; 8    978.00  983.45        999.85    -1.64        2663456        26529.89
+#&gt; 9   1015.05 1037.75       1051.30    -1.29        1461988        15058.33
+#&gt; 10   542.00  546.65        553.50    -1.24        2210632        12100.78</div><div class='input'># }
 
-</div></span></pre>
+</div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      <li><a href="#arguments">Arguments</a></li>
-      
-      <li><a href="#value">Value</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
@@ -246,7 +334,7 @@ descriptive and uses snake_case.</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>
