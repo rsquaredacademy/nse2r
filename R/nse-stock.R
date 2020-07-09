@@ -262,6 +262,16 @@ nse_stock_quote <- function(stock_code) {
 
   if (nse_stock_valid(stock_code)) {
 
+    # handle special characters in stock code
+    is_spec  <- grepl("[-&]", stock_code)
+
+    if (is_spec) {
+      pos_spec   <- regexpr("[-&]", stock_code)
+      pos_sym    <- substr(stock_code, pos_spec, pos_spec)
+      split_code <- unlist(strsplit(stock_code, pos_sym))
+      stock_code <- paste0(split_code[1], "%", charToRaw(pos_sym), split_code[2])
+    }
+
     base_url %>%
       paste0("?symbol=") %>%
       paste0(toupper(stock_code)) %>%

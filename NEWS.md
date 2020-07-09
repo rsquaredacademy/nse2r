@@ -1,3 +1,9 @@
+# nse2r 0.1.2.9000
+
+### Bug Fixes
+
+- Certain SYMBOLS not extracting data [#50](https://github.com/rsquaredacademy/nse2r/issues/50)
+
 # nse2r 0.1.2
 
 ### Bug Fixes
