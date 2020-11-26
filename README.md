@@ -1284,3 +1284,9 @@ nse_advances_declines(clean_names = FALSE)
 #> 63                           NIFTY FINSRV25 50       18        2         0
 #> 64                          CNX NIFTY Pre Open       41        6         3
 ```
+
+## Code of Conduct
+
+Please note that this project is released with a [Contributor Code of
+Conduct](CONDUCT.md). By participating in this project you agree to
+abide by its terms.
