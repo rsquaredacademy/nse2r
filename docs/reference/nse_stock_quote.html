@@ -40,7 +40,7 @@
 
 
 <meta property="og:title" content="Stock quote — nse_stock_quote" />
-<meta property="og:description" content="Fetch the quote for a given stock code." />
+<meta property="og:description" content="Fetch the quote for a given stock code from Yahoo Finance API or Rediff Money." />
 
 
 
@@ -72,7 +72,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">nse2r</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.3.9000</span>
       </span>
     </div>
 
@@ -123,10 +123,10 @@
     </div>
 
     <div class="ref-description">
-    <p>Fetch the quote for a given stock code.</p>
+    <p>Fetch the quote for a given stock code from Yahoo Finance API or Rediff Money.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>nse_stock_quote</span>(<span class='no'>stock_code</span>)</pre>
+    <pre class="usage"><span class='fu'>nse_stock_quote</span><span class='op'>(</span><span class='va'>stock_code</span>, source <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"yahoo"</span>, <span class='st'>"rediff"</span><span class='op'>)</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -135,215 +135,18 @@
       <th>stock_code</th>
       <td><p>Symbol of the stock.</p></td>
     </tr>
+    <tr>
+      <th>source</th>
+      <td><p>Yahoo Finance API or Rediff Money.</p></td>
+    </tr>
     </table>
 
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># \donttest{</span>
-<span class='fu'>nse_stock_quote</span>(<span class='st'>"infy"</span>)</div><div class='output co'>#&gt; $pricebandupper
-#&gt; [1] "774.00"
-#&gt; 
-#&gt; $symbol
-#&gt; [1] "INFY"
-#&gt; 
-#&gt; $applicableMargin
-#&gt; [1] "19.65"
-#&gt; 
-#&gt; $bcEndDate
-#&gt; [1] "-"
-#&gt; 
-#&gt; $totalSellQuantity
-#&gt; [1] "-"
-#&gt; 
-#&gt; $adhocMargin
-#&gt; [1] "-"
-#&gt; 
-#&gt; $companyName
-#&gt; [1] "Infosys Limited"
-#&gt; 
-#&gt; $marketType
-#&gt; [1] "N"
-#&gt; 
-#&gt; $exDate
-#&gt; [1] "29-MAY-20"
-#&gt; 
-#&gt; $bcStartDate
-#&gt; [1] "-"
-#&gt; 
-#&gt; $css_status_desc
-#&gt; [1] "Listed"
-#&gt; 
-#&gt; $dayHigh
-#&gt; [1] "716.60"
-#&gt; 
-#&gt; $basePrice
-#&gt; [1] "703.65"
-#&gt; 
-#&gt; $securityVar
-#&gt; [1] "16.15"
-#&gt; 
-#&gt; $pricebandlower
-#&gt; [1] "633.30"
-#&gt; 
-#&gt; $sellQuantity5
-#&gt; [1] "-"
-#&gt; 
-#&gt; $sellQuantity4
-#&gt; [1] "-"
-#&gt; 
-#&gt; $sellQuantity3
-#&gt; [1] "-"
-#&gt; 
-#&gt; $cm_adj_high_dt
-#&gt; [1] "06-SEP-19"
-#&gt; 
-#&gt; $sellQuantity2
-#&gt; [1] "-"
-#&gt; 
-#&gt; $dayLow
-#&gt; [1] "706.00"
-#&gt; 
-#&gt; $sellQuantity1
-#&gt; [1] "-"
-#&gt; 
-#&gt; $quantityTraded
-#&gt; [1] "66,70,206"
-#&gt; 
-#&gt; $pChange
-#&gt; [1] "1.39"
-#&gt; 
-#&gt; $totalTradedValue
-#&gt; [1] "47,480.53"
-#&gt; 
-#&gt; $deliveryToTradedQuantity
-#&gt; [1] "42.23"
-#&gt; 
-#&gt; $totalBuyQuantity
-#&gt; [1] "795"
-#&gt; 
-#&gt; $averagePrice
-#&gt; [1] "711.83"
-#&gt; 
-#&gt; $indexVar
-#&gt; [1] "-"
-#&gt; 
-#&gt; $cm_ffm
-#&gt; [1] "2,62,190.19"
-#&gt; 
-#&gt; $purpose
-#&gt; [1] "DIVIDEND - RS 9.50 PER SHARE"
-#&gt; 
-#&gt; $buyPrice2
-#&gt; [1] "-"
-#&gt; 
-#&gt; $secDate
-#&gt; [1] "18-Jun-2020 00:00:00"
-#&gt; 
-#&gt; $buyPrice1
-#&gt; [1] "713.90"
-#&gt; 
-#&gt; $high52
-#&gt; [1] "847.00"
-#&gt; 
-#&gt; $previousClose
-#&gt; [1] "703.65"
-#&gt; 
-#&gt; $ndEndDate
-#&gt; [1] "-"
-#&gt; 
-#&gt; $low52
-#&gt; [1] "509.25"
-#&gt; 
-#&gt; $buyPrice4
-#&gt; [1] "-"
-#&gt; 
-#&gt; $buyPrice3
-#&gt; [1] "-"
-#&gt; 
-#&gt; $recordDate
-#&gt; [1] "01-JUN-20"
-#&gt; 
-#&gt; $deliveryQuantity
-#&gt; [1] "28,16,843"
-#&gt; 
-#&gt; $buyPrice5
-#&gt; [1] "-"
-#&gt; 
-#&gt; $priceBand
-#&gt; [1] "No Band"
-#&gt; 
-#&gt; $extremeLossMargin
-#&gt; [1] "3.50"
-#&gt; 
-#&gt; $cm_adj_low_dt
-#&gt; [1] "19-MAR-20"
-#&gt; 
-#&gt; $varMargin
-#&gt; [1] "16.15"
-#&gt; 
-#&gt; $sellPrice1
-#&gt; [1] "-"
-#&gt; 
-#&gt; $sellPrice2
-#&gt; [1] "-"
-#&gt; 
-#&gt; $totalTradedVolume
-#&gt; [1] "66,70,206"
-#&gt; 
-#&gt; $sellPrice3
-#&gt; [1] "-"
-#&gt; 
-#&gt; $sellPrice4
-#&gt; [1] "-"
-#&gt; 
-#&gt; $sellPrice5
-#&gt; [1] "-"
-#&gt; 
-#&gt; $change
-#&gt; [1] "9.75"
-#&gt; 
-#&gt; $surv_indicator
-#&gt; [1] "-"
-#&gt; 
-#&gt; $ndStartDate
-#&gt; [1] "-"
-#&gt; 
-#&gt; $buyQuantity4
-#&gt; [1] "-"
-#&gt; 
-#&gt; $isExDateFlag
-#&gt; [1] FALSE
-#&gt; 
-#&gt; $buyQuantity3
-#&gt; [1] "-"
-#&gt; 
-#&gt; $buyQuantity2
-#&gt; [1] "-"
-#&gt; 
-#&gt; $buyQuantity1
-#&gt; [1] "795"
-#&gt; 
-#&gt; $series
-#&gt; [1] "EQ"
-#&gt; 
-#&gt; $faceValue
-#&gt; [1] "5.00"
-#&gt; 
-#&gt; $buyQuantity5
-#&gt; [1] "-"
-#&gt; 
-#&gt; $closePrice
-#&gt; [1] "713.90"
-#&gt; 
-#&gt; $open
-#&gt; [1] "708.20"
-#&gt; 
-#&gt; $isinCode
-#&gt; [1] "INE009A01021"
-#&gt; 
-#&gt; $lastPrice
-#&gt; [1] "713.40"
-#&gt; </div><div class='input'># }
+<span class='fu'>nse_stock_quote</span><span class='op'>(</span><span class='st'>"infy"</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; [1] 1239.05</div><div class='input'><span class='fu'>nse_stock_quote</span><span class='op'>(</span><span class='st'>"infy"</span>, source <span class='op'>=</span> <span class='st'>"rediff"</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; [1] 1239.05</div><div class='input'><span class='co'># }</span>
 
 </div></pre>
   </div>
@@ -361,7 +164,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

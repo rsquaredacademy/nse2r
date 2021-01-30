@@ -4,17 +4,20 @@
 \alias{nse_stock_quote}
 \title{Stock quote}
 \usage{
-nse_stock_quote(stock_code)
+nse_stock_quote(stock_code, source = c("yahoo", "rediff"))
 }
 \arguments{
 \item{stock_code}{Symbol of the stock.}
+
+\item{source}{Yahoo Finance API or Rediff Money.}
 }
 \description{
-Fetch the quote for a given stock code.
+Fetch the quote for a given stock code from Yahoo Finance API or Rediff Money.
 }
 \examples{
 \donttest{
 nse_stock_quote("infy")
+nse_stock_quote("infy", source = "rediff")
 }
 
 }
