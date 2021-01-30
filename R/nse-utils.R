@@ -4,7 +4,7 @@
 #'
 #' @param url URL of data.
 #'
-#' @importFrom magrittr %>%
+#' @importFrom magrittr %>% use_series extract2
 #'
 #' @noRd
 #'
@@ -116,6 +116,23 @@ nse_format_num <- function(data, cols_skip, cols_modify) {
     as.data.frame(cbind(skipped, modified))
 
 }
+
+#' Read data from Yahoo Finance API
+#'
+#' @param url URL of the stock.
+#'
+#' @noRd
+#'
+nse_stock_quote_data <- function(url) {
+  url %>%
+    jsonlite::read_json() %>%
+    magrittr::use_series(chart) %>%
+    magrittr::use_series(result) %>%
+    magrittr::extract2(1) %>%
+    magrittr::use_series(meta) %>%
+    magrittr::use_series(regularMarketPrice)
+}
+
 
 #' @importFrom utils packageVersion menu install.packages
 check_suggests <- function(pkg) {

@@ -254,11 +254,14 @@ nse_stock_top_losers <- function(clean_names = TRUE) {
 #' nse_stock_quote("infy")
 #' }
 #'
+#' @importFrom httr GET http_status
+#'
 #' @export
 #'
 nse_stock_quote <- function(stock_code) {
 
-  base_url <- "https://www.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp"
+  base_url <- "https://query1.finance.yahoo.com/v8/finance/chart/"
+  alt_url  <- "https://query2.finance.yahoo.com/v8/finance/chart/"
 
   if (nse_stock_valid(stock_code)) {
 
@@ -272,15 +275,23 @@ nse_stock_quote <- function(stock_code) {
       stock_code <- paste0(split_code[1], "%", charToRaw(pos_sym), split_code[2])
     }
 
-    base_url %>%
-      paste0("?symbol=") %>%
-      paste0(toupper(stock_code)) %>%
-      xml2::read_html() %>%
-      rvest::html_nodes("#responseDiv") %>%
-      rvest::html_text() %>%
-      jsonlite::fromJSON() %>%
-      magrittr::use_series(data) %>%
-      as.list()
+    # check output from primary url
+    url        <- paste0(base_url, stock_code, ".NS")
+    url_resp   <- GET(url)
+    url_status <- http_status(url_resp)
+
+    # check output from backup url
+    url2        <- paste0(alt_url, stock_code, ".NS")
+    url2_resp   <- GET(url2)
+    url2_status <- http_status(url2_resp)
+
+    if (url_status$category == "Success") {
+      nse_stock_quote_data(url)
+    } else if (url2_status$category == "Success") {
+      nse_stock_quote_data(url2)
+    } else {
+      NULL
+    }
 
   } else {
 
@@ -289,6 +300,3 @@ nse_stock_quote <- function(stock_code) {
   }
 
 }
-
-
-
