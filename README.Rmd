@@ -154,7 +154,3 @@ nse_advances_declines()
 # retain original column names as returned by NSE
 nse_advances_declines(clean_names = FALSE)
 ```
-
-## Code of Conduct
-
-Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.

@@ -1,3 +1,9 @@
+# nse2r 0.1.4
+
+### Bug Fixes
+
+- Stock quote is now read from Yahoo Finance API or scraped from Rediff Money [#51](https://github.com/rsquaredacademy/nse2r/issues/51), [#52](https://github.com/rsquaredacademy/nse2r/issues/52)
+
 # nse2r 0.1.3
 
 ### Bug Fixes

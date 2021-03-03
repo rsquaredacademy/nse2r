@@ -72,7 +72,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">nse2r</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.4</span>
       </span>
     </div>
 
@@ -100,7 +100,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/rsquaredacademy/nse2r">
-    <span class="fa fa-github"></span>
+    <span class="fas fa-github"></span>
      
   </a>
 </li>
@@ -126,9 +126,9 @@
     <p>Top futures and options gainers and losers for the last trading session.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>nse_fo_top_gainers</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
+    <pre class="usage"><span class='fu'>nse_fo_top_gainers</span><span class='op'>(</span>clean_names <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>
 
-<span class='fu'>nse_fo_top_losers</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
+<span class='fu'>nse_fo_top_losers</span><span class='op'>(</span>clean_names <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -160,163 +160,178 @@ descriptive and uses snake_case.</p></td>
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># \donttest{</span>
 <span class='co'># top gainers</span>
-<span class='fu'>nse_fo_top_gainers</span>()</div><div class='output co'>#&gt;        symbol series last_corp_announcement_date
-#&gt; 1        BHEL     EQ                  2019-09-11
-#&gt; 2  MUTHOOTFIN     EQ                  2020-03-23
-#&gt; 3  BAJAJFINSV     EQ                  2020-03-03
-#&gt; 4         BEL     EQ                  2020-02-11
-#&gt; 5   COALINDIA     EQ                  2020-03-19
-#&gt; 6    CHOLAFIN     EQ                  2020-03-04
-#&gt; 7  BAJFINANCE     EQ                  2020-03-03
-#&gt; 8        ZEEL     EQ                  2019-07-15
-#&gt; 9         NCC     EQ                  2019-08-08
-#&gt; 10       VEDL     EQ                  2020-03-05
-#&gt;                                  last_corp_announcement open_price high_price
-#&gt; 1   Annual General Meeting/Dividend - Rs 1.20 Per Share      28.65      32.15
-#&gt; 2                    Interim Dividend - Rs 15 Per Share    1036.90    1199.55
-#&gt; 3                     Interim Dividend - Rs 5 Per Share    5036.95    5499.00
-#&gt; 4                  Interim Dividend - Rs 1.40 Per Share      71.95      77.25
-#&gt; 5                    Interim Dividend - Rs 12 Per Share     129.00     139.70
-#&gt; 6                    Interim Dividend-Re 0.70 Per Share     168.20     178.80
-#&gt; 7                    Interim Dividend - Rs 10 Per Share    2375.00    2541.70
-#&gt; 8  Annual General Meeting/ Dividend - Rs 3.50 Per Share     166.50     175.45
-#&gt; 9                          Dividend - Rs 1.50 Per Share      27.80      29.70
-#&gt; 10                  Interim Dividend - Rs 3.9 Per Share     102.80     107.80
+<span class='fu'>nse_fo_top_gainers</span><span class='op'>(</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;        symbol series last_corp_announcement_date
+#&gt; 1    GRANULES     EQ                  2021-02-08
+#&gt; 2  IBULHSGFIN     EQ                  2020-09-03
+#&gt; 3     HDFCAMC     EQ                  2020-07-09
+#&gt; 4  CUMMINSIND     EQ                  2021-02-09
+#&gt; 5         PNB     EQ                  2020-07-27
+#&gt; 6  FEDERALBNK     EQ                  2020-07-09
+#&gt; 7       L&amp;TFH     EQ                  2021-01-21
+#&gt; 8      AUBANK     EQ                  2019-07-18
+#&gt; 9    TATACHEM     EQ                  2020-06-22
+#&gt; 10     INDIGO     EQ                  2020-08-27
+#&gt;                                 last_corp_announcement open_price high_price
+#&gt; 1                Interim Dividend - Rs 0.25  Per Share     338.25     369.00
+#&gt; 2                               Annual General Meeting     231.10     251.00
+#&gt; 3       Annual General Meeting/Dividend - Rs 28 Per Sh    2950.00    3220.00
+#&gt; 4                    Interim Dividend - Rs 7 Per Share     822.50     882.95
+#&gt; 5                               Annual General Meeting      41.40      43.90
+#&gt; 6                               Annual General Meeting      83.70      88.50
+#&gt; 7                Rights 17:74@ Premium Rs 55 Per Share     107.50     113.40
+#&gt; 8  Annual General Meeting/Dividend - Rs 0.75 Per Share    1162.40    1225.00
+#&gt; 9    Annual General Meeting/Dividend - Rs 11 Per Share     738.00     782.00
+#&gt; 10                              Annual General Meeting    1704.00    1823.85
 #&gt;    low_price last_traded_price prev_close_price percent_change traded_quantity
-#&gt; 1      28.50             32.00            27.45          16.58       250949789
-#&gt; 2    1036.90           1160.30           999.65          16.07        18024858
-#&gt; 3    5021.55           5450.75          5036.95           8.22         1806208
-#&gt; 4      71.65             76.95            71.65           7.40        33392838
-#&gt; 5     128.15            137.65           129.45           6.33        34587382
-#&gt; 6     168.20            177.95           168.20           5.80        26257427
-#&gt; 7    2373.00           2527.20          2396.00           5.48        12738830
-#&gt; 8     165.50            173.95           165.00           5.42        37917230
-#&gt; 9      27.55             29.30            27.85           5.21        26610887
-#&gt; 10    102.00            106.90           102.10           4.70        27586795
+#&gt; 1     338.25            367.50           336.25           9.29        10446684
+#&gt; 2     229.50            249.50           229.00           8.95        45419012
+#&gt; 3    2934.00           3189.50          2934.10           8.70         1461732
+#&gt; 4     822.50            869.80           818.45           6.27         5093443
+#&gt; 5      41.25             43.55            41.00           6.22       238140740
+#&gt; 6      83.50             88.45            83.30           6.18        38195349
+#&gt; 7     107.05            113.10           107.00           5.70        26327611
+#&gt; 8    1136.55           1215.00          1151.50           5.51         2078700
+#&gt; 9     735.45            774.00           733.65           5.50        12732034
+#&gt; 10   1700.25           1783.00          1691.40           5.42         2461629
 #&gt;    turnover_in_lakhs
-#&gt; 1           77443.10
-#&gt; 2          203545.71
-#&gt; 3           95403.73
-#&gt; 4           25204.91
-#&gt; 5           47031.92
-#&gt; 6           45821.84
-#&gt; 7          315647.83
-#&gt; 8           65103.88
-#&gt; 9            7743.77
-#&gt; 10          29197.86</div><div class='input'>
+#&gt; 1           37719.84
+#&gt; 2          109291.77
+#&gt; 3           45834.95
+#&gt; 4           44003.78
+#&gt; 5          102090.94
+#&gt; 6           32974.04
+#&gt; 7           29039.35
+#&gt; 8           24143.27
+#&gt; 9           97734.91
+#&gt; 10          43531.45</div><div class='input'>
 <span class='co'># retain original column names as returned by NSE</span>
-<span class='fu'>nse_fo_top_gainers</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt;        symbol series lastCorpAnnouncementDate
-#&gt; 1        BHEL     EQ               2019-09-11
-#&gt; 2  MUTHOOTFIN     EQ               2020-03-23
-#&gt; 3  BAJAJFINSV     EQ               2020-03-03
-#&gt; 4         BEL     EQ               2020-02-11
-#&gt; 5   COALINDIA     EQ               2020-03-19
-#&gt; 6    CHOLAFIN     EQ               2020-03-04
-#&gt; 7  BAJFINANCE     EQ               2020-03-03
-#&gt; 8        ZEEL     EQ               2019-07-15
-#&gt; 9         NCC     EQ               2019-08-08
-#&gt; 10       VEDL     EQ               2020-03-05
-#&gt;                                    lastCorpAnnouncement openPrice highPrice
-#&gt; 1   Annual General Meeting/Dividend - Rs 1.20 Per Share     28.65     32.15
-#&gt; 2                    Interim Dividend - Rs 15 Per Share   1036.90   1199.55
-#&gt; 3                     Interim Dividend - Rs 5 Per Share   5036.95   5499.00
-#&gt; 4                  Interim Dividend - Rs 1.40 Per Share     71.95     77.25
-#&gt; 5                    Interim Dividend - Rs 12 Per Share    129.00    139.70
-#&gt; 6                    Interim Dividend-Re 0.70 Per Share    168.20    178.80
-#&gt; 7                    Interim Dividend - Rs 10 Per Share   2375.00   2541.70
-#&gt; 8  Annual General Meeting/ Dividend - Rs 3.50 Per Share    166.50    175.45
-#&gt; 9                          Dividend - Rs 1.50 Per Share     27.80     29.70
-#&gt; 10                  Interim Dividend - Rs 3.9 Per Share    102.80    107.80
+<span class='fu'>nse_fo_top_gainers</span><span class='op'>(</span>clean_names <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;        symbol series lastCorpAnnouncementDate
+#&gt; 1    GRANULES     EQ               2021-02-08
+#&gt; 2  IBULHSGFIN     EQ               2020-09-03
+#&gt; 3     HDFCAMC     EQ               2020-07-09
+#&gt; 4  CUMMINSIND     EQ               2021-02-09
+#&gt; 5         PNB     EQ               2020-07-27
+#&gt; 6  FEDERALBNK     EQ               2020-07-09
+#&gt; 7       L&amp;TFH     EQ               2021-01-21
+#&gt; 8      AUBANK     EQ               2019-07-18
+#&gt; 9    TATACHEM     EQ               2020-06-22
+#&gt; 10     INDIGO     EQ               2020-08-27
+#&gt;                                   lastCorpAnnouncement openPrice highPrice
+#&gt; 1                Interim Dividend - Rs 0.25  Per Share    338.25    369.00
+#&gt; 2                               Annual General Meeting    231.10    251.00
+#&gt; 3       Annual General Meeting/Dividend - Rs 28 Per Sh   2950.00   3220.00
+#&gt; 4                    Interim Dividend - Rs 7 Per Share    822.50    882.95
+#&gt; 5                               Annual General Meeting     41.40     43.90
+#&gt; 6                               Annual General Meeting     83.70     88.50
+#&gt; 7                Rights 17:74@ Premium Rs 55 Per Share    107.50    113.40
+#&gt; 8  Annual General Meeting/Dividend - Rs 0.75 Per Share   1162.40   1225.00
+#&gt; 9    Annual General Meeting/Dividend - Rs 11 Per Share    738.00    782.00
+#&gt; 10                              Annual General Meeting   1704.00   1823.85
 #&gt;    lowPrice     ltp previousPrice netPrice tradedQuantity turnoverInLakhs
-#&gt; 1     28.50   32.00         27.45    16.58      250949789        77443.10
-#&gt; 2   1036.90 1160.30        999.65    16.07       18024858       203545.71
-#&gt; 3   5021.55 5450.75       5036.95     8.22        1806208        95403.73
-#&gt; 4     71.65   76.95         71.65     7.40       33392838        25204.91
-#&gt; 5    128.15  137.65        129.45     6.33       34587382        47031.92
-#&gt; 6    168.20  177.95        168.20     5.80       26257427        45821.84
-#&gt; 7   2373.00 2527.20       2396.00     5.48       12738830       315647.83
-#&gt; 8    165.50  173.95        165.00     5.42       37917230        65103.88
-#&gt; 9     27.55   29.30         27.85     5.21       26610887         7743.77
-#&gt; 10   102.00  106.90        102.10     4.70       27586795        29197.86</div><div class='input'>
+#&gt; 1    338.25  367.50        336.25     9.29       10446684        37719.84
+#&gt; 2    229.50  249.50        229.00     8.95       45419012       109291.77
+#&gt; 3   2934.00 3189.50       2934.10     8.70        1461732        45834.95
+#&gt; 4    822.50  869.80        818.45     6.27        5093443        44003.78
+#&gt; 5     41.25   43.55         41.00     6.22      238140740       102090.94
+#&gt; 6     83.50   88.45         83.30     6.18       38195349        32974.04
+#&gt; 7    107.05  113.10        107.00     5.70       26327611        29039.35
+#&gt; 8   1136.55 1215.00       1151.50     5.51        2078700        24143.27
+#&gt; 9    735.45  774.00        733.65     5.50       12732034        97734.91
+#&gt; 10  1700.25 1783.00       1691.40     5.42        2461629        43531.45</div><div class='input'>
 <span class='co'># top losers</span>
-<span class='fu'>nse_fo_top_losers</span>()</div><div class='output co'>#&gt;        symbol series last_corp_announcement_date
-#&gt; 1         IGL     EQ                  2019-09-12
-#&gt; 2  CUMMINSIND     EQ                  2020-02-07
-#&gt; 3        NMDC     EQ                  2020-02-18
-#&gt; 4   LICHSGFIN     EQ                  2019-08-16
-#&gt; 5  PIDILITIND     EQ                  2020-03-13
-#&gt; 6      NAUKRI     EQ                  2020-02-18
-#&gt; 7    JUSTDIAL     EQ                  2018-10-11
-#&gt; 8     ESCORTS     EQ                  2019-07-11
-#&gt; 9         PEL     EQ                  2020-07-16
-#&gt; 10    HAVELLS     EQ                  2020-03-16
-#&gt;                                  last_corp_announcement open_price high_price
-#&gt; 1   Annual General Meeting/Dividend - Rs 2.40 Per Share     474.40     474.50
-#&gt; 2                     Interim Dividend - Rs 7 Per Share     383.00     383.00
-#&gt; 3                  Interim Dividend - Rs 5.29 Per Share      85.55      85.75
-#&gt; 4  Annual General Meeting/ Dividend - Rs 7.60 Per Share     292.00     292.00
-#&gt; 5                     Interim Dividend - Rs 7 Per Share    1432.15    1444.95
-#&gt; 6                  Interim Dividend - Rs 3.50 Per Share    2788.00    2799.00
-#&gt; 7                                               Buyback     372.00     372.00
-#&gt; 8                          Dividend Rs - 2.50 Per Share     995.00    1014.90
-#&gt; 9     Annual General Meeting/Dividend - Rs 14 Per Share    1035.00    1044.95
-#&gt; 10                    Interim Dividend - Rs 4 Per Share     553.00     553.90
-#&gt;    low_price last_traded_price prev_close_price percent_change traded_quantity
-#&gt; 1     448.00            449.35           474.15          -5.23        10581901
-#&gt; 2     368.35            369.90           385.90          -4.15         2461538
-#&gt; 3      81.60             82.65            85.55          -3.39         9479762
-#&gt; 4     282.30            283.50           292.15          -2.96         5343997
-#&gt; 5    1383.10           1394.00          1432.15          -2.66         1798258
-#&gt; 6    2738.40           2745.10          2798.90          -1.92          263110
-#&gt; 7     364.00            367.00           373.95          -1.86         1690500
-#&gt; 8     978.00            983.45           999.85          -1.64         2663456
-#&gt; 9    1015.05           1037.75          1051.30          -1.29         1461988
-#&gt; 10    542.00            546.65           553.50          -1.24         2210632
-#&gt;    turnover_in_lakhs
-#&gt; 1           48041.83
-#&gt; 2            9194.09
-#&gt; 3            7859.67
-#&gt; 4           15231.46
-#&gt; 5           25147.56
-#&gt; 6            7270.28
-#&gt; 7            6205.99
-#&gt; 8           26529.89
-#&gt; 9           15058.33
-#&gt; 10          12100.78</div><div class='input'>
+<span class='fu'>nse_fo_top_losers</span><span class='op'>(</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;        symbol series last_corp_announcement_date
+#&gt; 1       ALKEM     EQ                  2021-02-11
+#&gt; 2        IDEA     EQ                  2020-09-21
+#&gt; 3        BHEL     EQ                  2020-09-18
+#&gt; 4  HEROMOTOCO     EQ                  2021-02-15
+#&gt; 5       SUNTV     EQ                  2021-02-17
+#&gt; 6    BOSCHLTD     EQ                  2020-08-03
+#&gt; 7        LTTS     EQ                  2020-10-26
+#&gt; 8      MARUTI     EQ                  2020-08-13
+#&gt; 9  BAJAJ-AUTO     EQ                  2020-03-03
+#&gt; 10    PAGEIND     EQ                  2021-02-17
+#&gt;                                                  last_corp_announcement
+#&gt; 1                                    Interim Dividend - Rs 25 Per Share
+#&gt; 2                                                Annual General Meeting
+#&gt; 3                                                Annual General Meeting
+#&gt; 4  Interim Dividend - Rs 65 Per Share Special Dividend - Rs 5 Per Share
+#&gt; 5                                     Interim Dividend - Rs 5 Per Share
+#&gt; 6                    Annual General Meeting/Dividend - Rs 105 Per Share
+#&gt; 7                                  Interim Dividend - Rs 7.50 Per Share
+#&gt; 8                                            Dividend - Rs 60 Per Share
+#&gt; 9                                   Interim Dividend - Rs 120 Per Share
+#&gt; 10                                  Interim Dividend - Rs 150 Per Share
+#&gt;    open_price high_price low_price last_traded_price prev_close_price
+#&gt; 1     2932.00    2942.00   2835.00           2850.00          2914.65
+#&gt; 2       11.45      11.65     11.10             11.10            11.35
+#&gt; 3       52.20      52.65     50.60             50.95            51.75
+#&gt; 4     3510.00    3510.90   3394.00           3422.90          3476.40
+#&gt; 5      515.10     520.15    505.25            506.50           513.30
+#&gt; 6    15639.00   15639.00  15190.40          15251.00         15449.90
+#&gt; 7     2730.00    2807.60   2682.60           2695.00          2729.80
+#&gt; 8     7245.60    7262.30   7101.20           7129.25          7214.10
+#&gt; 9     3985.00    3985.00   3863.60           3897.95          3944.05
+#&gt; 10   29381.20   29596.00  28813.10          29161.00         29463.25
+#&gt;    percent_change traded_quantity turnover_in_lakhs
+#&gt; 1           -2.22          224139           6405.09
+#&gt; 2           -2.20       216754057          24449.86
+#&gt; 3           -1.55        65329850          33481.55
+#&gt; 4           -1.54          965062          33036.58
+#&gt; 5           -1.32         2301946          11739.46
+#&gt; 6           -1.29           39743           6086.30
+#&gt; 7           -1.27          551997          15227.94
+#&gt; 8           -1.18          796258          56794.54
+#&gt; 9           -1.17          615104          23956.82
+#&gt; 10          -1.03           36650          10685.66</div><div class='input'>
 <span class='co'># retain original column names as returned by NSE</span>
-<span class='fu'>nse_fo_top_losers</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt;        symbol series lastCorpAnnouncementDate
-#&gt; 1         IGL     EQ               2019-09-12
-#&gt; 2  CUMMINSIND     EQ               2020-02-07
-#&gt; 3        NMDC     EQ               2020-02-18
-#&gt; 4   LICHSGFIN     EQ               2019-08-16
-#&gt; 5  PIDILITIND     EQ               2020-03-13
-#&gt; 6      NAUKRI     EQ               2020-02-18
-#&gt; 7    JUSTDIAL     EQ               2018-10-11
-#&gt; 8     ESCORTS     EQ               2019-07-11
-#&gt; 9         PEL     EQ               2020-07-16
-#&gt; 10    HAVELLS     EQ               2020-03-16
-#&gt;                                    lastCorpAnnouncement openPrice highPrice
-#&gt; 1   Annual General Meeting/Dividend - Rs 2.40 Per Share    474.40    474.50
-#&gt; 2                     Interim Dividend - Rs 7 Per Share    383.00    383.00
-#&gt; 3                  Interim Dividend - Rs 5.29 Per Share     85.55     85.75
-#&gt; 4  Annual General Meeting/ Dividend - Rs 7.60 Per Share    292.00    292.00
-#&gt; 5                     Interim Dividend - Rs 7 Per Share   1432.15   1444.95
-#&gt; 6                  Interim Dividend - Rs 3.50 Per Share   2788.00   2799.00
-#&gt; 7                                               Buyback    372.00    372.00
-#&gt; 8                          Dividend Rs - 2.50 Per Share    995.00   1014.90
-#&gt; 9     Annual General Meeting/Dividend - Rs 14 Per Share   1035.00   1044.95
-#&gt; 10                    Interim Dividend - Rs 4 Per Share    553.00    553.90
-#&gt;    lowPrice     ltp previousPrice netPrice tradedQuantity turnoverInLakhs
-#&gt; 1    448.00  449.35        474.15    -5.23       10581901        48041.83
-#&gt; 2    368.35  369.90        385.90    -4.15        2461538         9194.09
-#&gt; 3     81.60   82.65         85.55    -3.39        9479762         7859.67
-#&gt; 4    282.30  283.50        292.15    -2.96        5343997        15231.46
-#&gt; 5   1383.10 1394.00       1432.15    -2.66        1798258        25147.56
-#&gt; 6   2738.40 2745.10       2798.90    -1.92         263110         7270.28
-#&gt; 7    364.00  367.00        373.95    -1.86        1690500         6205.99
-#&gt; 8    978.00  983.45        999.85    -1.64        2663456        26529.89
-#&gt; 9   1015.05 1037.75       1051.30    -1.29        1461988        15058.33
-#&gt; 10   542.00  546.65        553.50    -1.24        2210632        12100.78</div><div class='input'># }
+<span class='fu'>nse_fo_top_losers</span><span class='op'>(</span>clean_names <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;        symbol series lastCorpAnnouncementDate
+#&gt; 1       ALKEM     EQ               2021-02-11
+#&gt; 2        IDEA     EQ               2020-09-21
+#&gt; 3        BHEL     EQ               2020-09-18
+#&gt; 4  HEROMOTOCO     EQ               2021-02-15
+#&gt; 5       SUNTV     EQ               2021-02-17
+#&gt; 6    BOSCHLTD     EQ               2020-08-03
+#&gt; 7        LTTS     EQ               2020-10-26
+#&gt; 8      MARUTI     EQ               2020-08-13
+#&gt; 9  BAJAJ-AUTO     EQ               2020-03-03
+#&gt; 10    PAGEIND     EQ               2021-02-17
+#&gt;                                                    lastCorpAnnouncement
+#&gt; 1                                    Interim Dividend - Rs 25 Per Share
+#&gt; 2                                                Annual General Meeting
+#&gt; 3                                                Annual General Meeting
+#&gt; 4  Interim Dividend - Rs 65 Per Share Special Dividend - Rs 5 Per Share
+#&gt; 5                                     Interim Dividend - Rs 5 Per Share
+#&gt; 6                    Annual General Meeting/Dividend - Rs 105 Per Share
+#&gt; 7                                  Interim Dividend - Rs 7.50 Per Share
+#&gt; 8                                            Dividend - Rs 60 Per Share
+#&gt; 9                                   Interim Dividend - Rs 120 Per Share
+#&gt; 10                                  Interim Dividend - Rs 150 Per Share
+#&gt;    openPrice highPrice lowPrice      ltp previousPrice netPrice tradedQuantity
+#&gt; 1    2932.00   2942.00  2835.00  2850.00       2914.65    -2.22         224139
+#&gt; 2      11.45     11.65    11.10    11.10         11.35    -2.20      216754057
+#&gt; 3      52.20     52.65    50.60    50.95         51.75    -1.55       65329850
+#&gt; 4    3510.00   3510.90  3394.00  3422.90       3476.40    -1.54         965062
+#&gt; 5     515.10    520.15   505.25   506.50        513.30    -1.32        2301946
+#&gt; 6   15639.00  15639.00 15190.40 15251.00      15449.90    -1.29          39743
+#&gt; 7    2730.00   2807.60  2682.60  2695.00       2729.80    -1.27         551997
+#&gt; 8    7245.60   7262.30  7101.20  7129.25       7214.10    -1.18         796258
+#&gt; 9    3985.00   3985.00  3863.60  3897.95       3944.05    -1.17         615104
+#&gt; 10  29381.20  29596.00 28813.10 29161.00      29463.25    -1.03          36650
+#&gt;    turnoverInLakhs
+#&gt; 1          6405.09
+#&gt; 2         24449.86
+#&gt; 3         33481.55
+#&gt; 4         33036.58
+#&gt; 5         11739.46
+#&gt; 6          6086.30
+#&gt; 7         15227.94
+#&gt; 8         56794.54
+#&gt; 9         23956.82
+#&gt; 10        10685.66</div><div class='input'><span class='co'># }</span>
 
 </div></pre>
   </div>
@@ -334,7 +349,7 @@ descriptive and uses snake_case.</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

@@ -11,6 +11,7 @@ authors:
 templates:
   params:
     bootswatch: cosmo
+    ganalytics: UA-57270671-33
     docsearch:
       api_key:
       index_name: nse2r

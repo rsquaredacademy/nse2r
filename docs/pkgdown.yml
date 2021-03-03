@@ -1,8 +1,8 @@
-pandoc: 2.0.5
-pkgdown: 1.5.1
+pandoc: 2.11.2
+pkgdown: 1.6.1
 pkgdown_sha: ~
-articles: []
-last_built: 2020-06-18T12:52Z
+articles: {}
+last_built: 2021-03-03T12:16Z
 urls:
   reference: https://nse2r.rsquaredacademy.com/reference
   article: https://nse2r.rsquaredacademy.com/articles

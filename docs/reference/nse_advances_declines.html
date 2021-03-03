@@ -72,7 +72,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">nse2r</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.4</span>
       </span>
     </div>
 
@@ -100,7 +100,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/rsquaredacademy/nse2r">
-    <span class="fa fa-github"></span>
+    <span class="fas fa-github"></span>
      
   </a>
 </li>
@@ -126,7 +126,7 @@
     <p>NSE indices advances &amp; declines.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>nse_advances_declines</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
+    <pre class="usage"><span class='fu'>nse_advances_declines</span><span class='op'>(</span>clean_names <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -149,127 +149,139 @@ descriptive and uses snake_case.</p></td>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># \donttest{</span>
-<span class='fu'>nse_advances_declines</span>()</div><div class='output co'>#&gt;                                     index_name advances declines unchanged
-#&gt; 1                                     NIFTY 50       40       10         0
-#&gt; 2                                NIFTY NEXT 50       33       16         1
-#&gt; 3                                     NIFTY IT        8        2         0
+<span class='fu'>nse_advances_declines</span><span class='op'>(</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;                                     index_name advances declines unchanged
+#&gt; 1                                     NIFTY 50       43        7         0
+#&gt; 2                                NIFTY NEXT 50       40       10         0
+#&gt; 3                                     NIFTY IT        9        1         0
 #&gt; 4                                   NIFTY BANK       12        0         0
 #&gt; 5                              NIFTY MIDCAP 50       37       13         0
-#&gt; 6                                  NIFTY INFRA       22        8         0
-#&gt; 7                                 NIFTY REALTY        8        2         0
-#&gt; 8                                 NIFTY ENERGY        9        1         0
-#&gt; 9                                   NIFTY FMCG       12        3         0
-#&gt; 10                                   NIFTY MNC       18       12         0
-#&gt; 11                                NIFTY PHARMA        5        5         0
-#&gt; 12                                   NIFTY PSE       17        2         1
-#&gt; 13                              NIFTY PSU BANK       12        1         0
-#&gt; 14                           NIFTY SERV SECTOR       26        4         0
-#&gt; 15                           NIFTY COMMODITIES       24        5         1
-#&gt; 16                           NIFTY CONSUMPTION       16       14         0
-#&gt; 17                           NIFTY FIN SERVICE       18        2         0
-#&gt; 18                                  NIFTY AUTO       10        5         0
-#&gt; 19                           NIFTY DIV OPPS 50       35       14         1
-#&gt; 20                                 NIFTY MEDIA       10        4         0
-#&gt; 21                                 NIFTY METAL       11        4         0
-#&gt; 22                             NIFTY100 LIQ 15       11        4         0
-#&gt; 23                                  NIFTY CPSE        9        2         1
-#&gt; 24                           NIFTY GROWSECT 15       12        3         0
-#&gt; 25                            NIFTY50 VALUE 20       15        5         0
-#&gt; 26                           NIFTY100 QUALTY30       19       11         0
+#&gt; 6                                  NIFTY INFRA       21        9         0
+#&gt; 7                                 NIFTY REALTY        7        3         0
+#&gt; 8                                 NIFTY ENERGY        8        2         0
+#&gt; 9                                   NIFTY FMCG       13        2         0
+#&gt; 10                                   NIFTY MNC       20       10         0
+#&gt; 11                                NIFTY PHARMA        8        2         0
+#&gt; 12                                   NIFTY PSE       13        7         0
+#&gt; 13                              NIFTY PSU BANK       10        1         1
+#&gt; 14                           NIFTY SERV SECTOR       29        1         0
+#&gt; 15                           NIFTY COMMODITIES       26        4         0
+#&gt; 16                           NIFTY CONSUMPTION       22        8         0
+#&gt; 17                           NIFTY FIN SERVICE       19        1         0
+#&gt; 18                                  NIFTY AUTO        4       11         0
+#&gt; 19                           NIFTY DIV OPPS 50       37       13         0
+#&gt; 20                                 NIFTY MEDIA        6        4         0
+#&gt; 21                                 NIFTY METAL        9        6         0
+#&gt; 22                             NIFTY100 LIQ 15       14        1         0
+#&gt; 23                                  NIFTY CPSE        8        4         0
+#&gt; 24                           NIFTY GROWSECT 15       10        5         0
+#&gt; 25                            NIFTY50 VALUE 20       18        2         0
+#&gt; 26                           NIFTY100 QUALTY30       23        7         0
 #&gt; 27                              NIFTY PVT BANK       10        0         0
-#&gt; 28                            NIFTY MID LIQ 15       11        4         0
-#&gt; 29                                   NIFTY 100       74       26         1
-#&gt; 30                                   NIFTY 200      149       50         2
-#&gt; 31                                   NIFTY 500      377      119         5
-#&gt; 32                            NIFTY MIDCAP 100       75       24         1
-#&gt; 33                            NIFTY SMLCAP 100       78       20         2
-#&gt; 34                    NIFTY ADITYA BIRLA GROUP        6        1         0
-#&gt; 35                              NIFTY ALPHA 50       36       14         0
+#&gt; 28                            NIFTY MID LIQ 15       10        5         0
+#&gt; 29                                   NIFTY 100       83       17         0
+#&gt; 30                                   NIFTY 200      147       53         0
+#&gt; 31                                   NIFTY 500      330      167         4
+#&gt; 32                            NIFTY MIDCAP 100       64       36         0
+#&gt; 33                            NIFTY SMLCAP 100       58       40         2
+#&gt; 34                    NIFTY ADITYA BIRLA GROUP        5        2         0
+#&gt; 35                              NIFTY ALPHA 50       39       11         0
 #&gt; 36                          NIFTY HIGH BETA 50       43        7         0
-#&gt; 37                     NIFTY LOW VOLATILITY 50       36       14         0
-#&gt; 38                        NIFTY MAHINDRA GROUP        8        0         0
-#&gt; 39                            NIFTY MIDCAP 150      109       39         2
-#&gt; 40                       NIFTY MIDSMALLCAP 400      303       93         4
-#&gt; 41                            NIFTY SHARIAH 25       13       12         0
-#&gt; 42                          NIFTY SMALLCAP 250      194       54         2
-#&gt; 43                           NIFTY SMALLCAP 50       38       11         1
-#&gt; 44                            NIFTY TATA GROUP       17        5         0
-#&gt; 45                    NIFTY TATA GROUP 25% CAP        7        3         0
-#&gt; 46                            NIFTY100 EQL WGT       74       26         1
-#&gt; 47                           NIFTY100 LOWVOL30       22        8         0
-#&gt; 48                             NIFTY50 SHARIAH       13        6         0
-#&gt; 49                            NIFTY500 SHARIAH      147       68         2
-#&gt; 50                             NIFTY50 EQL WGT       40       10         0
-#&gt; 51               NIFTY ALPHA LOW-VOLATILITY 30       20       10         0
-#&gt; 52             NIFTY QUALITY LOW-VOLATILITY 30       19       11         0
-#&gt; 53       NIFTY ALPHA QUALITY LOW-VOLATILITY 30       19       11         0
-#&gt; 54 NIFTY ALPHA QUALITY VALUE LOW-VOLATILITY 30       18       12         0
-#&gt; 55                            NIFTY SME EMERGE       30       17        72
-#&gt; 56                       NIFTY LARGEMIDCAP 250      183       65         3
-#&gt; 57                           NIFTY500 VALUE 50       42        7         1
-#&gt; 58                            NIFTY MIDCAP 150      109       39         2
-#&gt; 59                          CNX NIFTY Pre Open       16       28         6</div><div class='input'>
+#&gt; 37                     NIFTY LOW VOLATILITY 50       39       11         0
+#&gt; 38                        NIFTY MAHINDRA GROUP        6        3         0
+#&gt; 39                            NIFTY MIDCAP 150       99       51         0
+#&gt; 40                       NIFTY MIDSMALLCAP 400      246      150         4
+#&gt; 41                            NIFTY SHARIAH 25       20        5         0
+#&gt; 42                          NIFTY SMALLCAP 250      147       99         4
+#&gt; 43                           NIFTY SMALLCAP 50       26       23         1
+#&gt; 44                            NIFTY TATA GROUP       21        4         0
+#&gt; 45                    NIFTY TATA GROUP 25% CAP        9        1         0
+#&gt; 46                            NIFTY100 EQL WGT       83       17         0
+#&gt; 47                           NIFTY100 LOWVOL30       27        3         0
+#&gt; 48                             NIFTY50 SHARIAH       16        2         0
+#&gt; 49                            NIFTY500 SHARIAH      135       74         0
+#&gt; 50                             NIFTY50 EQL WGT       43        7         0
+#&gt; 51               NIFTY ALPHA LOW-VOLATILITY 30       29        1         0
+#&gt; 52             NIFTY QUALITY LOW-VOLATILITY 30       22        8         0
+#&gt; 53       NIFTY ALPHA QUALITY LOW-VOLATILITY 30       25        5         0
+#&gt; 54 NIFTY ALPHA QUALITY VALUE LOW-VOLATILITY 30       26        4         0
+#&gt; 55                            NIFTY SME EMERGE       24       18        42
+#&gt; 56                       NIFTY LARGEMIDCAP 250      182       68         0
+#&gt; 57                           NIFTY500 VALUE 50       36       13         1
+#&gt; 58                            NIFTY MIDCAP 150       99       51         0
+#&gt; 59                             NIFTY SMLCAP 50       26       23         1
+#&gt; 60                            NIFTY SMLCAP 250      147       99         4
+#&gt; 61                            NIFTY MIDSML 400      246      150         4
+#&gt; 62                           NIFTY200 QUALTY30       21        9         0
+#&gt; 63                           NIFTY FINSRV25 50       19        1         0
+#&gt; 64                          CNX NIFTY Pre Open       50        0         0</div><div class='input'>
 <span class='co'># retain original column names as returned by NSE</span>
-<span class='fu'>nse_advances_declines</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt;                                        skipped advances declines unchanged
-#&gt; 1                                     NIFTY 50       40       10         0
-#&gt; 2                                NIFTY NEXT 50       33       16         1
-#&gt; 3                                     NIFTY IT        8        2         0
+<span class='fu'>nse_advances_declines</span><span class='op'>(</span>clean_names <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;                                        skipped advances declines unchanged
+#&gt; 1                                     NIFTY 50       43        7         0
+#&gt; 2                                NIFTY NEXT 50       40       10         0
+#&gt; 3                                     NIFTY IT        9        1         0
 #&gt; 4                                   NIFTY BANK       12        0         0
 #&gt; 5                              NIFTY MIDCAP 50       37       13         0
-#&gt; 6                                  NIFTY INFRA       22        8         0
-#&gt; 7                                 NIFTY REALTY        8        2         0
-#&gt; 8                                 NIFTY ENERGY        9        1         0
-#&gt; 9                                   NIFTY FMCG       12        3         0
-#&gt; 10                                   NIFTY MNC       18       12         0
-#&gt; 11                                NIFTY PHARMA        5        5         0
-#&gt; 12                                   NIFTY PSE       17        2         1
-#&gt; 13                              NIFTY PSU BANK       12        1         0
-#&gt; 14                           NIFTY SERV SECTOR       26        4         0
-#&gt; 15                           NIFTY COMMODITIES       24        5         1
-#&gt; 16                           NIFTY CONSUMPTION       16       14         0
-#&gt; 17                           NIFTY FIN SERVICE       18        2         0
-#&gt; 18                                  NIFTY AUTO       10        5         0
-#&gt; 19                           NIFTY DIV OPPS 50       35       14         1
-#&gt; 20                                 NIFTY MEDIA       10        4         0
-#&gt; 21                                 NIFTY METAL       11        4         0
-#&gt; 22                             NIFTY100 LIQ 15       11        4         0
-#&gt; 23                                  NIFTY CPSE        9        2         1
-#&gt; 24                           NIFTY GROWSECT 15       12        3         0
-#&gt; 25                            NIFTY50 VALUE 20       15        5         0
-#&gt; 26                           NIFTY100 QUALTY30       19       11         0
+#&gt; 6                                  NIFTY INFRA       21        9         0
+#&gt; 7                                 NIFTY REALTY        7        3         0
+#&gt; 8                                 NIFTY ENERGY        8        2         0
+#&gt; 9                                   NIFTY FMCG       13        2         0
+#&gt; 10                                   NIFTY MNC       20       10         0
+#&gt; 11                                NIFTY PHARMA        8        2         0
+#&gt; 12                                   NIFTY PSE       13        7         0
+#&gt; 13                              NIFTY PSU BANK       10        1         1
+#&gt; 14                           NIFTY SERV SECTOR       29        1         0
+#&gt; 15                           NIFTY COMMODITIES       26        4         0
+#&gt; 16                           NIFTY CONSUMPTION       22        8         0
+#&gt; 17                           NIFTY FIN SERVICE       19        1         0
+#&gt; 18                                  NIFTY AUTO        4       11         0
+#&gt; 19                           NIFTY DIV OPPS 50       37       13         0
+#&gt; 20                                 NIFTY MEDIA        6        4         0
+#&gt; 21                                 NIFTY METAL        9        6         0
+#&gt; 22                             NIFTY100 LIQ 15       14        1         0
+#&gt; 23                                  NIFTY CPSE        8        4         0
+#&gt; 24                           NIFTY GROWSECT 15       10        5         0
+#&gt; 25                            NIFTY50 VALUE 20       18        2         0
+#&gt; 26                           NIFTY100 QUALTY30       23        7         0
 #&gt; 27                              NIFTY PVT BANK       10        0         0
-#&gt; 28                            NIFTY MID LIQ 15       11        4         0
-#&gt; 29                                   NIFTY 100       74       26         1
-#&gt; 30                                   NIFTY 200      149       50         2
-#&gt; 31                                   NIFTY 500      377      119         5
-#&gt; 32                            NIFTY MIDCAP 100       75       24         1
-#&gt; 33                            NIFTY SMLCAP 100       78       20         2
-#&gt; 34                    NIFTY ADITYA BIRLA GROUP        6        1         0
-#&gt; 35                              NIFTY ALPHA 50       36       14         0
+#&gt; 28                            NIFTY MID LIQ 15       10        5         0
+#&gt; 29                                   NIFTY 100       83       17         0
+#&gt; 30                                   NIFTY 200      147       53         0
+#&gt; 31                                   NIFTY 500      330      167         4
+#&gt; 32                            NIFTY MIDCAP 100       64       36         0
+#&gt; 33                            NIFTY SMLCAP 100       58       40         2
+#&gt; 34                    NIFTY ADITYA BIRLA GROUP        5        2         0
+#&gt; 35                              NIFTY ALPHA 50       39       11         0
 #&gt; 36                          NIFTY HIGH BETA 50       43        7         0
-#&gt; 37                     NIFTY LOW VOLATILITY 50       36       14         0
-#&gt; 38                        NIFTY MAHINDRA GROUP        8        0         0
-#&gt; 39                            NIFTY MIDCAP 150      109       39         2
-#&gt; 40                       NIFTY MIDSMALLCAP 400      303       93         4
-#&gt; 41                            NIFTY SHARIAH 25       13       12         0
-#&gt; 42                          NIFTY SMALLCAP 250      194       54         2
-#&gt; 43                           NIFTY SMALLCAP 50       38       11         1
-#&gt; 44                            NIFTY TATA GROUP       17        5         0
-#&gt; 45                    NIFTY TATA GROUP 25% CAP        7        3         0
-#&gt; 46                            NIFTY100 EQL WGT       74       26         1
-#&gt; 47                           NIFTY100 LOWVOL30       22        8         0
-#&gt; 48                             NIFTY50 SHARIAH       13        6         0
-#&gt; 49                            NIFTY500 SHARIAH      147       68         2
-#&gt; 50                             NIFTY50 EQL WGT       40       10         0
-#&gt; 51               NIFTY ALPHA LOW-VOLATILITY 30       20       10         0
-#&gt; 52             NIFTY QUALITY LOW-VOLATILITY 30       19       11         0
-#&gt; 53       NIFTY ALPHA QUALITY LOW-VOLATILITY 30       19       11         0
-#&gt; 54 NIFTY ALPHA QUALITY VALUE LOW-VOLATILITY 30       18       12         0
-#&gt; 55                            NIFTY SME EMERGE       30       17        72
-#&gt; 56                       NIFTY LARGEMIDCAP 250      183       65         3
-#&gt; 57                           NIFTY500 VALUE 50       42        7         1
-#&gt; 58                            NIFTY MIDCAP 150      109       39         2
-#&gt; 59                          CNX NIFTY Pre Open       16       28         6</div><div class='input'># }
+#&gt; 37                     NIFTY LOW VOLATILITY 50       39       11         0
+#&gt; 38                        NIFTY MAHINDRA GROUP        6        3         0
+#&gt; 39                            NIFTY MIDCAP 150       99       51         0
+#&gt; 40                       NIFTY MIDSMALLCAP 400      246      150         4
+#&gt; 41                            NIFTY SHARIAH 25       20        5         0
+#&gt; 42                          NIFTY SMALLCAP 250      147       99         4
+#&gt; 43                           NIFTY SMALLCAP 50       26       23         1
+#&gt; 44                            NIFTY TATA GROUP       21        4         0
+#&gt; 45                    NIFTY TATA GROUP 25% CAP        9        1         0
+#&gt; 46                            NIFTY100 EQL WGT       83       17         0
+#&gt; 47                           NIFTY100 LOWVOL30       27        3         0
+#&gt; 48                             NIFTY50 SHARIAH       16        2         0
+#&gt; 49                            NIFTY500 SHARIAH      135       74         0
+#&gt; 50                             NIFTY50 EQL WGT       43        7         0
+#&gt; 51               NIFTY ALPHA LOW-VOLATILITY 30       29        1         0
+#&gt; 52             NIFTY QUALITY LOW-VOLATILITY 30       22        8         0
+#&gt; 53       NIFTY ALPHA QUALITY LOW-VOLATILITY 30       25        5         0
+#&gt; 54 NIFTY ALPHA QUALITY VALUE LOW-VOLATILITY 30       26        4         0
+#&gt; 55                            NIFTY SME EMERGE       24       18        42
+#&gt; 56                       NIFTY LARGEMIDCAP 250      182       68         0
+#&gt; 57                           NIFTY500 VALUE 50       36       13         1
+#&gt; 58                            NIFTY MIDCAP 150       99       51         0
+#&gt; 59                             NIFTY SMLCAP 50       26       23         1
+#&gt; 60                            NIFTY SMLCAP 250      147       99         4
+#&gt; 61                            NIFTY MIDSML 400      246      150         4
+#&gt; 62                           NIFTY200 QUALTY30       21        9         0
+#&gt; 63                           NIFTY FINSRV25 50       19        1         0
+#&gt; 64                          CNX NIFTY Pre Open       50        0         0</div><div class='input'><span class='co'># }</span>
 
 </div></pre>
   </div>
@@ -287,7 +299,7 @@ descriptive and uses snake_case.</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

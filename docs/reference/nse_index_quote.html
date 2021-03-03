@@ -72,7 +72,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">nse2r</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.4</span>
       </span>
     </div>
 
@@ -100,7 +100,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/rsquaredacademy/nse2r">
-    <span class="fa fa-github"></span>
+    <span class="fas fa-github"></span>
      
   </a>
 </li>
@@ -126,7 +126,7 @@
     <p>Fetch the quote for a given index.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>nse_index_quote</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
+    <pre class="usage"><span class='fu'>nse_index_quote</span><span class='op'>(</span>clean_names <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -149,119 +149,121 @@ descriptive and uses snake_case.</p></td>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># \donttest{</span>
-<span class='fu'>nse_index_quote</span>()</div><div class='output co'>#&gt;           index_name last_traded_price change percent_change
-#&gt; 1  NIFTY 50 Pre Open          9863.250 -17.90          -0.18
-#&gt; 2           NIFTY 50         10091.650 210.50           2.13
-#&gt; 3      NIFTY NEXT 50         24953.650  69.85           0.28
-#&gt; 4    NIFTY100 LIQ 15          2536.350  42.25           1.69
-#&gt; 5         NIFTY BANK         20956.300 754.55           3.74
-#&gt; 6          INDIA VIX            31.455  -1.90          -5.70
-#&gt; 7          NIFTY 100         10258.150 188.40           1.87
-#&gt; 8          NIFTY 500          8283.650 143.20           1.76
-#&gt; 9   NIFTY MIDCAP 100         14427.550 180.75           1.27
-#&gt; 10   NIFTY MIDCAP 50          4035.600  51.05           1.28
-#&gt; 11       NIFTY INFRA          2957.600  38.35           1.31
-#&gt; 12      NIFTY REALTY           200.150   1.80           0.91
-#&gt; 13      NIFTY ENERGY         14023.450 280.50           2.04
-#&gt; 14        NIFTY FMCG         28648.700 216.95           0.76
-#&gt; 15         NIFTY MNC         12761.600  46.00           0.36
-#&gt; 16      NIFTY PHARMA          9975.300  -1.90          -0.02
-#&gt; 17         NIFTY PSE          2456.050  55.75           2.32
-#&gt; 18    NIFTY PSU BANK          1387.500  34.50           2.55
-#&gt; 19 NIFTY SERV SECTOR         13430.400 342.75           2.62
-#&gt; 20          NIFTY IT         14551.250  72.80           0.50
-#&gt; 21  NIFTY SMLCAP 100          4493.200  66.25           1.50
-#&gt; 22         NIFTY 200          5235.450  92.90           1.81
-#&gt; 23        NIFTY AUTO          6535.900  32.40           0.50
-#&gt; 24       NIFTY MEDIA          1360.650  23.20           1.73
-#&gt; 25       NIFTY METAL          1998.650  58.20           3.00
-#&gt; 26 NIFTY DIV OPPS 50          2178.650  30.40           1.42
-#&gt; 27 NIFTY COMMODITIES          2833.900  45.60           1.64
-#&gt; 28 NIFTY CONSUMPTION          4628.250  22.40           0.49
-#&gt; 29        NIFTY CPSE          1425.900  31.65           2.27
-#&gt; 30 NIFTY FIN SERVICE         10372.000 364.90           3.65
-#&gt; 31 NIFTY GROWSECT 15          5058.600 125.20           2.54
-#&gt; 32  NIFTY50 VALUE 20          4860.150  53.40           1.11
-#&gt; 33 NIFTY50 TR 2X LEV          4279.300 174.55           4.25
-#&gt; 34 NIFTY50 PR 2X LEV          3260.900 133.05           4.25
-#&gt; 35 NIFTY50 TR 1X INV           379.200  -8.20          -2.12
-#&gt; 36 NIFTY50 PR 1X INV           434.100  -9.40          -2.12
-#&gt; 37    NIFTY ALPHA 50         13321.650 245.50           1.88
-#&gt; 38   NIFTY50 EQL WGT         10447.400 165.75           1.61
-#&gt; 39  NIFTY100 EQL WGT         11519.200 109.00           0.96
-#&gt; 40 NIFTY100 LOWVOL30          8103.450  80.10           1.00
-#&gt; 41  NIFTY MID LIQ 15          3331.450  -7.05          -0.21
-#&gt; 42    NIFTY PVT BANK         11513.750 399.20           3.59
-#&gt; 43 NIFTY100 QUALTY30          2367.450  20.20           0.86
-#&gt; 44   NIFTY GS 8 13YR          2180.800   5.52           0.25
-#&gt; 45     NIFTY GS 10YR          1990.360   2.30           0.12
-#&gt; 46 NIFTY GS 10YR CLN           977.400   0.98           0.10
-#&gt; 47    NIFTY GS 4 8YR          2315.760   4.86           0.21
-#&gt; 48  NIFTY GS 11 15YR          2350.150   6.88           0.29
-#&gt; 49 NIFTY GS 15YRPLUS          2567.040   0.86           0.03
-#&gt; 50 NIFTY GS COMPSITE          2221.260   5.14           0.23
-#&gt; 51  NIFTY MIDCAP 150          5483.800  65.75           1.21
-#&gt; 52   NIFTY SMLCAP 50          2108.250  32.05           1.54
-#&gt; 53  NIFTY SMLCAP 250          3959.900  55.10           1.41
-#&gt; 54  NIFTY MIDSML 400          4935.150  61.95           1.27
-#&gt; 55 NIFTY200 QUALTY30          8949.450  31.25           0.35</div><div class='input'>
+<span class='fu'>nse_index_quote</span><span class='op'>(</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;           index_name last_traded_price change percent_change
+#&gt; 1  NIFTY 50 Pre Open          15064.40 145.30           0.97
+#&gt; 2           NIFTY 50          15245.60 326.50           2.19
+#&gt; 3      NIFTY NEXT 50          35712.75 561.40           1.60
+#&gt; 4    NIFTY100 LIQ 15           3861.55  87.65           2.32
+#&gt; 5         NIFTY BANK          36368.05 948.35           2.68
+#&gt; 6          INDIA VIX             22.09  -1.52          -6.42
+#&gt; 7          NIFTY 100          15379.50 317.90           2.11
+#&gt; 8          NIFTY 500          12764.80 245.40           1.96
+#&gt; 9   NIFTY MIDCAP 100          24488.45 401.80           1.67
+#&gt; 10   NIFTY MIDCAP 50           7151.05 118.00           1.68
+#&gt; 11       NIFTY INFRA           4282.35  62.05           1.47
+#&gt; 12      NIFTY REALTY            362.45   5.35           1.50
+#&gt; 13      NIFTY ENERGY          19670.05 366.65           1.90
+#&gt; 14        NIFTY FMCG          33454.40 203.50           0.61
+#&gt; 15         NIFTY MNC          16295.45 105.00           0.65
+#&gt; 16      NIFTY PHARMA          12379.60 122.30           1.00
+#&gt; 17         NIFTY PSE           3352.15  24.35           0.73
+#&gt; 18    NIFTY PSU BANK           2454.95  75.15           3.16
+#&gt; 19 NIFTY SERV SECTOR          21555.25 514.60           2.45
+#&gt; 20          NIFTY IT          25772.65 470.80           1.86
+#&gt; 21  NIFTY SMLCAP 100           8400.75  82.50           0.99
+#&gt; 22         NIFTY 200           7963.30 160.35           2.05
+#&gt; 23        NIFTY AUTO          10673.10 -70.95          -0.66
+#&gt; 24       NIFTY MEDIA           1719.75  10.85           0.63
+#&gt; 25       NIFTY METAL           4058.60 131.00           3.34
+#&gt; 26 NIFTY DIV OPPS 50           3105.30  35.60           1.16
+#&gt; 27 NIFTY COMMODITIES           4536.55  88.75           2.00
+#&gt; 28 NIFTY CONSUMPTION           6001.95  23.50           0.39
+#&gt; 29        NIFTY CPSE           1937.90  11.65           0.60
+#&gt; 30 NIFTY FIN SERVICE          16854.40 455.80           2.78
+#&gt; 31 NIFTY GROWSECT 15           7293.85 144.35           2.02
+#&gt; 32  NIFTY50 VALUE 20           7437.55 101.35           1.38
+#&gt; 33 NIFTY50 TR 2X LEV           9485.60 397.05           4.37
+#&gt; 34 NIFTY50 PR 2X LEV           7115.30 297.85           4.37
+#&gt; 35 NIFTY50 TR 1X INV            249.05  -5.55          -2.18
+#&gt; 36 NIFTY50 PR 1X INV            287.45  -6.40          -2.18
+#&gt; 37    NIFTY ALPHA 50          22552.95 433.75           1.96
+#&gt; 38   NIFTY50 EQL WGT          16557.30 257.05           1.58
+#&gt; 39  NIFTY100 EQL WGT          17570.30 268.10           1.55
+#&gt; 40 NIFTY100 LOWVOL30          11444.25 116.70           1.03
+#&gt; 41  NIFTY MID LIQ 15           6070.50  69.20           1.15
+#&gt; 42    NIFTY PVT BANK          19425.55 519.45           2.75
+#&gt; 43 NIFTY100 QUALTY30           3395.75  32.10           0.95
+#&gt; 44   NIFTY GS 8 13YR           2207.53  -2.21          -0.10
+#&gt; 45     NIFTY GS 10YR           1997.19  -1.56          -0.08
+#&gt; 46 NIFTY GS 10YR CLN            940.94  -0.91          -0.10
+#&gt; 47    NIFTY GS 4 8YR           2361.29  -1.67          -0.07
+#&gt; 48  NIFTY GS 11 15YR           2362.94  -2.66          -0.11
+#&gt; 49 NIFTY GS 15YRPLUS           2608.85  -1.05          -0.04
+#&gt; 50 NIFTY GS COMPSITE           2253.75  -1.80          -0.08
+#&gt; 51  NIFTY MIDCAP 150           9235.70 144.70           1.59
+#&gt; 52   NIFTY SMLCAP 50           4240.40  41.90           1.00
+#&gt; 53  NIFTY SMLCAP 250           7169.15  66.30           0.93
+#&gt; 54  NIFTY MIDSML 400           8497.45 116.25           1.39
+#&gt; 55 NIFTY200 QUALTY30          12428.95  75.15           0.61</div><div class='input'>
 <span class='co'># retain original column names as returned by NSE</span>
-<span class='fu'>nse_index_quote</span>(<span class='kw'>clean_names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt;              skipped lastPrice change pChange
-#&gt; 1  NIFTY 50 Pre Open  9863.250 -17.90   -0.18
-#&gt; 2           NIFTY 50 10091.650 210.50    2.13
-#&gt; 3      NIFTY NEXT 50 24953.650  69.85    0.28
-#&gt; 4    NIFTY100 LIQ 15  2536.350  42.25    1.69
-#&gt; 5         NIFTY BANK 20956.300 754.55    3.74
-#&gt; 6          INDIA VIX    31.455  -1.90   -5.70
-#&gt; 7          NIFTY 100 10258.150 188.40    1.87
-#&gt; 8          NIFTY 500  8283.650 143.20    1.76
-#&gt; 9   NIFTY MIDCAP 100 14427.550 180.75    1.27
-#&gt; 10   NIFTY MIDCAP 50  4035.600  51.05    1.28
-#&gt; 11       NIFTY INFRA  2957.600  38.35    1.31
-#&gt; 12      NIFTY REALTY   200.150   1.80    0.91
-#&gt; 13      NIFTY ENERGY 14023.450 280.50    2.04
-#&gt; 14        NIFTY FMCG 28648.700 216.95    0.76
-#&gt; 15         NIFTY MNC 12761.600  46.00    0.36
-#&gt; 16      NIFTY PHARMA  9975.300  -1.90   -0.02
-#&gt; 17         NIFTY PSE  2456.050  55.75    2.32
-#&gt; 18    NIFTY PSU BANK  1387.500  34.50    2.55
-#&gt; 19 NIFTY SERV SECTOR 13430.400 342.75    2.62
-#&gt; 20          NIFTY IT 14551.250  72.80    0.50
-#&gt; 21  NIFTY SMLCAP 100  4493.200  66.25    1.50
-#&gt; 22         NIFTY 200  5235.450  92.90    1.81
-#&gt; 23        NIFTY AUTO  6535.900  32.40    0.50
-#&gt; 24       NIFTY MEDIA  1360.650  23.20    1.73
-#&gt; 25       NIFTY METAL  1998.650  58.20    3.00
-#&gt; 26 NIFTY DIV OPPS 50  2178.650  30.40    1.42
-#&gt; 27 NIFTY COMMODITIES  2833.900  45.60    1.64
-#&gt; 28 NIFTY CONSUMPTION  4628.250  22.40    0.49
-#&gt; 29        NIFTY CPSE  1425.900  31.65    2.27
-#&gt; 30 NIFTY FIN SERVICE 10372.000 364.90    3.65
-#&gt; 31 NIFTY GROWSECT 15  5058.600 125.20    2.54
-#&gt; 32  NIFTY50 VALUE 20  4860.150  53.40    1.11
-#&gt; 33 NIFTY50 TR 2X LEV  4279.300 174.55    4.25
-#&gt; 34 NIFTY50 PR 2X LEV  3260.900 133.05    4.25
-#&gt; 35 NIFTY50 TR 1X INV   379.200  -8.20   -2.12
-#&gt; 36 NIFTY50 PR 1X INV   434.100  -9.40   -2.12
-#&gt; 37    NIFTY ALPHA 50 13321.650 245.50    1.88
-#&gt; 38   NIFTY50 EQL WGT 10447.400 165.75    1.61
-#&gt; 39  NIFTY100 EQL WGT 11519.200 109.00    0.96
-#&gt; 40 NIFTY100 LOWVOL30  8103.450  80.10    1.00
-#&gt; 41  NIFTY MID LIQ 15  3331.450  -7.05   -0.21
-#&gt; 42    NIFTY PVT BANK 11513.750 399.20    3.59
-#&gt; 43 NIFTY100 QUALTY30  2367.450  20.20    0.86
-#&gt; 44   NIFTY GS 8 13YR  2180.800   5.52    0.25
-#&gt; 45     NIFTY GS 10YR  1990.360   2.30    0.12
-#&gt; 46 NIFTY GS 10YR CLN   977.400   0.98    0.10
-#&gt; 47    NIFTY GS 4 8YR  2315.760   4.86    0.21
-#&gt; 48  NIFTY GS 11 15YR  2350.150   6.88    0.29
-#&gt; 49 NIFTY GS 15YRPLUS  2567.040   0.86    0.03
-#&gt; 50 NIFTY GS COMPSITE  2221.260   5.14    0.23
-#&gt; 51  NIFTY MIDCAP 150  5483.800  65.75    1.21
-#&gt; 52   NIFTY SMLCAP 50  2108.250  32.05    1.54
-#&gt; 53  NIFTY SMLCAP 250  3959.900  55.10    1.41
-#&gt; 54  NIFTY MIDSML 400  4935.150  61.95    1.27
-#&gt; 55 NIFTY200 QUALTY30  8949.450  31.25    0.35</div><div class='input'># }
+<span class='fu'>nse_index_quote</span><span class='op'>(</span>clean_names <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;              skipped lastPrice change pChange
+#&gt; 1  NIFTY 50 Pre Open  15064.40 145.30    0.97
+#&gt; 2           NIFTY 50  15245.60 326.50    2.19
+#&gt; 3      NIFTY NEXT 50  35712.75 561.40    1.60
+#&gt; 4    NIFTY100 LIQ 15   3861.55  87.65    2.32
+#&gt; 5         NIFTY BANK  36368.05 948.35    2.68
+#&gt; 6          INDIA VIX     22.09  -1.52   -6.42
+#&gt; 7          NIFTY 100  15379.50 317.90    2.11
+#&gt; 8          NIFTY 500  12764.80 245.40    1.96
+#&gt; 9   NIFTY MIDCAP 100  24488.45 401.80    1.67
+#&gt; 10   NIFTY MIDCAP 50   7151.05 118.00    1.68
+#&gt; 11       NIFTY INFRA   4282.35  62.05    1.47
+#&gt; 12      NIFTY REALTY    362.45   5.35    1.50
+#&gt; 13      NIFTY ENERGY  19670.05 366.65    1.90
+#&gt; 14        NIFTY FMCG  33454.40 203.50    0.61
+#&gt; 15         NIFTY MNC  16295.45 105.00    0.65
+#&gt; 16      NIFTY PHARMA  12379.60 122.30    1.00
+#&gt; 17         NIFTY PSE   3352.15  24.35    0.73
+#&gt; 18    NIFTY PSU BANK   2454.95  75.15    3.16
+#&gt; 19 NIFTY SERV SECTOR  21555.25 514.60    2.45
+#&gt; 20          NIFTY IT  25772.65 470.80    1.86
+#&gt; 21  NIFTY SMLCAP 100   8400.75  82.50    0.99
+#&gt; 22         NIFTY 200   7963.30 160.35    2.05
+#&gt; 23        NIFTY AUTO  10673.10 -70.95   -0.66
+#&gt; 24       NIFTY MEDIA   1719.75  10.85    0.63
+#&gt; 25       NIFTY METAL   4058.60 131.00    3.34
+#&gt; 26 NIFTY DIV OPPS 50   3105.30  35.60    1.16
+#&gt; 27 NIFTY COMMODITIES   4536.55  88.75    2.00
+#&gt; 28 NIFTY CONSUMPTION   6001.95  23.50    0.39
+#&gt; 29        NIFTY CPSE   1937.90  11.65    0.60
+#&gt; 30 NIFTY FIN SERVICE  16854.40 455.80    2.78
+#&gt; 31 NIFTY GROWSECT 15   7293.85 144.35    2.02
+#&gt; 32  NIFTY50 VALUE 20   7437.55 101.35    1.38
+#&gt; 33 NIFTY50 TR 2X LEV   9485.60 397.05    4.37
+#&gt; 34 NIFTY50 PR 2X LEV   7115.30 297.85    4.37
+#&gt; 35 NIFTY50 TR 1X INV    249.05  -5.55   -2.18
+#&gt; 36 NIFTY50 PR 1X INV    287.45  -6.40   -2.18
+#&gt; 37    NIFTY ALPHA 50  22552.95 433.75    1.96
+#&gt; 38   NIFTY50 EQL WGT  16557.30 257.05    1.58
+#&gt; 39  NIFTY100 EQL WGT  17570.30 268.10    1.55
+#&gt; 40 NIFTY100 LOWVOL30  11444.25 116.70    1.03
+#&gt; 41  NIFTY MID LIQ 15   6070.50  69.20    1.15
+#&gt; 42    NIFTY PVT BANK  19425.55 519.45    2.75
+#&gt; 43 NIFTY100 QUALTY30   3395.75  32.10    0.95
+#&gt; 44   NIFTY GS 8 13YR   2207.53  -2.21   -0.10
+#&gt; 45     NIFTY GS 10YR   1997.19  -1.56   -0.08
+#&gt; 46 NIFTY GS 10YR CLN    940.94  -0.91   -0.10
+#&gt; 47    NIFTY GS 4 8YR   2361.29  -1.67   -0.07
+#&gt; 48  NIFTY GS 11 15YR   2362.94  -2.66   -0.11
+#&gt; 49 NIFTY GS 15YRPLUS   2608.85  -1.05   -0.04
+#&gt; 50 NIFTY GS COMPSITE   2253.75  -1.80   -0.08
+#&gt; 51  NIFTY MIDCAP 150   9235.70 144.70    1.59
+#&gt; 52   NIFTY SMLCAP 50   4240.40  41.90    1.00
+#&gt; 53  NIFTY SMLCAP 250   7169.15  66.30    0.93
+#&gt; 54  NIFTY MIDSML 400   8497.45 116.25    1.39
+#&gt; 55 NIFTY200 QUALTY30  12428.95  75.15    0.61</div><div class='input'><span class='co'># }</span>
 
 </div></pre>
   </div>
@@ -279,7 +281,7 @@ descriptive and uses snake_case.</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>
