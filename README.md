@@ -16,7 +16,7 @@ status](https://github.com/rsquaredacademy/nse2r/workflows/R-CMD-check/badge.svg
 Status](https://img.shields.io/codecov/c/github/rsquaredacademy/nse2r/master.svg)](https://codecov.io/github/rsquaredacademy/nse2r?branch=master)
 [![status](https://tinyverse.netlify.com/badge/nse2r)](https://CRAN.R-project.org/package=nse2r)
 [![Lifecycle:
-maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://lifecycle.r-lib.org/articles/stages.html#maturing)
 [![](https://cranlogs.r-pkg.org/badges/grand-total/nse2r)](https://cran.r-project.org/package=nse2r)
 <!-- badges: end -->
 
@@ -91,121 +91,121 @@ Users can retain the names and format as returned by NSE using the
 
 ``` r
 nse_index_quote()
-#>           index_name last_traded_price change percent_change
-#> 1  NIFTY 50 Pre Open          15064.40 145.30           0.97
-#> 2           NIFTY 50          15245.60 326.50           2.19
-#> 3      NIFTY NEXT 50          35712.75 561.40           1.60
-#> 4    NIFTY100 LIQ 15           3861.55  87.65           2.32
-#> 5         NIFTY BANK          36368.05 948.35           2.68
-#> 6          INDIA VIX             22.09  -1.52          -6.42
-#> 7          NIFTY 100          15379.50 317.90           2.11
-#> 8          NIFTY 500          12764.80 245.40           1.96
-#> 9   NIFTY MIDCAP 100          24488.45 401.80           1.67
-#> 10   NIFTY MIDCAP 50           7151.05 118.00           1.68
-#> 11       NIFTY INFRA           4282.35  62.05           1.47
-#> 12      NIFTY REALTY            362.45   5.35           1.50
-#> 13      NIFTY ENERGY          19670.05 366.65           1.90
-#> 14        NIFTY FMCG          33454.40 203.50           0.61
-#> 15         NIFTY MNC          16295.45 105.00           0.65
-#> 16      NIFTY PHARMA          12379.60 122.30           1.00
-#> 17         NIFTY PSE           3352.15  24.35           0.73
-#> 18    NIFTY PSU BANK           2454.95  75.15           3.16
-#> 19 NIFTY SERV SECTOR          21555.25 514.60           2.45
-#> 20          NIFTY IT          25772.65 470.80           1.86
-#> 21  NIFTY SMLCAP 100           8400.75  82.50           0.99
-#> 22         NIFTY 200           7963.30 160.35           2.05
-#> 23        NIFTY AUTO          10673.10 -70.95          -0.66
-#> 24       NIFTY MEDIA           1719.75  10.85           0.63
-#> 25       NIFTY METAL           4058.60 131.00           3.34
-#> 26 NIFTY DIV OPPS 50           3105.30  35.60           1.16
-#> 27 NIFTY COMMODITIES           4536.55  88.75           2.00
-#> 28 NIFTY CONSUMPTION           6001.95  23.50           0.39
-#> 29        NIFTY CPSE           1937.90  11.65           0.60
-#> 30 NIFTY FIN SERVICE          16854.40 455.80           2.78
-#> 31 NIFTY GROWSECT 15           7293.85 144.35           2.02
-#> 32  NIFTY50 VALUE 20           7437.55 101.35           1.38
-#> 33 NIFTY50 TR 2X LEV           9485.60 397.05           4.37
-#> 34 NIFTY50 PR 2X LEV           7115.30 297.85           4.37
-#> 35 NIFTY50 TR 1X INV            249.05  -5.55          -2.18
-#> 36 NIFTY50 PR 1X INV            287.45  -6.40          -2.18
-#> 37    NIFTY ALPHA 50          22552.95 433.75           1.96
-#> 38   NIFTY50 EQL WGT          16557.30 257.05           1.58
-#> 39  NIFTY100 EQL WGT          17570.30 268.10           1.55
-#> 40 NIFTY100 LOWVOL30          11444.25 116.70           1.03
-#> 41  NIFTY MID LIQ 15           6070.50  69.20           1.15
-#> 42    NIFTY PVT BANK          19425.55 519.45           2.75
-#> 43 NIFTY100 QUALTY30           3395.75  32.10           0.95
-#> 44   NIFTY GS 8 13YR           2207.53  -2.21          -0.10
-#> 45     NIFTY GS 10YR           1997.19  -1.56          -0.08
-#> 46 NIFTY GS 10YR CLN            940.94  -0.91          -0.10
-#> 47    NIFTY GS 4 8YR           2361.29  -1.67          -0.07
-#> 48  NIFTY GS 11 15YR           2362.94  -2.66          -0.11
-#> 49 NIFTY GS 15YRPLUS           2608.85  -1.05          -0.04
-#> 50 NIFTY GS COMPSITE           2253.75  -1.80          -0.08
-#> 51  NIFTY MIDCAP 150           9235.70 144.70           1.59
-#> 52   NIFTY SMLCAP 50           4240.40  41.90           1.00
-#> 53  NIFTY SMLCAP 250           7169.15  66.30           0.93
-#> 54  NIFTY MIDSML 400           8497.45 116.25           1.39
-#> 55 NIFTY200 QUALTY30          12428.95  75.15           0.61
+#>           index_name last_traded_price  change percent_change
+#> 1  NIFTY 50 Pre Open         15026.750 -218.85          -1.44
+#> 2           NIFTY 50         15117.000 -128.60          -0.84
+#> 3      NIFTY NEXT 50         35897.450  184.70           0.52
+#> 4    NIFTY100 LIQ 15          3829.400  -32.15          -0.83
+#> 5         NIFTY BANK         35892.550 -475.50          -1.31
+#> 6          INDIA VIX            23.695    1.60           7.26
+#> 7          NIFTY 100         15277.300 -102.20          -0.66
+#> 8          NIFTY 500         12719.900  -44.90          -0.35
+#> 9   NIFTY MIDCAP 100         24685.500  197.05           0.80
+#> 10   NIFTY MIDCAP 50          7195.850   44.80           0.63
+#> 11       NIFTY INFRA          4291.750    9.40           0.22
+#> 12      NIFTY REALTY           364.100    1.65           0.46
+#> 13      NIFTY ENERGY         19537.850 -132.20          -0.67
+#> 14        NIFTY FMCG         33464.100    9.70           0.03
+#> 15         NIFTY MNC         16387.250   91.80           0.56
+#> 16      NIFTY PHARMA         12382.000    2.40           0.02
+#> 17         NIFTY PSE          3345.300   -6.85          -0.20
+#> 18    NIFTY PSU BANK          2441.800  -13.15          -0.54
+#> 19 NIFTY SERV SECTOR         21324.500 -230.75          -1.07
+#> 20          NIFTY IT         25731.200  -41.45          -0.16
+#> 21  NIFTY SMLCAP 100          8515.600  114.85           1.37
+#> 22         NIFTY 200          7924.950  -38.35          -0.48
+#> 23        NIFTY AUTO         10694.400   21.30           0.20
+#> 24       NIFTY MEDIA          1756.550   36.80           2.14
+#> 25       NIFTY METAL          4002.100  -56.50          -1.39
+#> 26 NIFTY DIV OPPS 50          3101.900   -3.40          -0.11
+#> 27 NIFTY COMMODITIES          4554.300   17.75           0.39
+#> 28 NIFTY CONSUMPTION          6014.150   12.20           0.20
+#> 29        NIFTY CPSE          1927.950   -9.95          -0.51
+#> 30 NIFTY FIN SERVICE         16583.050 -271.35          -1.61
+#> 31 NIFTY GROWSECT 15          7221.400  -72.45          -0.99
+#> 32  NIFTY50 VALUE 20          7409.600  -27.95          -0.38
+#> 33 NIFTY50 TR 2X LEV          9324.750 -160.85          -1.70
+#> 34 NIFTY50 PR 2X LEV          6994.600 -120.70          -1.70
+#> 35 NIFTY50 TR 1X INV           251.200    2.15           0.86
+#> 36 NIFTY50 PR 1X INV           289.900    2.45           0.85
+#> 37    NIFTY ALPHA 50         22709.650  156.70           0.69
+#> 38   NIFTY50 EQL WGT         16512.300  -45.00          -0.27
+#> 39  NIFTY100 EQL WGT         17609.850   39.55           0.23
+#> 40 NIFTY100 LOWVOL30         11449.600    5.35           0.05
+#> 41  NIFTY MID LIQ 15          6109.400   38.90           0.64
+#> 42    NIFTY PVT BANK         19232.850 -192.70          -0.99
+#> 43 NIFTY100 QUALTY30          3396.500    0.75           0.02
+#> 44   NIFTY GS 8 13YR          2210.320    2.65           0.12
+#> 45     NIFTY GS 10YR          2000.710    3.30           0.16
+#> 46 NIFTY GS 10YR CLN           942.470    1.42           0.15
+#> 47    NIFTY GS 4 8YR          2361.960    0.24           0.01
+#> 48  NIFTY GS 11 15YR          2365.270    2.25           0.09
+#> 49 NIFTY GS 15YRPLUS          2613.590    4.12           0.15
+#> 50 NIFTY GS COMPSITE          2256.120    2.11           0.09
+#> 51  NIFTY MIDCAP 150          9300.900   65.20           0.71
+#> 52   NIFTY SMLCAP 50          4267.050   26.65           0.63
+#> 53  NIFTY SMLCAP 250          7254.300   85.15           1.19
+#> 54  NIFTY MIDSML 400          8570.100   72.65           0.85
+#> 55 NIFTY200 QUALTY30         12449.950   21.00           0.17
 
 # retain original column names as returned by NSE
 nse_index_quote(clean_names = FALSE)
-#>              skipped lastPrice change pChange
-#> 1  NIFTY 50 Pre Open  15064.40 145.30    0.97
-#> 2           NIFTY 50  15245.60 326.50    2.19
-#> 3      NIFTY NEXT 50  35712.75 561.40    1.60
-#> 4    NIFTY100 LIQ 15   3861.55  87.65    2.32
-#> 5         NIFTY BANK  36368.05 948.35    2.68
-#> 6          INDIA VIX     22.09  -1.52   -6.42
-#> 7          NIFTY 100  15379.50 317.90    2.11
-#> 8          NIFTY 500  12764.80 245.40    1.96
-#> 9   NIFTY MIDCAP 100  24488.45 401.80    1.67
-#> 10   NIFTY MIDCAP 50   7151.05 118.00    1.68
-#> 11       NIFTY INFRA   4282.35  62.05    1.47
-#> 12      NIFTY REALTY    362.45   5.35    1.50
-#> 13      NIFTY ENERGY  19670.05 366.65    1.90
-#> 14        NIFTY FMCG  33454.40 203.50    0.61
-#> 15         NIFTY MNC  16295.45 105.00    0.65
-#> 16      NIFTY PHARMA  12379.60 122.30    1.00
-#> 17         NIFTY PSE   3352.15  24.35    0.73
-#> 18    NIFTY PSU BANK   2454.95  75.15    3.16
-#> 19 NIFTY SERV SECTOR  21555.25 514.60    2.45
-#> 20          NIFTY IT  25772.65 470.80    1.86
-#> 21  NIFTY SMLCAP 100   8400.75  82.50    0.99
-#> 22         NIFTY 200   7963.30 160.35    2.05
-#> 23        NIFTY AUTO  10673.10 -70.95   -0.66
-#> 24       NIFTY MEDIA   1719.75  10.85    0.63
-#> 25       NIFTY METAL   4058.60 131.00    3.34
-#> 26 NIFTY DIV OPPS 50   3105.30  35.60    1.16
-#> 27 NIFTY COMMODITIES   4536.55  88.75    2.00
-#> 28 NIFTY CONSUMPTION   6001.95  23.50    0.39
-#> 29        NIFTY CPSE   1937.90  11.65    0.60
-#> 30 NIFTY FIN SERVICE  16854.40 455.80    2.78
-#> 31 NIFTY GROWSECT 15   7293.85 144.35    2.02
-#> 32  NIFTY50 VALUE 20   7437.55 101.35    1.38
-#> 33 NIFTY50 TR 2X LEV   9485.60 397.05    4.37
-#> 34 NIFTY50 PR 2X LEV   7115.30 297.85    4.37
-#> 35 NIFTY50 TR 1X INV    249.05  -5.55   -2.18
-#> 36 NIFTY50 PR 1X INV    287.45  -6.40   -2.18
-#> 37    NIFTY ALPHA 50  22552.95 433.75    1.96
-#> 38   NIFTY50 EQL WGT  16557.30 257.05    1.58
-#> 39  NIFTY100 EQL WGT  17570.30 268.10    1.55
-#> 40 NIFTY100 LOWVOL30  11444.25 116.70    1.03
-#> 41  NIFTY MID LIQ 15   6070.50  69.20    1.15
-#> 42    NIFTY PVT BANK  19425.55 519.45    2.75
-#> 43 NIFTY100 QUALTY30   3395.75  32.10    0.95
-#> 44   NIFTY GS 8 13YR   2207.53  -2.21   -0.10
-#> 45     NIFTY GS 10YR   1997.19  -1.56   -0.08
-#> 46 NIFTY GS 10YR CLN    940.94  -0.91   -0.10
-#> 47    NIFTY GS 4 8YR   2361.29  -1.67   -0.07
-#> 48  NIFTY GS 11 15YR   2362.94  -2.66   -0.11
-#> 49 NIFTY GS 15YRPLUS   2608.85  -1.05   -0.04
-#> 50 NIFTY GS COMPSITE   2253.75  -1.80   -0.08
-#> 51  NIFTY MIDCAP 150   9235.70 144.70    1.59
-#> 52   NIFTY SMLCAP 50   4240.40  41.90    1.00
-#> 53  NIFTY SMLCAP 250   7169.15  66.30    0.93
-#> 54  NIFTY MIDSML 400   8497.45 116.25    1.39
-#> 55 NIFTY200 QUALTY30  12428.95  75.15    0.61
+#>              skipped lastPrice  change pChange
+#> 1  NIFTY 50 Pre Open 15026.750 -218.85   -1.44
+#> 2           NIFTY 50 15117.000 -128.60   -0.84
+#> 3      NIFTY NEXT 50 35897.450  184.70    0.52
+#> 4    NIFTY100 LIQ 15  3829.400  -32.15   -0.83
+#> 5         NIFTY BANK 35892.550 -475.50   -1.31
+#> 6          INDIA VIX    23.695    1.60    7.26
+#> 7          NIFTY 100 15277.300 -102.20   -0.66
+#> 8          NIFTY 500 12719.900  -44.90   -0.35
+#> 9   NIFTY MIDCAP 100 24685.500  197.05    0.80
+#> 10   NIFTY MIDCAP 50  7195.850   44.80    0.63
+#> 11       NIFTY INFRA  4291.750    9.40    0.22
+#> 12      NIFTY REALTY   364.100    1.65    0.46
+#> 13      NIFTY ENERGY 19537.850 -132.20   -0.67
+#> 14        NIFTY FMCG 33464.100    9.70    0.03
+#> 15         NIFTY MNC 16387.250   91.80    0.56
+#> 16      NIFTY PHARMA 12382.000    2.40    0.02
+#> 17         NIFTY PSE  3345.300   -6.85   -0.20
+#> 18    NIFTY PSU BANK  2441.800  -13.15   -0.54
+#> 19 NIFTY SERV SECTOR 21324.500 -230.75   -1.07
+#> 20          NIFTY IT 25731.200  -41.45   -0.16
+#> 21  NIFTY SMLCAP 100  8515.600  114.85    1.37
+#> 22         NIFTY 200  7924.950  -38.35   -0.48
+#> 23        NIFTY AUTO 10694.400   21.30    0.20
+#> 24       NIFTY MEDIA  1756.550   36.80    2.14
+#> 25       NIFTY METAL  4002.100  -56.50   -1.39
+#> 26 NIFTY DIV OPPS 50  3101.900   -3.40   -0.11
+#> 27 NIFTY COMMODITIES  4554.300   17.75    0.39
+#> 28 NIFTY CONSUMPTION  6014.150   12.20    0.20
+#> 29        NIFTY CPSE  1927.950   -9.95   -0.51
+#> 30 NIFTY FIN SERVICE 16583.050 -271.35   -1.61
+#> 31 NIFTY GROWSECT 15  7221.400  -72.45   -0.99
+#> 32  NIFTY50 VALUE 20  7409.600  -27.95   -0.38
+#> 33 NIFTY50 TR 2X LEV  9324.750 -160.85   -1.70
+#> 34 NIFTY50 PR 2X LEV  6994.600 -120.70   -1.70
+#> 35 NIFTY50 TR 1X INV   251.200    2.15    0.86
+#> 36 NIFTY50 PR 1X INV   289.900    2.45    0.85
+#> 37    NIFTY ALPHA 50 22709.650  156.70    0.69
+#> 38   NIFTY50 EQL WGT 16512.300  -45.00   -0.27
+#> 39  NIFTY100 EQL WGT 17609.850   39.55    0.23
+#> 40 NIFTY100 LOWVOL30 11449.600    5.35    0.05
+#> 41  NIFTY MID LIQ 15  6109.400   38.90    0.64
+#> 42    NIFTY PVT BANK 19232.850 -192.70   -0.99
+#> 43 NIFTY100 QUALTY30  3396.500    0.75    0.02
+#> 44   NIFTY GS 8 13YR  2210.320    2.65    0.12
+#> 45     NIFTY GS 10YR  2000.710    3.30    0.16
+#> 46 NIFTY GS 10YR CLN   942.470    1.42    0.15
+#> 47    NIFTY GS 4 8YR  2361.960    0.24    0.01
+#> 48  NIFTY GS 11 15YR  2365.270    2.25    0.09
+#> 49 NIFTY GS 15YRPLUS  2613.590    4.12    0.15
+#> 50 NIFTY GS COMPSITE  2256.120    2.11    0.09
+#> 51  NIFTY MIDCAP 150  9300.900   65.20    0.71
+#> 52   NIFTY SMLCAP 50  4267.050   26.65    0.63
+#> 53  NIFTY SMLCAP 250  7254.300   85.15    1.19
+#> 54  NIFTY MIDSML 400  8570.100   72.65    0.85
+#> 55 NIFTY200 QUALTY30 12449.950   21.00    0.17
 ```
 
 ### Stock
@@ -215,1124 +215,1456 @@ nse_index_quote(clean_names = FALSE)
 ``` r
 nse_stock_top_gainers()
 #>        symbol series last_corp_announcement_date
-#> 1   TATASTEEL     EQ                  2020-08-06
-#> 2  BAJAJFINSV     EQ                  2020-03-03
-#> 3    RELIANCE     EQ                  2020-07-02
-#> 4  BAJFINANCE     EQ                  2020-03-03
-#> 5         UPL     EQ                  2020-08-19
-#> 6    HINDALCO     EQ                  2020-09-03
-#> 7        HDFC     EQ                  2020-07-09
-#> 8   ICICIBANK     EQ                  2019-07-22
-#> 9    JSWSTEEL     EQ                  2020-07-06
-#> 10    SBILIFE     EQ                  2019-04-03
-#>                               last_corp_announcement open_price high_price
-#> 1                         Dividend - Rs 10 Per Share     741.00     782.50
-#> 2                  Interim Dividend - Rs 5 Per Share    9926.40   10444.95
-#> 3                      Dividend - Rs 6.50  Per Share    2121.05    2219.90
-#> 4                 Interim Dividend - Rs 10 Per Share    5364.15    5573.35
-#> 5                             Dividend - Rs 6 Per Sh     595.80     616.85
-#> 6   Annual General Meeting/Dividend - Re 1 Per Share     350.70     361.30
-#> 7  Annual General Meeting/Dividend - Rs 21 Per Share    2608.90    2664.15
-#> 8   Annual General Meeting/Dividend - Re 1 Per Share     618.00     633.75
-#> 9                          Dividend - Rs 2 Per Share     415.30     435.00
-#> 10                 Interim Dividend - Rs 2 Per Share     888.00     910.00
-#>    low_price last_traded_price prev_close_price percent_change traded_quantity
-#> 1     741.00            774.80           735.50           5.34        28842835
-#> 2    9890.40          10369.30          9877.00           4.98          504122
-#> 3    2107.20           2207.10          2106.00           4.80        14733134
-#> 4    5340.10           5544.00          5316.30           4.28         2252413
-#> 5     589.20            613.95           589.45           4.16         8740632
-#> 6     350.50            358.75           345.25           3.91        20104887
-#> 7    2592.15           2654.85          2564.00           3.54         5640063
-#> 8     613.85            632.00           610.50           3.52        21036174
-#> 9     415.30            426.80           413.30           3.27        11903775
-#> 10    883.50            906.95           879.15           3.16         2127137
-#>    turnover_in_lakhs
-#> 1          222929.16
-#> 2           51502.72
-#> 3          318461.11
-#> 4          122799.75
-#> 5           52585.39
-#> 6           71782.49
-#> 7          148149.23
-#> 8          131461.36
-#> 9           51157.66
-#> 10          19123.17
+#> 1  ULTRACEMCO     EQ                  2020-07-29
+#> 2    SHREECEM     EQ                  2020-02-24
+#> 3  ADANIPORTS     EQ                  2020-06-17
+#> 4      GRASIM     EQ                  2020-08-26
+#> 5     DRREDDY     EQ                  2020-07-13
+#> 6     SBILIFE     EQ                  2019-04-03
+#> 7         UPL     EQ                  2020-08-19
+#> 8       WIPRO     EQ                  2021-01-22
+#> 9   BRITANNIA     EQ                  2020-08-26
+#> 10 HEROMOTOCO     EQ                  2021-02-15
+#>                                                  last_corp_announcement
+#> 1                     Annual General Meeting/Dividend - Rs 13 Per Share
+#> 2                                   Interim Dividend - Rs 110 Per Share
+#> 3                                                Annual General Meeting
+#> 4                                             Dividend - Rs 4 Per Share
+#> 5                     Annual General Meeting/Dividend - Rs 25 Per Share
+#> 6                                     Interim Dividend - Rs 2 Per Share
+#> 7                                                Dividend - Rs 6 Per Sh
+#> 8                                     Interim Dividend - Re 1 Per Share
+#> 9                                    Interim Dividend - Rs 83 Per Share
+#> 10 Interim Dividend - Rs 65 Per Share Special Dividend - Rs 5 Per Share
+#>    open_price high_price low_price last_traded_price prev_close_price
+#> 1     6429.00    6830.00   6394.45           6817.00          6500.50
+#> 2    27450.00   28850.00  27335.05          28750.00         27695.25
+#> 3      733.25     765.70    715.85            755.25           729.85
+#> 4     1306.00    1358.75   1300.50           1356.25          1318.10
+#> 5     4482.00    4579.55   4444.00           4569.80          4502.55
+#> 6      899.70     924.80    892.40            918.30           906.45
+#> 7      602.00     631.45    599.10            620.70           613.60
+#> 8      428.90     444.30    427.50            439.80           435.50
+#> 9     3450.00    3514.80   3450.00           3509.15          3481.15
+#> 10    3398.00    3460.00   3368.25           3450.95          3424.35
+#>    percent_change traded_quantity turnover_in_lakhs
+#> 1            4.87         1049028          69537.44
+#> 2            3.81           55843          15683.09
+#> 3            3.48        27627815         206976.54
+#> 4            2.89         1566811          20879.01
+#> 5            1.49         1228647          55601.56
+#> 6            1.31         2816737          25825.82
+#> 7            1.16        12688899          78568.39
+#> 8            0.99        10840637          47595.82
+#> 9            0.80          447687          15639.81
+#> 10           0.78          750872          25740.57
 
 # retain original column names as returned by NSE
 nse_stock_top_gainers(clean_names = FALSE)
 #>        symbol series lastCorpAnnouncementDate
-#> 1   TATASTEEL     EQ               2020-08-06
-#> 2  BAJAJFINSV     EQ               2020-03-03
-#> 3    RELIANCE     EQ               2020-07-02
-#> 4  BAJFINANCE     EQ               2020-03-03
-#> 5         UPL     EQ               2020-08-19
-#> 6    HINDALCO     EQ               2020-09-03
-#> 7        HDFC     EQ               2020-07-09
-#> 8   ICICIBANK     EQ               2019-07-22
-#> 9    JSWSTEEL     EQ               2020-07-06
-#> 10    SBILIFE     EQ               2019-04-03
-#>                                 lastCorpAnnouncement openPrice highPrice
-#> 1                         Dividend - Rs 10 Per Share    741.00    782.50
-#> 2                  Interim Dividend - Rs 5 Per Share   9926.40  10444.95
-#> 3                      Dividend - Rs 6.50  Per Share   2121.05   2219.90
-#> 4                 Interim Dividend - Rs 10 Per Share   5364.15   5573.35
-#> 5                             Dividend - Rs 6 Per Sh    595.80    616.85
-#> 6   Annual General Meeting/Dividend - Re 1 Per Share    350.70    361.30
-#> 7  Annual General Meeting/Dividend - Rs 21 Per Share   2608.90   2664.15
-#> 8   Annual General Meeting/Dividend - Re 1 Per Share    618.00    633.75
-#> 9                          Dividend - Rs 2 Per Share    415.30    435.00
-#> 10                 Interim Dividend - Rs 2 Per Share    888.00    910.00
-#>    lowPrice      ltp previousPrice netPrice tradedQuantity turnoverInLakhs
-#> 1    741.00   774.80        735.50     5.34       28842835       222929.16
-#> 2   9890.40 10369.30       9877.00     4.98         504122        51502.72
-#> 3   2107.20  2207.10       2106.00     4.80       14733134       318461.11
-#> 4   5340.10  5544.00       5316.30     4.28        2252413       122799.75
-#> 5    589.20   613.95        589.45     4.16        8740632        52585.39
-#> 6    350.50   358.75        345.25     3.91       20104887        71782.49
-#> 7   2592.15  2654.85       2564.00     3.54        5640063       148149.23
-#> 8    613.85   632.00        610.50     3.52       21036174       131461.36
-#> 9    415.30   426.80        413.30     3.27       11903775        51157.66
-#> 10   883.50   906.95        879.15     3.16        2127137        19123.17
+#> 1  ULTRACEMCO     EQ               2020-07-29
+#> 2    SHREECEM     EQ               2020-02-24
+#> 3  ADANIPORTS     EQ               2020-06-17
+#> 4      GRASIM     EQ               2020-08-26
+#> 5     DRREDDY     EQ               2020-07-13
+#> 6     SBILIFE     EQ               2019-04-03
+#> 7         UPL     EQ               2020-08-19
+#> 8       WIPRO     EQ               2021-01-22
+#> 9   BRITANNIA     EQ               2020-08-26
+#> 10 HEROMOTOCO     EQ               2021-02-15
+#>                                                    lastCorpAnnouncement
+#> 1                     Annual General Meeting/Dividend - Rs 13 Per Share
+#> 2                                   Interim Dividend - Rs 110 Per Share
+#> 3                                                Annual General Meeting
+#> 4                                             Dividend - Rs 4 Per Share
+#> 5                     Annual General Meeting/Dividend - Rs 25 Per Share
+#> 6                                     Interim Dividend - Rs 2 Per Share
+#> 7                                                Dividend - Rs 6 Per Sh
+#> 8                                     Interim Dividend - Re 1 Per Share
+#> 9                                    Interim Dividend - Rs 83 Per Share
+#> 10 Interim Dividend - Rs 65 Per Share Special Dividend - Rs 5 Per Share
+#>    openPrice highPrice lowPrice      ltp previousPrice netPrice tradedQuantity
+#> 1    6429.00   6830.00  6394.45  6817.00       6500.50     4.87        1049028
+#> 2   27450.00  28850.00 27335.05 28750.00      27695.25     3.81          55843
+#> 3     733.25    765.70   715.85   755.25        729.85     3.48       27627815
+#> 4    1306.00   1358.75  1300.50  1356.25       1318.10     2.89        1566811
+#> 5    4482.00   4579.55  4444.00  4569.80       4502.55     1.49        1228647
+#> 6     899.70    924.80   892.40   918.30        906.45     1.31        2816737
+#> 7     602.00    631.45   599.10   620.70        613.60     1.16       12688899
+#> 8     428.90    444.30   427.50   439.80        435.50     0.99       10840637
+#> 9    3450.00   3514.80  3450.00  3509.15       3481.15     0.80         447687
+#> 10   3398.00   3460.00  3368.25  3450.95       3424.35     0.78         750872
+#>    turnoverInLakhs
+#> 1         69537.44
+#> 2         15683.09
+#> 3        206976.54
+#> 4         20879.01
+#> 5         55601.56
+#> 6         25825.82
+#> 7         78568.39
+#> 8         47595.82
+#> 9         15639.81
+#> 10        25740.57
 ```
 
 ##### Stocks that have touched their 52 week highs during the day
 
 ``` r
 nse_stock_year_high()
-#>         symbol                                   symbol_desc       date
-#> 1      3MINDIA                              3M India Limited 2021-03-02
-#> 2       AAKASH           Aakash Exploration Services Limited 2021-03-02
-#> 3        AAVAS                      Aavas Financiers Limited 2021-02-11
-#> 4    ABCAPITAL                  Aditya Birla Capital Limited 2021-03-01
-#> 5    ABMINTLTD                     ABM International Limited 2021-03-02
-#> 6      ACRYSIL                               Acrysil Limited 2021-03-02
-#> 7     ADANIENT                     Adani Enterprises Limited 2021-03-02
-#> 8   ADANIPORTS Adani Ports and Special Economic Zone Limited 2021-03-02
-#> 9   ADANIPOWER                           Adani Power Limited 2020-12-04
-#> 10  ADANITRANS                    Adani Transmission Limited 2021-02-17
-#> 11    ADFFOODS                             ADF Foods Limited 2021-03-02
-#> 12   AEGISCHEM                       Aegis Logistics Limited 2021-03-02
-#> 13       AFFLE                         Affle (India) Limited 2021-03-02
-#> 14      AHLADA                      Ahlada Engineers Limited 2021-03-02
-#> 15      ALICON                      Alicon Castalloy Limited 2021-03-02
-#> 16       AMBER               Amber Enterprises India Limited 2021-02-12
-#> 17    ANANTRAJ                             Anant Raj Limited 2021-03-02
-#> 18   APLAPOLLO                      APL Apollo Tubes Limited 2021-03-02
-#> 19     ARSHIYA                               Arshiya Limited 2021-03-02
-#> 20  ASAHIINDIA                     Asahi India Glass Limited 2021-02-22
-#> 21     ASHIANA                       Ashiana Housing Limited 2021-03-02
-#> 22   ASHIMASYN                                Ashima Limited 2021-03-02
-#> 23  ASTRAMICRO              Astra Microwave Products Limited 2020-08-28
-#> 24        ATGL                       Adani Total Gas Limited 2021-03-02
-#> 25      AUBANK                 AU Small Finance Bank Limited 2020-03-02
-#> 26  BALRAMCHIN                 Balrampur Chini Mills Limited 2021-03-02
-#> 27        BASF                            BASF India Limited 2021-03-02
-#> 28         BEL                    Bharat Electronics Limited 2021-03-02
-#> 29        BEML                                  BEML Limited 2021-03-02
-#> 30   BHAGYANGR                     Bhagyanagar India Limited 2021-03-02
-#> 31        BHEL              Bharat Heavy Electricals Limited 2021-03-02
-#> 32   BODALCHEM                       Bodal Chemicals Limited 2021-03-02
-#> 33   BOMDYEING           Bombay Dyeing & Mfg Company Limited 2021-01-07
-#> 34  CENTURYPLY             Century Plyboards (India) Limited 2021-03-02
-#> 35  CENTURYTEX         Century Textiles & Industries Limited 2020-03-02
-#> 36     CGPOWER     CG Power and Industrial Solutions Limited 2021-02-24
-#> 37  CNOVAPETRO               CIL Nova Petrochemicals Limited 2021-03-02
-#> 38  COSMOFILMS                           Cosmo Films Limited 2021-03-02
-#> 39     CPSEETF                                      CPSE ETF 2021-03-02
-#> 40    CUBEXTUB                         Cubex Tubings Limited 2021-03-02
-#> 41  CUMMINSIND                         Cummins India Limited 2021-03-02
-#> 42  CYBERMEDIA                   Cyber Media (India) Limited 2021-03-02
-#> 43   DALMIASUG    Dalmia Bharat Sugar and Industries Limited 2021-03-02
-#> 44    DBREALTY                            D B Realty Limited 2021-03-02
-#> 45  DCMSHRIRAM                           DCM Shriram Limited 2021-01-25
-#> 46         DCW                                   DCW Limited 2021-03-02
-#> 47    DECCANCE                        Deccan Cements Limited 2021-02-18
-#> 48  DHAMPURSUG                   Dhampur Sugar Mills Limited 2021-03-02
-#> 49   DIGISPICE                DiGiSPICE Technologies Limited 2021-03-02
-#> 50         DLF                                   DLF Limited 2021-02-16
-#> 51    DWARKESH            Dwarikesh Sugar Industries Limited 2020-12-16
-#> 52      DYNPRO                      Dynemic Products Limited 2021-03-01
-#> 53   ELECTCAST                 Electrosteel Castings Limited 2021-03-02
-#> 54  ENGINERSIN                       Engineers India Limited 2021-03-02
-#> 55   EROSMEDIA              Eros International Media Limited 2021-03-02
-#> 56  FAIRCHEMOR                     Fairchem Organics Limited 2021-01-08
-#> 57  FEDERALBNK                     The Federal Bank  Limited 2021-02-17
-#> 58     FILATEX                         Filatex India Limited 2021-01-07
-#> 59     GANECOS                     Ganesha Ecosphere Limited 2021-03-02
-#> 60  GANESHHOUC            Ganesh Housing Corporation Limited 2021-03-02
-#> 61     GENESYS     Genesys International Corporation Limited 2021-03-02
-#> 62  GENUSPOWER           Genus Power Infrastructures Limited 2021-03-02
-#> 63      GESHIP    The Great Eastern Shipping Company Limited 2021-03-02
-#> 64        GHCL                                  GHCL Limited 2021-03-02
-#> 65      GOENKA             Goenka Diamond and Jewels Limited 2021-03-02
-#> 66        GPPL                  Gujarat Pipavav Port Limited 2021-03-02
-#> 67      GRASIM                     Grasim Industries Limited 2021-03-02
-#> 68   GRINDWELL                      Grindwell Norton Limited 2021-03-02
-#> 69        GSPL                Gujarat State Petronet Limited 2021-02-18
-#> 70        HBSL                      HB Stockholdings Limited 2021-03-02
-#> 71         HEG                                   HEG Limited 2021-02-17
-#> 72  HEXATRADEX                           Hexa Tradex Limited 2021-03-02
-#> 73    HINDALCO                   Hindalco Industries Limited 2021-02-25
-#> 74  HISARMETAL                Hisar Metal Industries Limited 2021-03-02
-#> 75     HLEGLAS                          HLE Glascoat Limited 2021-03-02
-#> 76   IBREALEST                Indiabulls Real Estate Limited 2021-03-02
-#> 77    ICICIB22  ICICI Prudential Mutual Fund - BHARAT 22 ETF 2021-03-01
-#> 78  IDFCFIRSTB                       IDFC First Bank Limited 2021-02-19
-#> 79        IFCI                                  IFCI Limited 2020-12-11
-#> 80        IIFL                          IIFL Finance Limited 2021-03-02
-#> 81    IMAGICAA           Imagicaaworld Entertainment Limited 2021-03-02
-#> 82  INDIAGLYCO                         India Glycols Limited 2021-03-02
-#> 83      INDIGO                   InterGlobe Aviation Limited 2020-12-08
-#> 84   INVENTURE         Inventure Growth & Securities Limited 2020-12-14
-#> 85      ITDCEM                 ITD Cementation India Limited 2021-03-01
-#> 86   JAIBALAJI                 Jai Balaji Industries Limited 2021-03-02
-#> 87  JAYNECOIND              Jayaswal Neco Industries Limited 2021-03-02
-#> 88  JINDALPOLY                     Jindal Poly Films Limited 2021-02-11
-#> 89  JINDALSTEL                  Jindal Steel & Power Limited 2021-03-01
-#> 90   JKLAKSHMI                     JK Lakshmi Cement Limited 2021-03-02
-#> 91     JKPAPER                              JK Paper Limited 2021-03-02
-#> 92  JPASSOCIAT                 Jaiprakash Associates Limited 2021-03-02
-#> 93   JSWENERGY                            JSW Energy Limited 2021-03-02
-#> 94    JSWSTEEL                             JSW Steel Limited 2021-02-24
-#> 95    JUSTDIAL                             Just Dial Limited 2021-03-02
-#> 96  KALPATPOWR          Kalpataru Power Transmission Limited 2021-02-25
-#> 97  KALYANIFRG                         Kalyani Forge Limited 2021-03-02
-#> 98  KANORICHEM        Kanoria Chemicals & Industries Limited 2021-02-23
-#> 99         KCP                                   KCP Limited 2021-03-02
-#> 100        KEC                     KEC International Limited 2021-03-02
-#> 101     KHADIM                          Khadim India Limited 2021-03-02
-#> 102      KIOCL                                 KIOCL Limited 2021-03-02
-#> 103    KIRLFER              Kirloskar Ferrous Industries Ltd 2021-03-02
-#> 104 KIRLOSBROS                    Kirloskar Brothers Limited 2021-02-08
-#> 105  KIRLOSENG                 Kirloskar Oil Engines Limited 2021-02-16
-#> 106      L&TFH                  L&T Finance Holdings Limited 2021-03-02
-#> 107   LIKHITHA               Likhitha Infrastructure Limited 2021-02-16
-#> 108 LINDEINDIA                           Linde India Limited 2021-03-02
-#> 109       LTTS               L&T Technology Services Limited 2021-03-02
-#> 110   LUMAXIND                      Lumax Industries Limited 2020-08-24
-#> 111   MADHUCON                     Madhucon Projects Limited 2021-03-02
-#> 112      MAGMA                         Magma Fincorp Limited 2021-03-02
-#> 113    MENONBE                        Menon Bearings Limited 2021-03-02
-#> 114 MIRCELECTR                      MIRC Electronics Limited 2021-02-15
-#> 115 MODIRUBBER                           Modi Rubber Limited 2021-03-02
-#> 116 MOTHERSUMI                Motherson Sumi Systems Limited 2021-03-02
-#> 117     MPSLTD                                   MPS Limited 2021-03-02
-#> 118       MTNL             Mahanagar Telephone Nigam Limited 2020-12-21
-#> 119 NAHARSPING                  Nahar Spinning Mills Limited 2021-03-02
-#> 120 NATIONALUM            National Aluminium Company Limited 2021-02-26
-#> 121     NCLIND                        NCL Industries Limited 2021-03-02
-#> 122     NEOGEN                      Neogen Chemicals Limited 2021-02-17
-#> 123 NETFMID150             NIPPON INDIA ETF NIFTY MIDCAP 150 2021-03-02
-#> 124       NMDC                                  NMDC Limited 2021-03-02
-#> 125      NOCIL                                 NOCIL Limited 2021-02-19
-#> 126      NRAIL                N R Agarwal Industries Limited 2021-03-02
-#> 127       NTPC                                  NTPC Limited 2021-03-02
-#> 128   OPTIEMUS                     Optiemus Infracom Limited 2021-03-02
-#> 129 ORCHPHARMA                         Orchid Pharma Limited 2021-03-02
-#> 130  ORIENTCEM                         Orient Cement Limited 2021-02-16
-#> 131  ORIENTPPR             Orient Paper & Industries Limited 2021-03-02
-#> 132       PAEL                                   PAE Limited 2021-03-02
-#> 133  PALREDTEC                   Palred Technologies Limited 2021-03-02
-#> 134  PARSVNATH                  Parsvnath Developers Limited 2021-03-02
-#> 135 PDMJEPAPER               Pudumjee Paper Products Limited 2021-03-02
-#> 136        PEL                   Piramal Enterprises Limited 2021-02-25
-#> 137     PFOCUS                           Prime Focus Limited 2021-02-26
-#> 138       PGEL                       PG Electroplast Limited 2021-03-02
-#> 139    PRABHAT                         Prabhat Dairy Limited 2021-03-02
-#> 140    PRAKASH                    Prakash Industries Limited 2021-01-05
-#> 141     PRECOT                                Precot Limited 2021-02-10
-#> 142        PTC                             PTC India Limited 2021-02-25
-#> 143     RADICO                        Radico Khaitan Limited 2021-03-02
-#> 144    RAILTEL          Railtel Corporation Of India Limited 2021-03-02
-#> 145     RAJMET                      Rajnandini Metal Limited 2021-03-02
-#> 146 RAJSREESUG           Rajshree Sugars & Chemicals Limited 2020-04-08
-#> 147   RAMANEWS                  Shree Rama Newsprint Limited 2020-06-30
-#> 148   RAMCOCEM                     The Ramco Cements Limited 2021-02-26
-#> 149      RAMKY                  Ramky Infrastructure Limited 2021-03-02
-#> 150    RANASUG                           Rana Sugars Limited 2020-08-13
-#> 151  RATNAMANI              Ratnamani Metals & Tubes Limited 2021-03-02
-#> 152   RPPINFRA                 R.P.P. Infra Projects Limited 2021-03-02
-#> 153    RUCHIRA                        Ruchira Papers Limited 2020-12-08
-#> 154     RUSHIL                          Rushil Decor Limited 2021-01-08
-#> 155     SAFARI             Safari Industries (India) Limited 2021-03-02
-#> 156   SAREGAMA                        Saregama India Limited 2021-03-02
-#> 157        SCI         Shipping Corporation Of India Limited 2021-03-02
-#> 158      SETCO                      Setco Automotive Limited 2021-03-02
-#> 159      SEZAL                           Sezal Glass Limited 2021-01-12
-#> 160 SHAREINDIA                Share India Securities Limited 2021-02-18
-#> 161 SHIVAMILLS                           Shiva Mills Limited 2021-03-02
-#> 162  SHREERAMA                 Shree Rama Multi-Tech Limited 2020-09-16
-#> 163   SHYAMTEL                         Shyam Telecom Limited 2021-03-02
-#> 164    SIEMENS                               Siemens Limited 2021-02-25
-#> 165        SIL                   Standard Industries Limited 2021-03-02
-#> 166      SILGO                          Silgo Retail Limited       <NA>
-#> 167 SRHHYPOLTD     Sree Rayalaseema Hi-Strength Hypo Limited 2021-03-02
-#> 168  STARPAPER                      Star Paper Mills Limited 2021-03-02
-#> 169    STLTECH                 Sterlite Technologies Limited 2021-03-02
-#> 170 STOVEKRAFT                           Stove Kraft Limited 2021-02-12
-#> 171 SUDARSCHEM         Sudarshan Chemical Industries Limited 2021-03-01
-#> 172 SUNDARMFIN                      Sundaram Finance Limited 2021-02-26
-#> 173   SUPPETRO                     Supreme Petrochem Limited 2021-01-22
-#> 174   SYMPHONY                              Symphony Limited 2021-03-02
-#> 175      TANLA                       Tanla Platforms Limited 2021-02-24
-#> 176   TATACHEM                        Tata Chemicals Limited 2021-02-26
-#> 177   TATACOMM                   Tata Communications Limited 2021-03-02
-#> 178 TATAINVEST           Tata Investment Corporation Limited 2021-03-02
-#> 179 TATAMOTORS                           Tata Motors Limited 2021-03-02
-#> 180 TATAMTRDVR                           Tata Motors Limited 2021-03-02
-#> 181  TATAPOWER                    Tata Power Company Limited 2021-03-02
-#> 182  TATASTEEL                            Tata Steel Limited 2021-02-25
-#> 183 TATASTLBSL                        Tata Steel Bsl Limited 2021-02-25
-#> 184    TECHNOE Techno Electric & Engineering Company Limited 2021-02-25
-#> 185 THIRUSUGAR                  Thiru Arooran Sugars Limited 2021-03-02
-#> 186    TIINDIA             Tube Investments of India Limited 2021-03-02
-#> 187 TIMETECHNO                      Time Technoplast Limited 2021-03-02
-#> 188 TORNTPOWER                         Torrent Power Limited 2021-02-25
-#> 189      TRENT                                 Trent Limited 2021-03-02
-#> 190    TRIVENI      Triveni Engineering & Industries Limited 2021-03-02
-#> 191   UCALFUEL                     Ucal Fuel Systems Limited 2021-02-19
-#> 192 UNICHEMLAB                  Unichem Laboratories Limited 2021-03-02
-#> 193        UPL                                   UPL Limited 2021-03-02
-#> 194     UTIAMC          UTI Asset Management Company Limited 2021-02-25
-#> 195 VADILALIND                    Vadilal Industries Limited 2021-02-24
-#> 196 VAIBHAVGBL                        Vaibhav Global Limited 2021-03-02
-#> 197    VASWANI                    Vaswani Industries Limited 2021-03-02
-#> 198       VEDL                               Vedanta Limited 2021-03-02
-#> 199     VERTOZ                    Vertoz Advertising Limited 2021-03-02
-#> 200        VHL                     Vardhman Holdings Limited 2021-03-02
-#> 201   VIPULLTD                                 Vipul Limited 2021-03-02
-#> 202    WANBURY                               Wanbury Limited 2021-03-02
-#> 203     WELENT                   Welspun Enterprises Limited 2021-02-08
-#> 204 WSTCSTPAPR                West Coast Paper Mills Limited 2021-03-02
-#> 205  XPROINDIA                            Xpro India Limited 2021-03-02
-#>     new_high     year last_traded_price prev_high prev_close change
-#> 1   26000.00 26000.00          26000.00  25199.90   25068.65 931.35
-#> 2     127.90   127.90            127.90    127.90     127.90   0.00
-#> 3    2424.90  2424.90           2275.00   2380.40    2258.80  16.20
-#> 4     130.90   130.90            129.20    130.70     126.75   2.45
-#> 5      80.15    80.15             80.15     76.35      76.35   3.80
-#> 6     350.00   350.00            331.95    338.55     338.55  -6.60
-#> 7     944.90   944.90            916.00    876.50     872.55  43.45
-#> 8     754.95   754.95            733.25    724.70     720.50  12.75
-#> 9      66.65    66.65             64.85     63.95      61.30   3.55
-#> 10    852.55   852.55            829.00    820.00     781.05  47.95
-#> 11    894.70   894.70            875.00    880.65     874.80   0.20
-#> 12    331.65   331.65            325.00    329.65     323.60   1.40
-#> 13   5898.90  5898.90           5735.00   5618.00    5618.00 117.00
-#> 14     96.30    96.30             96.30     91.75      91.75   4.55
-#> 15    490.65   490.65            462.00    476.30     462.90  -0.90
-#> 16   3391.40  3391.40           3295.00   3315.00    3207.35  87.65
-#> 17     54.10    54.10             54.10     53.80      51.55   2.55
-#> 18   1250.00  1250.00           1244.00   1167.00    1157.40  86.60
-#> 19     39.70    39.70             39.70     37.85      37.85   1.85
-#> 20    321.10   321.10            320.05    304.75     294.35  25.70
-#> 21    121.90   121.90            116.50    121.00     119.90  -3.40
-#> 22     17.65    17.65             15.45     16.60      16.05  -0.60
-#> 23    142.30   142.30            136.05    134.90     121.55  14.50
-#> 24    689.15   689.15            649.80    584.45     574.30  75.50
-#> 25   1225.00  1225.00           1215.00   1218.00    1151.50  63.50
-#> 26    198.15   198.15            193.00    193.30     189.10   3.90
-#> 27   2244.95  2244.95           2220.00   2195.10    2105.05 114.95
-#> 28    154.00   154.00            152.70    153.55     151.50   1.20
-#> 29   1249.55  1249.55           1181.00   1245.00    1227.75 -46.75
-#> 30     52.75    52.75             48.55     51.10      51.10  -2.55
-#> 31     52.65    52.65             50.95     52.20      51.75  -0.80
-#> 32     94.50    94.50             88.70     92.55      91.45  -2.75
-#> 33     88.20    88.20             84.70     85.30      80.00   4.70
-#> 34    328.00   328.00            319.80    324.00     314.90   4.90
-#> 35    549.75   549.75            536.80    541.75     519.70  17.10
-#> 36     60.35    60.35             59.95     58.40      57.50   2.45
-#> 37     16.20    16.20             16.20     15.45      15.45   0.75
-#> 38    624.00   624.00            620.10    594.00     585.65  34.45
-#> 39     24.55    24.55             24.29     24.52      24.25   0.04
-#> 40     25.05    25.05             22.75     23.90      23.90  -1.15
-#> 41    882.95   882.95            869.80    826.85     818.45  51.35
-#> 42     16.85    16.85             16.85     16.05      16.05   0.80
-#> 43    178.00   178.00            173.80    173.70     171.35   2.45
-#> 44     31.35    31.35             29.45     31.00      31.00  -1.55
-#> 45    542.00   542.00            522.00    515.55     496.15  25.85
-#> 46     30.75    30.75             29.65     30.75      29.35   0.30
-#> 47    433.00   433.00            421.80    432.50     422.80  -1.00
-#> 48    195.00   195.00            192.30    189.50     185.20   7.10
-#> 49    114.70   114.70            103.80    109.25     109.25  -5.45
-#> 50    328.60   328.60            324.20    328.20     313.60  10.60
-#> 51     35.75    35.75             35.20     35.40      32.00   3.20
-#> 52    498.00   498.00            484.70    470.00     451.15  33.55
-#> 53     27.70    27.70             26.80     27.00      26.70   0.10
-#> 54     93.30    93.30             89.00     91.30      87.10   1.90
-#> 55     33.30    33.30             32.80     31.60      31.60   1.20
-#> 56    725.00   725.00            690.00    694.00     650.70  39.30
-#> 57     88.50    88.50             88.45     88.20      83.30   5.15
-#> 58     73.50    73.50             72.00     72.00      67.95   4.05
-#> 59    688.50   688.50            657.20    635.90     617.30  39.90
-#> 60     62.00    62.00             57.55     61.70      60.55  -3.00
-#> 61     91.95    91.95             91.95     88.10      87.70   4.25
-#> 62     46.70    46.70             44.80     44.85      44.75   0.05
-#> 63    339.95   339.95            326.90    339.50     334.25  -7.35
-#> 64    254.70   254.70            245.10    235.95     232.70  12.40
-#> 65      2.10     2.10              2.10      2.00       2.00   0.10
-#> 66    117.90   117.90            108.00    114.40     109.00  -1.00
-#> 67   1343.00  1343.00           1316.00   1298.50    1294.75  21.25
-#> 68    972.00   972.00            957.00    933.75     912.95  44.05
-#> 69    311.45   311.45            275.30    276.70     259.55  15.75
-#> 70     16.35    16.35             16.35     15.60      15.60   0.75
-#> 71   1644.00  1644.00           1558.00   1593.00    1427.50 130.50
-#> 72     74.80    74.80             72.00     74.65      74.35  -2.35
-#> 73    361.30   361.30            358.75    354.60     345.25  13.50
-#> 74    143.65   143.65            129.50    124.30     124.05   5.45
-#> 75   2430.75  2430.75           2390.05   2269.65    2209.80 180.25
-#> 76    107.75   107.75            104.80    102.50      99.80   5.00
-#> 77     38.85    38.85             38.55     38.50      38.09   0.46
-#> 78     68.15    68.15             67.10     66.80      64.50   2.60
-#> 79     12.80    12.80             12.80     11.50      10.70   2.10
-#> 80    299.00   299.00            292.80    289.40     284.80   8.00
-#> 81      7.95     7.95              7.95      7.45       7.25   0.70
-#> 82    539.00   539.00            527.80    528.80     517.25  10.55
-#> 83   1823.85  1823.85           1783.00   1787.00    1691.40  91.60
-#> 84     26.95    26.95             23.15     25.45      24.75  -1.60
-#> 85     88.80    88.80             85.30     83.00      79.85   5.45
-#> 86     32.65    32.65             32.65     31.10      31.10   1.55
-#> 87      9.25     9.25              9.25      8.85       8.85   0.40
-#> 88    615.40   615.40            612.00    571.95     540.45  71.55
-#> 89    354.80   354.80            349.20    348.70     338.30  10.90
-#> 90    439.90   439.90            421.00    439.30     431.20 -10.20
-#> 91    167.75   167.75            161.00    161.90     160.00   1.00
-#> 92      9.70     9.70              8.80      9.25       9.25  -0.45
-#> 93     92.40    92.40             83.80     88.50      86.20  -2.40
-#> 94    435.00   435.00            426.80    426.60     413.30  13.50
-#> 95   1047.70  1047.70            906.00    972.10     965.45 -59.45
-#> 96    406.85   406.85            398.70    395.75     391.30   7.40
-#> 97    202.50   202.50            201.25    199.55     192.90   8.35
-#> 98     88.55    88.55             88.05     88.35      84.35   3.70
-#> 99     85.10    85.10             83.10     83.55      78.90   4.20
-#> 100   486.00   486.00            459.30    473.40     463.05  -3.75
-#> 101   185.90   185.90            177.70    182.00     180.05  -2.35
-#> 102   190.65   190.65            174.40    183.55     183.55  -9.15
-#> 103   174.40   174.40            167.80    174.15     169.50  -1.70
-#> 104   198.70   198.70            198.70    175.00     165.60  33.10
-#> 105   175.90   175.90            173.05    173.90     162.30  10.75
-#> 106   113.40   113.40            113.10    109.40     107.00   6.10
-#> 107   306.60   306.60            303.00    298.00     279.80  23.20
-#> 108  1835.65  1835.65           1785.00   1795.00    1721.65  63.35
-#> 109  2807.60  2807.60           2695.00   2760.40    2729.80 -34.80
-#> 110  1783.40  1783.40           1701.00   1674.90    1636.15  64.85
-#> 111     7.60     7.60              6.90      7.25       7.25  -0.35
-#> 112   129.75   129.75            127.60    127.65     123.60   4.00
-#> 113    64.70    64.70             63.10     64.40      63.15  -0.05
-#> 114    15.45    15.45             15.00     15.05      14.75   0.25
-#> 115   177.85   177.85            177.85    169.40     169.40   8.45
-#> 116   238.20   238.20            232.70    235.60     232.60   0.10
-#> 117   524.80   524.80            517.95    498.95     492.60  25.35
-#> 118    16.80    16.80             16.80     15.50      14.00   2.80
-#> 119    99.60    99.60             91.30     95.25      95.25  -3.95
-#> 120    64.00    64.00             62.00     61.25      59.15   2.85
-#> 121   183.00   183.00            177.00    182.80     178.80  -1.80
-#> 122   938.00   938.00            889.00    930.00     822.70  66.30
-#> 123    93.50    93.50             92.86     92.06      91.81   1.05
-#> 124   137.45   137.45            136.45    134.85     133.85   2.60
-#> 125   193.70   193.70            190.70    183.70     180.70  10.00
-#> 126   282.85   282.85            271.60    266.00     261.80   9.80
-#> 127   114.70   114.70            112.80    113.70     112.55   0.25
-#> 128   198.65   198.65            198.65    189.20     189.20   9.45
-#> 129  1000.70  1000.70           1000.70    953.05     953.05  47.65
-#> 130   100.50   100.50            100.00     99.50      96.30   3.70
-#> 131    30.70    30.70             28.10     29.50      29.10  -1.00
-#> 132     3.90     3.90              3.90      3.75       3.75   0.15
-#> 133   123.20   123.20            111.50    117.35     117.35  -5.85
-#> 134     8.65     8.65              8.50      8.25       8.25   0.25
-#> 135    28.15    28.15             26.90     27.95      27.10  -0.20
-#> 136  2007.70  2007.70           1989.80   1964.00    1918.70  71.10
-#> 137    69.00    69.00             69.00     66.90      57.50  11.50
-#> 138   349.70   349.70            349.70    333.05     333.05  16.65
-#> 139    83.70    83.70             79.00     82.40      79.90  -0.90
-#> 140    65.50    65.50             60.75     65.45      63.05  -2.30
-#> 141    99.10    99.10             99.10     96.70      94.40   4.70
-#> 142    80.70    80.70             78.65     78.25      76.05   2.60
-#> 143   627.80   627.80            603.00    618.00     614.10 -11.10
-#> 144   189.70   189.70            164.60    174.70     174.70 -10.10
-#> 145    90.80    90.80             90.80     86.50      86.50   4.30
-#> 146    20.25    20.25             20.25     19.65      16.90   3.35
-#> 147    18.30    18.30             16.35     17.50      15.25   1.10
-#> 148  1021.00  1021.00           1013.20   1013.60     994.05  19.15
-#> 149    88.85    88.85             88.85     84.65      84.65   4.20
-#> 150     9.05     9.05              9.05      8.50       7.55   1.50
-#> 151  2020.00  2020.00           1969.95   2002.60    1981.55 -11.60
-#> 152    83.20    83.20             77.70     77.25      74.05   3.65
-#> 153    74.70    74.70             71.75     74.30      72.05  -0.30
-#> 154   205.10   205.10            205.10    200.00     195.35   9.75
-#> 155   685.00   685.00            682.00    684.00     668.70  13.30
-#> 156  1271.95  1271.95           1203.80   1124.95    1107.15  96.65
-#> 157   134.00   134.00            122.95    124.50     124.50  -1.55
-#> 158    18.00    18.00             17.10     17.80      17.35  -0.25
-#> 159     5.60     5.60              5.60      5.55       5.35   0.25
-#> 160   261.70   261.70            255.00    240.30     230.95  24.05
-#> 161    47.10    47.10             47.10     45.00      44.90   2.20
-#> 162     9.95     9.95              9.95      9.95       8.30   1.65
-#> 163    11.35    11.35             11.35     10.85      10.85   0.50
-#> 164  1960.00  1960.00           1920.50   1949.00    1939.65 -19.15
-#> 165    14.70    14.70             14.70     14.00      14.00   0.70
-#> 166    53.80    53.80             53.80        NA      44.85   8.95
-#> 167   303.00   303.00            294.00    286.35     275.75  18.25
-#> 168   132.70   132.70            125.25    130.00     128.30  -3.05
-#> 169   225.85   225.85            222.30    224.00     220.65   1.65
-#> 170   547.85   547.85            513.25    545.45     504.15   9.10
-#> 171   600.00   600.00            572.90    589.90     574.70  -1.80
-#> 172  2825.00  2825.00           2748.50   2739.95    2618.20 130.30
-#> 173   435.00   435.00            425.05    435.00     421.40   3.65
-#> 174  1528.80  1528.80           1371.70   1446.40    1446.40 -74.70
-#> 175  1030.00  1030.00            998.80    999.50     988.45  10.35
-#> 176   782.00   782.00            774.00    757.50     733.65  40.35
-#> 177  1342.15  1342.15           1236.00   1333.95    1202.95  33.05
-#> 178  1163.85  1163.85           1149.00   1155.00    1146.70   2.30
-#> 179   357.00   357.00            347.10    347.20     345.75   1.35
-#> 180   145.00   145.00            141.55    140.60     139.90   1.65
-#> 181   105.50   105.50            105.25    100.80     100.35   4.90
-#> 182   782.50   782.50            774.80    753.00     735.50  39.30
-#> 183    50.80    50.80             49.90     48.30      47.30   2.60
-#> 184   327.85   327.85            319.85    326.40     312.00   7.85
-#> 185     7.80     7.80              7.75      7.50       7.45   0.30
-#> 186  1152.00  1152.00           1146.00   1098.00    1090.10  55.90
-#> 187    62.20    62.20             59.35     61.50      59.15   0.20
-#> 188   409.00   409.00            405.00    395.75     388.95  16.05
-#> 189   923.00   923.00            912.00    921.55     905.90   6.10
-#> 190    96.00    96.00             94.15     92.40      90.20   3.95
-#> 191   173.75   173.75            167.15    164.00     156.25  10.90
-#> 192   339.90   339.90            334.10    339.70     337.35  -3.25
-#> 193   616.85   616.85            613.95    608.80     589.45  24.50
-#> 194   610.00   610.00            605.30    602.65     581.55  23.75
-#> 195   925.00   925.00            908.00    905.00     889.50  18.50
-#> 196  3884.50  3884.50           3752.00   3745.50    3691.95  60.05
-#> 197    12.40    12.40             11.35     11.90      11.90  -0.55
-#> 198   221.70   221.70            219.00    217.95     214.75   4.25
-#> 199   306.00   306.00            296.50    290.00     283.05  13.45
-#> 200  2169.75  2169.75           1956.55   1976.40    1976.40 -19.85
-#> 201    33.20    33.20             33.20     31.65      31.65   1.55
-#> 202   113.90   113.90            103.10    108.50     108.50  -5.40
-#> 203    97.05    97.05             96.95     95.95      87.65   9.30
-#> 204   277.00   277.00            263.00    254.30     250.80  12.20
-#> 205    61.90    61.90             56.95     60.60      59.90  -2.95
+#>         symbol
+#> 1       AAKASH
+#> 2        AARVI
+#> 3    ABCAPITAL
+#> 4    ABMINTLTD
+#> 5          ACC
+#> 6   ADANIPORTS
+#> 7   ADANIPOWER
+#> 8   ADANITRANS
+#> 9     ADFFOODS
+#> 10   AEGISCHEM
+#> 11       AFFLE
+#> 12      AFL-RE
+#> 13      AHLADA
+#> 14     ALMONDZ
+#> 15       AMBER
+#> 16   AMBUJACEM
+#> 17    ANANTRAJ
+#> 18        APCL
+#> 19   APLAPOLLO
+#> 20  APOLLOTYRE
+#> 21     ARSHIYA
+#> 22  ASAHIINDIA
+#> 23      ASTRAL
+#> 24  ASTRAMICRO
+#> 25        ATGL
+#> 26      AUBANK
+#> 27  BALMLAWRIE
+#> 28  BALRAMCHIN
+#> 29        BASF
+#> 30      BCLIND
+#> 31         BEL
+#> 32        BHEL
+#> 33   BOMDYEING
+#> 34         BPL
+#> 35  CAMLINFINE
+#> 36     CGPOWER
+#> 37  CNOVAPETRO
+#> 38      CONCOR
+#> 39    CONFIPET
+#> 40  CONSOFINVT
+#> 41  COSMOFILMS
+#> 42  CUMMINSIND
+#> 43  CYBERMEDIA
+#> 44      DAAWAT
+#> 45   DALMIASUG
+#> 46      DCMNVL
+#> 47  DCMSHRIRAM
+#> 48    DECCANCE
+#> 49   DEEPAKNTR
+#> 50  DELTAMAGNT
+#> 51  DHAMPURSUG
+#> 52      DICIND
+#> 53         DLF
+#> 54    DWARKESH
+#> 55   ELECTCAST
+#> 56  EQUITASBNK
+#> 57   EROSMEDIA
+#> 58  FEDERALBNK
+#> 59      FORTIS
+#> 60     GABRIEL
+#> 61        GAEL
+#> 62        GATI
+#> 63         GDL
+#> 64      GENCON
+#> 65     GENESYS
+#> 66       GET&D
+#> 67        GHCL
+#> 68       GLAND
+#> 69    GMRINFRA
+#> 70      GOENKA
+#> 71      GRASIM
+#> 72        HBSL
+#> 73  HEXATRADEX
+#> 74    HINDZINC
+#> 75  HITECHCORP
+#> 76     HLEGLAS
+#> 77         HMT
+#> 78      HONAUT
+#> 79   IBREALEST
+#> 80    ICICIB22
+#> 81        IDFC
+#> 82  IDFCFIRSTB
+#> 83        IFCI
+#> 84        IGPL
+#> 85        IIFL
+#> 86    IMAGICAA
+#> 87    INDIACEM
+#> 88  INDIAGLYCO
+#> 89  INSPIRISYS
+#> 90   INVENTURE
+#> 91       IRCTC
+#> 92      ITDCEM
+#> 93   JAIBALAJI
+#> 94   JAMNAAUTO
+#> 95  JAYNECOIND
+#> 96        JBMA
+#> 97  JINDALPOLY
+#> 98  JISLJALEQS
+#> 99  KALYANIFRG
+#> 100 KANORICHEM
+#> 101   KANPRPLA
+#> 102        KCP
+#> 103 KESORAMIND
+#> 104       KICL
+#> 105 KIRLOSBROS
+#> 106  KIRLOSENG
+#> 107        KSB
+#> 108    KTKBANK
+#> 109   LIKHITHA
+#> 110  LUMAXTECH
+#> 111       M100
+#> 112      MAGMA
+#> 113     MAHLOG
+#> 114  MANGLMCEM
+#> 115   MANINFRA
+#> 116       MEGH
+#> 117 MODIRUBBER
+#> 118     MPSLTD
+#> 119       MTNL
+#> 120 NAVINFLUOR
+#> 121 NETFMID150
+#> 122       NHPC
+#> 123       NMDC
+#> 124      NOCIL
+#> 125 NRBBEARING
+#> 126  ONWARDTEC
+#> 127   OPTIEMUS
+#> 128 ORCHPHARMA
+#> 129  ORIENTCEM
+#> 130       PAEL
+#> 131  PARSVNATH
+#> 132        PFC
+#> 133     PFOCUS
+#> 134       PGEL
+#> 135 PHILIPCARB
+#> 136    PRABHAT
+#> 137    PRAJIND
+#> 138     PRECOT
+#> 139  PRICOLLTD
+#> 140        PTC
+#> 141 PUNJABCHEM
+#> 142     RAJMET
+#> 143   RAJRATAN
+#> 144 RAJSREESUG
+#> 145   RAMCOCEM
+#> 146      RAMKY
+#> 147    RANASUG
+#> 148 RANEHOLDIN
+#> 149        RBL
+#> 150        RML
+#> 151     RUSHIL
+#> 152     SAFARI
+#> 153     SALONA
+#> 154  SANGHIIND
+#> 155        SCI
+#> 156      SETCO
+#> 157      SEZAL
+#> 158 SHAREINDIA
+#> 159 SHIVAMILLS
+#> 160 SHREDIGCEM
+#> 161  SHREERAMA
+#> 162   SHYAMTEL
+#> 163    SIEMENS
+#> 164        SIL
+#> 165      SILGO
+#> 166 SRHHYPOLTD
+#> 167 STARCEMENT
+#> 168   SUPPETRO
+#> 169 SUPREMEIND
+#> 170   TATACHEM
+#> 171 TATACOFFEE
+#> 172  TATAPOWER
+#> 173    TFCILTD
+#> 174 THIRUSUGAR
+#> 175    TIINDIA
+#> 176 TIMETECHNO
+#> 177 TORNTPOWER
+#> 178      TRENT
+#> 179    TRIVENI
+#> 180      UFLEX
+#> 181  UGARSUGAR
+#> 182 ULTRACEMCO
+#> 183 UNICHEMLAB
+#> 184        UPL
+#> 185 VADILALIND
+#> 186 VAIBHAVGBL
+#> 187     VERTOZ
+#> 188     VIPIND
+#> 189   VIPULLTD
+#> 190     WELENT
+#> 191 WELSPUNIND
+#> 192 ZENSARTECH
+#>                                                           symbol_desc
+#> 1                                 Aakash Exploration Services Limited
+#> 2                                                 Aarvi Encon Limited
+#> 3                                        Aditya Birla Capital Limited
+#> 4                                           ABM International Limited
+#> 5                                                         ACC Limited
+#> 6                       Adani Ports and Special Economic Zone Limited
+#> 7                                                 Adani Power Limited
+#> 8                                          Adani Transmission Limited
+#> 9                                                   ADF Foods Limited
+#> 10                                            Aegis Logistics Limited
+#> 11                                              Affle (India) Limited
+#> 12                                            Arvind Fashions Limited
+#> 13                                           Ahlada Engineers Limited
+#> 14                                  Almondz Global Securities Limited
+#> 15                                    Amber Enterprises India Limited
+#> 16                                             Ambuja Cements Limited
+#> 17                                                  Anant Raj Limited
+#> 18                                     Anjani Portland Cement Limited
+#> 19                                           APL Apollo Tubes Limited
+#> 20                                               Apollo Tyres Limited
+#> 21                                                    Arshiya Limited
+#> 22                                          Asahi India Glass Limited
+#> 23                                        Astral Poly Technik Limited
+#> 24                                   Astra Microwave Products Limited
+#> 25                                            Adani Total Gas Limited
+#> 26                                      AU Small Finance Bank Limited
+#> 27                                    Balmer Lawrie & Company Limited
+#> 28                                      Balrampur Chini Mills Limited
+#> 29                                                 BASF India Limited
+#> 30                                             Bcl Industries Limited
+#> 31                                         Bharat Electronics Limited
+#> 32                                   Bharat Heavy Electricals Limited
+#> 33                                Bombay Dyeing & Mfg Company Limited
+#> 34                                                        BPL Limited
+#> 35                                       Camlin Fine Sciences Limited
+#> 36                          CG Power and Industrial Solutions Limited
+#> 37                                    CIL Nova Petrochemicals Limited
+#> 38                             Container Corporation of India Limited
+#> 39                                 Confidence Petroleum India Limited
+#> 40                            Consolidated Finvest & Holdings Limited
+#> 41                                                Cosmo Films Limited
+#> 42                                              Cummins India Limited
+#> 43                                        Cyber Media (India) Limited
+#> 44                                                   LT Foods Limited
+#> 45                         Dalmia Bharat Sugar and Industries Limited
+#> 46                                               DCM Nouvelle Limited
+#> 47                                                DCM Shriram Limited
+#> 48                                             Deccan Cements Limited
+#> 49                                             Deepak Nitrite Limited
+#> 50                                        Delta Manufacturing Limited
+#> 51                                        Dhampur Sugar Mills Limited
+#> 52                                                  DIC India Limited
+#> 53                                                        DLF Limited
+#> 54                                 Dwarikesh Sugar Industries Limited
+#> 55                                      Electrosteel Castings Limited
+#> 56                                 Equitas Small Finance Bank Limited
+#> 57                                   Eros International Media Limited
+#> 58                                          The Federal Bank  Limited
+#> 59                                          Fortis Healthcare Limited
+#> 60                                              Gabriel India Limited
+#> 61                                     Gujarat Ambuja Exports Limited
+#> 62                                                       GATI Limited
+#> 63                                        Gateway Distriparks Limited
+#> 64              Generic Engineering Construction and Projects Limited
+#> 65                          Genesys International Corporation Limited
+#> 66                                               GE T&D India Limited
+#> 67                                                       GHCL Limited
+#> 68                                               Gland Pharma Limited
+#> 69                                         GMR Infrastructure Limited
+#> 70                                  Goenka Diamond and Jewels Limited
+#> 71                                          Grasim Industries Limited
+#> 72                                           HB Stockholdings Limited
+#> 73                                                Hexa Tradex Limited
+#> 74                                             Hindustan Zinc Limited
+#> 75                                         Hitech Corporation Limited
+#> 76                                               HLE Glascoat Limited
+#> 77                                                        HMT Limited
+#> 78                                 Honeywell Automation India Limited
+#> 79                                     Indiabulls Real Estate Limited
+#> 80                       ICICI Prudential Mutual Fund - BHARAT 22 ETF
+#> 81                                                       IDFC Limited
+#> 82                                            IDFC First Bank Limited
+#> 83                                                       IFCI Limited
+#> 84                                          IG Petrochemicals Limited
+#> 85                                               IIFL Finance Limited
+#> 86                                Imagicaaworld Entertainment Limited
+#> 87                                          The India Cements Limited
+#> 88                                              India Glycols Limited
+#> 89                                       Inspirisys Solutions Limited
+#> 90                              Inventure Growth & Securities Limited
+#> 91            Indian Railway Catering And Tourism Corporation Limited
+#> 92                                      ITD Cementation India Limited
+#> 93                                      Jai Balaji Industries Limited
+#> 94                                      Jamna Auto Industries Limited
+#> 95                                   Jayaswal Neco Industries Limited
+#> 96                                                   JBM Auto Limited
+#> 97                                          Jindal Poly Films Limited
+#> 98                                    Jain Irrigation Systems Limited
+#> 99                                              Kalyani Forge Limited
+#> 100                            Kanoria Chemicals & Industries Limited
+#> 101                                         Kanpur Plastipack Limited
+#> 102                                                       KCP Limited
+#> 103                                        Kesoram Industries Limited
+#> 104                                Kalyani Investment Company Limited
+#> 105                                        Kirloskar Brothers Limited
+#> 106                                     Kirloskar Oil Engines Limited
+#> 107                                                       Ksb Limited
+#> 108                                        The Karnataka Bank Limited
+#> 109                                   Likhitha Infrastructure Limited
+#> 110                                   Lumax Auto Technologies Limited
+#> 111 Motilal Oswal Mutual Fund - Motilal Oswal MOSt Shares M100 ETF GO
+#> 112                                             Magma Fincorp Limited
+#> 113                                        Mahindra Logistics Limited
+#> 114                                           Mangalam Cement Limited
+#> 115                                     Man Infraconstruction Limited
+#> 116                                         Meghmani Organics Limited
+#> 117                                               Modi Rubber Limited
+#> 118                                                       MPS Limited
+#> 119                                 Mahanagar Telephone Nigam Limited
+#> 120                              Navin Fluorine International Limited
+#> 121                                 NIPPON INDIA ETF NIFTY MIDCAP 150
+#> 122                                                      NHPC Limited
+#> 123                                                      NMDC Limited
+#> 124                                                     NOCIL Limited
+#> 125                                               NRB Bearing Limited
+#> 126                                       Onward Technologies Limited
+#> 127                                         Optiemus Infracom Limited
+#> 128                                             Orchid Pharma Limited
+#> 129                                             Orient Cement Limited
+#> 130                                                       PAE Limited
+#> 131                                      Parsvnath Developers Limited
+#> 132                                 Power Finance Corporation Limited
+#> 133                                               Prime Focus Limited
+#> 134                                           PG Electroplast Limited
+#> 135                                     Phillips Carbon Black Limited
+#> 136                                             Prabhat Dairy Limited
+#> 137                                           Praj Industries Limited
+#> 138                                                    Precot Limited
+#> 139                                                    Pricol Limited
+#> 140                                                 PTC India Limited
+#> 141                        Punjab Chemicals & Crop Protection Limited
+#> 142                                          Rajnandini Metal Limited
+#> 143                                      Rajratan Global Wire Limited
+#> 144                               Rajshree Sugars & Chemicals Limited
+#> 145                                         The Ramco Cements Limited
+#> 146                                      Ramky Infrastructure Limited
+#> 147                                               Rana Sugars Limited
+#> 148                                             Rane Holdings Limited
+#> 149                                         Rane Brake Lining Limited
+#> 150                                             Rane (Madras) Limited
+#> 151                                              Rushil Decor Limited
+#> 152                                 Safari Industries (India) Limited
+#> 153                                            Salona Cotspin Limited
+#> 154                                         Sanghi Industries Limited
+#> 155                             Shipping Corporation Of India Limited
+#> 156                                          Setco Automotive Limited
+#> 157                                               Sezal Glass Limited
+#> 158                                    Share India Securities Limited
+#> 159                                               Shiva Mills Limited
+#> 160                                      Shree Digvijay Cement Co.Ltd
+#> 161                                     Shree Rama Multi-Tech Limited
+#> 162                                             Shyam Telecom Limited
+#> 163                                                   Siemens Limited
+#> 164                                       Standard Industries Limited
+#> 165                                              Silgo Retail Limited
+#> 166                         Sree Rayalaseema Hi-Strength Hypo Limited
+#> 167                                               Star Cement Limited
+#> 168                                         Supreme Petrochem Limited
+#> 169                                        Supreme Industries Limited
+#> 170                                            Tata Chemicals Limited
+#> 171                                               Tata Coffee Limited
+#> 172                                        Tata Power Company Limited
+#> 173                      Tourism Finance Corporation of India Limited
+#> 174                                      Thiru Arooran Sugars Limited
+#> 175                                 Tube Investments of India Limited
+#> 176                                          Time Technoplast Limited
+#> 177                                             Torrent Power Limited
+#> 178                                                     Trent Limited
+#> 179                          Triveni Engineering & Industries Limited
+#> 180                                                     UFLEX Limited
+#> 181                                      The Ugar Sugar Works Limited
+#> 182                                          UltraTech Cement Limited
+#> 183                                      Unichem Laboratories Limited
+#> 184                                                       UPL Limited
+#> 185                                        Vadilal Industries Limited
+#> 186                                            Vaibhav Global Limited
+#> 187                                        Vertoz Advertising Limited
+#> 188                                            VIP Industries Limited
+#> 189                                                     Vipul Limited
+#> 190                                       Welspun Enterprises Limited
+#> 191                                             Welspun India Limited
+#> 192                                       Zensar Technologies Limited
+#>           date new_high     year last_traded_price prev_high prev_close  change
+#> 1   2021-03-03   127.90   127.90            126.00    127.90     127.50   -1.50
+#> 2   2021-02-26    62.50    62.50             57.00     54.70      52.10    4.90
+#> 3   2021-03-03   134.90   134.90            132.70    130.90     129.65    3.05
+#> 4   2021-03-03    84.10    84.10             76.10     80.15      80.10   -4.00
+#> 5   2021-02-26  1863.00  1863.00           1858.30   1847.00    1796.40   61.90
+#> 6   2021-03-03   765.70   765.70            753.05    754.95     729.85   23.20
+#> 7   2021-03-03    71.35    71.35             71.35     66.65      64.90    6.45
+#> 8   2021-03-03   854.95   854.95            835.00    852.55     828.00    7.00
+#> 9   2021-03-03   906.95   906.95            884.40    894.70     879.80    4.60
+#> 10  2021-03-03   341.00   341.00            335.40    331.65     325.95    9.45
+#> 11  2021-03-03  6004.05  6004.05           6004.05   5898.90    5718.15  285.90
+#> 12        <NA>    41.05    41.05             39.40        NA      29.35   10.05
+#> 13  2021-03-03   101.10   101.10            101.10     96.30      96.30    4.80
+#> 14  2021-03-01    29.65    29.65             29.65     29.40      28.25    1.40
+#> 15  2021-03-03  3494.95  3494.95           3465.00   3391.40    3310.90  154.10
+#> 16  2021-02-18   293.75   293.75            292.90    290.50     282.10   10.80
+#> 17  2021-03-03    56.80    56.80             56.80     54.10      54.10    2.70
+#> 18  2021-02-09   238.70   238.70            234.25    237.00     223.15   11.10
+#> 19  2021-03-03  1312.95  1312.95           1312.35   1250.00    1243.15   69.20
+#> 20  2021-02-08   259.20   259.20            258.20    256.50     250.00    8.20
+#> 21  2021-03-03    41.65    41.65             40.50     39.70      39.70    0.80
+#> 22  2021-03-03   328.00   328.00            320.40    321.10     314.75    5.65
+#> 23  2021-03-02  2224.90  2224.90           2215.00   2220.45    2205.30    9.70
+#> 24  2021-03-03   145.00   145.00            140.65    142.30     135.35    5.30
+#> 25  2021-03-03   701.70   701.70            685.45    689.15     662.75   22.70
+#> 26  2021-03-03  1290.00  1290.00           1260.70   1225.00    1200.90   59.80
+#> 27  2020-12-29   152.40   152.40            146.40    146.70     128.15   18.25
+#> 28  2021-03-03   213.35   213.35            210.45    198.15     192.80   17.65
+#> 29  2021-03-03  2318.80  2318.80           2276.75   2244.95    2198.95   77.80
+#> 30        <NA>   148.00   148.00            130.50        NA     125.90    4.60
+#> 31  2021-03-03   154.95   154.95            153.45    154.00     152.90    0.55
+#> 32  2021-03-03    56.10    56.10             54.60     52.65      51.00    3.60
+#> 33  2021-03-03    89.75    89.75             86.90     88.20      84.25    2.65
+#> 34  2020-12-02    26.45    26.45             25.60     26.00      25.35    0.25
+#> 35  2021-03-02   151.30   151.30            150.50    148.50     143.60    6.90
+#> 36  2021-03-03    63.30    63.30             63.30     60.35      60.30    3.00
+#> 37  2021-03-03    17.00    17.00             17.00     16.20      16.20    0.80
+#> 38  2021-02-25   643.95   643.95            618.60    597.00     578.35   40.25
+#> 39  2021-02-11    49.00    49.00             48.15     48.50      44.60    3.55
+#> 40  2021-01-04    52.05    52.05             50.45     50.40      45.85    4.60
+#> 41  2021-03-03   655.50   655.50            641.00    624.00     620.35   20.65
+#> 42  2021-03-03   896.00   896.00            893.90    882.95     864.45   29.45
+#> 43  2021-03-03    17.65    17.65             17.65     16.85      16.85    0.80
+#> 44  2020-08-11    64.00    64.00             61.90     63.30      58.75    3.15
+#> 45  2021-03-03   178.45   178.45            177.00    178.00     173.60    3.40
+#> 46  2021-02-10    79.45    79.45             79.00     77.45      75.70    3.30
+#> 47  2021-03-03   562.95   562.95            547.60    542.00     531.35   16.25
+#> 48  2021-03-03   457.90   457.90            452.00    433.00     420.45   31.55
+#> 49  2021-03-02  1690.00  1690.00           1635.85   1663.15    1602.15   33.70
+#> 50  2021-02-17    35.00    35.00             35.00     34.00      33.35    1.65
+#> 51  2021-03-03   201.35   201.35            196.85    195.00     192.75    4.10
+#> 52  2020-12-31   455.95   455.95            442.00    424.90     415.25   26.75
+#> 53  2021-03-03   332.70   332.70            328.40    328.60     324.20    4.20
+#> 54  2021-03-03    36.95    36.95             36.75     35.75      35.35    1.40
+#> 55  2021-03-03    28.00    28.00             27.40     27.70      27.05    0.35
+#> 56  2021-02-18    59.60    59.60             59.60     51.60      49.70    9.90
+#> 57  2021-03-03    34.15    34.15             32.65     33.30      32.80   -0.15
+#> 58  2021-03-03    92.50    92.50             91.20     88.50      88.10    3.10
+#> 59  2021-01-11   184.70   184.70            179.75    182.10     173.90    5.85
+#> 60  2021-01-07   134.50   134.50            133.25    131.40     127.55    5.70
+#> 61  2021-01-25   155.00   155.00            149.35    151.00     139.45    9.90
+#> 62  2020-12-31   116.20   116.20            111.60    106.60     101.35   10.25
+#> 63  2021-01-25   184.00   184.00            180.30    182.60     175.45    4.85
+#> 64  2021-02-18    68.00    68.00             64.50     64.70      56.70    7.80
+#> 65  2021-03-03    96.00    96.00             95.80     91.95      91.55    4.25
+#> 66  2021-02-19   146.40   146.40            144.40    138.85     136.30    8.10
+#> 67  2021-03-03   258.00   258.00            254.80    254.70     246.55    8.25
+#> 68  2020-12-28  2680.00  2680.00           2655.00   2508.55    2436.75  218.25
+#> 69  2020-12-16    29.95    29.95             29.10     29.35      27.75    1.35
+#> 70  2021-03-03     2.20     2.20              2.00      2.10       2.10   -0.10
+#> 71  2021-03-03  1360.00  1360.00           1358.90   1343.00    1318.10   40.80
+#> 72  2021-03-03    17.15    17.15             17.15     16.35      16.35    0.80
+#> 73  2021-03-03    75.05    75.05             74.00     74.80      71.50    2.50
+#> 74  2021-01-07   334.40   334.40            329.80    328.40     318.05   11.75
+#> 75  2021-02-26   145.55   145.55            142.80    145.00     140.35    2.45
+#> 76  2021-03-03  2520.00  2520.00           2450.00   2430.75    2403.30   46.70
+#> 77  2021-02-10    28.65    28.65             28.65     28.40      27.30    1.35
+#> 78  2021-02-22 49600.00 49600.00          48060.00  48644.00   46682.65 1377.35
+#> 79  2021-03-03   119.50   119.50            117.40    107.75     105.25   12.15
+#> 80  2021-03-03    39.80    39.80             38.11     38.85      38.58   -0.47
+#> 81  2021-02-25    57.40    57.40             55.95     57.00      55.55    0.40
+#> 82  2021-03-03    69.30    69.30             68.65     68.15      67.10    1.55
+#> 83  2021-03-03    13.20    13.20             11.95     12.80      12.80   -0.85
+#> 84  2020-12-04   536.00   536.00            518.10    503.95     483.65   34.45
+#> 85  2021-03-03   302.30   302.30            297.70    299.00     294.00    3.70
+#> 86  2021-03-03     8.30     8.30              8.30      7.95       7.95    0.35
+#> 87  2021-01-01   187.00   187.00            184.80    185.80     174.15   10.65
+#> 88  2021-03-03   566.00   566.00            556.05    539.00     530.75   25.30
+#> 89  2021-02-15    41.80    41.80             39.85     41.10      38.00    1.85
+#> 90  2021-03-03    27.70    27.70             25.40     26.95      23.10    2.30
+#> 91  2021-03-02  2015.80  2015.80           1974.30   1988.00    1886.10   88.20
+#> 92  2021-03-03    93.60    93.60             92.30     88.80      85.60    6.70
+#> 93  2021-03-03    34.00    34.00             33.00     32.65      32.65    0.35
+#> 94  2021-02-05    75.60    75.60             74.45     73.90      70.45    4.00
+#> 95  2021-03-03     9.70     9.70              9.70      9.25       9.25    0.45
+#> 96  2021-02-24   459.00   459.00            448.20    450.00     436.75   11.45
+#> 97  2021-03-03   699.00   699.00            678.10    615.40     603.00   75.10
+#> 98  2021-01-12    24.30    24.30             23.40     24.30      22.10    1.30
+#> 99  2021-03-03   211.30   211.30            211.30    202.50     201.25   10.05
+#> 100 2021-03-03    92.50    92.50             92.00     88.55      88.15    3.85
+#> 101 2021-02-12   165.75   165.75            165.65    152.00     140.25   25.40
+#> 102 2021-03-03    86.45    86.45             84.75     85.10      83.25    1.50
+#> 103 2021-03-02    87.85    87.85             85.40     82.30      78.90    6.50
+#> 104 2020-08-27  1799.00  1799.00           1617.65   1680.00    1619.40   -1.75
+#> 105 2021-03-03   215.20   215.20            203.75    198.70     198.70    5.05
+#> 106 2021-03-03   177.50   177.50            173.40    175.90     173.40    0.00
+#> 107 2021-02-26   800.00   800.00            789.00    787.25     752.30   36.70
+#> 108 2021-02-18    73.50    73.50             72.20     72.80      68.90    3.30
+#> 109 2021-03-03   326.00   326.00            310.80    306.60     301.20    9.60
+#> 110 2021-02-26   168.40   168.40            164.85    158.60     155.10    9.75
+#> 111 2021-02-17    26.49    26.49             25.94     26.00      25.86    0.08
+#> 112 2021-03-03   132.50   132.50            127.65    129.75     126.65    1.00
+#> 113 2021-01-22   552.30   552.30            509.90    543.85     480.25   29.65
+#> 114 2021-02-25   287.00   287.00            286.00    286.00     280.85    5.15
+#> 115 2021-01-14    42.40    42.40             41.65     40.80      37.95    3.70
+#> 116 2021-02-08    89.95    89.95             88.05     89.85      83.55    4.50
+#> 117 2021-03-03   186.70   186.70            186.70    177.85     177.85    8.85
+#> 118 2021-03-03   547.10   547.10            533.50    524.80     516.00   17.50
+#> 119 2021-03-03    17.70    17.70             16.40     16.80      16.80   -0.40
+#> 120 2021-03-02  2932.20  2932.20           2849.10   2875.00    2791.10   58.00
+#> 121 2021-03-03    94.20    94.20             94.00     93.50      93.00    1.00
+#> 122 2021-02-19    26.65    26.65             25.90     26.20      24.80    1.10
+#> 123 2021-03-03   139.60   139.60            138.10    137.45     136.50    1.60
+#> 124 2021-03-03   198.00   198.00            194.50    193.70     191.65    2.85
+#> 125 2021-02-09   125.50   125.50            121.65    123.90     120.50    1.15
+#> 126 2020-12-31   120.50   120.50            111.50    113.55     104.05    7.45
+#> 127 2021-03-03   208.55   208.55            188.75    198.65     198.65   -9.90
+#> 128 2021-03-03  1050.70  1050.70           1050.70   1000.70    1000.70   50.00
+#> 129 2021-03-03   113.50   113.50            111.20    100.50      99.85   11.35
+#> 130 2021-03-03     4.05     4.05              4.05      3.90       3.90    0.15
+#> 131 2021-03-03     9.05     9.05              9.05      8.65       8.65    0.40
+#> 132 2021-02-16   138.70   138.70            134.75    135.90     133.55    1.20
+#> 133 2021-03-03    73.75    73.75             70.05     69.00      69.00    1.05
+#> 134 2021-03-03   367.10   367.10            367.10    349.70     349.65   17.45
+#> 135 2021-02-09   214.20   214.20            207.80    212.50     203.15    4.65
+#> 136 2021-03-03    84.45    84.45             82.05     83.70      79.25    2.80
+#> 137 2021-03-02   183.90   183.90            176.80    182.00     172.25    4.55
+#> 138 2021-03-03   104.05   104.05             97.10     99.10      99.10   -2.00
+#> 139 2021-03-01    75.80    75.80             74.20     73.25      68.40    5.80
+#> 140 2021-03-03    82.40    82.40             79.40     80.70      78.70    0.70
+#> 141 2021-02-25  1028.50  1028.50            979.45   1000.00     972.45    7.00
+#> 142 2021-03-03    95.30    95.30             94.95     90.80      90.80    4.15
+#> 143 2021-03-02   678.00   678.00            654.30    676.40     631.90   22.40
+#> 144 2021-03-03    20.85    20.85             20.05     20.25      20.15   -0.10
+#> 145 2021-03-03  1038.55  1038.55           1031.35   1021.00    1013.75   17.60
+#> 146 2021-03-03    93.25    93.25             93.25     88.85      88.85    4.40
+#> 147 2021-03-03    10.25    10.25             10.00      9.05       9.05    0.95
+#> 148 2021-01-01   701.70   701.70            680.05    698.95     647.00   33.05
+#> 149 2021-02-25   954.80   954.80            893.15    909.00     841.45   51.70
+#> 150 2021-03-01   459.05   459.05            459.05    399.05     382.55   76.50
+#> 151 2021-03-03   215.35   215.35            215.35    205.10     205.10   10.25
+#> 152 2021-03-03   699.85   699.85            682.05    685.00     681.00    1.05
+#> 153 2021-03-01    97.00    97.00             97.00     93.85      92.40    4.60
+#> 154 2021-02-25    49.30    49.30             48.00     46.00      43.70    4.30
+#> 155 2021-03-03   134.65   134.65            129.60    134.00     123.60    6.00
+#> 156 2021-03-03    18.70    18.70             18.10     18.00      17.00    1.10
+#> 157 2021-03-03     5.85     5.85              5.85      5.60       5.60    0.25
+#> 158 2021-03-03   262.00   262.00            260.00    261.70     254.15    5.85
+#> 159 2021-03-03    49.20    49.20             47.10     47.10      47.10    0.00
+#> 160 2020-10-27    70.00    70.00             68.75     66.90      63.60    5.15
+#> 161 2021-03-03    11.90    11.90             11.90      9.95       9.95    1.95
+#> 162 2021-03-03    11.90    11.90             11.90     11.35      11.35    0.55
+#> 163 2021-03-03  1962.00  1962.00           1948.90   1960.00    1916.50   32.40
+#> 164 2021-03-03    15.40    15.40             15.40     14.70      14.70    0.70
+#> 165 2021-03-03    64.55    64.55             64.50     53.80      53.80   10.70
+#> 166 2021-03-03   313.15   313.15            303.95    303.00     294.15    9.80
+#> 167 2021-01-11   112.00   112.00            109.00    108.00      99.30    9.70
+#> 168 2021-03-03   437.55   437.55            424.00    435.00     428.15   -4.15
+#> 169 2021-03-01  2133.00  2133.00           2085.00   2125.05    2109.60  -24.60
+#> 170 2021-03-03   792.05   792.05            773.50    782.00     776.45   -2.95
+#> 171 2021-03-01   138.80   138.80            135.20    136.95     132.05    3.15
+#> 172 2021-03-03   114.00   114.00            110.00    105.50     105.25    4.75
+#> 173 2020-03-03    66.20    66.20             63.50     65.55      59.15    4.35
+#> 174 2021-03-03     8.10     8.10              7.85      7.80       7.75    0.10
+#> 175 2021-03-03  1186.25  1186.25           1147.00   1152.00    1135.90   11.10
+#> 176 2021-03-03    64.20    64.20             62.95     62.20      59.75    3.20
+#> 177 2021-03-03   426.50   426.50            419.60    409.00     404.75   14.85
+#> 178 2021-03-03   944.70   944.70            927.85    923.00     910.90   16.95
+#> 179 2021-03-03    97.80    97.80             97.20     96.00      94.35    2.85
+#> 180 2020-12-08   421.95   421.95            419.00    403.00     389.80   29.20
+#> 181 2020-12-16    20.20    20.20             19.70     19.80      19.15    0.55
+#> 182 2021-02-10  6830.00  6830.00           6800.50   6589.00    6500.50  300.00
+#> 183 2021-03-03   345.95   345.95            345.00    339.90     334.40   10.60
+#> 184 2021-03-03   631.45   631.45            622.35    616.85     613.60    8.75
+#> 185 2021-03-03   925.00   925.00            908.75    925.00     908.10    0.65
+#> 186 2021-03-03  3957.30  3957.30           3925.05   3884.50    3754.70  170.35
+#> 187 2021-03-03   317.50   317.50            308.15    306.00     294.85   13.30
+#> 188 2021-03-03   422.00   422.00            412.60    418.00     408.55    4.05
+#> 189 2021-03-03    34.85    34.85             34.85     33.20      33.20    1.65
+#> 190 2021-03-03   115.20   115.20            114.20     97.05      96.00   18.20
+#> 191 2020-10-26    78.85    78.85             75.90     78.00      70.65    5.25
+#> 192 2021-02-26   311.95   311.95            306.10    309.00     301.55    4.55
 #>     percent_change
-#> 1             3.72
-#> 2             0.00
-#> 3             0.72
-#> 4             1.93
-#> 5             4.98
-#> 6            -1.95
-#> 7             4.98
-#> 8             1.77
-#> 9             5.79
-#> 10            6.14
-#> 11            0.02
-#> 12            0.43
-#> 13            2.08
+#> 1            -1.18
+#> 2             9.40
+#> 3             2.35
+#> 4            -4.99
+#> 5             3.45
+#> 6             3.18
+#> 7             9.94
+#> 8             0.85
+#> 9             0.52
+#> 10            2.90
+#> 11            5.00
+#> 12           34.24
+#> 13            4.98
 #> 14            4.96
-#> 15           -0.19
-#> 16            2.73
-#> 17            4.95
-#> 18            7.48
-#> 19            4.89
-#> 20            8.73
-#> 21           -2.84
-#> 22           -3.74
-#> 23           11.93
-#> 24           13.15
-#> 25            5.51
-#> 26            2.06
-#> 27            5.46
-#> 28            0.79
-#> 29           -3.81
-#> 30           -4.99
-#> 31           -1.55
-#> 32           -3.01
-#> 33            5.88
-#> 34            1.56
-#> 35            3.29
-#> 36            4.26
-#> 37            4.85
-#> 38            5.88
-#> 39            0.16
-#> 40           -4.81
-#> 41            6.27
-#> 42            4.98
-#> 43            1.43
-#> 44           -5.00
-#> 45            5.21
-#> 46            1.02
-#> 47           -0.24
-#> 48            3.83
-#> 49           -4.99
-#> 50            3.38
-#> 51           10.00
-#> 52            7.44
-#> 53            0.37
-#> 54            2.18
-#> 55            3.80
-#> 56            6.04
-#> 57            6.18
-#> 58            5.96
-#> 59            6.46
-#> 60           -4.95
-#> 61            4.85
-#> 62            0.11
-#> 63           -2.20
-#> 64            5.33
-#> 65            5.00
-#> 66           -0.92
-#> 67            1.64
-#> 68            4.83
-#> 69            6.07
-#> 70            4.81
-#> 71            9.14
-#> 72           -3.16
-#> 73            3.91
-#> 74            4.39
-#> 75            8.16
-#> 76            5.01
-#> 77            1.21
-#> 78            4.03
-#> 79           19.63
-#> 80            2.81
-#> 81            9.66
-#> 82            2.04
-#> 83            5.42
-#> 84           -6.46
-#> 85            6.83
-#> 86            4.98
-#> 87            4.52
-#> 88           13.24
-#> 89            3.22
-#> 90           -2.37
-#> 91            0.63
-#> 92           -4.86
-#> 93           -2.78
-#> 94            3.27
-#> 95           -6.16
-#> 96            1.89
-#> 97            4.33
-#> 98            4.39
-#> 99            5.32
-#> 100          -0.81
-#> 101          -1.31
-#> 102          -4.99
-#> 103          -1.00
-#> 104          19.99
-#> 105           6.62
-#> 106           5.70
-#> 107           8.29
-#> 108           3.68
-#> 109          -1.27
-#> 110           3.96
-#> 111          -4.83
-#> 112           3.24
-#> 113          -0.08
-#> 114           1.69
-#> 115           4.99
-#> 116           0.04
-#> 117           5.15
-#> 118          20.00
-#> 119          -4.15
-#> 120           4.82
-#> 121          -1.01
-#> 122           8.06
-#> 123           1.14
-#> 124           1.94
-#> 125           5.53
-#> 126           3.74
-#> 127           0.22
-#> 128           4.99
-#> 129           5.00
-#> 130           3.84
-#> 131          -3.44
-#> 132           4.00
-#> 133          -4.99
-#> 134           3.03
-#> 135          -0.74
-#> 136           3.71
-#> 137          20.00
-#> 138           5.00
-#> 139          -1.13
-#> 140          -3.65
-#> 141           4.98
-#> 142           3.42
-#> 143          -1.81
-#> 144          -5.78
-#> 145           4.97
-#> 146          19.82
-#> 147           7.21
-#> 148           1.93
-#> 149           4.96
-#> 150          19.87
-#> 151          -0.59
-#> 152           4.93
-#> 153          -0.42
-#> 154           4.99
-#> 155           1.99
-#> 156           8.73
-#> 157          -1.24
-#> 158          -1.44
-#> 159           4.67
-#> 160          10.41
-#> 161           4.90
-#> 162          19.88
-#> 163           4.61
-#> 164          -0.99
-#> 165           5.00
-#> 166          19.96
-#> 167           6.62
-#> 168          -2.38
-#> 169           0.75
-#> 170           1.81
-#> 171          -0.31
-#> 172           4.98
-#> 173           0.87
-#> 174          -5.16
-#> 175           1.05
-#> 176           5.50
-#> 177           2.75
-#> 178           0.20
-#> 179           0.39
-#> 180           1.18
-#> 181           4.88
-#> 182           5.34
-#> 183           5.50
-#> 184           2.52
-#> 185           4.03
-#> 186           5.13
-#> 187           0.34
-#> 188           4.13
-#> 189           0.67
-#> 190           4.38
-#> 191           6.98
-#> 192          -0.96
-#> 193           4.16
-#> 194           4.08
-#> 195           2.08
-#> 196           1.63
-#> 197          -4.62
-#> 198           1.98
-#> 199           4.75
-#> 200          -1.00
-#> 201           4.90
-#> 202          -4.98
-#> 203          10.61
-#> 204           4.86
-#> 205          -4.92
+#> 15            4.65
+#> 16            3.83
+#> 17            4.99
+#> 18            4.97
+#> 19            5.57
+#> 20            3.28
+#> 21            2.02
+#> 22            1.80
+#> 23            0.44
+#> 24            3.92
+#> 25            3.43
+#> 26            4.98
+#> 27           14.24
+#> 28            9.15
+#> 29            3.54
+#> 30            3.65
+#> 31            0.36
+#> 32            7.06
+#> 33            3.15
+#> 34            0.99
+#> 35            4.81
+#> 36            4.98
+#> 37            4.94
+#> 38            6.96
+#> 39            7.96
+#> 40           10.03
+#> 41            3.33
+#> 42            3.41
+#> 43            4.75
+#> 44            5.36
+#> 45            1.96
+#> 46            4.36
+#> 47            3.06
+#> 48            7.50
+#> 49            2.10
+#> 50            4.95
+#> 51            2.13
+#> 52            6.44
+#> 53            1.30
+#> 54            3.96
+#> 55            1.29
+#> 56           19.92
+#> 57           -0.46
+#> 58            3.52
+#> 59            3.36
+#> 60            4.47
+#> 61            7.10
+#> 62           10.11
+#> 63            2.76
+#> 64           13.76
+#> 65            4.64
+#> 66            5.94
+#> 67            3.35
+#> 68            8.96
+#> 69            4.86
+#> 70           -4.76
+#> 71            3.10
+#> 72            4.89
+#> 73            3.50
+#> 74            3.69
+#> 75            1.75
+#> 76            1.94
+#> 77            4.95
+#> 78            2.95
+#> 79           11.54
+#> 80           -1.22
+#> 81            0.72
+#> 82            2.31
+#> 83           -6.64
+#> 84            7.12
+#> 85            1.26
+#> 86            4.40
+#> 87            6.12
+#> 88            4.77
+#> 89            4.87
+#> 90            9.96
+#> 91            4.68
+#> 92            7.83
+#> 93            1.07
+#> 94            5.68
+#> 95            4.86
+#> 96            2.62
+#> 97           12.45
+#> 98            5.88
+#> 99            4.99
+#> 100           4.37
+#> 101          18.11
+#> 102           1.80
+#> 103           8.24
+#> 104          -0.11
+#> 105           2.54
+#> 106           0.00
+#> 107           4.88
+#> 108           4.79
+#> 109           3.19
+#> 110           6.29
+#> 111           0.31
+#> 112           0.79
+#> 113           6.17
+#> 114           1.83
+#> 115           9.75
+#> 116           5.39
+#> 117           4.98
+#> 118           3.39
+#> 119          -2.38
+#> 120           2.08
+#> 121           1.08
+#> 122           4.44
+#> 123           1.17
+#> 124           1.49
+#> 125           0.95
+#> 126           7.16
+#> 127          -4.98
+#> 128           5.00
+#> 129          11.37
+#> 130           3.85
+#> 131           4.62
+#> 132           0.90
+#> 133           1.52
+#> 134           4.99
+#> 135           2.29
+#> 136           3.53
+#> 137           2.64
+#> 138          -2.02
+#> 139           8.48
+#> 140           0.89
+#> 141           0.72
+#> 142           4.57
+#> 143           3.54
+#> 144          -0.50
+#> 145           1.74
+#> 146           4.95
+#> 147          10.50
+#> 148           5.11
+#> 149           6.14
+#> 150          20.00
+#> 151           5.00
+#> 152           0.15
+#> 153           4.98
+#> 154           9.84
+#> 155           4.85
+#> 156           6.47
+#> 157           4.46
+#> 158           2.30
+#> 159           0.00
+#> 160           8.10
+#> 161          19.60
+#> 162           4.85
+#> 163           1.69
+#> 164           4.76
+#> 165          19.89
+#> 166           3.33
+#> 167           9.77
+#> 168          -0.97
+#> 169          -1.17
+#> 170          -0.38
+#> 171           2.39
+#> 172           4.51
+#> 173           7.35
+#> 174           1.29
+#> 175           0.98
+#> 176           5.36
+#> 177           3.67
+#> 178           1.86
+#> 179           3.02
+#> 180           7.49
+#> 181           2.87
+#> 182           4.62
+#> 183           3.17
+#> 184           1.43
+#> 185           0.07
+#> 186           4.54
+#> 187           4.51
+#> 188           0.99
+#> 189           4.97
+#> 190          18.96
+#> 191           7.43
+#> 192           1.51
 
 # retain original column names as returned by NSE
 nse_stock_year_high(clean_names = FALSE)
-#>         symbol                                    symbolDesc         dt
-#> 1      3MINDIA                              3M India Limited 2021-03-02
-#> 2       AAKASH           Aakash Exploration Services Limited 2021-03-02
-#> 3        AAVAS                      Aavas Financiers Limited 2021-02-11
-#> 4    ABCAPITAL                  Aditya Birla Capital Limited 2021-03-01
-#> 5    ABMINTLTD                     ABM International Limited 2021-03-02
-#> 6      ACRYSIL                               Acrysil Limited 2021-03-02
-#> 7     ADANIENT                     Adani Enterprises Limited 2021-03-02
-#> 8   ADANIPORTS Adani Ports and Special Economic Zone Limited 2021-03-02
-#> 9   ADANIPOWER                           Adani Power Limited 2020-12-04
-#> 10  ADANITRANS                    Adani Transmission Limited 2021-02-17
-#> 11    ADFFOODS                             ADF Foods Limited 2021-03-02
-#> 12   AEGISCHEM                       Aegis Logistics Limited 2021-03-02
-#> 13       AFFLE                         Affle (India) Limited 2021-03-02
-#> 14      AHLADA                      Ahlada Engineers Limited 2021-03-02
-#> 15      ALICON                      Alicon Castalloy Limited 2021-03-02
-#> 16       AMBER               Amber Enterprises India Limited 2021-02-12
-#> 17    ANANTRAJ                             Anant Raj Limited 2021-03-02
-#> 18   APLAPOLLO                      APL Apollo Tubes Limited 2021-03-02
-#> 19     ARSHIYA                               Arshiya Limited 2021-03-02
-#> 20  ASAHIINDIA                     Asahi India Glass Limited 2021-02-22
-#> 21     ASHIANA                       Ashiana Housing Limited 2021-03-02
-#> 22   ASHIMASYN                                Ashima Limited 2021-03-02
-#> 23  ASTRAMICRO              Astra Microwave Products Limited 2020-08-28
-#> 24        ATGL                       Adani Total Gas Limited 2021-03-02
-#> 25      AUBANK                 AU Small Finance Bank Limited 2020-03-02
-#> 26  BALRAMCHIN                 Balrampur Chini Mills Limited 2021-03-02
-#> 27        BASF                            BASF India Limited 2021-03-02
-#> 28         BEL                    Bharat Electronics Limited 2021-03-02
-#> 29        BEML                                  BEML Limited 2021-03-02
-#> 30   BHAGYANGR                     Bhagyanagar India Limited 2021-03-02
-#> 31        BHEL              Bharat Heavy Electricals Limited 2021-03-02
-#> 32   BODALCHEM                       Bodal Chemicals Limited 2021-03-02
-#> 33   BOMDYEING           Bombay Dyeing & Mfg Company Limited 2021-01-07
-#> 34  CENTURYPLY             Century Plyboards (India) Limited 2021-03-02
-#> 35  CENTURYTEX         Century Textiles & Industries Limited 2020-03-02
-#> 36     CGPOWER     CG Power and Industrial Solutions Limited 2021-02-24
-#> 37  CNOVAPETRO               CIL Nova Petrochemicals Limited 2021-03-02
-#> 38  COSMOFILMS                           Cosmo Films Limited 2021-03-02
-#> 39     CPSEETF                                      CPSE ETF 2021-03-02
-#> 40    CUBEXTUB                         Cubex Tubings Limited 2021-03-02
-#> 41  CUMMINSIND                         Cummins India Limited 2021-03-02
-#> 42  CYBERMEDIA                   Cyber Media (India) Limited 2021-03-02
-#> 43   DALMIASUG    Dalmia Bharat Sugar and Industries Limited 2021-03-02
-#> 44    DBREALTY                            D B Realty Limited 2021-03-02
-#> 45  DCMSHRIRAM                           DCM Shriram Limited 2021-01-25
-#> 46         DCW                                   DCW Limited 2021-03-02
-#> 47    DECCANCE                        Deccan Cements Limited 2021-02-18
-#> 48  DHAMPURSUG                   Dhampur Sugar Mills Limited 2021-03-02
-#> 49   DIGISPICE                DiGiSPICE Technologies Limited 2021-03-02
-#> 50         DLF                                   DLF Limited 2021-02-16
-#> 51    DWARKESH            Dwarikesh Sugar Industries Limited 2020-12-16
-#> 52      DYNPRO                      Dynemic Products Limited 2021-03-01
-#> 53   ELECTCAST                 Electrosteel Castings Limited 2021-03-02
-#> 54  ENGINERSIN                       Engineers India Limited 2021-03-02
-#> 55   EROSMEDIA              Eros International Media Limited 2021-03-02
-#> 56  FAIRCHEMOR                     Fairchem Organics Limited 2021-01-08
-#> 57  FEDERALBNK                     The Federal Bank  Limited 2021-02-17
-#> 58     FILATEX                         Filatex India Limited 2021-01-07
-#> 59     GANECOS                     Ganesha Ecosphere Limited 2021-03-02
-#> 60  GANESHHOUC            Ganesh Housing Corporation Limited 2021-03-02
-#> 61     GENESYS     Genesys International Corporation Limited 2021-03-02
-#> 62  GENUSPOWER           Genus Power Infrastructures Limited 2021-03-02
-#> 63      GESHIP    The Great Eastern Shipping Company Limited 2021-03-02
-#> 64        GHCL                                  GHCL Limited 2021-03-02
-#> 65      GOENKA             Goenka Diamond and Jewels Limited 2021-03-02
-#> 66        GPPL                  Gujarat Pipavav Port Limited 2021-03-02
-#> 67      GRASIM                     Grasim Industries Limited 2021-03-02
-#> 68   GRINDWELL                      Grindwell Norton Limited 2021-03-02
-#> 69        GSPL                Gujarat State Petronet Limited 2021-02-18
-#> 70        HBSL                      HB Stockholdings Limited 2021-03-02
-#> 71         HEG                                   HEG Limited 2021-02-17
-#> 72  HEXATRADEX                           Hexa Tradex Limited 2021-03-02
-#> 73    HINDALCO                   Hindalco Industries Limited 2021-02-25
-#> 74  HISARMETAL                Hisar Metal Industries Limited 2021-03-02
-#> 75     HLEGLAS                          HLE Glascoat Limited 2021-03-02
-#> 76   IBREALEST                Indiabulls Real Estate Limited 2021-03-02
-#> 77    ICICIB22  ICICI Prudential Mutual Fund - BHARAT 22 ETF 2021-03-01
-#> 78  IDFCFIRSTB                       IDFC First Bank Limited 2021-02-19
-#> 79        IFCI                                  IFCI Limited 2020-12-11
-#> 80        IIFL                          IIFL Finance Limited 2021-03-02
-#> 81    IMAGICAA           Imagicaaworld Entertainment Limited 2021-03-02
-#> 82  INDIAGLYCO                         India Glycols Limited 2021-03-02
-#> 83      INDIGO                   InterGlobe Aviation Limited 2020-12-08
-#> 84   INVENTURE         Inventure Growth & Securities Limited 2020-12-14
-#> 85      ITDCEM                 ITD Cementation India Limited 2021-03-01
-#> 86   JAIBALAJI                 Jai Balaji Industries Limited 2021-03-02
-#> 87  JAYNECOIND              Jayaswal Neco Industries Limited 2021-03-02
-#> 88  JINDALPOLY                     Jindal Poly Films Limited 2021-02-11
-#> 89  JINDALSTEL                  Jindal Steel & Power Limited 2021-03-01
-#> 90   JKLAKSHMI                     JK Lakshmi Cement Limited 2021-03-02
-#> 91     JKPAPER                              JK Paper Limited 2021-03-02
-#> 92  JPASSOCIAT                 Jaiprakash Associates Limited 2021-03-02
-#> 93   JSWENERGY                            JSW Energy Limited 2021-03-02
-#> 94    JSWSTEEL                             JSW Steel Limited 2021-02-24
-#> 95    JUSTDIAL                             Just Dial Limited 2021-03-02
-#> 96  KALPATPOWR          Kalpataru Power Transmission Limited 2021-02-25
-#> 97  KALYANIFRG                         Kalyani Forge Limited 2021-03-02
-#> 98  KANORICHEM        Kanoria Chemicals & Industries Limited 2021-02-23
-#> 99         KCP                                   KCP Limited 2021-03-02
-#> 100        KEC                     KEC International Limited 2021-03-02
-#> 101     KHADIM                          Khadim India Limited 2021-03-02
-#> 102      KIOCL                                 KIOCL Limited 2021-03-02
-#> 103    KIRLFER              Kirloskar Ferrous Industries Ltd 2021-03-02
-#> 104 KIRLOSBROS                    Kirloskar Brothers Limited 2021-02-08
-#> 105  KIRLOSENG                 Kirloskar Oil Engines Limited 2021-02-16
-#> 106      L&TFH                  L&T Finance Holdings Limited 2021-03-02
-#> 107   LIKHITHA               Likhitha Infrastructure Limited 2021-02-16
-#> 108 LINDEINDIA                           Linde India Limited 2021-03-02
-#> 109       LTTS               L&T Technology Services Limited 2021-03-02
-#> 110   LUMAXIND                      Lumax Industries Limited 2020-08-24
-#> 111   MADHUCON                     Madhucon Projects Limited 2021-03-02
-#> 112      MAGMA                         Magma Fincorp Limited 2021-03-02
-#> 113    MENONBE                        Menon Bearings Limited 2021-03-02
-#> 114 MIRCELECTR                      MIRC Electronics Limited 2021-02-15
-#> 115 MODIRUBBER                           Modi Rubber Limited 2021-03-02
-#> 116 MOTHERSUMI                Motherson Sumi Systems Limited 2021-03-02
-#> 117     MPSLTD                                   MPS Limited 2021-03-02
-#> 118       MTNL             Mahanagar Telephone Nigam Limited 2020-12-21
-#> 119 NAHARSPING                  Nahar Spinning Mills Limited 2021-03-02
-#> 120 NATIONALUM            National Aluminium Company Limited 2021-02-26
-#> 121     NCLIND                        NCL Industries Limited 2021-03-02
-#> 122     NEOGEN                      Neogen Chemicals Limited 2021-02-17
-#> 123 NETFMID150             NIPPON INDIA ETF NIFTY MIDCAP 150 2021-03-02
-#> 124       NMDC                                  NMDC Limited 2021-03-02
-#> 125      NOCIL                                 NOCIL Limited 2021-02-19
-#> 126      NRAIL                N R Agarwal Industries Limited 2021-03-02
-#> 127       NTPC                                  NTPC Limited 2021-03-02
-#> 128   OPTIEMUS                     Optiemus Infracom Limited 2021-03-02
-#> 129 ORCHPHARMA                         Orchid Pharma Limited 2021-03-02
-#> 130  ORIENTCEM                         Orient Cement Limited 2021-02-16
-#> 131  ORIENTPPR             Orient Paper & Industries Limited 2021-03-02
-#> 132       PAEL                                   PAE Limited 2021-03-02
-#> 133  PALREDTEC                   Palred Technologies Limited 2021-03-02
-#> 134  PARSVNATH                  Parsvnath Developers Limited 2021-03-02
-#> 135 PDMJEPAPER               Pudumjee Paper Products Limited 2021-03-02
-#> 136        PEL                   Piramal Enterprises Limited 2021-02-25
-#> 137     PFOCUS                           Prime Focus Limited 2021-02-26
-#> 138       PGEL                       PG Electroplast Limited 2021-03-02
-#> 139    PRABHAT                         Prabhat Dairy Limited 2021-03-02
-#> 140    PRAKASH                    Prakash Industries Limited 2021-01-05
-#> 141     PRECOT                                Precot Limited 2021-02-10
-#> 142        PTC                             PTC India Limited 2021-02-25
-#> 143     RADICO                        Radico Khaitan Limited 2021-03-02
-#> 144    RAILTEL          Railtel Corporation Of India Limited 2021-03-02
-#> 145     RAJMET                      Rajnandini Metal Limited 2021-03-02
-#> 146 RAJSREESUG           Rajshree Sugars & Chemicals Limited 2020-04-08
-#> 147   RAMANEWS                  Shree Rama Newsprint Limited 2020-06-30
-#> 148   RAMCOCEM                     The Ramco Cements Limited 2021-02-26
-#> 149      RAMKY                  Ramky Infrastructure Limited 2021-03-02
-#> 150    RANASUG                           Rana Sugars Limited 2020-08-13
-#> 151  RATNAMANI              Ratnamani Metals & Tubes Limited 2021-03-02
-#> 152   RPPINFRA                 R.P.P. Infra Projects Limited 2021-03-02
-#> 153    RUCHIRA                        Ruchira Papers Limited 2020-12-08
-#> 154     RUSHIL                          Rushil Decor Limited 2021-01-08
-#> 155     SAFARI             Safari Industries (India) Limited 2021-03-02
-#> 156   SAREGAMA                        Saregama India Limited 2021-03-02
-#> 157        SCI         Shipping Corporation Of India Limited 2021-03-02
-#> 158      SETCO                      Setco Automotive Limited 2021-03-02
-#> 159      SEZAL                           Sezal Glass Limited 2021-01-12
-#> 160 SHAREINDIA                Share India Securities Limited 2021-02-18
-#> 161 SHIVAMILLS                           Shiva Mills Limited 2021-03-02
-#> 162  SHREERAMA                 Shree Rama Multi-Tech Limited 2020-09-16
-#> 163   SHYAMTEL                         Shyam Telecom Limited 2021-03-02
-#> 164    SIEMENS                               Siemens Limited 2021-02-25
-#> 165        SIL                   Standard Industries Limited 2021-03-02
-#> 166      SILGO                          Silgo Retail Limited       <NA>
-#> 167 SRHHYPOLTD     Sree Rayalaseema Hi-Strength Hypo Limited 2021-03-02
-#> 168  STARPAPER                      Star Paper Mills Limited 2021-03-02
-#> 169    STLTECH                 Sterlite Technologies Limited 2021-03-02
-#> 170 STOVEKRAFT                           Stove Kraft Limited 2021-02-12
-#> 171 SUDARSCHEM         Sudarshan Chemical Industries Limited 2021-03-01
-#> 172 SUNDARMFIN                      Sundaram Finance Limited 2021-02-26
-#> 173   SUPPETRO                     Supreme Petrochem Limited 2021-01-22
-#> 174   SYMPHONY                              Symphony Limited 2021-03-02
-#> 175      TANLA                       Tanla Platforms Limited 2021-02-24
-#> 176   TATACHEM                        Tata Chemicals Limited 2021-02-26
-#> 177   TATACOMM                   Tata Communications Limited 2021-03-02
-#> 178 TATAINVEST           Tata Investment Corporation Limited 2021-03-02
-#> 179 TATAMOTORS                           Tata Motors Limited 2021-03-02
-#> 180 TATAMTRDVR                           Tata Motors Limited 2021-03-02
-#> 181  TATAPOWER                    Tata Power Company Limited 2021-03-02
-#> 182  TATASTEEL                            Tata Steel Limited 2021-02-25
-#> 183 TATASTLBSL                        Tata Steel Bsl Limited 2021-02-25
-#> 184    TECHNOE Techno Electric & Engineering Company Limited 2021-02-25
-#> 185 THIRUSUGAR                  Thiru Arooran Sugars Limited 2021-03-02
-#> 186    TIINDIA             Tube Investments of India Limited 2021-03-02
-#> 187 TIMETECHNO                      Time Technoplast Limited 2021-03-02
-#> 188 TORNTPOWER                         Torrent Power Limited 2021-02-25
-#> 189      TRENT                                 Trent Limited 2021-03-02
-#> 190    TRIVENI      Triveni Engineering & Industries Limited 2021-03-02
-#> 191   UCALFUEL                     Ucal Fuel Systems Limited 2021-02-19
-#> 192 UNICHEMLAB                  Unichem Laboratories Limited 2021-03-02
-#> 193        UPL                                   UPL Limited 2021-03-02
-#> 194     UTIAMC          UTI Asset Management Company Limited 2021-02-25
-#> 195 VADILALIND                    Vadilal Industries Limited 2021-02-24
-#> 196 VAIBHAVGBL                        Vaibhav Global Limited 2021-03-02
-#> 197    VASWANI                    Vaswani Industries Limited 2021-03-02
-#> 198       VEDL                               Vedanta Limited 2021-03-02
-#> 199     VERTOZ                    Vertoz Advertising Limited 2021-03-02
-#> 200        VHL                     Vardhman Holdings Limited 2021-03-02
-#> 201   VIPULLTD                                 Vipul Limited 2021-03-02
-#> 202    WANBURY                               Wanbury Limited 2021-03-02
-#> 203     WELENT                   Welspun Enterprises Limited 2021-02-08
-#> 204 WSTCSTPAPR                West Coast Paper Mills Limited 2021-03-02
-#> 205  XPROINDIA                            Xpro India Limited 2021-03-02
-#>        value     year      ltp value_old     prev change pChange
-#> 1   26000.00 26000.00 26000.00  25199.90 25068.65 931.35    3.72
-#> 2     127.90   127.90   127.90    127.90   127.90   0.00    0.00
-#> 3    2424.90  2424.90  2275.00   2380.40  2258.80  16.20    0.72
-#> 4     130.90   130.90   129.20    130.70   126.75   2.45    1.93
-#> 5      80.15    80.15    80.15     76.35    76.35   3.80    4.98
-#> 6     350.00   350.00   331.95    338.55   338.55  -6.60   -1.95
-#> 7     944.90   944.90   916.00    876.50   872.55  43.45    4.98
-#> 8     754.95   754.95   733.25    724.70   720.50  12.75    1.77
-#> 9      66.65    66.65    64.85     63.95    61.30   3.55    5.79
-#> 10    852.55   852.55   829.00    820.00   781.05  47.95    6.14
-#> 11    894.70   894.70   875.00    880.65   874.80   0.20    0.02
-#> 12    331.65   331.65   325.00    329.65   323.60   1.40    0.43
-#> 13   5898.90  5898.90  5735.00   5618.00  5618.00 117.00    2.08
-#> 14     96.30    96.30    96.30     91.75    91.75   4.55    4.96
-#> 15    490.65   490.65   462.00    476.30   462.90  -0.90   -0.19
-#> 16   3391.40  3391.40  3295.00   3315.00  3207.35  87.65    2.73
-#> 17     54.10    54.10    54.10     53.80    51.55   2.55    4.95
-#> 18   1250.00  1250.00  1244.00   1167.00  1157.40  86.60    7.48
-#> 19     39.70    39.70    39.70     37.85    37.85   1.85    4.89
-#> 20    321.10   321.10   320.05    304.75   294.35  25.70    8.73
-#> 21    121.90   121.90   116.50    121.00   119.90  -3.40   -2.84
-#> 22     17.65    17.65    15.45     16.60    16.05  -0.60   -3.74
-#> 23    142.30   142.30   136.05    134.90   121.55  14.50   11.93
-#> 24    689.15   689.15   649.80    584.45   574.30  75.50   13.15
-#> 25   1225.00  1225.00  1215.00   1218.00  1151.50  63.50    5.51
-#> 26    198.15   198.15   193.00    193.30   189.10   3.90    2.06
-#> 27   2244.95  2244.95  2220.00   2195.10  2105.05 114.95    5.46
-#> 28    154.00   154.00   152.70    153.55   151.50   1.20    0.79
-#> 29   1249.55  1249.55  1181.00   1245.00  1227.75 -46.75   -3.81
-#> 30     52.75    52.75    48.55     51.10    51.10  -2.55   -4.99
-#> 31     52.65    52.65    50.95     52.20    51.75  -0.80   -1.55
-#> 32     94.50    94.50    88.70     92.55    91.45  -2.75   -3.01
-#> 33     88.20    88.20    84.70     85.30    80.00   4.70    5.88
-#> 34    328.00   328.00   319.80    324.00   314.90   4.90    1.56
-#> 35    549.75   549.75   536.80    541.75   519.70  17.10    3.29
-#> 36     60.35    60.35    59.95     58.40    57.50   2.45    4.26
-#> 37     16.20    16.20    16.20     15.45    15.45   0.75    4.85
-#> 38    624.00   624.00   620.10    594.00   585.65  34.45    5.88
-#> 39     24.55    24.55    24.29     24.52    24.25   0.04    0.16
-#> 40     25.05    25.05    22.75     23.90    23.90  -1.15   -4.81
-#> 41    882.95   882.95   869.80    826.85   818.45  51.35    6.27
-#> 42     16.85    16.85    16.85     16.05    16.05   0.80    4.98
-#> 43    178.00   178.00   173.80    173.70   171.35   2.45    1.43
-#> 44     31.35    31.35    29.45     31.00    31.00  -1.55   -5.00
-#> 45    542.00   542.00   522.00    515.55   496.15  25.85    5.21
-#> 46     30.75    30.75    29.65     30.75    29.35   0.30    1.02
-#> 47    433.00   433.00   421.80    432.50   422.80  -1.00   -0.24
-#> 48    195.00   195.00   192.30    189.50   185.20   7.10    3.83
-#> 49    114.70   114.70   103.80    109.25   109.25  -5.45   -4.99
-#> 50    328.60   328.60   324.20    328.20   313.60  10.60    3.38
-#> 51     35.75    35.75    35.20     35.40    32.00   3.20   10.00
-#> 52    498.00   498.00   484.70    470.00   451.15  33.55    7.44
-#> 53     27.70    27.70    26.80     27.00    26.70   0.10    0.37
-#> 54     93.30    93.30    89.00     91.30    87.10   1.90    2.18
-#> 55     33.30    33.30    32.80     31.60    31.60   1.20    3.80
-#> 56    725.00   725.00   690.00    694.00   650.70  39.30    6.04
-#> 57     88.50    88.50    88.45     88.20    83.30   5.15    6.18
-#> 58     73.50    73.50    72.00     72.00    67.95   4.05    5.96
-#> 59    688.50   688.50   657.20    635.90   617.30  39.90    6.46
-#> 60     62.00    62.00    57.55     61.70    60.55  -3.00   -4.95
-#> 61     91.95    91.95    91.95     88.10    87.70   4.25    4.85
-#> 62     46.70    46.70    44.80     44.85    44.75   0.05    0.11
-#> 63    339.95   339.95   326.90    339.50   334.25  -7.35   -2.20
-#> 64    254.70   254.70   245.10    235.95   232.70  12.40    5.33
-#> 65      2.10     2.10     2.10      2.00     2.00   0.10    5.00
-#> 66    117.90   117.90   108.00    114.40   109.00  -1.00   -0.92
-#> 67   1343.00  1343.00  1316.00   1298.50  1294.75  21.25    1.64
-#> 68    972.00   972.00   957.00    933.75   912.95  44.05    4.83
-#> 69    311.45   311.45   275.30    276.70   259.55  15.75    6.07
-#> 70     16.35    16.35    16.35     15.60    15.60   0.75    4.81
-#> 71   1644.00  1644.00  1558.00   1593.00  1427.50 130.50    9.14
-#> 72     74.80    74.80    72.00     74.65    74.35  -2.35   -3.16
-#> 73    361.30   361.30   358.75    354.60   345.25  13.50    3.91
-#> 74    143.65   143.65   129.50    124.30   124.05   5.45    4.39
-#> 75   2430.75  2430.75  2390.05   2269.65  2209.80 180.25    8.16
-#> 76    107.75   107.75   104.80    102.50    99.80   5.00    5.01
-#> 77     38.85    38.85    38.55     38.50    38.09   0.46    1.21
-#> 78     68.15    68.15    67.10     66.80    64.50   2.60    4.03
-#> 79     12.80    12.80    12.80     11.50    10.70   2.10   19.63
-#> 80    299.00   299.00   292.80    289.40   284.80   8.00    2.81
-#> 81      7.95     7.95     7.95      7.45     7.25   0.70    9.66
-#> 82    539.00   539.00   527.80    528.80   517.25  10.55    2.04
-#> 83   1823.85  1823.85  1783.00   1787.00  1691.40  91.60    5.42
-#> 84     26.95    26.95    23.15     25.45    24.75  -1.60   -6.46
-#> 85     88.80    88.80    85.30     83.00    79.85   5.45    6.83
-#> 86     32.65    32.65    32.65     31.10    31.10   1.55    4.98
-#> 87      9.25     9.25     9.25      8.85     8.85   0.40    4.52
-#> 88    615.40   615.40   612.00    571.95   540.45  71.55   13.24
-#> 89    354.80   354.80   349.20    348.70   338.30  10.90    3.22
-#> 90    439.90   439.90   421.00    439.30   431.20 -10.20   -2.37
-#> 91    167.75   167.75   161.00    161.90   160.00   1.00    0.63
-#> 92      9.70     9.70     8.80      9.25     9.25  -0.45   -4.86
-#> 93     92.40    92.40    83.80     88.50    86.20  -2.40   -2.78
-#> 94    435.00   435.00   426.80    426.60   413.30  13.50    3.27
-#> 95   1047.70  1047.70   906.00    972.10   965.45 -59.45   -6.16
-#> 96    406.85   406.85   398.70    395.75   391.30   7.40    1.89
-#> 97    202.50   202.50   201.25    199.55   192.90   8.35    4.33
-#> 98     88.55    88.55    88.05     88.35    84.35   3.70    4.39
-#> 99     85.10    85.10    83.10     83.55    78.90   4.20    5.32
-#> 100   486.00   486.00   459.30    473.40   463.05  -3.75   -0.81
-#> 101   185.90   185.90   177.70    182.00   180.05  -2.35   -1.31
-#> 102   190.65   190.65   174.40    183.55   183.55  -9.15   -4.99
-#> 103   174.40   174.40   167.80    174.15   169.50  -1.70   -1.00
-#> 104   198.70   198.70   198.70    175.00   165.60  33.10   19.99
-#> 105   175.90   175.90   173.05    173.90   162.30  10.75    6.62
-#> 106   113.40   113.40   113.10    109.40   107.00   6.10    5.70
-#> 107   306.60   306.60   303.00    298.00   279.80  23.20    8.29
-#> 108  1835.65  1835.65  1785.00   1795.00  1721.65  63.35    3.68
-#> 109  2807.60  2807.60  2695.00   2760.40  2729.80 -34.80   -1.27
-#> 110  1783.40  1783.40  1701.00   1674.90  1636.15  64.85    3.96
-#> 111     7.60     7.60     6.90      7.25     7.25  -0.35   -4.83
-#> 112   129.75   129.75   127.60    127.65   123.60   4.00    3.24
-#> 113    64.70    64.70    63.10     64.40    63.15  -0.05   -0.08
-#> 114    15.45    15.45    15.00     15.05    14.75   0.25    1.69
-#> 115   177.85   177.85   177.85    169.40   169.40   8.45    4.99
-#> 116   238.20   238.20   232.70    235.60   232.60   0.10    0.04
-#> 117   524.80   524.80   517.95    498.95   492.60  25.35    5.15
-#> 118    16.80    16.80    16.80     15.50    14.00   2.80   20.00
-#> 119    99.60    99.60    91.30     95.25    95.25  -3.95   -4.15
-#> 120    64.00    64.00    62.00     61.25    59.15   2.85    4.82
-#> 121   183.00   183.00   177.00    182.80   178.80  -1.80   -1.01
-#> 122   938.00   938.00   889.00    930.00   822.70  66.30    8.06
-#> 123    93.50    93.50    92.86     92.06    91.81   1.05    1.14
-#> 124   137.45   137.45   136.45    134.85   133.85   2.60    1.94
-#> 125   193.70   193.70   190.70    183.70   180.70  10.00    5.53
-#> 126   282.85   282.85   271.60    266.00   261.80   9.80    3.74
-#> 127   114.70   114.70   112.80    113.70   112.55   0.25    0.22
-#> 128   198.65   198.65   198.65    189.20   189.20   9.45    4.99
-#> 129  1000.70  1000.70  1000.70    953.05   953.05  47.65    5.00
-#> 130   100.50   100.50   100.00     99.50    96.30   3.70    3.84
-#> 131    30.70    30.70    28.10     29.50    29.10  -1.00   -3.44
-#> 132     3.90     3.90     3.90      3.75     3.75   0.15    4.00
-#> 133   123.20   123.20   111.50    117.35   117.35  -5.85   -4.99
-#> 134     8.65     8.65     8.50      8.25     8.25   0.25    3.03
-#> 135    28.15    28.15    26.90     27.95    27.10  -0.20   -0.74
-#> 136  2007.70  2007.70  1989.80   1964.00  1918.70  71.10    3.71
-#> 137    69.00    69.00    69.00     66.90    57.50  11.50   20.00
-#> 138   349.70   349.70   349.70    333.05   333.05  16.65    5.00
-#> 139    83.70    83.70    79.00     82.40    79.90  -0.90   -1.13
-#> 140    65.50    65.50    60.75     65.45    63.05  -2.30   -3.65
-#> 141    99.10    99.10    99.10     96.70    94.40   4.70    4.98
-#> 142    80.70    80.70    78.65     78.25    76.05   2.60    3.42
-#> 143   627.80   627.80   603.00    618.00   614.10 -11.10   -1.81
-#> 144   189.70   189.70   164.60    174.70   174.70 -10.10   -5.78
-#> 145    90.80    90.80    90.80     86.50    86.50   4.30    4.97
-#> 146    20.25    20.25    20.25     19.65    16.90   3.35   19.82
-#> 147    18.30    18.30    16.35     17.50    15.25   1.10    7.21
-#> 148  1021.00  1021.00  1013.20   1013.60   994.05  19.15    1.93
-#> 149    88.85    88.85    88.85     84.65    84.65   4.20    4.96
-#> 150     9.05     9.05     9.05      8.50     7.55   1.50   19.87
-#> 151  2020.00  2020.00  1969.95   2002.60  1981.55 -11.60   -0.59
-#> 152    83.20    83.20    77.70     77.25    74.05   3.65    4.93
-#> 153    74.70    74.70    71.75     74.30    72.05  -0.30   -0.42
-#> 154   205.10   205.10   205.10    200.00   195.35   9.75    4.99
-#> 155   685.00   685.00   682.00    684.00   668.70  13.30    1.99
-#> 156  1271.95  1271.95  1203.80   1124.95  1107.15  96.65    8.73
-#> 157   134.00   134.00   122.95    124.50   124.50  -1.55   -1.24
-#> 158    18.00    18.00    17.10     17.80    17.35  -0.25   -1.44
-#> 159     5.60     5.60     5.60      5.55     5.35   0.25    4.67
-#> 160   261.70   261.70   255.00    240.30   230.95  24.05   10.41
-#> 161    47.10    47.10    47.10     45.00    44.90   2.20    4.90
-#> 162     9.95     9.95     9.95      9.95     8.30   1.65   19.88
-#> 163    11.35    11.35    11.35     10.85    10.85   0.50    4.61
-#> 164  1960.00  1960.00  1920.50   1949.00  1939.65 -19.15   -0.99
-#> 165    14.70    14.70    14.70     14.00    14.00   0.70    5.00
-#> 166    53.80    53.80    53.80        NA    44.85   8.95   19.96
-#> 167   303.00   303.00   294.00    286.35   275.75  18.25    6.62
-#> 168   132.70   132.70   125.25    130.00   128.30  -3.05   -2.38
-#> 169   225.85   225.85   222.30    224.00   220.65   1.65    0.75
-#> 170   547.85   547.85   513.25    545.45   504.15   9.10    1.81
-#> 171   600.00   600.00   572.90    589.90   574.70  -1.80   -0.31
-#> 172  2825.00  2825.00  2748.50   2739.95  2618.20 130.30    4.98
-#> 173   435.00   435.00   425.05    435.00   421.40   3.65    0.87
-#> 174  1528.80  1528.80  1371.70   1446.40  1446.40 -74.70   -5.16
-#> 175  1030.00  1030.00   998.80    999.50   988.45  10.35    1.05
-#> 176   782.00   782.00   774.00    757.50   733.65  40.35    5.50
-#> 177  1342.15  1342.15  1236.00   1333.95  1202.95  33.05    2.75
-#> 178  1163.85  1163.85  1149.00   1155.00  1146.70   2.30    0.20
-#> 179   357.00   357.00   347.10    347.20   345.75   1.35    0.39
-#> 180   145.00   145.00   141.55    140.60   139.90   1.65    1.18
-#> 181   105.50   105.50   105.25    100.80   100.35   4.90    4.88
-#> 182   782.50   782.50   774.80    753.00   735.50  39.30    5.34
-#> 183    50.80    50.80    49.90     48.30    47.30   2.60    5.50
-#> 184   327.85   327.85   319.85    326.40   312.00   7.85    2.52
-#> 185     7.80     7.80     7.75      7.50     7.45   0.30    4.03
-#> 186  1152.00  1152.00  1146.00   1098.00  1090.10  55.90    5.13
-#> 187    62.20    62.20    59.35     61.50    59.15   0.20    0.34
-#> 188   409.00   409.00   405.00    395.75   388.95  16.05    4.13
-#> 189   923.00   923.00   912.00    921.55   905.90   6.10    0.67
-#> 190    96.00    96.00    94.15     92.40    90.20   3.95    4.38
-#> 191   173.75   173.75   167.15    164.00   156.25  10.90    6.98
-#> 192   339.90   339.90   334.10    339.70   337.35  -3.25   -0.96
-#> 193   616.85   616.85   613.95    608.80   589.45  24.50    4.16
-#> 194   610.00   610.00   605.30    602.65   581.55  23.75    4.08
-#> 195   925.00   925.00   908.00    905.00   889.50  18.50    2.08
-#> 196  3884.50  3884.50  3752.00   3745.50  3691.95  60.05    1.63
-#> 197    12.40    12.40    11.35     11.90    11.90  -0.55   -4.62
-#> 198   221.70   221.70   219.00    217.95   214.75   4.25    1.98
-#> 199   306.00   306.00   296.50    290.00   283.05  13.45    4.75
-#> 200  2169.75  2169.75  1956.55   1976.40  1976.40 -19.85   -1.00
-#> 201    33.20    33.20    33.20     31.65    31.65   1.55    4.90
-#> 202   113.90   113.90   103.10    108.50   108.50  -5.40   -4.98
-#> 203    97.05    97.05    96.95     95.95    87.65   9.30   10.61
-#> 204   277.00   277.00   263.00    254.30   250.80  12.20    4.86
-#> 205    61.90    61.90    56.95     60.60    59.90  -2.95   -4.92
+#>         symbol
+#> 1       AAKASH
+#> 2        AARVI
+#> 3    ABCAPITAL
+#> 4    ABMINTLTD
+#> 5          ACC
+#> 6   ADANIPORTS
+#> 7   ADANIPOWER
+#> 8   ADANITRANS
+#> 9     ADFFOODS
+#> 10   AEGISCHEM
+#> 11       AFFLE
+#> 12      AFL-RE
+#> 13      AHLADA
+#> 14     ALMONDZ
+#> 15       AMBER
+#> 16   AMBUJACEM
+#> 17    ANANTRAJ
+#> 18        APCL
+#> 19   APLAPOLLO
+#> 20  APOLLOTYRE
+#> 21     ARSHIYA
+#> 22  ASAHIINDIA
+#> 23      ASTRAL
+#> 24  ASTRAMICRO
+#> 25        ATGL
+#> 26      AUBANK
+#> 27  BALMLAWRIE
+#> 28  BALRAMCHIN
+#> 29        BASF
+#> 30      BCLIND
+#> 31         BEL
+#> 32        BHEL
+#> 33   BOMDYEING
+#> 34         BPL
+#> 35  CAMLINFINE
+#> 36     CGPOWER
+#> 37  CNOVAPETRO
+#> 38      CONCOR
+#> 39    CONFIPET
+#> 40  CONSOFINVT
+#> 41  COSMOFILMS
+#> 42  CUMMINSIND
+#> 43  CYBERMEDIA
+#> 44      DAAWAT
+#> 45   DALMIASUG
+#> 46      DCMNVL
+#> 47  DCMSHRIRAM
+#> 48    DECCANCE
+#> 49   DEEPAKNTR
+#> 50  DELTAMAGNT
+#> 51  DHAMPURSUG
+#> 52      DICIND
+#> 53         DLF
+#> 54    DWARKESH
+#> 55   ELECTCAST
+#> 56  EQUITASBNK
+#> 57   EROSMEDIA
+#> 58  FEDERALBNK
+#> 59      FORTIS
+#> 60     GABRIEL
+#> 61        GAEL
+#> 62        GATI
+#> 63         GDL
+#> 64      GENCON
+#> 65     GENESYS
+#> 66       GET&D
+#> 67        GHCL
+#> 68       GLAND
+#> 69    GMRINFRA
+#> 70      GOENKA
+#> 71      GRASIM
+#> 72        HBSL
+#> 73  HEXATRADEX
+#> 74    HINDZINC
+#> 75  HITECHCORP
+#> 76     HLEGLAS
+#> 77         HMT
+#> 78      HONAUT
+#> 79   IBREALEST
+#> 80    ICICIB22
+#> 81        IDFC
+#> 82  IDFCFIRSTB
+#> 83        IFCI
+#> 84        IGPL
+#> 85        IIFL
+#> 86    IMAGICAA
+#> 87    INDIACEM
+#> 88  INDIAGLYCO
+#> 89  INSPIRISYS
+#> 90   INVENTURE
+#> 91       IRCTC
+#> 92      ITDCEM
+#> 93   JAIBALAJI
+#> 94   JAMNAAUTO
+#> 95  JAYNECOIND
+#> 96        JBMA
+#> 97  JINDALPOLY
+#> 98  JISLJALEQS
+#> 99  KALYANIFRG
+#> 100 KANORICHEM
+#> 101   KANPRPLA
+#> 102        KCP
+#> 103 KESORAMIND
+#> 104       KICL
+#> 105 KIRLOSBROS
+#> 106  KIRLOSENG
+#> 107        KSB
+#> 108    KTKBANK
+#> 109   LIKHITHA
+#> 110  LUMAXTECH
+#> 111       M100
+#> 112      MAGMA
+#> 113     MAHLOG
+#> 114  MANGLMCEM
+#> 115   MANINFRA
+#> 116       MEGH
+#> 117 MODIRUBBER
+#> 118     MPSLTD
+#> 119       MTNL
+#> 120 NAVINFLUOR
+#> 121 NETFMID150
+#> 122       NHPC
+#> 123       NMDC
+#> 124      NOCIL
+#> 125 NRBBEARING
+#> 126  ONWARDTEC
+#> 127   OPTIEMUS
+#> 128 ORCHPHARMA
+#> 129  ORIENTCEM
+#> 130       PAEL
+#> 131  PARSVNATH
+#> 132        PFC
+#> 133     PFOCUS
+#> 134       PGEL
+#> 135 PHILIPCARB
+#> 136    PRABHAT
+#> 137    PRAJIND
+#> 138     PRECOT
+#> 139  PRICOLLTD
+#> 140        PTC
+#> 141 PUNJABCHEM
+#> 142     RAJMET
+#> 143   RAJRATAN
+#> 144 RAJSREESUG
+#> 145   RAMCOCEM
+#> 146      RAMKY
+#> 147    RANASUG
+#> 148 RANEHOLDIN
+#> 149        RBL
+#> 150        RML
+#> 151     RUSHIL
+#> 152     SAFARI
+#> 153     SALONA
+#> 154  SANGHIIND
+#> 155        SCI
+#> 156      SETCO
+#> 157      SEZAL
+#> 158 SHAREINDIA
+#> 159 SHIVAMILLS
+#> 160 SHREDIGCEM
+#> 161  SHREERAMA
+#> 162   SHYAMTEL
+#> 163    SIEMENS
+#> 164        SIL
+#> 165      SILGO
+#> 166 SRHHYPOLTD
+#> 167 STARCEMENT
+#> 168   SUPPETRO
+#> 169 SUPREMEIND
+#> 170   TATACHEM
+#> 171 TATACOFFEE
+#> 172  TATAPOWER
+#> 173    TFCILTD
+#> 174 THIRUSUGAR
+#> 175    TIINDIA
+#> 176 TIMETECHNO
+#> 177 TORNTPOWER
+#> 178      TRENT
+#> 179    TRIVENI
+#> 180      UFLEX
+#> 181  UGARSUGAR
+#> 182 ULTRACEMCO
+#> 183 UNICHEMLAB
+#> 184        UPL
+#> 185 VADILALIND
+#> 186 VAIBHAVGBL
+#> 187     VERTOZ
+#> 188     VIPIND
+#> 189   VIPULLTD
+#> 190     WELENT
+#> 191 WELSPUNIND
+#> 192 ZENSARTECH
+#>                                                            symbolDesc
+#> 1                                 Aakash Exploration Services Limited
+#> 2                                                 Aarvi Encon Limited
+#> 3                                        Aditya Birla Capital Limited
+#> 4                                           ABM International Limited
+#> 5                                                         ACC Limited
+#> 6                       Adani Ports and Special Economic Zone Limited
+#> 7                                                 Adani Power Limited
+#> 8                                          Adani Transmission Limited
+#> 9                                                   ADF Foods Limited
+#> 10                                            Aegis Logistics Limited
+#> 11                                              Affle (India) Limited
+#> 12                                            Arvind Fashions Limited
+#> 13                                           Ahlada Engineers Limited
+#> 14                                  Almondz Global Securities Limited
+#> 15                                    Amber Enterprises India Limited
+#> 16                                             Ambuja Cements Limited
+#> 17                                                  Anant Raj Limited
+#> 18                                     Anjani Portland Cement Limited
+#> 19                                           APL Apollo Tubes Limited
+#> 20                                               Apollo Tyres Limited
+#> 21                                                    Arshiya Limited
+#> 22                                          Asahi India Glass Limited
+#> 23                                        Astral Poly Technik Limited
+#> 24                                   Astra Microwave Products Limited
+#> 25                                            Adani Total Gas Limited
+#> 26                                      AU Small Finance Bank Limited
+#> 27                                    Balmer Lawrie & Company Limited
+#> 28                                      Balrampur Chini Mills Limited
+#> 29                                                 BASF India Limited
+#> 30                                             Bcl Industries Limited
+#> 31                                         Bharat Electronics Limited
+#> 32                                   Bharat Heavy Electricals Limited
+#> 33                                Bombay Dyeing & Mfg Company Limited
+#> 34                                                        BPL Limited
+#> 35                                       Camlin Fine Sciences Limited
+#> 36                          CG Power and Industrial Solutions Limited
+#> 37                                    CIL Nova Petrochemicals Limited
+#> 38                             Container Corporation of India Limited
+#> 39                                 Confidence Petroleum India Limited
+#> 40                            Consolidated Finvest & Holdings Limited
+#> 41                                                Cosmo Films Limited
+#> 42                                              Cummins India Limited
+#> 43                                        Cyber Media (India) Limited
+#> 44                                                   LT Foods Limited
+#> 45                         Dalmia Bharat Sugar and Industries Limited
+#> 46                                               DCM Nouvelle Limited
+#> 47                                                DCM Shriram Limited
+#> 48                                             Deccan Cements Limited
+#> 49                                             Deepak Nitrite Limited
+#> 50                                        Delta Manufacturing Limited
+#> 51                                        Dhampur Sugar Mills Limited
+#> 52                                                  DIC India Limited
+#> 53                                                        DLF Limited
+#> 54                                 Dwarikesh Sugar Industries Limited
+#> 55                                      Electrosteel Castings Limited
+#> 56                                 Equitas Small Finance Bank Limited
+#> 57                                   Eros International Media Limited
+#> 58                                          The Federal Bank  Limited
+#> 59                                          Fortis Healthcare Limited
+#> 60                                              Gabriel India Limited
+#> 61                                     Gujarat Ambuja Exports Limited
+#> 62                                                       GATI Limited
+#> 63                                        Gateway Distriparks Limited
+#> 64              Generic Engineering Construction and Projects Limited
+#> 65                          Genesys International Corporation Limited
+#> 66                                               GE T&D India Limited
+#> 67                                                       GHCL Limited
+#> 68                                               Gland Pharma Limited
+#> 69                                         GMR Infrastructure Limited
+#> 70                                  Goenka Diamond and Jewels Limited
+#> 71                                          Grasim Industries Limited
+#> 72                                           HB Stockholdings Limited
+#> 73                                                Hexa Tradex Limited
+#> 74                                             Hindustan Zinc Limited
+#> 75                                         Hitech Corporation Limited
+#> 76                                               HLE Glascoat Limited
+#> 77                                                        HMT Limited
+#> 78                                 Honeywell Automation India Limited
+#> 79                                     Indiabulls Real Estate Limited
+#> 80                       ICICI Prudential Mutual Fund - BHARAT 22 ETF
+#> 81                                                       IDFC Limited
+#> 82                                            IDFC First Bank Limited
+#> 83                                                       IFCI Limited
+#> 84                                          IG Petrochemicals Limited
+#> 85                                               IIFL Finance Limited
+#> 86                                Imagicaaworld Entertainment Limited
+#> 87                                          The India Cements Limited
+#> 88                                              India Glycols Limited
+#> 89                                       Inspirisys Solutions Limited
+#> 90                              Inventure Growth & Securities Limited
+#> 91            Indian Railway Catering And Tourism Corporation Limited
+#> 92                                      ITD Cementation India Limited
+#> 93                                      Jai Balaji Industries Limited
+#> 94                                      Jamna Auto Industries Limited
+#> 95                                   Jayaswal Neco Industries Limited
+#> 96                                                   JBM Auto Limited
+#> 97                                          Jindal Poly Films Limited
+#> 98                                    Jain Irrigation Systems Limited
+#> 99                                              Kalyani Forge Limited
+#> 100                            Kanoria Chemicals & Industries Limited
+#> 101                                         Kanpur Plastipack Limited
+#> 102                                                       KCP Limited
+#> 103                                        Kesoram Industries Limited
+#> 104                                Kalyani Investment Company Limited
+#> 105                                        Kirloskar Brothers Limited
+#> 106                                     Kirloskar Oil Engines Limited
+#> 107                                                       Ksb Limited
+#> 108                                        The Karnataka Bank Limited
+#> 109                                   Likhitha Infrastructure Limited
+#> 110                                   Lumax Auto Technologies Limited
+#> 111 Motilal Oswal Mutual Fund - Motilal Oswal MOSt Shares M100 ETF GO
+#> 112                                             Magma Fincorp Limited
+#> 113                                        Mahindra Logistics Limited
+#> 114                                           Mangalam Cement Limited
+#> 115                                     Man Infraconstruction Limited
+#> 116                                         Meghmani Organics Limited
+#> 117                                               Modi Rubber Limited
+#> 118                                                       MPS Limited
+#> 119                                 Mahanagar Telephone Nigam Limited
+#> 120                              Navin Fluorine International Limited
+#> 121                                 NIPPON INDIA ETF NIFTY MIDCAP 150
+#> 122                                                      NHPC Limited
+#> 123                                                      NMDC Limited
+#> 124                                                     NOCIL Limited
+#> 125                                               NRB Bearing Limited
+#> 126                                       Onward Technologies Limited
+#> 127                                         Optiemus Infracom Limited
+#> 128                                             Orchid Pharma Limited
+#> 129                                             Orient Cement Limited
+#> 130                                                       PAE Limited
+#> 131                                      Parsvnath Developers Limited
+#> 132                                 Power Finance Corporation Limited
+#> 133                                               Prime Focus Limited
+#> 134                                           PG Electroplast Limited
+#> 135                                     Phillips Carbon Black Limited
+#> 136                                             Prabhat Dairy Limited
+#> 137                                           Praj Industries Limited
+#> 138                                                    Precot Limited
+#> 139                                                    Pricol Limited
+#> 140                                                 PTC India Limited
+#> 141                        Punjab Chemicals & Crop Protection Limited
+#> 142                                          Rajnandini Metal Limited
+#> 143                                      Rajratan Global Wire Limited
+#> 144                               Rajshree Sugars & Chemicals Limited
+#> 145                                         The Ramco Cements Limited
+#> 146                                      Ramky Infrastructure Limited
+#> 147                                               Rana Sugars Limited
+#> 148                                             Rane Holdings Limited
+#> 149                                         Rane Brake Lining Limited
+#> 150                                             Rane (Madras) Limited
+#> 151                                              Rushil Decor Limited
+#> 152                                 Safari Industries (India) Limited
+#> 153                                            Salona Cotspin Limited
+#> 154                                         Sanghi Industries Limited
+#> 155                             Shipping Corporation Of India Limited
+#> 156                                          Setco Automotive Limited
+#> 157                                               Sezal Glass Limited
+#> 158                                    Share India Securities Limited
+#> 159                                               Shiva Mills Limited
+#> 160                                      Shree Digvijay Cement Co.Ltd
+#> 161                                     Shree Rama Multi-Tech Limited
+#> 162                                             Shyam Telecom Limited
+#> 163                                                   Siemens Limited
+#> 164                                       Standard Industries Limited
+#> 165                                              Silgo Retail Limited
+#> 166                         Sree Rayalaseema Hi-Strength Hypo Limited
+#> 167                                               Star Cement Limited
+#> 168                                         Supreme Petrochem Limited
+#> 169                                        Supreme Industries Limited
+#> 170                                            Tata Chemicals Limited
+#> 171                                               Tata Coffee Limited
+#> 172                                        Tata Power Company Limited
+#> 173                      Tourism Finance Corporation of India Limited
+#> 174                                      Thiru Arooran Sugars Limited
+#> 175                                 Tube Investments of India Limited
+#> 176                                          Time Technoplast Limited
+#> 177                                             Torrent Power Limited
+#> 178                                                     Trent Limited
+#> 179                          Triveni Engineering & Industries Limited
+#> 180                                                     UFLEX Limited
+#> 181                                      The Ugar Sugar Works Limited
+#> 182                                          UltraTech Cement Limited
+#> 183                                      Unichem Laboratories Limited
+#> 184                                                       UPL Limited
+#> 185                                        Vadilal Industries Limited
+#> 186                                            Vaibhav Global Limited
+#> 187                                        Vertoz Advertising Limited
+#> 188                                            VIP Industries Limited
+#> 189                                                     Vipul Limited
+#> 190                                       Welspun Enterprises Limited
+#> 191                                             Welspun India Limited
+#> 192                                       Zensar Technologies Limited
+#>             dt    value     year      ltp value_old     prev  change pChange
+#> 1   2021-03-03   127.90   127.90   126.00    127.90   127.50   -1.50   -1.18
+#> 2   2021-02-26    62.50    62.50    57.00     54.70    52.10    4.90    9.40
+#> 3   2021-03-03   134.90   134.90   132.70    130.90   129.65    3.05    2.35
+#> 4   2021-03-03    84.10    84.10    76.10     80.15    80.10   -4.00   -4.99
+#> 5   2021-02-26  1863.00  1863.00  1858.30   1847.00  1796.40   61.90    3.45
+#> 6   2021-03-03   765.70   765.70   753.05    754.95   729.85   23.20    3.18
+#> 7   2021-03-03    71.35    71.35    71.35     66.65    64.90    6.45    9.94
+#> 8   2021-03-03   854.95   854.95   835.00    852.55   828.00    7.00    0.85
+#> 9   2021-03-03   906.95   906.95   884.40    894.70   879.80    4.60    0.52
+#> 10  2021-03-03   341.00   341.00   335.40    331.65   325.95    9.45    2.90
+#> 11  2021-03-03  6004.05  6004.05  6004.05   5898.90  5718.15  285.90    5.00
+#> 12        <NA>    41.05    41.05    39.40        NA    29.35   10.05   34.24
+#> 13  2021-03-03   101.10   101.10   101.10     96.30    96.30    4.80    4.98
+#> 14  2021-03-01    29.65    29.65    29.65     29.40    28.25    1.40    4.96
+#> 15  2021-03-03  3494.95  3494.95  3465.00   3391.40  3310.90  154.10    4.65
+#> 16  2021-02-18   293.75   293.75   292.90    290.50   282.10   10.80    3.83
+#> 17  2021-03-03    56.80    56.80    56.80     54.10    54.10    2.70    4.99
+#> 18  2021-02-09   238.70   238.70   234.25    237.00   223.15   11.10    4.97
+#> 19  2021-03-03  1312.95  1312.95  1312.35   1250.00  1243.15   69.20    5.57
+#> 20  2021-02-08   259.20   259.20   258.20    256.50   250.00    8.20    3.28
+#> 21  2021-03-03    41.65    41.65    40.50     39.70    39.70    0.80    2.02
+#> 22  2021-03-03   328.00   328.00   320.40    321.10   314.75    5.65    1.80
+#> 23  2021-03-02  2224.90  2224.90  2215.00   2220.45  2205.30    9.70    0.44
+#> 24  2021-03-03   145.00   145.00   140.65    142.30   135.35    5.30    3.92
+#> 25  2021-03-03   701.70   701.70   685.45    689.15   662.75   22.70    3.43
+#> 26  2021-03-03  1290.00  1290.00  1260.70   1225.00  1200.90   59.80    4.98
+#> 27  2020-12-29   152.40   152.40   146.40    146.70   128.15   18.25   14.24
+#> 28  2021-03-03   213.35   213.35   210.45    198.15   192.80   17.65    9.15
+#> 29  2021-03-03  2318.80  2318.80  2276.75   2244.95  2198.95   77.80    3.54
+#> 30        <NA>   148.00   148.00   130.50        NA   125.90    4.60    3.65
+#> 31  2021-03-03   154.95   154.95   153.45    154.00   152.90    0.55    0.36
+#> 32  2021-03-03    56.10    56.10    54.60     52.65    51.00    3.60    7.06
+#> 33  2021-03-03    89.75    89.75    86.90     88.20    84.25    2.65    3.15
+#> 34  2020-12-02    26.45    26.45    25.60     26.00    25.35    0.25    0.99
+#> 35  2021-03-02   151.30   151.30   150.50    148.50   143.60    6.90    4.81
+#> 36  2021-03-03    63.30    63.30    63.30     60.35    60.30    3.00    4.98
+#> 37  2021-03-03    17.00    17.00    17.00     16.20    16.20    0.80    4.94
+#> 38  2021-02-25   643.95   643.95   618.60    597.00   578.35   40.25    6.96
+#> 39  2021-02-11    49.00    49.00    48.15     48.50    44.60    3.55    7.96
+#> 40  2021-01-04    52.05    52.05    50.45     50.40    45.85    4.60   10.03
+#> 41  2021-03-03   655.50   655.50   641.00    624.00   620.35   20.65    3.33
+#> 42  2021-03-03   896.00   896.00   893.90    882.95   864.45   29.45    3.41
+#> 43  2021-03-03    17.65    17.65    17.65     16.85    16.85    0.80    4.75
+#> 44  2020-08-11    64.00    64.00    61.90     63.30    58.75    3.15    5.36
+#> 45  2021-03-03   178.45   178.45   177.00    178.00   173.60    3.40    1.96
+#> 46  2021-02-10    79.45    79.45    79.00     77.45    75.70    3.30    4.36
+#> 47  2021-03-03   562.95   562.95   547.60    542.00   531.35   16.25    3.06
+#> 48  2021-03-03   457.90   457.90   452.00    433.00   420.45   31.55    7.50
+#> 49  2021-03-02  1690.00  1690.00  1635.85   1663.15  1602.15   33.70    2.10
+#> 50  2021-02-17    35.00    35.00    35.00     34.00    33.35    1.65    4.95
+#> 51  2021-03-03   201.35   201.35   196.85    195.00   192.75    4.10    2.13
+#> 52  2020-12-31   455.95   455.95   442.00    424.90   415.25   26.75    6.44
+#> 53  2021-03-03   332.70   332.70   328.40    328.60   324.20    4.20    1.30
+#> 54  2021-03-03    36.95    36.95    36.75     35.75    35.35    1.40    3.96
+#> 55  2021-03-03    28.00    28.00    27.40     27.70    27.05    0.35    1.29
+#> 56  2021-02-18    59.60    59.60    59.60     51.60    49.70    9.90   19.92
+#> 57  2021-03-03    34.15    34.15    32.65     33.30    32.80   -0.15   -0.46
+#> 58  2021-03-03    92.50    92.50    91.20     88.50    88.10    3.10    3.52
+#> 59  2021-01-11   184.70   184.70   179.75    182.10   173.90    5.85    3.36
+#> 60  2021-01-07   134.50   134.50   133.25    131.40   127.55    5.70    4.47
+#> 61  2021-01-25   155.00   155.00   149.35    151.00   139.45    9.90    7.10
+#> 62  2020-12-31   116.20   116.20   111.60    106.60   101.35   10.25   10.11
+#> 63  2021-01-25   184.00   184.00   180.30    182.60   175.45    4.85    2.76
+#> 64  2021-02-18    68.00    68.00    64.50     64.70    56.70    7.80   13.76
+#> 65  2021-03-03    96.00    96.00    95.80     91.95    91.55    4.25    4.64
+#> 66  2021-02-19   146.40   146.40   144.40    138.85   136.30    8.10    5.94
+#> 67  2021-03-03   258.00   258.00   254.80    254.70   246.55    8.25    3.35
+#> 68  2020-12-28  2680.00  2680.00  2655.00   2508.55  2436.75  218.25    8.96
+#> 69  2020-12-16    29.95    29.95    29.10     29.35    27.75    1.35    4.86
+#> 70  2021-03-03     2.20     2.20     2.00      2.10     2.10   -0.10   -4.76
+#> 71  2021-03-03  1360.00  1360.00  1358.90   1343.00  1318.10   40.80    3.10
+#> 72  2021-03-03    17.15    17.15    17.15     16.35    16.35    0.80    4.89
+#> 73  2021-03-03    75.05    75.05    74.00     74.80    71.50    2.50    3.50
+#> 74  2021-01-07   334.40   334.40   329.80    328.40   318.05   11.75    3.69
+#> 75  2021-02-26   145.55   145.55   142.80    145.00   140.35    2.45    1.75
+#> 76  2021-03-03  2520.00  2520.00  2450.00   2430.75  2403.30   46.70    1.94
+#> 77  2021-02-10    28.65    28.65    28.65     28.40    27.30    1.35    4.95
+#> 78  2021-02-22 49600.00 49600.00 48060.00  48644.00 46682.65 1377.35    2.95
+#> 79  2021-03-03   119.50   119.50   117.40    107.75   105.25   12.15   11.54
+#> 80  2021-03-03    39.80    39.80    38.11     38.85    38.58   -0.47   -1.22
+#> 81  2021-02-25    57.40    57.40    55.95     57.00    55.55    0.40    0.72
+#> 82  2021-03-03    69.30    69.30    68.65     68.15    67.10    1.55    2.31
+#> 83  2021-03-03    13.20    13.20    11.95     12.80    12.80   -0.85   -6.64
+#> 84  2020-12-04   536.00   536.00   518.10    503.95   483.65   34.45    7.12
+#> 85  2021-03-03   302.30   302.30   297.70    299.00   294.00    3.70    1.26
+#> 86  2021-03-03     8.30     8.30     8.30      7.95     7.95    0.35    4.40
+#> 87  2021-01-01   187.00   187.00   184.80    185.80   174.15   10.65    6.12
+#> 88  2021-03-03   566.00   566.00   556.05    539.00   530.75   25.30    4.77
+#> 89  2021-02-15    41.80    41.80    39.85     41.10    38.00    1.85    4.87
+#> 90  2021-03-03    27.70    27.70    25.40     26.95    23.10    2.30    9.96
+#> 91  2021-03-02  2015.80  2015.80  1974.30   1988.00  1886.10   88.20    4.68
+#> 92  2021-03-03    93.60    93.60    92.30     88.80    85.60    6.70    7.83
+#> 93  2021-03-03    34.00    34.00    33.00     32.65    32.65    0.35    1.07
+#> 94  2021-02-05    75.60    75.60    74.45     73.90    70.45    4.00    5.68
+#> 95  2021-03-03     9.70     9.70     9.70      9.25     9.25    0.45    4.86
+#> 96  2021-02-24   459.00   459.00   448.20    450.00   436.75   11.45    2.62
+#> 97  2021-03-03   699.00   699.00   678.10    615.40   603.00   75.10   12.45
+#> 98  2021-01-12    24.30    24.30    23.40     24.30    22.10    1.30    5.88
+#> 99  2021-03-03   211.30   211.30   211.30    202.50   201.25   10.05    4.99
+#> 100 2021-03-03    92.50    92.50    92.00     88.55    88.15    3.85    4.37
+#> 101 2021-02-12   165.75   165.75   165.65    152.00   140.25   25.40   18.11
+#> 102 2021-03-03    86.45    86.45    84.75     85.10    83.25    1.50    1.80
+#> 103 2021-03-02    87.85    87.85    85.40     82.30    78.90    6.50    8.24
+#> 104 2020-08-27  1799.00  1799.00  1617.65   1680.00  1619.40   -1.75   -0.11
+#> 105 2021-03-03   215.20   215.20   203.75    198.70   198.70    5.05    2.54
+#> 106 2021-03-03   177.50   177.50   173.40    175.90   173.40    0.00    0.00
+#> 107 2021-02-26   800.00   800.00   789.00    787.25   752.30   36.70    4.88
+#> 108 2021-02-18    73.50    73.50    72.20     72.80    68.90    3.30    4.79
+#> 109 2021-03-03   326.00   326.00   310.80    306.60   301.20    9.60    3.19
+#> 110 2021-02-26   168.40   168.40   164.85    158.60   155.10    9.75    6.29
+#> 111 2021-02-17    26.49    26.49    25.94     26.00    25.86    0.08    0.31
+#> 112 2021-03-03   132.50   132.50   127.65    129.75   126.65    1.00    0.79
+#> 113 2021-01-22   552.30   552.30   509.90    543.85   480.25   29.65    6.17
+#> 114 2021-02-25   287.00   287.00   286.00    286.00   280.85    5.15    1.83
+#> 115 2021-01-14    42.40    42.40    41.65     40.80    37.95    3.70    9.75
+#> 116 2021-02-08    89.95    89.95    88.05     89.85    83.55    4.50    5.39
+#> 117 2021-03-03   186.70   186.70   186.70    177.85   177.85    8.85    4.98
+#> 118 2021-03-03   547.10   547.10   533.50    524.80   516.00   17.50    3.39
+#> 119 2021-03-03    17.70    17.70    16.40     16.80    16.80   -0.40   -2.38
+#> 120 2021-03-02  2932.20  2932.20  2849.10   2875.00  2791.10   58.00    2.08
+#> 121 2021-03-03    94.20    94.20    94.00     93.50    93.00    1.00    1.08
+#> 122 2021-02-19    26.65    26.65    25.90     26.20    24.80    1.10    4.44
+#> 123 2021-03-03   139.60   139.60   138.10    137.45   136.50    1.60    1.17
+#> 124 2021-03-03   198.00   198.00   194.50    193.70   191.65    2.85    1.49
+#> 125 2021-02-09   125.50   125.50   121.65    123.90   120.50    1.15    0.95
+#> 126 2020-12-31   120.50   120.50   111.50    113.55   104.05    7.45    7.16
+#> 127 2021-03-03   208.55   208.55   188.75    198.65   198.65   -9.90   -4.98
+#> 128 2021-03-03  1050.70  1050.70  1050.70   1000.70  1000.70   50.00    5.00
+#> 129 2021-03-03   113.50   113.50   111.20    100.50    99.85   11.35   11.37
+#> 130 2021-03-03     4.05     4.05     4.05      3.90     3.90    0.15    3.85
+#> 131 2021-03-03     9.05     9.05     9.05      8.65     8.65    0.40    4.62
+#> 132 2021-02-16   138.70   138.70   134.75    135.90   133.55    1.20    0.90
+#> 133 2021-03-03    73.75    73.75    70.05     69.00    69.00    1.05    1.52
+#> 134 2021-03-03   367.10   367.10   367.10    349.70   349.65   17.45    4.99
+#> 135 2021-02-09   214.20   214.20   207.80    212.50   203.15    4.65    2.29
+#> 136 2021-03-03    84.45    84.45    82.05     83.70    79.25    2.80    3.53
+#> 137 2021-03-02   183.90   183.90   176.80    182.00   172.25    4.55    2.64
+#> 138 2021-03-03   104.05   104.05    97.10     99.10    99.10   -2.00   -2.02
+#> 139 2021-03-01    75.80    75.80    74.20     73.25    68.40    5.80    8.48
+#> 140 2021-03-03    82.40    82.40    79.40     80.70    78.70    0.70    0.89
+#> 141 2021-02-25  1028.50  1028.50   979.45   1000.00   972.45    7.00    0.72
+#> 142 2021-03-03    95.30    95.30    94.95     90.80    90.80    4.15    4.57
+#> 143 2021-03-02   678.00   678.00   654.30    676.40   631.90   22.40    3.54
+#> 144 2021-03-03    20.85    20.85    20.05     20.25    20.15   -0.10   -0.50
+#> 145 2021-03-03  1038.55  1038.55  1031.35   1021.00  1013.75   17.60    1.74
+#> 146 2021-03-03    93.25    93.25    93.25     88.85    88.85    4.40    4.95
+#> 147 2021-03-03    10.25    10.25    10.00      9.05     9.05    0.95   10.50
+#> 148 2021-01-01   701.70   701.70   680.05    698.95   647.00   33.05    5.11
+#> 149 2021-02-25   954.80   954.80   893.15    909.00   841.45   51.70    6.14
+#> 150 2021-03-01   459.05   459.05   459.05    399.05   382.55   76.50   20.00
+#> 151 2021-03-03   215.35   215.35   215.35    205.10   205.10   10.25    5.00
+#> 152 2021-03-03   699.85   699.85   682.05    685.00   681.00    1.05    0.15
+#> 153 2021-03-01    97.00    97.00    97.00     93.85    92.40    4.60    4.98
+#> 154 2021-02-25    49.30    49.30    48.00     46.00    43.70    4.30    9.84
+#> 155 2021-03-03   134.65   134.65   129.60    134.00   123.60    6.00    4.85
+#> 156 2021-03-03    18.70    18.70    18.10     18.00    17.00    1.10    6.47
+#> 157 2021-03-03     5.85     5.85     5.85      5.60     5.60    0.25    4.46
+#> 158 2021-03-03   262.00   262.00   260.00    261.70   254.15    5.85    2.30
+#> 159 2021-03-03    49.20    49.20    47.10     47.10    47.10    0.00    0.00
+#> 160 2020-10-27    70.00    70.00    68.75     66.90    63.60    5.15    8.10
+#> 161 2021-03-03    11.90    11.90    11.90      9.95     9.95    1.95   19.60
+#> 162 2021-03-03    11.90    11.90    11.90     11.35    11.35    0.55    4.85
+#> 163 2021-03-03  1962.00  1962.00  1948.90   1960.00  1916.50   32.40    1.69
+#> 164 2021-03-03    15.40    15.40    15.40     14.70    14.70    0.70    4.76
+#> 165 2021-03-03    64.55    64.55    64.50     53.80    53.80   10.70   19.89
+#> 166 2021-03-03   313.15   313.15   303.95    303.00   294.15    9.80    3.33
+#> 167 2021-01-11   112.00   112.00   109.00    108.00    99.30    9.70    9.77
+#> 168 2021-03-03   437.55   437.55   424.00    435.00   428.15   -4.15   -0.97
+#> 169 2021-03-01  2133.00  2133.00  2085.00   2125.05  2109.60  -24.60   -1.17
+#> 170 2021-03-03   792.05   792.05   773.50    782.00   776.45   -2.95   -0.38
+#> 171 2021-03-01   138.80   138.80   135.20    136.95   132.05    3.15    2.39
+#> 172 2021-03-03   114.00   114.00   110.00    105.50   105.25    4.75    4.51
+#> 173 2020-03-03    66.20    66.20    63.50     65.55    59.15    4.35    7.35
+#> 174 2021-03-03     8.10     8.10     7.85      7.80     7.75    0.10    1.29
+#> 175 2021-03-03  1186.25  1186.25  1147.00   1152.00  1135.90   11.10    0.98
+#> 176 2021-03-03    64.20    64.20    62.95     62.20    59.75    3.20    5.36
+#> 177 2021-03-03   426.50   426.50   419.60    409.00   404.75   14.85    3.67
+#> 178 2021-03-03   944.70   944.70   927.85    923.00   910.90   16.95    1.86
+#> 179 2021-03-03    97.80    97.80    97.20     96.00    94.35    2.85    3.02
+#> 180 2020-12-08   421.95   421.95   419.00    403.00   389.80   29.20    7.49
+#> 181 2020-12-16    20.20    20.20    19.70     19.80    19.15    0.55    2.87
+#> 182 2021-02-10  6830.00  6830.00  6800.50   6589.00  6500.50  300.00    4.62
+#> 183 2021-03-03   345.95   345.95   345.00    339.90   334.40   10.60    3.17
+#> 184 2021-03-03   631.45   631.45   622.35    616.85   613.60    8.75    1.43
+#> 185 2021-03-03   925.00   925.00   908.75    925.00   908.10    0.65    0.07
+#> 186 2021-03-03  3957.30  3957.30  3925.05   3884.50  3754.70  170.35    4.54
+#> 187 2021-03-03   317.50   317.50   308.15    306.00   294.85   13.30    4.51
+#> 188 2021-03-03   422.00   422.00   412.60    418.00   408.55    4.05    0.99
+#> 189 2021-03-03    34.85    34.85    34.85     33.20    33.20    1.65    4.97
+#> 190 2021-03-03   115.20   115.20   114.20     97.05    96.00   18.20   18.96
+#> 191 2020-10-26    78.85    78.85    75.90     78.00    70.65    5.25    7.43
+#> 192 2021-02-26   311.95   311.95   306.10    309.00   301.55    4.55    1.51
 ```
 
 ##### Most actively traded stocks in a month
@@ -1403,85 +1735,85 @@ nse_stock_most_traded(clean_names = FALSE)
 ``` r
 nse_fo_top_gainers()
 #>        symbol series last_corp_announcement_date
-#> 1    GRANULES     EQ                  2021-02-08
-#> 2  IBULHSGFIN     EQ                  2020-09-03
-#> 3     HDFCAMC     EQ                  2020-07-09
-#> 4  CUMMINSIND     EQ                  2021-02-09
-#> 5         PNB     EQ                  2020-07-27
-#> 6  FEDERALBNK     EQ                  2020-07-09
-#> 7       L&TFH     EQ                  2021-01-21
-#> 8      AUBANK     EQ                  2019-07-18
-#> 9    TATACHEM     EQ                  2020-06-22
-#> 10     INDIGO     EQ                  2020-08-27
+#> 1        BHEL     EQ                  2020-09-18
+#> 2      CONCOR     EQ                  2020-11-18
+#> 3      AUBANK     EQ                  2019-07-18
+#> 4    GMRINFRA     EQ                  2020-09-10
+#> 5       IRCTC     EQ                  2020-10-19
+#> 6  ULTRACEMCO     EQ                  2020-07-29
+#> 7   TATAPOWER     EQ                  2020-07-14
+#> 8    SHREECEM     EQ                  2020-02-24
+#> 9         PVR     EQ                  2020-07-09
+#> 10  AMBUJACEM     EQ                  2021-03-19
 #>                                 last_corp_announcement open_price high_price
-#> 1                Interim Dividend - Rs 0.25  Per Share     338.25     369.00
-#> 2                               Annual General Meeting     231.10     251.00
-#> 3       Annual General Meeting/Dividend - Rs 28 Per Sh    2950.00    3220.00
-#> 4                    Interim Dividend - Rs 7 Per Share     822.50     882.95
-#> 5                               Annual General Meeting      41.40      43.90
-#> 6                               Annual General Meeting      83.70      88.50
-#> 7                Rights 17:74@ Premium Rs 55 Per Share     107.50     113.40
-#> 8  Annual General Meeting/Dividend - Rs 0.75 Per Share    1162.40    1225.00
-#> 9    Annual General Meeting/Dividend - Rs 11 Per Share     738.00     782.00
-#> 10                              Annual General Meeting    1704.00    1823.85
+#> 1                               Annual General Meeting      50.35      56.10
+#> 2                    Interim Dividend - Rs 3 Per Share     577.00     643.95
+#> 3  Annual General Meeting/Dividend - Rs 0.75 Per Share    1187.65    1290.00
+#> 4                               Annual General Meeting      27.30      29.95
+#> 5                               Annual General Meeting    1885.00    2015.80
+#> 6    Annual General Meeting/Dividend - Rs 13 Per Share    6429.00    6830.00
+#> 7  Annual General Meeting/Dividend - Rs 1.55 Per Share     103.80     114.00
+#> 8                  Interim Dividend - Rs 110 Per Share   27450.00   28850.00
+#> 9                       Rights 7:94 @ Premium Rs 774/-    1410.00    1501.95
+#> 10                           Dividend - Re 1 Per Share     281.50     293.75
 #>    low_price last_traded_price prev_close_price percent_change traded_quantity
-#> 1     338.25            367.50           336.25           9.29        10446684
-#> 2     229.50            249.50           229.00           8.95        45419012
-#> 3    2934.00           3189.50          2934.10           8.70         1461732
-#> 4     822.50            869.80           818.45           6.27         5093443
-#> 5      41.25             43.55            41.00           6.22       238140740
-#> 6      83.50             88.45            83.30           6.18        38195349
-#> 7     107.05            113.10           107.00           5.70        26327611
-#> 8    1136.55           1215.00          1151.50           5.51         2078700
-#> 9     735.45            774.00           733.65           5.50        12732034
-#> 10   1700.25           1783.00          1691.40           5.42         2461629
+#> 1      49.90             54.60            51.00           7.06       189812744
+#> 2     575.05            618.60           578.35           6.96        14701972
+#> 3    1176.80           1260.70          1200.90           4.98         2009900
+#> 4      27.05             29.10            27.75           4.86        50023897
+#> 5    1870.00           1974.30          1886.10           4.68         8932597
+#> 6    6394.45           6800.50          6500.50           4.62         1071068
+#> 7     102.75            110.00           105.25           4.51       131812381
+#> 8   27335.05          28825.55         27695.25           4.08           59120
+#> 9    1393.90           1473.10          1417.65           3.91         2062794
+#> 10    278.75            292.90           282.10           3.83         7629980
 #>    turnover_in_lakhs
-#> 1           37719.84
-#> 2          109291.77
-#> 3           45834.95
-#> 4           44003.78
-#> 5          102090.94
-#> 6           32974.04
-#> 7           29039.35
-#> 8           24143.27
-#> 9           97734.91
-#> 10          43531.45
+#> 1          102574.81
+#> 2           91509.48
+#> 3           25259.22
+#> 4           14401.88
+#> 5          176208.87
+#> 6           71038.37
+#> 7          144347.74
+#> 8           16626.67
+#> 9           30285.32
+#> 10          21911.78
 
 # retain original column names as returned by NSE
 nse_fo_top_gainers(clean_names = FALSE)
 #>        symbol series lastCorpAnnouncementDate
-#> 1    GRANULES     EQ               2021-02-08
-#> 2  IBULHSGFIN     EQ               2020-09-03
-#> 3     HDFCAMC     EQ               2020-07-09
-#> 4  CUMMINSIND     EQ               2021-02-09
-#> 5         PNB     EQ               2020-07-27
-#> 6  FEDERALBNK     EQ               2020-07-09
-#> 7       L&TFH     EQ               2021-01-21
-#> 8      AUBANK     EQ               2019-07-18
-#> 9    TATACHEM     EQ               2020-06-22
-#> 10     INDIGO     EQ               2020-08-27
+#> 1        BHEL     EQ               2020-09-18
+#> 2      CONCOR     EQ               2020-11-18
+#> 3      AUBANK     EQ               2019-07-18
+#> 4    GMRINFRA     EQ               2020-09-10
+#> 5       IRCTC     EQ               2020-10-19
+#> 6  ULTRACEMCO     EQ               2020-07-29
+#> 7   TATAPOWER     EQ               2020-07-14
+#> 8    SHREECEM     EQ               2020-02-24
+#> 9         PVR     EQ               2020-07-09
+#> 10  AMBUJACEM     EQ               2021-03-19
 #>                                   lastCorpAnnouncement openPrice highPrice
-#> 1                Interim Dividend - Rs 0.25  Per Share    338.25    369.00
-#> 2                               Annual General Meeting    231.10    251.00
-#> 3       Annual General Meeting/Dividend - Rs 28 Per Sh   2950.00   3220.00
-#> 4                    Interim Dividend - Rs 7 Per Share    822.50    882.95
-#> 5                               Annual General Meeting     41.40     43.90
-#> 6                               Annual General Meeting     83.70     88.50
-#> 7                Rights 17:74@ Premium Rs 55 Per Share    107.50    113.40
-#> 8  Annual General Meeting/Dividend - Rs 0.75 Per Share   1162.40   1225.00
-#> 9    Annual General Meeting/Dividend - Rs 11 Per Share    738.00    782.00
-#> 10                              Annual General Meeting   1704.00   1823.85
-#>    lowPrice     ltp previousPrice netPrice tradedQuantity turnoverInLakhs
-#> 1    338.25  367.50        336.25     9.29       10446684        37719.84
-#> 2    229.50  249.50        229.00     8.95       45419012       109291.77
-#> 3   2934.00 3189.50       2934.10     8.70        1461732        45834.95
-#> 4    822.50  869.80        818.45     6.27        5093443        44003.78
-#> 5     41.25   43.55         41.00     6.22      238140740       102090.94
-#> 6     83.50   88.45         83.30     6.18       38195349        32974.04
-#> 7    107.05  113.10        107.00     5.70       26327611        29039.35
-#> 8   1136.55 1215.00       1151.50     5.51        2078700        24143.27
-#> 9    735.45  774.00        733.65     5.50       12732034        97734.91
-#> 10  1700.25 1783.00       1691.40     5.42        2461629        43531.45
+#> 1                               Annual General Meeting     50.35     56.10
+#> 2                    Interim Dividend - Rs 3 Per Share    577.00    643.95
+#> 3  Annual General Meeting/Dividend - Rs 0.75 Per Share   1187.65   1290.00
+#> 4                               Annual General Meeting     27.30     29.95
+#> 5                               Annual General Meeting   1885.00   2015.80
+#> 6    Annual General Meeting/Dividend - Rs 13 Per Share   6429.00   6830.00
+#> 7  Annual General Meeting/Dividend - Rs 1.55 Per Share    103.80    114.00
+#> 8                  Interim Dividend - Rs 110 Per Share  27450.00  28850.00
+#> 9                       Rights 7:94 @ Premium Rs 774/-   1410.00   1501.95
+#> 10                           Dividend - Re 1 Per Share    281.50    293.75
+#>    lowPrice      ltp previousPrice netPrice tradedQuantity turnoverInLakhs
+#> 1     49.90    54.60         51.00     7.06      189812744       102574.81
+#> 2    575.05   618.60        578.35     6.96       14701972        91509.48
+#> 3   1176.80  1260.70       1200.90     4.98        2009900        25259.22
+#> 4     27.05    29.10         27.75     4.86       50023897        14401.88
+#> 5   1870.00  1974.30       1886.10     4.68        8932597       176208.87
+#> 6   6394.45  6800.50       6500.50     4.62        1071068        71038.37
+#> 7    102.75   110.00        105.25     4.51      131812381       144347.74
+#> 8  27335.05 28825.55      27695.25     4.08          59120        16626.67
+#> 9   1393.90  1473.10       1417.65     3.91        2062794        30285.32
+#> 10   278.75   292.90        282.10     3.83        7629980        21911.78
 ```
 
 ### Pre Open Market Data
@@ -1490,104 +1822,104 @@ nse_fo_top_gainers(clean_names = FALSE)
 
 ``` r
 nse_preopen_nifty_bank()
-#>        symbol series corp_action_date corp_action  price change percent_change
-#> 1    AXISBANK     EQ             <NA>        <NA>  740.5   9.25           1.26
-#> 2   ICICIBANK     EQ             <NA>        <NA>  618.0   7.50           1.23
-#> 3  BANDHANBNK     EQ             <NA>        <NA>  349.0   3.80           1.10
-#> 4    HDFCBANK     EQ             <NA>        <NA> 1584.0  15.80           1.01
-#> 5         PNB     EQ             <NA>        <NA>   41.4   0.40           0.98
-#> 6  BANKBARODA     EQ             <NA>        <NA>   84.1   0.80           0.96
-#> 7     RBLBANK     EQ             <NA>        <NA>  238.9   2.15           0.91
-#> 8  INDUSINDBK     EQ             <NA>        <NA> 1080.0   6.65           0.62
-#> 9        SBIN     EQ             <NA>        <NA>  396.5   2.30           0.58
-#> 10  KOTAKBANK     EQ             <NA>        <NA> 1855.0  10.35           0.56
-#> 11 FEDERALBNK     EQ             <NA>        <NA>   83.7   0.40           0.48
-#> 12 IDFCFIRSTB     EQ             <NA>        <NA>   64.8   0.30           0.47
+#>        symbol series corp_action_date corp_action   price change percent_change
+#> 1    AXISBANK     EQ             <NA>        <NA>  731.10 -22.85          -3.03
+#> 2    HDFCBANK     EQ             <NA>        <NA> 1548.55 -38.30          -2.41
+#> 3   ICICIBANK     EQ             <NA>        <NA>  618.75 -13.35          -2.11
+#> 4     RBLBANK     EQ             <NA>        <NA>  243.80  -5.15          -2.07
+#> 5  INDUSINDBK     EQ             <NA>        <NA> 1078.00 -21.75          -1.98
+#> 6   KOTAKBANK     EQ             <NA>        <NA> 1863.90 -35.60          -1.87
+#> 7  IDFCFIRSTB     EQ             <NA>        <NA>   65.95  -1.15          -1.71
+#> 8  FEDERALBNK     EQ             <NA>        <NA>   86.70  -1.40          -1.59
+#> 9        SBIN     EQ             <NA>        <NA>  398.70  -6.35          -1.57
+#> 10 BANDHANBNK     EQ             <NA>        <NA>  350.00  -4.90          -1.38
+#> 11        PNB     EQ             <NA>        <NA>   43.00  -0.55          -1.26
+#> 12 BANKBARODA     EQ             <NA>        <NA>   85.00  -0.60          -0.70
 #>    prev_close quantity  value   mkt_cap year_high year_low sum_val sum_quantity
-#> 1      731.25    43619 323.00 181316.88    799.00   286.00 2326.69       609386
-#> 2      610.50    77500 478.95 421448.96    679.40   268.30 2326.69       609386
-#> 3      345.20    16205  56.56  23347.82    430.70   152.20 2326.69       609386
-#> 4     1568.20    32200 510.05 682331.50   1641.00   738.75 2326.69       609386
-#> 5       41.00   208449  86.30   9880.45     46.60    26.30 2326.69       609386
-#> 6       83.30   158345 133.17  10007.22     99.85    36.00 2326.69       609386
-#> 7      236.75     6920  16.53  10613.87    308.10   101.55 2326.69       609386
-#> 8     1073.35     7236  78.15  60939.75   1136.95   235.55 2326.69       609386
-#> 9      394.20    72853 288.86 151277.52    427.70   149.45 2326.69       609386
-#> 10    1844.65    16583 307.61 270248.78   2049.00  1001.00 2326.69       609386
-#> 11      83.30    33114  27.72  16632.33     88.20    35.70 2326.69       609386
-#> 12      64.50    30545  19.79  13537.21     66.80    17.65 2326.69       609386
+#> 1      753.95    57795 422.54 186945.45    799.00   286.00 4120.66      1600400
+#> 2     1586.85    60993 944.51 690446.21   1641.00   738.75 4120.66      1600400
+#> 3      632.10   110691 684.90 436360.17    679.40   268.30 4120.66      1600400
+#> 4      248.95    31732  77.36  11160.81    308.10   101.55 4120.66      1600400
+#> 5     1099.75    16466 177.50  62438.62   1119.50   235.55 4120.66      1600400
+#> 6     1899.50     5176  96.48 278284.53   2049.00  1001.00 4120.66      1600400
+#> 7       67.10   160479 105.84  14082.89     68.15    17.65 4120.66      1600400
+#> 8       88.10    80787  70.04  17590.73     88.50    35.70 4120.66      1600400
+#> 9      405.05   165134 658.39 155441.30    427.70   149.45 4120.66      1600400
+#> 10     354.90    86055 301.19  24003.88    430.70   152.20 4120.66      1600400
+#> 11      43.55   694341 298.57  10494.97     46.35    26.30 4120.66      1600400
+#> 12      85.60   333343 283.34  10283.53     99.85    36.00 4120.66      1600400
 #>    fin_quantity sum_fin_quantity
-#> 1         43619           703569
-#> 2         77500           703569
-#> 3         16205           703569
-#> 4         32200           703569
-#> 5        208449           703569
-#> 6        158345           703569
-#> 7          6920           703569
-#> 8          7236           703569
-#> 9         72853           703569
-#> 10        16583           703569
-#> 11        33114           703569
-#> 12        30545           703569
+#> 1         57795          1802992
+#> 2         60993          1802992
+#> 3        110691          1802992
+#> 4         31732          1802992
+#> 5         16466          1802992
+#> 6          5176          1802992
+#> 7        160479          1802992
+#> 8         80787          1802992
+#> 9        165134          1802992
+#> 10        86055          1802992
+#> 11       694341          1802992
+#> 12       333343          1802992
 
 # retain original column names as returned by NSE
 nse_preopen_nifty(clean_names = FALSE)
 #>        symbol series        xDt
-#> 1        BPCL     EQ 2021-02-17
-#> 2   POWERGRID     EQ       <NA>
-#> 3        HDFC     EQ       <NA>
-#> 4        NTPC     EQ 2021-02-11
-#> 5  ADANIPORTS     EQ       <NA>
-#> 6    HINDALCO     EQ       <NA>
-#> 7  BHARTIARTL     EQ       <NA>
-#> 8     DRREDDY     EQ       <NA>
-#> 9    AXISBANK     EQ       <NA>
-#> 10 HINDUNILVR     EQ       <NA>
-#> 11  ICICIBANK     EQ       <NA>
-#> 12   DIVISLAB     EQ       <NA>
-#> 13    HCLTECH     EQ 2021-01-21
-#> 14       INFY     EQ       <NA>
-#> 15        UPL     EQ       <NA>
-#> 16 BAJAJ-AUTO     EQ       <NA>
-#> 17  COALINDIA     EQ       <NA>
-#> 18   HDFCBANK     EQ       <NA>
-#> 19    SBILIFE     EQ       <NA>
-#> 20        ITC     EQ 2021-02-22
-#> 21 HEROMOTOCO     EQ 2021-02-15
+#> 1   TATASTEEL     EQ       <NA>
+#> 2    JSWSTEEL     EQ       <NA>
+#> 3    AXISBANK     EQ       <NA>
+#> 4  TATAMOTORS     EQ       <NA>
+#> 5    HDFCBANK     EQ       <NA>
+#> 6  BAJAJFINSV     EQ       <NA>
+#> 7   ICICIBANK     EQ       <NA>
+#> 8    HINDALCO     EQ       <NA>
+#> 9  BAJFINANCE     EQ       <NA>
+#> 10 INDUSINDBK     EQ       <NA>
+#> 11  POWERGRID     EQ       <NA>
+#> 12        UPL     EQ       <NA>
+#> 13  KOTAKBANK     EQ       <NA>
+#> 14       HDFC     EQ       <NA>
+#> 15      TECHM     EQ       <NA>
+#> 16         LT     EQ       <NA>
+#> 17       SBIN     EQ       <NA>
+#> 18      TITAN     EQ       <NA>
+#> 19      WIPRO     EQ 2021-01-22
+#> 20    HCLTECH     EQ 2021-01-21
+#> 21        M&M     EQ       <NA>
 #> 22        TCS     EQ 2021-01-14
-#> 23 BAJFINANCE     EQ       <NA>
-#> 24 TATAMOTORS     EQ       <NA>
-#> 25        M&M     EQ       <NA>
-#> 26       GAIL     EQ 2021-01-27
-#> 27  NESTLEIND     EQ       <NA>
-#> 28        IOC     EQ 2021-02-09
-#> 29      CIPLA     EQ       <NA>
-#> 30  TATASTEEL     EQ       <NA>
-#> 31   RELIANCE     EQ       <NA>
-#> 32 ASIANPAINT     EQ       <NA>
-#> 33 INDUSINDBK     EQ       <NA>
-#> 34      WIPRO     EQ 2021-01-22
-#> 35       SBIN     EQ       <NA>
-#> 36  KOTAKBANK     EQ       <NA>
-#> 37      TECHM     EQ       <NA>
-#> 38         LT     EQ       <NA>
-#> 39 BAJAJFINSV     EQ       <NA>
-#> 40       ONGC     EQ 2021-02-17
-#> 41   JSWSTEEL     EQ       <NA>
-#> 42   HDFCLIFE     EQ       <NA>
-#> 43     MARUTI     EQ       <NA>
-#> 44 ULTRACEMCO     EQ       <NA>
-#> 45  SUNPHARMA     EQ 2021-02-09
-#> 46   SHREECEM     EQ       <NA>
-#> 47  BRITANNIA     EQ       <NA>
-#> 48     GRASIM     EQ       <NA>
-#> 49  EICHERMOT     EQ       <NA>
-#> 50      TITAN     EQ       <NA>
+#> 23 BHARTIARTL     EQ       <NA>
+#> 24  EICHERMOT     EQ       <NA>
+#> 25 ULTRACEMCO     EQ       <NA>
+#> 26        IOC     EQ 2021-02-09
+#> 27       NTPC     EQ 2021-02-11
+#> 28   RELIANCE     EQ       <NA>
+#> 29       GAIL     EQ 2021-01-27
+#> 30       BPCL     EQ 2021-02-17
+#> 31 ASIANPAINT     EQ       <NA>
+#> 32     GRASIM     EQ       <NA>
+#> 33   HDFCLIFE     EQ       <NA>
+#> 34   SHREECEM     EQ       <NA>
+#> 35  BRITANNIA     EQ       <NA>
+#> 36 HEROMOTOCO     EQ 2021-02-15
+#> 37    SBILIFE     EQ       <NA>
+#> 38 BAJAJ-AUTO     EQ       <NA>
+#> 39       INFY     EQ       <NA>
+#> 40     MARUTI     EQ       <NA>
+#> 41      CIPLA     EQ       <NA>
+#> 42  COALINDIA     EQ       <NA>
+#> 43        ITC     EQ 2021-02-22
+#> 44    DRREDDY     EQ       <NA>
+#> 45   DIVISLAB     EQ       <NA>
+#> 46 HINDUNILVR     EQ       <NA>
+#> 47  SUNPHARMA     EQ 2021-02-09
+#> 48  NESTLEIND     EQ       <NA>
+#> 49       ONGC     EQ 2021-02-17
+#> 50 ADANIPORTS     EQ       <NA>
 #>                                                                   caAct
-#> 1                                    INTERIM DIVIDEND - RS 16 PER SHARE
+#> 1                                                                  <NA>
 #> 2                                                                  <NA>
 #> 3                                                                  <NA>
-#> 4                                     INTERIM DIVIDEND - RS 3 PER SHARE
+#> 4                                                                  <NA>
 #> 5                                                                  <NA>
 #> 6                                                                  <NA>
 #> 7                                                                  <NA>
@@ -1596,146 +1928,146 @@ nse_preopen_nifty(clean_names = FALSE)
 #> 10                                                                 <NA>
 #> 11                                                                 <NA>
 #> 12                                                                 <NA>
-#> 13                                    INTERIM DIVIDEND - RS 4 PER SHARE
+#> 13                                                                 <NA>
 #> 14                                                                 <NA>
 #> 15                                                                 <NA>
 #> 16                                                                 <NA>
 #> 17                                                                 <NA>
 #> 18                                                                 <NA>
-#> 19                                                                 <NA>
-#> 20                                    INTERIM DIVIDEND - RS 5 PER SHARE
-#> 21 INTERIM DIVIDEND - RS 65 PER SHARE SPECIAL DIVIDEND - RS 5 PER SHARE
+#> 19                                    INTERIM DIVIDEND - RE 1 PER SHARE
+#> 20                                    INTERIM DIVIDEND - RS 4 PER SHARE
+#> 21                                                                 <NA>
 #> 22                                    INTERIM DIVIDEND - RS 6 PER SHARE
 #> 23                                                                 <NA>
 #> 24                                                                 <NA>
 #> 25                                                                 <NA>
-#> 26                                 INTERIM DIVIDEND - RS 2.50 PER SHARE
-#> 27                                                                 <NA>
-#> 28                                INTERIM DIVIDEND - RS 7.50  PER SHARE
-#> 29                                                                 <NA>
-#> 30                                                                 <NA>
+#> 26                                INTERIM DIVIDEND - RS 7.50  PER SHARE
+#> 27                                    INTERIM DIVIDEND - RS 3 PER SHARE
+#> 28                                                                 <NA>
+#> 29                                 INTERIM DIVIDEND - RS 2.50 PER SHARE
+#> 30                                   INTERIM DIVIDEND - RS 16 PER SHARE
 #> 31                                                                 <NA>
 #> 32                                                                 <NA>
 #> 33                                                                 <NA>
-#> 34                                    INTERIM DIVIDEND - RE 1 PER SHARE
+#> 34                                                                 <NA>
 #> 35                                                                 <NA>
-#> 36                                                                 <NA>
+#> 36 INTERIM DIVIDEND - RS 65 PER SHARE SPECIAL DIVIDEND - RS 5 PER SHARE
 #> 37                                                                 <NA>
 #> 38                                                                 <NA>
 #> 39                                                                 <NA>
-#> 40                                 INTERIM DIVIDEND - RS 1.75 PER SHARE
+#> 40                                                                 <NA>
 #> 41                                                                 <NA>
 #> 42                                                                 <NA>
-#> 43                                                                 <NA>
+#> 43                                    INTERIM DIVIDEND - RS 5 PER SHARE
 #> 44                                                                 <NA>
-#> 45                                 INTERIM DIVIDEND - RS 5.50 PER SHARE
+#> 45                                                                 <NA>
 #> 46                                                                 <NA>
-#> 47                                                                 <NA>
+#> 47                                 INTERIM DIVIDEND - RS 5.50 PER SHARE
 #> 48                                                                 <NA>
-#> 49                                                                 <NA>
+#> 49                                 INTERIM DIVIDEND - RS 1.75 PER SHARE
 #> 50                                                                 <NA>
-#>         iep    chn perChn     pCls trdQnty    iVal    mktCap    yHigh     yLow
-#> 1    480.00  11.00   2.35   469.00   53538  256.98  37643.04   482.40   252.00
-#> 2    230.00   4.95   2.20   225.05   57869  133.10  57691.09   238.30   122.15
-#> 3   2608.90  44.90   1.75  2564.00   64336 1678.46 460781.28  2896.00  1473.45
-#> 4    114.45   1.90   1.69   112.55  237834  272.20  54567.99   113.70    73.20
-#> 5    732.00  11.50   1.60   720.50   58291  426.69  52699.58   724.70   203.00
-#> 6    350.70   5.45   1.58   345.25   57270  200.85  50416.13   354.60    84.90
-#> 7    548.75   7.55   1.40   541.20  127095  697.43 129912.10   623.00   361.75
-#> 8   4465.00  60.30   1.37  4404.70    4737  211.51  53472.01  5512.65  2495.05
-#> 9    740.50   9.25   1.26   731.25   43619  323.00 181316.88   799.00   286.00
-#> 10  2205.00  27.05   1.24  2177.95   26354  581.11 194454.21  2614.30  1757.30
-#> 11   618.00   7.50   1.23   610.50   77500  478.95 421448.96   679.40   268.30
-#> 12  3560.00  43.10   1.23  3516.90    4682  166.68  44814.07  3914.95  1626.00
-#> 13   965.00  11.25   1.18   953.75   49159  474.38 103526.32  1067.00   375.25
-#> 14  1319.20  14.70   1.13  1304.50   86168 1136.73 483420.52  1392.80   509.25
-#> 15   595.80   6.35   1.08   589.45    8830   52.61  32426.39   608.80   240.15
-#> 16  3985.00  40.95   1.04  3944.05    3001  119.59  51357.51  4361.40  1788.65
-#> 17   155.00   1.60   1.04   153.40   34066   52.80  32142.33   180.20   109.55
-#> 18  1584.00  15.80   1.01  1568.20   32200  510.05 682331.50  1641.00   738.75
-#> 19   888.00   8.85   1.01   879.15    3040   27.00  34288.53   954.50   519.40
-#> 20   212.00   2.10   1.00   209.90   93839  198.94 183380.73   239.20   134.60
-#> 21  3510.00  33.60   0.97  3476.40    7881  276.62  45140.69  3629.05  1475.00
-#> 22  3035.00  28.65   0.95  3006.35   21758  660.36 315867.49  3339.80  1506.05
-#> 23  5364.15  47.85   0.90  5316.30    3388  181.74 140955.54  5822.20  1783.00
-#> 24   348.65   2.90   0.84   345.75  223924  780.71  61944.74   347.20    63.50
-#> 25   866.95   6.90   0.80   860.05   11930  103.43  82329.00   952.05   245.40
-#> 26   145.95   1.15   0.79   144.80   34910   50.95  26775.81   152.80    65.00
-#> 27 16705.00 128.85   0.78 16576.15     647  108.08  59133.45 18844.00 12200.00
-#> 28   103.00   0.80   0.78   102.20  176423  181.72  25977.43   112.90    71.15
-#> 29   817.95   6.15   0.76   811.80   11728   95.93  41244.40   878.90   355.30
-#> 30   741.00   5.50   0.75   735.50   25496  188.93  55511.71   753.00   250.85
-#> 31  2121.05  15.05   0.71  2106.00   52276 1108.80 680893.97  2369.35   866.98
-#> 32  2406.00  15.60   0.65  2390.40    4600  110.68 107764.72  2873.45  1431.20
-#> 33  1080.00   6.65   0.62  1073.35    7236   78.15  60939.75  1136.95   235.55
-#> 34   433.00   2.60   0.60   430.40   40004  173.22  63956.92   467.45   159.40
-#> 35   396.50   2.30   0.58   394.20   72853  288.86 151277.52   427.70   149.45
-#> 36  1855.00  10.35   0.56  1844.65   16583  307.61 270248.78  2049.00  1001.00
-#> 37   972.20   5.10   0.53   967.10    7931   77.11  59869.87  1081.55   471.40
-#> 38  1493.50   7.85   0.53  1485.65    3370   50.33 179416.12  1593.00   661.00
-#> 39  9926.40  49.40   0.50  9877.00     256   25.41  59728.42 10579.00  3985.30
-#> 40   114.05   0.55   0.48   113.50  127686  145.63  41407.99   120.50    50.00
-#> 41   415.30   2.00   0.48   413.30    7395   30.71  39961.49   426.60   132.50
-#> 42   724.00   3.20   0.44   720.80    4139   29.97  56782.67   744.00   340.00
-#> 43  7245.60  31.50   0.44  7214.10    1513  109.63  95886.37  8329.00  4001.10
-#> 44  6450.00  26.90   0.42  6423.10     845   54.50  74157.75  6589.00  2910.00
-#> 45   616.50   2.30   0.37   614.20    9749   60.10  66315.22   654.40   312.00
-#> 46 27755.50  96.75   0.35 27658.75     141   39.14  36924.09 29090.00 15410.00
-#> 47  3460.00  12.05   0.35  3447.95     866   29.96  40694.59  4010.00  2100.00
-#> 48  1299.00   4.25   0.33  1294.75    3212   41.72  50260.14  1298.50   385.05
-#> 49  2605.80   3.50   0.13  2602.30    2632   68.58  36264.71  3037.00  1245.01
-#> 50  1472.00   0.85   0.06  1471.15    5260   77.43  61385.13  1621.35   720.90
+#>         iep     chn perChn     pCls trdQnty    iVal    mktCap    yHigh     yLow
+#> 1    751.00  -26.15  -3.36   777.15   84566  635.09  58655.24   782.50   250.85
+#> 2    415.10  -13.05  -3.05   428.15   45527  188.98  41397.32   435.00   132.50
+#> 3    731.10  -22.85  -3.03   753.95   57795  422.54 186945.45   799.00   286.00
+#> 4    339.00   -9.50  -2.73   348.50  222386  753.89  62437.43   357.00    63.50
+#> 5   1548.55  -38.30  -2.41  1586.85   60993  944.51 690446.21  1641.00   738.75
+#> 6  10150.00 -245.60  -2.36 10395.60     921   93.48  62864.51 10579.00  3985.30
+#> 7    618.75  -13.35  -2.11   632.10  110691  684.90 436360.17   679.40   268.30
+#> 8    352.00   -7.35  -2.05   359.35  123649  435.24  52475.12   361.30    84.90
+#> 9   5430.00 -112.90  -2.04  5542.90    7567  410.89 146963.58  5822.20  1783.00
+#> 10  1078.00  -21.75  -1.98  1099.75   16466  177.50  62438.62  1119.50   235.55
+#> 11   223.05   -4.45  -1.96   227.50   22232   49.59  58319.15   238.30   122.15
+#> 12   602.00  -11.60  -1.89   613.60   15660   94.27  33754.92   616.85   240.15
+#> 13  1863.90  -35.60  -1.87  1899.50    5176   96.48 278284.53  2049.00  1001.00
+#> 14  2610.00  -44.90  -1.69  2654.90   16205  422.95 477117.09  2896.00  1473.45
+#> 15   960.00  -16.00  -1.64   976.00    4469   42.90  60420.83  1081.55   471.40
+#> 16  1473.00  -23.90  -1.60  1496.90    6007   88.48 180774.74  1593.00   661.00
+#> 17   398.70   -6.35  -1.57   405.05  165134  658.39 155441.30   427.70   149.45
+#> 18  1452.00  -22.60  -1.53  1474.60    9089  131.97  61529.09  1621.35   720.90
+#> 19   428.90   -6.60  -1.52   435.50   26909  115.41  64714.77   467.45   159.40
+#> 20   952.00  -13.25  -1.37   965.25   45035  428.73 104774.61  1067.00   375.25
+#> 21   841.85  -10.20  -1.20   852.05    9358   78.78  81563.19   952.05   245.40
+#> 22  3023.00  -36.10  -1.18  3059.10   16407  495.98 321409.76  3339.80  1506.05
+#> 23   540.00   -6.30  -1.15   546.30   80561  435.03 131136.32   623.00   361.75
+#> 24  2570.00  -29.05  -1.12  2599.05    2275   58.47  36219.42  3037.00  1245.01
+#> 25  6429.00  -71.50  -1.10  6500.50     864   55.55  75051.37  6589.00  2910.00
+#> 26   101.50   -1.10  -1.07   102.60   82112   83.34  26079.10   108.75    71.15
+#> 27   111.50   -1.20  -1.06   112.70   87190   97.22  54640.71   114.70    73.20
+#> 28  2180.00  -22.10  -1.00  2202.10  119360 2602.05 711964.20  2369.35   866.98
+#> 29   145.50   -1.45  -0.99   146.95   45042   65.54  27173.38   152.80    65.00
+#> 30   462.00   -4.35  -0.93   466.35   16624   76.80  37430.35   482.40   252.00
+#> 31  2380.00  -22.10  -0.92  2402.10    5634  134.09 108292.18  2873.45  1431.20
+#> 32  1306.00  -12.10  -0.92  1318.10    2928   38.24  51166.55  1343.00   385.05
+#> 33   721.00   -6.50  -0.89   727.50    3606   26.00  57310.48   744.00   340.00
+#> 34 27450.00 -245.25  -0.89 27695.25      39   10.71  36972.82 29090.00 15410.00
+#> 35  3450.00  -31.15  -0.89  3481.15    1277   44.06  41086.43  4010.00  2100.00
+#> 36  3398.00  -26.35  -0.77  3424.35    1749   59.43  44464.82  3629.05  1475.00
+#> 37   899.70   -6.75  -0.74   906.45    5118   46.05  35353.29   954.50   519.40
+#> 38  3875.00  -26.10  -0.67  3901.10     836   32.40  50798.24  4361.40  1788.65
+#> 39  1335.00   -8.55  -0.64  1343.55  105459 1407.88 497891.64  1392.80   509.25
+#> 40  7080.00  -44.70  -0.63  7124.70    4552  322.28  94698.11  8329.00  4001.10
+#> 41   807.40   -5.10  -0.63   812.50    4941   39.89  41279.96   878.90   355.30
+#> 42   154.00   -0.90  -0.58   154.90   57942   89.23  32456.63   180.20   109.55
+#> 43   208.80   -1.15  -0.55   209.95  125401  261.84 183424.41   239.20   134.60
+#> 44  4482.00  -20.55  -0.46  4502.55    3441  154.23  54659.89  5512.65  2495.05
+#> 45  3550.00  -15.15  -0.42  3565.15    1554   55.17  45428.89  3914.95  1626.00
+#> 46  2185.00   -8.50  -0.39  2193.50   17442  381.11 195842.56  2614.30  1757.30
+#> 47   622.00   -2.35  -0.38   624.35   24962  155.26  67411.12   654.40   312.00
+#> 48 16656.55  -42.70  -0.26 16699.25     335   55.80  59572.60 18844.00 12200.00
+#> 49   113.95   -0.05  -0.04   114.00  129498  147.56  41590.40   120.50    50.00
+#> 50   733.25    3.40   0.47   729.85  161134 1181.52  53383.46   754.95   203.00
 #>      sumVal sumQnty finQnty sumfinQnty
-#> 1  13535.04 1342962   53538    2010060
-#> 2  13535.04 1342962   57869    2010060
-#> 3  13535.04 1342962   64336    2010060
-#> 4  13535.04 1342962  237834    2010060
-#> 5  13535.04 1342962   58291    2010060
-#> 6  13535.04 1342962   57270    2010060
-#> 7  13535.04 1342962  127095    2010060
-#> 8  13535.04 1342962    4737    2010060
-#> 9  13535.04 1342962   43619    2010060
-#> 10 13535.04 1342962   26354    2010060
-#> 11 13535.04 1342962   77500    2010060
-#> 12 13535.04 1342962    4682    2010060
-#> 13 13535.04 1342962   49159    2010060
-#> 14 13535.04 1342962   86168    2010060
-#> 15 13535.04 1342962    8830    2010060
-#> 16 13535.04 1342962    3001    2010060
-#> 17 13535.04 1342962   34066    2010060
-#> 18 13535.04 1342962   32200    2010060
-#> 19 13535.04 1342962    3040    2010060
-#> 20 13535.04 1342962   93839    2010060
-#> 21 13535.04 1342962    7881    2010060
-#> 22 13535.04 1342962   21758    2010060
-#> 23 13535.04 1342962    3388    2010060
-#> 24 13535.04 1342962  223924    2010060
-#> 25 13535.04 1342962   11930    2010060
-#> 26 13535.04 1342962   34910    2010060
-#> 27 13535.04 1342962     647    2010060
-#> 28 13535.04 1342962  176423    2010060
-#> 29 13535.04 1342962   11728    2010060
-#> 30 13535.04 1342962   25496    2010060
-#> 31 13535.04 1342962   52276    2010060
-#> 32 13535.04 1342962    4600    2010060
-#> 33 13535.04 1342962    7236    2010060
-#> 34 13535.04 1342962   40004    2010060
-#> 35 13535.04 1342962   72853    2010060
-#> 36 13535.04 1342962   16583    2010060
-#> 37 13535.04 1342962    7931    2010060
-#> 38 13535.04 1342962    3370    2010060
-#> 39 13535.04 1342962     256    2010060
-#> 40 13535.04 1342962  127686    2010060
-#> 41 13535.04 1342962    7395    2010060
-#> 42 13535.04 1342962    4139    2010060
-#> 43 13535.04 1342962    1513    2010060
-#> 44 13535.04 1342962     845    2010060
-#> 45 13535.04 1342962    9749    2010060
-#> 46 13535.04 1342962     141    2010060
-#> 47 13535.04 1342962     866    2010060
-#> 48 13535.04 1342962    3212    2010060
-#> 49 13535.04 1342962    2632    2010060
-#> 50 13535.04 1342962    5260    2010060
+#> 1  15567.69 1552461   84566    2164118
+#> 2  15567.69 1552461   45527    2164118
+#> 3  15567.69 1552461   57795    2164118
+#> 4  15567.69 1552461  222386    2164118
+#> 5  15567.69 1552461   60993    2164118
+#> 6  15567.69 1552461     921    2164118
+#> 7  15567.69 1552461  110691    2164118
+#> 8  15567.69 1552461  123649    2164118
+#> 9  15567.69 1552461    7567    2164118
+#> 10 15567.69 1552461   16466    2164118
+#> 11 15567.69 1552461   22232    2164118
+#> 12 15567.69 1552461   15660    2164118
+#> 13 15567.69 1552461    5176    2164118
+#> 14 15567.69 1552461   16205    2164118
+#> 15 15567.69 1552461    4469    2164118
+#> 16 15567.69 1552461    6007    2164118
+#> 17 15567.69 1552461  165134    2164118
+#> 18 15567.69 1552461    9089    2164118
+#> 19 15567.69 1552461   26909    2164118
+#> 20 15567.69 1552461   45035    2164118
+#> 21 15567.69 1552461    9358    2164118
+#> 22 15567.69 1552461   16407    2164118
+#> 23 15567.69 1552461   80561    2164118
+#> 24 15567.69 1552461    2275    2164118
+#> 25 15567.69 1552461     864    2164118
+#> 26 15567.69 1552461   82112    2164118
+#> 27 15567.69 1552461   87190    2164118
+#> 28 15567.69 1552461  119360    2164118
+#> 29 15567.69 1552461   45042    2164118
+#> 30 15567.69 1552461   16624    2164118
+#> 31 15567.69 1552461    5634    2164118
+#> 32 15567.69 1552461    2928    2164118
+#> 33 15567.69 1552461    3606    2164118
+#> 34 15567.69 1552461      39    2164118
+#> 35 15567.69 1552461    1277    2164118
+#> 36 15567.69 1552461    1749    2164118
+#> 37 15567.69 1552461    5118    2164118
+#> 38 15567.69 1552461     836    2164118
+#> 39 15567.69 1552461  105459    2164118
+#> 40 15567.69 1552461    4552    2164118
+#> 41 15567.69 1552461    4941    2164118
+#> 42 15567.69 1552461   57942    2164118
+#> 43 15567.69 1552461  125401    2164118
+#> 44 15567.69 1552461    3441    2164118
+#> 45 15567.69 1552461    1554    2164118
+#> 46 15567.69 1552461   17442    2164118
+#> 47 15567.69 1552461   24962    2164118
+#> 48 15567.69 1552461     335    2164118
+#> 49 15567.69 1552461  129498    2164118
+#> 50 15567.69 1552461  161134    2164118
 ```
 
 ### Advances & Declines
@@ -1743,136 +2075,138 @@ nse_preopen_nifty(clean_names = FALSE)
 ``` r
 nse_advances_declines()
 #>                                     index_name advances declines unchanged
-#> 1                                     NIFTY 50       43        7         0
-#> 2                                NIFTY NEXT 50       40       10         0
-#> 3                                     NIFTY IT        9        1         0
-#> 4                                   NIFTY BANK       12        0         0
-#> 5                              NIFTY MIDCAP 50       37       13         0
-#> 6                                  NIFTY INFRA       21        9         0
-#> 7                                 NIFTY REALTY        7        3         0
-#> 8                                 NIFTY ENERGY        8        2         0
-#> 9                                   NIFTY FMCG       13        2         0
-#> 10                                   NIFTY MNC       20       10         0
-#> 11                                NIFTY PHARMA        8        2         0
-#> 12                                   NIFTY PSE       13        7         0
-#> 13                              NIFTY PSU BANK       10        1         1
-#> 14                           NIFTY SERV SECTOR       29        1         0
-#> 15                           NIFTY COMMODITIES       26        4         0
-#> 16                           NIFTY CONSUMPTION       22        8         0
-#> 17                           NIFTY FIN SERVICE       19        1         0
-#> 18                                  NIFTY AUTO        4       11         0
-#> 19                           NIFTY DIV OPPS 50       37       13         0
-#> 20                                 NIFTY MEDIA        6        4         0
-#> 21                                 NIFTY METAL        9        6         0
-#> 22                             NIFTY100 LIQ 15       14        1         0
-#> 23                                  NIFTY CPSE        8        4         0
-#> 24                           NIFTY GROWSECT 15       10        5         0
-#> 25                            NIFTY50 VALUE 20       18        2         0
-#> 26                           NIFTY100 QUALTY30       23        7         0
-#> 27                              NIFTY PVT BANK       10        0         0
+#> 1                                     NIFTY 50       16       34         0
+#> 2                                NIFTY NEXT 50       32       18         0
+#> 3                                     NIFTY IT        4        6         0
+#> 4                                   NIFTY BANK        5        7         0
+#> 5                              NIFTY MIDCAP 50       30       19         1
+#> 6                                  NIFTY INFRA       18       12         0
+#> 7                                 NIFTY REALTY        4        6         0
+#> 8                                 NIFTY ENERGY        2        8         0
+#> 9                                   NIFTY FMCG        8        7         0
+#> 10                                   NIFTY MNC       20        9         1
+#> 11                                NIFTY PHARMA        3        7         0
+#> 12                                   NIFTY PSE        7       13         0
+#> 13                              NIFTY PSU BANK        3        9         0
+#> 14                           NIFTY SERV SECTOR        8       22         0
+#> 15                           NIFTY COMMODITIES       15       15         0
+#> 16                           NIFTY CONSUMPTION       20       10         0
+#> 17                           NIFTY FIN SERVICE        3       17         0
+#> 18                                  NIFTY AUTO       12        3         0
+#> 19                           NIFTY DIV OPPS 50       24       26         0
+#> 20                                 NIFTY MEDIA        9        1         0
+#> 21                                 NIFTY METAL        6        9         0
+#> 22                             NIFTY100 LIQ 15        3       12         0
+#> 23                                  NIFTY CPSE        6        6         0
+#> 24                           NIFTY GROWSECT 15        7        8         0
+#> 25                            NIFTY50 VALUE 20        6       14         0
+#> 26                           NIFTY100 QUALTY30       16       14         0
+#> 27                              NIFTY PVT BANK        4        6         0
 #> 28                            NIFTY MID LIQ 15       10        5         0
-#> 29                                   NIFTY 100       83       17         0
-#> 30                                   NIFTY 200      147       53         0
-#> 31                                   NIFTY 500      330      167         4
-#> 32                            NIFTY MIDCAP 100       64       36         0
-#> 33                            NIFTY SMLCAP 100       58       40         2
+#> 29                                   NIFTY 100       48       52         0
+#> 30                                   NIFTY 200      108       91         1
+#> 31                                   NIFTY 500      296      200         5
+#> 32                            NIFTY MIDCAP 100       60       39         1
+#> 33                            NIFTY SMLCAP 100       70       30         0
 #> 34                    NIFTY ADITYA BIRLA GROUP        5        2         0
-#> 35                              NIFTY ALPHA 50       39       11         0
-#> 36                          NIFTY HIGH BETA 50       43        7         0
-#> 37                     NIFTY LOW VOLATILITY 50       39       11         0
-#> 38                        NIFTY MAHINDRA GROUP        6        3         0
-#> 39                            NIFTY MIDCAP 150       99       51         0
-#> 40                       NIFTY MIDSMALLCAP 400      246      150         4
-#> 41                            NIFTY SHARIAH 25       20        5         0
-#> 42                          NIFTY SMALLCAP 250      147       99         4
-#> 43                           NIFTY SMALLCAP 50       26       23         1
-#> 44                            NIFTY TATA GROUP       21        4         0
-#> 45                    NIFTY TATA GROUP 25% CAP        9        1         0
-#> 46                            NIFTY100 EQL WGT       83       17         0
-#> 47                           NIFTY100 LOWVOL30       27        3         0
-#> 48                             NIFTY50 SHARIAH       16        2         0
-#> 49                            NIFTY500 SHARIAH      135       74         0
-#> 50                             NIFTY50 EQL WGT       43        7         0
-#> 51               NIFTY ALPHA LOW-VOLATILITY 30       29        1         0
-#> 52             NIFTY QUALITY LOW-VOLATILITY 30       22        8         0
-#> 53       NIFTY ALPHA QUALITY LOW-VOLATILITY 30       25        5         0
-#> 54 NIFTY ALPHA QUALITY VALUE LOW-VOLATILITY 30       26        4         0
-#> 55                            NIFTY SME EMERGE       24       18        42
-#> 56                       NIFTY LARGEMIDCAP 250      182       68         0
-#> 57                           NIFTY500 VALUE 50       36       13         1
-#> 58                            NIFTY MIDCAP 150       99       51         0
-#> 59                             NIFTY SMLCAP 50       26       23         1
-#> 60                            NIFTY SMLCAP 250      147       99         4
-#> 61                            NIFTY MIDSML 400      246      150         4
-#> 62                           NIFTY200 QUALTY30       21        9         0
-#> 63                           NIFTY FINSRV25 50       19        1         0
-#> 64                          CNX NIFTY Pre Open       50        0         0
+#> 35                              NIFTY ALPHA 50       32       18         0
+#> 36                          NIFTY HIGH BETA 50       24       26         0
+#> 37                     NIFTY LOW VOLATILITY 50       29       21         0
+#> 38                        NIFTY MAHINDRA GROUP        4        5         0
+#> 39                            NIFTY MIDCAP 150       88       61         1
+#> 40                       NIFTY MIDSMALLCAP 400      248      147         5
+#> 41                            NIFTY SHARIAH 25       12       13         0
+#> 42                          NIFTY SMALLCAP 250      160       86         4
+#> 43                           NIFTY SMALLCAP 50       31       19         0
+#> 44                            NIFTY TATA GROUP       14       11         0
+#> 45                    NIFTY TATA GROUP 25% CAP        5        5         0
+#> 46                            NIFTY100 EQL WGT       48       52         0
+#> 47                           NIFTY100 LOWVOL30       12       18         0
+#> 48                             NIFTY50 SHARIAH        7       11         0
+#> 49                            NIFTY500 SHARIAH      125       82         2
+#> 50                             NIFTY50 EQL WGT       16       34         0
+#> 51               NIFTY ALPHA LOW-VOLATILITY 30       17       13         0
+#> 52             NIFTY QUALITY LOW-VOLATILITY 30       16       13         1
+#> 53       NIFTY ALPHA QUALITY LOW-VOLATILITY 30       17       13         0
+#> 54 NIFTY ALPHA QUALITY VALUE LOW-VOLATILITY 30       16       14         0
+#> 55                       NIFTY LARGEMIDCAP 250      136      113         1
+#> 56                           NIFTY500 VALUE 50       22       28         0
+#> 57                            NIFTY MIDCAP 150       88       61         1
+#> 58                             NIFTY SMLCAP 50       31       19         0
+#> 59                            NIFTY SMLCAP 250      160       86         4
+#> 60                            NIFTY MIDSML 400      248      147         5
+#> 61                           NIFTY200 QUALTY30       19       11         0
+#> 62                          CNX NIFTY Pre Open        1       49         0
 
 # retain original column names as returned by NSE
 nse_advances_declines(clean_names = FALSE)
 #>                                        skipped advances declines unchanged
-#> 1                                     NIFTY 50       43        7         0
-#> 2                                NIFTY NEXT 50       40       10         0
-#> 3                                     NIFTY IT        9        1         0
-#> 4                                   NIFTY BANK       12        0         0
-#> 5                              NIFTY MIDCAP 50       37       13         0
-#> 6                                  NIFTY INFRA       21        9         0
-#> 7                                 NIFTY REALTY        7        3         0
-#> 8                                 NIFTY ENERGY        8        2         0
-#> 9                                   NIFTY FMCG       13        2         0
-#> 10                                   NIFTY MNC       20       10         0
-#> 11                                NIFTY PHARMA        8        2         0
-#> 12                                   NIFTY PSE       13        7         0
-#> 13                              NIFTY PSU BANK       10        1         1
-#> 14                           NIFTY SERV SECTOR       29        1         0
-#> 15                           NIFTY COMMODITIES       26        4         0
-#> 16                           NIFTY CONSUMPTION       22        8         0
-#> 17                           NIFTY FIN SERVICE       19        1         0
-#> 18                                  NIFTY AUTO        4       11         0
-#> 19                           NIFTY DIV OPPS 50       37       13         0
-#> 20                                 NIFTY MEDIA        6        4         0
-#> 21                                 NIFTY METAL        9        6         0
-#> 22                             NIFTY100 LIQ 15       14        1         0
-#> 23                                  NIFTY CPSE        8        4         0
-#> 24                           NIFTY GROWSECT 15       10        5         0
-#> 25                            NIFTY50 VALUE 20       18        2         0
-#> 26                           NIFTY100 QUALTY30       23        7         0
-#> 27                              NIFTY PVT BANK       10        0         0
+#> 1                                     NIFTY 50       16       34         0
+#> 2                                NIFTY NEXT 50       32       18         0
+#> 3                                     NIFTY IT        4        6         0
+#> 4                                   NIFTY BANK        5        7         0
+#> 5                              NIFTY MIDCAP 50       30       19         1
+#> 6                                  NIFTY INFRA       18       12         0
+#> 7                                 NIFTY REALTY        4        6         0
+#> 8                                 NIFTY ENERGY        2        8         0
+#> 9                                   NIFTY FMCG        8        7         0
+#> 10                                   NIFTY MNC       20        9         1
+#> 11                                NIFTY PHARMA        3        7         0
+#> 12                                   NIFTY PSE        7       13         0
+#> 13                              NIFTY PSU BANK        3        9         0
+#> 14                           NIFTY SERV SECTOR        8       22         0
+#> 15                           NIFTY COMMODITIES       15       15         0
+#> 16                           NIFTY CONSUMPTION       20       10         0
+#> 17                           NIFTY FIN SERVICE        3       17         0
+#> 18                                  NIFTY AUTO       12        3         0
+#> 19                           NIFTY DIV OPPS 50       24       26         0
+#> 20                                 NIFTY MEDIA        9        1         0
+#> 21                                 NIFTY METAL        6        9         0
+#> 22                             NIFTY100 LIQ 15        3       12         0
+#> 23                                  NIFTY CPSE        6        6         0
+#> 24                           NIFTY GROWSECT 15        7        8         0
+#> 25                            NIFTY50 VALUE 20        6       14         0
+#> 26                           NIFTY100 QUALTY30       16       14         0
+#> 27                              NIFTY PVT BANK        4        6         0
 #> 28                            NIFTY MID LIQ 15       10        5         0
-#> 29                                   NIFTY 100       83       17         0
-#> 30                                   NIFTY 200      147       53         0
-#> 31                                   NIFTY 500      330      167         4
-#> 32                            NIFTY MIDCAP 100       64       36         0
-#> 33                            NIFTY SMLCAP 100       58       40         2
+#> 29                                   NIFTY 100       48       52         0
+#> 30                                   NIFTY 200      108       91         1
+#> 31                                   NIFTY 500      296      200         5
+#> 32                            NIFTY MIDCAP 100       60       39         1
+#> 33                            NIFTY SMLCAP 100       70       30         0
 #> 34                    NIFTY ADITYA BIRLA GROUP        5        2         0
-#> 35                              NIFTY ALPHA 50       39       11         0
-#> 36                          NIFTY HIGH BETA 50       43        7         0
-#> 37                     NIFTY LOW VOLATILITY 50       39       11         0
-#> 38                        NIFTY MAHINDRA GROUP        6        3         0
-#> 39                            NIFTY MIDCAP 150       99       51         0
-#> 40                       NIFTY MIDSMALLCAP 400      246      150         4
-#> 41                            NIFTY SHARIAH 25       20        5         0
-#> 42                          NIFTY SMALLCAP 250      147       99         4
-#> 43                           NIFTY SMALLCAP 50       26       23         1
-#> 44                            NIFTY TATA GROUP       21        4         0
-#> 45                    NIFTY TATA GROUP 25% CAP        9        1         0
-#> 46                            NIFTY100 EQL WGT       83       17         0
-#> 47                           NIFTY100 LOWVOL30       27        3         0
-#> 48                             NIFTY50 SHARIAH       16        2         0
-#> 49                            NIFTY500 SHARIAH      135       74         0
-#> 50                             NIFTY50 EQL WGT       43        7         0
-#> 51               NIFTY ALPHA LOW-VOLATILITY 30       29        1         0
-#> 52             NIFTY QUALITY LOW-VOLATILITY 30       22        8         0
-#> 53       NIFTY ALPHA QUALITY LOW-VOLATILITY 30       25        5         0
-#> 54 NIFTY ALPHA QUALITY VALUE LOW-VOLATILITY 30       26        4         0
-#> 55                            NIFTY SME EMERGE       24       18        42
-#> 56                       NIFTY LARGEMIDCAP 250      182       68         0
-#> 57                           NIFTY500 VALUE 50       36       13         1
-#> 58                            NIFTY MIDCAP 150       99       51         0
-#> 59                             NIFTY SMLCAP 50       26       23         1
-#> 60                            NIFTY SMLCAP 250      147       99         4
-#> 61                            NIFTY MIDSML 400      246      150         4
-#> 62                           NIFTY200 QUALTY30       21        9         0
-#> 63                           NIFTY FINSRV25 50       19        1         0
-#> 64                          CNX NIFTY Pre Open       50        0         0
+#> 35                              NIFTY ALPHA 50       32       18         0
+#> 36                          NIFTY HIGH BETA 50       24       26         0
+#> 37                     NIFTY LOW VOLATILITY 50       29       21         0
+#> 38                        NIFTY MAHINDRA GROUP        4        5         0
+#> 39                            NIFTY MIDCAP 150       88       61         1
+#> 40                       NIFTY MIDSMALLCAP 400      248      147         5
+#> 41                            NIFTY SHARIAH 25       12       13         0
+#> 42                          NIFTY SMALLCAP 250      160       86         4
+#> 43                           NIFTY SMALLCAP 50       31       19         0
+#> 44                            NIFTY TATA GROUP       14       11         0
+#> 45                    NIFTY TATA GROUP 25% CAP        5        5         0
+#> 46                            NIFTY100 EQL WGT       48       52         0
+#> 47                           NIFTY100 LOWVOL30       12       18         0
+#> 48                             NIFTY50 SHARIAH        7       11         0
+#> 49                            NIFTY500 SHARIAH      125       82         2
+#> 50                             NIFTY50 EQL WGT       16       34         0
+#> 51               NIFTY ALPHA LOW-VOLATILITY 30       17       13         0
+#> 52             NIFTY QUALITY LOW-VOLATILITY 30       16       13         1
+#> 53       NIFTY ALPHA QUALITY LOW-VOLATILITY 30       17       13         0
+#> 54 NIFTY ALPHA QUALITY VALUE LOW-VOLATILITY 30       16       14         0
+#> 55                       NIFTY LARGEMIDCAP 250      136      113         1
+#> 56                           NIFTY500 VALUE 50       22       28         0
+#> 57                            NIFTY MIDCAP 150       88       61         1
+#> 58                             NIFTY SMLCAP 50       31       19         0
+#> 59                            NIFTY SMLCAP 250      160       86         4
+#> 60                            NIFTY MIDSML 400      248      147         5
+#> 61                           NIFTY200 QUALTY30       19       11         0
+#> 62                          CNX NIFTY Pre Open        1       49         0
 ```
+
+## Code of Conduct
+
+Please note that this project is released with a [Contributor Code of
+Conduct](CONDUCT.md). By participating in this project you agree to
+abide by its terms.

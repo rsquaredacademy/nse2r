@@ -28,6 +28,10 @@ navbar:
           href: reference/index.html
         - text: "News"
           href: news/index.html
+    - text: "Blog"
+      href: https://blog.rsquaredacademy.com
+    - text: "Online Courses"
+      href: https://rsquared-academy.thinkific.com
   right:
    - icon: fa-github
      href: https://github.com/rsquaredacademy/nse2r
