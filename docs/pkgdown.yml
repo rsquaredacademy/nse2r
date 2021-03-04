@@ -2,7 +2,7 @@ pandoc: 2.11.2
 pkgdown: 1.6.1
 pkgdown_sha: ~
 articles: {}
-last_built: 2021-03-04T09:31Z
+last_built: 2021-03-04T11:22Z
 urls:
   reference: https://nse2r.rsquaredacademy.com/reference
   article: https://nse2r.rsquaredacademy.com/articles
