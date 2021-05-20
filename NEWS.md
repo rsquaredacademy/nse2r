@@ -1,3 +1,7 @@
+# nse2r 0.1.5
+
+This is a patch release to fix CRAN note about lazy data.
+
 # nse2r 0.1.4
 
 ### Bug Fixes
