@@ -15,7 +15,7 @@ nse_stock_quote(stock_code, source = c("yahoo", "rediff"))
 Fetch the quote for a given stock code from Yahoo Finance API or Rediff Money.
 }
 \examples{
-\donttest{
+\dontrun{
 nse_stock_quote("infy")
 nse_stock_quote("infy", source = "rediff")
 }

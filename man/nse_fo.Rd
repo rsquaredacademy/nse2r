@@ -34,7 +34,7 @@ A tibble with the following columns:
 Top futures and options gainers and losers for the last trading session.
 }
 \examples{
-\donttest{
+\dontrun{
 # top gainers
 nse_fo_top_gainers()
 

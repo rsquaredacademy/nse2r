@@ -6,7 +6,7 @@
 #' descriptive and uses snake_case.
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' nse_stock_most_traded()
 #'
 #' # retain original column names as returned by NSE
@@ -50,7 +50,7 @@ nse_stock_most_traded <- function(clean_names = TRUE) {
 #' descriptive and uses snake_case.
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' # 52 week high
 #' nse_stock_year_high()
 #'
@@ -128,7 +128,7 @@ nse_stock_year_low <- function(clean_names = TRUE) {
 #' descriptive and uses snake_case.
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' nse_stock_code()
 #'
 #' # retain original column names as returned by NSE
@@ -167,7 +167,7 @@ nse_stock_code <- function(clean_names = TRUE) {
 #' @param stock_code Symbol of the stock.
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' nse_stock_valid("infy")
 #' nse_stock_valid("glo")
 #' }
@@ -189,7 +189,7 @@ nse_stock_valid <- function(stock_code) {
 #' descriptive and uses snake_case.
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' # top gainers
 #' nse_stock_top_gainers()
 #'
@@ -251,7 +251,7 @@ nse_stock_top_losers <- function(clean_names = TRUE) {
 #' @param source Yahoo Finance API or Rediff Money.
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' nse_stock_quote("infy")
 #' nse_stock_quote("infy", source = "rediff")
 #' }
