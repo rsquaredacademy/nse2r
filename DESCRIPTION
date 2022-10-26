@@ -23,7 +23,8 @@ Imports:
     magrittr,
     rvest,
     utils,
-    xml2
+    xml2,
+    yahoofinancer
 Suggests: 
     covr,
     DT,

@@ -248,40 +248,23 @@ nse_stock_top_losers <- function(clean_names = TRUE) {
 #' Fetch the quote for a given stock code from Yahoo Finance API or Rediff Money.
 #'
 #' @param stock_code Symbol of the stock.
-#' @param source Yahoo Finance API or Rediff Money.
 #'
 #' @examples
 #' \dontrun{
 #' nse_stock_quote("infy")
-#' nse_stock_quote("infy", source = "rediff")
 #' }
-#'
-#' @importFrom httr GET http_status
+#' 
+#' @importFrom yahoofinancer Ticker
 #'
 #' @export
 #'
-nse_stock_quote <- function(stock_code, source = c("yahoo", "rediff")) {
-
-  source_type <- match.arg(source)
+nse_stock_quote <- function(stock_code) {
 
   if (nse_stock_valid(stock_code)) {
 
-    # handle special characters in stock code
-    is_spec  <- grepl("[-&]", stock_code)
-
-    if (is_spec) {
-      pos_spec   <- regexpr("[-&]", stock_code)
-      pos_sym    <- substr(stock_code, pos_spec, pos_spec)
-      split_code <- unlist(strsplit(stock_code, pos_sym))
-      stock_code <- paste0(split_code[1], "%", charToRaw(pos_sym), split_code[2])
-    }
-
-    if (source_type == "yahoo") {
-      nse_stock_quote_yahoo(stock_code)
-    } else {
-      nse_stock_quote_rediff(stock_code)
-    }
-
+    stock  <- paste0(toupper(stock_code), '.NS')
+    ticker <- Ticker$new(stock)
+    ticker$quote$regularMarketPrice
 
   } else {
 
