@@ -2,8 +2,13 @@ context("futures and options")
 
 httptest::with_mock_api({
   test_that("output from nse_fo_top_gainers is as expected", {
+    
     testthat::skip_on_cran()
+    testthat::skip_on_os("windows")
+    testthat::skip_on_os("mac")
+
     iquotes <- nse_fo_top_gainers()
+    
     expect_equal(
       names(iquotes),
       c("symbol", "series", "last_corp_announcement_date",
@@ -16,8 +21,13 @@ httptest::with_mock_api({
 
 httptest::with_mock_api({
   test_that("output from nse_fo_top_losers is as expected", {
+    
     testthat::skip_on_cran()
+    testthat::skip_on_os("windows")
+    testthat::skip_on_os("mac")
+
     iquotes <- nse_fo_top_losers()
+    
     expect_equal(
       names(iquotes),
       c("symbol", "series", "last_corp_announcement_date",

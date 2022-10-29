@@ -2,9 +2,15 @@ context("preopen")
 
 httptest::with_mock_api({
   test_that("output from nse_preopen_nifty is as expected", {
+    
     testthat::skip_on_cran()
+    testthat::skip_on_os("windows")
+    testthat::skip_on_os("mac")
+    
     iquotes <- nse_preopen_nifty()
+    
     expect_equal(ncol(iquotes), 17)
+    
     expect_equal(
       names(iquotes),
       c("symbol", "series", "corp_action_date",
@@ -18,9 +24,15 @@ httptest::with_mock_api({
 
 httptest::with_mock_api({
   test_that("output from nse_preopen_nifty_bank is as expected", {
+    
     testthat::skip_on_cran()
+    testthat::skip_on_os("windows")
+    testthat::skip_on_os("mac")
+
     iquotes <- nse_preopen_nifty_bank()
+    
     expect_equal(ncol(iquotes), 17)
+    
     expect_equal(
       names(iquotes),
       c("symbol", "series", "corp_action_date",
