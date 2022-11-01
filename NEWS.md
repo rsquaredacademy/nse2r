@@ -1,3 +1,7 @@
+# nse2r 0.1.6
+
+This is a patch release to fix CRAN check issue related to _\donttest_ examples.
+
 # nse2r 0.1.5
 
 This is a patch release to fix CRAN note about lazy data.
@@ -24,9 +28,6 @@ This is a patch release to fix CRAN note about lazy data.
 
 This is a patch release for an urgent bug fix (change in URLs).
 
-
 # nse2r 0.0.9
 
-* Added a `NEWS.md` file to track changes to the package.
-
-
+- Added a `NEWS.md` file to track changes to the package.
