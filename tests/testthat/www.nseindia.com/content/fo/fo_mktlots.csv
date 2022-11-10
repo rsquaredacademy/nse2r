@@ -1,0 +1,153 @@
+UNDERLYING,SYMBOL,NOV.19,DEC.19,JAN.20,MAR.20,JUN.20,SEP.20,DEC.20,JUN.21,DEC.21,JUN.22,DEC.22,JUN.23,DEC.23,JUN.24
+NIFTY BANK                          ,BANKNIFTY ,20         ,20         ,20         ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NIFTY 50                            ,NIFTY     ,75         ,75         ,75         ,75,75,75,75,75,75,75,75,75,75,75
+NIFTY IT                            ,NIFTYIT   ,50         ,50         ,50         ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Derivatives on Individual Securities,Symbol    ,NOV-19     ,DEC-19     ,JAN-20     ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+ACC LIMITED                         ,ACC       ,400        ,400        ,400        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+ADANI ENTERPRISES LIMITED           ,ADANIENT  ,4000       ,4000       ,4000       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+ADANI POWER LTD                     ,ADANIPOWER,10000      ,10000      ,10000      ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+AMARA RAJA BATTERIES LTD.           ,AMARAJABAT,700        ,700        ,800        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+APOLLO HOSPITALS ENTER. L           ,APOLLOHOSP,500        ,500        ,500        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+APOLLO TYRES LTD                    ,APOLLOTYRE,3000       ,3000       ,3000       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+AUROBINDO PHARMA LTD                ,AUROPHARMA,1000       ,1000       ,1000       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+ADANI PORT & SEZ LTD                ,ADANIPORTS,2500       ,2500       ,2500       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+BAJAJ AUTO LIMITED                  ,BAJAJ-AUTO,250        ,250        ,250        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+BAJAJ FINSERV LTD.                  ,BAJAJFINSV,125        ,125        ,125        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+BAJAJ FINANCE LIMITED               ,BAJFINANCE,250        ,250        ,250        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+BANK OF BARODA                      ,BANKBARODA,4500       ,4500       ,5400       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+BATA INDIA LTD                      ,BATAINDIA ,550        ,550        ,550        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+BHARAT ELECTRONICS LTD              ,BEL       ,6000       ,6000       ,6000       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+BHARTI AIRTEL LIMITED               ,BHARTIARTL,1851       ,1851       ,1851       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+BIOCON LIMITED.                     ,BIOCON    ,1800       ,1800       ,2300       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+BOSCH LIMITED                       ,BOSCHLTD  ,30         ,30         ,40         ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+BHARAT PETROLEUM CORP  LT           ,BPCL      ,1800       ,1800       ,1800       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+CADILA HEALTHCARE LIMITED           ,CADILAHC  ,1600       ,1600       ,2200       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+CESC LTD                            ,CESC      ,800        ,800        ,800        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+CHOLAMANDALAM IN & FIN CO           ,CHOLAFIN  ,2500       ,2500       ,2500       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+COAL INDIA LTD                      ,COALINDIA ,2200       ,2200       ,2700       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+COLGATE PALMOLIVE LTD.              ,COLPAL    ,700        ,700        ,700        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+CONTAINER CORP OF IND LTD           ,CONCOR    ,1563       ,1563       ,1563       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+CUMMINS INDIA LTD                   ,CUMMINSIND,700        ,700        ,900        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+BERGER PAINTS (I) LTD               ,BERGEPAINT,2200       ,2200       ,2200       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+DABUR INDIA LTD                     ,DABUR     ,1250       ,1250       ,1250       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+DLF LIMITED                         ,DLF       ,2800       ,2800       ,3300       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+EICHER MOTORS LTD                   ,EICHERMOT ,25         ,25         ,30         ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+EQUITAS HOLDINGS LIMITED            ,EQUITAS   ,4000       ,4000       ,4900       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+ESCORTS INDIA LTD                   ,ESCORTS   ,1100       ,1100       ,1100       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+FEDERAL BANK LTD                    ,FEDERALBNK,7000       ,7000       ,7000       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+GAIL (INDIA) LTD                    ,GAIL      ,5334       ,5334       ,5334       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+GODREJ CONSUMER PRODUCTS            ,GODREJCP  ,800        ,800        ,800        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+GRASIM INDUSTRIES LTD               ,GRASIM    ,750        ,750        ,750        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+HAVELLS INDIA LIMITED               ,HAVELLS   ,1000       ,1000       ,1000       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+HCL TECHNOLOGIES LTD                ,HCLTECH   ,700        ,700        ,700        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+HDFC LTD                            ,HDFC      ,250        ,250        ,250        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+HEXAWARE TECHNOLOGIES LTD           ,HEXAWARE  ,1500       ,1500       ,           ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+HINDALCO  INDUSTRIES  LTD           ,HINDALCO  ,3500       ,3500       ,3500       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+HINDUSTAN PETROLEUM CORP            ,HINDPETRO ,2100       ,2100       ,2100       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+HINDUSTAN UNILEVER LTD.             ,HINDUNILVR,300        ,300        ,300        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+INDIABULLS HSG FIN LTD              ,IBULHSGFIN,800        ,800        ,1200       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+ICICI BANK LTD.                     ,ICICIBANK ,1375       ,1375       ,1375       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+IDFC FIRST BANK LIMITED             ,IDFCFIRSTB,12000      ,12000      ,12000      ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+INDRAPRASTHA GAS LTD                ,IGL       ,2750       ,2750       ,2750       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+INTERGLOBE AVIATION LTD             ,INDIGO    ,300        ,300        ,300        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+INDUSIND BANK LIMITED               ,INDUSINDBK,400        ,400        ,400        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+BHARTI INFRATEL LTD.                ,INFRATEL  ,2000       ,2000       ,2000       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+ITC LTD                             ,ITC       ,2400       ,2400       ,2400       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+JSW STEEL LIMITED                   ,JSWSTEEL  ,2000       ,2000       ,2300       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+JUBILANT FOODWORKS LTD              ,JUBLFOOD  ,500        ,500        ,500        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+JUSTDIAL LTD.                       ,JUSTDIAL  ,1400       ,1400       ,1400       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+KOTAK MAHINDRA BANK LTD             ,KOTAKBANK ,400        ,400        ,400        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+L&T FINANCE HOLDINGS LTD            ,L&TFH     ,4500       ,4500       ,5600       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+LIC HOUSING FINANCE LTD             ,LICHSGFIN ,1100       ,1100       ,1300       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+LARSEN & TOUBRO LTD.                ,LT        ,375        ,375        ,375        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+UNITED SPIRITS LIMITED              ,MCDOWELL-N,1250       ,1250       ,1250       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+MAX FINANCIAL SERV LTD              ,MFSL      ,1200       ,1200       ,1300       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+MRF LTD                             ,MRF       ,10         ,10         ,10         ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+MUTHOOT FINANCE LIMITED             ,MUTHOOTFIN,1500       ,1500       ,1500       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NATIONAL ALUMINIUM CO LTD           ,NATIONALUM,10000      ,10000      ,11700      ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NBCC (INDIA) LIMITED                ,NBCC      ,8500       ,8500       ,14300      ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+ICICI PRU LIFE INS CO LTD           ,ICICIPRULI,1500       ,1500       ,1500       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NESTLE INDIA LIMITED                ,NESTLEIND ,50         ,50         ,50         ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NIIT TECHNOLOGIES LTD               ,NIITTECH  ,375        ,375        ,375        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NMDC LTD.                           ,NMDC      ,6000       ,6000       ,6000       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+OIL AND NATURAL GAS CORP.           ,ONGC      ,3750       ,3750       ,4100       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+PAGE INDUSTRIES LTD                 ,PAGEIND   ,25         ,25         ,25         ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+PIRAMAL ENTERPRISES LTD             ,PEL       ,302        ,302        ,302        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+POWER FIN CORP LTD.                 ,PFC       ,6200       ,6200       ,6200       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+POWER GRID CORP. LTD.               ,POWERGRID ,4000       ,4000       ,4000       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+PVR LIMITED                         ,PVR       ,400        ,400        ,400        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+THE RAMCO CEMENTS LIMITED           ,RAMCOCEM  ,800        ,800        ,800        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+RBL BANK LIMITED                    ,RBLBANK   ,1200       ,1200       ,1500       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+REC LIMITED                         ,RECLTD    ,6000       ,6000       ,6000       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+SIEMENS LTD                         ,SIEMENS   ,550        ,550        ,550        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+SUN PHARMACEUTICAL IND L            ,SUNPHARMA ,1100       ,1100       ,1250       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+TATA CHEMICALS LTD                  ,TATACHEM  ,900        ,900        ,900        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+TATA GLOBAL BEVERAGES LTD           ,TATAGLOBAL,2700       ,2700       ,2700       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+TATA POWER CO LTD                   ,TATAPOWER ,9000       ,9000       ,9000       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+TATA CONSULTANCY SERV LT            ,TCS       ,250        ,250        ,250        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+TORRENT PHARMACEUTICALS L           ,TORNTPHARM,500        ,500        ,500        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+TORRENT POWER LTD                   ,TORNTPOWER,3000       ,3000       ,3000       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+UNITED BREWERIES LTD                ,UBL       ,700        ,700        ,700        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+UJJIVAN FIN. SERVC. LTD.            ,UJJIVAN   ,1600       ,1600       ,1700       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+VEDANTA LIMITED                     ,VEDL      ,3000       ,3000       ,3500       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+VOLTAS LTD                          ,VOLTAS    ,1000       ,1000       ,1000       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+WIPRO LTD                           ,WIPRO     ,3200       ,3200       ,3200       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+YES BANK LIMITED                    ,YESBANK   ,2200       ,2200       ,8800       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+ZEE ENTERTAINMENT ENT LTD           ,ZEEL      ,1300       ,1300       ,1700       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+LUPIN LIMITED                       ,LUPIN     ,700        ,700        ,700        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+MANAPPURAM FINANCE LTD              ,MANAPPURAM,6000       ,6000       ,6000       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NCC LIMITED                         ,NCC       ,8000       ,8000       ,9000       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+AMBUJA CEMENTS LTD                  ,AMBUJACEM ,2500       ,2500       ,2500       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+ASIAN PAINTS LIMITED                ,ASIANPAINT,600        ,600        ,600        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+AXIS BANK LIMITED                   ,AXISBANK  ,1200       ,1200       ,1200       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+BALKRISHNA IND. LTD                 ,BALKRISIND,800        ,800        ,800        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+BANK OF INDIA                       ,BANKINDIA ,6000       ,           ,           ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+BHEL                                ,BHEL      ,7500       ,7500       ,10400      ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+CANARA BANK                         ,CANBK     ,2000       ,2000       ,2600       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+UNION BANK OF INDIA                 ,UNIONBANK ,7000       ,7000       ,           ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+CASTROL INDIA LIMITED               ,CASTROLIND,3400       ,3400       ,4100       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+CENTURY TEXTILES LTD                ,CENTURYTEX,600        ,600        ,600        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+DISH TV INDIA LTD.                  ,DISHTV    ,14000      ,14000      ,24300      ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+DIVI'S LABORATORIES LTD             ,DIVISLAB  ,400        ,400        ,400        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+EXIDE INDUSTRIES LTD                ,EXIDEIND  ,2400       ,2400       ,2900       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+GLENMARK PHARMACEUTICALS            ,GLENMARK  ,1000       ,1000       ,1400       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+INDIAN OIL CORP LTD                 ,IOC       ,3500       ,3500       ,4000       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+MAHINDRA & MAHINDRA LTD             ,M&M       ,1000       ,1000       ,1000       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+M&M FIN. SERVICES LTD               ,M&MFIN    ,1250       ,1250       ,1600       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+MARICO LIMITED                      ,MARICO    ,1300       ,1300       ,1300       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+MARUTI SUZUKI INDIA LTD.            ,MARUTI    ,75         ,75         ,100        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+MAHANAGAR GAS LTD.                  ,MGL       ,600        ,600        ,600        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+MINDTREE LIMITED                    ,MINDTREE  ,600        ,600        ,800        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+MOTHERSON SUMI SYSTEMS LT           ,MOTHERSUMI,3300       ,3300       ,5000       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NTPC LTD                            ,NTPC      ,4800       ,4800       ,4800       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+OIL INDIA LTD                       ,OIL       ,3399       ,3399       ,3399       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+PIDILITE INDUSTRIES LTD             ,PIDILITIND,500        ,500        ,500        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+PUNJAB NATIONAL BANK                ,PNB       ,7000       ,7000       ,8300       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+RELIANCE INDUSTRIES LTD             ,RELIANCE  ,500        ,500        ,500        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+STEEL AUTHORITY OF INDIA            ,SAIL      ,12000      ,12000      ,15700      ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+STATE BANK OF INDIA                 ,SBIN      ,3000       ,3000       ,3000       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+SHREE CEMENT LIMITED                ,SHREECEM  ,50         ,50         ,50         ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+SRF LTD                             ,SRF       ,250        ,250        ,250        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+SUN TV NETWORK LIMITED              ,SUNTV     ,1000       ,1000       ,1200       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+TATA MOTORS DVR 'A' ORD             ,TATAMTRDVR,6000       ,6000       ,9200       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+TATA STEEL LIMITED                  ,TATASTEEL ,1061       ,1061       ,1500       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+TECH MAHINDRA LIMITED               ,TECHM     ,1200       ,1200       ,1200       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+TITAN COMPANY LIMITED               ,TITAN     ,750        ,750        ,750        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+TVS MOTOR COMPANY  LTD              ,TVSMOTOR  ,1100       ,1100       ,1350       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+ULTRATECH CEMENT LIMITED            ,ULTRACEMCO,200        ,200        ,200        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+UPL LIMITED                         ,UPL       ,900        ,900        ,900        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+HDFC BANK LTD                       ,HDFCBANK  ,500        ,500        ,500        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+ASHOK LEYLAND LTD                   ,ASHOKLEY  ,6000       ,6000       ,8000       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+BRITANNIA INDUSTRIES LTD            ,BRITANNIA ,200        ,200        ,200        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+DR. REDDY'S LABORATORIES            ,DRREDDY   ,250        ,250        ,250        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+INFOSYS LIMITED                     ,INFY      ,1200       ,1200       ,1200       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+SHRIRAM TRANSPORT FIN CO.           ,SRTRANSFIN,600        ,600        ,600        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+TATA ELXSI LIMITED                  ,TATAELXSI ,600        ,600        ,           ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+TATA MOTORS LIMITED                 ,TATAMOTORS,3000       ,3000       ,4300       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+BHARAT FORGE LTD                    ,BHARATFORG,1200       ,1200       ,1300       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+CIPLA LTD                           ,CIPLA     ,1000       ,1000       ,1150       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+HERO MOTOCORP LIMITED               ,HEROMOTOCO,200        ,200        ,200        ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+GMR INFRASTRUCTURE LTD.             ,GMRINFRA  ,45000      ,45000      ,45000      ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+VODAFONE IDEA LIMITED               ,IDEA      ,28000      ,28000      ,98000      ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+JINDAL STEEL & POWER LTD            ,JINDALSTEL,3200       ,3200       ,5000       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+PETRONET LNG LIMITED                ,PETRONET  ,3000       ,3000       ,3000       ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
